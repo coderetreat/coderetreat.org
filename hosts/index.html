@@ -5,7 +5,8 @@
 
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-debug.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
@@ -19,76 +20,117 @@
 
 <body>
 <div class="container">
-  <div class="row">
-    <div class="col-sm-12">
-      <h1>Settings</h1>
-      <form class="form-horizontal">
-        <div class="form-group">
-          <label for="city" class="col-sm-2 control-label">Your City</label>
-          <div class="col-sm-8">
-            <input id="city" type="text" data-bind="textInput: city" class="form-control" placeholder="Berlin, Germany">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="hashtag" class="col-sm-2 control-label">Your Hashtag</label>
-          <div class="col-sm-8">
-            <input id="hashtag" type="text" data-bind="textInput: hashtag" class="form-control" placeholder="#bscc">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="constraint" class="col-sm-2 control-label">Your current constraint</label>
-          <div class="col-sm-8">
-            <input id="constraint" list="constraints" type="text" data-bind="textInput: constraint" class="form-control" placeholder="no-mouse">
-            <datalist id="constraints">
-              <option value="No Mouse"/>
-              <option value="TDD as if you meant it"/>
-              <option value="Object Calisthenics"/>
-              <option value="Silent Ping Pong"/>
-              <option value="One Shot"/>
-              <option value="Evil Silent Ping Pong"/>
-              <option value="Undecided Customer"/>
-              <option value="Baby Steps"/>
-            </datalist>
-          </div>
-        </div>
-      </form>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+    <li role="presentation"><a href="#twitter" aria-controls="profile" role="tab" data-toggle="tab">Twitter</a></li>
+    <li role="presentation"><a href="#booths" aria-controls="messages" role="tab" data-toggle="tab">Video Booths</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">
+
     </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12">
-      <h1>Your Tweets</h1>
-      <div class="panel panel-default" data-bind="css: { 'panel-danger': startTweet().text.length > 140 }">
-        <div class="panel-heading">Starting Your Event</div>
-        <div class="panel-body">
-          <blockquote>
-            <span data-bind="text: startTweet().text"></span>
-          </blockquote>
-          <a class="btn btn-primary" data-bind="attr: { href: startTweet().url }"><i class="fa fa-twitter"></i> Tweet This</a>
+    <div role="tabpanel" class="tab-pane" id="twitter">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1>Settings</h1>
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="city" class="col-sm-2 control-label">Your City</label>
+                <div class="col-sm-8">
+                  <input id="city" type="text" data-bind="textInput: city" class="form-control" placeholder="Berlin, Germany">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="hashtag" class="col-sm-2 control-label">Your Hashtag</label>
+                <div class="col-sm-8">
+                  <input id="hashtag" type="text" data-bind="textInput: hashtag" class="form-control" placeholder="#bscc">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="constraint" class="col-sm-2 control-label">Your current constraint</label>
+                <div class="col-sm-8">
+                  <input id="constraint" list="constraints" type="text" data-bind="textInput: constraint" class="form-control" placeholder="no-mouse">
+                  <datalist id="constraints">
+                    <option value="No Mouse"/>
+                    <option value="TDD as if you meant it"/>
+                    <option value="Object Calisthenics"/>
+                    <option value="Silent Ping Pong"/>
+                    <option value="One Shot"/>
+                    <option value="Evil Silent Ping Pong"/>
+                    <option value="Undecided Customer"/>
+                    <option value="Baby Steps"/>
+                  </datalist>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
-      </div>
-      <div class="panel panel-default" data-bind="css: { 'panel-danger': currentSessionTweet().text.length > 140 }">
-        <div class="panel-heading">The Session You're Currently Running</div>
-        <div class="panel-body">
-          <blockquote>
-            <span data-bind="text: currentSessionTweet().text"></span>
-          </blockquote>
-          <a class="btn btn-primary" data-bind="attr: { href: currentSessionTweet().url }"><i class="fa fa-twitter"></i> Tweet This</a>
+        <div class="row">
+          <div class="col-sm-12">
+            <h1>Your Tweets</h1>
+            <div class="panel panel-default" data-bind="css: { 'panel-danger': startTweet().text.length > 140 }">
+              <div class="panel-heading">Starting Your Event</div>
+              <div class="panel-body">
+                <blockquote>
+                  <span data-bind="text: startTweet().text"></span>
+                </blockquote>
+                <a class="btn btn-primary" data-bind="attr: { href: startTweet().url }"><i class="fa fa-twitter"></i> Tweet This</a>
+              </div>
+            </div>
+            <div class="panel panel-default" data-bind="css: { 'panel-danger': currentSessionTweet().text.length > 140 }">
+              <div class="panel-heading">The Session You're Currently Running</div>
+              <div class="panel-body">
+                <blockquote>
+                  <span data-bind="text: currentSessionTweet().text"></span>
+                </blockquote>
+                <a class="btn btn-primary" data-bind="attr: { href: currentSessionTweet().url }"><i class="fa fa-twitter"></i> Tweet This</a>
+              </div>
+            </div>
+            <div class="panel panel-default" data-bind="css: { 'panel-danger': endTweet().text.length > 140 }">
+              <div class="panel-heading">At The End Of The Day</div>
+              <div class="panel-body">
+                <blockquote>
+                  <span data-bind="text: endTweet().text"></span>
+                </blockquote>
+                <a class="btn btn-primary" data-bind="attr: { href: endTweet().url }"><i class="fa fa-twitter"></i> Tweet This</a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="panel panel-default" data-bind="css: { 'panel-danger': endTweet().text.length > 140 }">
-        <div class="panel-heading">At The End Of The Day</div>
-        <div class="panel-body">
-          <blockquote>
-            <span data-bind="text: endTweet().text"></span>
-          </blockquote>
-          <a class="btn btn-primary" data-bind="attr: { href: endTweet().url }"><i class="fa fa-twitter"></i> Tweet This</a>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="booths">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>Video Booths</h1>
+          <p>Please bring a proper camera (and if possible audio setup) to your event. We have setup a few video booths using <strong>appear.in</strong> to bring together groups from all over the world</p>
+          <p><strong>If possible, it would be great if you could idle in the booth for your timezone.</strong></p>
+          <hr/>
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="timezoneSelect" class="col-sm-2 control-label">Pick your Timezone</label>
+              <div class="col-sm-8">
+                <select id="timezoneSelect" data-bind="options: availableTimezoneCategories, optionsText: 'name', value: selectedTimezoneCategory" class="form-control"></select>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6 hidden-sm hidden-xs">
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/gdcr15?src=hash">#gdcr15</a> from all over the world <a href="https://t.co/lqoV2QnxUv">pic.twitter.com/lqoV2QnxUv</a></p>&mdash; Gabriele Tondi (@racingDeveloper) <a href="https://twitter.com/racingDeveloper/status/665529557961830400">November 14, 2015</a></blockquote>
+        </div>
+        <div class="col-md-12">
+          <h2>Your Booth</h2>
+          <p><strong><a target="_blank" data-bind="attr: { href: selectedBoothVideoUrl }, text: selectedBoothVideoUrl"></a></strong>
+          <p>Full? Try <a href="#" data-bind="click: increaseBoothNumber">the next one in this timezone category</a> (or <a href="#" data-bind="click: decreaseBoothNumber">go back</a>)</p>
+          <iframe id="videoboothIframe" src="about:blank" data-bind="attr { src: selectedBoothVideoUrl }" frameborder="0" width="100%" height="480px"></iframe>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-
 </body>
 
 </html>
