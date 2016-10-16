@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-
+  <meta content="width=device-width,initial-scale=1" name=viewport>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-debug.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -20,27 +20,42 @@
 
 <body>
 <div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sd-6 col-sd-offset-3 col-xs-6 col-xs-offset-3"><img src="global-day.png"/ width="100%"></div>
+  </div>
 
   <!-- Nav tabs -->
   <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-    <li role="presentation"><a href="#twitter" aria-controls="profile" role="tab" data-toggle="tab">Twitter</a></li>
-    <li role="presentation"><a href="#booths" aria-controls="messages" role="tab" data-toggle="tab">Video Booths</a></li>
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-info">&nbsp;</i>Home</a></li>
+    <li role="presentation"><a href="#twitter" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-twitter">&nbsp;</i>Twitter</a></li>
+    <li role="presentation"><a href="#booths" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-video-camera">&nbsp;</i>Video Booths</a></li>
   </ul>
 
   <!-- Tab panes -->
   <div class="tab-content">
     <div role="tabpanel" class="tab-pane active" id="home">
-
+      <h1>Introduction</h1>
+      <p></p>
+      <h2>Quick Links</h2>
+      <ul style="list-style-type: none">
+        <li><i class="fa fa-google">&nbsp;</i><a href="https://drive.google.com/drive/folders/0B2y4lijmXJnWODU5YTZjM2YtMDhmNS00OGI1LWFhZTUtOWVkM2IwOTA3OWZh">Facilitator Files on Google Drive</a></li>
+        <li><i class="fa fa-slack">&nbsp;</i><a href="https://slack.softwarecraftsmanship.org">Software Craftsmanship Slack Team</a> - Join Channel #gdcr</li>
+        <li><i class="fa fa-globe">&nbsp;</i><a href="http://gdcr.coderetreat.org/hosts">Additional Resources on Hosting and Facilitating on <strong>gdcr.coderetreat.org</strong></a></li>
+      </ul>
     </div>
     <div role="tabpanel" class="tab-pane" id="twitter">
       <h1>Twitter</h1>
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-sd-12">
             <p>Engaging with all the other events over the world is what makes the GDCR magical. This year, instead of the <i>CodeRetreat Live!</i> app, we're trying to use Twitter to let you share your current status</p>
-            <p>You can search for other locations' updates with the search term <a href="https://twitter.com/search?f=tweets&q=%23gdcr16%20AND%20%23live"><code>#gdcr16 AND #live</code></a></p>
+            <p>
+              You're of course free to not use the suggested tweets below,
+              however, we'd appreciate if you would use both the tags <strong>#gdcr16</strong> and <strong>#live</strong>
+              when you update the current session you're running and when you clock in or -out.
+            </p>
+            <p>This way, you can search for other locations' updates with the search term <a href="https://twitter.com/search?f=tweets&q=%23gdcr16%20AND%20%23live"><code>#gdcr16 AND #live</code></a></p>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-sd-12">
             <form class="form-horizontal">
               <div class="form-group">
                 <label for="city" class="col-sm-2 control-label">Your City</label>
@@ -75,7 +90,7 @@
         </div>
         <div class="row">
           <div class="col-sm-12">
-            <h1>Your Tweets</h1>
+            <h1>Your suggested Tweets</h1>
             <div class="panel panel-default" data-bind="css: { 'panel-danger': startTweet().text.length > 140 }">
               <div class="panel-heading">Starting Your Event</div>
               <div class="panel-body">
@@ -112,6 +127,11 @@
           <h1>Video Booths</h1>
           <p>Please bring a proper camera (and if possible audio setup) to your event. We have setup a few video booths using <strong>appear.in</strong> to bring together groups from all over the world</p>
           <p><strong>If possible, it would be great if you could idle in the booth for your timezone.</strong></p>
+          <blockquote><i><small>
+            <i class="fa fa-lightbulb-o">&nbsp;</i>It is fun to join channels in vastly different timezones!
+            E.g., if you're in London, check out New Zealand wrapping things up when you're about to begin
+            and wave goodbye to the US West Coast when your event in London is about to end (and theirs is about to start)! :)
+          </small></i></blockquote>
           <hr/>
           <form class="form-horizontal">
             <div class="form-group">
