@@ -1,8 +1,19 @@
 /* global $ */
 function init() {
   focusTabOnPageLoad();
+  initLinksToTabs();
   initTweetsModel();
   initVideoBoothsModel();
+}
+
+function initLinksToTabs() {
+  // From http://stackoverflow.com/questions/19625211/bootstrap-linking-to-a-tab-with-an-url
+  $(function() {
+    $(document).on('click.bs.tab.data-api', '[data-toggle="tab"], [data-toggle="pill"]', function (e) {
+      e.preventDefault()
+      $('ul.nav li a[href="' + $(this).attr('href') + '"]').tab('show');
+   });
+ });
 }
 
 function focusTabOnPageLoad() {
