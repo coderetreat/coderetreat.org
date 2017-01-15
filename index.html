@@ -1,0 +1,10 @@
+---
+---
+
+Hello World
+<ul>
+{% for event_hash in site.data.events %}
+{% assign event = event_hash[1] %}
+  <li>{{ event }}</li>
+{% endfor %}
+</ul>
