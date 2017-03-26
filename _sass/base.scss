@@ -1,0 +1,64 @@
+@import "colors";
+@import "fonts";
+
+html, body {
+  margin: 0;
+  background-color: $light;
+  color: $dark;
+  padding-bottom: $gutter;
+  line-height: $gutter;
+  font-family: $body-font;
+  @include media($mobile) {
+    font-size: 12px;
+    h1 { font-size: 1.5em; }
+    h2 { font-size: 1.3em; }
+    h3 { font-size: 1.2em; }
+  }
+}
+
+p {
+  margin-top: 0px;
+}
+
+a {
+  color: $green;
+  text-decoration: none;
+  &:hover { text-decoration: underline; }
+}
+
+section {
+  padding: $gutter 0;
+  padding-bottom: $gutter*2;
+  @include outer-container;
+  @include media($tablet) {
+    padding: $gutter;
+  }
+}
+
+h1, h2, h3 {
+  font-family: $title-font;
+}
+h1, h2 {
+  text-align: center;
+}
+h1 {
+  font-size: 2em;
+  line-height: 1.2em;
+}
+h2 { font-size: 1.8em; }
+
+.button {
+  background-color: $green;
+  text-decoration: none;
+  color: $light;
+  font-size: 1.2em;
+  padding: $gutter/1.2;
+  display: block;
+  text-align: center;
+  @include fill-parent;
+  transition: linear 0.5s;
+  &:hover {
+    background-color: $lightgreen;
+  }
+  border-radius: 4px;
+}

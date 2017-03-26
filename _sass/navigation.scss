@@ -1,0 +1,49 @@
+$navbar-height: 3*$gutter;
+$navbar-padding: $gutter/2;
+
+.navbar {
+  padding: $navbar-padding 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $light;
+  .navbar-inner {
+    @include outer-container;
+    a {
+      display: block;
+      @include span-columns(2 of 12);
+      text-align: right;
+      // &:nth-child(2) { @include shift(2); }
+      &:first-child { text-align: left; }
+    }
+    .logo img { max-height: $navbar-height - 2*$navbar-padding; }
+  }
+  box-shadow: 0 0 8px 0 black;
+  z-index: 50;
+  height: $navbar-height;
+
+  @include media($tablet) {
+    font-size: 1.2em;
+    .navbar-inner {
+      a {
+        @include span-columns(3 of 12);
+        &:nth-child(2) { @include shift(0); }
+        padding-top: .2em;
+      }
+    }
+    padding: 0 $gutter;
+  }
+  @include media($mobile) {
+    .navbar-inner {
+      a {
+        text-align: left;
+        @include span-columns(1 of 4);
+        &:nth-child(2) { @include shift(0); }
+      }
+    }
+  }
+}
+
+.container {
+  margin-top: $navbar-height;
+}

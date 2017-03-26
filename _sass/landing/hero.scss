@@ -1,0 +1,54 @@
+#hero {
+  $bg-height: 800vw / 14;
+  height: 85vh;
+  overflow: hidden;
+  background-image: url("images/mountain_path.svg");
+  background-size: cover;
+  background-attachment: fixed;
+  .header {
+    h1 { font-family: "OrbitronBlack"; }
+    h2 { font-size: 1.5em; }
+    @include span-columns(7 of 12);
+    @include shift(4.5);
+    font-family: $title-font;
+    margin-top: 8em;
+    font-size: 1.6em;
+    color: $dark;
+    text-align: center;
+
+    .calltoaction {
+      .button {
+        width: 49%;
+        display: inline-block;
+      }
+    }
+  }
+  @include media($tablet) {
+    .header {
+      margin-top: $gutter;
+      background-color: $light;
+      opacity: 0.7;
+    }
+    padding: $gutter;
+    height: auto;
+    min-height: $bg-height;
+    background-size: 100% $bg-height;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+  @include media($mobile) {
+    background-image: url("images/mountain_path_with_title.svg");
+    background-size: 100% $bg-height;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    .header {
+      opacity: 1;
+      h1 { display: none; }
+      padding: 0 $gutter;
+      h2 { font-size: 1.3em; }
+      margin-top: $bg-height;
+      @include fill-parent;
+      @include shift(0);
+    }
+  }
+}
