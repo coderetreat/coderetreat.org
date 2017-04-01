@@ -1,1 +1,5 @@
 repository: coderetreat/coderetreat.github.io
+exclude:
+  - package.json
+  - test
+  - yarn.lock

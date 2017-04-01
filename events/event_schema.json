@@ -1,0 +1,44 @@
+{
+  "title": "Event Registration",
+  "type": "object",
+  "properties": {
+    "title": {
+      "description": "The title/name of your event",
+      "type": "string"
+    },
+    "url": {
+      "description": "An URL leading to further information about your event, e.g. sign up on meetup/eventbrite",
+      "type": "string"
+    },
+    "location": {
+      "description": "Further data about the location your event takes place at",
+      "type": "object",
+      "properties": {
+        "utcOffset": {
+          "description": "The UTC Timezone the event will take place in (e.g. UTC+1 for Berlin with DST considered)",
+          "type": "number"
+        },
+        "city": { "type": "string" },
+        "country": { "type": "string" },
+        "coordinates": {
+          "type": "object",
+          "description": "Lat/Long values, given in EPSG:3857 (http://wiki.openstreetmap.org/wiki/EPSG:3857)",
+          "properties": {
+              "latitude": { "type": "number" },
+              "longitude": { "type": "number" }
+          },
+          "required": ["latitude", "longitude"]
+        }
+      },
+      "required": ["utcOffset"]
+    },
+    "moderators": {
+      "type": "array",
+      "items": {
+        "description": "Name or Twitter Handle of the moderators",
+        "type": "string"
+      }
+    }
+  },
+  "required": ["name", "location", "url"]
+}

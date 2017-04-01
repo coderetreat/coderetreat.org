@@ -1,0 +1,17 @@
+{
+  "name": "coderetreat.github.io",
+  "version": "1.0.0",
+  "description": "Verification for data/_events/ files",
+  "scripts": {
+    "test": "mocha test/*.test.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "ajv": "^4.11.5",
+    "expect": "^1.20.2",
+    "glob": "^7.1.1",
+    "jsonschema": "^1.1.1",
+    "mocha": "^3.2.0",
+    "yamljs": "^0.2.8"
+  }
+}
