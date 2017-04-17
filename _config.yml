@@ -3,3 +3,4 @@ exclude:
   - package.json
   - test
   - yarn.lock
+  - README.md
