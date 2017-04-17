@@ -12,7 +12,7 @@ $(function() {
   var countriesLayer = new ol.layer.Vector({
     source: new ol.source.GeoJSON({
       projection: 'EPSG:3857',
-      url: 'geodata/countries.geojson'
+      url: '/geodata/countries.geojson'
     }),
     style: function(feature, resolution) {
       var text = resolution < 5000 ? feature.get('name') : '';
@@ -40,7 +40,7 @@ $(function() {
   });
 
 
-  $.get('geodata/locations.json', function(locations) {
+  $.get('/geodata/locations.json', function(locations) {
     $.each(locations, function() {
       events.getSource().addFeature(
         new ol.Feature({
