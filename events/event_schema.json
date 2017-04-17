@@ -30,7 +30,7 @@
           "required": ["latitude", "longitude"]
         }
       },
-      "required": ["utcOffset"]
+      "required": ["utcOffset", "country", "city"]
     },
     "moderators": {
       "type": "array",
@@ -40,5 +40,5 @@
       }
     }
   },
-  "required": ["name", "location", "url"]
+  "required": ["title", "location", "url"]
 }
