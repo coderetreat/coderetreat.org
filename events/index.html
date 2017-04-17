@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<br/><br/>
+<center>
+  <h1>TOTAL OF {{ site.data.events | size }} Events!</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Country</th>
+      <th>City</th>
+      <th>Title</th>
+      <th>Facilitators</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for event_hash in site.data.events %}
+      {% assign event = event_hash[1] %}
+      <tr>
+        <td>{{ event.location.country }}</td>
+        <td>{{ event.location.city }}</td>
+        <td><a href="{{ event.url }}">{{ event.title }}</a></td>
+        <td>
+          {% for moderator in event.moderators %}
+            {{ moderator }}
+          {% endfor %}
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</center>
