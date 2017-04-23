@@ -12,9 +12,7 @@ $navbar-padding: $gutter/2;
     a {
       display: block;
       @include span-columns(2 of 12);
-      text-align: right;
-      // &:nth-child(2) { @include shift(2); }
-      &:first-child { text-align: left; }
+      text-align: left;
     }
     .logo img { max-height: $navbar-height - 2*$navbar-padding; }
   }
@@ -26,7 +24,7 @@ $navbar-padding: $gutter/2;
     font-size: 1.2em;
     .navbar-inner {
       a {
-        @include span-columns(3 of 12);
+        @include span-columns(3 of 14);
         &:nth-child(2) { @include shift(0); }
         padding-top: .2em;
       }
