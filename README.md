@@ -16,6 +16,8 @@ npm install               # Install all dependencies
 npm test                  # Verify all events
 ```
 
+NodeJS is required to be installed on your machine to run the verification of the json file.
+
 This will validate all registrations in your `_data/events/` folder against the [schema](https://github.com/coderetreat/coderetreat.github.io/blob/master/events/event_schema.json).
 
 ### Finding the coordinates of your event
