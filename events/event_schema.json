@@ -15,8 +15,13 @@
       "type": "object",
       "properties": {
         "utcOffset": {
-          "description": "The UTC Timezone the event will take place in (e.g. UTC+1 for Berlin with DST considered)",
+          "description": "The UTC Timezone the event will take place in (e.g. UTC+2 on Nov 18, 2017 for Berlin with DST considered)",
           "type": "number"
+        },
+        "timezone": {
+          "description": "The Timezone as a String, verified by https://momentjs.com/timezone/ to be an actual timezone",
+          "type": "string",
+          "format": "timezone"
         },
         "city": { "type": "string" },
         "country": { "type": "string" },
@@ -30,7 +35,11 @@
           "required": ["latitude", "longitude"]
         }
       },
-      "required": ["utcOffset", "country", "city"]
+      "required": ["country", "city"],
+      "anyOf": [
+        { "required": ["utcOffset"] },
+        { "required": ["timezone"] }
+      ]
     },
     "moderators": {
       "type": "array",

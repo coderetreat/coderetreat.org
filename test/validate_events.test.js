@@ -6,10 +6,22 @@ const YAML = require('yamljs');
 
 const schema = require('../events/event_schema.json');
 const JsonValidator = require('jsonschema').Validator;
+const moment = require('moment-timezone');
+
+JsonValidator.prototype.customFormats.timezone = (tz) => {
+  if(typeof tz === 'undefined') {
+    return true;
+  }
+  if(typeof tz === 'string') {
+    return !!moment.tz.zone(tz);
+  }
+  return false;
+}
 
 const validate = input => {
   const result = (new JsonValidator).validate(input, schema);
   if(result.errors.length > 0) {
+    console.log(result.errors, JSON.stringify(result.errors));
     throw new Error(result.errors);
   }
 }
