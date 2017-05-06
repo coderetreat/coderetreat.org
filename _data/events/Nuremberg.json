@@ -3,6 +3,7 @@
   "url": "https://ti.to/gdcr-nuernberg/2017",
   "location": {
     "utcOffset": 2,
+    "timezone": "Europe/Berlin",
     "city": "Nuremberg",
     "country": "Germany",
     "coordinates": {
