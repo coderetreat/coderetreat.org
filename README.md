@@ -4,7 +4,7 @@
 
 If you want to register your event, please fork this repository, copy [this template](https://github.com/coderetreat/coderetreat.github.io/tree/master/_data/events/TEMPLATE), rename it to `$YOURCITY.json` (keep it in `_data/events/` though!) and fill in your details.
 
-The only required fields are `title, url, location.utcOffset, location.country, location.city`.
+The only required fields are `title`, `url`, either `location.utcOffset` or `location.timezone`, `location.country`, `location.city`.
 
 If you want your event to show up on our map as well, please fill out `location.coordinates` with the coordinates of where your event will take place.
 

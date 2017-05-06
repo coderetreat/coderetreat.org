@@ -2,7 +2,8 @@
   "title": "GDCR17 in Berlin",
   "url": "https://www.meetup.com/Software-Craftsmanship-Berlin/",
   "location": {
-    "utcOffset": 1,
+    "utcOffset": 2,
+    "timezone": "Europe/Berlin",
     "city": "Berlin",
     "country": "Germany",
     "coordinates": {
