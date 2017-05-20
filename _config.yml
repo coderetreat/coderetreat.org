@@ -1,4 +1,7 @@
 repository: coderetreat/coderetreat.github.io
+collections:
+  blogs:
+    output: true
 exclude:
   - package.json
   - test
