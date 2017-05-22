@@ -10,7 +10,7 @@ layout: default
       </span>
     </div>
     <div class="postedBy">
-      Posted by <a href="/profile/{{ page.author }}">{{ page.author }}</a> on {{ page.datePosted }}
+      Posted by <a href="/profile/{{ page.author }}">{{ page.author }}</a> on {{ page.datePosted | date_to_rfc822 }}
     </div>
   </div>
   <div class="xg_module_body">

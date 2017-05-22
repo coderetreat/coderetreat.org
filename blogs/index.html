@@ -14,12 +14,13 @@ layout: default
         <a href="{{blog.slug}}">{{blog.title}}</a>
     </h3>
     <div class="postbody">
-      {{ blog.content | slice: 0, 300}}... <a href="{{blog.slug}}" class="xj_expandable">Continue</a>
+      {{ blog.preview }}... <a href="{{blog.slug}}" class="xj_expandable">Continue</a>
     </div>
     <p class="postedBy">
       Added by <a href="/profile/{{blog.author}}">{{blog.author}}</a> on {{blog.datePosted}}
   </div>
   {% endfor %}
+
   -----------------
   <div class="xg_module_body">
     <h3 class="title">
