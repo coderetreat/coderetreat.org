@@ -1,7 +1,5 @@
 repository: coderetreat/coderetreat.github.io
-collections:
-  blogs:
-    output: true
+permalink: /blog/:year/:month/:day/:title/
 exclude:
   - package.json
   - test
