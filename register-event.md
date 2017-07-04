@@ -7,4 +7,4 @@ This year, registering your event at coderetreat.org is easier than it has ever 
 
 Your JSON should follow [this schema](https://github.com/coderetreat/coderetreat.github.io/blob/master/events/event_schema.json). To help you with that, you can generate a valid JSON below:
 
-<script async src="//jsfiddle.net/wLahmdh4/4/embed/result/"></script>
+<script async src="//jsfiddle.net/wLahmdh4/5/embed/result/"></script>
