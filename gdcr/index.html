@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<div id="map" style="float: none; margin-right: auto;margin-left: auto;">
+  <div id="popup"></div>
+</div>
+
+<form class="pure-form">
+    <fieldset>
+        <label for="gdcrYear">Select GDCR year:</label>
+        <select id="gdcrYear" style="font-family: sans-serif;">
+            <option>2013</option>
+            <option>2014</option>
+            <option>2015</option>
+            <option selected>2016</option>
+        </select>
+    </fieldset>
+</form>
+
+<div id="summary"></div>
+
+{% for event in site.data.gdcr16 %}
+  Title: {{ event.title }} <br/>
+  Location: {{ event.city }}, {{ event.country }} <br/>
+  Added by: {{ event.addedBy }} <br/>
+  {{ event.details }} <br/>
+  <br/>
+  {{ event.description }}
+  <hr/>
+
+{% endfor %}
+
+<script>
+  $(function() {
+    initEventsOnMap('gdcr2016-stripped.json');
+
+    $('#gdcrYear').on('change', function(e) {
+      var year = e.target.value;
+      initEventsOnMap('gdcr'+year+'-stripped.json');
+    });
+  });
+</script>

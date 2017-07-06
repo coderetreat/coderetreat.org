@@ -1,13 +1,41 @@
+var translateToMapCoords = function(coords) {
+  return ol.proj.transform(coords, 'EPSG:4326', 'EPSG:3857')
+}
+
+var toPoint = function(loc) {
+  var coords = translateToMapCoords([loc.coords[1], loc.coords[0]]);
+  return new ol.geom.Point(coords);
+};
+
+var eventIconStyle = new ol.style.Style({
+  image: new ol.style.Icon({
+    scale: 0.05,
+    anchor: [0.5, 1],
+    src: '/images/map-pin.png'
+  })
+});
+
+var events = new ol.layer.Vector({
+  source: new ol.source.Vector(),
+  style: eventIconStyle
+});
+
+var initEventsOnMap = function(pathToLocationsJson) {
+  events.getSource().clear();
+  $.get(pathToLocationsJson, function(locations) {
+    $.each(locations, function() {
+      events.getSource().addFeature(
+        new ol.Feature({
+          geometry: toPoint(this),
+          name: this.name,
+          urls: this.urls
+        })
+      );
+    })
+  });
+};
+
 $(function() {
-  var translateToMapCoords = function(coords) {
-    return ol.proj.transform(coords, 'EPSG:4326', 'EPSG:3857')
-  }
-
-  var toPoint = function(loc) {
-    var coords = translateToMapCoords([loc.coords[1], loc.coords[0]]);
-    return new ol.geom.Point(coords);
-  };
-
   var styleCache = {};
   var countriesLayer = new ol.layer.Vector({
     source: new ol.source.GeoJSON({
@@ -25,32 +53,6 @@ $(function() {
       return styleCache[text];
     }
   });
-
-  var eventIconStyle = new ol.style.Style({
-    image: new ol.style.Icon({
-      scale: 0.05,
-      anchor: [0.5, 1],
-      src: 'images/map-pin.png'
-    })
-  });
-
-  var events = new ol.layer.Vector({
-    source: new ol.source.Vector(),
-    style: eventIconStyle
-  });
-
-
-  $.get('/geodata/locations.json', function(locations) {
-    $.each(locations, function() {
-      events.getSource().addFeature(
-        new ol.Feature({
-          geometry: toPoint(this),
-          name: this.name,
-          urls: this.urls
-        })
-      );
-    })
-  })
 
   var popupElem = document.getElementById('popup');
 
@@ -132,3 +134,5 @@ $(function() {
     }
   });
 });
+
+// initEventsOnMap('/geodata/locations.json');
