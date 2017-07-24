@@ -5,19 +5,19 @@ layout: default
 <section>
 <div class="xg_module xg_blog xg_blog_list ">
 
-  {% for blog in site.blogs %}
+  {% for post in site.posts %}
   <div class="xg_module_body">
     <h3 class="title">
-      <span class="xg_avatar"><a class="fn url" href="/profile/{{blog.author}}" title="{{blog.author}}">
+      <span class="xg_avatar"><a class="fn url" href="/profile/{{post.author}}" title="{{post.author}}">
       <span class="dy-avatar dy-avatar-48 ">
-        <img class="photo photo" src="/images/users/{{blog.author}}.png" alt=""></span></a></span>
-        <a href="{{blog.slug}}">{{blog.title}}</a>
+        <img class="photo photo" src="/images/users/{{post.author}}.png" alt=""></span></a></span>
+        <a href="{{ post.url | relative_url }}">{{post.title}}</a>
     </h3>
     <div class="postbody">
-      {{ blog.preview }}... <a href="{{blog.slug}}" class="xj_expandable">Continue</a>
+      {{ post.preview }}... <a href="{{post.slug}}" class="xj_expandable">Continue</a>
     </div>
     <p class="postedBy">
-      Added by <a href="/profile/{{blog.author}}">{{blog.author}}</a> on {{blog.datePosted}}
+      Added by <a href="/profile/{{post.author}}">{{post.author}}</a> on {{ post.date | date: "%b %-d, %Y" }}
   </div>
   {% endfor %}
 

@@ -4,13 +4,15 @@ layout: default
 <h1>{{ page.title }}</h1>
 <div class="xg_module xg_blog xg_blog_detail xg_blog_mypage xg_module_with_dialog">
   <div class="xg_headline xg_headline-img xg_headline-2l">
-    <div class="ib"><span class="xg_avatar">
-      <a class="fn url" href="/profile/{{ page.author }}" title="{{ page.author }}"><span class="dy-avatar dy-avatar-64 ">
-        <img class="photo photo" src="/images/users/{{ page.author }}.png" alt=""></span></a>
+    <div class="ib">
+      <span class="xg_avatar">
+        <span class="dy-avatar dy-avatar-64 ">
+          <img class="photo photo" src="/images/users/{{ page.author }}.png" alt="">
+        </span>
       </span>
     </div>
     <div class="postedBy">
-      Posted by <a href="/profile/{{ page.author }}">{{ page.author }}</a> on {{ page.datePosted | date_to_rfc822 }}
+      Posted by <a href="/profile/{{ page.author }}">{{ page.author }}</a> on {{ page.date | date: "%b %-d, %Y" }}
     </div>
   </div>
   <div class="xg_module_body">
