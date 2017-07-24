@@ -134,5 +134,3 @@ $(function() {
     }
   });
 });
-
-// initEventsOnMap('/geodata/locations.json');
