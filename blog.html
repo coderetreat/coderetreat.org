@@ -14,7 +14,7 @@ layout: default
         <a href="{{ post.url | relative_url }}">{{post.title}}</a>
     </h3>
     <div class="postbody">
-      {{ post.preview }}... <a href="{{post.slug}}" class="xj_expandable">Continue</a>
+      {{ post.preview }}... <a href="{{ post.url | relative_url }}" class="xj_expandable">Continue</a>
     </div>
     <p class="postedBy">
       Added by <a href="/profile/{{post.author}}">{{post.author}}</a> on {{ post.date | date: "%b %-d, %Y" }}
