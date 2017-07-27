@@ -1,0 +1,12 @@
+.announcement {
+  @include fill-parent;
+  padding: 0;
+  display: block;
+  max-width: 100%;
+  .announcement-body {
+    padding: 10px;
+    border-top: 1px dashed $dark;
+    @include span-columns(8 of 12);
+    @include shift(2);
+  }
+}

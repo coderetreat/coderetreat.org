@@ -19,7 +19,7 @@ We can use this data to create all the tools that bring us closer together on th
 
 ### What happens with all the old resources?
 
-We're in the process of moving the NING network to [archive.coderetreat.org](#) (not done as of now) so no information is lost while we focus on making [this project](https://github.com/coderetreat/coderetreat.github.io) the new landing page for all things related to Coderetreats.
+We're in the process of moving the NING network to [archive.coderetreat.org](http://archive.coderetreat.org) so no information is lost while we focus on making [this project](https://github.com/coderetreat/coderetreat.github.io) the new landing page for all things related to Coderetreats.
 
 We further began migrating [some content]({% link videos.html %}) to this project and will continue until we feel we covered all the relevant content that used to be available via blogs and forums on the NING network.
 
