@@ -1,4 +1,4 @@
-var mapEventsDataToTheProperFormat = function(data) {
+var mapEventsDataToMapFormat = function(data) {
   return Object.values(data).map(function(item) {
     return {
       "timeZone": item.timezone,

@@ -9,7 +9,7 @@ layout: default
 <script>
   $(function() {
     $.get('/events/gdcr2017.json', function(data) {
-      var gdcr2017Events = mapEventsDataToTheProperFormat(data);
+      var gdcr2017Events = mapEventsDataToMapFormat(data);
       addEventsToMap(gdcr2017Events);
     });
   });
