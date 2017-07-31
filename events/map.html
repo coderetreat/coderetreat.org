@@ -2,41 +2,12 @@
 layout: default
 ---
 
-<input type="text" />
-
 <div id="map" style="float: none; margin-right: auto;margin-left: auto;">
-  <div id="popup" class="ol-popup">
-    <a href="#" id="popup-closer" class="ol-popup-closer"></a>
-    <div id="popup-content"></div>
-  </div>
+  <div id="popup"></div>
 </div>
 
 <script>
   $(function() {
-    var container = document.getElementById('popup');
-    var content = document.getElementById('popup-content');
-    var overlay = new ol.Overlay({
-      element: container,
-      offset: [0, -40]
-    });
-
-    var mapEventsDataToTheProperFormat = function(data) {
-      return Object.values(data).map(function(item) {
-        return {
-          "timeZone": item.timezone,
-          "offset": item.utcOffset,
-          "country": item.location.country,
-          "urls": [item.url],
-          "name": item.title,
-          "coords": [
-            item.location.coordinates.latitude,
-            item.location.coordinates.longitude
-          ],
-          "city": item.location.city
-        }
-      })
-    };
-
     $.get('/events/gdcr2017.json', function(data) {
       var gdcr2017Events = mapEventsDataToTheProperFormat(data);
       addEventsToMap(gdcr2017Events);

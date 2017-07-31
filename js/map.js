@@ -1,3 +1,20 @@
+var mapEventsDataToTheProperFormat = function(data) {
+  return Object.values(data).map(function(item) {
+    return {
+      "timeZone": item.timezone,
+      "offset": item.utcOffset,
+      "country": item.location.country,
+      "urls": [item.url],
+      "name": item.title,
+      "coords": [
+        item.location.coordinates.latitude,
+        item.location.coordinates.longitude
+      ],
+      "city": item.location.city
+    }
+  })
+};
+
 var flyTo = function(map, coord, duration, resolution) {
   duration = duration || 500;
   const view = map.getView();
