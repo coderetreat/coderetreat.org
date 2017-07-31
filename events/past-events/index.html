@@ -18,26 +18,27 @@ layout: default
     </fieldset>
 </form>
 
-<div id="summary"></div>
-
-{% for event in site.data.gdcr16 %}
-  Title: {{ event.title }} <br/>
-  Location: {{ event.city }}, {{ event.country }} <br/>
-  Added by: {{ event.addedBy }} <br/>
-  {{ event.details }} <br/>
-  <br/>
-  {{ event.description }}
-  <hr/>
-
-{% endfor %}
+<div id="events"></div>
 
 <script>
   $(function() {
+    var renderEventTemplate = function(dataJson, template, container) {
+      $.get(dataJson, function(events) {
+        $.get(template, function(eventTemplate) {
+          var html =  $.templates(eventTemplate).render(events);
+          $(container).html(html);
+        });
+      });
+    };
+
     initEventsOnMap('gdcr2016-stripped.json');
+    renderEventTemplate('/events/gdcr2016.json', "event.tmpl", "#events");
+
 
     $('#gdcrYear').on('change', function(e) {
       var year = e.target.value;
       initEventsOnMap('gdcr'+year+'-stripped.json');
+      renderEventTemplate('/events/gdcr'+year+'.json', "event.tmpl", "#events");
     });
   });
 </script>
