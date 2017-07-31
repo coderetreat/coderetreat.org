@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<input type="text" />
+
+<div id="map" style="float: none; margin-right: auto;margin-left: auto;">
+  <div id="popup"></div>
+</div>
+
+<script>
+  $(function() {
+    var mapEventsDataToTheProperFormat = function(data) {
+      return Object.values(data).map(function(item) {
+        return {
+          "timeZone": item.timezone,
+          "offset": item.utcOffset,
+          "country": item.location.country,
+          "urls": [item.url],
+          "name": item.title,
+          "coords": [
+            item.location.coordinates.latitude,
+            item.location.coordinates.longitude
+          ],
+          "city": item.location.city
+        }
+      })
+    };
+
+    $.get('/events/gdcr2017.json', function(data) {
+      var gdcr2017Events = mapEventsDataToTheProperFormat(data);
+      addEventsToMap(gdcr2017Events);
+    });
+  });
+</script>

@@ -20,20 +20,24 @@ var events = new ol.layer.Vector({
   style: eventIconStyle
 });
 
-var initEventsOnMap = function(pathToLocationsJson) {
+var addEventsToMap = function(locations) {
   events.getSource().clear();
-  $.get(pathToLocationsJson, function(locations) {
-    $.each(locations, function() {
-      events.getSource().addFeature(
-        new ol.Feature({
-          geometry: toPoint(this),
-          name: this.name,
-          urls: this.urls
-        })
-      );
-    })
-  });
+  $.each(locations, function() {
+    events.getSource().addFeature(
+      new ol.Feature({
+        geometry: toPoint(this),
+        name: this.name,
+        urls: this.urls
+      })
+    );
+  })
+}
+
+var initEventsOnMap = function(pathToLocationsJson) {
+  $.get(pathToLocationsJson, addEventsToMap);
 };
+
+
 
 $(function() {
   var styleCache = {};
