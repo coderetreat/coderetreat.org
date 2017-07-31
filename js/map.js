@@ -1,3 +1,9 @@
+var flyTo = function(map, coord, duration, resolution) {
+  duration = duration || 500;
+  const view = map.getView();
+  view.animate({ duration: duration, center: coord, zoom: 5 });
+}
+
 var translateToMapCoords = function(coords) {
   return ol.proj.transform(coords, 'EPSG:4326', 'EPSG:3857')
 }
@@ -42,8 +48,8 @@ var initEventsOnMap = function(pathToLocationsJson) {
 $(function() {
   var styleCache = {};
   var countriesLayer = new ol.layer.Vector({
-    source: new ol.source.GeoJSON({
-      projection: 'EPSG:3857',
+    source:  new ol.source.Vector({
+      format: new ol.format.GeoJSON(),
       url: '/geodata/countries.geojson'
     }),
     style: function(feature, resolution) {
@@ -86,6 +92,22 @@ $(function() {
       maxZoom: 7,
       extent: [-17400000,-6040000,19400000,16200000]
     })
+  });
+
+  var geocoder = new Geocoder('nominatim', {
+    provider: 'photon',
+    lang: 'en',
+    placeholder: 'Search for ...',
+    limit: 5,
+    debug: true,
+    autoComplete: true,
+    keepOpen: false,
+    preventDefault: true
+  });
+  map.addControl(geocoder);
+
+  geocoder.on('addresschosen', function(evt){
+    flyTo(map, evt.coordinate);
   });
 
   // display popup on click
