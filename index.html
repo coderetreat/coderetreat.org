@@ -107,8 +107,9 @@ bullets: [
 
 <script>
   $(function() {
-    $.get('/events/gdcr2017.json', function(data) {
-      var gdcr2017Events = mapEventsDataToTheProperFormat(data);
+    $.get('/json/gdcr2017', function(eventsJsonString) {
+      var eventsJson = JSON.parse(eventsJsonString);
+      var gdcr2017Events = mapEventsDataToTheProperFormat(eventsJson);
       addEventsToMap(gdcr2017Events);
     });
   });

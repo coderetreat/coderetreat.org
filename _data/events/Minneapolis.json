@@ -5,6 +5,10 @@
     "@zrealmikejordan"
   ],
   "location": {
+    "coordinates": {
+      "latitude": 45.0257741,
+      "longitude": -93.191527
+    },
     "city": "Roseville",
     "country": "United States",
     "utcOffset": -5,
