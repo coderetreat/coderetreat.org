@@ -13,7 +13,8 @@ layout: default
             <option>2013</option>
             <option>2014</option>
             <option>2015</option>
-            <option selected>2016</option>
+            <option>2016</option>
+            <option selected>2017</option>
         </select>
     </fieldset>
 </form>
@@ -22,23 +23,13 @@ layout: default
 
 <script>
   $(function() {
-    var renderEventTemplate = function(dataJson, template, container) {
-      $.get(dataJson, function(events) {
-        $.get(template, function(eventTemplate) {
-          var html =  $.templates(eventTemplate).render(events);
-          $(container).html(html);
-        });
-      });
-    };
-
-    initEventsOnMap('gdcr2016-stripped.json');
-    renderEventTemplate('/events/gdcr2016.json', "event.tmpl", "#events");
-
+    renderEvents(2017);
 
     $('#gdcrYear').on('change', function(e) {
       var year = e.target.value;
-      initEventsOnMap('gdcr'+year+'-stripped.json');
-      renderEventTemplate('/events/gdcr'+year+'.json', "event.tmpl", "#events");
+      renderEvents(year);
     });
   });
 </script>
+
+<script type="text/javascript" src="/js/events.js"></script>
