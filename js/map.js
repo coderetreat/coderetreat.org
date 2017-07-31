@@ -1,17 +1,72 @@
+var mapEventsDataToTheProperFormat = function(data) {
+  return Object.values(data).map(function(item) {
+    return {
+      "timeZone": item.timezone,
+      "offset": item.utcOffset,
+      "country": item.location.country,
+      "urls": [item.url],
+      "name": item.title,
+      "coords": [
+        item.location.coordinates.latitude,
+        item.location.coordinates.longitude
+      ],
+      "city": item.location.city
+    }
+  })
+};
+
+var flyTo = function(map, coord, duration, resolution) {
+  duration = duration || 500;
+  const view = map.getView();
+  view.animate({ duration: duration, center: coord, zoom: 5 });
+}
+
+var translateToMapCoords = function(coords) {
+  return ol.proj.transform(coords, 'EPSG:4326', 'EPSG:3857')
+}
+
+var toPoint = function(loc) {
+  var coords = translateToMapCoords([loc.coords[1], loc.coords[0]]);
+  return new ol.geom.Point(coords);
+};
+
+var eventIconStyle = new ol.style.Style({
+  image: new ol.style.Icon({
+    scale: 0.05,
+    anchor: [0.5, 1],
+    src: '/images/map-pin.png'
+  })
+});
+
+var events = new ol.layer.Vector({
+  source: new ol.source.Vector(),
+  style: eventIconStyle
+});
+
+var addEventsToMap = function(locations) {
+  events.getSource().clear();
+  $.each(locations, function() {
+    events.getSource().addFeature(
+      new ol.Feature({
+        geometry: toPoint(this),
+        name: this.name,
+        urls: this.urls
+      })
+    );
+  })
+}
+
+var initEventsOnMap = function(pathToLocationsJson) {
+  $.get(pathToLocationsJson, addEventsToMap);
+};
+
+
+
 $(function() {
-  var translateToMapCoords = function(coords) {
-    return ol.proj.transform(coords, 'EPSG:4326', 'EPSG:3857')
-  }
-
-  var toPoint = function(loc) {
-    var coords = translateToMapCoords([loc.coords[1], loc.coords[0]]);
-    return new ol.geom.Point(coords);
-  };
-
   var styleCache = {};
   var countriesLayer = new ol.layer.Vector({
-    source: new ol.source.GeoJSON({
-      projection: 'EPSG:3857',
+    source:  new ol.source.Vector({
+      format: new ol.format.GeoJSON(),
       url: '/geodata/countries.geojson'
     }),
     style: function(feature, resolution) {
@@ -25,32 +80,6 @@ $(function() {
       return styleCache[text];
     }
   });
-
-  var eventIconStyle = new ol.style.Style({
-    image: new ol.style.Icon({
-      scale: 0.05,
-      anchor: [0.5, 1],
-      src: 'images/map-pin.png'
-    })
-  });
-
-  var events = new ol.layer.Vector({
-    source: new ol.source.Vector(),
-    style: eventIconStyle
-  });
-
-
-  $.get('/geodata/locations.json', function(locations) {
-    $.each(locations, function() {
-      events.getSource().addFeature(
-        new ol.Feature({
-          geometry: toPoint(this),
-          name: this.name,
-          urls: this.urls
-        })
-      );
-    })
-  })
 
   var popupElem = document.getElementById('popup');
 
@@ -80,6 +109,22 @@ $(function() {
       maxZoom: 7,
       extent: [-17400000,-6040000,19400000,16200000]
     })
+  });
+
+  var geocoder = new Geocoder('nominatim', {
+    provider: 'photon',
+    lang: 'en',
+    placeholder: 'Search for ...',
+    limit: 5,
+    debug: true,
+    autoComplete: true,
+    keepOpen: false,
+    preventDefault: true
+  });
+  map.addControl(geocoder);
+
+  geocoder.on('addresschosen', function(evt){
+    flyTo(map, evt.coordinate);
   });
 
   // display popup on click

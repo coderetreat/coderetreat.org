@@ -1,0 +1,76 @@
+{
+  "istanbul": {
+    "title": "İstanbul Global Day of Code Retreat ",
+    "url": "https://www.eventbrite.com/e/istanbul-global-day-of-code-retreat-tickets-35984937918",
+    "moderators": ["@tt_melih"],
+    "location": {
+      "city": "istanbul",
+      "country": "Turkey",
+      "coordinates": {
+        "latitude": 41.0799598,
+        "longitude": 29.0072429
+      },
+      "utcOffset": 3,
+      "timezone": "Europe/Istanbul"
+    }
+  },
+  "Nuremberg": {
+    "title": "GDCR17 @DATEV in Nuremberg",
+    "url": "https://ti.to/gdcr-nuernberg/2017",
+    "location": {
+      "timezone": "Europe/Berlin",
+      "city": "Nuremberg",
+      "country": "Germany",
+      "coordinates": {
+        "latitude": 49.45386,
+        "longitude": 11.0432813
+      }
+    },
+    "moderators": ["@Fischermaen", "@xelamrelos", "@marcoemrich"]
+  },
+  "Fulda": {
+    "title": "Global Day of Coderetreat 2017 Fulda",
+    "url": "https://beta.doodle.com/poll/eng47rzzqzchdsnc",
+    "moderators": ["Thomas Papendieck", "Dr. Martine Herpers"],
+    "location": {
+      "city": "Fulda",
+      "country": "Deutschland",
+      "coordinates": {
+        "latitude": 50.56522,
+        "longitude": 9.68457
+      },
+      "utcOffset": 2,
+      "timezone": "Europe/Berlin"
+    }
+  },
+  "frankfurt": {
+    "title": "Global Day of Coderetreat 2017 Frankfurt",
+    "url": "http://bit.ly/gdcr-2017-frankfurt",
+    "moderators": ["@svenlange", "@CodeRetreatFfm"],
+    "location": {
+      "city": "Frankfurt am Main",
+      "country": "Deutschland",
+      "coordinates": {
+        "latitude": 50.1213475,
+        "longitude": 8.4961386
+      },
+      "utcOffset": 2,
+      "timezone": "Europe/Berlin"
+    }
+  },
+  "Seattle": {
+    "title": "Global Day of Code Retreat 2017 - Seattle",
+    "url": "http://bit.ly/gdcr17seattle",
+    "moderators": ["@oshoukry"],
+    "location": {
+      "city": "Seattle",
+      "country": "USA",
+      "coordinates": {
+        "latitude": 47.5971153,
+        "longitude": -122.3285467
+      },
+      "utcOffset": -7,
+      "timezone": "America/Los_Angeles"
+    }
+  }
+}

@@ -102,3 +102,12 @@ bullets: [
         </p>
       </div>
     </section>
+
+<script>
+  $(function() {
+    $.get('/events/gdcr2017.json', function(data) {
+      var gdcr2017Events = mapEventsDataToTheProperFormat(data);
+      addEventsToMap(gdcr2017Events);
+    });
+  });
+</script>

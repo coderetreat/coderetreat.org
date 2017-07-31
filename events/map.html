@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<div id="map" style="float: none; margin-right: auto;margin-left: auto;">
+  <div id="popup"></div>
+</div>
+
+<script>
+  $(function() {
+    $.get('/events/gdcr2017.json', function(data) {
+      var gdcr2017Events = mapEventsDataToTheProperFormat(data);
+      addEventsToMap(gdcr2017Events);
+    });
+  });
+</script>
