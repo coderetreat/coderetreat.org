@@ -98,6 +98,9 @@ bullets: [
 
 <script>
   $(function() {
-    initEventsOnMap('/geodata/locations.json');
+    $.get('/events/gdcr2017.json', function(data) {
+      var gdcr2017Events = mapEventsDataToTheProperFormat(data);
+      addEventsToMap(gdcr2017Events);
+    });
   });
 </script>
