@@ -28,19 +28,21 @@ bullets: [
     </div>
 
     <section id="locations">
-        <h2>Last year, we had {{page.event_count}} events!</h2>
+        <h2>So far, we have {{site.data.events | size}} GDCR 2017 events!</h2>
 
         <div id="map">
           <div id="popup"></div>
       </div>
       <div class="map-aside">
         <p>
-        Last year, we had <strong>{{page.event_count}} participating cities</strong>!
-        </p> <p>
+        There are <strong>{{site.data.events | size}} events</strong> registered for GDCR 2017 so far! Add yours.
+        </p>
+        <p class="calltoaction"><a class="button" href="/register-event">Register your event!</a></p>
+         <p>
         This event truly is global,
         organized and run in local communities by volunteers like you.
         </p>
-        <p>Registrations for local events will start soon. Make sure to follow us on <strong><a href="https://twitter.com/coderetreat">Twitter</a></strong> so you don't miss any updates.</p>
+        <p>Make sure to follow us on <strong><a href="https://twitter.com/coderetreat">Twitter</a></strong> so you don't miss any updates.</p>
       </div>
     </section>
 
