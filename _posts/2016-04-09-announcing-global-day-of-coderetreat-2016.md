@@ -15,7 +15,7 @@ Last year, we had around 150 Coderetreats and 2,000 participants all over the gl
 
 What is a coderetreat? Coderetreat is a day­-long, intensive practice event focusing on the fundamentals of software development and design. The coderetreat format has proven itself to be a highly effective means of skill improvement by providing developers the opportunity to take part in focused practice away from the pressures of 'getting things done.' For more information, check out the [GDCR website](http://gdcr.coderetreat.org/).
 
-GDCR 2016 Edition will be brought to you by hundreds of passionate local facilitators worldwide and a team of global coordinators, including [Jim Hurne](https://twitter.com/jthurne), [Alin Pandichi](https://twitter.com/alinpandichi), [Raimo Radczewski](https://twitter.com/rradczewski), [Stafford Brooke](https://twitter.com/srbiv) and [Ivan Kusalic](https://twitter.com/ikusalic)ds.
+GDCR 2016 Edition will be brought to you by hundreds of passionate local facilitators worldwide and a team of global coordinators, including [Jim Hurne](https://twitter.com/jthurne), [Alin Pandichi](https://twitter.com/alinpandichi), [Raimo Radczewski](https://twitter.com/rradczewski), [Stafford Brooke](https://twitter.com/srbiv) and [Ivan Kusalic](https://twitter.com/ikusalic).
 
 Over the next couple of weeks, we will have more information about taking part in Global Day of Coderetreat 2016. Stay tuned by following [@coderetreat](https://twitter.com/coderetreat) and the [#gdcr16 hashtag](https://twitter.com/search/?q=%23gdcr16) on Twitter.
 
