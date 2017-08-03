@@ -23,4 +23,4 @@ Hope you are as excited as we are and are looking forward to an amazing event! *
 
 May the Cells be with you!
 
-![](https://lh3.googleusercontent.com/AXQI_kdSgso4BAo6gtAomkKsX6Auzg4lU0_sFAO-MpFCtuJn6NVUODRzEfetYB_l1wE3mOXQDpOuq1xXPrziZLM8pt2YF6ZQEGnRYqwVhr8uXxYncConlOE2qlgdXCZsKw =79x79)
+![](https://lh3.googleusercontent.com/AXQI_kdSgso4BAo6gtAomkKsX6Auzg4lU0_sFAO-MpFCtuJn6NVUODRzEfetYB_l1wE3mOXQDpOuq1xXPrziZLM8pt2YF6ZQEGnRYqwVhr8uXxYncConlOE2qlgdXCZsKw)
