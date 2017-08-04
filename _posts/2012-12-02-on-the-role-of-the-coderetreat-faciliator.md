@@ -1,6 +1,7 @@
 ---
 layout: post
-author: Corey Haines
+author: coreyhaines
+authorname: Corey Haines
 title: On the role of the coderetreat facilitator
 preview: The facilitator's role is to guide the participants through the various paths.  Learn how...
 ---

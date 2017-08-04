@@ -1,6 +1,7 @@
 ---
 layout: post
-author: Bob Allen
+author: curiousagilist
+authorname: Bob Allen
 title: Self Organizing Team Part 2 - Footballs
 preview: 'Below is a handout that was given at the beginning of the day. A second handout was given just after lunch. Together they define an exercise designed to require teams to work out and demonstrate these skills'
 ---

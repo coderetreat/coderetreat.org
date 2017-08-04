@@ -1,6 +1,7 @@
 ---
 layout: post
-author: Ivan Kusalic
+author: ikusalic
+authorname: Ivan Kusalic
 title: Announcing Global Day of Coderetreat 2016
 preview: We are excited to announce the date for the Global Day of Coderetreat 2016! This year GDCR will happen on <strong>Saturday, October 22nd</strong>!
 ---

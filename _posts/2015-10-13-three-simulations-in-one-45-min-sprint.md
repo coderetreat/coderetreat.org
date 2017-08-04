@@ -1,6 +1,7 @@
 ---
 layout: post
-author: Bob Allen
+author: curiousagilist
+authorname: Bob Allen
 title: Three Simulations in One 45 Min Sprint
 preview: We run 45 minute "sprints" where pairs choose a kata to work on using ping-pong or pilot-navigator pairing, and follow each sprint with a short retrospective. For this exercise I ask everyone to agree on a single language, or choose from among two languages that everyone is OK with
 ---
