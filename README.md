@@ -1,44 +1,54 @@
-# coderetreat.org [![Build Status](https://travis-ci.org/coderetreat/coderetreat.github.io.svg?branch=master)](https://travis-ci.org/coderetreat/coderetreat.github.io)
+# Registering your event at coderetreat.org
 
-## Registering your event
+This year, registering your event at coderetreat.org is easier than it has ever been! Like a lot of other community events, we're using a *Pull Request*-based process for registrations:
 
-If you want to register your event, please fork this repository, copy [this template](https://github.com/coderetreat/coderetreat.github.io/tree/master/_data/events/TEMPLATE), rename it to `$YOURCITY.json` (keep it in `_data/events/` though!) and fill in your details.
+1. Fork [the Coderetreat git repository](https://github.com/coderetreat/coderetreat.github.io)
 
-The only required fields are `title`, `url`, either `location.utcOffset` or `location.timezone`, `location.country`, `location.city`.
 
-If you want your event to show up on our map as well, please fill out `location.coordinates` with the coordinates of where your event will take place.
+2. Create a new file called `$YOURCITY.json` in the `_data/events/` of the repository.  You can generate a file automatically by using [this schema](https://github.com/coderetreat/coderetreat.github.io/blob/master/events/event_schema.json). To help you with that, you can generate a valid JSON below:
+ <script async src="//jsfiddle.net/wLahmdh4/5/embed/result/"></script>
 
-If you send us your Pull Request, Travis will automatically verify that your JSON Payload is valid. You can try it out locally for yourself by running;
+   The only required fields are:
+    * `title`
+    * `url`
+    * either `location.utcOffset` or `location.timezone`
+    * `location.country`
+    * `location.city`
 
-```sh
-cd coderetreat.github.io/ # Change into the repository
-npm install               # Install all dependencies
-npm test                  # Verify all events
-```
+   If you want your event to show up on our map as well, please fill out `location.coordinates` with the coordinates of your city.
+   You can find them by typing the city name into Google Maps (or OSM for that matter) and extracting the coordinates from the URL.
 
-NodeJS is required to be installed on your machine to run the verification of the json file.
+   For Berlin, [Google Maps](https://google.com/maps/) yields the following url:
 
-This will validate all registrations in your `_data/events/` folder against the [schema](https://github.com/coderetreat/coderetreat.github.io/blob/master/events/event_schema.json).
+   ```
+   https://www.google.com/maps/@52.5187604,13.4009883,16.3z
+                                ^^^^^^^^^^ ^^^^^^^^^^
+                                Latitude   Longitude
+   ```
 
-### Finding the coordinates of your event
+   With [OpenStreetMap](https://www.openstreetmap.org), the URL looks like this:
+   ```
+   https://www.openstreetmap.org/#map=15/52.5188/13.4010
+                                         ^^^^^^^ ^^^^^^^
+                                         Lat.    Long.
+   ```
 
-It basically can be as easy as plugging your city name into Google Maps (or OSM for that matter) and extracting the coordinates from the URL.
 
-For Berlin, [Google Maps](https://google.com/maps/) yields the following url:
+3. Submit a pull request:
 
-```
-https://www.google.com/maps/@52.5187604,13.4009883,16.3z
-                             ^^^^^^^^^^ ^^^^^^^^^^
-                             Latitude   Longitude
-```
+   ```sh
+   cd coderetreat.github.io/ # Change into the repository
+   npm install               # Install all dependencies
+   npm test                  # Verify all events
+   ```
 
-With [OpenStreetMap](https://www.openstreetmap.org), the URL looks like this:
-```
-https://www.openstreetmap.org/#map=15/52.5188/13.4010
-                                      ^^^^^^^ ^^^^^^^
-                                      Lat.    Long.
-```
 
-## Contributing
+4. Travis-CI will automatically verify that your JSON file is valid (it should show up [here](https://travis-ci.org/coderetreat/coderetreat.github.io/builds/229542435#L209) in the test output) 
 
-TBD
+   *If you would like to  to run the verification of the json file locally, then you must have NodeJS installed on your machine.*
+
+
+
+5. The Coderetreat coordinators will then merge your request as soon as possible.
+
+
