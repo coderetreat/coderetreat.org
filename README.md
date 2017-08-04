@@ -43,7 +43,7 @@ This year, registering your event at coderetreat.org is easier than it has ever 
    ```
 
 
-4. Travis-CI will automatically verify that your JSON file is valid (it should show up [here](https://travis-ci.org/coderetreat/coderetreat.github.io/builds/229542435#L209) in the test output) 
+4. Travis-CI will automatically verify that your JSON file is valid (it should show up [here](https://travis-ci.org/coderetreat/coderetreat.github.io/pull_requests) in the test output) 
 
    *If you would like to  to run the verification of the json file locally, then you must have NodeJS installed on your machine.*
 
