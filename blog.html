@@ -3,14 +3,13 @@ layout: default
 ---
 <h1>Blogposts</h1>
 <section>
-<div class="xg_module xg_blog xg_blog_list ">
-
+<div>
   {% for post in site.posts %}
-  <div class="xg_module_body">
+  <div>
     <h3 class="title">
-      <span class="xg_avatar"><a class="fn url" href="http://github.com/{{post.author}}" title="{{post.authorname}}">
-      <span class="dy-avatar dy-avatar-48 ">
-        <img class="photo photo" src="https://avatars.githubusercontent.com/{{post.author}}" style="border-radius: 30px" height="60px" alt=""></span></a></span>
+      <span><a class="fn url" href="http://github.com/{{post.author}}" title="{{post.authorname}}">
+      <span>
+        <img class="photo" src="https://avatars.githubusercontent.com/{{post.author}}" style="border-radius: 30px" height="60px" alt=""></span></a></span>
         <a href="{{ post.url | relative_url }}">{{post.title}}</a>
     </h3>
     <div class="postbody">
