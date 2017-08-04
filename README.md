@@ -5,9 +5,19 @@ This year, registering your event at coderetreat.org is easier than it has ever 
 1. Fork [the Coderetreat git repository](https://github.com/coderetreat/coderetreat.github.io),   current status: [![Build Status](https://travis-ci.org/coderetreat/coderetreat.github.io.svg?branch=master)](https://travis-ci.org/coderetreat/coderetreat.github.io)
 
 
-2. Create a new file called `$YOURCITY.json` in the `_data/events/` of the repository.  You can generate a file automatically by using [this schema](https://github.com/coderetreat/coderetreat.github.io/blob/master/events/event_schema.json). To help you with that, you can generate a valid JSON below:
- <script async src="//jsfiddle.net/wLahmdh4/5/embed/result/"></script>
+2. Create a new file called `$YOURCITY.json` in the `_data/events/` of the repository.
+   {% if page.layout != null %} 
+   You can either:
+   * Generate a file automatically by using [this schema](https://github.com/coderetreat/coderetreat.github.io/blob/master/events/event_schema.json). 
 
+   * Generate a valid JSON below:
+     <script async src="//jsfiddle.net/wLahmdh4/5/embed/result/"></script>
+
+   {% else %}
+   You can generate a file automatically by using [this schema](https://github.com/coderetreat/coderetreat.github.io/blob/master/events/event_schema.json). 
+
+   {% endif %}
+  
    The only required fields are:
     * `title`
     * `url`
@@ -45,7 +55,7 @@ This year, registering your event at coderetreat.org is easier than it has ever 
 
 4. Travis-CI will automatically verify that your JSON file is valid (it should show up [here](https://travis-ci.org/coderetreat/coderetreat.github.io/pull_requests) in the test output) 
 
-   *If you would like to  to run the verification of the json file locally, then you must have NodeJS installed on your machine.*
+   *If you would like to  to run the verification of the JSON file locally, then you must have NodeJS installed on your machine.*
 
 
 
