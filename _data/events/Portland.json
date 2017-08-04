@@ -3,7 +3,7 @@
   "url": "https://www.meetup.com/PDX-Software-Practice/",
   "location": {
     "utcOffset": -8,
-    "timezone": "Pacific Standard",
+    "timezone": "America/Los_Angeles",
     "city": "Portland, OR",
     "country": "USA",
     "coordinates": {
