@@ -2,7 +2,7 @@
 
 This year, registering your event at coderetreat.org is easier than it has ever been! Like a lot of other community events, we're using a *Pull Request*-based process for registrations:
 
-1. Fork [the Coderetreat git repository](https://github.com/coderetreat/coderetreat.github.io)
+1. Fork [the Coderetreat git repository](https://github.com/coderetreat/coderetreat.github.io),   current status: [![Build Status](https://travis-ci.org/coderetreat/coderetreat.github.io.svg?branch=master)](https://travis-ci.org/coderetreat/coderetreat.github.io)
 
 
 2. Create a new file called `$YOURCITY.json` in the `_data/events/` of the repository.  You can generate a file automatically by using [this schema](https://github.com/coderetreat/coderetreat.github.io/blob/master/events/event_schema.json). To help you with that, you can generate a valid JSON below:
