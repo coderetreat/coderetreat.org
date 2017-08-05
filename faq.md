@@ -5,51 +5,36 @@ layout: default
 
 [General](#general)
 
-[What are the basic guiding principles of the Global Day of Coderetreat?](#what-are-the-basic-guiding-principles-of-the-global-day-of-coderetreat)
-
-[What is the ultimate goal of the GDCR?](#what-is-the-ultimate-goal-of-the-gdcr)
-
-[What does it mean to host a Coderetreat? What is a host responsible for?](#what-does-it-mean-to-host-a-coderetreat-what-is-a-host-responsible-for)
-
-[How do I register to become a host?](#how-do-i-register-to-become-a-host)
-
-[Is there a place where I can exchange ideas with other hosts and facilitators?](#is-there-a-place-where-i-can-exchange-ideas-with-other-hosts-and-facilitators)
-
-[I only have a few registered attendees, but the event is still a few months away. Should I be concerned?](#i-only-have-a-few-registered-attendees-but-the-event-is-still-a-few-months-away-should-i-be-concerned)
-
-[Can I charge a fee for the Coderetreat?](#can-i-charge-a-fee-for-the-coderetreat)
-
-[Advertising for the Global Day of Coderetreat](#advertising-for-the-global-day-of-coderetreat)
-
-[Where should I advertise my local Coderetreat?](#where-should-i-advertise-my-local-coderetreat)
-
-[How do I list my event on Coderetreat.org?](#how-do-i-list-my-event-on-coderetreatorg)
+- [What are the basic guiding principles of the Global Day of Coderetreat?](#what-are-the-basic-guiding-principles-of-the-global-day-of-coderetreat)
+- [What is the ultimate goal of the GDCR?](#what-is-the-ultimate-goal-of-the-gdcr)
+- [What does it mean to host a Coderetreat? What is a host responsible for?](#what-does-it-mean-to-host-a-coderetreat-what-is-a-host-responsible-for)
+- [How do I become a host or facilitator?](#how-do-i-become-a-host-or-facilitator)
+- [Is there a place where I can exchange ideas with other hosts and facilitators?](#is-there-a-place-where-i-can-exchange-ideas-with-other-hosts-and-facilitators)
 
 [Planning for GDCR](#planning-for-gdcr)
+- [How do I register my event on Coderetreat.org?](#how-do-i-register-my-event-on-coderetreatorg)
+- [When should I open registration for my local Coderetreat?](#when-should-i-open-registration-for-my-local-coderetreat)
+- [What service should I use to manage registration?](#what-service-should-i-use-to-manage-registration)
+- [How many participants should I plan for?](#how-many-participants-should-i-plan-for)
+- [Should I plan on providing breakfast for participants in addition to lunch? And coffee throughout the day?](#should-i-plan-on-providing-breakfast-for-participants-in-addition-to-lunch-and-coffee-throughout-the-day)
+- [Can I charge a fee for the Coderetreat?](#can-i-charge-a-fee-for-the-coderetreat)
+- [I only have a few registered attendees, but the event is still a few months away. Should I be concerned?](#i-only-have-a-few-registered-attendees-but-the-event-is-still-a-few-months-away-should-i-be-concerned)
 
-[When should I open registration for my local Coderetreat?](#When should I open registration for my local Coderetreat)
-
-[What service should I use to manage registration?](#)
-
-[How many participants should I plan for?](#)
-
-[Should I plan on providing breakfast for participants in addition to lunch? And coffee throughout the day?](#)
+[Advertising](#advertising)
+- [Where should I advertise my local Coderetreat?](#where-should-i-advertise-my-local-coderetreat)
 
 [Hosting a Coderetreat](#hosting-a-coderetreat)
-
-[As a host, what do I need to do to prepare for the Global Day of Coderetreat?](#as-a-host-what-do-i-need-to-do-to-prepare-for-the-global-day-of-coderetreat)
-
-[What are the host’s responsibilities on the day of the Coderetreat?](#what-are-the-hosts-responsibilities-on-the-day-of-the-coderetreat)
+- [As a host, what do I need to do to prepare for the Global Day of Coderetreat?](#as-a-host-what-do-i-need-to-do-to-prepare-for-the-global-day-of-coderetreat)
+- [What are the host’s responsibilities on the day of the Coderetreat?](#what-are-the-hosts-responsibilities-on-the-day-of-the-coderetreat)
 
 [Sponsorship](#sponsorship)
-
-[How can I find sponsors for my local Coderetreat?](#how-can-i-find-sponsors-for-my-local-coderetreat)
-
-[How much should I tell sponsors lunch will cost per participant?](#how-much-should-i-tell-sponsors-lunch-will-cost-per-participant)
-
-[I have a sponsor who wants to give away SWAG (Stuff We All Get) or promotional materials at the event. Is this okay?](#i-have-a-sponsor-who-wants-to-give-away-swag-stuff-we-all-get-or-promotional-materials-at-the-event-is-this-okay)
+- [How can I find sponsors for my local Coderetreat?](#how-can-i-find-sponsors-for-my-local-coderetreat)
+- [How much should I tell sponsors lunch will cost per participant?](#how-much-should-i-tell-sponsors-lunch-will-cost-per-participant)
+- [I have a sponsor who wants to give away SWAG (Stuff We All Get) or promotional materials at the event. Is this okay?](#i-have-a-sponsor-who-wants-to-give-away-swag-stuff-we-all-get-or-promotional-materials-at-the-event-is-this-okay)
 
 
+
+----------------------------
 # General
 
 ## What are the basic guiding principles of the Global Day of Coderetreat?
@@ -92,56 +77,22 @@ The host’s role in Coderetreat is very important. Without someone to find loca
 
 During the Global Day of Coderetreat, hosts play an even more important role. Because GDCR is a bigger event, it usually requires more effort to organize than a typical Coderetreat.  On the day of GDCR, while the facilitator is busy facilitating, the host helps the group engage the larger community.
 
-## How do I register to become a host?
+## How do I become a host or facilitator?
 
-You can register to become a host by filling out the [host and facilitator registration form](http://goo.gl/forms/Px0ytk6ZS7ZQAdew1) .
+By registering an event, you're automatically considered a host or facilitator, no registration necesssary!
+However, we strongly suggest attending a host or facilitator [training](/training) session and joining the GDCR [Slack channel](/slack).
 
 ## Is there a place where I can exchange ideas with other hosts and facilitators?
 
-Yes you can! We are glad you asked because we need your help to achieve our goal of 200 participating cities! To get started, fill in the [host and facilitator registration form](http://goo.gl/forms/Px0ytk6ZS7ZQAdew1) and we will give you access to leaders-only mailing lists and other resources to help you plan your Coderetreat
+Yes! Join the [Slack channel](/slack) to particpate in discussion about organizing and running a Coderetreat.
 
-## I only have a few registered attendees, but the event is still a few months away. Should I be concerned?
 
-No need to be concerned yet. A lot of Coderetreats don’t start to fill up until closer to the date of the actual Coderetreat.
-
-Don’t let a small turnout stop you from going forward with the Coderetreat! You can hold a Coderetreat with about 10 people and still have a good day. In fact, sometimes people learn more at the smaller Coderetreats than they do at the larger ones.
-
-If you are in this situation, then you may have opened registration too early. We’ve learned opening registration about one month before a Coderetreat (September 22nd for GDCR) tends to result in more overall attendees than opening registration at some other date.  That said, you shouldn’t close registration if it is already open. Instead, think about sending out another set of advertisements on September 22nd. See [When should I open registration for my local Coderetreat?](#heading=h.1ksv4uv)[ ](#heading=h.1ksv4uv)for more information on this topic.
-
-## Can I charge a fee for the Coderetreat?
-
-From the very beginning, Coderetreat has been a free event. The "free admission" property of Coderetreat is important. In most locations, community events are typically free and we want to keep Coderetreat a community-oriented event. In addition, keeping the Coderetreat free-of-charge makes it possible for any developer to attend.
-
-As an alternative to charging a fee, you could ask participants for a refundable deposit. You can collect the deposit at registration time, and refund it if the participants arrive. 
-
-Collecting a refundable deposit is a useful way to ensure that people show up. It is pretty common for people to sign up for a free event and then not show up on the day. This can be unfair to other people who wanted to sign up (not to mention sponsors, as well as wasting food).
-
-We recommend you use Eventbrite if you plan to charge a refundable deposit. You can either use PayPal to collect the deposit (and then use PayPal to refund the deposit including the associated fees), or you can have Eventbrite collect the fees and then refund the deposit through Eventbrite’s interface.
-
-If you decide to use Eventbrite to collect and refund the deposit (as opposed to PayPal), and you like to keep records of who has attended a Coderetreat, then you'll want to[ export the attendee list](https://www.eventbrite.com/support/articles/en_US/How_To/how-to-edit-and-export-an-attendee-summary-report?lg=en_US) the night before the Coderetreat (or just before you start refunding deposits). When you refund a ticket in Eventbrite, it deletes the person's registration information.
-
-# Advertising for the Global Day of Coderetreat
-
-## Where should I advertise my local Coderetreat?
-
-There are many places. First, you should list your event on [Coderetreat.org ](http://Coderetreat.org/events/event/listByType?type=gdcr16)(see the next question for details). The Coderetreat.org website is the central place for all Coderetreat event listings so your event is sure to be seen by Coderetreat enthusiasts.
-
-You can also list your event using an alternative registration system. A lot of hosts like to use [Eventbrite](http://www.eventbrite.com/) or [gathers.us](http://gathers.us/). We’ve also heard some people really like to use [meetup.com](http://meetup.com). 
-
-Finally, you should advertise your event as much as possible within your local community. There are many ways to advertise your event locally:
-
-* Announce the Coderetreat on local user group mailing lists
-* Post flyers at your company and at other tech companies in the area (with permission, of course)
-* Tell your friends to spread the word
-* Talk on a podcast or a local radio show
-
-When you join the GDCR Google Group (by [registering to host](http://goo.gl/forms/Px0ytk6ZS7ZQAdew1)), you will be given access to a collection of resources to help you advertise your event (including flyers, email templates, talking points, etc).
-
-## How do I list my event on Coderetreat.org?
-
-Please don’t use the NING network on Coderetreat.org to register your local event just yet. We are working on implementing an easier workflow for everyone involved.
-
+----------------------------
 # Planning for GDCR
+
+## How do I register my event on Coderetreat.org?
+
+Follow the intructions [here](/register-event).
 
 ## When should I open registration for my local Coderetreat?
 
@@ -155,7 +106,6 @@ It’s recommended that you open registration on Thursday, September 22nd:
 In short, Coderetreat.org is an outstanding place to advertise and announce your Coderetreat. However, it is not a method for actually collecting registrations.
 
 Instead, we recommend using a dedicated event registration service. The three most-popular are [Eventbrite](http://www.eventbrite.com/), [meetup.com](http://www.meetup.com/), and [gathers.us](http://gathers.us/), but there are many other registration services. Feel free to use the service you are most comfortable with.
-
 
 ## How many participants should I plan for?
 
@@ -171,6 +121,44 @@ It is wonderful if you can supply coffee (and other morning drinks) for people a
 
 Breakfast typically in US costs US Dollars 100 from Dunkin Donuts. Coffee for all day typically costs around 50 US Dollars.
 
+## Can I charge a fee for the Coderetreat?
+
+From the very beginning, Coderetreat has been a free event. The "free admission" property of Coderetreat is important. In most locations, community events are typically free and we want to keep Coderetreat a community-oriented event. In addition, keeping the Coderetreat free-of-charge makes it possible for any developer to attend.
+
+As an alternative to charging a fee, you could ask participants for a refundable deposit. You can collect the deposit at registration time, and refund it if the participants arrive. 
+
+Collecting a refundable deposit is a useful way to ensure that people show up. It is pretty common for people to sign up for a free event and then not show up on the day. This can be unfair to other people who wanted to sign up (not to mention sponsors, as well as wasting food).
+
+We recommend you use Eventbrite if you plan to charge a refundable deposit. You can either use PayPal to collect the deposit (and then use PayPal to refund the deposit including the associated fees), or you can have Eventbrite collect the fees and then refund the deposit through Eventbrite’s interface.
+
+If you decide to use Eventbrite to collect and refund the deposit (as opposed to PayPal), and you like to keep records of who has attended a Coderetreat, then you'll want to[ export the attendee list](https://www.eventbrite.com/support/articles/en_US/How_To/how-to-edit-and-export-an-attendee-summary-report?lg=en_US) the night before the Coderetreat (or just before you start refunding deposits). When you refund a ticket in Eventbrite, it deletes the person's registration information.
+
+## I only have a few registered attendees, but the event is still a few months away. Should I be concerned?
+
+No need to be concerned yet. A lot of Coderetreats don’t start to fill up until closer to the date of the actual Coderetreat.
+
+Don’t let a small turnout stop you from going forward with the Coderetreat! You can hold a Coderetreat with about 10 people and still have a good day. In fact, sometimes people learn more at the smaller Coderetreats than they do at the larger ones.
+
+If you are in this situation, then you may have opened registration too early. We’ve learned opening registration about one month before a Coderetreat (September 22nd for GDCR) tends to result in more overall attendees than opening registration at some other date.  That said, you shouldn’t close registration if it is already open. Instead, think about sending out another set of advertisements on September 22nd. See [When should I open registration for my local Coderetreat?](#when-should-i-open-registration-for-my-local-coderetreat) for more information on this topic.
+
+----------------------------
+# Advertising
+
+## Where should I advertise my Coderetreat?
+
+There are many places. First, you should list your event on [Coderetreat.org](/register-event)(see the next question for details). The Coderetreat.org website is the central place for all Coderetreat [event listings](/events) so your event is sure to be seen by Coderetreat enthusiasts.
+
+You can also list your event using an alternative registration system. A lot of hosts like to use [Eventbrite](http://www.eventbrite.com/) or [gathers.us](http://gathers.us/). We’ve also heard some people really like to use [meetup.com](http://meetup.com). 
+
+Finally, you should advertise your event as much as possible within your local community. There are many ways to advertise your event locally:
+
+* Announce the Coderetreat on local user group mailing lists
+* Post flyers at your company and at other tech companies in the area (with permission, of course)
+* Tell your friends to spread the word
+* Talk on a podcast or a local radio show
+
+
+----------------------------
 # Hosting a Coderetreat
 
 ## As a host, what do I need to do to prepare for the Global Day of Coderetreat?
@@ -185,7 +173,6 @@ There are a lot of things to do to get ready for your Coderetreat. Here are some
 * And don’t forget to have fun and to create fun
 
 However, **_don’t let this list overwhelm you_**. Most of the items on the list are fairly easy. And you have a large community of hosts (both on the GDCR Google Group and on Coderetreat.org) to help you along the way.
-
 
 
 ## What are the host’s responsibilities on the day of the Coderetreat?
@@ -209,6 +196,7 @@ As you can see, the host is critical to the success of the Coderetreat. Without 
 
 No! This is really important: **_Participation in global events and activities is entirely optional_**. Keep it simple, and only do what you know you can do well. If you feel overwhelmed, then don’t feel like you need to do that extra thing someone suggested on the mailing list.
 
+----------------------------
 # Sponsorship
 
 ## How can I find sponsors for my local Coderetreat?
