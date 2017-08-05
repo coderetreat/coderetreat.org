@@ -1,6 +1,6 @@
 #hero {
   $bg-height: 800vw / 14;
-  height: 85vh;
+  height: 55vh;
   overflow: hidden;
   background-image: url("images/mountain_path.svg");
   background-size: cover;
@@ -9,9 +9,9 @@
     h1 { font-family: "OrbitronBlack"; }
     h2 { font-size: 1.5em; }
     @include span-columns(7 of 12);
-    @include shift(4.5);
+    @include shift(3.5);
     font-family: $title-font;
-    margin-top: 4em;
+    margin-top: 2em;
     font-size: 1.6em;
     color: $dark;
     text-align: center;

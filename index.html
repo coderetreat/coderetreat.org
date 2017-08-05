@@ -19,7 +19,6 @@ bullets: [
       <div class="header">
         <h1><img src="images/logo_400x400.jpg" height=40 alt="Coderetreat logo" style="border-radius: 50px;"> Global Day of Coderetreat</h1>
         <h2>November 18, 2017</h2>
-
         <p>a day to celebrate passion and software craftsmanship</p>
         <p class="calltoaction">
           <a class="button" href="/register-event">Register Your Event!</a>
@@ -28,19 +27,16 @@ bullets: [
     </div>
 
     <section id="locations">
-        <h2>So far, we have {{site.data.events | size}} GDCR 2017 events!</h2>
+        <h2>So far, we have <a href="/events">{{site.data.events | size}} GDCR 2017 events</a>!</h2>
 
         <div id="map">
           <div id="popup"></div>
       </div>
       <div class="map-aside">
         <p>
-        There are <strong>{{site.data.events | size}} events</strong> registered for GDCR 2017 so far! Add yours.
+        There are <strong><a href="/events">{{site.data.events | size}} events</a></strong> registered for GDCR 2017 so far!
         </p>
-        <p class="calltoaction"><a class="button" href="/register-event">Register your event!</a></p>
-         <p>
-        This event truly is global,
-        organized and run in local communities by volunteers like you.
+        This event truly is global,vorganized and run in local communities by volunteers like you.
         </p>
         <p>Make sure to follow us on <strong><a href="https://twitter.com/coderetreat">Twitter</a></strong> so you don't miss any updates.</p>
       </div>
