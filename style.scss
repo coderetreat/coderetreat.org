@@ -14,6 +14,7 @@
 @import "transparent-overlay";
 @import "timeline";
 @import "blogs";
+@import "image_size";
 
 @import "landing/hero";
 @import "landing/map";
@@ -21,6 +22,7 @@
 @import "landing/hosting";
 @import "landing/announcement";
 @import "landing/sponsors";
+
 
 #content {
   @include outer-container;
@@ -35,16 +37,14 @@
   .video {
     margin: 10px;
     padding-bottom: 5px;
-    
+
     font-size: .8em;
     text-align: center;
 
-    iframe { 
+    iframe {
       border: 0px solid $green;
     }
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     // box-shadow: 5px 5px 5px $dark;
   }
 }
-
-
