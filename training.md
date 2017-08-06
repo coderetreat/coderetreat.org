@@ -14,6 +14,13 @@ layout: default
         {% endfor %}
       </div>
 
+      <h1>GDCR calendar</h1>
+      <div class="tip">Use the calendar below to get a sense of when the next training sessions are happening.</div>
+
+      <div class="Umd">
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=30td8sjjqdjb6j1aovas0tg0ug%40group.calendar.google.com&amp;color=%235F6B02&amp;ctz=Europe%2FBucharest" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      </div>
+
       <hr/>
 
       <div id='past-training'>
