@@ -9,7 +9,7 @@
     h1 { font-family: "OrbitronBlack"; }
     h2 { font-size: 1.5em; }
     @include span-columns(7 of 12);
-    @include shift(3.5);
+    @include shift(4.5);
     font-family: $title-font;
     margin-top: 2em;
     font-size: 1.6em;
