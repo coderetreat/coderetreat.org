@@ -2,7 +2,7 @@
   $bg-height: 800vw / 14;
   height: 55vh;
   overflow: hidden;
-  background-image: url("images/mountain_path.svg");
+  background-image: url("/images/mountain_path.svg");
   background-size: cover;
   background-attachment: fixed;
   .header {
@@ -37,7 +37,7 @@
     background-attachment: scroll;
   }
   @include media($mobile) {
-    background-image: url("images/mountain_path_with_title.svg");
+    background-image: url("/images/mountain_path_with_title.svg");
     background-size: 100% $bg-height;
     background-repeat: no-repeat;
     background-attachment: scroll;
