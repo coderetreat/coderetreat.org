@@ -1,0 +1,16 @@
+{
+  "title": "GDCR17 in Prague",
+  "url": "https://coderetreat.cz/",
+  "moderators": [
+    "@coderetreatcz",
+    "@alesroubicek",
+    "@jirkapenzes",
+    "@marianschubert"
+  ],
+  "location": {
+    "city": "Prague",
+    "country": "Czech Republic",
+    "utcOffset": 2,
+    "timezone": "Europe/Prague"
+  }
+}
