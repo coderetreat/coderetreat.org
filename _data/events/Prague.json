@@ -10,6 +10,10 @@
   "location": {
     "city": "Prague",
     "country": "Czech Republic",
+    "coordinates": {
+      "latitude": 50.0595854,
+      "longitude": 14.3255418
+    },
     "utcOffset": 2,
     "timezone": "Europe/Prague"
   }
