@@ -1,8 +1,8 @@
 #hero {
   $bg-height: 800vw / 14;
-  height: 85vh;
+  height: 55vh;
   overflow: hidden;
-  background-image: url("images/mountain_path.svg");
+  background-image: url("/images/mountain_path.svg");
   background-size: cover;
   background-attachment: fixed;
   .header {
@@ -11,7 +11,7 @@
     @include span-columns(7 of 12);
     @include shift(4.5);
     font-family: $title-font;
-    margin-top: 4em;
+    margin-top: 2em;
     font-size: 1.6em;
     color: $dark;
     text-align: center;
@@ -37,7 +37,7 @@
     background-attachment: scroll;
   }
   @include media($mobile) {
-    background-image: url("images/mountain_path_with_title.svg");
+    background-image: url("/images/mountain_path_with_title.svg");
     background-size: 100% $bg-height;
     background-repeat: no-repeat;
     background-attachment: scroll;

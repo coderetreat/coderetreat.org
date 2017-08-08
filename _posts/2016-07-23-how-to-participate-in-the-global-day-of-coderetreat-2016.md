@@ -1,6 +1,7 @@
 ---
 layout: post
-author: Ivan Kusalic
+author: ikusalic
+authorname: Ivan Kusalic
 title: How to participate in the Global Day of Coderetreat 2016
 preview: The <strong>Saturday, October 22nd</strong> is getting closer and with it the Global Day of Coderetreat 2016. It's now the time to consider how you'll participate in the event. Here are the possibilities
 ---

@@ -11,7 +11,7 @@ $navbar-padding: $gutter/2;
     @include outer-container;
     a {
       display: block;
-      @include span-columns(2 of 12);
+      @include span-columns(1 of 8);
       text-align: left;
     }
     .logo img { max-height: $navbar-height - 2*$navbar-padding; }
