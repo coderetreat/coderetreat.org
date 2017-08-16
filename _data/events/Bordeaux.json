@@ -1,0 +1,17 @@
+{
+  "title": "GDRC17 in Bordeaux",
+  "url": "https://www.meetup.com/software-craftsmanship-bdx/events/242467166",
+  "moderators": [
+    "@lilobase"
+  ],
+  "location": {
+    "city": "Bordeaux",
+    "country": "France",
+    "coordinates": {
+      "latitude": 44.8395063,
+      "longitude": -0.5898097
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Paris"
+  }
+}
