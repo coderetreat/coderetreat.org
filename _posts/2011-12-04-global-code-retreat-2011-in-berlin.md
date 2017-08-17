@@ -2,7 +2,7 @@
 layout: post
 author: Matthias Günther
 authorname: Matthias Günther
-title: GLOBAL CODE RETREAT 2011 IN BERLIN
+title: Global Code Retreat 2011 in Berlin
 preview: I attended the Global Coderetreat event initialized by Corey Haines2. The general purpose of this event was to get a bunch of hackers together to implement Conway’s Game of Life.
 ---
 
