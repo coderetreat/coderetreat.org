@@ -1,5 +1,9 @@
+function hasCoordinates(event) {
+  return typeof event.location.coordinates === 'object' && typeof event.location.coordinates.latitude === 'number' && typeof event.location.coordinates.longitude === 'number';
+}
+
 var mapEventsDataToMapFormat = function(data) {
-  return Object.values(data).map(function(item) {
+  return Object.values(data).filter(hasCoordinates).map(function(item) {
     return {
       "timeZone": item.timezone,
       "offset": item.utcOffset,
