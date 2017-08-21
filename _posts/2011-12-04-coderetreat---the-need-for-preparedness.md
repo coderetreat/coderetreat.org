@@ -3,7 +3,7 @@ layout: post
 author: Mark Simpson
 authorname: Mark Simpson
 title: Coderetreat - the need for preparedness
-preview: (crossposted from verdammelt.posterous.com)
+preview: This observer has noted a repeated waste of time by attendees of the [Coderetreats](http://coderetreat.org/) he has attended. Herein is described a simple way to be better prepared when you attend your next Coderetreat
 ---
 
 _(crossposted from verdammelt.posterous.com)_
