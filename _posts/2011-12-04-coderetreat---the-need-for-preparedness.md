@@ -42,7 +42,7 @@ that I had a failing test (`true == false`). That way I knew that
 everything was all set: all needed libraries, any special configuration  
 ([autotest](http://www.zenspider.com/ZSS/Products/ZenTest/) & [rspec](https://www.relishapp.com/rspec) always gives me a little bit of  
 hassle), any other annoying little thing was done. I even went so far  
-as to push them up to [GitHub](https://.github.com) so others could use them to.  
+as to push them up to [GitHub](https://www.github.com) so others could use them to.  
 (git makes deleting the code after an iteration very easy: `git reset --hard HEAD && git clean -fqx`).
 
 It turns out that I didn’t need to do this. There was already a GitHub  
