@@ -14,18 +14,16 @@ layout: default
         {% for training in site.data.trainings.trainings-2017 %}
           {% capture posttime %}{{training.date | date: '%s'}}{% endcapture %}
           {% if posttime > nowunix %}
-             {% include session.html %}
-             {% assign some_current_training = true %}
-
+            {% include session.html %}
+            {% assign some_current_training = true %}
           {% endif %}
         {% endfor %}
         {% unless some_current_training == true %}
-           <br><h3>
-              No trainings currently scheduled.<br>
-              <a href="mailto:gdcr@coderetreat.org?subject=Request%20training%20for%20GDCR2017">Request One!</a> 
-           </h3><br>
-        {% endunless %}       
-
+          <br><h3>
+            No trainings currently scheduled.<br>
+            <a href="mailto:gdcr@coderetreat.org?subject=Request%20training%20for%20GDCR2017">Request One!</a> 
+          </h3><br>
+        {% endunless %}
       </div>
 
       <h1>GDCR calendar</h1>
@@ -39,12 +37,14 @@ layout: default
 
       <div id='past-training'>
         <h1>Past training sessions - 2017</h1>
-        {% for training in site.data.trainings.trainings-2017 %}
-          {% capture posttime %}{{training.date | date: '%s'}}{% endcapture %}
-          {% if posttime < nowunix %}
-             {% include session.html %}
-          {% endif %}
-        {% endfor %}
+        <div class="Umd">
+          {% for training in site.data.trainings.trainings-2017 %}
+            {% capture posttime %}{{training.date | date: '%s'}}{% endcapture %}
+            {% if posttime < nowunix %}
+              {% include session.html %}
+            {% endif %}
+          {% endfor %}
+        </div>
 
         <h1>Past training sessions - 2016</h1>
         <div class="Umd">
