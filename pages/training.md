@@ -2,6 +2,8 @@
 layout: default
 ---
 
+{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+
 <div id="main">
     <div id="content">
       <h1>Upcoming training sessions</h1>
@@ -10,8 +12,20 @@ layout: default
 
       <div class="Umd">
         {% for training in site.data.trainings.trainings-2017 %}
-          {% include session.html %}
+          {% capture posttime %}{{training.date | date: '%s'}}{% endcapture %}
+          {% if posttime > nowunix %}
+             {% include session.html %}
+             {% assign some_current_training = true %}
+
+          {% endif %}
         {% endfor %}
+        {% unless some_current_training == true %}
+           <br><h3>
+              No trainings currently scheduled.<br>
+              <a href="mailto:gdcr@coderetreat.org?subject=Request%20training%20for%20GDCR2017">Request One!</a> 
+           </h3><br>
+        {% endunless %}       
+
       </div>
 
       <h1>GDCR calendar</h1>
@@ -24,9 +38,17 @@ layout: default
       <hr/>
 
       <div id='past-training'>
+        <h1>Past training sessions - 2017</h1>
+        {% for training in site.data.trainings.trainings-2017 %}
+          {% capture posttime %}{{training.date | date: '%s'}}{% endcapture %}
+          {% if posttime < nowunix %}
+             {% include session.html %}
+          {% endif %}
+        {% endfor %}
+
         <h1>Past training sessions - 2016</h1>
         <div class="Umd">
-          {% for training in site.data.past-trainings.trainings-2016 %}
+          {% for training in site.data.trainings.trainings-2016 %}
             {% include session.html %}
           {% endfor %}
         </div>
