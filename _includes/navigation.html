@@ -1,24 +1,46 @@
 <div class="navbar">
 
   <div class="navbar-inner">
-    <a href="{{ site.baseurl }}/">
-      <img src="/images/global-day-iso.png" height=40 alt="Coderetreat logo" style="border-radius: 50px">
-    </a>
-    <b>
- 
-    <a href="{% link register-event.md %}"      >Register a<br>Coderetreat</a>
-    <a href="{% link pages/hosting/hosts.md %}" >Hosting and Facilitating </a>
-    <a href="{% link pages/training.md %}"      >Training                 </a>
-    <a href="{% link pages/blog.md %}"          >Blog                     </a>
-    <a href="{% link pages/videos.html %}"      >Videos                   </a>
+    <div class="logo-nav-container">
+      <a class="logo" href="{{ site.baseurl }}/">
+        <img src="/images/global-day-iso.png" height=40 alt="Coderetreat logo" style="border-radius: 50px">
+      </a>
+      <a href="#" id='nav-click'>
+        <b class='menu-word'>Menu</b>
+        <button class="hamburger" id='hamburger'>
+          <span>toggle menu</span>
+        </button>
+      </a>
+      <b class="nav-links" id="mobile-nav">
+        <a href="{% link register-event.md %}"      >Register a Coderetreat</a>
+        <a href="{% link pages/hosting/hosts.md %}" >Hosting and Facilitating </a>
+        <a href="{% link pages/training.md %}"      >Training</a>
+        <a href="{% link pages/blog.md %}"          >Blog</a>
+        <a href="{% link pages/videos.html %}"      >Videos</a>
+      </b>
+    </div>
 
-    <a href="http://slack.softwarecraftsmanship.org">Join us on <br><img src="/images/Slack_Mark.svg" style="height:1.5em; vertical-align:top"> Slack</a>
-    <a href="https://twitter.com/coderetreat">Follow us on <br><img src="/images/Twitter_bird_logo_2012.svg" style="height:1.3em; vertical-align:top"> Twitter</a>
+    <b class="social-media-links">
+      <div>
+        <a href="http://slack.softwarecraftsmanship.org">Join us on <img src="/images/Slack_Mark.svg" style="height:1.5em; vertical-align:top" alt="Slack logo"> Slack</a>
+      </div>
+      <div>
+        <a href="https://twitter.com/coderetreat">Follow us on <img src="/images/Twitter_bird_logo_2012.svg" style="height:1.3em; vertical-align:top" alt="Twitter logo"> Twitter</a>
+      </div>
     </b>
+
   </div>
 
   <a href="https://github.com/coderetreat/coderetreat.github.io">
     <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub">
   </a>
-
 </div>
+
+<script type='text/javascript'>
+  const mobileNav = document.getElementById('mobile-nav');
+  const hamburger = document.getElementById('hamburger');
+  document.getElementById('nav-click').addEventListener('click', function(ev) {
+    ev.preventDefault();
+    mobileNav.classList.toggle('expand');
+  }, false);
+</script>
