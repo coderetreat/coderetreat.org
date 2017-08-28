@@ -37,10 +37,15 @@
 </div>
 
 <script type='text/javascript'>
-  const mobileNav = document.getElementById('mobile-nav');
-  const hamburger = document.getElementById('hamburger');
-  document.getElementById('nav-click').addEventListener('click', function(ev) {
-    ev.preventDefault();
-    mobileNav.classList.toggle('expand');
-  }, false);
+  var clickEvent = (function() {
+    if ('ontouchstart' in document.documentElement === true)
+      return 'touchstart'
+    else
+      return 'click'
+  })()
+  var mobileNav = document.getElementById('mobile-nav')
+  var hamburger = document.getElementById('hamburger')
+  $(hamburger).on(clickEvent, function() {
+    mobileNav.classList.toggle('expand')
+  })
 </script>
