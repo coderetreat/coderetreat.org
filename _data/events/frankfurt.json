@@ -1,13 +1,13 @@
 {
-  "title": "Global Day of Coderetreat 2017 Frankfurt",
-  "url": "http://bit.ly/gdcr-2017-frankfurt",
+  "title": "Global Day of Coderetreat 2017",
+  "url": "https://www.meetup.com/de-DE/Software-Craftsmanship-Rhein-Main/events/241598168/",
   "moderators": [
     "@svenlange",
     "@CodeRetreatFfm"
   ],
   "location": {
-    "city": "Frankfurt am Main",
-    "country": "Deutschland",
+    "city": "Frankfurt",
+    "country": "Germany",
     "coordinates": {
       "latitude": 50.1213475,
       "longitude": 8.4961386
