@@ -1,11 +1,20 @@
 [
   {
+    "url" : "https://plus.google.com/events/cne13mgtfkkla4t2ki5goiq4qsc",
+    "image" : "https://lh3.googleusercontent.com/-9uSjOHks4cg/Wa7Ioee1Z_I/AAAAAAAAAAA/a_0dlsUfaAAPskTPLoDmWixy2nwE7_RYACJgCEAE/w420-h105-p/event_theme.jpg",
+    "trainerProfile" : "https://plus.google.com/107077946190913287683",
+    "trainerName" : "Markus Decke",
+    "trainerPhoto" : "https://lh3.googleusercontent.com/-URYLORLqXjo/AAAAAAAAAAI/AAAAAAAAAWM/OgjxaUkJ-8s/s60-p-rw-no/photo.jpg",
+    "type" : "Host",
+    "dateTime" : "Wed, September 13 2017, 6:00 PM UTC"
+  },
+  {
     "url" : "https://plus.google.com/events/c7fv4aoi90hr8gi76afttcs8krs",
     "image" : "https://lh3.googleusercontent.com/-NMyVPNcNOyA/WXp0L5I8AqI/AAAAAAAAAAA/_XgRQhRfL-MmVn3vUBbIquAFWeZTE7vyQCJgCEAE/w420-h105-p/event_theme.jpg",
     "trainerProfile" : "https://plus.google.com/u/0/103174616302996282485",
     "trainerName" : "Matthew Plavcan",
     "trainerPhoto" : "//lh3.googleusercontent.com/-TnRXdnPuYwY/AAAAAAAAAAI/AAAAAAAAAz4/mcWUJQMLxQI/s120-c/photo.jpg",
     "type" : "Facilitator",
-    "dateTime" : "Mon, August 7, 4:00 PM UTC"
+    "dateTime" : "Mon, August 7 2017, 4:00 PM UTC"
   }
 ]
