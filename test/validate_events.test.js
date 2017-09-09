@@ -56,9 +56,9 @@ describe('Events as given in /_data/events', () => {
   });
 });
 
-describe('Invalid events given in /test/events', () => {
+describe('Invalid events given in /test/invalid_events', () => {
   describe('that require at least 1 character: ', () => {
-    const eventsWithEmptyFields = glob.sync(path.resolve(__dirname, './events/')
+    const eventsWithEmptyFields = glob.sync(path.resolve(__dirname, './invalid_events/')
       + '/*IsEmpty.json');
 
     eventsWithEmptyFields.forEach(file =>
