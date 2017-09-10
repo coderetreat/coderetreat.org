@@ -21,9 +21,7 @@ layout: default
         <td>{{ event.location.city }}</td>
         <td><a href="{{ event.url }}">{{ event.title }}</a></td>
         <td>
-          {% for moderator in event.moderators %}
-            {{ moderator }}
-          {% endfor %}
+          {{ event.moderators | join: ', '}}
         </td>
       </tr>
     {% endfor %}
