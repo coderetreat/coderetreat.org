@@ -1,6 +1,60 @@
 function hasCoordinates(event) {
   return typeof event.location.coordinates === 'object' && typeof event.location.coordinates.latitude === 'number' && typeof event.location.coordinates.longitude === 'number';
 }
+var clusterStyleCache = {};
+var clusterStyle = function(feature) {
+  var size = feature.get('features').length;
+  var style = clusterStyleCache[size];
+  if (!style) {
+    style = new ol.style.Style({
+      image: new ol.style.Circle({
+        radius: 10,
+        stroke: new ol.style.Stroke({
+          color: '#fff'
+        }),
+        fill: new ol.style.Fill({
+          color: '#3399CC'
+        })
+      }),
+      text: new ol.style.Text({
+        text: size.toString(),
+        fill: new ol.style.Fill({
+          color: '#fff'
+        })
+      })
+    });
+    clusterStyleCache[size] = style;
+  }
+  return style;
+}
+
+var extractFeaturesFromEventsLayer = function(feature) {
+  var features = [feature.get(property)]
+  return features;
+}
+
+var extractFeaturesFromClusterLayer = function(feature) {
+  var features = feature.getProperties().features
+  return features;
+}
+
+var getPopupContent = function(features) {
+  var content = ""
+  if (features.length == 1) {
+    var eventUrl = features[0].get('urls');
+    var eventName = features[0].get('name');
+    content += "<p><a href=\"" + eventUrl + "\" target=\"_blank\">" + eventName +"</a></p>"
+  } else {
+    content += "<p>"
+    for(var i = 0; i < features.length; i++) {
+      var eventUrl = features[i].get('urls');
+      var eventName = features[i].get('name');
+      content += "<a href=\"" + eventUrl + "\" target=\"_blank\">" + eventName + "</a><hr/>"
+    }
+    content += "</p>"
+  }
+  return content;
+}
 
 var mapEventsDataToMapFormat = function(data) {
   return Object.values(data).filter(hasCoordinates).map(function(item) {
@@ -46,6 +100,19 @@ var events = new ol.layer.Vector({
   source: new ol.source.Vector(),
   style: eventIconStyle
 });
+
+// a clustered source is configured with another vector source that it
+// operates on
+var clusterSource = new ol.source.Cluster({
+  source: events.getSource()
+});
+
+// it needs a layer too
+var clusterLayer = new ol.layer.Vector({
+  source: clusterSource,
+  style: clusterStyle
+});
+
 
 var addEventsToMap = function(locations) {
   events.getSource().clear();
@@ -103,7 +170,7 @@ $(function() {
         collapsible: false
       })
     }),
-    layers: [countriesLayer, events],
+    layers: [countriesLayer, clusterLayer],
     overlays: [popup],
     target: document.getElementById('map'),
     view: new ol.View({
@@ -136,33 +203,24 @@ $(function() {
     $(popupElem).popover('destroy');
     var feature = map.forEachFeatureAtPixel(evt.pixel,
         function(feature, layer) {
-          if (layer == events)
+          if (layer == clusterLayer)
              return feature;
         });
     if (feature) {
       var geometry = feature.getGeometry();
       var coord = geometry.getCoordinates();
-      var content = ""
-      var eventUrls = feature.get('urls')
-      if (eventUrls.length == 1) {
-        content += "<p><a href=\"" + eventUrls[0] + "\" target=\"_blank\">View&nbsp;Event</a></p>"
-      } else {
-        content += "<p>"
-        for(var i = 0; i < eventUrls.length; i++) {
-          content += "<a href=\"" + eventUrls[i] + "\" target=\"_blank\">View&nbsp;Event&nbsp;#" + (i + 1) + "</a></br>"
-        }
-        content += "</p>"
-      }
+      var features = extractFeaturesFromClusterLayer(feature);
+      var content = getPopupContent(features);
       popup.setPosition(coord);
       $(popupElem).popover({
         'animation': false,
         'placement': 'top',
         'html': true,
-        'title': feature.get('name'),
+        'title': 'GDCR events',
         'content': content
       });
       // workaround for already displayed popovers
-      $( "div.popover-content" ).text(feature.get('name'))
+      //$( "div.popover-content" ).text(feature.get('name'))
 
       $(popupElem).popover('show');
     }
@@ -172,7 +230,7 @@ $(function() {
   $(map.getViewport()).on('mousemove', function(e) {
     var pixel = map.getEventPixel(e.originalEvent);
     var hit = map.forEachFeatureAtPixel(pixel, function(feature, layer) {
-      return layer == events;
+      return layer == clusterLayer;
     });
     if (hit) {
       map.getTarget().style.cursor = 'pointer';
