@@ -1,0 +1,19 @@
+{
+  "title": "GDCR 2017 in Leipzig",
+  "url": "https://www.meetup.com/de-DE/Softwerkskammer-Leipzig/events/243267001/",
+  "moderators": [
+    "@florianpilz",
+    "@maik_toepfer",
+    "Christoph Weißenborn"
+  ],
+  "location": {
+    "city": "Leipzig",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 51.3202439,
+      "longitude": 12.3353715
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Berlin"
+  }
+}
