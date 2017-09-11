@@ -220,7 +220,7 @@ $(function() {
         'content': content
       });
       // workaround for already displayed popovers
-      //$( "div.popover-content" ).text(feature.get('name'))
+      $( "div.popover-content" ).text('GDCR events');
 
       $(popupElem).popover('show');
     }
