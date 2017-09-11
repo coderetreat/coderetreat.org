@@ -1,0 +1,18 @@
+{
+  "title": "GDCR 17 in Frankfurt am Main",
+  "url": "https://www.eventbrite.de/e/global-day-of-coderetreat-2017-in-frankfurt-tickets-37800982757",
+  "moderators": [
+    "Muhammad Ali Kazmi",
+    "@MAliKazmi12"
+  ],
+  "location": {
+    "city": "Frankfurt am Main",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 50.1128534,
+      "longitude": 8.6601713
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Berlin"
+  }
+}
