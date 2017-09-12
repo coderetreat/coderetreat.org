@@ -1,10 +1,27 @@
 ---
 layout: default
 ---
-<br/><br/>
-<center>
-  <h1>TOTAL OF {{ site.data.events | size }} Events!</h1>
-<table>
+
+<div id="map" style="float: none; margin-right: auto;margin-left: auto;">
+  <div id="popup"></div>
+</div>
+
+<h1>TOTAL OF {{ site.data.events | size }} Events!</h1>
+
+<form class="pure-form">
+  <fieldset>
+    <label for="gdcrCountry">Filter by country:</label>
+    <select id="gdcrCountry" style="font-family: sans-serif;">
+      <option selected>--none--</option>
+      {% assign countries = site.data.events | just_countries %}
+      {% for ctry in countries %}
+        <option>{{ctry}}</option>
+      {% endfor %}
+    </select>
+  </fieldset>
+</form>
+
+<table id="events-by-country">
   <thead>
     <tr>
       <th>Country</th>
@@ -14,17 +31,36 @@ layout: default
     </tr>
   </thead>
   <tbody>
-    {% for event_hash in site.data.events %}
+    {% assign by_location = site.data.events | location_sort %}
+    {% for event_hash in by_location %}
       {% assign event = event_hash[1] %}
-      <tr>
+      <tr data-country="{{event.location.country}}">
         <td>{{ event.location.country }}</td>
         <td>{{ event.location.city }}</td>
         <td><a href="{{ event.url }}">{{ event.title }}</a></td>
-        <td>
-          {{ event.moderators | join: ', '}}
-        </td>
+        <td>{{ event.moderators | join: ', '}}</td>
       </tr>
     {% endfor %}
   </tbody>
 </table>
-</center>
+
+<script>
+  $(function() {
+    $.get('/events/gdcr2017.json', function(eventsJson) {
+      var gdcr2017Events = mapEventsDataToMapFormat(eventsJson);
+      addEventsToMap(gdcr2017Events);
+    });
+
+    $('#gdcrCountry').on('change', function(e) {
+      var filter = e.target.value;
+      var rows = $('tbody tr');
+
+      for(var i = 0 ; i < rows.length; i++) {
+        row = rows[i];
+        ctry = row.getAttribute("data-country");
+        row.style.display = ctry == filter ? "table-row" : "none";
+      };
+    });
+  });
+</script>
+

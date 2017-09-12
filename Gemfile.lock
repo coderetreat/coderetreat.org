@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
     addressable (2.5.1)
       public_suffix (~> 2.0, >= 2.0.2)
@@ -55,7 +55,7 @@ DEPENDENCIES
   tzinfo-data
 
 RUBY VERSION
-   ruby 2.3.3p222
+   ruby 2.2.1p85
 
 BUNDLED WITH
-   1.14.4
+   1.15.4
