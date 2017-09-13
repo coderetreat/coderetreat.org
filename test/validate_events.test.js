@@ -1,3 +1,5 @@
+var expect = require('expect');
+
 const glob = require('glob');
 const path = require('path');
 const fs   = require('fs');
@@ -18,19 +20,21 @@ JsonValidator.prototype.customFormats.timezone = (tz) => {
   return false;
 }
 
+const validationResults = input => {
+  return (new JsonValidator).validate(input, schema);
+}
+
 const validate = input => {
-  const result = (new JsonValidator).validate(input, schema);
+  const result = validationResults(input);
   if(result.errors.length > 0) {
     console.log(result.errors, JSON.stringify(result.errors));
     throw new Error(result.errors);
   }
 }
 
-
-
 describe('Events as given in /_data/events', () => {
   describe('that are written in JSON: ', () => {
-    const jsonFiles = glob.sync(path.resolve(__dirname, '../_data/events/')+'/*.json');
+    const jsonFiles = glob.sync(path.resolve(__dirname, '../_data/events/') + '/*.json');
 
     jsonFiles.forEach(file =>
       it(
@@ -41,13 +45,27 @@ describe('Events as given in /_data/events', () => {
   });
 
   describe('that are written in YAML: ', () => {
-    const ymlFiles = glob.sync(path.resolve(__dirname, '../_data/events/')+'/*.yml');
+    const ymlFiles = glob.sync(path.resolve(__dirname, '../_data/events/') + '/*.yml');
 
     ymlFiles.forEach(file =>
       it(
         path.basename(file),
         () => validate(YAML.load(file))
       )
+    );
+  });
+});
+
+describe('Invalid events given in /test/invalid_events', () => {
+  describe('that require at least 1 character: ', () => {
+    const eventsWithEmptyFields = glob.sync(path.resolve(__dirname, './invalid_events/')
+      + '/*IsEmpty.json');
+
+    eventsWithEmptyFields.forEach(file =>
+      it(path.basename(file) + ' does not validate', () => {
+        const result = validationResults(JSON.parse(fs.readFileSync(file)));
+        expect(result.errors.length).toBeGreaterThan(0);
+      })
     );
   });
 });

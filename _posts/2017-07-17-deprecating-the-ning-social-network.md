@@ -8,7 +8,7 @@ preview: We decided to deprecate the social network at coderetreat.org. Here's w
 
 Earlier this year we deactivated new registrations and most of the features of the NING-powered social network on [coderetreat.org](http://coderetreat.org). We decided to deprecate the network as we were not able to maintain and evolve it in the last few years.  
 
-Instead, we're now focussing on collaboratively building a new home for all resources related to the *Global Day Of Coderetreat* and on the format itself. We're making this as easily accessible for everyone who wishes to contribute, both on [GitHub](https://github.com/coderetreat/coderetreat.github.io) and on [#gdcr on the Software Craftsmanship Slack](http://slack.softwarecraftsmanship.org/).
+Instead, we're now focussing on collaboratively building a new home for all resources related to the *Global Day Of Coderetreat* and on the format itself. We're making this as easily accessible for everyone who wishes to contribute, both on [GitHub](https://github.com/coderetreat/coderetreat.github.io) and on [#coderetreat on the Software Craftsmanship Slack](http://slack.softwarecraftsmanship.org/).
 
 ### How can I register my GDCR17 event now?
 
