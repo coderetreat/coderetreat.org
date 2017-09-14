@@ -1,0 +1,17 @@
+{
+  "title": "GDCR17 Pittsburgh",
+  "url": "https://www.meetup.com/Pittsburgh-Code-Supply/events/242232762/",
+  "moderators": [
+    "@codeandsupply"
+  ],
+  "location": {
+    "city": "Pittsburgh",
+    "country": "United States",
+    "coordinates": {
+      "latitude": 40.4598516,
+      "longitude": -79.9306494
+    },
+    "utcOffset": -4,
+    "timezone": "America/New_York"
+  }
+}
