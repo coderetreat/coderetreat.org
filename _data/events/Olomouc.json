@@ -1,0 +1,15 @@
+{
+  "title": "GDCR 2017 in Olomouc",
+  "url": "https://www.meetup.com/CodeRetreat-CZ/events/243354375/",
+  "moderators": ["@tomaslatal", "@mcBIGcz"],
+  "location": {
+    "city": "Olomouc",
+    "country": "Czech Republic",
+    "coordinates": {
+      "latitude": 49.5927391,
+      "longitude": 17.2710174
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Vienna"
+  }
+}
