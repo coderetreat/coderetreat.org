@@ -40,7 +40,21 @@ layout: default
         <td>{{ event.location.country }}</td>
         <td>{{ event.location.city }}</td>
         <td><a href="{{ event.url }}">{{ event.title }}</a></td>
-        <td>{{ event.moderators | join: ', '}}</td>
+        <td>
+          {% assign loopCount = event.moderators | size | minus: 1 %}
+          {% for i in (0..loopCount) %}
+            {% assign moderator = event.moderators[i] %}
+            {% assign first_char = moderator | slice: 0 %}
+            {% if first_char == '@' %}
+              {% assign sizeWithoutAt = moderator | size | minus: 1 %}
+              {% assign handle = moderator | slice: 1, sizeWithoutAt %}
+                <a href="https://twitter.com/{{ handle }}">{{ moderator }}</a>
+            {% else %}
+                {{ moderator }}
+            {% endif %}
+            {% if i != loopCount %}, {% endif %}
+          {% endfor %}
+        </td>
       </tr>
     {% endfor %}
   </tbody>
