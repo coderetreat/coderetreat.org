@@ -40,9 +40,11 @@
               "latitude": { "type": "number" },
               "longitude": { "type": "number" }
           },
+          "additionalProperties": false,
           "required": ["latitude", "longitude"]
         }
       },
+      "additionalProperties": false,
       "required": ["country", "city"],
       "anyOf": [
         { "required": ["utcOffset"] },
@@ -57,5 +59,6 @@
       }
     }
   },
+  "additionalProperties": false,
   "required": ["title", "location", "url"]
 }
