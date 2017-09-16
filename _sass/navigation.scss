@@ -8,8 +8,9 @@ $navbar-padding: $gutter/2;
 .navbar {
   padding: $navbar-padding 0;
   position: fixed;
+  left: 0;
+  right: 0;
   top: 0;
-  width: 100%;
   background-color: $light;
   box-shadow: 0 0 8px 0 black;
   z-index: 50;
