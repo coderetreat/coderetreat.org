@@ -6,8 +6,12 @@
   background-size: cover;
   background-attachment: fixed;
   .header {
-    h1 { font-family: "OrbitronBlack"; }
-    h2 { font-size: 1.5em; }
+    h1 {
+      font-family: "OrbitronBlack";
+    }
+    h2 {
+      font-size: 1.5em;
+    }
     @include span-columns(7 of 12);
     @include shift(4.5);
     font-family: $title-font;
@@ -17,6 +21,10 @@
     text-align: center;
 
     .calltoaction {
+      @include media($mobile) {
+        display: none;
+      }
+
       .button {
         width: 49%;
         display: inline-block;
@@ -43,9 +51,13 @@
     background-attachment: scroll;
     .header {
       opacity: 1;
-      h1 { display: none; }
+      h1 {
+        display: none;
+      }
       padding: 0 $gutter;
-      h2 { font-size: 1.3em; }
+      h2 {
+        font-size: 1.3em;
+      }
       margin-top: $bg-height;
       @include fill-parent;
       @include shift(0);

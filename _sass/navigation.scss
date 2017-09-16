@@ -207,5 +207,6 @@ $navbar-padding: $gutter/2;
 
   .hamburger {
     left: 41%;
+    left: calc(50% - 35px);
   }
 }
