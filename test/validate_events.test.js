@@ -68,4 +68,16 @@ describe('Invalid events given in /test/invalid_events', () => {
       })
     );
   });
+
+  describe('that have unexpected keys: ', () => {
+    const eventsWithUnexpectedKeys = glob.sync(path.resolve(__dirname, './invalid_events/')
+      + '/*UnexpectedKey.json');
+
+    eventsWithUnexpectedKeys.forEach(file =>
+      it(path.basename(file) + ' does not validate', () => {
+        const result = validationResults(JSON.parse(fs.readFileSync(file)));
+        expect(result.errors.length).toBeGreaterThan(0);
+      })
+    );
+  });
 });

@@ -1,0 +1,10 @@
+{
+  "title": "GDCR17 in Berlin",
+  "url": "https://www.meetup.com/Software-Craftsmanship-Berlin/",
+  "location": {
+    "timezone": "Europe/Berlin",
+    "city": "Berlin",
+    "country": "Germany"
+  },
+  "unexpectedKey": "something undesireable"
+}
