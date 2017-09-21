@@ -96,7 +96,7 @@ Follow the intructions [here](/register-event).
 
 ## When should I open registration for my local Coderetreat?
 
-It’s recommended that you open registration on Thursday, September 22nd:
+It’s recommended that you open registration one month before the event:
 
 * Opening registration one month before a Coderetreat decreases the number of people who register but don't show up on the day of (reduces no-shows).
 * Opening registration one month before helps to generate anticipation and excitement for GDCR. Many of the Coderetreats will sell out on the first day of registration.
