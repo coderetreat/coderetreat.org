@@ -8,6 +8,10 @@
   "location": {
     "city": "Ann Arbor",
     "country": "United States of America",
+    "coordinates": {
+      "latitude": 42.279835,
+      "longitude": -83.745728
+    },
     "utcOffset": -4,
     "timezone": "America/Detroit"
   }
