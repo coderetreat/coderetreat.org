@@ -1,0 +1,17 @@
+{
+  "title": "GDCR17 Columbus @ The Forge by Pillar Technology",
+  "url": "http://info.pillartechnology.com/gdcr_pillar_2017_rsvp_ovr",
+  "moderators": [
+    "Mark Holtman (@mholtman)"
+  ],
+  "location": {
+    "city": "Columbus",
+    "country": "United States",
+    "coordinates": {
+      "latitude": 39.9746425,
+      "longitude": -82.9998932
+    },
+    "utcOffset": -4,
+    "timezone": "America/New_York"
+  }
+}
