@@ -1,0 +1,8 @@
+section#twitter {
+  @include media($tablet) {
+    display: none;
+  }
+  @include media($mobile) {
+    display: none;
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Global Day of Coderetreat 2017 - Pordenone",
+  "url": "https://www.eventbrite.com/e/global-day-of-coderetreat-2017-pordenone-tickets-37976643162",
+  "moderators": [
+    "@dlondero",
+    "@pozzobondaniele"
+  ],
+  "location": {
+    "city": "Pordenone",
+    "country": "Italy",
+    "coordinates": {
+      "latitude": 45.9589747,
+      "longitude": 12.6630343
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Rome"
+  }
+}

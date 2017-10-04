@@ -15,6 +15,7 @@
 @import "timeline";
 @import "blogs";
 @import "image_size";
+@import "container";
 
 @import "landing/hero";
 @import "landing/map";
@@ -22,6 +23,7 @@
 @import "landing/hosting";
 @import "landing/announcement";
 @import "landing/sponsors";
+@import "landing/twitter";
 
 
 #content {
@@ -48,3 +50,7 @@
     // box-shadow: 5px 5px 5px $dark;
   }
 }
+
+#events-by-country { width: 100%; }
+
+#events-by-country td { padding: 5px; }

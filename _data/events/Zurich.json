@@ -1,0 +1,17 @@
+{
+    "title": "GDCR17 in Zurich",
+    "url": "http://zurich.codersonly.org/events/code-retreat/",
+    "moderators": [
+        "@infinitary"
+    ],
+    "location": {
+        "city": "Zürich",
+        "country": "Switzerland",
+        "coordinates": {
+            "latitude": 47.36459,
+            "longitude": 8.53156
+        },
+        "utcOffset": 2,
+        "timezone": "Europe/Zurich"
+    }
+}

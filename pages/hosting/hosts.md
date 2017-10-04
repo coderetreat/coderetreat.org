@@ -4,7 +4,7 @@ layout: default
 ## Help improve developers in your community...
 
 # ...by hosting a coderetreat in your city.
- 
+
 Hosts handle all of the logistics of organizing, finding a local sponsor,
 running a coderetreat and creating an atmosphere of fun and collaboration.
 
@@ -32,6 +32,5 @@ retrospectives. Below are the steps to get started:
 2. Watch [this recorded facilitator training session](https://vimeo.com/54519386) to learn the basics
 3. Read about [the role of the facilitator](/blog/2012/12/02/on-the-role-of-the-coderetreat-faciliator)
 4. Become familiar with [the structure of a coderetreat](/pages/facilitating/structure-of-a-coderetreat)
-5. Get ideas on what exercies to do each session by reviewing the [activity catalog](/pages/facilitating/activity-catalog)
+5. Get ideas on what exercies to do each session by reviewing the [activity catalog](/pages/facilitating/activity-catalog) or checkout [this exhaustive collection of constraints](https://drive.google.com/drive/folders/0B3idvASFqaEbN2RkNDYyYjktYTlkZi00ZjFiLWFmMDEtNjJhYTBkYzM2ZDlh?usp=sharing) by [Adrian Bolboaca](https://twitter.com/adibolb)
 6. When you feel ready, volunteer to facilitate a coderetreat!
-

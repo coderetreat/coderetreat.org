@@ -1,10 +1,30 @@
 ---
 layout: default
 ---
-<br/><br/>
-<center>
-  <h1>TOTAL OF {{ site.data.events | size }} Events!</h1>
-<table>
+
+<div id="map">
+  <div id="popup"></div>
+</div>
+
+<h1>All events this year</h1>
+{% assign events_array = site.data.events | where_exp: 'name', '1' %}
+{% assign countries = events_array | map: 'location' | map: 'country' | uniq | sort %}
+
+
+<form class="pure-form">
+  <fieldset>
+    <select id="gdcrCountry" style="font-family: sans-serif;">
+      <option selected disabled >Select your country...</option>
+      <option value="none">Show All</option>
+      <option disabled>-------------</option>
+
+      {% for country in countries %}
+        <option>{{ country }}</option>
+      {% endfor %}
+    </select>
+  </fieldset>
+</form>
+<table id="events-by-country">
   <thead>
     <tr>
       <th>Country</th>
@@ -14,19 +34,49 @@ layout: default
     </tr>
   </thead>
   <tbody>
-    {% for event_hash in site.data.events %}
-      {% assign event = event_hash[1] %}
-      <tr>
+    {% assign events = events_array | where_exp: 'name', '1' | sort: 'location.city' | sort: 'location.country' %}
+    {% for event in events %}
+      <tr data-country="{{event.location.country}}">
         <td>{{ event.location.country }}</td>
         <td>{{ event.location.city }}</td>
         <td><a href="{{ event.url }}">{{ event.title }}</a></td>
         <td>
-          {% for moderator in event.moderators %}
-            {{ moderator }}
+          {% assign loopCount = event.moderators | size | minus: 1 %}
+          {% for i in (0..loopCount) %}
+            {% assign moderator = event.moderators[i] %}
+            {% assign first_char = moderator | slice: 0 %}
+            {% if first_char == '@' %}
+              {% assign sizeWithoutAt = moderator | size | minus: 1 %}
+              {% assign handle = moderator | slice: 1, sizeWithoutAt %}
+                <a href="https://twitter.com/{{ handle }}">{{ moderator }}</a>
+            {% else %}
+                {{ moderator }}
+            {% endif %}
+            {% if i != loopCount %}, {% endif %}
           {% endfor %}
         </td>
       </tr>
     {% endfor %}
   </tbody>
 </table>
-</center>
+
+<script>
+  $(function() {
+    $.get('/events/gdcr2017.json', function(eventsJson) {
+      var gdcr2017Events = mapEventsDataToMapFormat(eventsJson);
+      addEventsToMap(gdcr2017Events);
+    });
+
+    $('#gdcrCountry').on('change', function(e) {
+      var filter = e.target.value;
+      var rows = $('tbody tr');
+      var isDisabled = filter === 'none';
+
+      for(var i = 0 ; i < rows.length; i++) {
+        row = rows[i];
+        ctry = row.getAttribute("data-country");
+        row.style.display = (isDisabled || ctry === filter) ? "table-row" : "none";
+      };
+    });
+  });
+</script>

@@ -1,0 +1,15 @@
+{
+  "title": "GDCR17 in SLC",
+  "url": "https://www.meetup.com/UtahJS/events/243091877/",
+  "moderators": ["@version2beta", "@_metasean"],
+  "location": {
+    "city": "Salt Lake City, Utah",
+    "country": "United States of America",
+    "coordinates": {
+      "latitude": 40.765887,
+      "longitude": -111.8909577
+    },
+    "utcOffset": -6,
+    "timezone": "MST7MDT"
+  }
+}
