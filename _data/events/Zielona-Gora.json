@@ -1,0 +1,17 @@
+{
+  "title": "GDCR 2017 in Zielona Gora",
+  "url": "https://goo.gl/forms/7pbu06DwCfZhrdNc2",
+  "moderators": [
+    "Jakub Szpak"
+  ],
+  "location": {
+    "city": "Zielona Gora",
+    "country": "Poland",
+    "coordinates": {
+      "latitude": 51.942083,
+      "longitude": 15.5279537
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Warsaw"
+  }
+}
