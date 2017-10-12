@@ -1,0 +1,18 @@
+{
+  "title": "Global Day of Coderetreat in Heilbronn",
+  "url": "https://www.eventbrite.de/e/global-day-of-coderetreat-2017-tickets-38500347576",
+  "moderators": [
+    "@thaberkern",
+    "@silent_fred"
+  ],
+  "location": {
+    "city": "Heilbronn",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 49.1700534,
+      "longitude": 9.2221827
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Berlin"
+  }
+}
