@@ -1,0 +1,19 @@
+{
+    "title": "GDCR 2017 in Rennes",
+    "url": "https://www.meetup.com/fr-FR/Software-Craftsmanship-Rennes/events/244037122/",
+    "moderators": [
+    "@gcollic",
+    "@y0anr",
+    "@gsalaun1"
+],
+    "location": {
+    "city": "Rennes",
+        "country": "France",
+        "coordinates": {
+        "latitude": 48.1120266,
+            "longitude": -1.6884867
+    },
+    "utcOffset": 2,
+        "timezone": "Europe/Paris"
+}
+}
