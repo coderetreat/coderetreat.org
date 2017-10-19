@@ -1,0 +1,17 @@
+{
+  "title": "GDCR Barcelona Wallapop",
+  "url": "https://www.meetup.com/es-ES/Wallapop-Engineering/",
+  "moderators": [
+    "@WallapopEng"
+  ],
+  "location": {
+    "city": "Barceloona",
+    "country": "Spain",
+    "coordinates": {
+      "latitude": 41.405919,
+      "longitude": 2.186489
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Madrid"
+  }
+}
