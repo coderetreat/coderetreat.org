@@ -1,0 +1,18 @@
+{
+  "title": "Global Day of Code Retreat - Gent 2017",
+  "url": "https://www.meetup.com/socratesbe/events/244350997/",
+  "moderators": [
+    "@talboomerik",
+    "@koenmetsu"
+  ],
+  "location": {
+    "city": "Gent",
+    "country": "Belgium",
+    "coordinates": {
+      "latitude": 51.0169,
+      "longitude": 3.7343
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Brussels"
+  }
+}
