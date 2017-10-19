@@ -1,0 +1,17 @@
+{
+  "title": "GDCR17 in Cambridge, MA @ Pivotal Labs ",
+  "url": "https://www.eventbrite.com/e/global-day-of-code-retreat-cambridge-tickets-37433620968",
+  "moderators": [
+    "@amandamunoz"
+  ],
+  "location": {
+    "city": "Cambridge",
+    "country": "United States",
+    "coordinates": {
+      "latitude": 42.3626831,
+      "longitude": -71.087541
+    },
+    "utcOffset": -4,
+    "timezone": "America/New_York"
+  }
+}

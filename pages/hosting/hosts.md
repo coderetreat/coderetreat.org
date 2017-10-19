@@ -16,6 +16,7 @@ To host a coderetreat:
 * Find one or more local sponsors for lunch and other expenses. Coderetreats must be free.
 * Recruit a facilitator to guide the participants through the day.
 * Arrange for a nice, catered lunch. Participants who are willing to come out at 9 in the morning to spend the day coding deserve more than just pizza for lunch.
+* Check the [checklist](/pages/hosting/checklist) for keeping track of things.
 
 Here are some additional blog posts about hosting:
 
