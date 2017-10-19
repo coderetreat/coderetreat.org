@@ -1,0 +1,15 @@
+{
+  "title": "GDCR in Saint-Petersburg",
+  "url": "https://events.epam.com/events/global-day-of-coderetreat",
+  "moderators": [],
+  "location": {
+    "city": "Saint-Petersburg",
+    "country": "Russia",
+    "coordinates": {
+      "latitude": 59.9174925,
+      "longitude": 30.0448869
+    },
+    "utcOffset": 4,
+    "timezone": "Europe/Moscow"
+  }
+}
