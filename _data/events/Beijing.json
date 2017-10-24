@@ -5,8 +5,8 @@
     "city": "Beijing",
     "country": "Chinese",
     "coordinates": {
-      "latitude": 116.490749,
-      "longitude": 40.012426
+      "longitude": 116.490749,
+      "latitude": 40.012426
     },
     "utcOffset": 8
   },
