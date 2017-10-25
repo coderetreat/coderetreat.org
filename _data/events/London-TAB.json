@@ -1,0 +1,17 @@
+{
+  "title": "Global Day of Code Retreat @TAB",
+  "url": "https://www.eventbrite.co.uk/e/global-day-of-code-retreat-tab-london-tickets-39248331817",
+  "moderators": [
+    "@WillRochaThomas"
+  ],
+  "location": {
+    "city": "London",
+    "country": "England",
+    "coordinates": {
+      "latitude": 51.5318879,
+      "longitude": -0.1207121
+    },
+    "utcOffset": 1,
+    "timezone": "Europe/London"
+  }
+}
