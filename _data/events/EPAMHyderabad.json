@@ -1,0 +1,17 @@
+{
+  "title": "EPAM Hyderabad GDCR 17",
+  "url": "http://events.epam.com/secure-events/m4MC9AEOcjQDaHPb7rpsyfUk",
+  "moderators": [
+    "@rohit_elan"
+  ],
+  "location": {
+    "city": "Hyderabad",
+    "country": "India",
+    "coordinates": {
+      "latitude": 17.4228313,
+      "longitude": 78.4210918
+    },
+    "utcOffset": 5.5,
+    "timezone": "Asia/Kolkata"
+  }
+}
