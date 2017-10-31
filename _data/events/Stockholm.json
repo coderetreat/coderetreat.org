@@ -1,0 +1,17 @@
+{
+  "title": "GDCR17 in Stockholm",
+  "url": "http://www.citerus.se (will update with event page soon!)",
+  "moderators": [
+    "@erorcodes"
+  ],
+  "location": {
+    "city": "Stockholm",
+    "country": "Sweden",
+    "coordinates": {
+      "latitude": 59.3359476,
+      "longitude": 18.0533043
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Stockholm"
+  }
+}
