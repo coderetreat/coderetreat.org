@@ -2,8 +2,10 @@
   "title": "GDCR17 in Paris by Nexeo",
   "url": "https://global-day-of-code-retreat-by-nexeo.eventbrite.com",
   "moderators": [
-      "@NexeoFinance",
-      "@Nils_Back"
+    "@Nils_Back"
+  ],
+  "sponsors": [
+    "@NexeoFinance"
   ],
   "location": {
     "city": "Paris",
