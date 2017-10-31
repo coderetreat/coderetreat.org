@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+
+<h1 class="full-page"><a href="{{ "/hosts/" | relative_url }}">Hosters Tools</a></h1>
+
 ## Help improve developers in your community...
 
 # ...by hosting a coderetreat in your city.
