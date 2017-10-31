@@ -33,24 +33,34 @@ function focusTabOnPageLoad() {
   })
 }
 
+
 function initVideoBoothsModel() {
   function VideoBoothsViewModel() {
     var _this = this;
 
-    function Booth(name, tag) { return {name: name, tag: tag }};
+    function Booth(name, tag, from, to) { return {name: name, tag: tag, from: from, to: to }};
 
     this.availableTimezoneCategories = [
-      Booth('(UTC-12 - UTC-06) United States, Canada', 'gdcr17_utc-12_-_utc-06'),
-      Booth('(UTC-05 - UTC-03) Colombia, Ecuador, Mexico, Peru, Chile, Argentina, United States, Canada', 'gdcr17_utc-05_-_utc-03'),
-      Booth('(UTC-02 - UTC+01) Portugal, Spain, United Kingdom', 'gdcr17_utc-02_-_utc+01'),
-      Booth('(UTC+02) Austria, Belgium, Czech Republic, France, Germany, Hungary, Italy, Macedonia, Poland, Serbia, South Africa, Switzerland, Turkey', 'gdcr17_utc+02'),
-      Booth('(UTC+03 - UTC+05:30) Belarus, Finland, Latvia, Lithuania, Romania, Russia, India', 'gdcr17_utc+03_-_utc+0530'),
-      Booth('(UTC+06 - UTC+14) Bangladesh, Kazakhstan, China, Philippines, Singapore, Japan, Australia, New Zealand', 'gdcr17_utc+06_-_utc+14')
+      Booth('(UTC-12 - UTC-06) United States, Canada', 'gdcr17_utc-12_-_utc-06', -12, -6),
+      Booth('(UTC-05 - UTC-03) Colombia, Ecuador, Mexico, Peru, Chile, Argentina, United States, Canada', 'gdcr17_utc-05_-_utc-03', -5, -3),
+      Booth('(UTC-02 - UTC+0) Portugal, Spain, United Kingdom', 'gdcr17_utc-02_-_utc+00', -2, 0),
+      Booth('(UTC+01 - UTC+2) Austria, Belgium, Czech Republic, France, Germany, Hungary, Italy, Macedonia, Poland, Serbia, South Africa, Switzerland, Turkey', 'gdcr17_utc+01_-_utc+02', 1, 2),
+      Booth('(UTC+03 - UTC+05:30) Belarus, Finland, Latvia, Lithuania, Romania, Russia, India', 'gdcr17_utc+03_-_utc+0530', 3, 5.5),
+      Booth('(UTC+06 - UTC+14) Bangladesh, Kazakhstan, China, Philippines, Singapore, Japan, Australia, New Zealand', 'gdcr17_utc+06_-_utc+14', 6, 14)
     ];
 
     this.boothNumber = ko.observable(1);
 
-    this.selectedTimezoneCategory = ko.observable();
+    function getInitialTimezone() {
+      const hrsOffset = -(new Date().getTimezoneOffset() / 60);
+      for(const booth of _this.availableTimezoneCategories) {
+        if(booth.to >= hrsOffset) {
+          return booth;
+        }
+      }
+      return undefined;
+    }
+    this.selectedTimezoneCategory = ko.observable(getInitialTimezone());
     this.selectedTimezoneCategory.subscribe(function() {
       this.boothNumber(1);
     }, this);
