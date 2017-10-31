@@ -60,7 +60,7 @@ function initVideoBoothsModel() {
       }
       return undefined;
     }
-    this.selectedTimezoneCategory = ko.observable(getInitialTimezone());
+    this.selectedTimezoneCategory = ko.observable();
     this.selectedTimezoneCategory.subscribe(function() {
       this.boothNumber(1);
     }, this);
@@ -84,6 +84,8 @@ function initVideoBoothsModel() {
     this.selectedBoothVideoUrl.subscribe(function() {
       $('#videoboothIframe').attr('src', this.selectedBoothVideoUrl());
     }, this);
+
+    this.selectedTimezoneCategory(getInitialTimezone());
   }
 
   ko.applyBindings(new VideoBoothsViewModel(), $('#booths')[0]);
