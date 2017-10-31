@@ -18,6 +18,7 @@
 @import "container";
 
 @import "events-table";
+@import "hosts-embedded-iframe";
 
 @import "landing/hero";
 @import "landing/map";
@@ -27,6 +28,11 @@
 @import "landing/sponsors";
 @import "landing/twitter";
 
+
+.full-page {
+  padding: 40% 0;
+  padding: calc(40% - 32px - 76px) 0;
+}
 
 #content {
   @include outer-container;
