@@ -2,8 +2,10 @@
   "title": "GDCR17 Berlin itemis x HTW",
   "url": "https://www.meetup.com/de-DE/itemis/events/244452768",
   "moderators": [
-    "@itemis",
     "Marcel Toussaint"
+  ],
+  "sponsors": [
+    "@itemis"
   ],
   "location": {
     "city": "Berlin",
