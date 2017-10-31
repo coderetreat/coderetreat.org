@@ -4,6 +4,10 @@
   }
   width: 100%;
 
+  tr.hidden {
+    display: none !important;
+  }
+
   @include media($mobile) {
     width: 90%;
     margin: 5%;
