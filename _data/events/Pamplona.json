@@ -2,8 +2,10 @@
   "title": "Global Day of Coderetreat 2017 in Pamplona, facilitated by Openbravo",
   "url": "https://www.eventbrite.es/e/entradas-openbravo-coderetreat-2017-pair-programming-tdd-y-buenas-practicas-de-desarrollo-38432353203",
   "moderators": [
-    "@Openbravo",
     "@AugustoMauch"
+  ],
+  "sponsors": [
+    "@Openbravo"
   ],
   "location": {
     "city": "Mutilva",
