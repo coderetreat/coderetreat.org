@@ -95,7 +95,7 @@ layout: default
             for (var i = 0; i < rows.length; i++) {
                 row = rows[i];
                 ctry = row.getAttribute("data-country");
-                row.style.display = (isDisabled || ctry === filter) ? "table-row" : "none";
+                row.classList.toggle('hidden', !(isDisabled || ctry === filter))
             }
             ;
         });
