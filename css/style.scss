@@ -17,6 +17,8 @@
 @import "image_size";
 @import "container";
 
+@import "events-table";
+
 @import "landing/hero";
 @import "landing/map";
 @import "landing/format";
@@ -50,7 +52,3 @@
     // box-shadow: 5px 5px 5px $dark;
   }
 }
-
-#events-by-country { width: 100%; }
-
-#events-by-country td { padding: 5px; }
