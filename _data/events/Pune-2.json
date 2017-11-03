@@ -2,7 +2,9 @@
     "title": "GDCR17 e-zest, Pune",
     "url": "http://www.e-zest.com/gdcr-2017",
     "moderators": [
-        "@christianhujer",
+        "@christianhujer"
+    ],
+    "sponsors": [
         "@nelkinda",
         "@ezest"
     ],

@@ -2,7 +2,9 @@
     "title": "GDCR17 Nelkinda, Pune",
     "url": "http://nelkinda.com/events/2017/11/18/Global-Day-of-Coderetreat/pune-nelkinda",
     "moderators": [
-        "@SiddheshNikude",
+        "@SiddheshNikude"
+    ],
+    "sponsors": [
         "@nelkinda"
     ],
     "location": {
