@@ -64,7 +64,7 @@ layout: default
             {%- assign sponsor = event.sponsors[i] -%}
             {%- assign first_char = sponsor | slice: 0 -%}
             {%- if first_char == '@' -%}
-            {%- assign sizeWithoutAt = sonsor | size | minus: 1 -%}
+            {%- assign sizeWithoutAt = sponsor | size | minus: 1 -%}
             {%- assign handle = sponsor | slice: 1, sizeWithoutAt -%}
             <a href="https://twitter.com/{{ handle }}">{{ sponsor }}</a>
             {%- else -%}
