@@ -1,0 +1,17 @@
+{
+  "title": "GDCR17 Winnipeg, location TBD",
+  "url": "http://coderetreat.org/",
+  "moderators": [
+    "@davidalpert"
+  ],
+  "location": {
+    "city": "Winnipeg",
+    "country": "Canada",
+    "coordinates": {
+      "latitude": 49.8534844,
+      "longitude": -97.432404
+    },
+    "utcOffset": -6,
+    "timezone": "America/Winnipeg"
+  }
+}
