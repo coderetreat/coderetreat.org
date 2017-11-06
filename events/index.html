@@ -31,6 +31,7 @@ layout: default
         <th>City</th>
         <th>Title</th>
         <th>Facilitators</th>
+        <th>Organizers</th>
         <th>Sponsors</th>
     </tr>
     </thead>
@@ -56,8 +57,21 @@ layout: default
             {% if i != loopCount %}, {% endif %}
             {% endfor %}
         </td>
-
-
+        <td>
+            {% assign loopCount = event.organizers | size | minus: 1 %}
+            {% for i in (0..loopCount) %}
+            {% assign organizers = event.organizers[i] %}
+            {% assign first_char = organizers | slice: 0 %}
+            {% if first_char == '@' %}
+            {% assign sizeWithoutAt = organizers | size | minus: 1 %}
+            {% assign handle = organizers | slice: 1, sizeWithoutAt %}
+            <a href="https://twitter.com/{{ handle }}">{{ organizers }}</a>
+            {% else %}
+            {{ organizers }}
+            {% endif %}
+            {% if i != loopCount %}, {% endif %}
+            {% endfor %}
+        </td>
         <td>
             {%- assign loopCount = event.sponsors | size | minus: 1 -%}
             {%- for i in (0..loopCount) -%}
@@ -73,8 +87,6 @@ layout: default
             {%- if i != loopCount -%}, {%- endif -%}
             {%- endfor -%}
         </td>
-
-
     </tr>
     {% endfor %}
     </tbody>

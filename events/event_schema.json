@@ -54,7 +54,14 @@
     "moderators": {
       "type": "array",
       "items": {
-        "description": "Name or Twitter Handle of the moderators",
+        "description": "Name or Twitter Handle of the moderators/facilitators",
+        "type": "string"
+      }
+    },
+    "organizers": {
+      "type": "array",
+      "items": {
+        "description": "Name or Twitter Handle of the organizers",
         "type": "string"
       }
     },

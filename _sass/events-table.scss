@@ -33,12 +33,17 @@
         font-weight: bold;
       }
       td:nth-child(5):not(:empty):before {
+        content: "Organizers: ";
+        font-weight: bold;
+      }
+      td:nth-child(6):not(:empty):before {
         content: "Sponsors: ";
         font-weight: bold;
       }
       display: block;
       td {
         display: block;
+        text-align: left;
       }
     }
   }
