@@ -2,10 +2,12 @@
   "title": "Coderetreat 2017 in Lisbon",
   "url": "https://www.meetup.com/expert-talks-portugal/events/244654861/",
   "moderators": [
-    "@EE_Portugal",
     "@i3r41n",
     "@jivagoalves",
     "@nfma"
+  ],
+  "sponsors": [
+    "@EE_Portugal",
   ],
   "location": {
     "city": "Lisbon",
