@@ -9,6 +9,8 @@
   "location": {
     "city": "Johannesburg",
     "country": "South Africa",
+    "utcOffset": 2,
+    "timezone": "Africa/Johannesburg",
     "coordinates": {
       "latitude": -26.1855441,
       "longitude": 28.0169193
