@@ -1,0 +1,19 @@
+{
+  "title": "GDCR17 in Hamburg, Germany",
+  "url": "https://www.meetup.com/de-DE/sokahh/events/239067827/",
+  "moderators": [
+    "@sokahh",
+    "@mreinhardt",
+    "@SvenBunge"
+  ],
+  "location": {
+    "city": "Hamburg",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 53.5567,
+      "longitude": 9.9085
+    },
+    "utcOffset": 2,
+   "timezone":"Europe/Berlin"
+  }
+}
