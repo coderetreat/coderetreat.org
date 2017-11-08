@@ -1,0 +1,19 @@
+{
+  "title": "GDCR17 in Shanghai",
+  "url": "https://jinshuju.net/f/0UG5uv",
+  "moderators": [
+    "@FengxiangZhu",
+    "Wu Ke",
+    "Jin Zhonghao"
+  ],
+  "location": {
+    "city": "Shanghai",
+    "country": "China",
+    "coordinates": {
+      "latitude": 31.224631,
+      "longitude": 121.1958828
+    },
+    "utcOffset": 8,
+    "timezone": "Asia/Shanghai"
+  }
+}
