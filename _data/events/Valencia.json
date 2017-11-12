@@ -2,8 +2,9 @@
   "title": "Global Day of Coderetreat 2017 in Valencia",
   "url": "https://www.meetup.com/es-ES/Aprende-a-programar-en-Valencia/events/244747810/",
   "moderators": [
-    "@devscola",
-    "@nyan_dev",
+    "@devscola"
+  ],
+  "sponsors": [
     "@FlywireEng"
   ],
   "location": {
