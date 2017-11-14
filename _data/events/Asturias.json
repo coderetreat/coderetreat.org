@@ -1,0 +1,21 @@
+{
+  "title": "Asturias Global Day Of Code Retreat 2017, hosted by AsturiasHacking",
+  "url": "https://www.eventbrite.com/e/asturias-global-day-of-code-retreat-2017-tickets-39731055657",
+  "moderators": [
+    "@sergioalvz_",
+    "@dcarral"
+  ],
+  "sponsors": [
+    "@sweetspot"
+  ],
+  "location": {
+    "city": "Gijón",
+    "country": "Spain",
+    "coordinates": {
+      "latitude": 43.5226006,
+      "longitude": -5.6276921
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Madrid"
+  }
+}

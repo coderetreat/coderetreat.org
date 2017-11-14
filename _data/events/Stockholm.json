@@ -1,8 +1,12 @@
 {
   "title": "GDCR17 in Stockholm",
-  "url": "https://gist.github.com/erorcodes/2878371c5e5412f1246cadfc7bde4a35",
+  "url": "https://www.meetup.com/Stockholm-Software-Craftsmanship/events/244834081/",
   "moderators": [
-    "@erorcodes"
+    "@erorcodes",
+    "Stockholm Software Craftsmanship"
+  ],
+  "sponsors": [
+    "@citerus_se"
   ],
   "location": {
     "city": "Stockholm",
