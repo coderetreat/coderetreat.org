@@ -1,0 +1,21 @@
+{
+  "title": "GDCR17 em Fortaleza",
+  "url": "https://goo.gl/FT5KzX",
+  "moderators": [
+    "@pbenety",
+    "@lobinhojr"
+  ],
+  "sponsors": [
+  	"@iatlantico"
+  ],
+  "location": {
+    "city": "Fortaleza",
+    "country": "Brasil",
+    "coordinates": {
+      "latitude": -3.7652304,
+      "longitude": -38.4797354
+    },
+    "utcOffset": -3,
+    "timezone": "America/Fortaleza"
+  }
+}
