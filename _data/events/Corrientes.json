@@ -1,0 +1,22 @@
+{
+  "title": "Corrientes Global Day of Code Retreat 2017",
+  "url": "https://www.eventbrite.com.ar/e/corrientes-global-day-of-code-retreat-2017-tickets-39924023830",
+  "moderators": [
+    "@matiasmasca",
+    "@fernandezja",
+    "@Sk8Porti"
+  ],
+  "sponsors": [
+    "@desarrollosnea"
+  ],
+  "location": {
+    "city": "Corrientes",
+    "country": "Argentina",
+    "coordinates": {
+      "latitude": -27.4615947,
+      "longitude": -58.8312107
+    },
+    "utcOffset": -3,
+    "timezone": "America/Buenos_Aires"
+  }
+}
