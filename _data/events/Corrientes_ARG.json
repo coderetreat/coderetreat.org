@@ -1,0 +1,19 @@
+{
+  "title": "GDCR17 en Corrientes",
+  "url": "https://www.eventbrite.com.ar/e/corrientes-global-day-of-code-retreat-2017-tickets-39924023830",
+  "moderators": [
+    "@matiasmasca",
+    "@fernandezja",
+    "@Sk8Porti"
+  ],
+  "location": {
+    "city": "Corrientes",
+    "country": "Corrientes",
+    "coordinates": {
+      "latitude": -27.4618885,
+      "longitude": -58.8306192
+    },
+    "utcOffset": -3,
+    "timezone": "America/Buenos_Aires"
+  }
+}
