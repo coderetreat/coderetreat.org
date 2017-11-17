@@ -10,12 +10,12 @@
     There are <strong><a href="/events">{{site.data.events | size}} Coderetreat events</a></strong> registered for GDCR 2017 so far.
     <br>
     <h1>
-    <u>Coderetreats start in:</u>
-    {% include countdown.liquid date='11/18/2017 8:00 AM' size='large' name ='gdcr2017' %}
+    <u>The first coderetreat starts in:</u>
+    {% include countdown.liquid date='2017-11-17T20:00:00.000Z' size='large' name ='gdcr2017' %}
     </h1>
   </div>
 </section>
- 
+
 <script>
   $(function() {
     $.get('/events/gdcr2017.json', function(eventsJson) {
