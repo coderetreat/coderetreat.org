@@ -1,3 +1,0 @@
----
----
-{{ site.data.gdcr15 | jsonify }}
