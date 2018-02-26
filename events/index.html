@@ -6,8 +6,8 @@ layout: default
     <div id="popup"></div>
 </div>
 
-<h1>All events this year</h1>
-{% assign events_array = site.data.events | where_exp: 'name', '1' %}
+<h1>Previous events from 2017</h1>
+{% assign events_array = site.data.events_gdcr2017 | where_exp: 'name', '1' %}
 {% assign countries = events_array | map: 'location' | map: 'country' | uniq | sort %}
 
 
