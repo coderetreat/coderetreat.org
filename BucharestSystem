@@ -1,0 +1,17 @@
+{
+  "title": "Global Day of Coderetreat 2017 in Bucharest",
+  "url": "meetup.com/system-programming.com",
+  "moderators": [
+    "@_adelinastanciu"
+  ],
+  "location": {
+    "city": "Bucharest",
+    "country": "Romania",
+    "coordinates": {
+      "latitude": 44.6638075,
+      "longitude": 26.1451286
+    },
+    "utcOffset": 3,
+    "timezone": "Europe/Bucharest"
+  }
+}
