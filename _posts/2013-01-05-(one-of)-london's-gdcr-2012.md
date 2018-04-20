@@ -64,8 +64,7 @@ Though we had over 20 people subscribed to attend only 9 showed up, but this act
 We started at 9 am with a quick intro about the LSCC, what a code retreat is all about, format of the day, and an explanation of Conway's Game of Life. We then jumped straight to the first session.
 
 
-###
-Session 1 - no constraints
+### Session 1 - no constraints
 
 
 The goal of this session was to get familiar with the problem, last tweaks to the development environment and make sure everyone had a chance to "wake up".
@@ -77,8 +76,7 @@ Starting the day
 
 
 
-###
-Session 2 - Baby steps
+### Session 2 - Baby steps
 
 
 This session forces us to take very small steps when writing code by using source control to commit early and often. It goes like this:
@@ -107,8 +105,7 @@ This session was a bit of a surprise for a few and they could see its benefit st
 A few readily agreed they would try this at work, but with longer timeboxes.
 
 
-###
-Session 3 - TDD as if you meant it
+### Session 3 - TDD as if you meant it
 
 
 This session was created as an "... _exercise that folks could do, in safe controlled conditions, whereby they could experience the odd and surprising (and delightful) things that can happen when you really do TDD, as Beck describes it, with the hope that the experience would carry over to their daily work as programmers._"
@@ -136,15 +133,13 @@ A different approach to a familiar practice, it took a bit of effort to resist t
 Some felt slowed down and not as productive but could see a different design emerging rather than the classic Cell or World objects created straight from the beginning, but not many were sure they would use this in their jobs.
 
 
-###
-Lunch
+### Lunch
 
 
 After session 3 we broke for lunch, during which we watched a video from JetBrains since they were this years global sponsor, as well as a pre prepared slide deck with other sponsors and a few videos of Conway's Game of Life evolutions ([this](http://www.youtube.com/watch?v=xP5-iIeKXE8) is my favourite).
 
 
-###
-Session 4 - Mute pairs
+### Session 4 - Mute pairs
 
 
 The main aim of this session is about communicating intent through your code with no talking done by either developer. Its pretty simple:
@@ -167,8 +162,7 @@ All pairs mentioned picking up a failing test produced by their partner and rewr
 
 After 45 minutes of silence it felt good to speak again at the retrospective
 
-###
-Session 5 - Object calisthenics
+### Session 5 - Object calisthenics
 
 
 This one is about drilling in good OO design practices:
@@ -189,7 +183,7 @@ This is always a tough one, specially not using getters and setters ( "How are w
 
 Not using getters doesn't mean you can't have methods return values, just that these shouldn't be class variables - i.e. some behaviour should happen inside that method. Ideally "Tell, don't ask" and a mocking framework should be used.
 
-As[Marco](https://twitter.com/marcoVermeulen) pointed out, "calisthenics" is simply good OO practices and something we should be using on a daily basis - maybe "Don’t use ELSE keyword." and "No classes with more than two instance variables" are debatable.
+As [Marco](https://twitter.com/marcoVermeulen) pointed out, "calisthenics" is simply good OO practices and something we should be using on a daily basis - maybe "Don’t use ELSE keyword." and "No classes with more than two instance variables" are debatable.
 
 
 [![](http://3.bp.blogspot.com/-gs6F8Ky4I6o/UMy5Zfjn73I/AAAAAAAABVU/52-nRI1d1Q8/s320/2012-12-08+12.15.08.jpg)](http://3.bp.blogspot.com/-gs6F8Ky4I6o/UMy5Zfjn73I/AAAAAAAABVU/52-nRI1d1Q8/s1600/2012-12-08+12.15.08.jpg)
@@ -198,8 +192,7 @@ Ashish and Alejandro pairing using vim
 
 
 
-###
-Session 6 - Choose your own constraint(s)
+### Session 6 - Choose your own constraint(s)
 
 
 For the last session of the day we went easy on the group and let each pair decide which constraints to use (if any). Some selected baby steps, others TDD as you meant it, or using a different language.
@@ -211,8 +204,7 @@ For the last session of the day we went easy on the group and let each pair deci
 
 
 
-###
-Closing circle
+### Closing circle
 
 
 To finish off the day we gathered round after the last session for the final retrospective and asked everyone to name three things:
