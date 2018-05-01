@@ -62,7 +62,7 @@ describe('Invalid events given in /test/invalid_events', () => {
       + '/*IsEmpty.json');
 
     eventsWithEmptyFields.forEach(file =>
-      it(path.basename(file) + ' does not validate', () => {
+      it(path.basename(file) + ' should not validate', () => {
         const result = validationResults(JSON.parse(fs.readFileSync(file)));
         expect(result.errors.length).toBeGreaterThan(0);
       })
@@ -74,7 +74,7 @@ describe('Invalid events given in /test/invalid_events', () => {
       + '/*UnexpectedKey.json');
 
     eventsWithUnexpectedKeys.forEach(file =>
-      it(path.basename(file) + ' does not validate', () => {
+      it(path.basename(file) + ' should not validate', () => {
         const result = validationResults(JSON.parse(fs.readFileSync(file)));
         expect(result.errors.length).toBeGreaterThan(0);
       })
