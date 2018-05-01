@@ -6,8 +6,8 @@ layout: default
     <div id="popup"></div>
 </div>
 
-<h1>Previous events from 2017</h1>
-{% assign events_array = site.data.events_gdcr2017 | where_exp: 'name', '1' %}
+<h1>GDCR events in 2018</h1>
+{% assign events_array = site.data.events_gdcr2018 | where_exp: 'name', '1' %}
 {% assign countries = events_array | map: 'location' | map: 'country' | uniq | sort %}
 
 
@@ -82,9 +82,9 @@ layout: default
 
 <script>
     $(function () {
-        $.get('/events/gdcr2017.json', function (eventsJson) {
-            var gdcr2017Events = mapEventsDataToMapFormat(eventsJson);
-            addEventsToMap(gdcr2017Events);
+        $.get('/events/gdcr2018.json', function (eventsJson) {
+            var gdcrEvents = mapEventsDataToMapFormat(eventsJson);
+            addEventsToMap(gdcrEvents);
         });
 
         $('#gdcrCountry').on('change', function (e) {
