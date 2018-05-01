@@ -1,16 +1,4 @@
 ---
-- youtube: xW4ntc2vsW8
-  title: Global Day of Code Retreat 2017 - preparación facilitadores
-  description: Una sesión de entrenamiento para facilitadores del Global Day of Code Retreat
-  author: Socrates Chile
-  views: '19'
-  added: Nov 17, 2017
-- youtube: QhDpq5hrRM8
-  title: GDCR Host Training
-  description: Training for hosts
-  author: Pandichi Alin-Ionut
-  views: '102'
-  added: Nov 7, 2015
 - youtube: xc491GY5AgU
   title: GameOfLife
   description: 'It''s written in VBA in #gdcr13 Hangzhou'
@@ -23,12 +11,12 @@
   author: Jim Hurne
   views: '396'
   added: Dec 7, 2012
-#- youtube: a9xAKttWgP4
-#  title: "Conway's Game Of Life in APL"
-#  description: This is a great video to show at lunch during a coderetreat!  Click this link for the high resoluti…
-#  author: Jim Hurne
-#  views: '142'
-#  added: Dec 7, 2012
+- youtube: a9xAKttWgP4
+  title: "Conway's Game Of Life in APL"
+  description: This is a great video to show at lunch during a coderetreat!  Click this link for the high resoluti…
+  author: Jim Hurne
+  views: '142'
+  added: Dec 7, 2012
 - youtube: KJe9H6qS82I
   title: SmoothLifeL
   description: This is a great video to show during lunch at a coderetreat! SmoothLife is a family of rules creat…
@@ -47,12 +35,6 @@
   author: Jim Hurne
   views: '219'
   added: Dec 7, 2012
-- vimeo: '54519386'
-  title: Coderetreat Facilitator Training - 2012-11-28
-  description: A recording of the Coderetreat Facilitator Training held on November 28th, 2012 at 9:30am UTC
-  author: Jim Hurne
-  views: '100'
-  added: Nov 28, 2012
 - vimeo: '54845248'
   title: Mixed Constraints - Next Up at Coderetreat
   description: Up for a challenge? Then let Jesse Wolgamott from Houston, TX, USA introduce three constraints for…

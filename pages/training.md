@@ -6,6 +6,28 @@ layout: default
 
 <div id="main">
     <div id="content">
+
+    <section class="videos">
+      <h1>Pre-recorded training sessions</h1>
+
+      <ul class="video-list">
+        {% assign videos = site.data.videos-training | sort: 'date' %}
+        {% for video in videos %}
+        <li class="video">
+          {% if video.youtube %}
+          <iframe src="https://www.youtube.com/embed/{{ video.youtube }}" frameborder="0" allowfullscreen></iframe>
+          {% endif %}
+
+          {% if video.vimeo %}
+          <iframe src="https://player.vimeo.com/video/{{video.vimeo}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          {% endif %}
+
+          <div class="title">{{video.added}} by {{video.author}}</div>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+
       <h1>Upcoming training sessions</h1>
       <div class="tip">Like last year, we will have Hangout sessions to help you get started with running and facilitating a coderetreat.</div>
       <div class="tip">Tip: visit the event page to see the date and time converted to your local timezone.</div>
