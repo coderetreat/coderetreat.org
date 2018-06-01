@@ -1,0 +1,21 @@
+{
+  "title": "GDCR18 in Vienna, Austria",
+  "url": "https://techtalk.at/trainings",
+  "url-not-available-yet": "https://techtalk.at/trainings/global-day-of-coderetreat-2018/?lang=en",
+  "moderators": [
+    "@jbrains"
+  ],
+  "sponsors": [
+    "@techtalks"
+  ],
+  "location": {
+    "city": "Vienna",
+    "country": "Austria",
+    "coordinates": {
+      "latitude": 48.23645,
+      "longitude": 16.413294
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Vienna"
+  }
+}
