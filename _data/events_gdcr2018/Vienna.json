@@ -1,8 +1,9 @@
 {
   "title": "GDCR18 in Vienna, Austria",
-  "url": "https://techtalk.at/trainings",
+  "url": "https://techtalk.at/trainings/global-day-of-coderetreat-2018/",
   "moderators": [
-    "@jbrains"
+    "@jbrains",
+    "@codecopkofler"
   ],
   "sponsors": [
     "@techtalks"
