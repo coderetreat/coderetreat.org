@@ -33,7 +33,7 @@ layout: default
       <div class="tip">Tip: visit the event page to see the date and time converted to your local timezone.</div>
 
       <div class="Umd">
-        {% for training in site.data.trainings.trainings-2017 reversed %}
+        {% for training in site.data.trainings.trainings-2018 reversed %}
           {% capture posttime %}{{training.dateTime | date: '%s'}}{% endcapture %}
           {% if posttime > nowunix %}
             {% include session.html %}
