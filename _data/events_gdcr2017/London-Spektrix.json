@@ -1,0 +1,18 @@
+{
+  "title": "GDCR17 at Spektrix",
+  "url": "https://www.eventbrite.co.uk/e/gdcr2017-spektrix-tickets-38543450498",
+  "moderators": [
+    "@dannojb",
+    "@mimmozzo"
+  ],
+  "location": {
+    "city": "London",
+    "country": "United Kingdom",
+    "coordinates": {
+      "latitude": 51.5127679,
+      "longitude": -0.1056135
+    },
+    "utcOffset": 1,
+    "timezone": "Europe/London"
+  }
+}

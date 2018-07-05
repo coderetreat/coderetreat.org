@@ -1,0 +1,15 @@
+{
+  "title": "GDCR17 @fiducia_gad in Münster",
+  "url": "https://www.softwerkskammer.org/activities/ms-gdcr-17/",
+  "location": {
+    "utcOffset": 2,
+    "timezone": "Europe/Berlin",
+    "city": "Münster",
+    "country": "Germany",
+    "coordinates": {
+      "latitude":  51.933996,
+      "longitude": 7.587291
+    }
+  },
+  "moderators": ["@ndrssmn"]
+}

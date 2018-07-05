@@ -1,3 +1,3 @@
 ---
 ---
-{{ site.data.events | jsonify }}
+{{ site.data.events_gdcr2017 | jsonify }}

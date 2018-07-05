@@ -57,6 +57,13 @@
         "description": "Name or Twitter Handle of the moderators",
         "type": "string"
       }
+    },
+    "sponsors": {
+      "type": "array",
+      "items": {
+        "description": "Name or Twitter Handle of the sponsors",
+        "type": "string"
+      }
     }
   },
   "additionalProperties": false,

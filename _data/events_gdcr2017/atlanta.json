@@ -1,0 +1,17 @@
+{
+  "title": "GDCR 2017 in Atlanta",
+  "url": "http://www.coderetreatatl.com/",
+  "moderators": [
+    "@mdclement"
+  ],
+  "location": {
+    "city": "Atlanta, GA",
+    "country": "USA",
+    "coordinates": {
+      "latitude": 33.807474,
+      "longitude": -84.3829214
+    },
+    "utcOffset": -4,
+    "timezone": "America/New_York"
+  }
+}

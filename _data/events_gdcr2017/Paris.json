@@ -1,0 +1,18 @@
+{
+  "title": "Global Day of Code Retreat @ OCTO",
+  "url": "https://www.eventbrite.fr/e/billets-global-day-of-code-retreat-octo-38777450398",
+  "moderators": [
+    "@nicoespeon",
+    "@adibolb"
+  ],
+  "location": {
+    "city": "Paris",
+    "country": "France",
+    "coordinates": {
+      "latitude": 48.8686208,
+      "longitude": 2.3314411
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Paris"
+  }
+}
