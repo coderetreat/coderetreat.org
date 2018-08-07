@@ -1,0 +1,21 @@
+{
+  "title": "GDCR 2018 Frankfurt",
+  "url": "https://global-day-of-coderetreat-2018-frankfurt.eventbrite.de",
+  "moderators": [
+    "@svenlange",
+    "@CodeRetreatFfm"
+  ],
+  "sponsors": [
+    "@_dwpbank"
+  ],
+  "location": {
+    "city": "Frankfurt",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 50.122675,
+      "longitude": 8.650012
+    },
+    "utcOffset": 1,
+    "timezone": "Europe/Berlin"
+  }
+}
