@@ -1,0 +1,22 @@
+{
+  "title": "GDCR18 in Columbus OH",
+  "url": "https://www.meetup.com/techlifecolumbus/events/253634066/"
+  "moderators": [
+    "@jlacar",
+    "Jim McClure",
+    "Kevin Smith"
+  ],
+  "location": {
+    "city": "Columbus, OH",
+    "country": "USA",
+    "coordinates": {
+      "latitude": 39.9748172,
+      "longitude": -82.99992
+    },
+    "utcOffset": -4,
+    "timezone": "America/Detroit"
+  },
+  "sponsors": [
+    "Pillar Technology"
+  ]
+}
