@@ -6,3 +6,6 @@ exclude:
   - yarn.lock
   - node_modules
   - README.md
+include:
+  - _redirects
+

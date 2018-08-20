@@ -1,0 +1,18 @@
+{
+  "title": "GDCR17 @ Italian Agile Day",
+  "url": "https://tickets.agilemovement.it/event/iad2017cr/",
+  "moderators": [
+    "@racingDeveloper",
+    "@xpmatteo"
+  ],
+  "location": {
+    "city": "Urbino",
+    "country": "Italy",
+    "coordinates": {
+      "latitude": 43.7292325,
+      "longitude": 12.6129106
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Rome"
+  }
+}

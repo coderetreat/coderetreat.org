@@ -1,0 +1,23 @@
+{
+  "title": "GDCR17 in Santiago, Chile",
+  "url": "https://www.meetup.com/preview/Software-Crafters-Chile/events/244512436",
+  "moderators": [
+    "@chile_socrates",
+    "@almanegreteshen",
+    "@taichi2000",
+    "@davidlaym",
+    "@JosephCastroR",
+    "@jchacana",
+    "@morph3o"
+  ],
+  "location": {
+    "city": "Santiago",
+    "country": "Chile",
+    "coordinates": {
+      "latitude": -33.4724727,
+      "longitude": -70.9100286
+    },
+    "utcOffset": -4,
+    "timezone": "America/Santiago"
+  }
+}
