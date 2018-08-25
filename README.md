@@ -19,6 +19,14 @@ This year, registering your event at coderetreat.org is easier than it has ever 
     * `location.country`
     * `location.city`
 
+   For `location.country`, make sure you use the full name of the country. Example below:
+
+    - United Kingdom ✅
+    - ~~UK~~
+    - United States of America ✅
+    - ~~US~~
+    - ~~USA~~
+
    If you want your event to show up on our map as well, please fill out `location.coordinates` with the coordinates of your city.
    You can find them by typing the city name into Google Maps (or OSM for that matter) and extracting the coordinates from the URL.
 
