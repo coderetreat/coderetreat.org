@@ -17,4 +17,13 @@
     "type" : "Facilitator",
     "dateTime" : "Thursday, July 12 2018, 6:00 PM UTC"
   },
+  {
+    "url" : "https://www.meetup.com/Coderetreat-Training-Sessions/events/254355766/",
+    "image" : "https://lh3.googleusercontent.com/-9uSjOHks4cg/Wa7Ioee1Z_I/AAAAAAAAAAA/a_0dlsUfaAAPskTPLoDmWixy2nwE7_RYACJgCEAE/w420-h105-p/event_theme.jpg",
+    "trainerProfile" : "https://twitter.com/rradczewski",
+    "trainerName" : "Raimo Radczewski",
+    "trainerPhoto" : "https://pbs.twimg.com/profile_images/593402307594821632/0eBBXeS2_400x400.jpg",
+    "type" : "General",
+    "dateTime" : "Tuesday, September 11 2018, 6:00 PM UTC"
+  }
 ]
