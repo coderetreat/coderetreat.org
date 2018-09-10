@@ -1,0 +1,18 @@
+{
+  "title": "GDCR @ ExpertTalks",
+  "url": "https://www.meetup.com/expert-talks-Pune/",
+  "moderators": [
+    "@npagnihotri",
+    "@nickdawiz"
+  ],
+  "location": {
+    "city": "Pune",
+    "country": "India",
+    "coordinates": {
+      "latitude": 18.544905,
+      "longitude": 73.909751
+    },
+    "utcOffset": 5.5,
+    "timezone": "Asia/Kolkata"
+  }
+}
