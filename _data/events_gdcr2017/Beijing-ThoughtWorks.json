@@ -1,0 +1,21 @@
+{
+  "title": "GDCR 2017 in ThoughtWorks Beijing",
+  "url": "https://gdcr-2017-thoughtworks-beijing.eventbrite.com",
+  "moderators": [
+    "@wubin28",
+    "Jin XU",
+    "Victory Yan WANG",
+    "Minmin QIU",
+    "Ying HE"
+  ],
+  "location": {
+    "city": "Beijing",
+    "country": "China",
+    "coordinates": {
+      "latitude": 39.9375183,
+      "longitude": 116.42804
+    },
+    "utcOffset": 8,
+    "timezone": "Asia/Shanghai"
+  }
+}
