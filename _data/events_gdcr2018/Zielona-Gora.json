@@ -1,0 +1,17 @@
+{
+  "title": "GDCR 2018 in Zielona Gora",
+  "url": "https://docs.google.com/forms/d/e/1FAIpQLSdYYwBQOrVEPrvFYrfdJKzxqZgGhy006LlNJueqkA1x1amDEg/viewform",
+  "moderators": [
+    "Anna Meisinger"
+  ],
+  "location": {
+    "city": "Zielona Gora",
+    "country": "Poland",
+    "coordinates": {
+      "latitude": 51.942083,
+      "longitude": 15.5279537
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Warsaw"
+  }
+}
