@@ -10,5 +10,14 @@ echo ""
 
 for j in $LAST_5_EVENTS;
   do
-    jq -r '"Welcome \"" + .title + "\" with " + (.moderators | join(", ")) + " in " + .location.city + ", " + .location.country + " to #gdcr18! See the link for more information " + .url' $j;
+    jq -r '
+      "🌐 Welcome " +
+      .location.city + ", " + .location.country +
+      (if (.moderators | length) == 1 then
+        " with " + .moderators[0]
+      elif (.moderators | length) > 1 then
+        " with " + (.moderators[:-1] | join(", ")) + " & " + (.moderators[-1])
+      else "" end) +
+      " to the Global Day Of Coderetreat 2018 on Nov 17th! #gdcr18 #coderetreat " + .url
+      ' $j;
   done
