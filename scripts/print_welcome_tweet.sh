@@ -3,7 +3,7 @@
 DIRECTORY="_data/events_gdcr2018"
 FILES=$(ls $DIRECTORY/*.json)
 
-LAST_5_EVENTS=$(for i in $FILES; do git --no-pager log --diff-filter=A --follow --format="%at $i" -- $i | tail -1; done | sort | tail -n 5 | awk '{ print $2 }')
+LAST_5_EVENTS=$(for i in $FILES; do git --no-pager log --diff-filter=A --follow --format="%at $i" -- $i | tail -1; done | sort | awk '{ print $2 }')
 
 echo "Here are tweetable welcome messages for the latest five events registered (as per git)"
 echo ""
