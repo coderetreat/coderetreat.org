@@ -15,7 +15,7 @@ This year, registering your event at coderetreat.org is easier than it has ever 
    The only required fields are:
     * `title`
     * `url`
-    * either `location.utcOffset` or `location.timezone`
+    * either `location.utcOffset` or `location.timezone` (please note that if you are using `utcOffset`, the offset refers to the event date, so please consider that *Dailight Savings Time* might apply at the time you are submitting your event, but not when the event takes place.)
     * `location.country`
     * `location.city`
 
