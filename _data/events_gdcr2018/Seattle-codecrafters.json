@@ -1,0 +1,18 @@
+{
+  "title": "GDCR 2018 - Seattle Code Crafters",
+  "url": "https://www.meetup.com/seattle-software-craftsmanship/events/254972860/",
+  "moderators": [
+    "@katanation",
+    "@paigeisxp"
+  ],
+  "location": {
+    "city": "Lynnwood",
+    "country": "United States of America",
+    "coordinates": {
+      "latitude": 47.845791,
+      "longitude": -122.293084
+    },
+    "utcOffset": -7,
+    "timezone": "America/Los_Angeles"
+  }
+}
