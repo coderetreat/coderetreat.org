@@ -2,7 +2,9 @@
   "title": "GDCR in Helsinki",
   "url": "https://www.eventbrite.co.uk/e/global-day-of-coderetreat-helsinki-tickets-51246828644",
   "moderators": [
-    "@rinkkasatiainen",
+    "@rinkkasatiainen"
+  ],
+  "sponsors": [
     "@ambientia"
   ],
   "location": {
