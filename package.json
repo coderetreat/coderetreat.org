@@ -16,6 +16,7 @@
     "yamljs": "^0.2.8"
   },
   "dependencies": {
-    "moment": "^2.18.1"
+    "moment": "^2.18.1",
+    "test": "^0.6.0"
   }
 }
