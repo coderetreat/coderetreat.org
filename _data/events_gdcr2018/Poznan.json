@@ -1,0 +1,17 @@
+{
+  "title": "GDCR 2018 Poznań",
+  "url": "",
+  "moderators": [
+    "https://www.meetup.com/Poznan-Java-User-Group/events/255433496/"
+  ],
+  "location": {
+    "city": "Poznań",
+    "country": "Poland",
+    "coordinates": {
+      "latitude": 52.403597,
+      "longitude": 16.9136073
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Warsaw"
+  }
+}
