@@ -1,0 +1,21 @@
+{
+  "title": "GDCR 2018 Softwerkskammer Köln @lisegmbh",
+  "url": "https://www.meetup.com/de-DE/Softwerkskammer-Koln/events/255294577/",
+  "moderators": [
+    "@skorzinetzki",
+    "@bikratz"
+  ],
+  "sponsors": [
+    "@lisegmbh"
+  ],
+  "location": {
+    "city": "Köln",
+    "country": "Deutschland",
+    "coordinates": {
+      "latitude": 50.9847388,
+      "longitude": 6.8879454
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Berlin"
+  }
+}

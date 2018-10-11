@@ -1,0 +1,21 @@
+{
+  "title": "GDCR18 in Chicago",
+  "url": "https://www.meetup.com/8th-light-university/events/254951280/",
+  "moderators": [
+    "@NicoleCarpUSA",
+    "@EMeyer8thLight"
+  ],
+  "sponsors": [
+    "@8thLightInc"
+  ],
+  "location": {
+    "city": "Chicago",
+    "country": "United States of America",
+    "coordinates": {
+      "latitude": 41.8830478,
+      "longitude": -87.6290087
+    },
+    "utcOffset": -5,
+    "timezone": "America/Chicago"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Asturias GDCR 2018",
+  "url": "https://www.meetup.com/AsturiasHacking/events/254343807/",
+  "moderators": [
+    "@asturiashacking",
+    "@azahara_fergui",
+    "@codecoolture",
+    "@dg_suarez",
+    "@tasug0"
+  ],
+  "location": {
+    "city": "Xixón",
+    "country": "Spain",
+    "coordinates": {
+      "latitude": 43.5229224,
+      "longitude": -5.6276883
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Madrid"
+  }
+}

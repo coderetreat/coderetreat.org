@@ -2,7 +2,16 @@ repository: coderetreat/coderetreat.github.io
 permalink: /blog/:year/:month/:day/:title/
 exclude:
   - package.json
+  - package-lock.json
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - CONTRIBUTING.md
+  - scripts
   - test
   - yarn.lock
   - node_modules
   - README.md
+include:
+  - _redirects
+

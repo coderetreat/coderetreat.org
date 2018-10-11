@@ -1,0 +1,19 @@
+{
+  "title": "GDCR18 in Cluj",
+  "url": "http://www.rabs.ro/events?ee=22",
+  "moderators": [
+    "@horea_hopartean",
+    "@florincoros",
+    "@sergiudamian"
+  ],
+  "location": {
+    "city": "Cluj-Napoca",
+    "country": "Romania",
+    "coordinates": {
+      "latitude": 46.773318,
+      "longitude": 23.589607
+    },
+    "utcOffset": 3,
+    "timezone": "Europe/Bucharest"
+  }
+}
