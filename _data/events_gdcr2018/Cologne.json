@@ -3,14 +3,15 @@
   "url": "https://www.meetup.com/de-DE/Softwerkskammer-Koln/events/255294577/",
   "moderators": [
     "@skorzinetzki",
-    "@bikratz"
+    "@bikratz",
+	"Martin Dieblich"
   ],
   "sponsors": [
     "@lisegmbh"
   ],
   "location": {
-    "city": "Köln",
-    "country": "Deutschland",
+    "city": "Cologne",
+    "country": "Germany",
     "coordinates": {
       "latitude": 50.9847388,
       "longitude": 6.8879454
