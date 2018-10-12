@@ -58,6 +58,16 @@ layout: default
       <hr/>
 
       <div id='past-training'>
+      <h1>Past training sessions - 2018</h1>
+      <div class="Umd">
+      {% for training in site.data.trainings.trainings-2018 %}
+        {% capture posttime %}{{training.dateTime | date: '%s'}}{% endcapture %}
+        {% if posttime < nowunix %}
+          {% include session.html %}
+        {% endif %}
+      {% endfor %}
+      </div>
+
         <h1>Past training sessions - 2017</h1>
         <div class="Umd">
           {% for training in site.data.trainings.trainings-2017 %}
@@ -68,12 +78,7 @@ layout: default
           {% endfor %}
         </div>
 
-        <h1>Past training sessions - 2016</h1>
-        <div class="Umd">
-          {% for training in site.data.trainings.trainings-2016 %}
-            {% include session.html %}
-          {% endfor %}
-        </div>
+
       </div>
     </div>
 </div>

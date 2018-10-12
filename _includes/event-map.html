@@ -1,5 +1,6 @@
 <section id="locations">
-  <h2>So far, we have <a href="/events">{{site.data.events_gdcr2018 | size}} GDCR 2018 events</a> registered around the world!!</h2>
+  <h2>Coderetreat is a day-long, intensive practice event, focusing on the fundamentals of software development and design, away from the pressures of 'getting things done'.  <a href="/pages/about/">More about coderetreats!</a></h2>
+  <h2>So far, there are <a href="/events">{{site.data.events_gdcr2018 | size}} GDCR 2018 events</a> registered around the world!</h2>
 
   <div id="map">
     <div id="popup"></div>
@@ -14,10 +15,10 @@
 </section>
 
 <script>
-  $(function() {
-    $.get('/events/gdcr2018.json', function(eventsJson) {
-      var gdcrEvents = mapEventsDataToMapFormat(eventsJson);
-      addEventsToMap(gdcrEvents);
-    });
+$(function() {
+  $.get("/events/gdcr2018.json", function(eventsJson) {
+    var gdcrEvents = mapEventsDataToMapFormat(eventsJson);
+    addEventsToMap(gdcrEvents);
   });
+});
 </script>
