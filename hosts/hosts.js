@@ -129,14 +129,24 @@ function initVideoBoothsModel() {
       }
     }, this);
 
-    this.selectedBoothVideoRoom.subscribe(function() {
+    this.started = ko.observable(false);
+    this.start = function() {
+      _this.started(true);
+      _this.connectToRoom();
+    };
+
+    this.connectToRoom = function() {
+      if (!_this.started()) {
+        return;
+      }
+
       const container = document.querySelector("#videoboothIframeContainer");
       while (container.hasChildNodes()) {
         container.removeChild(container.firstChild);
       }
 
       const options = {
-        roomName: this.selectedBoothVideoRoom(),
+        roomName: _this.selectedBoothVideoRoom(),
         parentNode: container,
         configOverwrite: {
           startWithAudioMuted: true
@@ -162,7 +172,7 @@ function initVideoBoothsModel() {
           ]
         }
       };
-      this.jitsiApi(new JitsiMeetExternalAPI("meet.jit.si", options));
+      _this.jitsiApi(new JitsiMeetExternalAPI("meet.jit.si", options));
       console.log("booth", "new API");
 
       window.setTimeout(function() {
@@ -180,7 +190,8 @@ function initVideoBoothsModel() {
           .jitsiApi()
           .on("participantLeft", _this.updateParticipantsCount.bind(this));
       }, 5000);
-    }, this);
+    };
+    this.selectedBoothVideoRoom.subscribe(this.connectToRoom, this);
 
     this.autoswitchRoom = ko.observable(true);
     this.tooFewParticipants = ko.observable(false);
@@ -245,6 +256,9 @@ function initVideoBoothsModel() {
     this.switchRoom = function() {
       console.log("booth", "Switching");
       _this.autoswitchTimeout(undefined);
+      if (!_this.autoswitchRoom()) {
+        return;
+      }
 
       const tooFew = _this.tooFewParticipants();
       const tooMany = _this.tooManyParticipants();
