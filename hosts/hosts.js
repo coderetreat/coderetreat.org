@@ -78,7 +78,7 @@ function initVideoBoothsModel() {
       if(typeof selectedTimezoneCategory !== 'object')
         return undefined;
 
-      return "https://appear.in/"+selectedTimezoneCategory.tag+"-"+this.boothNumber();
+      return "https://meet.jit.si/"+selectedTimezoneCategory.tag+"-"+this.boothNumber();
     }, this);
 
     this.selectedBoothVideoUrl.subscribe(function() {
