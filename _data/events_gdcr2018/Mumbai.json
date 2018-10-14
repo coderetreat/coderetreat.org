@@ -1,0 +1,18 @@
+{
+  "title": "GDCR18@Mumbai",
+  "url": "https://goo.gl/yUA1sX",
+  "moderators": [
+    "@vedantseta",
+    "@sandeepshetty"
+  ],
+  "location": {
+    "city": "Mumbai City",
+    "country": "India",
+    "coordinates": {
+      "latitude": 19.124681,
+      "longitude": 72.8463366
+    },
+   "utcOffset": 5.5,
+   "timezone": "Asia/Kolkata"
+  }
+}
