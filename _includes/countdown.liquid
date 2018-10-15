@@ -1,7 +1,7 @@
 {% assign direction = include.direction | default: "down" %}
 {% assign name = include.name | default: "" %}
 {% assign size = include.size | default: "small" %}
-{% assign targetDate = include.date | default: site.time | date: "%b/%d/%Y %H:%M %z" %}
+{% assign targetDate = include.date %}
 
 {% assign demo = include.demo | default: "false" %}
 {% if demo == "true" %}
@@ -28,17 +28,17 @@
 <script type="text/javascript">
 var CountdownWidget = CountdownWidget || function (opts) {
   var self = this;
-  
+
   var _second = 1000;
   var _minute = _second * 60;
   var _hour = _minute * 60;
   var _day = _hour * 24;
-  
+
   this.name = opts.name;
   this.direction = opts.direction;
   this.targetDate = new Date(opts.targetDate);
   this.demo = opts.demo;
-  
+
   if(this.demo == "true") {
     this.targetDate = new Date();
     this.targetDate.setDate(this.targetDate.getDate() + 3);
@@ -59,12 +59,12 @@ var CountdownWidget = CountdownWidget || function (opts) {
     $(".cd" + self.name + "Mins").text(Math.floor((distance % _hour) / _minute));
     $(".cd" + self.name + "Secs").text(Math.floor((distance % _minute) / _second));
   };
-  
+
   this.showRemaining();
   this.timer = setInterval(self.showRemaining, 333);
 };
 
-var countdownWidget_{{ name }} = 
+var countdownWidget_{{ name }} =
 new CountdownWidget({
   name: "{{ name }}",
   demo: "{{ demo }}",

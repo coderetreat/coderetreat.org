@@ -17,7 +17,7 @@
       "type": "object",
       "properties": {
         "utcOffset": {
-          "description": "The UTC Timezone the event will take place in (e.g. UTC+2 on Nov 18, 2017 for Berlin with DST considered)",
+          "description": "The UTC Timezone the event will take place in (e.g. UTC+1 on Nov 18, 2017 for Berlin with DST considered)",
           "type": "number"
         },
         "timezone": {
@@ -55,6 +55,13 @@
       "type": "array",
       "items": {
         "description": "Name or Twitter Handle of the moderators",
+        "type": "string"
+      }
+    },
+    "sponsors": {
+      "type": "array",
+      "items": {
+        "description": "Name or Twitter Handle of the sponsors",
         "type": "string"
       }
     }

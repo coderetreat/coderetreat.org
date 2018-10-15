@@ -1,0 +1,21 @@
+{
+  "title": "GDCR18 Des Moines @ The Forge by Pillar Technology",
+  "url": "https://goo.gl/forms/8BYGJRe3whgGT1dz1",
+  "moderators": [
+    "@torisstoryy",
+    "Anthony Clifton",
+    "Michael Patterson",
+    "Koll Johnson",
+    "Liz Wells"
+  ],
+  "location": {
+    "city": "Des Moines",
+    "country": "United States of America",
+    "coordinates": {
+      "latitude": 41.5667771,
+      "longitude": -93.6765558
+    },
+    "utcOffset": -5,
+    "timezone": "America/Chicago"
+  }
+}

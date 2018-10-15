@@ -1,0 +1,20 @@
+{
+  "title": "Sydney Global Day of Code Retreat 2018",
+  "url": "https://www.eventbrite.com.au/e/sydney-global-day-of-code-retreat-2018-tickets-51246992133",
+  "moderators": [
+    "Thomas Eizinger",
+    "Lloyd Fournier",
+    "Philipp Hoenisch",
+    "Franck Royer"
+  ],
+  "location": {
+    "city": "Sydney",
+    "country": "Australia",
+    "coordinates": {
+      "latitude": -33.8679919,
+      "longitude": 151.2049818
+    },
+    "utcOffset": 10,
+    "timezone": "Australia/Sydney"
+  }
+}

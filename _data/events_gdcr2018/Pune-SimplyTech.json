@@ -1,0 +1,22 @@
+{
+  "title": "GDCR18 SimplyTech / Perennial Systems, Pune",
+  "url": "http://nelkinda.com/events/2018/11/17/Global-Day-of-Coderetreat/SimplyTech/Pune-SimplyTech",
+  "moderators": [
+    "@ShwetaSadawarte"
+  ],
+  "sponsors": [
+    "@nelkinda",
+    "@perennialsys",
+    "@simplytech_in"
+  ],
+  "location": {
+    "city": "Pune",
+    "country": "India",
+    "coordinates": {
+      "latitude": 18.483507,
+      "longitude": 73.8555663
+    },
+    "utcOffset": 5.5,
+    "timezone": "Asia/Kolkata"
+  }
+}

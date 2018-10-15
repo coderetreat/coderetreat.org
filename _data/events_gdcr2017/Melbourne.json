@@ -1,0 +1,17 @@
+{
+  "title": "GDCR17 Melbourne @Thoughtworks",
+  "url": "https://www.eventbrite.co.uk/e/global-day-of-code-retreat-tickets-39378388821",
+  "moderators": [
+    "@thelukemccarthy"
+  ],
+  "location": {
+    "city": "Melbourne",
+    "country": "Australia",
+    "coordinates": {
+      "latitude": -37.8166797,
+      "longitude": 144.9617733
+    },
+    "utcOffset": 10,
+    "timezone": "Australia/Melbourne"
+  }
+}

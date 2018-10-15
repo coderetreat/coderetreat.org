@@ -1,26 +1,24 @@
 <section id="locations">
-  <h2>So far, we have <a href="/events">{{site.data.events | size}} GDCR 2017 events</a>!</h2>
+  <h2>Coderetreat is a day-long, intensive practice event, focusing on the fundamentals of software development and design, away from the pressures of 'getting things done'.  <a href="/pages/about/">More about coderetreats!</a></h2>
+  <h2>So far, there are <a href="/events">{{site.data.events_gdcr2018 | size}} GDCR 2018 events</a> registered around the world!</h2>
 
   <div id="map">
     <div id="popup"></div>
   </div>
 
   <div class="map-aside" style="align-content: center">
-    Coderetreat is a volunteer-based, globally coordinated effort to improve software developer's skills.
-    There are <strong><a href="/events">{{site.data.events | size}} Coderetreat events</a></strong> registered for GDCR 2017 so far.
-    <br>
     <h1>
-    <u>Coderetreats start in:</u>
-    {% include countdown.liquid date='11/18/2017 8:00 AM' size='large' name ='gdcr2017' %}
+    <u>The first coderetreat starts in:</u>
+    {% include countdown.liquid date='2018-11-17T00:00:00.000Z' size='large' name ='gdcr2018' %}
     </h1>
   </div>
 </section>
- 
+
 <script>
-  $(function() {
-    $.get('/events/gdcr2017.json', function(eventsJson) {
-      var gdcr2017Events = mapEventsDataToMapFormat(eventsJson);
-      addEventsToMap(gdcr2017Events);
-    });
+$(function() {
+  $.get("/events/gdcr2018.json", function(eventsJson) {
+    var gdcrEvents = mapEventsDataToMapFormat(eventsJson);
+    addEventsToMap(gdcrEvents);
   });
+});
 </script>

@@ -1,0 +1,19 @@
+{
+  "title": "GDCR17 in Gdansk",
+  "url": "https://events.epam.com/events/global-day-of-coderetreat-gdansk-2017",
+  "moderators": [
+    "@michalgruca",
+    "@pamakuch",
+    "@radekzielinski"
+  ],
+  "location": {
+    "city": "Gdansk",
+    "country": "Poland",
+    "coordinates": {
+      "latitude": 54.403014,
+      "longitude": 18.571636
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Warsaw"
+  }
+}

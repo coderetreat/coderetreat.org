@@ -1,0 +1,17 @@
+{
+    "title": "GDCR17 in Bangkok",
+    "url": "https://www.eventpop.me/e/2494",
+    "moderators": [
+      "@roofimon"
+    ],
+    "location": {
+      "city": "Bangkok",
+      "country": "Thailand",
+      "coordinates": {
+        "latitude": 13.7301254,
+        "longitude": 100.5660974
+      },
+      "utcOffset": 7,
+      "timezone": "Asia/Bangkok"
+    }
+  }
