@@ -3,9 +3,12 @@
   "url": "https://www.meetup.com/madswcraft/events/255270965/",
   "moderators": [
     "@finuka",
-    "@keyvanakbar",
+    "@keyvanakbary",
     "@rubendm23",
     "@juandvegarguez"
+  ],
+  "sponsors": [
+    "@CabifyDev"
   ],
   "location": {
     "city": "Madrid",
