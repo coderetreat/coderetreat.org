@@ -1,0 +1,22 @@
+{
+  "title": "GDCR 2018 in Bochum at Softwerkskammer Ruhrgebiet",
+  "url": "https://www.meetup.com/de-DE/Softwerkskammer-Ruhrgebiet/events/252625478/",
+  "moderators": [
+    "@georgberky",
+    "@ThomasTraude",
+    "@kiview"
+  ],
+  "sponsors": [
+    "VMRay GmbH"
+  ],
+  "location": {
+    "city": "Bochum",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 51.4451438,
+      "longitude": 7.2565569
+    },
+    "utcOffset": 1,
+    "timezone": "Europe/Berlin"
+  }
+}

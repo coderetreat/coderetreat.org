@@ -1,0 +1,22 @@
+{
+    "title": "GDCR17 e-Zest, Pune",
+    "url": "http://www.e-zest.com/gdcr-2017",
+    "moderators": [
+        "@christianhujer",
+        "@ShwetaSadawarte"
+    ],
+    "sponsors": [
+        "@nelkinda",
+        "@ezest"
+    ],
+    "location": {
+        "city": "Pune",
+        "country": "India",
+        "coordinates": {
+            "latitude": 18.578799,
+            "longitude": 73.7378663
+        },
+        "utcOffset": 5.5,
+        "timezone": "Asia/Kolkata"
+    }
+}

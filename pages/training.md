@@ -6,12 +6,34 @@ layout: default
 
 <div id="main">
     <div id="content">
+
+    <section class="videos">
+      <h1>Pre-recorded training sessions</h1>
+
+      <ul class="video-list">
+        {% assign videos = site.data.videos-training | sort: 'date' %}
+        {% for video in videos %}
+        <li class="video">
+          {% if video.youtube %}
+          <iframe src="https://www.youtube.com/embed/{{ video.youtube }}" frameborder="0" allowfullscreen></iframe>
+          {% endif %}
+
+          {% if video.vimeo %}
+          <iframe src="https://player.vimeo.com/video/{{video.vimeo}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          {% endif %}
+
+          <div class="title">{{video.added}} by {{video.author}}</div>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+
       <h1>Upcoming training sessions</h1>
       <div class="tip">Like last year, we will have Hangout sessions to help you get started with running and facilitating a coderetreat.</div>
       <div class="tip">Tip: visit the event page to see the date and time converted to your local timezone.</div>
 
       <div class="Umd">
-        {% for training in site.data.trainings.trainings-2017 reversed %}
+        {% for training in site.data.trainings.trainings-2018 reversed %}
           {% capture posttime %}{{training.dateTime | date: '%s'}}{% endcapture %}
           {% if posttime > nowunix %}
             {% include session.html %}
@@ -36,6 +58,16 @@ layout: default
       <hr/>
 
       <div id='past-training'>
+      <h1>Past training sessions - 2018</h1>
+      <div class="Umd">
+      {% for training in site.data.trainings.trainings-2018 %}
+        {% capture posttime %}{{training.dateTime | date: '%s'}}{% endcapture %}
+        {% if posttime < nowunix %}
+          {% include session.html %}
+        {% endif %}
+      {% endfor %}
+      </div>
+
         <h1>Past training sessions - 2017</h1>
         <div class="Umd">
           {% for training in site.data.trainings.trainings-2017 %}
@@ -46,12 +78,7 @@ layout: default
           {% endfor %}
         </div>
 
-        <h1>Past training sessions - 2016</h1>
-        <div class="Umd">
-          {% for training in site.data.trainings.trainings-2016 %}
-            {% include session.html %}
-          {% endfor %}
-        </div>
+
       </div>
     </div>
 </div>

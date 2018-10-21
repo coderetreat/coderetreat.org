@@ -1,0 +1,20 @@
+{
+  "title": "GDCR in Helsinki",
+  "url": "https://www.eventbrite.co.uk/e/global-day-of-coderetreat-helsinki-tickets-51246828644",
+  "moderators": [
+    "@rinkkasatiainen"
+  ],
+  "sponsors": [
+    "@ambientia"
+  ],
+  "location": {
+    "city": "Helsinki",
+    "country": "Finland",
+    "coordinates": {
+      "latitude": 60.1098679,
+      "longitude": 24.7385151
+    },
+    "utcOffset": 3,
+    "timezone": "Europe/Helsinki"
+  }
+}

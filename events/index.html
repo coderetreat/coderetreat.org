@@ -6,8 +6,8 @@ layout: default
     <div id="popup"></div>
 </div>
 
-<h1>All events this year</h1>
-{% assign events_array = site.data.events | where_exp: 'name', '1' %}
+<h1>GDCR events in 2018</h1>
+{% assign events_array = site.data.events_gdcr2018 | where_exp: 'name', '1' %}
 {% assign countries = events_array | map: 'location' | map: 'country' | uniq | sort %}
 
 
@@ -64,7 +64,7 @@ layout: default
             {%- assign sponsor = event.sponsors[i] -%}
             {%- assign first_char = sponsor | slice: 0 -%}
             {%- if first_char == '@' -%}
-            {%- assign sizeWithoutAt = sonsor | size | minus: 1 -%}
+            {%- assign sizeWithoutAt = sponsor | size | minus: 1 -%}
             {%- assign handle = sponsor | slice: 1, sizeWithoutAt -%}
             <a href="https://twitter.com/{{ handle }}">{{ sponsor }}</a>
             {%- else -%}
@@ -82,9 +82,9 @@ layout: default
 
 <script>
     $(function () {
-        $.get('/events/gdcr2017.json', function (eventsJson) {
-            var gdcr2017Events = mapEventsDataToMapFormat(eventsJson);
-            addEventsToMap(gdcr2017Events);
+        $.get('/events/gdcr2018.json', function (eventsJson) {
+            var gdcrEvents = mapEventsDataToMapFormat(eventsJson);
+            addEventsToMap(gdcrEvents);
         });
 
         $('#gdcrCountry').on('change', function (e) {
