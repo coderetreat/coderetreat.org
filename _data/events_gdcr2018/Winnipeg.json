@@ -1,0 +1,17 @@
+{
+  "title": "GDCR18 Winnipeg",
+  "url": "https://www.eventbrite.com/e/gdcr18-winnipeg-tickets-51674255088",
+  "moderators": [
+    "@davidalpert"
+  ],
+  "location": {
+    "city": "Winnipeg",
+    "country": "Canada",
+    "coordinates": {
+      "latitude": 49.8953855,
+      "longitude": -97.1381449
+    },
+    "utcOffset": -5,
+    "timezone": "America/Winnipeg"
+  }
+}
