@@ -1,12 +1,15 @@
 {
-  "title": "GDCR18@Mumbai",
+  "title": "GDCR18 @ Media.net, Mumbai",
   "url": "https://goo.gl/yUA1sX",
   "moderators": [
     "@vedantseta",
     "@sandeepshetty"
   ],
+"sponsors": [
+    "Media.net"
+],
   "location": {
-    "city": "Mumbai City",
+    "city": "Mumbai",
     "country": "India",
     "coordinates": {
       "latitude": 19.124681,
