@@ -8,6 +8,10 @@
   "location": {
     "city": "Riga",
     "country": "Latvia",
+    "coordinates": {
+      "latitude": 56.953709,
+      "longitude": 24.099244
+    }
     "utcOffset": 3,
     "timezone": "Europe/Riga"
   }
