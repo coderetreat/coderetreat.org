@@ -1,0 +1,21 @@
+{
+  "title": "GDCR18 at Arolla in Paris",
+  "url": "https://www.meetup.com/fr-FR/paris-software-craftsmanship/events/255058916/",
+  "moderators": [
+    "@DorraBartaguiz",
+    "@somabrouki"
+  ],
+  "sponsors": [
+    "@arollaFr"
+  ],
+  "location": {
+    "city": "Paris",
+    "country": "France",
+    "coordinates": {
+      "latitude": 48.8639164,
+      "longitude": 2.3390189
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Paris"
+  }
+}

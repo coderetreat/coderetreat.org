@@ -1,0 +1,17 @@
+{
+  "title": "GDCR 2018 in Matsuyama",
+  "url": "https://agile459.connpass.com/event/104737/",
+  "moderators": [
+    "@ramusara"
+  ],
+  "location": {
+    "city": "Matsuyama",
+    "country": "Japan",
+    "coordinates": {
+      "latitude": 33.8368383,
+      "longitude": 132.7654169
+    },
+    "utcOffset": 9,
+    "timezone": "Asia/Tokyo"
+  }
+}

@@ -32,7 +32,7 @@ const validate = input => {
   }
 }
 
-describe('Events as given in /_data/events', () => {
+describe('Events as given in /_data/events_gdcr18', () => {
   describe('that are written in JSON: ', () => {
     const jsonFiles = glob.sync(path.resolve(__dirname, '../_data/events_gdcr2018/') + '/*.json');
 

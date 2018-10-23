@@ -4,8 +4,8 @@
   "moderators": [
     "@Fischermaen",
     "@XelamRelos",
-    "@SvenHHansen",
-    "@olsharot"
+    "@marcoemrich",
+    "@embedjourneyman"
   ],
   "sponsors": [
     "@SCC_at_DATEV",
@@ -18,7 +18,7 @@
       "latitude": 49.45311,
       "longitude": 11.04607
     },
-    "utcOffset": 2,
+    "utcOffset": 1,
     "timezone": "Europe/Berlin"
   }
 }

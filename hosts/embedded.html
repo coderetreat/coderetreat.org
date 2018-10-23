@@ -10,6 +10,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <script type="text/javascript" src="https://meet.jit.si/external_api.js"></script>
 
   <style type="text/css">
   </style>
@@ -54,13 +55,12 @@
       <h1>Twitter</h1>
         <div class="row">
           <div class="col-lg-6 col-sd-12">
-            <p>Engaging with all the other events over the world is what makes the GDCR magical. This year, instead of the <i>CodeRetreat Live!</i> app, we're trying to use Twitter to let you share your current status</p>
             <p>
               You're of course free to not use the suggested tweets below,
-              however, we'd appreciate if you would use both the tags <strong>#gdcr17</strong> and <strong>#live</strong>
+              however, we'd appreciate if you would use both the tags <strong>#gdcr18</strong> and <strong>#live</strong>
               when you update the current session you're running and when you clock in or -out.
             </p>
-            <p>This way, you can search for other locations' updates with the search term <a href="https://twitter.com/search?f=tweets&q=%23gdcr17%20AND%20%23live"><code>#gdcr17 AND #live</code></a></p>
+            <p>This way, you can search for other locations' updates with the search term <a href="https://twitter.com/search?f=tweets&q=%23gdcr18%20AND%20%23live"><code>#gdcr17 AND #live</code></a></p>
             <blockquote><i><small>
               <i class="fa fa-lightbulb-o">&nbsp;</i>There are some suggested constraints in auto complete.
               If you're interested in more constraints for your sessions, please have a look in the chapter "Other Activities" of
@@ -137,7 +137,7 @@
       <div class="row">
         <div class="col-md-6">
           <h1>Video Booths</h1>
-          <p>Please bring a proper camera (and if possible audio setup) to your event. We have setup a few video booths using <strong>appear.in</strong> to bring together groups from all over the world</p>
+          <p>Please bring a proper camera (and if possible audio setup) to your event. We have setup a few video booths using <strong>meet.jit.si</strong> to bring together groups from all over the world</p>
           <p><strong>If possible, it would be great if you could idle in the booth for your timezone.</strong></p>
           <blockquote><i><small>
             <i class="fa fa-lightbulb-o">&nbsp;</i>It is fun to join channels in vastly different timezones!
@@ -147,10 +147,22 @@
           <hr/>
           <form class="form-horizontal">
             <div class="form-group">
-              <label for="timezoneSelect" class="col-sm-2 control-label">Pick your Timezone</label>
+              <label for="citySelect" class="col-sm-4 control-label">What city are you in?</label>
+              <div class="col-sm-8">
+                <input id="citySelect" data-bind="textInput: city" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="timezoneSelect" class="col-sm-4 control-label">Pick your Timezone</label>
               <div class="col-sm-8">
                 <select id="timezoneSelect" data-bind="options: availableTimezoneCategories, optionsText: 'name', value: selectedTimezoneCategory" class="form-control"></select>
               </div>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="checkbox" data-bind="checked: autoswitchRoom" class="form-check-input">
+                Auto-switch channel if it is empty or too full
+              </label>
             </div>
           </form>
         </div>
@@ -160,8 +172,21 @@
         <div class="col-md-12">
           <h2>Your Booth</h2>
           <p><strong><a target="_blank" data-bind="attr: { href: selectedBoothVideoUrl }, text: selectedBoothVideoUrl"></a></strong>
-          <p>Full? Try <a href="#" data-bind="click: increaseBoothNumber">the next one in this timezone category</a> (or <a href="#" data-bind="click: decreaseBoothNumber">go back</a>)</p>
-          <iframe id="videoboothIframe" src="about:blank" data-bind="attr { src: selectedBoothVideoUrl }" frameborder="0" width="100%" height="600px"></iframe>
+          <p>Also try out another booth! <a href="#" data-bind="click: increaseBoothNumber">Next Booth</a> or <a href="#" data-bind="click: decreaseBoothNumber">Previous Booth</a></p>
+          <p data-bind="if: tooFewParticipants">
+            <strong>Seems like you are the only one here!</strong>
+            <span data-bind="if: autoswitchRoom">We'll try a different room in a second (you can turn this off above)</span>
+            <span data-bind="ifnot: autoswitchRoom">Try another room or toggle "auto-switch" above so we take care of this for you!</span>
+          </p>
+          <p data-bind="if: tooManyParticipants">
+            <strong>There seem to be a lot of participants in this room.</strong>
+            <span data-bind="if: autoswitchRoom">We'll try a different room in a second (you can turn this off above)</span>
+            <span data-bind="ifnot: autoswitchRoom">Try another room for better connection or toggle "auto-switch" above so we take care of this for you!</span>
+          </p>
+          <div id="videoboothIframeContainer" style="width: 100%; height: 600px; border: 1px solid black">
+            <button data-bind="click: start" style="font-size: 3em; margin: 250px auto 0 auto; display: block; padding: 10px">Start</button>
+          </div>
+
           <div style="height: 200px"></div>
         </div>
       </div>

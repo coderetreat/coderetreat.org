@@ -1,0 +1,21 @@
+{
+  "title": "GDCR Turku",
+  "url": "https://www.eventbrite.com/e/global-day-of-coderetreat-turku-tickets-51543670506",
+  "moderators": [
+    "@tee_mu",
+    "@mikaelkulma",
+    "@tanjalankiaj",
+    "@jonraem"
+  ],
+  "location": {
+    "city": "Turku",
+    "country": "Finland",
+    "coordinates": {
+      "latitude": 60.4495844,
+      "longitude": 22.2665197
+    },
+    "utcOffset": 3,
+    "timezone": "Europe/Helsinki"
+  },
+  "sponsors": ["@houstoninc"]
+}

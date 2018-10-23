@@ -15,9 +15,17 @@ This year, registering your event at coderetreat.org is easier than it has ever 
    The only required fields are:
     * `title`
     * `url`
-    * either `location.utcOffset` or `location.timezone`
+    * either `location.utcOffset` or `location.timezone` (please note that if you are using `utcOffset`, the offset refers to the event date, so please consider that *Dailight Savings Time* might apply at the time you are submitting your event, but not when the event takes place.)
     * `location.country`
     * `location.city`
+
+   For `location.country`, make sure you use the full name of the country. Example below:
+
+    - United Kingdom ✅
+    - ~~UK~~
+    - United States of America ✅
+    - ~~US~~
+    - ~~USA~~
 
    If you want your event to show up on our map as well, please fill out `location.coordinates` with the coordinates of your city.
    You can find them by typing the city name into Google Maps (or OSM for that matter) and extracting the coordinates from the URL.

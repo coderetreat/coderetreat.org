@@ -1,0 +1,21 @@
+{
+  "title": "GDCR 2018 in Westlake Village",
+  "url": "https://www.meetup.com/codecraftgroup/events/254073682/",
+  "moderators": [
+    "Jamie Isaacs",
+    "Chandler Giusti"
+  ],
+    "sponsors": [
+    "@cj_engineering"
+  ],
+  "location": {
+    "city": "Westlake Village, CA",
+    "country": "United States of America",
+    "coordinates": {
+      "latitude": 34.1511938,
+      "longitude": -118.7952308
+    },
+    "utcOffset": -7,
+    "timezone": "America/Los_Angeles"
+  }
+}
