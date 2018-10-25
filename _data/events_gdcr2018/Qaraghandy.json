@@ -2,7 +2,9 @@
   "title": "GDCR18 in Qaraghandy",
   "url": "https://events.epam.com/events/global-day-of-coderetreat-1",
   "moderators": [
-    "@andrey_kovalski",
+    "@andrey_kovalski"
+  ],
+  "sponsors": [
     "@EPAMKazakhstan"
   ],
   "location": {

@@ -2,7 +2,9 @@
   "title": "GDCR18 in Astana",
   "url": "https://events.epam.com/events/global-day-of-coderetreat-1",
   "moderators": [
-    "@esvalukhin",
+    "@esvalukhin"
+  ],
+  "sponsors": [
     "@EPAMKazakhstan"
   ],
   "location": {
