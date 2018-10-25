@@ -1,0 +1,18 @@
+{
+  "title": "GDCR18 in Karaganda",
+  "url": "https://events.epam.com/events/global-day-of-coderetreat-1",
+  "moderators": [
+    "@andrey_kovalski",
+    "@EPAMKazakhstan"
+  ],
+  "location": {
+    "city": "Karaganda",
+    "country": "Kazakhstan",
+    "coordinates": {
+      "latitude": 49.823898,
+      "longitude": 73.0288879
+    },
+    "utcOffset": 6,
+    "timezone": "Asia/Almaty"
+  }
+}
