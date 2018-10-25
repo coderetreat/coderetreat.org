@@ -14,12 +14,5 @@
     },
     "utcOffset": -4,
     "timezone": "America/New_York"
-  },
-  "sponsors": {
-      "type": "array",
-      "items": {
-        "description": "Homesnap",
-        "type": "string"
-      }
-    }
+  }
 }
