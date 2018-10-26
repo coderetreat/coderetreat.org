@@ -1,0 +1,20 @@
+{
+  "title": "Global Day of Coderetreat 2018 in Valencia",
+  "url": "https://www.meetup.com/es-ES/Aprende-a-programar-en-Valencia/events/255737180",
+  "moderators": [
+    "@devscola"
+  ],
+  "sponsors": [
+    "@FlywireEng"
+  ],
+  "location": {
+    "city": "Valencia",
+    "country": "Spain",
+    "coordinates": {
+      "latitude": 39.4708326,
+      "longitude": -0.3674851
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Madrid"
+  }
+}

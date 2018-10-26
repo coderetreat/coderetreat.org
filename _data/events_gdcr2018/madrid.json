@@ -1,0 +1,23 @@
+{
+  "title": "GDCR 18 Madrid",
+  "url": "https://www.meetup.com/madswcraft/events/255270965/",
+  "moderators": [
+    "@finuka",
+    "@keyvanakbary",
+    "@rubendm23",
+    "@juandvegarguez"
+  ],
+  "sponsors": [
+    "@CabifyDev"
+  ],
+  "location": {
+    "city": "Madrid",
+    "country": "Spain",
+    "coordinates": {
+      "latitude": 40.449009,
+      "longitude": -3.670911
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Berlin"
+  }
+}

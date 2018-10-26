@@ -1,0 +1,16 @@
+{
+  "title": "Global Day of Functional Coderetreat - Johannesburg",
+  "url": "http://meetu.ps/e/FY230/6G9jW/f",
+  "moderators": [
+    "@jancowol", "@kevintrethewey"
+  ],
+  "location": {
+    "city": "Johannesburg",
+    "country": "South Africa",
+    "coordinates": {
+      "latitude": -26.0594097,
+      "longitude": 27.9875978
+    },
+    "utcOffset": 2
+  }
+}

@@ -3,80 +3,142 @@ layout: default
 ---
 
 <div id="map">
-  <div id="popup"></div>
+    <div id="popup"></div>
 </div>
 
-<h1>All events this year</h1>
-{% assign events_array = site.data.events | where_exp: 'name', '1' %}
-{% assign countries = events_array | map: 'location' | map: 'country' | uniq | sort %}
+<h1>GDCR events in 2018</h1>
+{% assign events_with_location = site.data.events_gdcr2018 | where_exp: 'event', 'event.location != "virtual"'  %}
+{% assign virtual_events = site.data.events_gdcr2018 | where_exp: 'event', 'event.location == "virtual"'  %}
+{% assign countries = events_with_location | map: 'location' | map: 'country' | uniq | sort %}
 
 
 <form class="pure-form">
-  <fieldset>
-    <select id="gdcrCountry" style="font-family: sans-serif;">
-      <option selected disabled >Select your country...</option>
-      <option value="none">Show All</option>
-      <option disabled>-------------</option>
-
-      {% for country in countries %}
-        <option>{{ country }}</option>
-      {% endfor %}
-    </select>
-  </fieldset>
+    <fieldset>
+        <select id="gdcrCountry" style="font-family: sans-serif;">
+            <option selected disabled>Select your country...</option>
+            <option value="none">Show All</option>
+            <option disabled>-------------</option>
+            <option value="virtual">Virtual Events</option>
+            {% for country in countries %}
+            <option>{{ country }}</option>
+            {% endfor %}
+        </select>
+    </fieldset>
 </form>
 <table id="events-by-country">
-  <thead>
+    <thead>
     <tr>
-      <th>Country</th>
-      <th>City</th>
-      <th>Title</th>
-      <th>Facilitators</th>
+        <th>Country</th>
+        <th>City</th>
+        <th>Title</th>
+        <th>Facilitators</th>
+        <th>Sponsors</th>
     </tr>
-  </thead>
-  <tbody>
-    {% assign events = events_array | where_exp: 'name', '1' | sort: 'location.city' | sort: 'location.country' %}
+    </thead>
+    <tbody>
+    {% for event in virtual_events %}
+    <tr data-country="virtual">
+        <td colspan="2">Virtual</td>
+        <td><a href="{{ event.url }}">{{ event.title }}</a></td>
+        <td>
+            {% assign loopCount = event.moderators | size | minus: 1 %}
+            {% for i in (0..loopCount) %}
+            {% assign moderator = event.moderators[i] %}
+            {% assign first_char = moderator | slice: 0 %}
+            {% if first_char == '@' %}
+            {% assign sizeWithoutAt = moderator | size | minus: 1 %}
+            {% assign handle = moderator | slice: 1, sizeWithoutAt %}
+            <a href="https://twitter.com/{{ handle }}">{{ moderator }}</a>
+            {% else %}
+            {{ moderator }}
+            {% endif %}
+            {% if i != loopCount %}, {% endif %}
+            {% endfor %}
+        </td>
+
+
+        <td>
+            {%- assign loopCount = event.sponsors | size | minus: 1 -%}
+            {%- for i in (0..loopCount) -%}
+            {%- assign sponsor = event.sponsors[i] -%}
+            {%- assign first_char = sponsor | slice: 0 -%}
+            {%- if first_char == '@' -%}
+            {%- assign sizeWithoutAt = sponsor | size | minus: 1 -%}
+            {%- assign handle = sponsor | slice: 1, sizeWithoutAt -%}
+            <a href="https://twitter.com/{{ handle }}">{{ sponsor }}</a>
+            {%- else -%}
+            {{- sponsor -}}
+            {%- endif -%}
+            {%- if i != loopCount -%}, {%- endif -%}
+            {%- endfor -%}
+        </td>
+
+
+    </tr>
+    {% endfor %}
+    {% assign events = events_with_location | where_exp: 'name', '1' | sort: 'location.city' | sort: 'location.country' %}
     {% for event in events %}
-      <tr data-country="{{event.location.country}}">
+    <tr data-country="{{event.location.country}}">
         <td>{{ event.location.country }}</td>
         <td>{{ event.location.city }}</td>
         <td><a href="{{ event.url }}">{{ event.title }}</a></td>
         <td>
-          {% assign loopCount = event.moderators | size | minus: 1 %}
-          {% for i in (0..loopCount) %}
+            {% assign loopCount = event.moderators | size | minus: 1 %}
+            {% for i in (0..loopCount) %}
             {% assign moderator = event.moderators[i] %}
             {% assign first_char = moderator | slice: 0 %}
             {% if first_char == '@' %}
-              {% assign sizeWithoutAt = moderator | size | minus: 1 %}
-              {% assign handle = moderator | slice: 1, sizeWithoutAt %}
-                <a href="https://twitter.com/{{ handle }}">{{ moderator }}</a>
+            {% assign sizeWithoutAt = moderator | size | minus: 1 %}
+            {% assign handle = moderator | slice: 1, sizeWithoutAt %}
+            <a href="https://twitter.com/{{ handle }}">{{ moderator }}</a>
             {% else %}
-                {{ moderator }}
+            {{ moderator }}
             {% endif %}
             {% if i != loopCount %}, {% endif %}
-          {% endfor %}
+            {% endfor %}
         </td>
-      </tr>
+
+
+        <td>
+            {%- assign loopCount = event.sponsors | size | minus: 1 -%}
+            {%- for i in (0..loopCount) -%}
+            {%- assign sponsor = event.sponsors[i] -%}
+            {%- assign first_char = sponsor | slice: 0 -%}
+            {%- if first_char == '@' -%}
+            {%- assign sizeWithoutAt = sponsor | size | minus: 1 -%}
+            {%- assign handle = sponsor | slice: 1, sizeWithoutAt -%}
+            <a href="https://twitter.com/{{ handle }}">{{ sponsor }}</a>
+            {%- else -%}
+            {{- sponsor -}}
+            {%- endif -%}
+            {%- if i != loopCount -%}, {%- endif -%}
+            {%- endfor -%}
+        </td>
+
+
+    </tr>
     {% endfor %}
-  </tbody>
+    </tbody>
 </table>
 
 <script>
-  $(function() {
-    $.get('/events/gdcr2017.json', function(eventsJson) {
-      var gdcr2017Events = mapEventsDataToMapFormat(eventsJson);
-      addEventsToMap(gdcr2017Events);
-    });
+    $(function () {
+        $.get('/events/gdcr2018.json', function (eventsJson) {
+            var gdcrEvents = mapEventsDataToMapFormat(eventsJson);
+            addEventsToMap(gdcrEvents);
+        });
 
-    $('#gdcrCountry').on('change', function(e) {
-      var filter = e.target.value;
-      var rows = $('tbody tr');
-      var isDisabled = filter === 'none';
+        $('#gdcrCountry').on('change', function (e) {
+            var filter = e.target.value;
+            var rows = $('tbody tr');
+            var isDisabled = filter === 'none';
 
-      for(var i = 0 ; i < rows.length; i++) {
-        row = rows[i];
-        ctry = row.getAttribute("data-country");
-        row.style.display = (isDisabled || ctry === filter) ? "table-row" : "none";
-      };
+            for (var i = 0; i < rows.length; i++) {
+                row = rows[i];
+                ctry = row.getAttribute("data-country");
+                row.classList.toggle('hidden', !(isDisabled || ctry === filter))
+            }
+            ;
+        });
     });
-  });
 </script>

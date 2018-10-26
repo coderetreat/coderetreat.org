@@ -8,20 +8,50 @@
       "minLength": 1
     },
     "url": {
-      "description": "An URL leading to further information about your event, e.g. sign up on meetup/eventbrite",
+      "description":
+        "An URL leading to further information about your event, e.g. sign up on meetup/eventbrite",
       "type": "string",
       "minLength": 1
     },
+    "moderators": {
+      "type": "array",
+      "items": {
+        "description": "Name or Twitter Handle of the moderators",
+        "type": "string"
+      }
+    },
     "location": {
-      "description": "Further data about the location your event takes place at",
+      "oneOf": [
+        { "$ref": "#/definitions/real_location" },
+        { "$ref": "#/definitions/virtual_location" }
+      ]
+    },
+    "sponsors": {
+      "type": "array",
+      "items": {
+        "description": "Name or Twitter Handle of the sponsors",
+        "type": "string"
+      }
+    }
+  },
+  "definitions": {
+    "virtual_location": {
+      "type": "string",
+      "enum": ["virtual"]
+    },
+    "real_location": {
+      "description":
+        "Further data about the location your event takes place at",
       "type": "object",
       "properties": {
         "utcOffset": {
-          "description": "The UTC Timezone the event will take place in (e.g. UTC+2 on Nov 18, 2017 for Berlin with DST considered)",
+          "description":
+            "The UTC Timezone the event will take place in (e.g. UTC+1 on Nov 18, 2017 for Berlin with DST considered)",
           "type": "number"
         },
         "timezone": {
-          "description": "The Timezone as a String, verified by https://momentjs.com/timezone/ to be an actual timezone",
+          "description":
+            "The Timezone as a String, verified by https://momentjs.com/timezone/ to be an actual timezone",
           "type": "string",
           "format": "timezone"
         },
@@ -35,10 +65,11 @@
         },
         "coordinates": {
           "type": "object",
-          "description": "Lat/Long values, given in EPSG:3857 (http://wiki.openstreetmap.org/wiki/EPSG:3857)",
+          "description":
+            "Lat/Long values, given in EPSG:3857 (http://wiki.openstreetmap.org/wiki/EPSG:3857)",
           "properties": {
-              "latitude": { "type": "number" },
-              "longitude": { "type": "number" }
+            "latitude": { "type": "number" },
+            "longitude": { "type": "number" }
           },
           "additionalProperties": false,
           "required": ["latitude", "longitude"]
@@ -46,17 +77,7 @@
       },
       "additionalProperties": false,
       "required": ["country", "city"],
-      "anyOf": [
-        { "required": ["utcOffset"] },
-        { "required": ["timezone"] }
-      ]
-    },
-    "moderators": {
-      "type": "array",
-      "items": {
-        "description": "Name or Twitter Handle of the moderators",
-        "type": "string"
-      }
+      "anyOf": [{ "required": ["utcOffset"] }, { "required": ["timezone"] }]
     }
   },
   "additionalProperties": false,

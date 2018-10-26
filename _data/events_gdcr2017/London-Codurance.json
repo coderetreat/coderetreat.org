@@ -1,0 +1,19 @@
+{
+  "title": "Global Day of Coderetreat @ Codurance",
+  "url": "https://www.meetup.com/london-software-craftsmanship/events/244321442/",
+  "moderators": [
+    "@RobertFirek",
+    "@CarlosMChica",
+    "@yefoakira"
+  ],
+  "location": {
+    "city": "London",
+    "country": "United Kingdom",
+    "coordinates": {
+      "latitude": 51.5238487,
+      "longitude": -0.102661
+    },
+    "utcOffset": 1,
+    "timezone": "Europe/London"
+  }
+}
