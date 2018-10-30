@@ -1,0 +1,21 @@
+{
+  "title": "GDCR18 Softwerkskammer Düsseldorf",
+  "url": "https://www.meetup.com/de-DE/Softwerkskammer-Dusseldorf/events/254684323",
+  "moderators": [
+    "@zordan_f",
+    "Ulrich Freyer-Hirtz"
+  ],
+  "sponsors": [
+    "https://corporate.vorwerk.de/home/"
+  ],
+  "location": {
+    "city": "Düsseldorf",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 51.27593,
+      "longitude": 6.770758
+    },
+    "utcOffset": 1,
+    "timezone": "Europe/Berlin"
+  }
+}

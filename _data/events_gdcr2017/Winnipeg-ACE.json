@@ -1,0 +1,18 @@
+{
+  "title": "ACE Code Retreat ",
+  "url": "https://www.eventbrite.ca/e/ace-code-retreat-tickets-39210306081",
+  "moderators": [
+    "@stungeye",
+    "@bernardic"
+  ],
+  "location": {
+    "city": "Winnipeg",
+    "country": "Canada",
+    "coordinates": {
+      "latitude": 49.898438,
+      "longitude": -97.1462603
+    },
+    "utcOffset": -5,
+    "timezone": "America/Winnipeg"
+  }
+}

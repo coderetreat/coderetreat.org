@@ -1,0 +1,19 @@
+{
+  "title": "GDCR17 for Ladies of Code & Queer Code in London",
+  "url": "http://www.queer-code.org/london/coderetreat2017/",
+  "moderators": [
+    "@d_ir",
+    "@aebar",
+    "@singsalad"
+  ],
+  "location": {
+    "city": "London",
+    "country": "United Kingdom",
+    "coordinates": {
+      "latitude": 51.517294,
+      "longitude": -0.073334
+    },
+    "utcOffset": 1,
+    "timezone": "Europe/London"
+  }
+}

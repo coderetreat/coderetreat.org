@@ -32,9 +32,9 @@ const validate = input => {
   }
 }
 
-describe('Events as given in /_data/events', () => {
+describe('Events as given in /_data/events_gdcr18', () => {
   describe('that are written in JSON: ', () => {
-    const jsonFiles = glob.sync(path.resolve(__dirname, '../_data/events/') + '/*.json');
+    const jsonFiles = glob.sync(path.resolve(__dirname, '../_data/events_gdcr2018/') + '/*.json');
 
     jsonFiles.forEach(file =>
       it(
@@ -45,7 +45,7 @@ describe('Events as given in /_data/events', () => {
   });
 
   describe('that are written in YAML: ', () => {
-    const ymlFiles = glob.sync(path.resolve(__dirname, '../_data/events/') + '/*.yml');
+    const ymlFiles = glob.sync(path.resolve(__dirname, '../_data/events_gdcr2018/') + '/*.yml');
 
     ymlFiles.forEach(file =>
       it(
@@ -62,7 +62,19 @@ describe('Invalid events given in /test/invalid_events', () => {
       + '/*IsEmpty.json');
 
     eventsWithEmptyFields.forEach(file =>
-      it(path.basename(file) + ' does not validate', () => {
+      it(path.basename(file) + ' should not validate', () => {
+        const result = validationResults(JSON.parse(fs.readFileSync(file)));
+        expect(result.errors.length).toBeGreaterThan(0);
+      })
+    );
+  });
+
+  describe('that have unexpected keys: ', () => {
+    const eventsWithUnexpectedKeys = glob.sync(path.resolve(__dirname, './invalid_events/')
+      + '/*UnexpectedKey.json');
+
+    eventsWithUnexpectedKeys.forEach(file =>
+      it(path.basename(file) + ' should not validate', () => {
         const result = validationResults(JSON.parse(fs.readFileSync(file)));
         expect(result.errors.length).toBeGreaterThan(0);
       })

@@ -1,0 +1,20 @@
+{
+  "title": "GDCR in Bielefeld",
+  "url": "https://www.softwerkskammer.org/activities/mob-gdcr-18",
+  "moderators": [
+    "Jaroslaw Klose"
+  ],
+  "sponsors": [
+    "@klosebrothers"
+  ],
+  "location": {
+    "city": "Bielefeld",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 52.0128017,
+      "longitude": 8.566494
+    },
+    "utcOffset": 1,
+    "timezone": "Europe/Berlin"
+  }
+}

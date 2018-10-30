@@ -1,0 +1,17 @@
+{
+  "title": "GDCR17 LODZ",
+  "url": "https://www.meetup.com/Java-User-Group-Lodz/events/243444033/",
+  "moderators": [
+    "@PawelWlodarski"
+  ],
+  "location": {
+    "city": "Lodz",
+    "country": "Poland",
+    "coordinates": {
+      "latitude": 51.774,
+      "longitude": 19.4675113
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Warsaw"
+  }
+}

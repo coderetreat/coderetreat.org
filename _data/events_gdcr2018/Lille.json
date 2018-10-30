@@ -1,0 +1,21 @@
+{
+  "title": "GDCR18 at Epitech in Lille",
+  "url": "https://www.meetup.com/fr-FR/Software-Craftsmanship-Lille/events/255208147/",
+  "moderators": [
+    "@6sko59",
+    "@jak78"
+  ],
+  "sponsors": [
+    "@octochti"
+  ],
+  "location": {
+    "city": "Lille",
+    "country": "France",
+    "coordinates": {
+      "latitude": 50.6333,
+      "longitude": 3.0667
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Paris"
+  }
+}
