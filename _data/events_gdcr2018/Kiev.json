@@ -1,0 +1,18 @@
+{
+  "title": "GDCR18 in Epam Kiev",
+  "url": "https://events.epam.com/events/coding-dojo-global-day-of-coderetreat",
+  "moderators": [
+    "Mihail Melnik",
+    "Serhei Mihliuk"
+  ],
+  "location": {
+    "city": "Kiev",
+    "country": "Ukraine",
+    "coordinates": {
+      "latitude": 50.4314709,
+      "longitude": 30.4866999
+    },
+    "utcOffset": 3,
+    "timezone": "Europe/Kiev"
+  }
+}
