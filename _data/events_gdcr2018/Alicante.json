@@ -1,0 +1,18 @@
+{
+  "title": "Global Day of Coderetreat 2018 in Alicante",
+  "url": "https://www.eventbrite.es/e/entradas-global-day-of-coderetreat-alicante-51646778906",
+  "moderators": [
+    "@rubocoptero",
+    "@AlicanteSwCraft"
+  ],
+  "location": {
+    "city": "Alicante",
+    "country": "Spain",
+    "coordinates": {
+      "latitude": 38.3458002,
+      "longitude": -0.4852007
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Madrid"
+  }
+}
