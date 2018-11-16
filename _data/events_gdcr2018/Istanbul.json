@@ -1,8 +1,12 @@
 {
-  "title": "GDCR in Istanbul",
+  "title": "GDCR18 @ JUG, Istanbul",
   "url": "https://www.meetup.com/tr-TR/Istanbul-Java-User-Group/events/255419519/",
   "moderators": [
-    "Altuğ Bilgin Altıntaş"
+    "@jug_istanbul",
+    "@tdiler",
+    "@altugaltintas",
+    "@ajitatif",
+    "@taylankurt_0101"
   ],
   "location": {
     "city": "Istanbul",
