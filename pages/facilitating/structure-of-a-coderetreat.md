@@ -3,7 +3,7 @@ layout: default
 ---
 
 
-Structure of a Coderetreat
+# Structure of a Coderetreat
 
 This page outlines what the structure of a coderetreat day should look like, as well as tips for effective facilitation. 
 
@@ -18,7 +18,7 @@ Coderetreat has an established, time-tested format that is optimized for focused
     After each session, pairs should be swapped
     After each session, code must be deleted, not put in a branch, not stashed, just deleted with no trace left
 
-The Day
+## The Day
 
 The coderetreat day consists of 5-6 sessions, each session's learnings building upon previous sessions. The morning focuses on becoming comfortable with the problem domain, breaking old habits and beginning focused self-discovery. The afternoon pushes the envelope by challenging pairs to stretch their skills and understanding of abstractions, modular design and test-driven development.
 
@@ -43,22 +43,26 @@ Below is a rough outline for the day.
     4.15 - 4.30pm : retrospective, break
     4.30 - 5pm : Closing circle
 
-Suggestions for session topics
+## Suggestions for session topics
 
 Over time, based on experience observing pairs through the sessions, a facilitator will learn to stretch beyond these suggestions. For the first few coderetreats, a facilitator can use the ideas below to guide them.
-Sessions 1
+
+### Sessions 1
 
 Allow pairs to get a feel for the problem domain. Not everyone has seen Conway's Game of Life before, so this session will allow them to wrap their head around the task. After the first session, it can sometimes be useful to discuss the idea of deleting the code. Some people might have a bit of resistance to the idea. Gently explain that those are the rules.
-Session 2
+
+### Session 2
 
 Discuss appropriate data structures around the problem. Is an array the right way to hold the cells? Introduce the idea of primitive obsession.
-Session 3
+
+### Session 3
 
 Suggest that teams begin to stretch themselves. Discuss polymorphism as a better solution than boolean flags. Further reinforce the avoidance of primitive obsession. Push heavy exploration of abstractions.
 Lunch
 
 Lunch should be long. Participants should have the opportunity to socialize and discuss the morning.
-Session 4, 5, 6
+
+### Session 4, 5, 6
 
 Explain to teams that the afternoon is about going past any self-imposed limits. Below are some constraints that can be introduced, chosen based on the experience of the individual pairs.
 
@@ -68,7 +72,7 @@ Explain to teams that the afternoon is about going past any self-imposed limits.
     No language primitives
     TDD As If You Meant It
 
-The Closing Circle
+### The Closing Circle
 
 It is important to get together at the end of the day and reflect. The standard way if to have a closing circle where everyone answers 3 questions. Depending on the size of the group, you'll want to emphasize brevity. With 20-30 people, it can potentially take a while.
 The Three Questions
@@ -77,7 +81,7 @@ The Three Questions
     What, if anything, surprised you today?
     What, if anything, will you do differently in the future?
 
-Whatever Language You Want!
+## Whatever Language You Want!
 
 The ideas presented and practiced in coderetreat are applicable to any object-oriented language. To this end, it is suggested that coderetreats are explicitly multi-lingual. While coderetreat is not a day to learn a new language, it is perfectly acceptable for someone to work in a language they are not familiar with. The facilitator should stress that at least one member of the pair should have a working environment. After all, 45 minutes goes by quickly, and it is a waste to spend the majority of the time getting a development environment raised up.
 
