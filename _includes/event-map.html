@@ -1,16 +1,19 @@
 <section id="locations">
-  <h2>Coderetreat is a day-long, intensive practice event, focusing on the fundamentals of software development and design, away from the pressures of 'getting things done'.  <a href="/pages/about/">More about coderetreats!</a></h2>
-  <h2>So far, there are <a href="/events">{{site.data.events_gdcr2018 | size}} GDCR 2018 events</a> registered around the world!</h2>
+  <h2 class="highlight">Global Day of Coderetreat <img src="/images/logo_400x400.jpg" height=20 alt="" style="border-radius: 50px;"> November 17, 2018</h2>
+  <p class="highlight">So far, there are <a href="/events">{{site.data.events_gdcr2018 | size}} GDCR 2018 events</a> registered around the world!</p>
 
   <div id="map">
     <div id="popup"></div>
   </div>
 
   <div class="map-aside" style="align-content: center">
-    <h1>
-    <u>The first coderetreat starts in:</u>
-    {% include countdown.liquid date='2018-11-17T00:00:00.000Z' size='large' name ='gdcr2018' %}
-    </h1>
+    <div class="highlight">
+      <u>The Global Day of Coderetreat starts in:</u>
+      {% include countdown.liquid date='2018-11-17T00:00:00.000Z' size='large' name ='gdcr2018' %}
+    </div>
+    <p class="calltoaction">
+      <a class="button" href="/register-event">Register Your Event!</a>
+    </p>
   </div>
 </section>
 

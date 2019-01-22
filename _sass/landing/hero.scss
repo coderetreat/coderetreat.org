@@ -13,22 +13,11 @@
       font-size: 1.5em;
     }
     font-family: $title-font;
-    margin: 2em 15% 0 0;
+    margin: 2em 10% 0 40%;
     font-size: 1.6em;
     color: $dark;
     text-align: center;
     float: right;
-
-    .calltoaction {
-      @include media($mobile) {
-        display: none;
-      }
-
-      .button {
-        width: 49%;
-        display: inline-block;
-      }
-    }
   }
   @include media($tablet) {
     .header {
