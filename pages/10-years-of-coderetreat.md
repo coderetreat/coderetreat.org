@@ -9,3 +9,10 @@ It's a pleasure for us to celebrate the 10th anniversary of the coderetreat form
 We're preparing special things. 
 
 We'll inform about them here and at <a href="https://twitter.com/coderetreat">Twitter</a>. Stay tuned!
+
+
+<div style="display: flex; flex-wrap: wrap">	
+{% for trainer in site.data.10_years.contributors.trainers %}
+	{% include contributor.html %}
+{% endfor %}
+</div>
