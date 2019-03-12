@@ -1,6 +1,13 @@
-#events-by-country {
+table.events-by-country {
+  margin-bottom:30px;
+}
+
+.events-by-country {
   td {
-    padding: 5px;
+    padding: 5px 5px 5px 0px;
+  }
+  th {
+    text-align: left;
   }
   width: 100%;
 
