@@ -4,7 +4,8 @@ layout: default
 
 <h1>Coderetreat Experiences: Posts by Former Attendees & Facilitators</h1>
 
-<p>Share your own coderetreat article by following these <a href="https://github.com/coderetreat/coderetreat.github.io/blob/master/articles/README.md">instructions to make a pull request!</a></p>
+<p class="share-article">Share your own coderetreat article by following these <a href="https://github.com/coderetreat/coderetreat.github.io/blob/master/articles/README.md">instructions to make a pull request!</a></p>
+<p class="old-blog"><a href="{% link pages/blog.html %}">Access to our old coderetreat.org Blog section.</a>
 
 {% assign articles_as_a_facilitator = site.data.articles.as_a_facilitator | where_exp: 'article', 'article.title != ""' | sort: 'year' | reverse %}
 {% assign articles_as_an_attendee = site.data.articles.as_an_attendee | where_exp: 'article', 'article.title != ""' | sort: 'year' | reverse %}
@@ -78,6 +79,6 @@ layout: default
     </tbody>
 </table>
 
-<p>Share your own coderetreat article by following these <a href="https://github.com/coderetreat/coderetreat.github.io/blob/master/articles/README.md">instructions to make a pull request!</a></p>
-<p><a href="{% link pages/blog.html %}">Access to our old coderetreat.org Blog section.</a>
+<p class="share-article">Share your own coderetreat article by following these <a href="https://github.com/coderetreat/coderetreat.github.io/blob/master/articles/README.md">instructions to make a pull request!</a></p>
+<p class="old-blog"><a href="{% link pages/blog.html %}">Access to our old coderetreat.org Blog section.</a>
 
