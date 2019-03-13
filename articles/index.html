@@ -18,7 +18,6 @@ layout: default
         <th>Title</th>
         <th>Author</th>
         <th>City</th>
-        <th>Country</th>
     </tr>
     </thead>
     <tbody>
@@ -37,8 +36,7 @@ layout: default
             {{ author }}
             {% endif %}
         </td>
-        <td>{{ article.location.city }}</td>
-        <td>{{ article.location.country }}</td>
+        <td>{{ article.location.city }}({{ article.location.country }})</td>
 
     </tr>
     {% endfor %}
@@ -54,7 +52,6 @@ layout: default
         <th>Title</th>
         <th>Author</th>
         <th>City</th>
-        <th>Country</th>
     </tr>
     </thead>
     <tbody>
@@ -74,8 +71,7 @@ layout: default
             {{ author }}
             {% endif %}
         </td>
-        <td>{{ article.location.city }}</td>
-        <td>{{ article.location.country }}</td>
+        <td>{{ article.location.city }}({{ article.location.country }})</td>
 
     </tr>
     {% endfor %}
