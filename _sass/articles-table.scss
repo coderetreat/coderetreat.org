@@ -1,6 +1,13 @@
-#events-by-country {
+table.articles-list {
+  margin-bottom:30px;
+}
+
+.articles-list {
   td {
-    padding: 5px;
+    padding: 5px 5px 5px 0px;
+  }
+  th {
+    text-align: left;
   }
   width: 100%;
 
@@ -21,20 +28,10 @@
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
       td:nth-child(1), td:nth-child(2) {
-        width: 49%;
-        display: inline-block;
         font-weight: bold;
       }
-      td:nth-child(2) {
+      td:nth-child(3),td:nth-child(4) {
         text-align: right;
-      }
-      td:nth-child(4):before {
-        content: "Moderators: ";
-        font-weight: bold;
-      }
-      td:nth-child(5):not(:empty):before {
-        content: "Sponsors: ";
-        font-weight: bold;
       }
       display: block;
       td {
