@@ -1,3 +1,15 @@
+.ProfileCard {
+	width: 290px;
+}
+
+.ProfileCard-bg {
+    background-position: 0 50%;
+    background-size: 100%;
+    display: block;
+    height: 97px;
+    background-color: #1DA1F2;
+}
+
 .ProfileCard-content {
     margin: 13px 15px;
     position: relative;

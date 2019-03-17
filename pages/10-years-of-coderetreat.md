@@ -12,7 +12,7 @@ We'll inform about them here and at <a href="https://twitter.com/coderetreat">Tw
 
 
 <div style="display: flex; flex-wrap: wrap">	
-{% for trainer in site.data.10_years.contributors.trainers %}
+{% for contributor in site.data.10_years.contributors.contributors %}
 	{% include contributor.html %}
 {% endfor %}
 </div>
