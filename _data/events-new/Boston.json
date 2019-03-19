@@ -1,0 +1,18 @@
+{
+  "title": "Global Day of Coderetreat 2018 - Boston",
+  "url": "https://www.eventbrite.com/e/global-day-of-coderetreat-2018-boston-tickets-50447538947",
+  "moderators": [
+    "@mattc_baker",
+    "Ethan Strominger"
+  ],
+  "location": {
+    "city": "Boston",
+    "country": "United States of America",
+    "coordinates": {
+      "latitude": 42.3591165,
+      "longitude": -71.0586487
+    },
+    "utcOffset": -4,
+    "timezone": "America/New_York"
+  }
+}

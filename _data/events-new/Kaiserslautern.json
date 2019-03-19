@@ -1,0 +1,24 @@
+{
+  "title": "GDCR 2018 Kaiserslautern",
+  "url": "http://softwerkskammer-rlp.de/events/4/global-day-of-coderetreat/",
+  "moderators": [
+    "@Softwerkskamme2",
+    "@JUG_KL",
+    "@chaos_inkl"
+  ],
+  "sponsors": [
+    "@Avid",
+    "@TOPdesk_DE",
+    "@EmpolisSoftware"
+  ],
+  "location": {
+    "city": "Kaiserslautern",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 49.4405018,
+      "longitude": 7.7603026
+    },
+    "utcOffset": 1,
+    "timezone": "Europe/Berlin"
+  }
+}
