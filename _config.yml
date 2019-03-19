@@ -14,4 +14,8 @@ exclude:
   - README.md
 include:
   - _redirects
+sass:
+    load_paths:
+        - _sass
+        - node_modules
 
