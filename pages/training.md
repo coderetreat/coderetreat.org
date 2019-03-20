@@ -43,7 +43,7 @@ layout: default
         {% unless some_current_training == true %}
           <br><h3>
             No trainings currently scheduled.<br>
-            <a href="mailto:gdcr@coderetreat.org?subject=Request%20training%20for%20GDCR2017">Request One!</a>
+            <a href="mailto:gdcr@coderetreat.org?subject=Request%20training%20for%20Global%20Day%20of%20Coderetreat">Request One!</a>
           </h3><br>
         {% endunless %}
       </div>
