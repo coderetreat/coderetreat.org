@@ -101,3 +101,16 @@ cite {
   justify-content: center;
   align-content: center;
 }
+
+.last-section {
+  background-color: #1a3238;
+  font-size: 1.2em;
+  padding: $gutter/1.2;
+  display: block;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.last-section a {
+  color: white;
+}
