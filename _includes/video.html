@@ -1,0 +1,13 @@
+{% for video in videos %}
+    <li class="video">
+      {% if video.youtube %}
+      <iframe src="https://www.youtube.com/embed/{{ video.youtube }}" frameborder="0" allowfullscreen></iframe>
+      {% endif %}
+
+      {% if video.vimeo %}
+      <iframe src="https://player.vimeo.com/video/{{video.vimeo}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      {% endif %}
+
+      <div class="title">{{video.title}}<br>by {{video.author}} ({{video.duration}})</div>
+    </li>
+{% endfor %}
