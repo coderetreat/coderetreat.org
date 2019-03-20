@@ -61,6 +61,7 @@ h2 { font-size: 1.8em; }
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
 }
+
 .quote:before {
   color: #7DBED0;
   content: open-quote;
@@ -69,11 +70,15 @@ h2 { font-size: 1.8em; }
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
-.quote p {
+
+.quote .first {
   display: inline;
 }
+
 cite {
   color: #7DBED0;
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
 .button {
