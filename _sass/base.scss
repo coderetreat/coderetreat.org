@@ -5,7 +5,6 @@ html, body {
   margin: 0;
   background-color: $light;
   color: $dark;
-  padding-bottom: $gutter;
   line-height: $gutter;
   font-family: $body-font;
   @include media($mobile) {
@@ -58,6 +57,8 @@ h2 { font-size: 1.8em; }
 #footer {
   margin-top: 2em;
   text-align: center;
+  background-color: $blue;
+  padding: 2em;
 }
 
 #footer a {
@@ -118,7 +119,7 @@ cite {
 }
 
 .last-section {
-  background-color: #1a3238;
+  background-color: $dark;
   font-size: 1.2em;
   padding: $gutter/1.2;
   display: block;
