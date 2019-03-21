@@ -103,11 +103,11 @@ $navbar-padding: $gutter/2;
     span {
       display: block;
       position: absolute;
-      top: 35px;
+      top: 28px;
       left: 18px;
       right: 18px;
       height: 5px;
-      background: $green;
+      background: $logo-blue;
       transition: transform 0.3s;
       &::before, &::after {
         position: absolute;
@@ -115,7 +115,7 @@ $navbar-padding: $gutter/2;
         left: 0;
         width: 100%;
         height: 5px;
-        background-color: $green;
+        background-color: $logo-blue;
         content: "";
       }
       &::before {
