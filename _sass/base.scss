@@ -57,7 +57,7 @@ h2 { font-size: 1.8em; }
 #footer {
   margin-top: 2em;
   text-align: center;
-  background-color: $blue;
+  background-color: $dark;
   padding: 2em;
 }
 
@@ -120,7 +120,7 @@ cite {
 }
 
 .last-section {
-  background-color: $dark;
+  background-color: $blue;
   font-size: 1.2em;
   padding: $gutter/1.2;
   display: block;
@@ -129,5 +129,6 @@ cite {
 }
 
 .last-section a {
-  color: white;
+  color: $dark;
+  font-weight: bold;
 }
