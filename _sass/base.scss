@@ -26,8 +26,7 @@ a {
 }
 
 section {
-  padding: $gutter 0;
-  padding-bottom: $gutter*2;
+  padding-bottom: $gutter;
   @include outer-container;
   @include media($tablet) {
     padding: $gutter;
@@ -38,7 +37,7 @@ h1, h2, h3 {
   font-family: $title-font;
   line-height: 1.1;
 }
-h1, h2 {
+h1 {
   text-align: center;
 }
 h1 {
@@ -55,15 +54,20 @@ h2 { font-size: 1.8em; }
 }
 
 #footer {
+  color: white;
   margin-top: 2em;
   text-align: center;
   background-color: $dark;
-  padding: 2em;
+  padding: 1em;
 }
 
 #footer a {
   margin-right: 0.5em;
   margin-left: 0.5em;
+}
+
+#footer .container-wide {
+  margin: 1em;
 }
 
 .quote {
@@ -131,4 +135,14 @@ cite {
 .last-section a {
   color: $dark;
   font-weight: bold;
+}
+
+.page_header {
+  background-color: $blue;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  margin: 0;
+  @include media($mobile) {
+    padding-top: 2.5em;
+  }
 }

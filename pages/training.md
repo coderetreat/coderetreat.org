@@ -1,12 +1,13 @@
 ---
 layout: default
+title: Training
 ---
 
 {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
 
-<section class="videos">
-  <h1>Pre-recorded training sessions</h1>
+<h2>Pre-recorded training sessions</h2>
 
+<section class="videos">
   <ul class="video-list">
     {% assign videos = site.data.videos-training | sort: 'date' %}
     {% for video in videos %}
@@ -25,7 +26,7 @@ layout: default
   </ul>
 </section>
 
-<h1>Upcoming training sessions</h1>
+<h2>Upcoming training sessions</h2>
 
 <div class="tip">Like last year, we will have Hangout sessions to help you get started with running and facilitating a coderetreat.</div>
 <div class="tip">Tip: visit the event page to see the date and time converted to your local timezone.</div>
@@ -46,7 +47,7 @@ layout: default
   {% endunless %}
 </div>
 
-<h1>GDCR calendar</h1>
+<h2>GDCR calendar</h2>
 <div class="tip">Use the calendar below to get a sense of when the next training sessions are happening.</div>
 
 <div class="Umd">
@@ -56,7 +57,7 @@ layout: default
 <hr/>
 
 <div id='past-training'>
-    <h1>Past training sessions - 2018</h1>
+    <h2>Past training sessions - 2018</h2>
     <div class="Umd">
     {% for training in site.data.trainings.trainings-2018 %}
       {% capture posttime %}{{training.dateTime | date: '%s'}}{% endcapture %}
@@ -66,7 +67,7 @@ layout: default
     {% endfor %}
     </div>
     
-    <h1>Past training sessions - 2017</h1>
+    <h2>Past training sessions - 2017</h2>
     <div class="Umd">
       {% for training in site.data.trainings.trainings-2017 %}
         {% capture posttime %}{{training.dateTime | date: '%s'}}{% endcapture %}
