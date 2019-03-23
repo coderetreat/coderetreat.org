@@ -42,10 +42,3 @@ table.articles-list {
     }
   }
 }
-
-.old-blog, .share-article {
-  @include media($mobile) {
-    width: 90%;
-    margin: 5%;
-  } 
-}

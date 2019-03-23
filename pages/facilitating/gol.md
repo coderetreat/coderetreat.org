@@ -3,7 +3,6 @@ layout: default
 title: Conway's Game of Life
 ---
 
-Conway's Game of Life
 The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.
 
 ![Conways Game of Life](/images/Gospers_glider_gun.gif)

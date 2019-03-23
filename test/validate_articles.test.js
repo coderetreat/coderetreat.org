@@ -23,7 +23,7 @@ const validate = input => {
 
 describe('Articles', () => {
   describe('Articles written by facilitators follow the schema: ', () => {
-    const ymlFiles = glob.sync(path.resolve(__dirname, '../_data/articles/as_a_facilitator/') + '/*.yaml');
+    const ymlFiles = glob.sync(path.resolve(__dirname, '../_data/articles/experiences/as-a-facilitator/') + '/*.yaml');
 
     ymlFiles.forEach(file =>
       it(
@@ -34,7 +34,18 @@ describe('Articles', () => {
   });
 
   describe('Articles written by attendees follow the schema: ', () => {
-    const ymlFiles = glob.sync(path.resolve(__dirname, '../_data/articles/as_an_attendee/') + '/*.yaml');
+    const ymlFiles = glob.sync(path.resolve(__dirname, '../_data/articles/experiences/as-an-attendee/') + '/*.yaml');
+
+    ymlFiles.forEach(file =>
+      it(
+        path.basename(file),
+        () => validate(YAML.load(file))
+      )
+    );
+  });
+
+  describe('Articles written about Coderetreat format in general follow the schema: ', () => {
+    const ymlFiles = glob.sync(path.resolve(__dirname, '../_data/articles/about-the-format/') + '/*.yaml');
 
     ymlFiles.forEach(file =>
       it(

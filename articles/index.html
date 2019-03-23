@@ -1,84 +1,29 @@
 ---
+title: Articles
 layout: default
 ---
 
-<h1>Coderetreat Experiences: Posts by Former Attendees & Facilitators</h1>
+<h2>Coderetreat Experiences by Former Attendees and Facilitators</h2>
 
-<p class="share-article">Share your own coderetreat article by following these <a href="https://github.com/coderetreat/coderetreat.github.io/blob/master/articles/README.md">instructions to make a pull request!</a></p>
-<p class="old-blog"><a href="{% link pages/blog.html %}">Access to our old coderetreat.org Blog section.</a>
+{% include share-your-article.html %}
 
-{% assign articles_as_a_facilitator = site.data.articles.as_a_facilitator | where_exp: 'article', 'article.title != ""' | sort: 'year' | reverse %}
-{% assign articles_as_an_attendee = site.data.articles.as_an_attendee | where_exp: 'article', 'article.title != ""' | sort: 'year' | reverse %}
+<h3>AS AN ATTENDEE</h3>
 
-<h2>As an attendee</h2>
+{% assign articles = site.data.articles.experiences.as-an-attendee | where_exp: 'article', 'article.title != ""' | sort: 'year' | reverse %}
+{% include articles-list.html %}
 
-<table class="articles-list">
-    <thead>
-    <tr>
-        <th>Year</th>
-        <th>Title</th>
-        <th>Author</th>
-        <th>City</th>
-    </tr>
-    </thead>
-    <tbody>
-    {% for article in articles_as_an_attendee %}
-    <tr data-country="{{article.location.country}}">
-        <td>{{ article.year }}</td>
-        <td><a href="{{ article.url }}">{{ article.title }}</a></td>
-        <td>
-            {% assign author = article.author %}
-            {% assign first_char = author | slice: 0 %}
-            {% if first_char == '@' %}
-            {% assign sizeWithoutAt = author | size | minus: 1 %}
-            {% assign handle = author | slice: 1, sizeWithoutAt %}
-            <a href="https://twitter.com/{{ handle }}">{{ author }}</a>
-            {% else %}
-            {{ author }}
-            {% endif %}
-        </td>
-        <td>{{ article.location.city }} ({{ article.location.country }})</td>
+<h3>AS A FACILITATOR</h3>
 
-    </tr>
-    {% endfor %}
-    </tbody>
-</table>
+{% assign articles = site.data.articles.experiences.as-a-facilitator | where_exp: 'article', 'article.title != ""' | sort: 'year' | reverse %}
+{% include articles-list.html %}
 
-<h2>As a facilitator</h2>
+<h2>Coderetreat Format</h2>
 
-<table class="articles-list">
-    <thead>
-    <tr>
-        <th>Year</th>
-        <th>Title</th>
-        <th>Author</th>
-        <th>City</th>
-    </tr>
-    </thead>
-    <tbody>
+{% assign articles = site.data.articles.about-the-format | where_exp: 'article', 'article.title != ""' | sort: 'year' | reverse %}
+{% include articles-list.html %}
 
-    {% for article in articles_as_a_facilitator %}
-    <tr data-country="{{article.location.country}}">
-        <td>{{ article.year }}</td>
-        <td><a href="{{ article.url }}">{{ article.title }}</a></td>
-        <td>
-            {% assign author = article.author %}
-            {% assign first_char = author | slice: 0 %}
-            {% if first_char == '@' %}
-            {% assign sizeWithoutAt = author | size | minus: 1 %}
-            {% assign handle = author | slice: 1, sizeWithoutAt %}
-            <a href="https://twitter.com/{{ handle }}">{{ author }}</a>
-            {% else %}
-            {{ author }}
-            {% endif %}
-        </td>
-        <td>{{ article.location.city }} ({{ article.location.country }})</td>
+{% include share-your-article.html %}
 
-    </tr>
-    {% endfor %}
-    </tbody>
-</table>
-
-<p class="share-article">Share your own coderetreat article by following these <a href="https://github.com/coderetreat/coderetreat.github.io/blob/master/articles/README.md">instructions to make a pull request!</a></p>
-<p class="old-blog"><a href="{% link pages/blog.html %}">Access to our old coderetreat.org Blog section.</a>
-
+<p class="last-section">
+    <a href="{% link pages/blog.html %}">Where's the old Blog section?</a>
+</p>

@@ -1,8 +1,7 @@
 ---
 layout: default
+title: 10 years of Coderetreat
 ---
-
-# 10 years of Coderetreat
 
 It's a pleasure for us to celebrate the 10th anniversary of the coderetreat format this year.
 

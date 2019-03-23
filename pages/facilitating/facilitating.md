@@ -3,7 +3,6 @@ layout: default
 title: Facilitating Coderetreat
 ---
 
-# Facilitating Coderetreat
 The facilitator is an essential part of coderetreat. Responsibilities include:
 
 * introducing the day (see [Corey's introductory video](http://vimeo.com/18955165) for an example)

@@ -2,7 +2,11 @@
 
 1. Fork [the Coderetreat git repository](https://github.com/coderetreat/coderetreat.github.io),   current status: [![Build Status](https://travis-ci.org/coderetreat/coderetreat.github.io.svg?branch=master)](https://travis-ci.org/coderetreat/coderetreat.github.io)
 
-2. Create a new file called `YYYY-Author-name.yaml` in the directory `_data/articles/as_a_facilitator/` or `_data/articles/as_an_attendee/` of the repository, according to the point of view of the article: experiences when facilitating a coderetreat or when attending a coderetreat, respectively.
+2. Create a new file called `YYYY-Author-name.yaml` in the corresponding directory:
+   * `_data/articles/experiences/as-an-attendee/`: the article explains the experience when attending a coderetreat.
+   * `_data/articles/experiences/as-a-facilitator/`: the article explains the experience when facilitating a coderetreat.
+   * `_data/articles/about-the-format/`: the article talks about the coderetreat format and it's not related to a particular event. In this case, we also include city and country about the author to show the community around the world!
+
    You can either:
    * Generate a file automatically by using [this schema](https://github.com/coderetreat/coderetreat.github.io/blob/master/articles/article_schema.json).
 

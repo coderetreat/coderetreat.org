@@ -1,11 +1,9 @@
 ---
 layout: default
+title: Help improve developers in your community...
 ---
 
-
-## Help improve developers in your community...
-
-# ...by hosting a coderetreat in your city.
+## ...by hosting a coderetreat in your city.
 
 Hosts handle all of the logistics of organizing, finding a local sponsor,
 running a coderetreat and creating an atmosphere of fun and collaboration.
@@ -27,7 +25,7 @@ Here are some additional blog posts about hosting:
 
 If you wish to know even more details about hosting a coderetreat, be sure to check out the [Hosting FAQ](/pages/hosting/faq) page.
 
-# ...by facilitating a coderetreat in your city.
+## ...by facilitating a coderetreat in your city.
 
 Facilitators guide participants through the exercises and lead the
 retrospectives. Below are the steps to get started:

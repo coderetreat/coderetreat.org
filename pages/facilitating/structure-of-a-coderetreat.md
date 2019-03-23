@@ -1,12 +1,9 @@
 ---
 layout: default
+title: Structure of a Coderetreat
 ---
 
-
-# Structure of a Coderetreat
-
 This page outlines what the structure of a coderetreat day should look like, as well as tips for effective facilitation. 
-
 
 Coderetreat has an established, time-tested format that is optimized for focused practice.
 
