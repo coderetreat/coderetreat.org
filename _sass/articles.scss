@@ -1,0 +1,51 @@
+table.articles-list {
+  margin-bottom:30px;
+}
+
+.articles-list {
+  td {
+    padding: 5px 5px 5px 0px;
+  }
+  th {
+    text-align: left;
+  }
+  width: 100%;
+
+  tr.hidden {
+    display: none !important;
+  }
+
+  @include media($mobile) {
+    width: 90%;
+    margin: 5%;
+    thead tr:nth-child(1) {
+      display: none;
+    }
+
+    tr {
+      margin: 20px 0;
+      padding: 20px 0;
+      background: darken(#F4F9F0, 5%);
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+      td:nth-child(1), td:nth-child(2) {
+        font-weight: bold;
+      }
+      td:nth-child(3),td:nth-child(4) {
+        text-align: right;
+      }
+      display: block;
+      td {
+        display: block;
+        padding: 0px 20px;
+      }
+    }
+  }
+}
+
+.old-blog, .share-article {
+  @include media($mobile) {
+    width: 90%;
+    margin: 5%;
+  } 
+}

@@ -1,0 +1,15 @@
+{
+  "title": "PDX Global Day of Coderetreat 2018",
+  "url": "https://www.meetup.com/PDX-Software-Practice/events/254832597/",
+  "location": {
+    "utcOffset": -8,
+    "timezone": "America/Los_Angeles",
+    "city": "Portland",
+    "country": "United States of America",
+    "coordinates": {
+      "latitude": 45.518430,
+      "longitude": -122.680450
+    }
+  },
+  "moderators": ["@mplavcan"]
+}

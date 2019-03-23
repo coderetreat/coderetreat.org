@@ -1,0 +1,18 @@
+{
+    "title": "GDCR18 Bordeaux",
+    "url": "http://meetu.ps/e/FZ0Yw/jnLhz/f",
+    "moderators": [
+      "@lilobase",
+      "@bodysplash"
+    ],
+    "location": {
+      "city": "Bordeaux",
+      "country": "France",
+      "coordinates": {
+        "latitude": 44.8532256,
+        "longitude": -0.5920805
+      },
+      "utcOffset": 2,
+      "timezone": "Europe/Paris"
+    }
+  }

@@ -1,0 +1,18 @@
+{
+  "title": "Global Day of Coderetreat 2018 Festival",
+  "url": "https://www.meetup.com/Software-Craftsmanship-Turkey/events/256000993/",
+  "moderators": [
+    "@scturkey",
+    "@lemiorhan"
+  ],
+  "location": {
+    "city": "Istanbul",
+    "country": "Turkey",
+    "coordinates": {
+      "latitude": 41.0283822,
+      "longitude": 29.1144979
+    },
+    "utcOffset": 3,
+    "timezone": "Europe/Istanbul"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": "GDCR18 @ JUG, Istanbul",
+  "url": "https://www.meetup.com/tr-TR/Istanbul-Java-User-Group/events/255419519/",
+  "moderators": [
+    "@jug_istanbul",
+    "@tdiler",
+    "@altugaltintas",
+    "@ajitatif",
+    "@taylankurt_0101"
+  ],
+  "location": {
+    "city": "Istanbul",
+    "country": "Turkey",
+    "coordinates": {
+      "latitude": 41.107864,
+      "longitude": 29.014023
+    },
+    "utcOffset": 3,
+    "timezone": "Europe/Istanbul"
+  }
+}

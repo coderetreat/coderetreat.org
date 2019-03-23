@@ -1,0 +1,20 @@
+{
+  "title": "HackCamp 6 Braunschweig",
+  "url": "https://hacktalk.de/#hackcamp",
+  "moderators": [
+    "@stevenschwenke"
+  ],
+  "sponsors": [
+    "@msgDAVID"
+  ],
+  "location": {
+    "city": "Braunschweig",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 52.2785341,
+      "longitude": 10.5245448
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Berlin"
+  }
+}

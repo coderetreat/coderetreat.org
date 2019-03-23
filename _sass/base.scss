@@ -48,6 +48,27 @@ h1 {
 }
 h2 { font-size: 1.8em; }
 
+blockquote{
+  border-left: 10px solid #7DBED0;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #7DBED0;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+cite{
+  color: #7DBED0;
+}
+
 .button {
   background-color: $green;
   text-decoration: none;

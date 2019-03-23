@@ -1,0 +1,15 @@
+{
+  "title": "GDCR18 Bend @ OSU Cascades",
+  "url": "https://www.eventbrite.com/e/bend-global-day-of-coderetreat-2018-tickets-49817889649",
+  "location": {
+    "utcOffset": -8,
+    "timezone": "America/Los_Angeles",
+    "city": "Bend",
+    "country": "United States of America",
+    "coordinates": {
+      "latitude": 44.0429237,
+      "longitude": -121.33567239
+    }
+  },
+  "moderators": ["@ybakos"]
+}

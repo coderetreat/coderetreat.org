@@ -1,0 +1,15 @@
+{
+    "title": "GDCR18 en Zaragoza",
+    "url": "https://www.meetup.com/es-ES/agilearagon/events/244698186/",
+    "moderators": ["@nimpedrojo"],
+    "location": {
+      "city": "Zaragoza",
+      "country": "Spain",
+      "coordinates": {
+        "latitude": 41.6516859,
+        "longitude": -0.9300004
+      },
+      "utcOffset": 2,
+      "timezone": "Europe/Madrid"
+    }
+  }

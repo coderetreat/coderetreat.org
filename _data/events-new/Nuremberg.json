@@ -1,0 +1,24 @@
+{
+  "title": "GDCR 2018 @ DATEV",
+  "url": "https://ti.to/gdcr-nuernberg/2018",
+  "moderators": [
+    "@Fischermaen",
+    "@XelamRelos",
+    "@marcoemrich",
+    "@embedjourneyman"
+  ],
+  "sponsors": [
+    "@SCC_at_DATEV",
+    "@DATEV"
+  ],
+  "location": {
+    "city": "Nuremberg",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 49.45311,
+      "longitude": 11.04607
+    },
+    "utcOffset": 1,
+    "timezone": "Europe/Berlin"
+  }
+}
