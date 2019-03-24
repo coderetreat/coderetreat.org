@@ -118,16 +118,6 @@ cite {
   border-radius: 4px;
 }
 
-.blue-section {
-  @include fill-parent;
-  padding-bottom: 50;
-  max-width: 100%;
-  background-color: $blue;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
 .last-section {
   background-color: $blue;
   font-size: 1.2em;
