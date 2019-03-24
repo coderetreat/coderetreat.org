@@ -2,13 +2,15 @@
 <div class="ProfileCard" style="margin: 30px; max-width: 290px; max-height: 355px; background-color: white">
   <div class="ProfileCard-bg">
   	<a href="https://twitter.com/{{contributor.screenname}}" target="_blank">
-  		<img src="{{contributor.header}}" style="max-width:100%; max-height:100%;">
+      {% if contributor.header != "" %}
+      <img src="/images/contributors/{{contributor.screenname}}_header.jpg" style="max-width:100%; max-height:100%;">
+      {% endif %}
   	</a>
   </div>
   <div class="ProfileCard-content">
     <div>
     	<a href="https://twitter.com/{{contributor.screenname}}" class="ProfileCard-avatarLink" target="_blank">
-    		<img class="ProfileCard-avatarImage" src="{{contributor.avatar}}" style="max-width:70px; max-height:70px;">
+        <img class="ProfileCard-avatarImage" src="/images/contributors/{{contributor.screenname}}_avatar.jpg" style="max-width:70px; max-height:70px;">
     	</a>
     </div>
 
@@ -17,12 +19,12 @@
 	    	<button type="button" class="
 			    EdgeButton
 			    EdgeButton--secondary
-			    EdgeButton--small 
-			    
+			    EdgeButton--small
+
 			    button-text
 			    follow-text">
 			      <span aria-hidden="true">Follow</span>
-			  </button>    
+			  </button>
 		</a>
 	</div>
 
@@ -30,5 +32,5 @@
 	  <div class="ProfileCard-screennameLink"><a href="https://twitter.com/{{contributor.screenname}}" target="_blank">@{{contributor.screenname}}</a></div>
 	  <div class="ProfileCard-bio" title="{{contributor.bio}}">{{contributor.bio}}</div>
   </div>
-  
+
 </div>
