@@ -46,6 +46,11 @@ h1 {
 }
 h2 { font-size: 1.8em; }
 
+.h2-main-page {
+  padding-top: 1em;
+  text-align: center;
+}
+
 #content {
    @include media($mobile) {
      width: 90%;

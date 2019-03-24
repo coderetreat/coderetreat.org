@@ -6,7 +6,7 @@
 }
 .format .step {
   @include span-columns(3 of 12);
-  margin-top: $gutter;
+  margin-bottom: $gutter;
   background-color: $light;
   opacity: 0.9;
   color: $dark;
