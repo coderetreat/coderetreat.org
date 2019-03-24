@@ -1,0 +1,17 @@
+{
+  "title": "Global Day of Coderetreat - Wroclaw 2018",
+  "url": "https://softwaretalks.pl/wydarzenia/global-day-coderetreat-2/",
+  "moderators": [
+    "@b_rodak"
+  ],
+  "location": {
+    "city": "Wroclaw",
+    "country": "Poland",
+    "coordinates": {
+      "latitude": 51.0964064,
+      "longitude": 17.0327242
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Warsaw"
+  }
+}

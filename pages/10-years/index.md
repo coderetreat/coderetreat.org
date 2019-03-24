@@ -8,3 +8,11 @@ It's a pleasure for us to celebrate the 10th anniversary of the coderetreat form
 We're preparing special things. 
 
 We'll inform about them here and at <a href="https://twitter.com/coderetreat">Twitter</a>. Stay tuned!
+
+<div style="display: flex; flex-wrap: wrap">	
+{% for special in site.data.10_years.specials %}
+	<a href="{{special.link}}" target="{{special.target}}">
+		{% include 10-years-card.html %}
+	</a>
+{% endfor %}
+</div>

@@ -1,0 +1,19 @@
+{
+  "title": "GDCR18 in Bucharest @ Craftsmanship",
+  "url": "http://meetu.ps/e/FZCzx/vNHvw/f",
+  "moderators": [
+    "@victorrentea",
+    "Bianca Falca",
+    "Marian Stanciu"
+  ],
+  "location": {
+    "city": "Bucharest",
+    "country": "Romania",
+    "coordinates": {
+      "latitude": 44.435642,
+      "longitude": 26.05408
+    },
+    "utcOffset": 3,
+    "timezone": "Europe/Bucharest"
+  }
+}

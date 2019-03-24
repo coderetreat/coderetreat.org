@@ -16,6 +16,9 @@
     "yamljs": "^0.2.8"
   },
   "dependencies": {
+    "@material/button": "^1.0.1",
+    "@material/card": "^1.0.1",
+    "@material/icon-button": "^1.0.1",
     "moment": "^2.18.1"
   }
 }

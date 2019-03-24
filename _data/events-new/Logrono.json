@@ -1,0 +1,17 @@
+{
+  "title": "GDCR18 in Logroño",
+  "url": "http://riojadotnet.com/eventos/global-day-of-coderetreat-2018",
+  "moderators": [
+    "@luissagasta"
+  ],
+  "location": {
+    "city": "Logroño",
+    "country": "Spain",
+    "coordinates": {
+      "latitude": 42.4607989,
+      "longitude": -2.4182367
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Madrid"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": "GDCR Berlin 2018",
+  "url": "https://www.eventbrite.com/e/global-day-of-coderetreat-2018-softwerkskammer-berlin-tickets-51705259824",
+  "moderators": [
+    "@martinklose",
+    "@mrksdck"
+  ],
+  "sponsors": [
+    "@NI_News"
+  ],
+  "location": {
+    "city": "Berlin",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 52.4991677,
+      "longitude": 13.4455218
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Berlin"
+  }
+}
