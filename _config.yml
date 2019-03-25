@@ -1,5 +1,8 @@
+title: Coderetreat
 repository: coderetreat/coderetreat.github.io
 permalink: /blog/:year/:month/:day/:title/
+plugins:
+  - jekyll-feed
 exclude:
   - package.json
   - package-lock.json
