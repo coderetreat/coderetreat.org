@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Training
+description: Pre-recorded training sessions and calendar
 ---
 
 {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}

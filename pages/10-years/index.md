@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 10 years of Coderetreat
+description: Special things done because of 10th anniversary
 ---
 
 It's a pleasure for us to celebrate the 10th anniversary of the coderetreat format this year.
