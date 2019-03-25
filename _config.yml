@@ -1,4 +1,5 @@
 title: Coderetreat
+url: https://www.coderetreat.org
 repository: coderetreat/coderetreat.github.io
 permalink: /blog/:year/:month/:day/:title/
 plugins:
