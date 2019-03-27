@@ -32,3 +32,9 @@ The initial pattern constitutes the seed of the system.
 The first generation is created by applying the above rules simultaneously to every cell in the seed: births and deaths happen simultaneously, and the discrete moment at which this happens is sometimes called a tick (in other words, each generation is a pure function of the one before). 
 
 The rules continue to be applied repeatedly to create further generations.
+
+## Game of Life schemas provided by the community
+
+{% for schema in site.data.gol-schemas %}
+<a href="{{ schema.url }}" title="Schema by {{ schema.author}}"><img alt="" src="{{ schema.url }}" width="300px" style="float:left;padding:2em;"></a>
+{% endfor %}
