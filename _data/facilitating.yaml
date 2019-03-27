@@ -10,9 +10,9 @@
   description: The programming challenge used at every traditional coderetreat, for every session
   url: /pages/facilitating/gol/
   image: /images/facilitating/game-of-life.png
-- title: Starting points
-  description: Help your attendees with these starting points in different programming languages
-  url: /pages/facilitating/starting-points/
+- title: Resources for your attendees
+  description: Help your attendees with starting points in different programming languages
+  url: /pages/facilitating/resources-for-attendees/
   image: /images/facilitating/keyboard.jpg
 - title: Activity Catalog
   description: A catalog of challenges or activities attempted at previous coderetreats
