@@ -9,10 +9,11 @@ Most of the activities documented here are designed to help participants think a
 
 You should not feel that the list below are the only activities you can try at a coderetreat. You are welcome and encouraged to find challenges which best meet the needs of the group you are facilitating. In fact, you do not have to use any of the activities presented here.
 
+<!--
 ## Suggesting a new Activity
 
 If you have an activity you would like to see added to this list, please post the suggestion on the What are some exercises and constraints that people use during sessions? topic under the Facilitator Group's forum (note: you will have to join the group first before you can post).
-Activities
+-->
 
 ## Basic Activities
 
