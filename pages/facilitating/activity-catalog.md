@@ -54,4 +54,4 @@ Activities designed to stretch a group. Most of these activities tend to try to 
     Mute with find the loophole
     TDD as if you meant it
 
-
+There is also available [this exhaustive collection of constraints](https://drive.google.com/drive/folders/0B3idvASFqaEbN2RkNDYyYjktYTlkZi00ZjFiLWFmMDEtNjJhYTBkYzM2ZDlh?usp=sharing) by [Adrian Bolboaca](https://twitter.com/adibolb).

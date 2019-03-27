@@ -21,25 +21,13 @@ There are many resources on this site to help you prepare for facilitating a cod
 
 When you feel ready, volunteer to facilitate a coderetreat!
 
-## Training sessions
-
-Join us during a [training session](/pages/training/) or you can watch the pre-recorded training sessions available in that page.
-
-## The Role of the Coderetreat Facilitator
-
-There is a great blog post by Corey Haines on [the role of the coderetreat facilitator](/blog/2011/12/02/on-the-role-of-the-coderetreat-facilitator/) with some great tips and suggestions for first-time facilitators, as well as a video as an example of [how to introduce the day](http://vimeo.com/18955165).
-
-## Structure of a Coderetreat
-
-Check out the [structure of a coderetreat](/pages/facilitating/structure-of-a-coderetreat/) with details about what a normal coderetreat typically looks like.
-
-## Conway's Game of Life (GoL)
-
-Discover [an introduction to Conway's Game of Life](/pages/facilitating/gol/) which is the programming challenge used at every traditional coderetreat, for every session.
-
-## Activity Catalog
-
-There is [a catalog of challenges or activities](/pages/facilitating/activity-catalog/) attempted at previous coderetreats. Get ideas on what exercises to do each session by reviewing it or checkout [this exhaustive collection of constraints](https://drive.google.com/drive/folders/0B3idvASFqaEbN2RkNDYyYjktYTlkZi00ZjFiLWFmMDEtNjJhYTBkYzM2ZDlh?usp=sharing) by [Adrian Bolboaca](https://twitter.com/adibolb).
+<div style="display: flex; flex-wrap: wrap">
+{% for topic in site.data.facilitating %}
+    <a href="{{topic.url}}" title="{{topic.title}}">
+        {% include topic-card.html %}
+    </a>
+{% endfor %}
+</div>
 
 ## Starting Points
 
