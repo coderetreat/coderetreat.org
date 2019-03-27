@@ -29,13 +29,6 @@ When you feel ready, volunteer to facilitate a coderetreat!
 {% endfor %}
 </div>
 
-## Starting Points
-
-Help your attendees with starting points in different programming languages:
-
-* [Staring Points by Corey Haines](https://github.com/coreyhaines/coderetreat/tree/master/starting_points)
-* [Kata Bootstraps by Softwerkskammer Berlin](https://github.com/swkBerlin/kata-bootstraps)
-
 <p class="last-section">
     <a href="http://slack.softwarecrafters.org/">Join us on Software Crafters Slack Team at #coderetreat channel</a>
 </p>
