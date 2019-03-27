@@ -49,5 +49,5 @@ Help your attendees with starting points in different programming languages:
 * [Kata Bootstraps by Softwerkskammer Berlin](https://github.com/swkBerlin/kata-bootstraps)
 
 <p class="last-section">
-    <a href="{% link pages/10-years/index.md %}">Do you know that we're celebrating 10th Coderetreat Anniversary?</a>
+    <a href="http://slack.softwarecrafters.org/">Join us on Software Crafters Slack Team at #coderetreat channel</a>
 </p>
