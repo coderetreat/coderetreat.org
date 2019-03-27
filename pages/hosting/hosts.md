@@ -15,7 +15,27 @@ To host a coderetreat:
 * Find one or more local sponsors for lunch and other expenses. Coderetreats must be free.
 * Recruit a facilitator to guide the participants through the day.
 * Arrange for a nice, catered lunch. Participants who are willing to come out at 9 in the morning to spend the day coding deserve more than just pizza for lunch.
-* Check the [checklist](/pages/hosting/checklist) for keeping track of things.
+* Check the checklist for keeping track of things.
+
+## Checklist
+
+This list is intended as help for people who want to host a coderetreat:
+
+- Tables and chairs (good for sitting all day)
+- Breakfast snack, e.g. croissants …
+- Healthy lunch (No Pizza!)
+- Afternoon snack, e.g. cake, cookies …
+- Soft-drinks, e.g. water, coffee, tea …
+- Wifi for everyone
+- Power Plugs
+- Flipcharts
+- Stickies and markers
+- Pen and paper for participants
+- Projector
+- Email a reminder to participants one day before event
+- Emergency numbers of host location, e.g. Facility/Security staff
+
+## Blog posts
 
 Here are some additional blog posts about hosting:
 
@@ -23,5 +43,5 @@ Here are some additional blog posts about hosting:
 * John Smith has a great post on the specifics of [what to think about when organizing a coderetreat](http://geekswithblogs.net/onefloridacoder/archive/2010/08/16/setting-up-for-the-orlando-code-retreat.aspx).
 
 <p class="last-section">
-    <a href="{% link pages/hosting/faq.md %}">Check out the Hosting FAQ page!</a>
+    <a href="{% link pages/hosting/faq.md %}">Check out the Hosting FAQ page</a>
 </p>

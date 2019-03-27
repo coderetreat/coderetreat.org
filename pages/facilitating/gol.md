@@ -33,8 +33,19 @@ The first generation is created by applying the above rules simultaneously to ev
 
 The rules continue to be applied repeatedly to create further generations.
 
+## Game of Life demos provided by the community
+
+<section class="videos">
+  <ul class="video-list">
+    {% assign videos = site.data.videos | where:"type","demo" | sort: 'date' %}
+    {% include video.html %}
+  </ul>
+</section>
+
 ## Game of Life schemas provided by the community
 
 {% for schema in site.data.gol-schemas %}
 <a href="{{ schema.url }}" title="Schema by {{ schema.author}}"><img alt="" src="{{ schema.url }}" width="300px" style="float:left;padding:2em;"></a>
 {% endfor %}
+
+

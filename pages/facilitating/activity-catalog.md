@@ -54,4 +54,15 @@ Activities designed to stretch a group. Most of these activities tend to try to 
     Mute with find the loophole
     TDD as if you meant it
 
-There is also available [this exhaustive collection of constraints](https://drive.google.com/drive/folders/0B3idvASFqaEbN2RkNDYyYjktYTlkZi00ZjFiLWFmMDEtNjJhYTBkYzM2ZDlh?usp=sharing) by [Adrian Bolboaca](https://twitter.com/adibolb).
+## Videos
+
+<section class="videos">
+  <ul class="video-list">
+    {% assign videos = site.data.videos | where:"type","session" | sort: 'title' %}
+    {% include video.html %}
+  </ul>
+</section>
+
+<p class="last-section">
+    <a href="https://drive.google.com/drive/folders/0B3idvASFqaEbN2RkNDYyYjktYTlkZi00ZjFiLWFmMDEtNjJhYTBkYzM2ZDlh?usp=sharing">Look at this exhaustive collection of constraints by Adrian Bolboaca</a>
+</p>
