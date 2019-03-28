@@ -3,24 +3,30 @@ table.articles-list {
 }
 
 .articles-list {
-  td {
-    padding: 5px 5px 5px 0px;
-  }
+  border-collapse: separate;
+  border-spacing: 0 1em;
+
   th {
     text-align: left;
   }
   width: 100%;
 
-  tr.hidden {
-    display: none !important;
-  }
+  tr {
+    margin: 0.5em 0;
+    background: darken(#F4F9F0, 5%);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+    td:nth-child(1), td:nth-child(2) {
+      font-weight: bold;
+    }
+    td {
+      padding: 0.8em;
+    }
+  } 
 
   @include media($mobile) {
     width: 90%;
     margin: 5%;
-    thead tr:nth-child(1) {
-      display: none;
-    }
 
     tr {
       margin: 20px 0;

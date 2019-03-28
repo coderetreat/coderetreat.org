@@ -1,12 +1,4 @@
 <table class="articles-list">
-    <thead>
-    <tr>
-        <th>Year</th>
-        <th>Title</th>
-        <th>Author</th>
-        <th>City</th>
-    </tr>
-    </thead>
     <tbody>
     {% for article in articles %}
     <tr data-country="{{article.location.country}}">
