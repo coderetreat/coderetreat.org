@@ -172,10 +172,9 @@ After all, 45 minutes goes by quickly, and it is a waste to spend the majority o
 * Are we really going to work on the same problem all day long? 
     * Yes. Conway's Game of life works very well for that sort of thing. 
     * It doesn't get old. There is always something new to learn
+
 * How much time is left before the iteration is over? 
     * A couple of minutes (never be specific, never tell them exactly how much time is left)
-
-When you don't know the answer to a question, throw it back to the group: "That's a great question. Does anyone want to try to answer it?".
 
 ### Common first-time facilitator questions
 
@@ -183,6 +182,10 @@ When you don't know the answer to a question, throw it back to the group: "That'
     * Don't let it bother you too much. The format of the event prevents a single person from sabotaging the entire day (except for really small groups).
     * If someone complains, remind them that they don't have the pair with that person again. So it was only one iteration that was "bad".
 
+* What do I do if I don't know the answer to a question?
+    * Throw it back to the group: "That's a great question. Does anyone want to try to answer it?"
+
 * What do I do if we have an odd number of people?
     * You can allow three people to program together rather than two. Having a group of three works fine.
     * Don’t let anyone work alone. Everyone should be working with someone else.
+
