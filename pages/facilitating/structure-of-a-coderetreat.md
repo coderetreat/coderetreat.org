@@ -2,7 +2,7 @@
 layout: default
 title: Structure of a Coderetreat
 description: The structure of a coderetreat day should look like, as well as tips for effective facilitation
-images:
+image:
     src: /images/facilitating/coderetreat.png
 ---
 
