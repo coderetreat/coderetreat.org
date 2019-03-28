@@ -1,6 +1,9 @@
 ---
 layout: default
 title: Activity Catalog
+description: A catalog of challenges or activities attempted at previous coderetreats 
+image:
+    src: /images/facilitating/idea.png
 ---
 
 Since Coderetreat has started, facilitators have been coming up with activities, constraints, or challenges to give to groups during a coderetreat. However, if you are a new facilitator, you might not know what activities to use when. This page contains a catalog of activities.

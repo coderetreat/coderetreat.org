@@ -2,6 +2,8 @@
 layout: default
 title: Resources for your attendees
 description: Starting points in different programming languages among others
+image:
+    src: /images/facilitating/keyboard.jpg
 ---
 
 ## Starting Points

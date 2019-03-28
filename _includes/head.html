@@ -1,8 +1,8 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="description" content="The Global Day of Coderetreat as a day when developers all over the world will be practicing the fundamentals of software development.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="og:image" content="{{ '/images/logo_400x400.jpg' | prepend: site.url }}" >
-<meta property="twitter:image" content="{{ '/images/logo_400x400.jpg' | prepend: site.url }}" >
+<meta property="og:image" content="{% if page.image.src %}{{ page.image.src | prepend: site.url }}{% else %}{{ '/images/logo_400x400.jpg' | prepend: site.url }}{% endif %}">
+<meta property="twitter:image" content="{% if page.image.src %}{{ page.image.src | prepend: site.url }}{% else %}{{ '/images/logo_400x400.jpg' | prepend: site.url }}{% endif %}">
 <meta property="og:type" content="article">
 {% feed_meta %}
 {% seo %}

@@ -1,6 +1,9 @@
 ---
 layout: default
 title: Coderetreat Contributors
+description: Coderetreat pioneers, Global Day of Coderetreat (GDCR) trainers and coordinators of the past 10 years
+image:
+    src: /images/10-years/thank-you.jpg
 ---
 
 On the special occasion of celebrating **10 years of coderetreat**, we want to give credit to the many people who have contributed by promoting and taking this idea forward. 

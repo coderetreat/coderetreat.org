@@ -2,6 +2,8 @@
 layout: default
 title: Training
 description: Pre-recorded training sessions and calendar
+image:
+    src: /images/facilitating/blackboard.jpg
 ---
 
 {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
