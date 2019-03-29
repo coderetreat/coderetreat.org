@@ -143,3 +143,12 @@ cite {
     padding-top: 2.5em;
   }
 }
+
+#coderetreat-schedule td {
+  padding: 0.5em 1em;
+  border: 1px solid grey;
+}
+
+#coderetreat-schedule td:nth-child(1) {
+  text-align: right;
+}

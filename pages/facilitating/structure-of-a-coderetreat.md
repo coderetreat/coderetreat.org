@@ -22,32 +22,18 @@ Coderetreat has an established, time-tested format that is optimized for focused
 
 The coderetreat day consists of 5-6 sessions, each session's learnings building upon previous sessions. 
 
-The morning focuses on becoming comfortable with the problem domain, breaking old habits and beginning focused self-discovery.
-
-The afternoon pushes the envelope by challenging pairs to stretch their skills and understanding of abstractions, modular design and test-driven development.
-
-With most groups, the focus should be on the fundamentals of software development and modular design, primarily the [4 rules of simple design](http://wiki.c2.com/?XpSimplicityRules). Spend the day practicing these concepts, rather than pushing into new learnings.
+The morning focuses on becoming comfortable with the problem domain, breaking old habits and beginning focused self-discovery. The afternoon pushes the envelope by challenging pairs to stretch their skills and understanding of abstractions, modular design and test-driven development. With most groups, the focus should be on the fundamentals of software development and modular design, primarily the [4 rules of simple design](http://wiki.c2.com/?XpSimplicityRules). Spend the day practicing these concepts, rather than pushing into new learnings.
 
 Below is a rough outline for the day as a proposal:
 
-|                  |                                                          |
-|             ---: | :---                                                     |
-|   8.00 - 8.45 am | : Arrival, coffee/breakfast                              |
-|   8.45 - 9.00 am | : **Welcome, introductions, explanation of the problem** |
-|   9.00 - 9.45 am | : **Session #1**                                         |
-|  9.45 - 10.00 am | : Retrospective, break                                   |
-| 10.00 - 10.45 am | : **Session #2**                                         |
-| 10.45 - 11.00 am | : Retrospective, break                                   |
-| 11.00 - 11.45 am | : **Session #3**                                         |
-| 11.45 - 12.00 pm | : Retrospective, break                                   |
-|  12.00 - 1.30 pm | : **Lunch, networking**                                  |
-|   1.30 - 2.15 pm | : **Session #4**                                         |
-|   2.15 - 2.30 pm | : Retrospective, break                                   |
-|   2.30 - 3.15 pm | : **Session #5**                                         |
-|   3.15 - 3.30 pm | : Retrospective, break                                   |
-|   3.30 - 4.15 pm | : **Session #6**                                         |
-|   4.15 - 4.30 pm | : Retrospective, break                                   |
-|   4.30 - 5.00 pm | : **Closing circle**                                     |
+<table id="coderetreat-schedule">
+{% for entry in site.data.schedule %}
+<tr>
+  <td>{{ entry.time }}</td>
+  <td>{{ entry.description }}</td>
+</tr>
+{% endfor %}
+</table>
 
 ## Welcome, introductions, explanation of the problem
 
