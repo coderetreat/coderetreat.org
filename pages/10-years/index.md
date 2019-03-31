@@ -11,7 +11,7 @@ We're preparing special things.
 We'll inform about them here and at <a href="https://twitter.com/coderetreat">Twitter</a>. Stay tuned!
 
 <div style="display: flex; flex-wrap: wrap">	
-{% for topic in site.data.10_years.specials %}
+{% for topic in site.data['10_years'].specials %}
 	<a href="{{topic.link}}" target="{{topic.target}}">
 		{% include topic-card.html %}
 	</a>

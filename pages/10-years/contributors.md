@@ -11,7 +11,7 @@ On the special occasion of celebrating **10 years of coderetreat**, we want to g
 Here are some\* of the **coderetreat pioneers**, **Global Day of Coderetreat (GDCR) trainers** and **coordinators** of the past 10 years:
 
 <div style="display: flex; flex-wrap: wrap">	
-{% for contributor in site.data.10_years.contributors.contributors %}
+{% for contributor in site.data['10_years'].contributors.contributors %}
 	{% include contributor.html %}
 {% endfor %}
 </div>
