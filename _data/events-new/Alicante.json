@@ -5,6 +5,7 @@
     "@rubocoptero",
     "@AlicanteSwCraft"
   ],
+  "labels": ["coderetreat"],
   "location": {
     "city": "Alicante",
     "country": "Spain",
