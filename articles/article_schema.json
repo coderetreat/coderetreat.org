@@ -13,9 +13,20 @@
       "minLength": 1
     },
     "author": {
-      "description": "The author: Name or Twitter Handle starting by @",
-      "type": "string",
-      "minLength": 1
+      "description": "The author",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "link": { 
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false,
+      "required": ["name"]
     },
     "year": {
       "description": "The URL of your article",
