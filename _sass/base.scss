@@ -92,6 +92,11 @@ h2 { font-size: 1.8em; }
   vertical-align: -0.4em;
 }
 
+.quote:after {
+  visibility: hidden;
+  content: close-quote;
+}
+
 .quote .first {
   display: inline;
 }

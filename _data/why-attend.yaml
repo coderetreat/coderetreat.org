@@ -1,0 +1,37 @@
+- title: Deliberate practice
+  examples:
+    - text: "A code retreat is an opportunity to learn new ways of thinking / approaching a task from your pairing partner, to take really small steps, (...)"
+      author: Corinna Baldauf
+      url: https://www.coderetreat.org/blog/2012/09/04/code-retreats-are-awesome!/
+    - text: "We left the CodeRetreat with a better understanding of how to write clean, simple and flexible programs that minimize the cost of change over time. Big win for everyone."
+      author: Michal Gutman
+      url: https://medium.com/helloheart-rnd/coderetreat-or-why-you-should-go-and-do-it-a9fb6371f643
+    - text: "The point of the exercise was to learn how to write better code, not produce a working product."
+      author: Jonathan Kerr and Yanny Thompson
+      url: https://technology.blog.gov.uk/2019/01/09/global-day-of-code-retreat-2018-tackling-the-game-of-life-at-gds/
+- title: A safe place to try out new things
+  examples:
+    - text: "The Coderetreat provided us with a safe place to try out new things, learn and be creative." 
+      author: Laurent Curau
+      url: https://laurentcurau.com/global-day-code-retreat-2014
+    - text: "(...) so many cool little exercises changing what we think it means to write good code."
+      author: Briana Baker
+      url: https://twitter.com/brianacodes/status/1064960855626969090
+    - text:  "I had some reservations about spending almost all day with a bunch of people that I don't know. I didn't know how much I'll get out of it.
+    I feel really happy that I've decided to dedicate almost 10 hours of my life to self-improving."
+      author: Grzegorz Ligas
+      url: http://grzegorzligas.blogspot.com/2015/11/global-day-of-code-retread-2015-and.html
+    - text: "The good thing is that I saw practices that I have never worked with, like TDD: I was really amazed of the way the ping-pong approach works."
+      author: Thodoris Bais
+      url: http://thodorisbais.blogspot.com/2015/11/the-first-global-day-of-coderetreat-in.html
+- title: Other perspectives
+  examples:
+    - text: Learn to delete code you write.
+      author: Johannes Brodwall
+      url: http://johannesbrodwall.com/2018/06/26/how-to-write-better-code/
+    - text: "The code is gone, but the lessons learnt remain!"
+      author: Alin Pandichi
+      url: https://twitter.com/alinpandichi/status/931814681806766081
+    - text: "Mute pairing best iteration ever! (...) I mean it was fucking amazing! Total revelation, loved it, gotta do it way more often!" 
+      author: Daniel Ojeda
+      url: https://twitter.com/SuuiGD/status/789858655378210820
