@@ -1,0 +1,23 @@
+---
+layout: default
+title: Upcoming Coderetreats
+description: 'Pick your own adventure: regular or GDCR coderetreats?'
+topics:
+    - image: '/images/10-years/confetti.jpg'
+      type: coderetreats
+      title: Regular coderetreats 
+      description: Coderetreats happening year-round 
+    - image: '/images/10-years/confetti.jpg'
+      type: global-day
+      title: GDCR coderetreats 
+      description: Coderetreats happening on the Global Day of Coderetreat
+---
+
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center;">    
+{% for topic in page.topics %}
+    <a href="/events/{{ 'now' | date: '%Y' }}/{{topic.type}}">
+        {% include topic-card.html %}
+    </a>
+{% endfor %}
+</div>
