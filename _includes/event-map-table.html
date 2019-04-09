@@ -1,0 +1,88 @@
+<div id="map">
+    <div id="popup"></div>
+</div>
+
+{% assign events_with_location = site.data.events[page.year][page.event_type] | where_exp: 'event', 'event.location != "virtual"'  %}
+{% assign virtual_events = site.data.events[page.year][page.event_type] | where_exp: 'event', 'event.location == "virtual"'  %}
+{% assign countries = events_with_location | map: 'location' | map: 'country' | uniq  %}
+
+
+<form class="pure-form">
+    <fieldset>
+        <select id="gdcrCountry" style="font-family: sans-serif;">
+            <option selected disabled>Select your country...</option>
+            <option value="none">Show All</option>
+            <option disabled>-------------</option>
+            <option value="virtual">Virtual Events</option>
+            {% for country in countries %}
+            <option>{{ country }}</option>
+            {% endfor %}
+        </select>
+    </fieldset>
+</form>
+
+
+<table class="events-by-country">
+    <thead>
+    <tr>
+        <th>Country</th>
+        <th>City</th>
+        <th>Title</th>
+        <th>Facilitators</th>
+        <th>Sponsors</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    {% for event in virtual_events %}
+    <tr data-country="virtual">
+        <td colspan="2">Virtual</td>
+        <td><a href="{{ event.url }}">{{ event.title }}</a></td>
+        <td>
+            {% include event-moderators.html %}
+        </td>
+        <td>
+            {% include event-sponsors.html %}
+        </td>
+    </tr>
+    {% endfor %}
+    
+    {% assign events = events_with_location | where_exp: 'name', '1'  %}
+    {% for event in events %}
+    <tr data-country="{{event.location.country}}" data-labels={{event.labels|jsonify}}>
+        <td>{{ event.location.country }}</td>
+        <td>{{ event.location.city }}</td>
+        <td><a href="{{ event.url }}">{{ event.title }}</a></td>
+        <td>
+            {% include event-moderators.html %}
+        </td>
+        <td>
+            {% include event-sponsors.html %}
+        </td>
+    </tr>
+    {% endfor %}
+    
+    </tbody>
+</table>
+
+<script>
+    $(function () {
+        $.get('/events/{{page.year}}/{{page.event_type}}/events.json', function (eventsJson) {
+            var gdcrEvents = mapEventsDataToMapFormat(eventsJson);
+            addEventsToMap(gdcrEvents);
+        });
+
+        $('#gdcrCountry').on('change', function (e) {
+            var filter = e.target.value;
+            var rows = $('tbody tr');
+            var isDisabled = filter === 'none';
+
+            for (var i = 0; i < rows.length; i++) {
+                row = rows[i];
+                ctry = row.getAttribute("data-country");
+                row.classList.toggle('hidden', !(isDisabled || ctry === filter))
+            }
+            ;
+        });
+    });
+</script>
