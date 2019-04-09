@@ -15,7 +15,7 @@
    The required fields are:
     * `title`
     * `url`
-    * `author`
+    * `author.name`
     * `year`
     * `location.city`
     * `location.country`

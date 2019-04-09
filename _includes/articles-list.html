@@ -5,14 +5,10 @@
         <td>{{ article.year }}</td>
         <td><a href="{{ article.url }}">{{ article.title }}</a></td>
         <td>
-            {% assign author = article.author %}
-            {% assign first_char = author | slice: 0 %}
-            {% if first_char == '@' %}
-            {% assign sizeWithoutAt = author | size | minus: 1 %}
-            {% assign handle = author | slice: 1, sizeWithoutAt %}
-            <a href="https://twitter.com/{{ handle }}">{{ author }}</a>
+            {% if article.author.link %}
+            <a href="{{ article.author.link }}">{{ article.author.name }}</a>
             {% else %}
-            {{ author }}
+            {{ article.author.name }}
             {% endif %}
         </td>
         {% assign city = article.location.city | downcase %}
