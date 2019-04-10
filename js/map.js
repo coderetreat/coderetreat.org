@@ -72,7 +72,7 @@ var mapEventsDataToMapFormat = function(data) {
         offset: item.utcOffset,
         country: item.location.country,
         urls: [item.url],
-        name: item.title,
+        name: item.location.city + " - " + item.moderators.map(moderator => moderator.name).join(", "),
         coords: [
           item.location.coordinates.latitude,
           item.location.coordinates.longitude
