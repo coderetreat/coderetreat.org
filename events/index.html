@@ -58,7 +58,7 @@ description: List of events around the world!
             {% endfor %}
         </td>
 
-        <td><a href="{{ event.url }}">VIEW</a></td>
+        <td><a href="{{ event.url }}" aria-label="View remote event">VIEW</a></td>
 
     </tr>
     {% endfor %}
@@ -91,7 +91,7 @@ description: List of events around the world!
             {% endif %}
             {% endfor %}
         </td>
-        <td><a href="{{ event.url }}">VIEW</a></td>
+        <td><a href="{{ event.url }}" aria-label="View event in {{ event.location.city }}">VIEW</a></td>
 
 
     </tr>
