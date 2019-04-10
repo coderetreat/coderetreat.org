@@ -2,12 +2,12 @@
 
 This year, registering your event at coderetreat.org is easier than it has ever been! Like a lot of other community events, we're using a *Pull Request*-based process for registrations:
 
-1. Fork [the Coderetreat git repository](https://github.com/coderetreat/coderetreat.github.io),   current status: [![Build Status](https://travis-ci.org/coderetreat/coderetreat.github.io.svg?branch=master)](https://travis-ci.org/coderetreat/coderetreat.github.io)
+1. Fork [the Coderetreat git repository](https://github.com/coderetreat/coderetreat.org),   current status: [![Build Status](https://travis-ci.org/coderetreat/coderetreat.org.svg?branch=master)](https://travis-ci.org/coderetreat/coderetreat.org)
 
 
 2. Create a new file called `$YOURCITY.json` in the `_data/events_gdcr2018/` of the repository.
    You can either:
-   * Generate a file automatically by using [this schema](https://github.com/coderetreat/coderetreat.github.io/blob/master/events/event_schema.json).
+   * Generate a file automatically by using [this schema](https://github.com/coderetreat/coderetreat.org/blob/master/events/event_schema.json).
 
    * Generate a valid JSON below:
      <script async src="//jsfiddle.net/wLahmdh4/5/embed/result/"></script>
@@ -49,7 +49,7 @@ This year, registering your event at coderetreat.org is easier than it has ever 
 3. Run the tests locally before creating the pull request:
 
    ```sh
-   cd coderetreat.github.io/ # Change into the repository
+   cd coderetreat.org/ # Change into the repository
    npm install               # Install all dependencies
    npm test                  # Verify all events
    ```
@@ -58,7 +58,7 @@ This year, registering your event at coderetreat.org is easier than it has ever 
 4. Submit a pull request from Github. Be sure your PR title is clear.
 
 
-5. Travis-CI will automatically verify that your JSON file is valid (it should show up [here](https://travis-ci.org/coderetreat/coderetreat.github.io/pull_requests) in the test output)
+5. Travis-CI will automatically verify that your JSON file is valid (it should show up [here](https://travis-ci.org/coderetreat/coderetreat.org/pull_requests) in the test output)
 
    *If you would like to  to run the verification of the JSON file locally, then you must have NodeJS installed on your machine.*
 

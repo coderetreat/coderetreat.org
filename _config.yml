@@ -1,6 +1,6 @@
 title: Coderetreat
 url: https://www.coderetreat.org
-repository: coderetreat/coderetreat.github.io
+repository: coderetreat/coderetreat.org
 permalink: /blog/:year/:month/:day/:title/
 plugins:
   - jekyll-feed
