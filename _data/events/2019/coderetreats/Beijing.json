@@ -1,7 +1,7 @@
 {
   "title": "Global Day of Code Retreat 2018 Beijing",
   "url": "https://www.eventbrite.com/e/global-day-of-code-retreat-2018-beijing-tickets-51685731414",
-  "datetime": "2019-11-25 00:00:00",
+  "datetime": "2019-11-25 15:00:00",
   "location": {
     "city": "Beijing",
     "country": "China",
@@ -11,5 +11,16 @@
     },
     "utcOffset": 8
   },
-  "moderators": ["@YugangB"]
+  "moderators": [
+        {
+            "name": "Eugene Svalukhin",
+            "url": "https://twitter.com/esvalukhin"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "EPAM Kazakhstan",
+            "url": "https://twitter.com/EPAMKazakhstan"
+        }
+    ],
 }

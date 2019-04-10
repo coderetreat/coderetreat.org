@@ -5,9 +5,17 @@
     "@polamat91",
     "Daniel Labella"
   ],
-  "sponsors": [
-    "@vueling"
-  ],
+  "moderators": [
+        {
+            "name": "Jaroslaw Klose"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "klosebrothers",
+            "url": "https://twitter.com/klosebrothers"
+        }
+    ],
   "datetime": "2019-11-29 00:00:00",
   "location": {
     "city": "El Prat de Llobregat",

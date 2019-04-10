@@ -26,36 +26,26 @@
 
 
 <table class="events-by-country">
-    <thead>
-    <tr>
-        <th>When</th>
-        <th>Country</th>
-        <th>City</th>
-        <th>Title</th>
-        <th>Facilitators</th>
-        <th>Sponsors</th>
-    </tr>
-    </thead>
     <tbody>
-    
-    
     {% assign events = (all_events | where_exp: 'name', '1'  | sort: 'datetime') %}
     {% for event in events %}
     <tr data-country="{{event.location.country | default: 'virtual'}}" data-labels={{event.labels|jsonify}}>
-        <td>{{ event.datetime | date: "%Y-%m-%d %H:%M" }}</td>
         {% if event.location == "virtual" %}
-            <td colspan="2">Virtual</td>
+            <td>Virtual</td>
+            <td>(Remote)</td>
         {% else %}
             <td>{{ event.location.country }}</td>
-            <td>{{ event.location.city }}</td>
+            <td>{{ event.location.city }}</td></td>
         {% endif %}
-        <td><a href="{{ event.url }}">{{ event.title }}</a></td>
+        
         <td>
             {% include event-moderators.html %}
         </td>
         <td>
             {% include event-sponsors.html %}
         </td>
+        <td><a href="{{ event.url }}" aria-label="View event in {{ event.location.city }}">VIEW</a></td>    
+        <td>{{ event.datetime | date: "%a, %b %d, %Y, %H:%M" }}</td>
     </tr>
     {% endfor %}
     

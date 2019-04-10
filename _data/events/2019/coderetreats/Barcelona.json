@@ -1,10 +1,7 @@
 {
   "title": "GDCR18 in Barcelona",
   "url": "https://www.meetup.com/es-ES/BarcelonaJUG/events/256208230",
-  "moderators": [
-    "@icougil"
-  ],
-  "datetime": "2019-11-26 00:00:00",
+  "datetime": "2019-11-26 09:30:00",
   "location": {
     "city": "Barcelona",
     "country": "Spain",
@@ -14,5 +11,21 @@
     },
     "utcOffset": 2,
     "timezone": "Europe/Madrid"
-  }
+  },
+  "moderators": [
+        {
+            "name": "Martin Klose",
+            "url": "https://twitter.com/martinklose"
+        },
+        {
+            "name": "Markus Decke",
+            "url": "https://twitter.com/mrksdck"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "Native Instruments",
+            "url": "https://twitter.com/NI_News"
+        }
+    ],
 }

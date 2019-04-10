@@ -2,9 +2,11 @@
   "title": "GDCR@ExpertTalks",
   "url": "https://www.meetup.com/Experttalks-bengaluru/",
   "moderators": [
-    "@vbhagath",
-    "Prathap Reddy"
-  ],
+        {
+            "name": "nils weinzierl",
+            "url": "https://twitter.com/nilswz"
+        }
+    ],
   "datetime": "2019-11-29 00:00:00",
   "location": "virtual",
     "utcOffset": 5.5,

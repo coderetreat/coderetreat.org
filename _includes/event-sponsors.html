@@ -1,13 +1,10 @@
-{%- assign loopCount = event.sponsors | size | minus: 1 -%}
-{%- for i in (0..loopCount) -%}
-{%- assign sponsor = event.sponsors[i] -%}
-{%- assign first_char = sponsor | slice: 0 -%}
-{%- if first_char == '@' -%}
-{%- assign sizeWithoutAt = sponsor | size | minus: 1 -%}
-{%- assign handle = sponsor | slice: 1, sizeWithoutAt -%}
-<a href="https://twitter.com/{{ handle }}">{{ sponsor }}</a>
-{%- else -%}
-{{- sponsor -}}
-{%- endif -%}
-{%- if i != loopCount -%}, {%- endif -%}
-{%- endfor -%}
+{% assign loopCount = event.sponsors | size | minus: 1 %}
+{% for i in (0..loopCount) %}
+{% assign sponsor = event.sponsors[i] %}
+{% if sponsor.url %}
+<a href="{{ sponsor.url }}">{{ sponsor.name }}</a>{% if i != loopCount %}, {% endif %}
+{% else %}
+{{ sponsor.name }}{% if i != loopCount %}, {% endif %}
+{% endif %}
+{% endfor %}
+{% unless event.sponsors %}-{% endunless %}
