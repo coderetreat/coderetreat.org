@@ -1,18 +1,22 @@
 {
-  "title": "GDCR in Prague",
-  "url": "https://www.meetup.com/CodeRetreat-CZ/events/255966983/",
-  "moderators": [
-    "Jaroslav Holan",
-    "Dominik Mostek"
-  ],
-  "location": {
-    "city": "Prague",
-    "country": "Czech Republic",
-    "coordinates": {
-      "latitude": 50.0894207,
-      "longitude": 14.339685
+    "location": {
+        "city": "Prague",
+        "coordinates": {
+            "latitude": 50.0894207,
+            "longitude": 14.339685
+        },
+        "country": "Czech Republic",
+        "timezone": "Europe/Prague",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Prague"
-  }
+    "moderators": [
+        {
+            "name": "Jaroslav Holan"
+        },
+        {
+            "name": "Dominik Mostek"
+        }
+    ],
+    "title": "GDCR in Prague",
+    "url": "https://www.meetup.com/CodeRetreat-CZ/events/255966983/"
 }

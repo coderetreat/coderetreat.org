@@ -1,18 +1,24 @@
 {
-  "title": "Global Day of Coderetreat in Heilbronn",
-  "url": "https://www.eventbrite.de/e/global-day-of-coderetreat-2017-tickets-38500347576",
-  "moderators": [
-    "@thaberkern",
-    "@silent_fred"
-  ],
-  "location": {
-    "city": "Heilbronn",
-    "country": "Germany",
-    "coordinates": {
-      "latitude": 49.1700534,
-      "longitude": 9.2221827
+    "location": {
+        "city": "Heilbronn",
+        "coordinates": {
+            "latitude": 49.1700534,
+            "longitude": 9.2221827
+        },
+        "country": "Germany",
+        "timezone": "Europe/Berlin",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Berlin"
-  }
+    "moderators": [
+        {
+            "name": "@thaberkern",
+            "url": "https://twitter.com/thaberkern"
+        },
+        {
+            "name": "Michael K\u00fchweg",
+            "url": "https://twitter.com/silent_fred"
+        }
+    ],
+    "title": "Global Day of Coderetreat in Heilbronn",
+    "url": "https://www.eventbrite.de/e/global-day-of-coderetreat-2017-tickets-38500347576"
 }

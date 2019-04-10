@@ -1,19 +1,28 @@
 {
-  "title": "Global Day of CodeRetreat GC 2017",
-  "url": "https://www.meetup.com/es-ES/SPEGC-Sociedad-de-Promocion-Economica-de-Gran-Canaria/events/244753003/",
-  "moderators": [
-    "@GodoyJonay",
-    "@yonayCL",
-    "@Antonio_sanglez"
-  ],
-  "location": {
-    "city": "Las Palmas",
-    "country": "Spain",
-    "coordinates": {
-      "latitude": 28.106227345525383,
-      "longitude": -15.446037813491788
+    "location": {
+        "city": "Las Palmas",
+        "coordinates": {
+            "latitude": 28.106227345525383,
+            "longitude": -15.446037813491788
+        },
+        "country": "Spain",
+        "timezone": "Atlantic/Canary",
+        "utcOffset": 1
     },
-    "utcOffset": 1,
-    "timezone": "Atlantic/Canary"
-  }
+    "moderators": [
+        {
+            "name": "Jonay Godoy",
+            "url": "https://twitter.com/GodoyJonay"
+        },
+        {
+            "name": "Yonay Cabrera L\u00f3pez",
+            "url": "https://twitter.com/yonayCL"
+        },
+        {
+            "name": "Antonio S\u00e1nchez",
+            "url": "https://twitter.com/Antonio_sanglez"
+        }
+    ],
+    "title": "Global Day of CodeRetreat GC 2017",
+    "url": "https://www.meetup.com/es-ES/SPEGC-Sociedad-de-Promocion-Economica-de-Gran-Canaria/events/244753003/"
 }

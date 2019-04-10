@@ -1,21 +1,30 @@
 {
-  "title": "GDCR17 em Fortaleza",
-  "url": "https://goo.gl/FT5KzX",
-  "moderators": [
-    "@pbenety",
-    "@lobinhojr"
-  ],
-  "sponsors": [
-  	"@iatlantico"
-  ],
-  "location": {
-    "city": "Fortaleza",
-    "country": "Brasil",
-    "coordinates": {
-      "latitude": -3.7652304,
-      "longitude": -38.4797354
+    "location": {
+        "city": "Fortaleza",
+        "coordinates": {
+            "latitude": -3.7652304,
+            "longitude": -38.4797354
+        },
+        "country": "Brasil",
+        "timezone": "America/Fortaleza",
+        "utcOffset": -3
     },
-    "utcOffset": -3,
-    "timezone": "America/Fortaleza"
-  }
+    "moderators": [
+        {
+            "name": "Paulo Benety",
+            "url": "https://twitter.com/pbenety"
+        },
+        {
+            "name": "Lobo Junior",
+            "url": "https://twitter.com/lobinhojr"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "Instituto Atl\u00e2ntico",
+            "url": "https://twitter.com/iatlantico"
+        }
+    ],
+    "title": "GDCR17 em Fortaleza",
+    "url": "https://goo.gl/FT5KzX"
 }

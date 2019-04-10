@@ -1,20 +1,25 @@
 {
-  "title": "GDCR 2018 @ MATHEMA",
-  "url": "https://www.mathema.de/veranstaltungen/global-day-of-coderetreat-2018",
-  "moderators": [
-    "Nico"
-  ],
-    "sponsors": [
-    "@MATHEMA123"
-  ],
-  "location": {
-    "city": "Nürnberg",
-    "country": "Germany",
-    "coordinates": {
-      "latitude": 49.4644076,
-      "longitude": 11.0838987
+    "location": {
+        "city": "N\u00fcrnberg",
+        "coordinates": {
+            "latitude": 49.4644076,
+            "longitude": 11.0838987
+        },
+        "country": "Germany",
+        "timezone": "Europe/Berlin",
+        "utcOffset": 1
     },
-    "utcOffset": 1,
-    "timezone": "Europe/Berlin"
-  }
+    "moderators": [
+        {
+            "name": "Nico"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "MATHEMA Software GmbH",
+            "url": "https://twitter.com/MATHEMA123"
+        }
+    ],
+    "title": "GDCR 2018 @ MATHEMA",
+    "url": "https://www.mathema.de/veranstaltungen/global-day-of-coderetreat-2018"
 }

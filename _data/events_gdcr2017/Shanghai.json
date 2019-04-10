@@ -1,19 +1,26 @@
 {
-  "title": "GDCR17 in Shanghai",
-  "url": "https://jinshuju.net/f/0UG5uv",
-  "moderators": [
-    "@FengxiangZhu",
-    "Wu Ke",
-    "Jin Zhonghao"
-  ],
-  "location": {
-    "city": "Shanghai",
-    "country": "China",
-    "coordinates": {
-      "latitude": 31.224631,
-      "longitude": 121.1958828
+    "location": {
+        "city": "Shanghai",
+        "coordinates": {
+            "latitude": 31.224631,
+            "longitude": 121.1958828
+        },
+        "country": "China",
+        "timezone": "Asia/Shanghai",
+        "utcOffset": 8
     },
-    "utcOffset": 8,
-    "timezone": "Asia/Shanghai"
-  }
+    "moderators": [
+        {
+            "name": "@FengxiangZhu",
+            "url": "https://twitter.com/FengxiangZhu"
+        },
+        {
+            "name": "Wu Ke"
+        },
+        {
+            "name": "Jin Zhonghao"
+        }
+    ],
+    "title": "GDCR17 in Shanghai",
+    "url": "https://jinshuju.net/f/0UG5uv"
 }

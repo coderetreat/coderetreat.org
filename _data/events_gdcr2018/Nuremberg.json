@@ -1,24 +1,42 @@
 {
-  "title": "GDCR 2018 @ DATEV",
-  "url": "https://ti.to/gdcr-nuernberg/2018",
-  "moderators": [
-    "@Fischermaen",
-    "@XelamRelos",
-    "@marcoemrich",
-    "@embedjourneyman"
-  ],
-  "sponsors": [
-    "@SCC_at_DATEV",
-    "@DATEV"
-  ],
-  "location": {
-    "city": "Nuremberg",
-    "country": "Germany",
-    "coordinates": {
-      "latitude": 49.45311,
-      "longitude": 11.04607
+    "location": {
+        "city": "Nuremberg",
+        "coordinates": {
+            "latitude": 49.45311,
+            "longitude": 11.04607
+        },
+        "country": "Germany",
+        "timezone": "Europe/Berlin",
+        "utcOffset": 1
     },
-    "utcOffset": 1,
-    "timezone": "Europe/Berlin"
-  }
+    "moderators": [
+        {
+            "name": "Andy Fischer",
+            "url": "https://twitter.com/Fischermaen"
+        },
+        {
+            "name": "Alex Soler Sanandres",
+            "url": "https://twitter.com/XelamRelos"
+        },
+        {
+            "name": "Marco Emrich",
+            "url": "https://twitter.com/marcoemrich"
+        },
+        {
+            "name": "Ren\u00e9 F\u00fcger",
+            "url": "https://twitter.com/embedjourneyman"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "SCC @ DATEV",
+            "url": "https://twitter.com/SCC_at_DATEV"
+        },
+        {
+            "name": "DATEV",
+            "url": "https://twitter.com/DATEV"
+        }
+    ],
+    "title": "GDCR 2018 @ DATEV",
+    "url": "https://ti.to/gdcr-nuernberg/2018"
 }

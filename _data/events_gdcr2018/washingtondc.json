@@ -1,21 +1,30 @@
 {
-  "title": "Global Day of Code Retreat Washington, DC 2018",
-  "url": "https://www.eventbrite.com/e/global-day-of-code-retreat-washington-dc-2018-tickets-50966108001",
-  "moderators": [
-    "@thepatleong",
-    "@sjkilleen"
-  ],
-  "sponsors": [
-    "@ExcellaCo"
-  ],
-  "location": {
-    "city": "Washington, DC",
-    "country": "United States of America",
-    "coordinates": {
-      "latitude": 38.890573,
-      "longitude": -77.087052
+    "location": {
+        "city": "Washington, DC",
+        "coordinates": {
+            "latitude": 38.890573,
+            "longitude": -77.087052
+        },
+        "country": "United States of America",
+        "timezone": "America/New_York",
+        "utcOffset": -4
     },
-    "utcOffset": -4,
-    "timezone": "America/New_York"
-  }
-} 
+    "moderators": [
+        {
+            "name": "Patrick Leong",
+            "url": "https://twitter.com/thepatleong"
+        },
+        {
+            "name": "Sean Killeen",
+            "url": "https://twitter.com/sjkilleen"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "ExcellaCo",
+            "url": "https://twitter.com/ExcellaCo"
+        }
+    ],
+    "title": "Global Day of Code Retreat Washington, DC 2018",
+    "url": "https://www.eventbrite.com/e/global-day-of-code-retreat-washington-dc-2018-tickets-50966108001"
+}

@@ -1,18 +1,24 @@
 {
-  "title": "GDCR 17 in Charlottetown",
-  "url": "https://www.meetup.com/PEI-Developers/events/244684325/",
-  "moderators": [
-    "@evanepio",
-    "@ncphi"
-  ],
-  "location": {
-    "city": "Charlottetown",
-    "country": "Canada",
-    "coordinates": {
-      "latitude": 46.231994,
-      "longitude": -63.1273027
+    "location": {
+        "city": "Charlottetown",
+        "coordinates": {
+            "latitude": 46.231994,
+            "longitude": -63.1273027
+        },
+        "country": "Canada",
+        "timezone": "America/Halifax",
+        "utcOffset": -3
     },
-    "utcOffset": -3,
-    "timezone": "America/Halifax"
-  }
+    "moderators": [
+        {
+            "name": "Evan Porter",
+            "url": "https://twitter.com/evanepio"
+        },
+        {
+            "name": "nolan",
+            "url": "https://twitter.com/ncphi"
+        }
+    ],
+    "title": "GDCR 17 in Charlottetown",
+    "url": "https://www.meetup.com/PEI-Developers/events/244684325/"
 }

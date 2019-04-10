@@ -1,19 +1,28 @@
 {
-  "title": "GDCR2017 in AXA Web Center",
-  "url": "https://www.meetup.com/fr-FR/Nord-agile/events/244762252/",
-  "moderators": [
-    "@ImenNecibRassaa",
-    "@xavierballoy",
-    "@ToF_"
-  ],
-  "location": {
-    "city": "Wasquehal",
-    "country": "France",
-    "coordinates": {
-      "latitude": 50.681279,
-      "longitude": 3.117162
+    "location": {
+        "city": "Wasquehal",
+        "coordinates": {
+            "latitude": 50.681279,
+            "longitude": 3.117162
+        },
+        "country": "France",
+        "timezone": "Europe/Paris",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Paris"
-  }
+    "moderators": [
+        {
+            "name": "NECIB RASSAA Imen",
+            "url": "https://twitter.com/ImenNecibRassaa"
+        },
+        {
+            "name": "Xavier Balloy",
+            "url": "https://twitter.com/xavierballoy"
+        },
+        {
+            "name": "Christophe Thibaut",
+            "url": "https://twitter.com/ToF_"
+        }
+    ],
+    "title": "GDCR2017 in AXA Web Center",
+    "url": "https://www.meetup.com/fr-FR/Nord-agile/events/244762252/"
 }

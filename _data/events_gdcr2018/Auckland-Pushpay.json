@@ -1,20 +1,26 @@
 {
-  "title": "GDCR18 at Pushpay, Auckland",
-  "url": "https://www.meetup.com/kiwi-code-retreat/events/255546323",
-  "moderators": [
-    "@mightymuke"
-  ],
-  "sponsors": [
-    "@pushpay"
-  ],
-  "location": {
-    "city": "Auckland",
-    "country": "New Zealand",
-    "coordinates": {
-      "latitude": -36.8486838,
-      "longitude": 174.7602805
+    "location": {
+        "city": "Auckland",
+        "coordinates": {
+            "latitude": -36.8486838,
+            "longitude": 174.7602805
+        },
+        "country": "New Zealand",
+        "timezone": "Pacific/Auckland",
+        "utcOffset": 13
     },
-    "utcOffset": 13,
-    "timezone": "Pacific/Auckland"
-  }
+    "moderators": [
+        {
+            "name": "Marcus Bristol",
+            "url": "https://twitter.com/mightymuke"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "Pushpay",
+            "url": "https://twitter.com/pushpay"
+        }
+    ],
+    "title": "GDCR18 at Pushpay, Auckland",
+    "url": "https://www.meetup.com/kiwi-code-retreat/events/255546323"
 }

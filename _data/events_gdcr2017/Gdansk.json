@@ -1,19 +1,28 @@
 {
-  "title": "GDCR17 in Gdansk",
-  "url": "https://events.epam.com/events/global-day-of-coderetreat-gdansk-2017",
-  "moderators": [
-    "@michalgruca",
-    "@pamakuch",
-    "@radekzielinski"
-  ],
-  "location": {
-    "city": "Gdansk",
-    "country": "Poland",
-    "coordinates": {
-      "latitude": 54.403014,
-      "longitude": 18.571636
+    "location": {
+        "city": "Gdansk",
+        "coordinates": {
+            "latitude": 54.403014,
+            "longitude": 18.571636
+        },
+        "country": "Poland",
+        "timezone": "Europe/Warsaw",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Warsaw"
-  }
+    "moderators": [
+        {
+            "name": "Micha\u0142 Gruca",
+            "url": "https://twitter.com/michalgruca"
+        },
+        {
+            "name": "Patryk Makuch",
+            "url": "https://twitter.com/pamakuch"
+        },
+        {
+            "name": "Radoslaw Zielinski",
+            "url": "https://twitter.com/radekzielinski"
+        }
+    ],
+    "title": "GDCR17 in Gdansk",
+    "url": "https://events.epam.com/events/global-day-of-coderetreat-gdansk-2017"
 }

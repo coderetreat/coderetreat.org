@@ -1,20 +1,32 @@
 {
-  "title": "Global Day of Code Retreat 2017 - Belo Horizonte",
-  "url": "https://www.sympla.com.br/global-day-of-code-retreat---belo-horizonte__211542",
-  "moderators": [
-    "@guifroes",
-    "@guicorsino",
-    "@barralarissa",
-    "@caiquerdrigues"
-  ],
-  "location": {
-    "city": "Belo Horizonte",
-    "country": "Brazil",
-    "coordinates": {
-      "latitude": -19.8157,
-      "longitude": -43.9542
+    "location": {
+        "city": "Belo Horizonte",
+        "coordinates": {
+            "latitude": -19.8157,
+            "longitude": -43.9542
+        },
+        "country": "Brazil",
+        "timezone": "America/Sao_Paulo",
+        "utcOffset": -3
     },
-    "utcOffset": -3,
-    "timezone": "America/Sao_Paulo"
-  }
+    "moderators": [
+        {
+            "name": "Guilherme Froes \u270f\ufe0f",
+            "url": "https://twitter.com/guifroes"
+        },
+        {
+            "name": "Guilherme Corsino",
+            "url": "https://twitter.com/guicorsino"
+        },
+        {
+            "name": "ilustre guria",
+            "url": "https://twitter.com/barralarissa"
+        },
+        {
+            "name": "Caique Rodrigues",
+            "url": "https://twitter.com/caiquerdrigues"
+        }
+    ],
+    "title": "Global Day of Code Retreat 2017 - Belo Horizonte",
+    "url": "https://www.sympla.com.br/global-day-of-code-retreat---belo-horizonte__211542"
 }

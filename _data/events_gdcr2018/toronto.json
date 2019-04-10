@@ -1,13 +1,15 @@
 {
-  "title": "GDCR18 in Toronto",
-  "url": "https://gdcr-2018-toronto.eventbrite.ca",
-  "moderators": [
-    "Chris Gow"
-  ],
-  "location": {
-    "city": "Toronto",
-    "country": "Canada",
-    "utcOffset": -4,
-    "timezone": "America/Toronto"
-  }
+    "location": {
+        "city": "Toronto",
+        "country": "Canada",
+        "timezone": "America/Toronto",
+        "utcOffset": -4
+    },
+    "moderators": [
+        {
+            "name": "Chris Gow"
+        }
+    ],
+    "title": "GDCR18 in Toronto",
+    "url": "https://gdcr-2018-toronto.eventbrite.ca"
 }

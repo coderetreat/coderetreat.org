@@ -1,21 +1,30 @@
 {
-  "title": "GDCR18 Hochschule Fulda",
-  "url": "https://doodle.com/poll/zvs55i69rf3irbrd",
-  "moderators": [
-    "Thomas.Papendieck@OPITZ-CONSULTING.com",
-    "Jörg Kreiker <joerg.kreiker@informatik.hs-fulda.de>"
-  ],
-  "sponsors": [
-    "@OC_WIRE"
-  ],
-  "location": {
-    "city": "Fulda",
-    "country": "Germany",
-    "coordinates": {
-      "latitude": 50.56518,
-      "longitude": 9.68448
+    "location": {
+        "city": "Fulda",
+        "coordinates": {
+            "latitude": 50.56518,
+            "longitude": 9.68448
+        },
+        "country": "Germany",
+        "timezone": "Europe/Berlin",
+        "utcOffset": 1
     },
-    "utcOffset": 1,
-    "timezone": "Europe/Berlin"
-  }
+    "moderators": [
+        {
+            "name": "Thomas Papendieck",
+            "url": "mailto:Thomas.Papendieck@OPITZ-CONSULTING.com"
+        },
+        {
+            "name": "J\u00f6rg Kreiker",
+            "url": "mailto:joerg.kreiker@informatik.hs-fulda.de"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "OPITZ CONSULTING",
+            "url": "https://twitter.com/OC_WIRE"
+        }
+    ],
+    "title": "GDCR18 Hochschule Fulda",
+    "url": "https://doodle.com/poll/zvs55i69rf3irbrd"
 }

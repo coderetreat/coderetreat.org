@@ -1,17 +1,20 @@
 {
-  "title": "GLOBAL DAY OF CODE RETREAT 2018 - BELO HORIZONTE",
-  "url": "https://www.sympla.com.br/global-day-of-code-retreat-2018---belo-horizonte__368004",
-  "moderators": [
-    "@guicorsino"
-  ],
-  "location": {
-    "city": "Belo Horizonte",
-    "country": "Brazil",
-    "coordinates": {
-      "latitude": -19.9173,
-      "longitude": -43.9346
+    "location": {
+        "city": "Belo Horizonte",
+        "coordinates": {
+            "latitude": -19.9173,
+            "longitude": -43.9346
+        },
+        "country": "Brazil",
+        "timezone": "America/Sao_Paulo",
+        "utcOffset": -3
     },
-    "utcOffset": -3,
-    "timezone": "America/Sao_Paulo"
-  }
+    "moderators": [
+        {
+            "name": "Guilherme Corsino",
+            "url": "https://twitter.com/guicorsino"
+        }
+    ],
+    "title": "GLOBAL DAY OF CODE RETREAT 2018 - BELO HORIZONTE",
+    "url": "https://www.sympla.com.br/global-day-of-code-retreat-2018---belo-horizonte__368004"
 }

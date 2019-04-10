@@ -1,18 +1,24 @@
 {
-    "title": "GDCR18 Bordeaux",
-    "url": "http://meetu.ps/e/FZ0Yw/jnLhz/f",
-    "moderators": [
-      "@lilobase",
-      "@bodysplash"
-    ],
     "location": {
-      "city": "Bordeaux",
-      "country": "France",
-      "coordinates": {
-        "latitude": 44.8532256,
-        "longitude": -0.5920805
-      },
-      "utcOffset": 2,
-      "timezone": "Europe/Paris"
-    }
-  }
+        "city": "Bordeaux",
+        "coordinates": {
+            "latitude": 44.8532256,
+            "longitude": -0.5920805
+        },
+        "country": "France",
+        "timezone": "Europe/Paris",
+        "utcOffset": 2
+    },
+    "moderators": [
+        {
+            "name": "Arnaud LEMAIRE",
+            "url": "https://twitter.com/lilobase"
+        },
+        {
+            "name": "JB Dusseaut",
+            "url": "https://twitter.com/bodysplash"
+        }
+    ],
+    "title": "GDCR18 Bordeaux",
+    "url": "http://meetu.ps/e/FZ0Yw/jnLhz/f"
+}

@@ -1,21 +1,30 @@
 {
-  "title": "Málaga Global Day of Code Retreat 2017",
-  "url": "http://bit.ly/gdcr2017mlg",
-  "moderators": [
-    "@MalagaScala",
-    "@MalagaJUG"
-  ],
-  "sponsors": [
-    "@TechTalentSpain"
-  ],
-  "location": {
-    "city": "Málaga",
-    "country": "Spain",
-    "coordinates": {
-      "latitude": 36.7182015,
-      "longitude": -4.5193068
+    "location": {
+        "city": "M\u00e1laga",
+        "coordinates": {
+            "latitude": 36.7182015,
+            "longitude": -4.5193068
+        },
+        "country": "Spain",
+        "timezone": "Europe/Madrid",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Madrid"
-  }
+    "moderators": [
+        {
+            "name": "M\u00e1laga Scala Devs",
+            "url": "https://twitter.com/MalagaScala"
+        },
+        {
+            "name": "M\u00e1laga JUG",
+            "url": "https://twitter.com/MalagaJUG"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "@TechTalentSpain",
+            "url": "https://twitter.com/TechTalentSpain"
+        }
+    ],
+    "title": "M\u00e1laga Global Day of Code Retreat 2017",
+    "url": "http://bit.ly/gdcr2017mlg"
 }

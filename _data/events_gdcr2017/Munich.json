@@ -1,18 +1,24 @@
 {
-	"title": "GDCR17 in Munich",
-	"url": "https://www.meetup.com/de-DE/Software-Craftsmanship-Meetup-Softwerkskammer-Munchen/events/242419256/",
-	"moderators": [
-		"@davidvoelkel",
-		"@dimitrypolivaev"
-	],
-	"location": {
-		"city": "Munich",
-		"country": "Germany",
-		"coordinates": {
-			"latitude": 48.097024,
-			"longitude": 11.543011
-		},
-		"utcOffset": 2,
-		"timezone": "Europe/Berlin"
-	}
+    "location": {
+        "city": "Munich",
+        "coordinates": {
+            "latitude": 48.097024,
+            "longitude": 11.543011
+        },
+        "country": "Germany",
+        "timezone": "Europe/Berlin",
+        "utcOffset": 2
+    },
+    "moderators": [
+        {
+            "name": "David V\u00f6lkel",
+            "url": "https://twitter.com/davidvoelkel"
+        },
+        {
+            "name": "dimitrypolivaev",
+            "url": "https://twitter.com/dimitrypolivaev"
+        }
+    ],
+    "title": "GDCR17 in Munich",
+    "url": "https://www.meetup.com/de-DE/Software-Craftsmanship-Meetup-Softwerkskammer-Munchen/events/242419256/"
 }

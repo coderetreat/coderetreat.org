@@ -1,17 +1,20 @@
 {
-  "title": "GDCR18 in Logroño",
-  "url": "http://riojadotnet.com/eventos/global-day-of-coderetreat-2018",
-  "moderators": [
-    "@luissagasta"
-  ],
-  "location": {
-    "city": "Logroño",
-    "country": "Spain",
-    "coordinates": {
-      "latitude": 42.4607989,
-      "longitude": -2.4182367
+    "location": {
+        "city": "Logro\u00f1o",
+        "coordinates": {
+            "latitude": 42.4607989,
+            "longitude": -2.4182367
+        },
+        "country": "Spain",
+        "timezone": "Europe/Madrid",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Madrid"
-  }
+    "moderators": [
+        {
+            "name": "Luis Sagasta",
+            "url": "https://twitter.com/luissagasta"
+        }
+    ],
+    "title": "GDCR18 in Logro\u00f1o",
+    "url": "http://riojadotnet.com/eventos/global-day-of-coderetreat-2018"
 }

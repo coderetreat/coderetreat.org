@@ -1,20 +1,25 @@
 {
-  "title": "GDCR18 in Bucharest @ AgileWorks",
-  "url": "https://www.meetup.com/The-Bucharest-Agile-Software-Meetup-Group/events/255691980/",
-  "moderators": [
-    "@biancaleuca",
-    "@alinpandichi"
-  ],
-  "sponsors": [
-  ],
-  "location": {
-    "city": "Bucharest",
-    "country": "Romania",
-    "coordinates": {
-      "latitude": 44.4361414,
-      "longitude": 26.1027202
+    "location": {
+        "city": "Bucharest",
+        "coordinates": {
+            "latitude": 44.4361414,
+            "longitude": 26.1027202
+        },
+        "country": "Romania",
+        "timezone": "Europe/Bucharest",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Bucharest"
-  }
+    "moderators": [
+        {
+            "name": "Bianca L",
+            "url": "https://twitter.com/biancaleuca"
+        },
+        {
+            "name": "Alin Pandichi",
+            "url": "https://twitter.com/alinpandichi"
+        }
+    ],
+    "sponsors": [],
+    "title": "GDCR18 in Bucharest @ AgileWorks",
+    "url": "https://www.meetup.com/The-Bucharest-Agile-Software-Meetup-Group/events/255691980/"
 }

@@ -1,19 +1,28 @@
 {
-  "title": "GDCR18 @fiducia_gad in Karlsruhe",
-  "url": "https://www.softwerkskammer.org/activities/ka-gdcr-18/",
-"moderators": [
-    "@ursmetz",
-    "@chr1shaefn3r",
-    "@petfic"
-  ],
-  "location": {
-    "city": "Karlsruhe",
-    "country": "Germany",
-    "coordinates": {
-      "latitude": 48.994277,
-      "longitude": 8.446993
+    "location": {
+        "city": "Karlsruhe",
+        "coordinates": {
+            "latitude": 48.994277,
+            "longitude": 8.446993
+        },
+        "country": "Germany",
+        "timezone": "Europe/Berlin",
+        "utcOffset": 1
     },
-    "utcOffset": 1,
-    "timezone": "Europe/Berlin"
-  }
+    "moderators": [
+        {
+            "name": "Urs Metz",
+            "url": "https://twitter.com/ursmetz"
+        },
+        {
+            "name": "Christoph H\u00e4fner",
+            "url": "https://twitter.com/chr1shaefn3r"
+        },
+        {
+            "name": "Peter Fichtner",
+            "url": "https://twitter.com/petfic"
+        }
+    ],
+    "title": "GDCR18 @fiducia_gad in Karlsruhe",
+    "url": "https://www.softwerkskammer.org/activities/ka-gdcr-18/"
 }

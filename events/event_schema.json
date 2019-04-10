@@ -16,8 +16,20 @@
     "moderators": {
       "type": "array",
       "items": {
-        "description": "Name or Twitter Handle of the moderators",
-        "type": "string"
+        "description": "List of moderators",
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "Moderator's name",
+            "type": "string"
+          },
+          "url" : {
+            "description": "Moderator's url: Twitter profile, GitHub profile, website, ...",
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "required": ["name"]
       }
     },
     "location": {
@@ -29,8 +41,20 @@
     "sponsors": {
       "type": "array",
       "items": {
-        "description": "Name or Twitter Handle of the sponsors",
-        "type": "string"
+        "description": "List of sponsors",
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "Sponsor's name",
+            "type": "string"
+          },
+          "url" : {
+            "description": "Sponsor's url: Twitter profile, GitHub profile, website, ...",
+            "type": "string"
+          }
+        }, 
+        "additionalProperties": false,
+        "required": ["name"]
       }
     }
   },

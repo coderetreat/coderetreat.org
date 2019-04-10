@@ -1,16 +1,20 @@
 {
-  "title": "GDCR17 in Curitiba",
-  "url": "http://www.dainf.ct.utfpr.edu.br/~adolfo/dokuwiki/doku.php?id=2017:global_day_of_coderetreat_2017",
-  "moderators": [
-    "@adolfont"
-  ],
-  "location": {
-    "city": "Curitiba",
-    "country": "Brazil",
-    "coordinates": {
-      "latitude": -25.4284,
-      "longitude": -49.2689362    },
-    "utcOffset": -3,
-    "timezone": "America/Sao_Paulo"
-  }
+    "location": {
+        "city": "Curitiba",
+        "coordinates": {
+            "latitude": -25.4284,
+            "longitude": -49.2689362
+        },
+        "country": "Brazil",
+        "timezone": "America/Sao_Paulo",
+        "utcOffset": -3
+    },
+    "moderators": [
+        {
+            "name": "Adolfo Neto",
+            "url": "https://twitter.com/adolfont"
+        }
+    ],
+    "title": "GDCR17 in Curitiba",
+    "url": "http://www.dainf.ct.utfpr.edu.br/~adolfo/dokuwiki/doku.php?id=2017:global_day_of_coderetreat_2017"
 }

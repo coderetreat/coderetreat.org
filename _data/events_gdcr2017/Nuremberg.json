@@ -1,14 +1,27 @@
 {
-  "title": "GDCR17 @DATEV in Nuremberg",
-  "url": "https://ti.to/gdcr-nuernberg/2017",
-  "location": {
-    "timezone": "Europe/Berlin",
-    "city": "Nuremberg",
-    "country": "Germany",
-    "coordinates": {
-      "latitude": 49.4538600,
-      "longitude": 11.0432813
-    }
-  },
-  "moderators": ["@Fischermaen", "@xelamrelos", "@marcoemrich"]
+    "location": {
+        "city": "Nuremberg",
+        "coordinates": {
+            "latitude": 49.45386,
+            "longitude": 11.0432813
+        },
+        "country": "Germany",
+        "timezone": "Europe/Berlin"
+    },
+    "moderators": [
+        {
+            "name": "Andy Fischer",
+            "url": "https://twitter.com/Fischermaen"
+        },
+        {
+            "name": "Alex Soler Sanandres",
+            "url": "https://twitter.com/xelamrelos"
+        },
+        {
+            "name": "Marco Emrich",
+            "url": "https://twitter.com/marcoemrich"
+        }
+    ],
+    "title": "GDCR17 @DATEV in Nuremberg",
+    "url": "https://ti.to/gdcr-nuernberg/2017"
 }

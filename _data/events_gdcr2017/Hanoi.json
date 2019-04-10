@@ -1,17 +1,19 @@
 {
-  "title": "GDCR17 at CodeGym",
-  "url": "https://hangouts.google.com/hangouts/_/agilead.vn/globaldayofcodetreat2017",
-  "moderators": [
-    "Khoa, Nhat, Son"
-  ],
-  "location": {
-    "city": "Hanoi",
-    "country": "Vietnam",
-    "coordinates": {
-      "latitude": 21.0338718,
-      "longitude": 105.7632193
+    "location": {
+        "city": "Hanoi",
+        "coordinates": {
+            "latitude": 21.0338718,
+            "longitude": 105.7632193
+        },
+        "country": "Vietnam",
+        "timezone": "Asia/Saigon",
+        "utcOffset": 7
     },
-    "utcOffset": 7,
-    "timezone": "Asia/Saigon"
-  }
+    "moderators": [
+        {
+            "name": "Khoa, Nhat, Son"
+        }
+    ],
+    "title": "GDCR17 at CodeGym",
+    "url": "https://hangouts.google.com/hangouts/_/agilead.vn/globaldayofcodetreat2017"
 }

@@ -1,17 +1,19 @@
 {
-  "title": "GDCR17 in Edmonton",
-  "url": "https://www.eventbrite.ca/e/global-day-of-coderetreat-edmonton-tickets-37315716312",
-  "moderators": [
-    "Aaron"
-  ],
-  "location": {
-    "city": "Edmonton",
-    "country": "Canada",
-    "coordinates": {
-      "latitude": 53.541405,
-      "longitude": -113.4951316
+    "location": {
+        "city": "Edmonton",
+        "coordinates": {
+            "latitude": 53.541405,
+            "longitude": -113.4951316
+        },
+        "country": "Canada",
+        "timezone": "America/Edmonton",
+        "utcOffset": -6
     },
-    "utcOffset": -6,
-    "timezone": "America/Edmonton"
-  }
+    "moderators": [
+        {
+            "name": "Aaron"
+        }
+    ],
+    "title": "GDCR17 in Edmonton",
+    "url": "https://www.eventbrite.ca/e/global-day-of-coderetreat-edmonton-tickets-37315716312"
 }

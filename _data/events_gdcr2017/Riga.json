@@ -1,18 +1,24 @@
 {
-  "title": "GDCR17 in Riga",
-  "url": "https://www.meetup.com/Latvian-Developers-Network/events/238511203/",
-  "moderators": [
-    "@acankr",
-    "@arkadi_t"
-  ],
-  "location": {
-    "city": "Riga",
-    "country": "Latvia",
-    "coordinates": {
-    	"latitude": 56.97019,
-    	"longitude": 24.157375
+    "location": {
+        "city": "Riga",
+        "coordinates": {
+            "latitude": 56.97019,
+            "longitude": 24.157375
+        },
+        "country": "Latvia",
+        "timezone": "Europe/Riga",
+        "utcOffset": 3
     },
-    "utcOffset": 3,
-    "timezone": "Europe/Riga"
-  }
+    "moderators": [
+        {
+            "name": "Antons Kranga",
+            "url": "https://twitter.com/acankr"
+        },
+        {
+            "name": "Arkadi Shishlov",
+            "url": "https://twitter.com/arkadi_t"
+        }
+    ],
+    "title": "GDCR17 in Riga",
+    "url": "https://www.meetup.com/Latvian-Developers-Network/events/238511203/"
 }

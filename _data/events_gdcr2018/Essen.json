@@ -1,18 +1,22 @@
 {
-    "title": "Global Day of Coderetreat 2018 Essen",
-    "url": "https://www.meetup.com/de-DE/JUG-Essen/events/254203335/",
-    "moderators": [
-      "Dr. Hannes Olivier",
-      "Sascha Wiedenfeld"
-    ],
     "location": {
-      "city": "Essen",
-      "country": "Germany",
-      "coordinates": {
-        "latitude": 51.4556366,
-        "longitude": 6.9976476
-      },
-      "utcOffset": 1,
-      "timezone": "Europe/Berlin"
-    }
-  }
+        "city": "Essen",
+        "coordinates": {
+            "latitude": 51.4556366,
+            "longitude": 6.9976476
+        },
+        "country": "Germany",
+        "timezone": "Europe/Berlin",
+        "utcOffset": 1
+    },
+    "moderators": [
+        {
+            "name": "Dr. Hannes Olivier"
+        },
+        {
+            "name": "Sascha Wiedenfeld"
+        }
+    ],
+    "title": "Global Day of Coderetreat 2018 Essen",
+    "url": "https://www.meetup.com/de-DE/JUG-Essen/events/254203335/"
+}
