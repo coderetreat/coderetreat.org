@@ -1,17 +1,20 @@
 {
-  "title": "Global Day of Coderetreat 2018 in AKihabara",
-  "url": "https://minna-de-ochakai.connpass.com/event/105897/",
-  "moderators": [
-    "@sasakendayo"
-  ],
-  "location": {
-    "city": "Akihabara",
-    "country": "Japan",
-    "coordinates": {
-      "latitude": 35.698353,
-      "longitude": 139.773114
+    "location": {
+        "city": "Akihabara",
+        "coordinates": {
+            "latitude": 35.698353,
+            "longitude": 139.773114
+        },
+        "country": "Japan",
+        "timezone": "Asia/Tokyo",
+        "utcOffset": 9
     },
-    "utcOffset": 9,
-    "timezone": "Asia/Tokyo"
-  }
+    "moderators": [
+        {
+            "name": "sasakendayo",
+            "url": "https://twitter.com/sasakendayo"
+        }
+    ],
+    "title": "Global Day of Coderetreat 2018 in AKihabara",
+    "url": "https://minna-de-ochakai.connpass.com/event/105897/"
 }

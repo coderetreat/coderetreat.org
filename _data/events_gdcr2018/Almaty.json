@@ -1,20 +1,26 @@
 {
-  "title": "GDCR18 in Almaty",
-  "url": "https://events.epam.com/events/global-day-of-coderetreat-1",
-  "moderators": [
-    "@ssshogunnn"
-  ],
-  "sponsors": [
-    "@EPAMKazakhstan"
-  ],
-  "location": {
-    "city": "Almaty",
-    "country": "Kazakhstan",
-    "coordinates": {
-      "latitude": 43.2171382,
-      "longitude": 76.8040833
+    "location": {
+        "city": "Almaty",
+        "coordinates": {
+            "latitude": 43.2171382,
+            "longitude": 76.8040833
+        },
+        "country": "Kazakhstan",
+        "timezone": "Asia/Almaty",
+        "utcOffset": 6
     },
-    "utcOffset": 6,
-    "timezone": "Asia/Almaty"
-  }
+    "moderators": [
+        {
+            "name": "Anuar Nurmakanov",
+            "url": "https://twitter.com/ssshogunnn"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "EPAM Kazakhstan",
+            "url": "https://twitter.com/EPAMKazakhstan"
+        }
+    ],
+    "title": "GDCR18 in Almaty",
+    "url": "https://events.epam.com/events/global-day-of-coderetreat-1"
 }

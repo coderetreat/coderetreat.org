@@ -1,21 +1,36 @@
 {
-  "title": "GDCR18 @ JUG, Istanbul",
-  "url": "https://www.meetup.com/tr-TR/Istanbul-Java-User-Group/events/255419519/",
-  "moderators": [
-    "@jug_istanbul",
-    "@tdiler",
-    "@altugaltintas",
-    "@ajitatif",
-    "@taylankurt_0101"
-  ],
-  "location": {
-    "city": "Istanbul",
-    "country": "Turkey",
-    "coordinates": {
-      "latitude": 41.107864,
-      "longitude": 29.014023
+    "location": {
+        "city": "Istanbul",
+        "coordinates": {
+            "latitude": 41.107864,
+            "longitude": 29.014023
+        },
+        "country": "Turkey",
+        "timezone": "Europe/Istanbul",
+        "utcOffset": 3
     },
-    "utcOffset": 3,
-    "timezone": "Europe/Istanbul"
-  }
+    "moderators": [
+        {
+            "name": "JUG ISTANBUL",
+            "url": "https://twitter.com/jug_istanbul"
+        },
+        {
+            "name": "Taner Diler",
+            "url": "https://twitter.com/tdiler"
+        },
+        {
+            "name": "Altu\u011f B. Alt\u0131nta\u015f",
+            "url": "https://twitter.com/altugaltintas"
+        },
+        {
+            "name": "G\u00f6kalp G\u00fcrb\u00fczer",
+            "url": "https://twitter.com/ajitatif"
+        },
+        {
+            "name": "@taylankurt_0101",
+            "url": "https://twitter.com/taylankurt_0101"
+        }
+    ],
+    "title": "GDCR18 @ JUG, Istanbul",
+    "url": "https://www.meetup.com/tr-TR/Istanbul-Java-User-Group/events/255419519/"
 }

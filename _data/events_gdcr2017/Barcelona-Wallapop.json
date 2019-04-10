@@ -1,17 +1,32 @@
 {
-  "title": "GDCR Barcelona Wallapop",
-  "url": "https://www.meetup.com/es-ES/Wallapop-Engineering/",
-  "moderators": [
-    "@gerardllorente","@jozaez","@eloipoch","@Lascorbe"
-  ],
-  "location": {
-    "city": "Barceloona",
-    "country": "Spain",
-    "coordinates": {
-      "latitude": 41.405919,
-      "longitude": 2.186489
+    "location": {
+        "city": "Barceloona",
+        "coordinates": {
+            "latitude": 41.405919,
+            "longitude": 2.186489
+        },
+        "country": "Spain",
+        "timezone": "Europe/Madrid",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Madrid"
-  }
+    "moderators": [
+        {
+            "name": "Gerard Llorente",
+            "url": "https://twitter.com/gerardllorente"
+        },
+        {
+            "name": "@jozaez",
+            "url": "https://twitter.com/jozaez"
+        },
+        {
+            "name": "Eloi Poch",
+            "url": "https://twitter.com/eloipoch"
+        },
+        {
+            "name": "Luis Ascorbe",
+            "url": "https://twitter.com/Lascorbe"
+        }
+    ],
+    "title": "GDCR Barcelona Wallapop",
+    "url": "https://www.meetup.com/es-ES/Wallapop-Engineering/"
 }

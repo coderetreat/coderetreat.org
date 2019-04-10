@@ -1,17 +1,20 @@
 {
-  "title": "GDCR18 in Vechta",
-  "url": "https://www.xing.com/events/global-day-of-code-retreat-1991164",
-  "moderators": [
-    "@StefanMacke"
-  ],
-  "location": {
-    "city": "Vechta",
-    "country": "Germany",
-    "coordinates": {
-      "latitude": 52.72132,
-      "longitude": 8.2767212
+    "location": {
+        "city": "Vechta",
+        "coordinates": {
+            "latitude": 52.72132,
+            "longitude": 8.2767212
+        },
+        "country": "Germany",
+        "timezone": "Europe/Berlin",
+        "utcOffset": 1
     },
-    "utcOffset": 1,
-    "timezone": "Europe/Berlin"
-  }
+    "moderators": [
+        {
+            "name": "Stefan Macke",
+            "url": "https://twitter.com/StefanMacke"
+        }
+    ],
+    "title": "GDCR18 in Vechta",
+    "url": "https://www.xing.com/events/global-day-of-code-retreat-1991164"
 }

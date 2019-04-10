@@ -1,17 +1,20 @@
 {
-  "title": "GDCR17 Pittsburgh",
-  "url": "https://www.meetup.com/Pittsburgh-Code-Supply/events/242232762/",
-  "moderators": [
-    "@jthurne"
-  ],
-  "location": {
-    "city": "Pittsburgh",
-    "country": "United States of America",
-    "coordinates": {
-      "latitude": 40.4598516,
-      "longitude": -79.9306494
+    "location": {
+        "city": "Pittsburgh",
+        "coordinates": {
+            "latitude": 40.4598516,
+            "longitude": -79.9306494
+        },
+        "country": "United States of America",
+        "timezone": "America/New_York",
+        "utcOffset": -4
     },
-    "utcOffset": -4,
-    "timezone": "America/New_York"
-  }
+    "moderators": [
+        {
+            "name": "Jim Hurne",
+            "url": "https://twitter.com/jthurne"
+        }
+    ],
+    "title": "GDCR17 Pittsburgh",
+    "url": "https://www.meetup.com/Pittsburgh-Code-Supply/events/242232762/"
 }

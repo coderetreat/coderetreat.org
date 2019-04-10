@@ -1,18 +1,24 @@
 {
-  "title": "GDCR Toulouse 2017 at Ekito",
-  "url": "https://www.meetup.com/Software-Craftsmanship-Toulouse/events/244992314/",
-  "moderators": [
-    "@superbob56",
-    "@Gaspard_PO"
-  ],
-  "location": {
-    "city": "Toulouse",
-    "country": "France",
-    "coordinates": {
-      "latitude": 43.605988,
-      "longitude": 1.452122
+    "location": {
+        "city": "Toulouse",
+        "coordinates": {
+            "latitude": 43.605988,
+            "longitude": 1.452122
+        },
+        "country": "France",
+        "timezone": "Europe/Paris",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Paris"
-  }
+    "moderators": [
+        {
+            "name": "Florian Morgan",
+            "url": "https://twitter.com/superbob56"
+        },
+        {
+            "name": "Gaspard",
+            "url": "https://twitter.com/Gaspard_PO"
+        }
+    ],
+    "title": "GDCR Toulouse 2017 at Ekito",
+    "url": "https://www.meetup.com/Software-Craftsmanship-Toulouse/events/244992314/"
 }

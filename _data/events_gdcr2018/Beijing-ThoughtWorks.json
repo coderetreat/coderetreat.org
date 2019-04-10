@@ -1,21 +1,32 @@
 {
-  "title": "GDCR 2018 in ThoughtWorks Beijing",
-  "url": "https://www.eventbrite.com.au/e/gdcr-2018-in-thoughtworks-beijing-tickets-51359756414",
-  "moderators": [
-    "@wubin28",
-    "Jin XU",
-    "Victory Yan WANG",
-    "Minmin QIU",
-    "Ying HE"
-  ],
-  "location": {
-    "city": "Beijing",
-    "country": "China",
-    "coordinates": {
-      "latitude": 39.9375183,
-      "longitude": 116.42804
+    "location": {
+        "city": "Beijing",
+        "coordinates": {
+            "latitude": 39.9375183,
+            "longitude": 116.42804
+        },
+        "country": "China",
+        "timezone": "Asia/Shanghai",
+        "utcOffset": 8
     },
-    "utcOffset": 8,
-    "timezone": "Asia/Shanghai"
-  }
+    "moderators": [
+        {
+            "name": "Ben WU",
+            "url": "https://twitter.com/wubin28"
+        },
+        {
+            "name": "Jin XU"
+        },
+        {
+            "name": "Victory Yan WANG"
+        },
+        {
+            "name": "Minmin QIU"
+        },
+        {
+            "name": "Ying HE"
+        }
+    ],
+    "title": "GDCR 2018 in ThoughtWorks Beijing",
+    "url": "https://www.eventbrite.com.au/e/gdcr-2018-in-thoughtworks-beijing-tickets-51359756414"
 }

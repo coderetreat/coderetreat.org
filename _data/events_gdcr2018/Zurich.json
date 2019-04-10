@@ -1,17 +1,20 @@
 {
-  "title": "GDCR18 in Zurich",
-  "url": "https://zurich.codersonly.org/events/code-retreat",
-  "moderators": [
-    "@infinitary"
-  ],
-  "location": {
-    "city": "Zurich",
-    "country": "Switzerland",
-    "coordinates": {
-      "latitude": 47.36466,
-      "longitude": 8.53092
+    "location": {
+        "city": "Zurich",
+        "coordinates": {
+            "latitude": 47.36466,
+            "longitude": 8.53092
+        },
+        "country": "Switzerland",
+        "timezone": "Europe/Zurich",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Zurich"
-  }
+    "moderators": [
+        {
+            "name": "i'm too meta for my shirt",
+            "url": "https://twitter.com/infinitary"
+        }
+    ],
+    "title": "GDCR18 in Zurich",
+    "url": "https://zurich.codersonly.org/events/code-retreat"
 }

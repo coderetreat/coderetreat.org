@@ -1,17 +1,20 @@
 {
-  "title": "Global Day of Coderetreat 2018 in Philadelphia",
-  "url": "https://www.meetup.com/Software-as-Craft-Philadelphia/events/256078155/",
-  "moderators": [
-    "@samjonester"
-  ],
-  "location": {
-    "city": "Philadelphia",
-    "country": "United States of America",
-    "coordinates": {
-      "latitude": 39.952372,
-      "longitude": -75.145024
+    "location": {
+        "city": "Philadelphia",
+        "coordinates": {
+            "latitude": 39.952372,
+            "longitude": -75.145024
+        },
+        "country": "United States of America",
+        "timezone": "America/New_York",
+        "utcOffset": -5
     },
-    "utcOffset": -5,
-    "timezone": "America/New_York"
-  }
+    "moderators": [
+        {
+            "name": "Sam Jones",
+            "url": "https://twitter.com/samjonester"
+        }
+    ],
+    "title": "Global Day of Coderetreat 2018 in Philadelphia",
+    "url": "https://www.meetup.com/Software-as-Craft-Philadelphia/events/256078155/"
 }

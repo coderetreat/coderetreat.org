@@ -1,26 +1,50 @@
 {
-  "title": "Global Day of Code Retreat 2017 Oaxaca, México",
-  "url": "https://www.eventbrite.com/e/global-day-of-coderetreat-oaxaca-2017-tickets-39236483378",
-  "moderators": [
-    "@oaxacarb",
-    "@fervisa",
-    "@garcialopezco",
-    "@sudo_silva"
-  ],
-  "sponsors": [
-    "@logicalbricks",
-    "@CoworkInnMX",
-    "@UxiErp",
-    "@via4grafico"
-  ],
-  "location": {
-    "city": "Oaxaca",
-    "country": "México",
-    "coordinates": {
-      "latitude": 17.0714374,
-      "longitude": -96.714961
+    "location": {
+        "city": "Oaxaca",
+        "coordinates": {
+            "latitude": 17.0714374,
+            "longitude": -96.714961
+        },
+        "country": "M\u00e9xico",
+        "timezone": "America/Mexico_City",
+        "utcOffset": -5
     },
-    "utcOffset": -5,
-    "timezone": "America/Mexico_City"
-  }
+    "moderators": [
+        {
+            "name": "oaxaca.rb",
+            "url": "https://twitter.com/oaxacarb"
+        },
+        {
+            "name": "Fernando Villalobos",
+            "url": "https://twitter.com/fervisa"
+        },
+        {
+            "name": "Chars",
+            "url": "https://twitter.com/garcialopezco"
+        },
+        {
+            "name": "Luis Silva",
+            "url": "https://twitter.com/sudo_silva"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "LogicalBricks",
+            "url": "https://twitter.com/logicalbricks"
+        },
+        {
+            "name": "Cowork Inn",
+            "url": "https://twitter.com/CoworkInnMX"
+        },
+        {
+            "name": "Soporte Uxi erp",
+            "url": "https://twitter.com/UxiErp"
+        },
+        {
+            "name": "via4",
+            "url": "https://twitter.com/via4grafico"
+        }
+    ],
+    "title": "Global Day of Code Retreat 2017 Oaxaca, M\u00e9xico",
+    "url": "https://www.eventbrite.com/e/global-day-of-coderetreat-oaxaca-2017-tickets-39236483378"
 }

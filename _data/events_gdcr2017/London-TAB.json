@@ -1,17 +1,20 @@
 {
-  "title": "Global Day of Coderetreat @ TAB",
-  "url": "https://www.eventbrite.co.uk/e/global-day-of-code-retreat-tab-london-tickets-39248331817",
-  "moderators": [
-    "@WillRochaThomas"
-  ],
-  "location": {
-    "city": "London",
-    "country": "United Kingdom",
-    "coordinates": {
-      "latitude": 51.5318879,
-      "longitude": -0.1207121
+    "location": {
+        "city": "London",
+        "coordinates": {
+            "latitude": 51.5318879,
+            "longitude": -0.1207121
+        },
+        "country": "United Kingdom",
+        "timezone": "Europe/London",
+        "utcOffset": 1
     },
-    "utcOffset": 1,
-    "timezone": "Europe/London"
-  }
+    "moderators": [
+        {
+            "name": "Will Rocha-Thomas",
+            "url": "https://twitter.com/WillRochaThomas"
+        }
+    ],
+    "title": "Global Day of Coderetreat @ TAB",
+    "url": "https://www.eventbrite.co.uk/e/global-day-of-code-retreat-tab-london-tickets-39248331817"
 }

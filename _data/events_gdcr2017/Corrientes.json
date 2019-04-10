@@ -1,22 +1,34 @@
 {
-  "title": "Corrientes Global Day of Code Retreat 2017",
-  "url": "https://www.eventbrite.com.ar/e/corrientes-global-day-of-code-retreat-2017-tickets-39924023830",
-  "moderators": [
-    "@matiasmasca",
-    "@fernandezja",
-    "@Sk8Porti"
-  ],
-  "sponsors": [
-    "@desarrollosnea"
-  ],
-  "location": {
-    "city": "Corrientes",
-    "country": "Argentina",
-    "coordinates": {
-      "latitude": -27.4615947,
-      "longitude": -58.8312107
+    "location": {
+        "city": "Corrientes",
+        "coordinates": {
+            "latitude": -27.4615947,
+            "longitude": -58.8312107
+        },
+        "country": "Argentina",
+        "timezone": "America/Buenos_Aires",
+        "utcOffset": -3
     },
-    "utcOffset": -3,
-    "timezone": "America/Buenos_Aires"
-  }
+    "moderators": [
+        {
+            "name": "Mat\u00edas Mascazzini",
+            "url": "https://twitter.com/matiasmasca"
+        },
+        {
+            "name": "Jose A. Fernandez",
+            "url": "https://twitter.com/fernandezja"
+        },
+        {
+            "name": "Augusto Portillo",
+            "url": "https://twitter.com/Sk8Porti"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "Desarrollos NEA",
+            "url": "https://twitter.com/desarrollosnea"
+        }
+    ],
+    "title": "Corrientes Global Day of Code Retreat 2017",
+    "url": "https://www.eventbrite.com.ar/e/corrientes-global-day-of-code-retreat-2017-tickets-39924023830"
 }

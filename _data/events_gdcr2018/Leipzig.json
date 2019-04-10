@@ -1,17 +1,20 @@
 {
-  "title": "GDCR 2018 in Leipzig @ Softwerkskammer Leipzig",
-  "url": "https://www.meetup.com/de-DE/Softwerkskammer-Leipzig/events/255699401",
-  "moderators": [
-    "@agebhar1"
-  ],
-  "location": {
-    "city": "Leipzig",
-    "country": "Germany",
-    "coordinates": {
-      "latitude": 51.3409,
-      "longitude": 12.3747
+    "location": {
+        "city": "Leipzig",
+        "coordinates": {
+            "latitude": 51.3409,
+            "longitude": 12.3747
+        },
+        "country": "Germany",
+        "timezone": "Europe/Berlin",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Berlin"
-  }
+    "moderators": [
+        {
+            "name": "Andreas Gebhardt",
+            "url": "https://twitter.com/agebhar1"
+        }
+    ],
+    "title": "GDCR 2018 in Leipzig @ Softwerkskammer Leipzig",
+    "url": "https://www.meetup.com/de-DE/Softwerkskammer-Leipzig/events/255699401"
 }

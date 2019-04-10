@@ -46,33 +46,25 @@ description: List of events around the world!
             {% assign loopCount = event.moderators | size | minus: 1 %}
             {% for i in (0..loopCount) %}
             {% assign moderator = event.moderators[i] %}
-            {% assign first_char = moderator | slice: 0 %}
-            {% if first_char == '@' %}
-            {% assign sizeWithoutAt = moderator | size | minus: 1 %}
-            {% assign handle = moderator | slice: 1, sizeWithoutAt %}
-            <a href="https://twitter.com/{{ handle }}">{{ moderator }}</a>
+            {% if moderator.url %}
+            <a href="{{ moderator.url }}">{{ moderator.name }}</a>{% if i != loopCount %}, {% endif %}
             {% else %}
-            {{ moderator }}
+            {{ moderator.name }}{% if i != loopCount %}, {% endif %}
             {% endif %}
-            {% if i != loopCount %}, {% endif %}
             {% endfor %}
         </td>
 
 
         <td>
-            {%- assign loopCount = event.sponsors | size | minus: 1 -%}
-            {%- for i in (0..loopCount) -%}
-            {%- assign sponsor = event.sponsors[i] -%}
-            {%- assign first_char = sponsor | slice: 0 -%}
-            {%- if first_char == '@' -%}
-            {%- assign sizeWithoutAt = sponsor | size | minus: 1 -%}
-            {%- assign handle = sponsor | slice: 1, sizeWithoutAt -%}
-            <a href="https://twitter.com/{{ handle }}">{{ sponsor }}</a>
-            {%- else -%}
-            {{- sponsor -}}
-            {%- endif -%}
-            {%- if i != loopCount -%}, {%- endif -%}
-            {%- endfor -%}
+            {% assign loopCount = event.sponsors | size | minus: 1 %}
+            {% for i in (0..loopCount) %}
+            {% assign sponsor = event.sponsors[i] %}
+            {% if sponsor.url %}
+            <a href="{{ sponsor.url }}">{{ sponsor.name }}</a>{% if i != loopCount %}, {% endif %}
+            {% else %}
+            {{ sponsor.name }}{% if i != loopCount %}, {% endif %}
+            {% endif %}
+            {% endfor %}
         </td>
 
 
@@ -88,33 +80,25 @@ description: List of events around the world!
             {% assign loopCount = event.moderators | size | minus: 1 %}
             {% for i in (0..loopCount) %}
             {% assign moderator = event.moderators[i] %}
-            {% assign first_char = moderator | slice: 0 %}
-            {% if first_char == '@' %}
-            {% assign sizeWithoutAt = moderator | size | minus: 1 %}
-            {% assign handle = moderator | slice: 1, sizeWithoutAt %}
-            <a href="https://twitter.com/{{ handle }}">{{ moderator }}</a>
+            {% if moderator.url %}
+            <a href="{{ moderator.url }}">{{ moderator.name }}</a>{% if i != loopCount %}, {% endif %}
             {% else %}
-            {{ moderator }}
+            {{ moderator.name }}{% if i != loopCount %}, {% endif %}
             {% endif %}
-            {% if i != loopCount %}, {% endif %}
             {% endfor %}
         </td>
 
 
         <td>
-            {%- assign loopCount = event.sponsors | size | minus: 1 -%}
-            {%- for i in (0..loopCount) -%}
-            {%- assign sponsor = event.sponsors[i] -%}
-            {%- assign first_char = sponsor | slice: 0 -%}
-            {%- if first_char == '@' -%}
-            {%- assign sizeWithoutAt = sponsor | size | minus: 1 -%}
-            {%- assign handle = sponsor | slice: 1, sizeWithoutAt -%}
-            <a href="https://twitter.com/{{ handle }}">{{ sponsor }}</a>
-            {%- else -%}
-            {{- sponsor -}}
-            {%- endif -%}
-            {%- if i != loopCount -%}, {%- endif -%}
-            {%- endfor -%}
+            {% assign loopCount = event.sponsors | size | minus: 1 %}
+            {% for i in (0..loopCount) %}
+            {% assign sponsor = event.sponsors[i] %}
+            {% if sponsor.url %}
+            <a href="{{ sponsor.url }}">{{ sponsor.name }}</a>{% if i != loopCount %}, {% endif %}
+            {% else %}
+            {{ sponsor.name }}{% if i != loopCount %}, {% endif %}
+            {% endif %}
+            {% endfor %}
         </td>
 
 

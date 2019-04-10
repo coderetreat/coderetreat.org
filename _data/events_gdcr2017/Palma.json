@@ -1,20 +1,32 @@
 {
-  "title": "Global Day of Coderetreat @ Mallorca",
-  "url": "https://www.meetup.com/es-ES/Mallorca-Software-Craftsmanship/events/244065071/",
-  "moderators": [
-    "@scmallorca",
-    "@jllado",
-    "@danipise",
-    "@jrodriguezgalan"
-  ],
-  "location": {
-    "city": "Palma de Mallorca",
-    "country": "Spain",
-    "coordinates": {
-      "latitude": 39.6366589,
-      "longitude": 2.6285283
+    "location": {
+        "city": "Palma de Mallorca",
+        "coordinates": {
+            "latitude": 39.6366589,
+            "longitude": 2.6285283
+        },
+        "country": "Spain",
+        "timezone": "Europe/Madrid",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Madrid"
-  }
+    "moderators": [
+        {
+            "name": "Mallorca SW Craft",
+            "url": "https://twitter.com/scmallorca"
+        },
+        {
+            "name": "Juan Llad\u00f3",
+            "url": "https://twitter.com/jllado"
+        },
+        {
+            "name": "Daniel Pi\u00f1eiro",
+            "url": "https://twitter.com/danipise"
+        },
+        {
+            "name": "Jorge R. G.",
+            "url": "https://twitter.com/jrodriguezgalan"
+        }
+    ],
+    "title": "Global Day of Coderetreat @ Mallorca",
+    "url": "https://www.meetup.com/es-ES/Mallorca-Software-Craftsmanship/events/244065071/"
 }

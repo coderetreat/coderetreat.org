@@ -1,19 +1,28 @@
 {
-  "title": "GDCR17 in Cluj",
-  "url": "https://www.facebook.com/gdcr.cluj/",
-  "moderators": [
-    "@horea_hopartean",
-    "@florincoros",
-    "@sergiudamian"
-  ],
-  "location": {
-    "city": "Cluj-Napoca",
-    "country": "Romania",
-    "coordinates": {
-      "latitude": 46.7729781,
-      "longitude": 23.589513200000056
+    "location": {
+        "city": "Cluj-Napoca",
+        "coordinates": {
+            "latitude": 46.7729781,
+            "longitude": 23.589513200000056
+        },
+        "country": "Romania",
+        "timezone": "Europe/Bucharest",
+        "utcOffset": 3
     },
-    "utcOffset": 3,
-    "timezone": "Europe/Bucharest"
-  }
+    "moderators": [
+        {
+            "name": "Horea Hopartean",
+            "url": "https://twitter.com/horea_hopartean"
+        },
+        {
+            "name": "Florin Coros",
+            "url": "https://twitter.com/florincoros"
+        },
+        {
+            "name": "Sergiu Damian",
+            "url": "https://twitter.com/sergiudamian"
+        }
+    ],
+    "title": "GDCR17 in Cluj",
+    "url": "https://www.facebook.com/gdcr.cluj/"
 }

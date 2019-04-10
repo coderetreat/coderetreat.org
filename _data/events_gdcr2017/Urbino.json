@@ -1,18 +1,24 @@
 {
-  "title": "GDCR17 @ Italian Agile Day",
-  "url": "https://tickets.agilemovement.it/event/iad2017cr/",
-  "moderators": [
-    "@racingDeveloper",
-    "@xpmatteo"
-  ],
-  "location": {
-    "city": "Urbino",
-    "country": "Italy",
-    "coordinates": {
-      "latitude": 43.7292325,
-      "longitude": 12.6129106
+    "location": {
+        "city": "Urbino",
+        "coordinates": {
+            "latitude": 43.7292325,
+            "longitude": 12.6129106
+        },
+        "country": "Italy",
+        "timezone": "Europe/Rome",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Rome"
-  }
+    "moderators": [
+        {
+            "name": "Gabriele Tondi",
+            "url": "https://twitter.com/racingDeveloper"
+        },
+        {
+            "name": "Matteo Vaccari",
+            "url": "https://twitter.com/xpmatteo"
+        }
+    ],
+    "title": "GDCR17 @ Italian Agile Day",
+    "url": "https://tickets.agilemovement.it/event/iad2017cr/"
 }

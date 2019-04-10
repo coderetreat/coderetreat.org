@@ -1,15 +1,24 @@
 {
-  "title": "GDCR in Toulouse",
-  "url": "https://www.meetup.com/Software-Crafters-Toulouse/events/254955655/",
-  "moderators": ["@ludopradel", "@jeanpalaz "],
-  "location": {
-    "city": "Toulouse",
-    "country": "France",
-    "coordinates": {
-      "latitude": 43.60563,
-      "longitude": 1.44573
+    "location": {
+        "city": "Toulouse",
+        "coordinates": {
+            "latitude": 43.60563,
+            "longitude": 1.44573
+        },
+        "country": "France",
+        "timezone": "Europe/Paris",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Paris"
-  }
+    "moderators": [
+        {
+            "name": "Ludo Pradel",
+            "url": "https://twitter.com/ludopradel"
+        },
+        {
+            "name": "Jean PALAZUELOS",
+            "url": "https://twitter.com/jeanpalaz "
+        }
+    ],
+    "title": "GDCR in Toulouse",
+    "url": "https://www.meetup.com/Software-Crafters-Toulouse/events/254955655/"
 }

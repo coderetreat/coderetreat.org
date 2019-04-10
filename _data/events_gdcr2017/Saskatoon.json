@@ -1,18 +1,19 @@
 {
-  "title": "GDCR17 @SED in Saskatoon",
-  "url": "https://ti.to/global-day-of-code-retreat-sed-systems/gdcr-2017",
-  "moderators": [
-    "Devin Greene"
-  ],
-  "location": {
-    "city": "Saskatoon",
-    "country": "Canada",
-    "coordinates": {
-      "latitude": 52.1420383,
-      "longitude": -106.6215119
+    "location": {
+        "city": "Saskatoon",
+        "coordinates": {
+            "latitude": 52.1420383,
+            "longitude": -106.6215119
+        },
+        "country": "Canada",
+        "timezone": "America/Regina",
+        "utcOffset": -6
     },
-    "utcOffset": -6,
-    "timezone": "America/Regina"
-  }
+    "moderators": [
+        {
+            "name": "Devin Greene"
+        }
+    ],
+    "title": "GDCR17 @SED in Saskatoon",
+    "url": "https://ti.to/global-day-of-code-retreat-sed-systems/gdcr-2017"
 }
-

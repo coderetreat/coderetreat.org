@@ -1,21 +1,30 @@
 {
-  "title": "GDCR18 at Epitech in Lille",
-  "url": "https://www.meetup.com/fr-FR/Software-Craftsmanship-Lille/events/255208147/",
-  "moderators": [
-    "@6sko59",
-    "@jak78"
-  ],
-  "sponsors": [
-    "@octochti"
-  ],
-  "location": {
-    "city": "Lille",
-    "country": "France",
-    "coordinates": {
-      "latitude": 50.6333,
-      "longitude": 3.0667
+    "location": {
+        "city": "Lille",
+        "coordinates": {
+            "latitude": 50.6333,
+            "longitude": 3.0667
+        },
+        "country": "France",
+        "timezone": "Europe/Paris",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Paris"
-  }
+    "moderators": [
+        {
+            "name": "BACQUET Francis",
+            "url": "https://twitter.com/6sko59"
+        },
+        {
+            "name": "Julien Jakubowski",
+            "url": "https://twitter.com/jak78"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "OCTO Ch'ti",
+            "url": "https://twitter.com/octochti"
+        }
+    ],
+    "title": "GDCR18 at Epitech in Lille",
+    "url": "https://www.meetup.com/fr-FR/Software-Craftsmanship-Lille/events/255208147/"
 }

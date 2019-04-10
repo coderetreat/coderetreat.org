@@ -1,16 +1,26 @@
 {
-  "title": "GDCR18 Ljubljana",
-  "url": "https://www.eventbrite.com/e/global-day-of-code-retreat-2018-ljubljana-by-bitstamp-tickets-52210974430",
-  "moderators": ["@edofic"],
-  "sponsors": ["@Bitstamp"],
-  "location": {
-    "city": "Ljubljana",
-    "country": "Slovenia",
-    "coordinates": {
-      "latitude": 46.052754,
-      "longitude": 14.5041763
+    "location": {
+        "city": "Ljubljana",
+        "coordinates": {
+            "latitude": 46.052754,
+            "longitude": 14.5041763
+        },
+        "country": "Slovenia",
+        "timezone": "Europe/Ljubljana",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Ljubljana"
-  }
+    "moderators": [
+        {
+            "name": "Andraz Bajt",
+            "url": "https://twitter.com/edofic"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "Bitstamp",
+            "url": "https://twitter.com/Bitstamp"
+        }
+    ],
+    "title": "GDCR18 Ljubljana",
+    "url": "https://www.eventbrite.com/e/global-day-of-code-retreat-2018-ljubljana-by-bitstamp-tickets-52210974430"
 }

@@ -1,17 +1,20 @@
 {
-  "title": "GDCR18 @fiducia_gad in Münster",
-  "url": "https://www.softwerkskammer.org/activities/ms-gdcr-18/",
-  "moderators": [
-    "@ndrssmn"
-  ],
-  "location": {
-    "city": "Münster",
-    "country": "Germany",
-    "coordinates": {
-      "latitude": 51.933996,
-      "longitude": 7.587291
+    "location": {
+        "city": "M\u00fcnster",
+        "coordinates": {
+            "latitude": 51.933996,
+            "longitude": 7.587291
+        },
+        "country": "Germany",
+        "timezone": "Europe/Berlin",
+        "utcOffset": 1
     },
-    "utcOffset": 1,
-    "timezone": "Europe/Berlin"
-  }
+    "moderators": [
+        {
+            "name": "Andreas Simon",
+            "url": "https://twitter.com/ndrssmn"
+        }
+    ],
+    "title": "GDCR18 @fiducia_gad in M\u00fcnster",
+    "url": "https://www.softwerkskammer.org/activities/ms-gdcr-18/"
 }
