@@ -1,21 +1,28 @@
 {
-  "title": "GDCR 2018 in Westlake Village",
-  "url": "https://www.meetup.com/codecraftgroup/events/254073682/",
-  "moderators": [
-    "Jamie Isaacs",
-    "Chandler Giusti"
-  ],
-    "sponsors": [
-    "@cj_engineering"
-  ],
-  "location": {
-    "city": "Westlake Village, CA",
-    "country": "United States of America",
-    "coordinates": {
-      "latitude": 34.1511938,
-      "longitude": -118.7952308
+    "location": {
+        "city": "Westlake Village, CA",
+        "coordinates": {
+            "latitude": 34.1511938,
+            "longitude": -118.7952308
+        },
+        "country": "United States of America",
+        "timezone": "America/Los_Angeles",
+        "utcOffset": -7
     },
-    "utcOffset": -7,
-    "timezone": "America/Los_Angeles"
-  }
+    "moderators": [
+        {
+            "name": "Jamie Isaacs"
+        },
+        {
+            "name": "Chandler Giusti"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "CJ Engineering",
+            "url": "https://twitter.com/cj_engineering"
+        }
+    ],
+    "title": "GDCR 2018 in Westlake Village",
+    "url": "https://www.meetup.com/codecraftgroup/events/254073682/"
 }

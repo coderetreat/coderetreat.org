@@ -1,18 +1,22 @@
 {
-  "title": "GDCR.Brno.2018 ",
-  "url": "https://www.solarwindsmeetup.com/event/gdcr-2018/",
-  "moderators": [
-    "Vladimir Kopso",
-    "Jakub Fojtl"
-  ],
-  "location": {
-    "city": "Brno",
-    "country": "Czech Republic",
-    "coordinates": {
-      "latitude": 49.1810045,
-      "longitude": 16.6036102
+    "location": {
+        "city": "Brno",
+        "coordinates": {
+            "latitude": 49.1810045,
+            "longitude": 16.6036102
+        },
+        "country": "Czech Republic",
+        "timezone": "Europe/Prague",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Prague"
-  }
+    "moderators": [
+        {
+            "name": "Vladimir Kopso"
+        },
+        {
+            "name": "Jakub Fojtl"
+        }
+    ],
+    "title": "GDCR.Brno.2018 ",
+    "url": "https://www.solarwindsmeetup.com/event/gdcr-2018/"
 }

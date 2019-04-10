@@ -1,17 +1,20 @@
 {
-  "title": "GDCR18 in Glasgow",
-  "url": "https://gdcr18-gla.eventbrite.co.uk",
-  "moderators": [
-    "@_kbremner"
-  ],
-  "location": {
-    "city": "Glasgow",
-    "country": "United Kingdom",
-    "coordinates": {
-      "latitude": 55.870075,
-      "longitude": -4.251323
+    "location": {
+        "city": "Glasgow",
+        "coordinates": {
+            "latitude": 55.870075,
+            "longitude": -4.251323
+        },
+        "country": "United Kingdom",
+        "timezone": "Europe/London",
+        "utcOffset": 1
     },
-    "utcOffset": 1,
-    "timezone": "Europe/London"
-  }
+    "moderators": [
+        {
+            "name": "Kyle Bremner",
+            "url": "https://twitter.com/_kbremner"
+        }
+    ],
+    "title": "GDCR18 in Glasgow",
+    "url": "https://gdcr18-gla.eventbrite.co.uk"
 }

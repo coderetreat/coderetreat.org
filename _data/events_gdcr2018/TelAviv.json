@@ -1,17 +1,19 @@
 {
-  "title": "GDCR@TelAviv",
-"url": "https://www.eventbrite.com/e/code-retreat-wwwcoderetreatorg-day-israel-tickets-47661647270",
-  "moderators": [
- 
-    "@Yaki_Koren"
-  ],
-  "location": {
-    "city": "Tel Aviv",
-    "country": "Israel",
-    "coordinates": {
-      "latitude": 32.109333,
-      "longitude": 34.855499
+    "location": {
+        "city": "Tel Aviv",
+        "coordinates": {
+            "latitude": 32.109333,
+            "longitude": 34.855499
+        },
+        "country": "Israel",
+        "utcOffset": 2
     },
-    "utcOffset": 2
-  }
+    "moderators": [
+        {
+            "name": "yaki koren",
+            "url": "https://twitter.com/Yaki_Koren"
+        }
+    ],
+    "title": "GDCR@TelAviv",
+    "url": "https://www.eventbrite.com/e/code-retreat-wwwcoderetreatorg-day-israel-tickets-47661647270"
 }

@@ -1,15 +1,20 @@
 {
-  "title": "NRV Dev 2018 Global Day of Code Retreat",
-  "url": "https://www.eventbrite.com/e/nrv-dev-2018-global-day-of-code-retreat-tickets-51572497729?aff=ebdssbdestsearch",
-  "moderators": ["@kevpo"],
-  "location": {
-      "city": "Radford",
-      "country": "United States of America",
-      "coordinates": {
-      "latitude": 37.1203638,
-      "longitude": -80.5691916
+    "location": {
+        "city": "Radford",
+        "coordinates": {
+            "latitude": 37.1203638,
+            "longitude": -80.5691916
+        },
+        "country": "United States of America",
+        "timezone": "America/New_York",
+        "utcOffset": -4
     },
-    "utcOffset": -4,
-    "timezone": "America/New_York"
-  }
-} 
+    "moderators": [
+        {
+            "name": "\u1d0b\u1d07\u1d20\u026a\u0274 \u1d18\u1d0fs\u1d1b\u1d0f\u0274",
+            "url": "https://twitter.com/kevpo"
+        }
+    ],
+    "title": "NRV Dev 2018 Global Day of Code Retreat",
+    "url": "https://www.eventbrite.com/e/nrv-dev-2018-global-day-of-code-retreat-tickets-51572497729?aff=ebdssbdestsearch"
+}

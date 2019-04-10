@@ -1,18 +1,24 @@
 {
-  "title": "Code Retreat at Codility",
-  "url": "https://www.meetup.com/Codility-and-Friends/events/255736594/",
-  "moderators": [
-    "@erbetowski",
-    "@83TB"
-  ],
-  "location": {
-    "city": "Warsaw",
-    "country": "Poland",
-    "coordinates": {
-      "latitude": 52.2426982,
-      "longitude": 21.0220026
+    "location": {
+        "city": "Warsaw",
+        "coordinates": {
+            "latitude": 52.2426982,
+            "longitude": 21.0220026
+        },
+        "country": "Poland",
+        "timezone": "Europe/Warsaw",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Warsaw"
-  }
+    "moderators": [
+        {
+            "name": "Wojtek Erbetowski",
+            "url": "https://twitter.com/erbetowski"
+        },
+        {
+            "name": "Kuba Kucharski",
+            "url": "https://twitter.com/83TB"
+        }
+    ],
+    "title": "Code Retreat at Codility",
+    "url": "https://www.meetup.com/Codility-and-Friends/events/255736594/"
 }

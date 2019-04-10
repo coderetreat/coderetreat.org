@@ -1,11 +1,21 @@
 {
-  "title": "Global Day of Coderetreat",
-  "url": "https://www.eventbrite.com/e/pdx-women-in-tech-pdxwit-global-day-of-code-retreat-tickets-38483100991?aff=eac2",
-  "moderators": ["Iman Bilal", "Tracie Lee", "Jean Richardson"],
-  "location": {
-    "utcOffset": -8,
-    "timezone": "America/Los_Angeles",
-    "city": "Portland, OR",
-    "country": "United States of America"
-  }
+    "location": {
+        "city": "Portland, OR",
+        "country": "United States of America",
+        "timezone": "America/Los_Angeles",
+        "utcOffset": -8
+    },
+    "moderators": [
+        {
+            "name": "Iman Bilal"
+        },
+        {
+            "name": "Tracie Lee"
+        },
+        {
+            "name": "Jean Richardson"
+        }
+    ],
+    "title": "Global Day of Coderetreat",
+    "url": "https://www.eventbrite.com/e/pdx-women-in-tech-pdxwit-global-day-of-code-retreat-tickets-38483100991?aff=eac2"
 }

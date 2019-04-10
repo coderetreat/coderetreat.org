@@ -1,19 +1,28 @@
 {
-  "title": "GDCR17 Festival at Istanbul",
-  "url": "https://www.meetup.com/Software-Craftsmanship-Turkey/events/242432406/",
-  "moderators": [
-    "@lemiorhan",
-    "@scturkey",
-    "@agileturkey"
-  ],
-  "location": {
-    "city": "Istanbul",
-    "country": "Turkey",
-    "coordinates": {
-      "latitude": 41.0285741,
-      "longitude": 29.1150436
+    "location": {
+        "city": "Istanbul",
+        "coordinates": {
+            "latitude": 41.0285741,
+            "longitude": 29.1150436
+        },
+        "country": "Turkey",
+        "timezone": "Europe/Istanbul",
+        "utcOffset": 3
     },
-    "utcOffset": 3,
-    "timezone": "Europe/Istanbul"
-  }
+    "moderators": [
+        {
+            "name": "Lemi Orhan Ergin",
+            "url": "https://twitter.com/lemiorhan"
+        },
+        {
+            "name": "SCTurkey",
+            "url": "https://twitter.com/scturkey"
+        },
+        {
+            "name": "Agile Turkey",
+            "url": "https://twitter.com/agileturkey"
+        }
+    ],
+    "title": "GDCR17 Festival at Istanbul",
+    "url": "https://www.meetup.com/Software-Craftsmanship-Turkey/events/242432406/"
 }

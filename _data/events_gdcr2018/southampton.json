@@ -1,18 +1,24 @@
 {
-  "title": "GDCR18 Agile South Coast - Whitely, Fareham",
-  "url": "https://www.meetup.com/Agile-South-Coast-Southampton-Chapter/events/255861766/",
-  "moderators": [
-    "@tooky",
-    "@busywait"
-  ],
-  "location": {
-    "city": "Southampton",
-    "country": "United Kingdom",
-    "coordinates": {
-      "latitude": 50.87675,
-      "longitude": -1.243049
+    "location": {
+        "city": "Southampton",
+        "coordinates": {
+            "latitude": 50.87675,
+            "longitude": -1.243049
+        },
+        "country": "United Kingdom",
+        "timezone": "Europe/London",
+        "utcOffset": 1
     },
-    "utcOffset": 1,
-    "timezone": "Europe/London"
-  }
+    "moderators": [
+        {
+            "name": "Steve Tooke",
+            "url": "https://twitter.com/tooky"
+        },
+        {
+            "name": "Steven Mackenzie",
+            "url": "https://twitter.com/busywait"
+        }
+    ],
+    "title": "GDCR18 Agile South Coast - Whitely, Fareham",
+    "url": "https://www.meetup.com/Agile-South-Coast-Southampton-Chapter/events/255861766/"
 }

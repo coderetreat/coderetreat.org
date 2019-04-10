@@ -1,23 +1,38 @@
 {
-  "title": "GDCR 18 Madrid",
-  "url": "https://www.meetup.com/madswcraft/events/255270965/",
-  "moderators": [
-    "@finuka",
-    "@keyvanakbary",
-    "@rubendm23",
-    "@juandvegarguez"
-  ],
-  "sponsors": [
-    "@CabifyDev"
-  ],
-  "location": {
-    "city": "Madrid",
-    "country": "Spain",
-    "coordinates": {
-      "latitude": 40.449009,
-      "longitude": -3.670911
+    "location": {
+        "city": "Madrid",
+        "coordinates": {
+            "latitude": 40.449009,
+            "longitude": -3.670911
+        },
+        "country": "Spain",
+        "timezone": "Europe/Berlin",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Berlin"
-  }
+    "moderators": [
+        {
+            "name": "Josefina P\u00e9rez",
+            "url": "https://twitter.com/finuka"
+        },
+        {
+            "name": "Keyvan Akbary",
+            "url": "https://twitter.com/keyvanakbary"
+        },
+        {
+            "name": "Rub\u00e9n",
+            "url": "https://twitter.com/rubendm23"
+        },
+        {
+            "name": "Juan David Vega",
+            "url": "https://twitter.com/juandvegarguez"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "Cabify Product Team",
+            "url": "https://twitter.com/CabifyDev"
+        }
+    ],
+    "title": "GDCR 18 Madrid",
+    "url": "https://www.meetup.com/madswcraft/events/255270965/"
 }

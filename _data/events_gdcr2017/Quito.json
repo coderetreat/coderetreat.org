@@ -1,17 +1,20 @@
 {
-  "title": "Global Day of Coderetreat 2017 in Quito-Ecuador",
-  "url": "https://www.meetup.com/es-ES/ThoughtWorks-Ecuador/events/243340544/",
-  "moderators": [
-    "@emmeblm"
-  ],
-  "location": {
-    "city": "Quito",
-    "country": "Ecuador",
-    "coordinates": {
-      "latitude": -0.1858189,
-      "longitude": -78.4825211
+    "location": {
+        "city": "Quito",
+        "coordinates": {
+            "latitude": -0.1858189,
+            "longitude": -78.4825211
+        },
+        "country": "Ecuador",
+        "timezone": "America/Guayaquil",
+        "utcOffset": -5
     },
-    "utcOffset": -5,
-    "timezone": "America/Guayaquil"
-  }
+    "moderators": [
+        {
+            "name": "Luisa",
+            "url": "https://twitter.com/emmeblm"
+        }
+    ],
+    "title": "Global Day of Coderetreat 2017 in Quito-Ecuador",
+    "url": "https://www.meetup.com/es-ES/ThoughtWorks-Ecuador/events/243340544/"
 }

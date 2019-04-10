@@ -1,21 +1,30 @@
 {
-  "title": "GDCR18 at Arolla in Paris",
-  "url": "https://www.meetup.com/fr-FR/paris-software-craftsmanship/events/255058916/",
-  "moderators": [
-    "@DorraBartaguiz",
-    "@somabrouki"
-  ],
-  "sponsors": [
-    "@arollaFr"
-  ],
-  "location": {
-    "city": "Paris",
-    "country": "France",
-    "coordinates": {
-      "latitude": 48.8639164,
-      "longitude": 2.3390189
+    "location": {
+        "city": "Paris",
+        "coordinates": {
+            "latitude": 48.8639164,
+            "longitude": 2.3390189
+        },
+        "country": "France",
+        "timezone": "Europe/Paris",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Paris"
-  }
+    "moderators": [
+        {
+            "name": "Dorra Bartaguiz",
+            "url": "https://twitter.com/DorraBartaguiz"
+        },
+        {
+            "name": "Olfa Mabrouki",
+            "url": "https://twitter.com/somabrouki"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "Arolla",
+            "url": "https://twitter.com/arollaFr"
+        }
+    ],
+    "title": "GDCR18 at Arolla in Paris",
+    "url": "https://www.meetup.com/fr-FR/paris-software-craftsmanship/events/255058916/"
 }

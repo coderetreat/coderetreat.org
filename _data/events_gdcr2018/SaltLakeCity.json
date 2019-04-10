@@ -1,18 +1,24 @@
 {
-  "title": "Global Day of Coderetreat 2018 - Salt Lake City",
-  "url": "https://www.eventbrite.com/e/global-day-of-coderetreat-slc-ut-usa-tickets-51425405773",
-  "moderators": [
-    "Neil Sorensen",
-    "Jon Turner",
-    "Dave Adsit"
-  ],
-  "location": {
-    "city": "Salt Lake City",
-    "country": "United States of America",
-    "coordinates": {
-      "latitude": 40.5643055,
-      "longitude": -111.9037559
+    "location": {
+        "city": "Salt Lake City",
+        "coordinates": {
+            "latitude": 40.5643055,
+            "longitude": -111.9037559
+        },
+        "country": "United States of America",
+        "timezone": "America/Boise"
     },
-    "timezone": "America/Boise"
-  }
+    "moderators": [
+        {
+            "name": "Neil Sorensen"
+        },
+        {
+            "name": "Jon Turner"
+        },
+        {
+            "name": "Dave Adsit"
+        }
+    ],
+    "title": "Global Day of Coderetreat 2018 - Salt Lake City",
+    "url": "https://www.eventbrite.com/e/global-day-of-coderetreat-slc-ut-usa-tickets-51425405773"
 }

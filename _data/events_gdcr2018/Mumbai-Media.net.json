@@ -1,21 +1,29 @@
 {
-  "title": "GDCR18 @ Media.net, Mumbai",
-  "url": "https://goo.gl/yUA1sX",
-  "moderators": [
-    "@vedantseta",
-    "@sandeepshetty"
-  ],
-"sponsors": [
-    "Media.net"
-],
-  "location": {
-    "city": "Mumbai",
-    "country": "India",
-    "coordinates": {
-      "latitude": 19.124681,
-      "longitude": 72.8463366
+    "location": {
+        "city": "Mumbai",
+        "coordinates": {
+            "latitude": 19.124681,
+            "longitude": 72.8463366
+        },
+        "country": "India",
+        "timezone": "Asia/Kolkata",
+        "utcOffset": 5.5
     },
-   "utcOffset": 5.5,
-   "timezone": "Asia/Kolkata"
-  }
+    "moderators": [
+        {
+            "name": "Vedant Seta",
+            "url": "https://twitter.com/vedantseta"
+        },
+        {
+            "name": "Sandeep Shetty",
+            "url": "https://twitter.com/sandeepshetty"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "Media.net"
+        }
+    ],
+    "title": "GDCR18 @ Media.net, Mumbai",
+    "url": "https://goo.gl/yUA1sX"
 }

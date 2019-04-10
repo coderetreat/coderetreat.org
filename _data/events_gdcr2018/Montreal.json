@@ -1,17 +1,20 @@
 {
-  "title": "GDCR 2018 Montréal @ Busbud",
-  "url": "https://www.eventbrite.fr/e/billets-global-day-of-code-retreat-busbud-montreal-50503091105",
-  "moderators": [
-    "@nicoespeon"
-  ],
-  "location": {
-    "city": "Montreal",
-    "country": "Canada",
-    "coordinates": {
-      "latitude": 45.52651,
-      "longitude": -73.59632
+    "location": {
+        "city": "Montreal",
+        "coordinates": {
+            "latitude": 45.52651,
+            "longitude": -73.59632
+        },
+        "country": "Canada",
+        "timezone": "America/Montreal",
+        "utcOffset": -4
     },
-    "utcOffset": -4,
-    "timezone": "America/Montreal"
-  }
+    "moderators": [
+        {
+            "name": "Nicolas Carlo",
+            "url": "https://twitter.com/nicoespeon"
+        }
+    ],
+    "title": "GDCR 2018 Montr\u00e9al @ Busbud",
+    "url": "https://www.eventbrite.fr/e/billets-global-day-of-code-retreat-busbud-montreal-50503091105"
 }

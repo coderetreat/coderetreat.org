@@ -1,15 +1,20 @@
 {
-  "title": "GDCR18 Bend @ OSU Cascades",
-  "url": "https://www.eventbrite.com/e/bend-global-day-of-coderetreat-2018-tickets-49817889649",
-  "location": {
-    "utcOffset": -8,
-    "timezone": "America/Los_Angeles",
-    "city": "Bend",
-    "country": "United States of America",
-    "coordinates": {
-      "latitude": 44.0429237,
-      "longitude": -121.33567239
-    }
-  },
-  "moderators": ["@ybakos"]
+    "location": {
+        "city": "Bend",
+        "coordinates": {
+            "latitude": 44.0429237,
+            "longitude": -121.33567239
+        },
+        "country": "United States of America",
+        "timezone": "America/Los_Angeles",
+        "utcOffset": -8
+    },
+    "moderators": [
+        {
+            "name": "Yong Joseph Bakos",
+            "url": "https://twitter.com/ybakos"
+        }
+    ],
+    "title": "GDCR18 Bend @ OSU Cascades",
+    "url": "https://www.eventbrite.com/e/bend-global-day-of-coderetreat-2018-tickets-49817889649"
 }

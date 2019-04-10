@@ -1,17 +1,20 @@
 {
-  "title": "GDCR17 in Turku",
-  "url": "http://www.arado.fi/gdcr",
-  "moderators": [
-    "@rinkkasatiainen"
-  ],
-  "location": {
-    "city": "Turku",
-    "country": "Finland",
-    "coordinates": {
-      "latitude": 60.44992,
-      "longitude": 22.293958
+    "location": {
+        "city": "Turku",
+        "coordinates": {
+            "latitude": 60.44992,
+            "longitude": 22.293958
+        },
+        "country": "Finland",
+        "timezone": "Europe/Helsinki",
+        "utcOffset": 3
     },
-    "utcOffset": 3,
-    "timezone": "Europe/Helsinki"
-  }
+    "moderators": [
+        {
+            "name": "Aki Salmi",
+            "url": "https://twitter.com/rinkkasatiainen"
+        }
+    ],
+    "title": "GDCR17 in Turku",
+    "url": "http://www.arado.fi/gdcr"
 }

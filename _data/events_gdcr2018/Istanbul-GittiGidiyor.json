@@ -1,23 +1,38 @@
 {
-  "title": "GDCR 2018 @ GittiGidiyor",
-  "url": "https://goo.gl/forms/k3jgGzIHQCrUOdFS2",
-  "moderators": [
-    "@h_yardimci",
-    "@cmyeniceri",
-    "@sekersizcayy",
-    "@veysiertekin"
-  ],
-  "sponsors": [
-    "@GittiGidiyor"
-  ],
-  "location": {
-    "city": "Istanbul",
-    "country": "Turkey",
-    "coordinates": {
-      "latitude": 40.9902205,
-      "longitude": 29.1025393
+    "location": {
+        "city": "Istanbul",
+        "coordinates": {
+            "latitude": 40.9902205,
+            "longitude": 29.1025393
+        },
+        "country": "Turkey",
+        "timezone": "Europe/Istanbul",
+        "utcOffset": 3
     },
-    "utcOffset": 3,
-    "timezone": "Europe/Istanbul"
-  }
+    "moderators": [
+        {
+            "name": "harun.",
+            "url": "https://twitter.com/h_yardimci"
+        },
+        {
+            "name": "Cem Yeni\u00e7eri",
+            "url": "https://twitter.com/cmyeniceri"
+        },
+        {
+            "name": "R",
+            "url": "https://twitter.com/sekersizcayy"
+        },
+        {
+            "name": "Veysi Ertekin",
+            "url": "https://twitter.com/veysiertekin"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "GittiGidiyor",
+            "url": "https://twitter.com/GittiGidiyor"
+        }
+    ],
+    "title": "GDCR 2018 @ GittiGidiyor",
+    "url": "https://goo.gl/forms/k3jgGzIHQCrUOdFS2"
 }

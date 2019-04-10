@@ -1,17 +1,20 @@
 {
-  "title": "GDCR18 @ JugHyd",
-  "url": "https://www.meetup.com/jughyderabad/events/bvsjppyxpbwb/",
-  "moderators": [
-    "@surajeet_sen"
-  ],
-  "location": {
-    "city": "Hyderabad",
-    "country": "India",
-    "coordinates": {
-      "latitude": 17.38714,
-      "longitude": 78.491684
+    "location": {
+        "city": "Hyderabad",
+        "coordinates": {
+            "latitude": 17.38714,
+            "longitude": 78.491684
+        },
+        "country": "India",
+        "timezone": "Asia/Kolkata",
+        "utcOffset": 5.5
     },
-    "utcOffset": 5.5,
-    "timezone": "Asia/Kolkata"
-  }
+    "moderators": [
+        {
+            "name": "Surajeet Sen",
+            "url": "https://twitter.com/surajeet_sen"
+        }
+    ],
+    "title": "GDCR18 @ JugHyd",
+    "url": "https://www.meetup.com/jughyderabad/events/bvsjppyxpbwb/"
 }

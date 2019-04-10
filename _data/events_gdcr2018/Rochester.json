@@ -1,20 +1,26 @@
 {
-  "title": "GDCR18 in Rochester",
-  "url": "https://www.meetup.com/RocDev/events/253288924/",
-  "moderators": [
-    "@geowa4"
-  ],
-  "sponsors": [
-    "@paychex"
-  ],
-  "location": {
-    "city": "Rochester",
-    "country": "United States of America",
-    "coordinates": {
-      "latitude": 43.2258726,
-      "longitude": -77.3911697
+    "location": {
+        "city": "Rochester",
+        "coordinates": {
+            "latitude": 43.2258726,
+            "longitude": -77.3911697
+        },
+        "country": "United States of America",
+        "timezone": "America/New_York",
+        "utcOffset": -4
     },
-    "utcOffset": -4,
-    "timezone": "America/New_York"
-  }
+    "moderators": [
+        {
+            "name": "george iv",
+            "url": "https://twitter.com/geowa4"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "Paychex",
+            "url": "https://twitter.com/paychex"
+        }
+    ],
+    "title": "GDCR18 in Rochester",
+    "url": "https://www.meetup.com/RocDev/events/253288924/"
 }

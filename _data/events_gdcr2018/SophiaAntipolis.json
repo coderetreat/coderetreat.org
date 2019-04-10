@@ -1,17 +1,20 @@
 {
-  "title": "GDCR18 in Sophia Antipolis",
-  "url": "https://goo.gl/forms/E4lqSPYE9M9Ctp3u2",
-  "moderators": [
-    "@Bureau_du_Code"
-  ],
-  "location": {
-    "city": "Sophia Antipolis",
-    "country": "France",
-    "coordinates": {
-      "latitude": 43.6166482,
-      "longitude": 7.0357542
+    "location": {
+        "city": "Sophia Antipolis",
+        "coordinates": {
+            "latitude": 43.6166482,
+            "longitude": 7.0357542
+        },
+        "country": "France",
+        "timezone": "Europe/Monaco",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Monaco"
-  }
+    "moderators": [
+        {
+            "name": "Bureau du Code",
+            "url": "https://twitter.com/Bureau_du_Code"
+        }
+    ],
+    "title": "GDCR18 in Sophia Antipolis",
+    "url": "https://goo.gl/forms/E4lqSPYE9M9Ctp3u2"
 }

@@ -1,18 +1,23 @@
 {
-  "title": "GDCR18 in Calgary Alberta",
-  "url": "https://www.meetup.com/Calgary-Agile-Methods-User-Group/events/",
-  "moderators": [
-    "@ttrungvo",
-    "Jacquenline"
-  ],
-  "location": {
-    "city": "Calgary",
-    "country": "Canada",
-    "coordinates": {
-      "latitude": 51.08451,
-      "longitude": -114.13042
+    "location": {
+        "city": "Calgary",
+        "coordinates": {
+            "latitude": 51.08451,
+            "longitude": -114.13042
+        },
+        "country": "Canada",
+        "timezone": "America/Edmonton",
+        "utcOffset": -6
     },
-    "utcOffset": -6,
-    "timezone": "America/Edmonton"
-  }
+    "moderators": [
+        {
+            "name": "Trung Vo",
+            "url": "https://twitter.com/ttrungvo"
+        },
+        {
+            "name": "Jacquenline"
+        }
+    ],
+    "title": "GDCR18 in Calgary Alberta",
+    "url": "https://www.meetup.com/Calgary-Agile-Methods-User-Group/events/"
 }

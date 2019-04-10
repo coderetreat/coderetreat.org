@@ -1,17 +1,19 @@
 {
-  "title": "GDCR 2018 Poznań",
-  "url": "https://www.meetup.com/Poznan-Java-User-Group/events/255433496/",
-  "moderators": [
-    "Wojciech Buras"
-  ],
-  "location": {
-    "city": "Poznań",
-    "country": "Poland",
-    "coordinates": {
-      "latitude": 52.403597,
-      "longitude": 16.9136073
+    "location": {
+        "city": "Pozna\u0144",
+        "coordinates": {
+            "latitude": 52.403597,
+            "longitude": 16.9136073
+        },
+        "country": "Poland",
+        "timezone": "Europe/Warsaw",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Warsaw"
-  }
+    "moderators": [
+        {
+            "name": "Wojciech Buras"
+        }
+    ],
+    "title": "GDCR 2018 Pozna\u0144",
+    "url": "https://www.meetup.com/Poznan-Java-User-Group/events/255433496/"
 }

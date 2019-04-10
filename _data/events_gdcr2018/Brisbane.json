@@ -1,22 +1,31 @@
 {
-  "title": "#gdcr Brisbane 2018",
-  "url": "https://www.eventbrite.com/e/global-day-of-coderetreat-gdcr-brisbane-2018-tickets-47256410195",
-  "moderators": [
-    "Nataliya",
-    "Joe",
-    "Lyall"
-  ],
-  "sponsors": [
-    "@thoughtworks"
-  ],
-  "location": {
-    "city": "Brisbane",
-    "country": "Australia",
-    "coordinates": {
-      "latitude": -27.4657034,
-      "longitude": 153.0273472
+    "location": {
+        "city": "Brisbane",
+        "coordinates": {
+            "latitude": -27.4657034,
+            "longitude": 153.0273472
+        },
+        "country": "Australia",
+        "timezone": "Australia/Brisbane",
+        "utcOffset": 10
     },
-    "utcOffset": 10,
-    "timezone": "Australia/Brisbane"
-  }
+    "moderators": [
+        {
+            "name": "Nataliya"
+        },
+        {
+            "name": "Joe"
+        },
+        {
+            "name": "Lyall"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "ThoughtWorks",
+            "url": "https://twitter.com/thoughtworks"
+        }
+    ],
+    "title": "#gdcr Brisbane 2018",
+    "url": "https://www.eventbrite.com/e/global-day-of-coderetreat-gdcr-brisbane-2018-tickets-47256410195"
 }

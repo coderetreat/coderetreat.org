@@ -1,17 +1,20 @@
 {
-  "title": "GDCR18 in Barcelona",
-  "url": "https://www.meetup.com/es-ES/BarcelonaJUG/events/256208230",
-  "moderators": [
-    "@icougil"
-  ],
-  "location": {
-    "city": "Barcelona",
-    "country": "Spain",
-    "coordinates": {
-      "latitude": 41.3948976,
-      "longitude": 2.0787279
+    "location": {
+        "city": "Barcelona",
+        "coordinates": {
+            "latitude": 41.3948976,
+            "longitude": 2.0787279
+        },
+        "country": "Spain",
+        "timezone": "Europe/Madrid",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Madrid"
-  }
+    "moderators": [
+        {
+            "name": "Nacho Cougil",
+            "url": "https://twitter.com/icougil"
+        }
+    ],
+    "title": "GDCR18 in Barcelona",
+    "url": "https://www.meetup.com/es-ES/BarcelonaJUG/events/256208230"
 }
