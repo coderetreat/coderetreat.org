@@ -5,13 +5,8 @@
     "@vbhagath",
     "Prathap Reddy"
   ],
-  "location": {
-    "city": "Bangalore",
-    "country": "India",
-    "coordinates": {
-      "latitude": 12.9564548,
-      "longitude": 77.6394432
-    },
+  "datetime": "2019-11-29 00:00:00",
+  "location": "virtual",
     "utcOffset": 5.5,
     "timezone": "Asia/Kolkata"
   }
