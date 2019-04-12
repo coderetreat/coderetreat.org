@@ -2,11 +2,11 @@
   "title": "GDCR18 in Bucharest @ Craftsmanship",
   "url": "http://meetu.ps/e/FZCzx/vNHvw/f",
   "moderators": [
-    "@victorrentea",
-    "Bianca Falca",
-    "Marian Stanciu"
-  ],
-  "location": {
+        {
+            "name": "Kim Moscardelli"
+        }
+    ],
+    "location": {
     "city": "Bucharest",
     "country": "Romania",
     "coordinates": {

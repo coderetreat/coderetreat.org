@@ -2,10 +2,19 @@
   "title": "GDCR18 in Cluj",
   "url": "http://www.rabs.ro/events?ee=22",
   "moderators": [
-    "@horea_hopartean",
-    "@florincoros",
-    "@sergiudamian"
-  ],
+        {
+            "name": "Krzysztof Kakol"
+        },
+        {
+            "name": "Iga Zacher-Czempa"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "PGS Software",
+            "url": "https://twitter.com/pgssoftware"
+        }
+    ],
   "location": {
     "city": "Cluj-Napoca",
     "country": "Romania",

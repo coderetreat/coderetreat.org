@@ -2,9 +2,11 @@
   "title": "GDCR18 in Calgary Alberta",
   "url": "https://www.meetup.com/Calgary-Agile-Methods-User-Group/events/",
   "moderators": [
-    "@ttrungvo",
-    "Jacquenline"
-  ],
+        {
+            "name": "Jonay Godoy",
+            "url": "https://twitter.com/godoyJonay"
+        }
+    ],
   "location": {
     "city": "Calgary",
     "country": "Canada",

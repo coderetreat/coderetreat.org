@@ -2,10 +2,11 @@
   "title": "GDCR18 Cambridge, UK",
   "url": "https://www.meetup.com/Cambridge-Software-Crafters/events/254650705/",
   "moderators": [
-    "@ilkezilci",
-    "@AmelieCornelis",
-    "@alextercete"
-  ],
+        {
+            "name": "Marco Ravicini",
+            "url": "https://twitter.com/marcoravicini"
+        }
+    ],
   "sponsors": [
     "@redgate"
   ],

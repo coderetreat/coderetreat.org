@@ -2,12 +2,25 @@
   "title": "GDCR18 in Chicago",
   "url": "https://www.meetup.com/8th-light-university/events/254951280/",
   "moderators": [
-    "@NicoleCarpUSA",
-    "@EMeyer8thLight"
-  ],
+        {
+            "name": "Rama Krishna",
+            "url": "https://twitter.com/rkreddykonyala"
+        },
+        {
+            "name": "Siddhesh Nikude",
+            "url": "https://twitter.com/SiddheshNikude"
+        },
+        {
+            "name": "Shweta Sadawarte",
+            "url": "https://twitter.com/ShwetaSadawarte"
+        }
+    ],
   "sponsors": [
-    "@8thLightInc"
-  ],
+        {
+            "name": "OCTO Ch'ti",
+            "url": "https://twitter.com/octochti"
+        }
+    ],
   "location": {
     "city": "Chicago",
     "country": "United States of America",
