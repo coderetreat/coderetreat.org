@@ -9,8 +9,8 @@ description: List of events around the world!
 </div>
 
 <h2>GDCR events in 2018</h2>
-{% assign events_with_location = site.data.events_gdcr2018 | where_exp: 'event', 'event.location != "virtual"'  %}
-{% assign virtual_events = site.data.events_gdcr2018 | where_exp: 'event', 'event.location == "virtual"'  %}
+{% assign events_with_location = site.data.events['2018'].global-day | where_exp: 'event', 'event.location != "virtual"'  %}
+{% assign virtual_events = site.data.events['2018'].global-day | where_exp: 'event', 'event.location == "virtual"'  %}
 {% assign countries = events_with_location | map: 'location' | map: 'country' | uniq | sort %}
 
 
@@ -99,7 +99,7 @@ description: List of events around the world!
 
 <script>
     $(function () {
-        $.get('/events/gdcr2018.json', function (eventsJson) {
+        $.get('/events/2018/global-day/events.json', function (eventsJson) {
             var gdcrEvents = mapEventsDataToMapFormat(eventsJson);
             addEventsToMap(gdcrEvents);
         });

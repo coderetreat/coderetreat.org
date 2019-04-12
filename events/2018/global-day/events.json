@@ -1,0 +1,3 @@
+---
+---
+{{ site.data.events['2018'].global-day | jsonify }}

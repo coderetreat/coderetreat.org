@@ -10,7 +10,7 @@
 
 <script>
 $(function() {
-  $.get("/events/gdcr2018.json", function(eventsJson) {
+  $.get("/events/2018/global-day/events.json", function(eventsJson) {
     var gdcrEvents = mapEventsDataToMapFormat(eventsJson);
     addEventsToMap(gdcrEvents);
   });
