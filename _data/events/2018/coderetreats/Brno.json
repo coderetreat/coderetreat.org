@@ -1,0 +1,17 @@
+{
+    "location": {
+        "city": "Brno",
+        "coordinates": {
+            "latitude": 49.1810045,
+            "longitude": 16.6036102
+        },
+        "country": "Czech Republic",
+        "timezone": "Europe/Prague",
+        "utcOffset": 2
+    },
+    "datetime": "2018-05-29 08:30:00",
+    "moderators": [
+    ],
+    "title": "GDCR.Brno.2018 ",
+    "url": "https://www.solarwindsmeetup.com/event/coderetreat-2018/"
+}
