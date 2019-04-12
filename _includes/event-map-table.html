@@ -38,13 +38,13 @@
             <td>{{ event.location.city }}</td></td>
         {% endif %}
         
+        <td><a href="{{ event.url }}">{{ event.title }}</a></td>
         <td>
             {% include event-moderators.html %}
         </td>
         <td>
             {% include event-sponsors.html %}
         </td>
-        <td><a href="{{ event.url }}" aria-label="View event in {{ event.location.city }}">VIEW</a></td>    
         <td>{{ event.datetime | date: "%a, %b %d, %Y, %H:%M" }}</td>
     </tr>
     {% endfor %}
