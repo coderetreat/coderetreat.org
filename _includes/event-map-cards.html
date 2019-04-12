@@ -1,0 +1,58 @@
+<div id="map">
+    <div id="popup"></div>
+</div>
+
+
+{% assign all_events = site.data.events[page.year][page.event_type] %}
+{% assign events_with_location = site.data.events[page.year][page.event_type] | where_exp: 'event', 'event.location != "virtual"'  %}
+{% assign virtual_events = site.data.events[page.year][page.event_type] | where_exp: 'event', 'event.location == "virtual"'  %}
+{% assign countries = events_with_location | map: 'location' | map: 'country' | uniq  %}
+
+
+
+<form class="pure-form">
+    <fieldset>
+        <select id="gdcrCountry" style="font-family: sans-serif;">
+            <option selected disabled>Select your country...</option>
+            <option value="none">Show All</option>
+            <option disabled>-------------</option>
+            <option value="virtual">Virtual Events</option>
+            {% for country in countries %}
+            <option>{{ country }}</option>
+            {% endfor %}
+        </select>
+    </fieldset>
+</form>
+
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center">
+
+    {% assign events = (all_events | where_exp: 'name', '1'  | sort: 'datetime') %}
+    {% for event in events %}
+        {% include event-card.html %}
+    {% endfor %}
+</div>
+
+
+
+<script>
+    $(function () {
+        $.get('/events/{{page.year}}/{{page.event_type}}/events.json', function (eventsJson) {
+            var gdcrEvents = mapEventsDataToMapFormat(eventsJson);
+            addEventsToMap(gdcrEvents);
+        });
+
+        $('#gdcrCountry').on('change', function (e) {
+            var filter = e.target.value;
+            var rows = $('.mdc-card');
+            var isDisabled = filter === 'none';
+
+            for (var i = 0; i < rows.length; i++) {
+                row = rows[i];
+                ctry = row.getAttribute("data-country");
+                row.classList.toggle('hidden', !(isDisabled || ctry === filter))
+            }
+            ;
+        });
+    });
+</script>
