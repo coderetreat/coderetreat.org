@@ -4,8 +4,10 @@ title: Why attend
 description: If you have never attended a coderetreat and you would like to know the reason why it's so special
 ---
 
+<div class="posts-container">
+
 {% for reason in site.data.why-attend %}
-## {{ reason.title }}
+<h2>{{ reason.title }}</h2>
 
 {% for quote in reason.examples %}
 <blockquote class="quote">
@@ -18,3 +20,5 @@ description: If you have never attended a coderetreat and you would like to know
 <p class="last-section">
     <a href="{% link pages/10-years/index.md %}">Do you know that we're celebrating 10th Coderetreat Anniversary?</a>
 </p>
+
+</div>
