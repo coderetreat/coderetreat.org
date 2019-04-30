@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Why attend
+title: Why Attend?
 description: If you have never attended a coderetreat and you would like to know the reason why it's so special
 ---
 
