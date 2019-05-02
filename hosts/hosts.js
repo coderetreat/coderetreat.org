@@ -51,37 +51,37 @@ function initVideoBoothsModel() {
     this.availableTimezoneCategories = [
       Booth(
         "(UTC-12 - UTC-06) United States, Canada",
-        "gdcr18_utc-12_-_utc-06",
+        "gdcr19_utc-12_-_utc-06",
         -12,
         -6
       ),
       Booth(
         "(UTC-05 - UTC-03) Colombia, Ecuador, Mexico, Peru, Chile, Argentina, United States, Canada",
-        "gdcr18_utc-05_-_utc-03",
+        "gdcr19_utc-05_-_utc-03",
         -5,
         -3
       ),
       Booth(
         "(UTC-02 - UTC+0) Portugal, Spain, United Kingdom",
-        "gdcr18_utc-02_-_utc+00",
+        "gdcr19_utc-02_-_utc+00",
         -2,
         0
       ),
       Booth(
         "(UTC+01 - UTC+2) Austria, Belgium, Czech Republic, France, Germany, Hungary, Italy, Macedonia, Poland, Serbia, South Africa, Switzerland, Turkey",
-        "gdcr18_utc+01_-_utc+02",
+        "gdcr19_utc+01_-_utc+02",
         1,
         2
       ),
       Booth(
         "(UTC+03 - UTC+05:30) Belarus, Finland, Latvia, Lithuania, Romania, Russia, India",
-        "gdcr18_utc+03_-_utc+0530",
+        "gdcr19_utc+03_-_utc+0530",
         3,
         5.5
       ),
       Booth(
         "(UTC+06 - UTC+14) Bangladesh, Kazakhstan, China, Philippines, Singapore, Japan, Australia, New Zealand",
-        "gdcr18_utc+06_-_utc+14",
+        "gdcr19_utc+06_-_utc+14",
         6,
         14
       )
@@ -285,7 +285,7 @@ function initTweetsModel() {
     this.startTweet = ko.computed(function() {
       var text =
         (this.city() || "We are") +
-        " checking in for #gdcr18! Let's play the Game Of Life! " +
+        " checking in for #gdcr19! Let's play the Game Of Life! " +
         (this.hashtag() || "") +
         " #live";
       return {
@@ -299,7 +299,7 @@ function initTweetsModel() {
         (this.city() || "We are") +
         ' doing the "' +
         (this.constraint() || "XXX") +
-        '" Session now! #gdcr18 #live ' +
+        '" Session now! #gdcr19 #live ' +
         (this.hashtag() || "");
       return {
         text: text,
@@ -310,7 +310,7 @@ function initTweetsModel() {
     this.endTweet = ko.computed(function() {
       var text =
         (this.city() || "Our Event") +
-        " is done for the day. Thank you for attending! #gdcr18 #live " +
+        " is done for the day. Thank you for attending! #gdcr19 #live " +
         (this.hashtag() || "");
       return {
         text: text,
