@@ -109,6 +109,12 @@
 		"header": "https://pbs.twimg.com/profile_banners/78015545/1425901585/600x200",
 		"bio" : "ex-teacher, programmer, be *** in future"
 	}, {
+		"name": "Martin Klose",
+		"screenname": "martinklose",
+		"avatar": "",
+		"header": "",
+		"bio" : "I'm a passionate software craftsman and the co-founder of klosebrothers.de - an IT consultancy. I like to run CodeRetreats."
+	}, {
 		"name": "Raimo Radczewski",
 		"screenname": "rradczewski",
 		"avatar": "https://pbs.twimg.com/profile_images/593402307594821632/0eBBXeS2_bigger.jpg",
