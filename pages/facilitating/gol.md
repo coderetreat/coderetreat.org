@@ -47,8 +47,23 @@ The rules continue to be applied repeatedly to create further generations.
 
 ## Game of Life schemas provided by the community
 
+There are useful to hang it to a near wall as a reminder for the game rules or you can print copies for attendees.
+
+<section>
 {% for schema in site.data.gol-schemas %}
 <a href="{{ schema.url }}" title="Schema by {{ schema.author}}"><img alt="" src="{{ schema.url }}" width="300px" style="float:left;padding:2em;"></a>
 {% endfor %}
+</section>
 
+You can find the schema by Marco Emrich in other formats: [PDF or SVG](https://github.com/marcoemrich/game-of-life-rules/). 
+
+And another PDF version by [Lemi Orhan Ergin, Software Craftsmanship Turkey](/docs/gol-schemas/Lemi-Orhan-Ergin.pdf).
+
+## Game of Life challenge
+
+To practice on paper in order to understand the rules of Conway's Game of Life:
+
+* [Blank grid](/docs/gol-schemas/gol-blank-grid.pdf)
+* [Challenge](/docs/gol-schemas/gol-challenge.pdf)
+* [Solution](/docs/gol-schemas/gol-solution.pdf)
 
