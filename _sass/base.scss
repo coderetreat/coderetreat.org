@@ -149,11 +149,11 @@ cite {
   }
 }
 
-#coderetreat-schedule td {
+.data-table td, .data-table th {
   padding: 0.5em 1em;
   border: 1px solid grey;
 }
 
-#coderetreat-schedule td:nth-child(1) {
+.data-table td:nth-child(1) {
   text-align: right;
 }

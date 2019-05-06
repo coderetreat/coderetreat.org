@@ -1,5 +1,9 @@
 body {
   background-color: #f4f9f0;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.6em;
+  line-height: 1.618em;
+  color: #1A3238;
 }
 
 .tab-content {
@@ -8,7 +12,7 @@ body {
 }
 
 .page_header {
-  font-size: 2.3em;
+  font-size: 2em;
   font-family: "Amaranth", sans-serif;
   font-weight: bold;
   text-align: center;

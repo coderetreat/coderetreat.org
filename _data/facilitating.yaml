@@ -22,7 +22,11 @@
   description: Join us during a training session or watch the available pre-recorded training sessions
   url: /pages/training/
   image: /images/facilitating/blackboard.jpg
-- title: Resources for the Global Day of Coderetreat 
-  description: Some resources for the Global Day like handy tools for your event (Twitter, Video Booths)
+- title: Media Pack
+  description: "Logo, brand guidelines, templates, ..."
+  url: /pages/facilitating/media-pack/
+  image: /images/facilitating/brand.jpg
+- title: Tools for the Global Day of Coderetreat 
+  description: "Handy tools for your event: Twitter, Video Booths."
   url: /hosts/
   image: /images/global-day-842px.png

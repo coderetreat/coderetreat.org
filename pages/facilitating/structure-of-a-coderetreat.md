@@ -26,7 +26,7 @@ The morning focuses on becoming comfortable with the problem domain, breaking ol
 
 Below is a rough outline for the day as a proposal:
 
-<table id="coderetreat-schedule">
+<table class="data-table">
 {% for entry in site.data.schedule %}
 <tr>
   <td>{{ entry.time }}</td>
