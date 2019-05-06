@@ -1,37 +1,19 @@
 <div class="mdc-card demo-card" data-country="{{event.location.country | default: 'virtual'}}" data-labels={{event.labels|jsonify}}>
-  <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0">
-    <div class="mdc-card__media mdc-card__media--16-9 demo-card__media" 
-      style="background-image: url({{ page.default_image }});"></div>
-    <div class="demo-card__primary">
-      <h2 class="demo-card__title mdc-typography mdc-typography--headline6">
-        <a href="{{ event.url }}">{{ event.title }}</a>
-      </h2>
-      <h3 class="demo-card__subtitle mdc-typography mdc-typography--subtitle2">
-        {% if event.location == "virtual" %}
-            <td>Virtual</td>
-            <td>(Remote)</td>
-        {% else %}
-            <td>{{ event.location.country }}</td>
-            <td>{{ event.location.city }}</td></td>
-        {% endif %}
-      </h3>
-    </div>
-    <div class="demo-card__secondary mdc-typography mdc-typography--body2">
-      <div>🗓️ {{ event.datetime | date: "%a, %b %d, %Y, %H:%M" }}</div>
-      <div>👥 Facilitator(s): {% include event-moderators.html %}</div>
-      <div>💰 Sponsor(s): {% include event-sponsors.html %}</div>
-    </div>
+  <div class="demo-card__primary">
+    <h2 class="demo-card__title mdc-typography mdc-typography--headline6">
+      <a href="{{ event.url }}">{{ event.title }}</a>
+    </h2>
   </div>
-  <div class="mdc-card__actions">
-    <div class="mdc-card__action-buttons">
-      <a href="{{ event.url }}">
-        <button class="mdc-button mdc-card__action mdc-card__action--button">
-          Register
-        </button>
-      </a>
-    </div>
-    <div class="mdc-card__action-icons">
-      <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded" title="Share" data-mdc-ripple-is-unbounded="true">share</button>
-    </div>
+  <div class="demo-card__secondary mdc-typography mdc-typography--body2">
+    <h3>🌍 
+      {% if event.location == "virtual" %}
+          Virtual (Remote)
+      {% else %}
+          {{ event.location.city }} ({{ event.location.country }})
+      {% endif %}
+    </h3>
+    <p>🗓️ <strong>{{ event.datetime | date: "%a, %B %d, %H:%M" }}</strong></p>
+    <p>👥 <strong>Facilitator(s)</strong>: {% include event-moderators.html %}</p>
+    <p>💰 <strong>Sponsor(s)</strong>: {% include event-sponsors.html %}</p>
   </div>
 </div>

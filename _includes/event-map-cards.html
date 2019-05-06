@@ -2,13 +2,10 @@
     <div id="popup"></div>
 </div>
 
-
 {% assign all_events = site.data.events[page.year][page.event_type] %}
 {% assign events_with_location = site.data.events[page.year][page.event_type] | where_exp: 'event', 'event.location != "virtual"'  %}
 {% assign virtual_events = site.data.events[page.year][page.event_type] | where_exp: 'event', 'event.location == "virtual"'  %}
 {% assign countries = events_with_location | map: 'location' | map: 'country' | uniq  %}
-
-
 
 <form class="pure-form">
     <fieldset>
@@ -24,6 +21,7 @@
     </fieldset>
 </form>
 
+<i class="fa fa-undo"></i> <a href="..">Return to the previous table</a>
 
 <div style="display: flex; flex-wrap: wrap; justify-content: center">
 
@@ -32,8 +30,6 @@
         {% include event-card.html %}
     {% endfor %}
 </div>
-
-
 
 <script>
     $(function () {
