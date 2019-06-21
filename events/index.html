@@ -1,16 +1,16 @@
 ---
 layout: default
 title: Global Day of Coderetreat Events
-description: List of events around the world! 
+description: List of events around the world!
 ---
 
 <div id="map">
     <div id="popup"></div>
 </div>
 
-<h2>GDCR events in 2018</h2>
-{% assign events_with_location = site.data.events_gdcr2018 | where_exp: 'event', 'event.location != "virtual"'  %}
-{% assign virtual_events = site.data.events_gdcr2018 | where_exp: 'event', 'event.location == "virtual"'  %}
+<h2>GDCR events in 2019</h2>
+{% assign events_with_location = site.data.events_gdcr2019 | where_exp: 'event', 'event.location != "virtual"'  %}
+{% assign virtual_events = site.data.events_gdcr2019 | where_exp: 'event', 'event.location == "virtual"'  %}
 {% assign countries = events_with_location | map: 'location' | map: 'country' | uniq | sort %}
 
 
@@ -99,7 +99,7 @@ description: List of events around the world!
 
 <script>
     $(function () {
-        $.get('/events/gdcr2018.json', function (eventsJson) {
+        $.get('/events/gdcr2019.json', function (eventsJson) {
             var gdcrEvents = mapEventsDataToMapFormat(eventsJson);
             addEventsToMap(gdcrEvents);
         });
