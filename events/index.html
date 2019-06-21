@@ -32,7 +32,7 @@ description: List of events around the world!
     {% for event in virtual_events %}
     <tr data-country="virtual">
         <td>Virtual</td>
-        <td>(Remote)</td>
+        <td>{{ event.date.start | date: "%A" }}</td>
         <td><a href="{{ event.url }}">{{ event.title }}</a></td>
         <td>
             {% assign loopCount = event.moderators | size | minus: 1 %}
@@ -64,8 +64,8 @@ description: List of events around the world!
     {% assign events = events_with_location | where_exp: 'name', '1' | sort: 'location.city' | sort: 'location.country' %}
     {% for event in events %}
     <tr data-country="{{event.location.country}}">
-        <td>{{ event.location.country }}</td>
-        <td>{{ event.location.city }}</td>
+        <td>{{ event.location.city }}, {{ event.location.country }}</td>
+        <td>{{ event.date.start | date: "%A" }}</td>
         <td><a href="{{ event.url }}">{{ event.title }}</a></td>
         <td>
             {% assign loopCount = event.moderators | size | minus: 1 %}
