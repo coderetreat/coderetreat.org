@@ -10,7 +10,7 @@ This year, registering your event at coderetreat.org is easier than it has ever 
    * Generate a file automatically by using [this schema](https://github.com/coderetreat/coderetreat.org/blob/master/events/event_schema.json).
 
    * Generate a valid JSON below:
-     <script async src="//jsfiddle.net/wLahmdh4/5/embed/result/"></script>
+     <script async src="//jsfiddle.net/smx5t2y1/2/embed/result/"></script>
 
    The only required fields are:
     * `title`
