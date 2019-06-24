@@ -6,17 +6,19 @@
     <p>As a local event organizer, it is up to you to decide whether to host an event on Friday or Saturday, or even both 🎉.</p>
     <p class="subtitle">Last year, there have been {{site.data.events_gdcr2018 | size}} GDCR events around the world!</p>
 
-    <div id="map">
-        <div id="popup"></div>
-    </div>
-    <div class="map-aside" style="align-content: center">
-      <div class="highlight">
-        <u>The Global Day of Coderetreat starts in:</u>
-        {% include countdown.liquid date='2019-11-16T00:00:00.000Z' size='large' name ='gdcr2019' %}
+    <div id="gdcr-map">
+      <div id="map">
+          <div id="popup"></div>
       </div>
-      <p class="calltoaction">
-        <a class="button" href="/register-event">Register Your Event!</a>
-      </p>
+      <div class="map-aside" style="align-content: center">
+        <div class="subtitle">
+          The Global Day of Coderetreat starts in:
+          {% include countdown.liquid date='2019-11-16T00:00:00.000Z' size='large' name ='gdcr2019' %}
+        </div>
+        <p class="calltoaction">
+          <a class="button" href="/register-event">Register Your Event!</a>
+        </p>
+      </div>
     </div>
 </section>
 
