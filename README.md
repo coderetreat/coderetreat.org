@@ -7,7 +7,7 @@ This year, registering your event at coderetreat.org is easier than it has ever 
 
 2. Create a new file called `$YOURCITY.json` in the `_data/events_gdcr2019/` of the repository.
    You can either:
-   * Generate a file automatically by using [this schema](https://github.com/coderetreat/coderetreat.org/blob/master/events/event_schema.json).
+   * Generate a file automatically by using [this schema](https://github.com/coderetreat/coderetreat.org/blob/master/events/event_schema2019.json).
 
    * Generate a valid JSON below:
      <script async src="//jsfiddle.net/smx5t2y1/2/embed/result/"></script>
@@ -15,7 +15,8 @@ This year, registering your event at coderetreat.org is easier than it has ever 
    The only required fields are:
     * `title`
     * `url`
-    * either `location.utcOffset` or `location.timezone` (please note that if you are using `utcOffset`, the offset refers to the event date, so please consider that *Dailight Savings Time* might apply at the time you are submitting your event, but not when the event takes place.)
+    * `date.start`
+    * `date.end`
     * `location.country`
     * `location.city`
 
