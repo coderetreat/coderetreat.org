@@ -34,7 +34,7 @@ const validate = input => {
 
 describe('Events as given in /_data/events_gdcr19', () => {
   describe('that are written in JSON: ', () => {
-    const jsonFiles = glob.sync(path.resolve(__dirname, '../_data/events_gdcr2019/') + '/*.json');
+    const jsonFiles = glob.sync(path.resolve(__dirname, '../_data/events/global-day/') + '/*.json');
 
     jsonFiles.forEach(file =>
       it(
@@ -45,7 +45,7 @@ describe('Events as given in /_data/events_gdcr19', () => {
   });
 
   describe('that are written in YAML: ', () => {
-    const ymlFiles = glob.sync(path.resolve(__dirname, '../_data/events_gdcr2019/') + '/*.yml');
+    const ymlFiles = glob.sync(path.resolve(__dirname, '../_data/events/global-day/') + '/*.yml');
 
     ymlFiles.forEach(file =>
       it(
