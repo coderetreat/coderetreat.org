@@ -1,9 +1,5 @@
 #locations {
   .calltoaction {
-    @include media($mobile) {
-      display: none;
-    }
-
     .button {
       width: 80%;
       display: inline-block;

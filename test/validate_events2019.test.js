@@ -6,7 +6,7 @@ const fs   = require('fs');
 
 const YAML = require('yamljs');
 
-const schema = require('../events/event_schema.json');
+const schema = require('../events/event_schema2019.json');
 const JsonValidator = require('jsonschema').Validator;
 const moment = require('moment-timezone');
 
@@ -32,9 +32,9 @@ const validate = input => {
   }
 }
 
-describe('Events as given in /_data/events_gdcr18', () => {
+describe('Events as given in /_data/events_gdcr19', () => {
   describe('that are written in JSON: ', () => {
-    const jsonFiles = glob.sync(path.resolve(__dirname, '../_data/events_gdcr2018/') + '/*.json');
+    const jsonFiles = glob.sync(path.resolve(__dirname, '../_data/events_gdcr2019/') + '/*.json');
 
     jsonFiles.forEach(file =>
       it(
@@ -45,7 +45,7 @@ describe('Events as given in /_data/events_gdcr18', () => {
   });
 
   describe('that are written in YAML: ', () => {
-    const ymlFiles = glob.sync(path.resolve(__dirname, '../_data/events_gdcr2018/') + '/*.yml');
+    const ymlFiles = glob.sync(path.resolve(__dirname, '../_data/events_gdcr2019/') + '/*.yml');
 
     ymlFiles.forEach(file =>
       it(

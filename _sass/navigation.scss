@@ -28,7 +28,6 @@ $navbar-padding: $gutter/2;
     text-align: left;
     flex-grow: 1;
   }
-  .logo img { max-height: $navbar-height - 2*$navbar-padding; }
   button {
     display: none;
   }
