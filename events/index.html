@@ -8,11 +8,12 @@ description: List of events around the world!
     <div id="popup"></div>
 </div>
 
+<a href="/register-event/"><i class="fa fa-info-circle"></i> Register your event</a>
 <h2>GDCR events in 2019</h2>
+
 {% assign events_with_location = site.data.events_gdcr2019 | where_exp: 'event', 'event.location != "virtual"'  %}
 {% assign virtual_events = site.data.events_gdcr2019 | where_exp: 'event', 'event.location == "virtual"'  %}
 {% assign countries = events_with_location | map: 'location' | map: 'country' | uniq | sort %}
-
 
 <form class="pure-form">
     <fieldset>
