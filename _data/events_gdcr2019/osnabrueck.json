@@ -1,7 +1,11 @@
 {
-  "title": "GDCR19 in Osnabrück",
+  "title": "GDCR 2019 in Osnabrück",
   "url": "https://www.sievers-group.com/veranstaltung/global-day-coderetreat",
-  "moderators": [],
+  "moderators": [
+    {
+      "name": "Mathias Menninghaus",
+      "url": "https://github.com/mmenninghaus"
+    }],
   "sponsors": [
     {
       "name": "SIEVERS-GROUP",
