@@ -1,0 +1,28 @@
+{
+  "title": "GDCR 2019 in Rheine",
+  "url": "https://www.eventbrite.de/e/global-day-of-code-retreat-2019-apetito-tickets-66666105115",
+  "moderators": [
+    {
+      "name": "Tobias Richling",
+      "url": "https://github.com/trichling"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "apetito AG",
+      "url": "https://www.apetito.de/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-15T09:00:00.000+01:00",
+    "end": "2019-11-15T17:00:00.000+01:00"
+  },
+  "location": {
+    "city": "Rheine",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 52.3100076,
+      "longitude": 7.4493054
+    }
+  }
+}
