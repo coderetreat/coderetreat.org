@@ -5,10 +5,12 @@
             "latitude": 48.994277,
             "longitude": 8.446993
         },
-        "country": "Germany",
-        "timezone": "Europe/Berlin",
-        "utcOffset": 1
+        "country": "Germany"
     },
+    "date": {
+      "start": "2019-11-16T09:30:00.000+02:00",
+      "end": "2019-11-16T18:00:00.000+02:00"
+    },    
     "moderators": [
         {
             "name": "Urs Metz",
