@@ -1,0 +1,36 @@
+{
+  "title": "GDCR 2019 Montréal",
+  "url": "https://www.eventbrite.fr/e/billets-global-day-of-code-retreat-2019-montreal-69573565407",
+  "moderators": [
+    {
+      "name": "Nicolas Carlo",
+      "url": "https://nicoespeon.com"
+    },
+    {
+      "name": "Damien Beaufils",
+      "url": "https://twitter.com/damienbeaufils"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Busbud",
+      "url": "https://www.busbud.com"
+    },
+    {
+      "name": "Zenika",
+      "url": "https://www.zenika.ca/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T08:00:00-04:00",
+    "end": "2019-11-16T17:00:00-04:00"
+  },
+  "location": {
+    "city": "Montreal",
+    "country": "Canada",
+    "coordinates": {
+      "latitude": 45.52651,
+      "longitude": -73.59632
+    }
+  }
+}
