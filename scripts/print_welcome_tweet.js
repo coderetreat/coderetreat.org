@@ -6,7 +6,7 @@ const DIR = "_data/events_gdcr2019";
 const toWelcomeTweetModerators = moderators => {
   const names = moderators.map(mod => {
     if (typeof mod === "string") return mod;
-    if (mod.url.includes("twitter.com"))
+    if (mod.url && mod.url.includes("twitter.com"))
       return "@" + mod.url.split("/").slice(-1)[0];
     return mod.name;
   });
