@@ -2,7 +2,7 @@
   "title": "Coderetreat 2019",
   "url": "https://www.meetup.com/Shirley-Software-Development-Meetup/events/263865462/",
   "moderators": [
-    "Ian Russell"
+    {"name": "Ian Russell"} 
   ],
   "sponsors": [
     {
