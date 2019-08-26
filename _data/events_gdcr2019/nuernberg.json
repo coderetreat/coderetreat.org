@@ -5,9 +5,7 @@
             "latitude": 49.45311,
             "longitude": 11.04607
         },
-        "country": "Germany",
-        "timezone": "Europe/Berlin",
-        "utcOffset": 1
+        "country": "Germany"
     },
     "moderators": [
         {
@@ -37,9 +35,10 @@
             "url": "https://twitter.com/DATEV"
         }
     ],
-  "date": {
-    "start": "2019-11-16T09:00:00.000+01:00",
-    "end": "2019-11-16T17:00:00.000+01:00",
+    "date": {
+        "start": "2019-11-16T09:00:00.000+01:00",
+        "end": "2019-11-16T17:00:00.000+01:00"
+    },
     "title": "GDCR 2019 @ DATEV",
     "url": "https://ti.to/gdcr-nuernberg/2019"
 }
