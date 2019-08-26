@@ -1,0 +1,31 @@
+{
+  "title": "GDCR 2019 Frankfurt/Main",
+  "url": "https://www.eventbrite.de/e/global-day-of-coderetreat-2019-in-frankfurt-tickets-69587936391",
+  "moderators": [
+    {
+      "name": "Jens-Hagen Syrbe"
+    },
+    {
+      "name": "CodeRetreat Rhein-Ma",
+      "url": "https://twitter.com/CodeRetreatFfm"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Finanz Informatik Solutions Plus GmbH",
+      "url": "https://f-i-solutions-plus.de/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T08:30:00+01:00",
+    "end": "2019-11-16T17:00:00+01:00"
+  },
+  "location": {
+    "city": "Frankfurt/Main",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 50.11512,
+      "longitude": 8.63695
+    }
+  }
+}

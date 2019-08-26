@@ -1,17 +1,21 @@
 {
-  "title": "GDCR17 @Draeger in Luebeck",
-  "url": "http://meetu.ps/3cSr4z",
-  "moderators": [
-    "Florian Moesch",
-    "Tobias Darm"
-  ],
-  "location": {
-    "city": "Luebeck",
-    "country": "Germany",
-    "coordinates": {
-      "latitude": 53.855961,
-      "longitude": 10.6711248
+    "location": {
+        "city": "Luebeck",
+        "coordinates": {
+            "latitude": 53.855961,
+            "longitude": 10.6711248
+        },
+        "country": "Germany",
+        "timezone": "Europe/Berlin"
     },
-    "timezone": "Europe/Berlin"
-  }
+    "moderators": [
+        {
+            "name": "Florian Moesch"
+        },
+        {
+            "name": "Tobias Darm"
+        }
+    ],
+    "title": "GDCR17 @Draeger in Luebeck",
+    "url": "http://meetu.ps/3cSr4z"
 }

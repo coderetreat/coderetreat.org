@@ -1,0 +1,54 @@
+{
+  "title": "Article Registration",
+  "type": "object",
+  "properties": {
+    "title": {
+      "description": "The title of your article",
+      "type": "string",
+      "minLength": 1
+    },
+    "url": {
+      "description": "The URL of your article",
+      "type": "string",
+      "minLength": 1
+    },
+    "author": {
+      "description": "The author",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "link": { 
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false,
+      "required": ["name"]
+    },
+    "year": {
+      "description": "The URL of your article",
+      "type": "number"
+    },
+    "location": {
+      "description": "Further data about the location your event took place at",
+      "type": "object",
+      "properties": {
+        "city": {
+          "type": "string",
+          "minLength": 1
+        },
+        "country": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false,
+      "required": ["country", "city"]
+    }
+  },
+  "additionalProperties": false,
+  "required": ["title", "url", "author", "year", "location"]
+}

@@ -1,0 +1,18 @@
+{
+  "title": "GDCR18 in Lyon",
+  "url": "https://www.meetup.com/fr-FR/Software-Craftsmanship-Lyon/events/255320937/",
+  "moderators": [
+    "@saby_nastasia",
+    "@RomainTrm"
+  ],
+  "location": {
+    "city": "Lyon",
+    "country": "France",
+    "coordinates": {
+      "latitude": 45.7621772,
+      "longitude": 4.8600658
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Paris"
+  }
+}

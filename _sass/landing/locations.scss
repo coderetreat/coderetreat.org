@@ -1,0 +1,19 @@
+#locations {
+  .calltoaction {
+    .button {
+      width: 80%;
+      display: inline-block;
+      margin-left: 10%;
+    }
+  }
+  h2 {
+    font-family: 'OrbitronBlack';
+  }
+  .subtitle{
+    font-family: $title-font;
+    font-size: 1.6em;
+    color: $dark;
+    text-align: center;
+    line-height: 1.2em;
+  }
+}

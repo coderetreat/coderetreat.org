@@ -1,17 +1,19 @@
 {
-  "title": "GDCR17 in Bielefeld",
-  "url": "https://www.softwerkskammer.org/activities/mob-gdcr-17",
-  "moderators": [
-    "Jaroslaw Klose"
-  ],
-  "location": {
-    "city": "Bielefeld",
-    "country": "Germany",
-    "coordinates": {
-      "latitude": 52.0426848,
-      "longitude": 8.4906118
+    "location": {
+        "city": "Bielefeld",
+        "coordinates": {
+            "latitude": 52.0426848,
+            "longitude": 8.4906118
+        },
+        "country": "Germany",
+        "timezone": "Europe/Berlin",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Berlin"
-  }
+    "moderators": [
+        {
+            "name": "Jaroslaw Klose"
+        }
+    ],
+    "title": "GDCR17 in Bielefeld",
+    "url": "https://www.softwerkskammer.org/activities/mob-gdcr-17"
 }

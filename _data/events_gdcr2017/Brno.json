@@ -1,15 +1,25 @@
 {
-  "title": "Global Day of CodeRetreat 2017 in Brno",
-  "url": "https://www.solarwindsmeetup.com/event/gdcr-2017/",
-  "moderators": ["Vladimir Kopso", "Jakub Fojtl", "Evzen Zelinka"],
-  "location": {
-    "city": "Brno",
-    "country": "Czech Republic",
-    "coordinates": {
-      "latitude": 49.1903765,
-      "longitude": 16.618112
+    "location": {
+        "city": "Brno",
+        "coordinates": {
+            "latitude": 49.1903765,
+            "longitude": 16.618112
+        },
+        "country": "Czech Republic",
+        "timezone": "Europe/Vienna",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Vienna"
-  }
+    "moderators": [
+        {
+            "name": "Vladimir Kopso"
+        },
+        {
+            "name": "Jakub Fojtl"
+        },
+        {
+            "name": "Evzen Zelinka"
+        }
+    ],
+    "title": "Global Day of CodeRetreat 2017 in Brno",
+    "url": "https://www.solarwindsmeetup.com/event/gdcr-2017/"
 }

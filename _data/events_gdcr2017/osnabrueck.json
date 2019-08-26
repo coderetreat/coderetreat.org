@@ -1,20 +1,26 @@
 {
-  "title": "»Global Day of Coderetreat« 2017 in Osnabrück",
-  "url": "https://www.eventbrite.de/e/global-day-of-coderetreat-2017-in-osnabruck-tickets-38034418971",
-  "moderators": [
-    "@saschadoemer"
-  ],
-  "sponsors": [
-    "@lmisag"
-  ],
-  "location": {
-    "city": "Osnabrück",
-    "country": "Germany",
-    "coordinates": {
-      "latitude": 52.2731405,
-      "longitude": 8.0477367
+    "location": {
+        "city": "Osnabr\u00fcck",
+        "coordinates": {
+            "latitude": 52.2731405,
+            "longitude": 8.0477367
+        },
+        "country": "Germany",
+        "timezone": "Europe/Berlin",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Berlin"
-  }
+    "moderators": [
+        {
+            "name": "sascha.doemer",
+            "url": "https://twitter.com/saschadoemer"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "LMIS AG",
+            "url": "https://twitter.com/lmisag"
+        }
+    ],
+    "title": "\u00bbGlobal Day of Coderetreat\u00ab 2017 in Osnabr\u00fcck",
+    "url": "https://www.eventbrite.de/e/global-day-of-coderetreat-2017-in-osnabruck-tickets-38034418971"
 }

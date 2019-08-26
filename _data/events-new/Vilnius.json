@@ -1,0 +1,17 @@
+{
+    "title": "GDCR18 in Vilnius",
+    "url": "https://gdcr-vilnius-2018.eventbrite.com",
+    "moderators": [
+      "@ogrigas"
+    ],
+    "location": {
+      "city": "Vilnius",
+      "country": "Lithuania",
+      "coordinates": {
+        "latitude": 54.701825,
+        "longitude": 25.2630313
+      },
+      "utcOffset": 3,
+      "timezone": "Europe/Vilnius"
+    }
+  }

@@ -1,0 +1,102 @@
+.ProfileCard {
+	width: 290px;
+}
+
+.ProfileCard-bg {
+    background-position: 0 50%;
+    background-size: 100%;
+    display: block;
+    height: 97px;
+    background-color: #1DA1F2;
+}
+
+.ProfileCard-content {
+    margin: 13px 15px;
+    position: relative;
+}
+
+.ProfileCard-avatarLink {
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    margin: -45px 2px 0 -3px;
+    padding: 3px;
+    position: relative;
+    vertical-align: bottom;
+    z-index: 1;
+}
+
+.ProfileCard-avatarImage {	
+    border-radius: 50%;
+    display: block;
+    height: 70px;
+    width: 70px;
+}
+
+.ProfileCard-actions {
+    display: inline-block;
+    height: 35px;
+    margin: 0 0 -4px 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    vertical-align: bottom;
+}
+
+.follow-button .button-text, .edit-button .button-text {
+    text-align: center;
+}
+.EdgeButton--secondary, .EdgeButton--secondary:hover, .EdgeButton--secondary:focus, .EdgeButton--secondary:active {
+    border-color: #1B95E0;
+    color: #1B95E0;
+}
+.EdgeButton--secondary {
+    background-color: #fff;
+    border: 1px solid #1da1f2;
+    color: #1da1f2;
+}
+.EdgeButton--small {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 4px 12px;
+}
+.EdgeButton, .EdgeButton:visited {
+    border-radius: 100px;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+}
+button {
+    background: transparent;
+    transition: box-shadow .15s ease-in-out;
+}
+
+.ProfileNameTruncated-link {
+    color: #14171a;
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 2px;
+}
+
+.ProfileCard-screennameLink {
+    color: #66757f;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.ProfileCard-bio {
+    color: #14171a;
+    font-weight: normal;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 1.375em;
+    height: 5.5em;
+    margin-top: 8px;
+}

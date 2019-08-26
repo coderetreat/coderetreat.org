@@ -1,0 +1,25 @@
+{
+  "title": "Coderetreat 2019",
+  "url": "https://www.meetup.com/Shirley-Software-Development-Meetup/events/263865462/",
+  "moderators": [
+    {"name": "Ian Russell"} 
+  ],
+  "sponsors": [
+    {
+      "name": "eTech Solutions",
+      "url": "https://www.etech.net/about/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T09:00:00Z",
+    "end": "2019-11-16T17:00:00Z"
+  },
+  "location": {
+    "city": "Solihull",
+    "country": "United Kingdom",
+    "coordinates": {
+      "latitude": 52.381664,
+      "longitude": -1.787493
+    }
+  }
+}

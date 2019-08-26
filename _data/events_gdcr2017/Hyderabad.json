@@ -1,18 +1,24 @@
 {
-  "title": "CDCR17 in Hyderabad",
-  "url": "https://www.meetup.com/preview/hyscala/events/244254659",
-  "moderators": [
-    "@rajmahendra",
-    "@purijatin7"
-  ],
-  "location": {
-    "city": "Hyderabad",
-    "country": "India",
-    "coordinates": {
-      "latitude": 17.4201755,
-      "longitude": 78.3373567
+    "location": {
+        "city": "Hyderabad",
+        "coordinates": {
+            "latitude": 17.4201755,
+            "longitude": 78.3373567
+        },
+        "country": "India",
+        "timezone": "Asia/Kolkata",
+        "utcOffset": 5.5
     },
-    "utcOffset": 5.5,
-    "timezone": "Asia/Kolkata"
-  }
+    "moderators": [
+        {
+            "name": "Mahendra.Raj.Bhandar",
+            "url": "https://twitter.com/rajmahendra"
+        },
+        {
+            "name": "Jatin Puri",
+            "url": "https://twitter.com/purijatin7"
+        }
+    ],
+    "title": "CDCR17 in Hyderabad",
+    "url": "https://www.meetup.com/preview/hyscala/events/244254659"
 }

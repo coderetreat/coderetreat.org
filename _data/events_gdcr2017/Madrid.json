@@ -1,20 +1,26 @@
 {
-  "title": "Madrid Global Day of Code Retreat 2017",
-  "url": "https://www.meetup.com/madswcraft/",
-  "moderators": [
-    "@madswcraft"
-  ],
-  "sponsors": [
-    "@idealista"
-  ],
-  "location": {
-    "city": "Madrid",
-    "country": "Spain",
-    "coordinates": {
-      "latitude": 40.4160483,
-      "longitude": -3.6983344
+    "location": {
+        "city": "Madrid",
+        "coordinates": {
+            "latitude": 40.4160483,
+            "longitude": -3.6983344
+        },
+        "country": "Spain",
+        "timezone": "Europe/Madrid",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Madrid"
-  }
+    "moderators": [
+        {
+            "name": "SW Crafters Madrid",
+            "url": "https://twitter.com/madswcraft"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "idealista",
+            "url": "https://twitter.com/idealista"
+        }
+    ],
+    "title": "Madrid Global Day of Code Retreat 2017",
+    "url": "https://www.meetup.com/madswcraft/"
 }

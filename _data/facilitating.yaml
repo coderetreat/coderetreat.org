@@ -1,0 +1,32 @@
+- title: On The Role of the Coderetreat Facilitator
+  description: A great blog post by Corey Haines with some great tips and suggestions for first-time facilitators
+  url: /blog/2011/12/02/on-the-role-of-the-coderetreat-facilitator/
+  image: /images/facilitating/guidance.jpg
+- title: Structure of a Coderetreat
+  description: Details about what a normal coderetreat typically looks like
+  url: /pages/facilitating/structure-of-a-coderetreat/
+  image: /images/facilitating/coderetreat.png
+- title: Conway's Game of Life (GoL)
+  description: The programming challenge used at every traditional coderetreat, for every session
+  url: /pages/facilitating/gol/
+  image: /images/facilitating/game-of-life.png
+- title: Resources for your attendees
+  description: Help your attendees with starting points in different programming languages among others
+  url: /pages/facilitating/resources-for-attendees/
+  image: /images/facilitating/keyboard.jpg
+- title: Activity Catalog
+  description: A catalog of challenges or activities attempted at previous coderetreats
+  url: /pages/facilitating/activity-catalog/
+  image: /images/facilitating/idea.png
+- title: Training sessions
+  description: Join us during a training session or watch the available pre-recorded training sessions
+  url: /pages/training/
+  image: /images/facilitating/blackboard.jpg
+- title: Media Pack
+  description: "Logo, brand guidelines, templates, ..."
+  url: /pages/facilitating/media-pack/
+  image: /images/facilitating/brand.jpg
+- title: Tools for the Global Day of Coderetreat 
+  description: "Handy tools for your event: Twitter, Video Booths."
+  url: /hosts/
+  image: /images/global-day-842px.png

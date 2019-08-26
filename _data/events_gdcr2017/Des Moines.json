@@ -1,17 +1,20 @@
 {
-    "title": "GDCR17 Des Moines @ The Forge by Pillar Technology",
-    "url": "http://info.pillartechnology.com/gdcr_pillar_2017_rsvp_ihr",
-    "moderators": [
-        "Nathan Schlehlein (nschlehlein@pillartechnology.com)"
-    ],
     "location": {
         "city": "Des Moines",
-        "country": "United States of America",
         "coordinates": {
             "latitude": 41.584268,
             "longitude": -93.63547
         },
-        "utcOffset": -5,
-        "timezone": "America/Chicago"
-    }
+        "country": "United States of America",
+        "timezone": "America/Chicago",
+        "utcOffset": -5
+    },
+    "moderators": [
+        {
+            "name": "Nathan Schlehlein",
+            "url": "mailto:nschlehlein@pillartechnology.com"
+        }
+    ],
+    "title": "GDCR17 Des Moines @ The Forge by Pillar Technology",
+    "url": "http://info.pillartechnology.com/gdcr_pillar_2017_rsvp_ihr"
 }

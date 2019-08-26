@@ -1,7 +1,7 @@
 ---
 layout: default
+title: Hosting FAQ
 ---
-# Hosting FAQ	
 
 [General](#general)
 

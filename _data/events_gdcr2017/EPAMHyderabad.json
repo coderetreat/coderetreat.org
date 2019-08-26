@@ -1,17 +1,20 @@
 {
-  "title": "EPAM Hyderabad GDCR 17",
-  "url": "http://events.epam.com/secure-events/m4MC9AEOcjQDaHPb7rpsyfUk",
-  "moderators": [
-    "@rohit_elan"
-  ],
-  "location": {
-    "city": "Hyderabad",
-    "country": "India",
-    "coordinates": {
-      "latitude": 17.4228313,
-      "longitude": 78.4210918
+    "location": {
+        "city": "Hyderabad",
+        "coordinates": {
+            "latitude": 17.4228313,
+            "longitude": 78.4210918
+        },
+        "country": "India",
+        "timezone": "Asia/Kolkata",
+        "utcOffset": 5.5
     },
-    "utcOffset": 5.5,
-    "timezone": "Asia/Kolkata"
-  }
+    "moderators": [
+        {
+            "name": "(Rohit \u0930\u094b\u0939\u093f\u0924 \u0935\u0948\u0926\u094d\u092f)",
+            "url": "https://twitter.com/rohit_elan"
+        }
+    ],
+    "title": "EPAM Hyderabad GDCR 17",
+    "url": "http://events.epam.com/secure-events/m4MC9AEOcjQDaHPb7rpsyfUk"
 }

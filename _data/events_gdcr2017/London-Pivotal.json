@@ -1,20 +1,32 @@
 {
-  "title": "GDCR 17 @ Pivotal London",
-  "url": "https://www.eventbrite.com/e/global-day-of-code-retreat-pivotal-tickets-37119002937",
-  "moderators": [
-    "@deniseyu21",
-    "@jamesjoshuahill",
-    "@chewymeister",
-    "@KaraMarck"
-  ],
-  "location": {
-    "city": "London",
-    "country": "United Kingdom",
-    "coordinates": {
-      "latitude": 51.526239,
-      "longitude": -0.088862
+    "location": {
+        "city": "London",
+        "coordinates": {
+            "latitude": 51.526239,
+            "longitude": -0.088862
+        },
+        "country": "United Kingdom",
+        "timezone": "Europe/London",
+        "utcOffset": 1
     },
-    "utcOffset": 1,
-    "timezone": "Europe/London"
-  }
+    "moderators": [
+        {
+            "name": "Denise Yu",
+            "url": "https://twitter.com/deniseyu21"
+        },
+        {
+            "name": "Josh Hill",
+            "url": "https://twitter.com/jamesjoshuahill"
+        },
+        {
+            "name": "Jonathan QW Tsang",
+            "url": "https://twitter.com/chewymeister"
+        },
+        {
+            "name": "Kara de la Marck",
+            "url": "https://twitter.com/KaraMarck"
+        }
+    ],
+    "title": "GDCR 17 @ Pivotal London",
+    "url": "https://www.eventbrite.com/e/global-day-of-code-retreat-pivotal-tickets-37119002937"
 }

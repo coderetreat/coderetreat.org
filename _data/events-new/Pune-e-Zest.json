@@ -1,0 +1,22 @@
+{
+  "title": "GDCR18 e-Zest, Pune",
+  "url": "https://www.e-zest.com/global-day-of-coderetreat2018",
+  "moderators": [
+    "@bharatikoot",
+    "@christianhujer"
+  ],
+  "sponsors": [
+    "@nelkinda",
+    "@ezest"
+  ],
+  "location": {
+    "city": "Pune",
+    "country": "India",
+    "coordinates": {
+      "latitude": 18.578799,
+      "longitude": 73.7378663
+    },
+    "utcOffset": 5.5,
+    "timezone": "Asia/Kolkata"
+  }
+}

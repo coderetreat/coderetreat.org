@@ -1,11 +1,20 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="description" content="The Global Day of Coderetreat as a day when developers all over the world will be practicing the fundamentals of software development.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:image" content="{% if page.image.src %}{{ page.image.src | prepend: site.url }}{% else %}{{ '/images/logo_400x400.jpg' | prepend: site.url }}{% endif %}">
+<meta property="twitter:image" content="{% if page.image.src %}{{ page.image.src | prepend: site.url }}{% else %}{{ '/images/logo_400x400.jpg' | prepend: site.url }}{% endif %}">
+<meta property="og:type" content="article">
+{% feed_meta %}
+{% seo %}
 
-<title>Global Day of Coderetreat</title>
 <link rel="stylesheet" href="/css/print.css" type="text/css" media="print">
 <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen">
 <link rel="stylesheet" href="/css/training.css" type="text/css" media="screen">
+<link rel="stylesheet" href="/css/10years.css" type="text/css" media="screen">
+<link rel="stylesheet" href="/css/demo-card.css" type="text/css" media="screen">
+<link rel="stylesheet" href="/css/custom.css" type="text/css" media="screen">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 <script type="text/javascript" src="/js/jquery.min.js"></script>
 <script type="text/javascript" src="/js/bootstrap.min.js"></script>
@@ -17,3 +26,4 @@
 <link href='https://fonts.googleapis.com/css?family=Amaranth:700|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
 <link href="https://unpkg.com/ol3-geocoder/build/ol3-geocoder.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">

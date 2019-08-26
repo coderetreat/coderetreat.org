@@ -1,17 +1,20 @@
 {
-  "title": "GDRC17 in Sophia Antipolis",
-  "url": "https://www.eventbrite.fr/e/billets-global-day-of-code-retreat-a-polytechnice-39340819450",
-  "moderators": [
-    "@mosser"
-  ],
-  "location": {
-    "city": "Sophia Antipolis",
-    "country": "France",
-    "coordinates": {
-      "latitude": 43.614738,
-      "longitude": 7.071720
+    "location": {
+        "city": "Sophia Antipolis",
+        "coordinates": {
+            "latitude": 43.614738,
+            "longitude": 7.07172
+        },
+        "country": "France",
+        "timezone": "Europe/Paris",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Paris"
-  }
+    "moderators": [
+        {
+            "name": "\u307e\u3063\u3061\u3083\u3093",
+            "url": "https://twitter.com/mosser"
+        }
+    ],
+    "title": "GDRC17 in Sophia Antipolis",
+    "url": "https://www.eventbrite.fr/e/billets-global-day-of-code-retreat-a-polytechnice-39340819450"
 }

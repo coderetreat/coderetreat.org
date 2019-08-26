@@ -1,17 +1,20 @@
 {
-    "title": "Global day of Code Retreat 2017 in Zaragoza",
-    "url": "https://www.meetup.com/es-ES/agilearagon/events/244698186/?eventId=244698186",
-    "moderators": [
-      "@AgileAragon"
-    ],
     "location": {
-      "city": "Zaragoza",
-      "country": "Spain",
-      "coordinates": {
-        "latitude": 41.670584,
-        "longitude": -0.901738
-      },
-      "utcOffset": 2,
-      "timezone": "Europe/Madrid"
-    }
-  }
+        "city": "Zaragoza",
+        "coordinates": {
+            "latitude": 41.670584,
+            "longitude": -0.901738
+        },
+        "country": "Spain",
+        "timezone": "Europe/Madrid",
+        "utcOffset": 2
+    },
+    "moderators": [
+        {
+            "name": "AgileAragon",
+            "url": "https://twitter.com/AgileAragon"
+        }
+    ],
+    "title": "Global day of Code Retreat 2017 in Zaragoza",
+    "url": "https://www.meetup.com/es-ES/agilearagon/events/244698186/?eventId=244698186"
+}

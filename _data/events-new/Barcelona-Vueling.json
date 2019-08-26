@@ -1,0 +1,21 @@
+{
+  "title": "GDCR18 in Barcelona",
+  "url": "https://www.eventbrite.es/e/global-day-of-code-retreat-barcelona-tickets-52519542365",
+  "moderators": [
+    "@polamat91",
+    "Daniel Labella"
+  ],
+  "sponsors": [
+    "@vueling"
+  ],
+  "location": {
+    "city": "El Prat de Llobregat",
+    "country": "Spain",
+    "coordinates": {
+      "latitude": 41.311288,
+      "longitude": 2.0712355
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Madrid"
+  }
+}

@@ -1,18 +1,22 @@
 {
-  "title": "Code Retreat Day @Cegeka",
-  "url": "https://www.cegeka.com/ro/en/events/coderetreat-at-cegeka",
-  "moderators": [
-    "Bogdan Iancu",
-    "Cristina Darie"
-  ],
-  "location": {
-    "city": "București",
-    "country": "Romania",
-    "coordinates": {
-      "latitude": 44.4545737,
-      "longitude": 26.0815525
+    "location": {
+        "city": "Bucure\u0219ti",
+        "coordinates": {
+            "latitude": 44.4545737,
+            "longitude": 26.0815525
+        },
+        "country": "Romania",
+        "timezone": "Europe/Bucharest",
+        "utcOffset": 3
     },
-    "utcOffset": 3,
-    "timezone": "Europe/Bucharest"
-  }
+    "moderators": [
+        {
+            "name": "Bogdan Iancu"
+        },
+        {
+            "name": "Cristina Darie"
+        }
+    ],
+    "title": "Code Retreat Day @Cegeka",
+    "url": "https://www.cegeka.com/ro/en/events/coderetreat-at-cegeka"
 }

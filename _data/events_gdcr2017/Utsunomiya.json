@@ -1,18 +1,24 @@
 {
-  "title": "Global Day of Coderetreat 2017 in Utsunomiya",
-  "url": "https://agile-no-wa-tochigi.connpass.com/event/68780/",
-  "moderators": [
-    "@sasakendayo",
-    "@Masatoshi__Endo"
-  ],
-  "location": {
-    "city": "Utsunomiya",
-    "country": "Japan",
-    "coordinates": {
-      "latitude": 36.5594479,
-      "longitude": 139.8804156
+    "location": {
+        "city": "Utsunomiya",
+        "coordinates": {
+            "latitude": 36.5594479,
+            "longitude": 139.8804156
+        },
+        "country": "Japan",
+        "timezone": "Asia/Tokyo",
+        "utcOffset": 9
     },
-    "utcOffset": 9,
-    "timezone": "Asia/Tokyo"
-  }
+    "moderators": [
+        {
+            "name": "sasakendayo",
+            "url": "https://twitter.com/sasakendayo"
+        },
+        {
+            "name": "masatoshi endo",
+            "url": "https://twitter.com/Masatoshi__Endo"
+        }
+    ],
+    "title": "Global Day of Coderetreat 2017 in Utsunomiya",
+    "url": "https://agile-no-wa-tochigi.connpass.com/event/68780/"
 }

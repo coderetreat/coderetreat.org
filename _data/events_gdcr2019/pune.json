@@ -1,0 +1,24 @@
+{
+  "title": "Global Day of Coderetreat 2019 @ Equal Experts",
+  "url": "https://www.meetup.com/expert-talks-Pune/events/264152214/",
+  "moderators": [],
+  "sponsors": [
+    {
+      "name": "Equal Experts, Pune",
+      "url": "https://github.com/EqualExperts"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T09:00:00+05:30",
+    "end": "2019-11-16T17:00:00+05:30"
+  },
+  "location": {
+    "city": "Pune",
+    "country": "India",
+    "coordinates": {
+      "latitude": 18.544905,
+      "longitude": 73.909751
+    }
+  }
+}
+

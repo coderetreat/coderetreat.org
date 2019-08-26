@@ -1,0 +1,17 @@
+{
+  "title": "Global de Day del Codetreat Las Palmas",
+  "url": "https://www.meetup.com/es-ES/SPEGC-Sociedad-de-Promocion-Economica-de-Gran-Canaria/events/255766239/",
+  "moderators": [
+    "@godoyJonay"
+  ],
+  "location": {
+    "city": "Las Palmas",
+    "country": "Spain",
+    "coordinates": {
+      "latitude": 28.104595,
+      "longitude": -15.446427
+    },
+    "utcOffset": 1,
+    "timezone": "Africa/Casablanca"
+  }
+}

@@ -1,18 +1,24 @@
 {
-  "title": "Global Day of Code Retreat - Leuven 2017",
-  "url": "https://www.meetup.com/socratesbe/events/244350891/",
-  "moderators": [
-    "@TimSchraepen",
-    "@verhoevenv"
-  ],
-  "location": {
-    "city": "Leuven",
-    "country": "Belgium",
-    "coordinates": {
-      "latitude": 50.8468,
-      "longitude": 4.7294
+    "location": {
+        "city": "Leuven",
+        "coordinates": {
+            "latitude": 50.8468,
+            "longitude": 4.7294
+        },
+        "country": "Belgium",
+        "timezone": "Europe/Brussels",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Brussels"
-  }
+    "moderators": [
+        {
+            "name": "Tim Schraepen",
+            "url": "https://twitter.com/TimSchraepen"
+        },
+        {
+            "name": "Vincent Verhoeven",
+            "url": "https://twitter.com/verhoevenv"
+        }
+    ],
+    "title": "Global Day of Code Retreat - Leuven 2017",
+    "url": "https://www.meetup.com/socratesbe/events/244350891/"
 }

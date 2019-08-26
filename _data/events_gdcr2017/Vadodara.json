@@ -1,17 +1,20 @@
 {
-  "title": "GDCR 2017 Vadodara",
-  "url": "https://www.meetup.com/JUG-Vadodara/events/244813435/",
-  "moderators": [
-    "@CsiVadodara"
-  ],
-  "location": {
-    "city": "Vadodara",
-    "country": "India",
-    "coordinates": {
-      "latitude": 22.32,
-      "longitude": 73.03
+    "location": {
+        "city": "Vadodara",
+        "coordinates": {
+            "latitude": 22.32,
+            "longitude": 73.03
+        },
+        "country": "India",
+        "timezone": "Asia/Kolkata",
+        "utcOffset": 5.5
     },
-    "utcOffset": 5.5,
-    "timezone": "Asia/Kolkata"
-  }
+    "moderators": [
+        {
+            "name": "CSI Vadodara",
+            "url": "https://twitter.com/CsiVadodara"
+        }
+    ],
+    "title": "GDCR 2017 Vadodara",
+    "url": "https://www.meetup.com/JUG-Vadodara/events/244813435/"
 }

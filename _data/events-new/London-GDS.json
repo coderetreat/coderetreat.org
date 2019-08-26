@@ -1,0 +1,18 @@
+{
+  "title": "GDCR18 @GDS London",
+  "url": "https://www.eventbrite.com/e/global-day-of-coderetreat-at-gds-london-tickets-52153436332",
+  "moderators": [
+    "@georgeracu",
+    "@dgheath21"
+  ],
+  "location": {
+    "city": "London",
+    "country": "United Kingdom",
+    "coordinates": {
+      "latitude": 51.5144006,
+      "longitude": -0.0752186
+    },
+    "utcOffset": 1,
+    "timezone": "Europe/London"
+  }
+}

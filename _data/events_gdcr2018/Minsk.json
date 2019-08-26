@@ -1,0 +1,28 @@
+{
+    "location": {
+        "city": "Minsk",
+        "coordinates": {
+            "latitude": 53.9004681,
+            "longitude": 27.5393772
+        },
+        "country": "Belarus",
+        "timezone": "Europe/Minsk",
+        "utcOffset": 3
+    },
+    "moderators": [
+        {
+            "name": "@AlenaKudravets",
+            "url": "https://twitter.com/AlenaKudravets"
+        },
+        {
+            "name": "Allomov",
+            "url": "https://twitter.com/allomov"
+        },
+        {
+            "name": "Sergey Sergy\u0435nko",
+            "url": "https://twitter.com/Sergyenko"
+        }
+    ],
+    "title": "GDCR18 in Minsk",
+    "url": "https://goo.gl/forms/XnBuav7MgN863rkR2"
+}

@@ -1,17 +1,20 @@
 {
-  "title": "İstanbul Global Day of Code Retreat ",
-  "url": "https://www.eventbrite.com/e/istanbul-global-day-of-code-retreat-tickets-35984937918",
-  "moderators": [
-    "@tt_melih"
-  ],
-  "location": {
-    "city": "istanbul",
-    "country": "Turkey",
-    "coordinates": {
-      "latitude": 41.0799598,
-      "longitude": 29.0072429
+    "location": {
+        "city": "istanbul",
+        "coordinates": {
+            "latitude": 41.0799598,
+            "longitude": 29.0072429
+        },
+        "country": "Turkey",
+        "timezone": "Europe/Istanbul",
+        "utcOffset": 3
     },
-    "utcOffset": 3,
-    "timezone": "Europe/Istanbul"
-  }
+    "moderators": [
+        {
+            "name": "Melih.tt",
+            "url": "https://twitter.com/tt_melih"
+        }
+    ],
+    "title": "\u0130stanbul Global Day of Code Retreat ",
+    "url": "https://www.eventbrite.com/e/istanbul-global-day-of-code-retreat-tickets-35984937918"
 }

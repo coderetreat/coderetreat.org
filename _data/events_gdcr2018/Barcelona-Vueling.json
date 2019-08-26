@@ -1,0 +1,29 @@
+{
+    "location": {
+        "city": "El Prat de Llobregat",
+        "coordinates": {
+            "latitude": 41.311288,
+            "longitude": 2.0712355
+        },
+        "country": "Spain",
+        "timezone": "Europe/Madrid",
+        "utcOffset": 2
+    },
+    "moderators": [
+        {
+            "name": "Pol Amat Valls",
+            "url": "https://twitter.com/polamat91"
+        },
+        {
+            "name": "Daniel Labella"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "Vueling Airlines",
+            "url": "https://twitter.com/vueling"
+        }
+    ],
+    "title": "GDCR18 in Barcelona",
+    "url": "https://www.eventbrite.es/e/global-day-of-code-retreat-barcelona-tickets-52519542365"
+}

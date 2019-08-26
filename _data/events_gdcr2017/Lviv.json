@@ -1,18 +1,22 @@
 {
-  "title": "Coderetreat",
-  "url": "https://www.facebook.com/events/1980226588916907/",
-  "moderators": [
-    "Oleksiy Pletnov",
-    "Taras Mazurkevych"
-  ],
-  "location": {
-    "city": "Lviv",
-    "country": "Ukraine",
-    "coordinates": {
-      "latitude": 49.8327787,
-      "longitude": 23.9421959
+    "location": {
+        "city": "Lviv",
+        "coordinates": {
+            "latitude": 49.8327787,
+            "longitude": 23.9421959
+        },
+        "country": "Ukraine",
+        "timezone": "Europe/Kiev",
+        "utcOffset": 3
     },
-    "utcOffset": 3,
-    "timezone": "Europe/Kiev"
-  }
+    "moderators": [
+        {
+            "name": "Oleksiy Pletnov"
+        },
+        {
+            "name": "Taras Mazurkevych"
+        }
+    ],
+    "title": "Coderetreat",
+    "url": "https://www.facebook.com/events/1980226588916907/"
 }

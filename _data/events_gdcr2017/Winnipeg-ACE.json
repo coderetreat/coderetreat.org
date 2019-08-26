@@ -1,18 +1,24 @@
 {
-  "title": "ACE Code Retreat ",
-  "url": "https://www.eventbrite.ca/e/ace-code-retreat-tickets-39210306081",
-  "moderators": [
-    "@stungeye",
-    "@bernardic"
-  ],
-  "location": {
-    "city": "Winnipeg",
-    "country": "Canada",
-    "coordinates": {
-      "latitude": 49.898438,
-      "longitude": -97.1462603
+    "location": {
+        "city": "Winnipeg",
+        "coordinates": {
+            "latitude": 49.898438,
+            "longitude": -97.1462603
+        },
+        "country": "Canada",
+        "timezone": "America/Winnipeg",
+        "utcOffset": -5
     },
-    "utcOffset": -5,
-    "timezone": "America/Winnipeg"
-  }
+    "moderators": [
+        {
+            "name": "Kyle Geske",
+            "url": "https://twitter.com/stungeye"
+        },
+        {
+            "name": "Dan Bernardic",
+            "url": "https://twitter.com/bernardic"
+        }
+    ],
+    "title": "ACE Code Retreat ",
+    "url": "https://www.eventbrite.ca/e/ace-code-retreat-tickets-39210306081"
 }
