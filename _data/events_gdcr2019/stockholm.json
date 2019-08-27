@@ -1,0 +1,28 @@
+{
+  "title": "GDCR 2019 Stockholm @ Valtech",
+  "url": "https://www.eventbrite.co.uk/e/global-day-of-coderetreat-tickets-70599584257",
+  "moderators": [
+    {
+      "name": "Janko Luin",
+      "url": "https://github.com/gufo"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Valtech",
+      "url": "https://valtech.se/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T08:45:00.000+01:00",
+    "end": "2019-11-16T17:00:00.000+01:00"
+  },
+  "location": {
+    "city": "Stockholm",
+    "country": "Sweden",
+    "coordinates": {
+      "latitude": 59.329323,
+      "longitude": 18.068581
+    }
+  }
+}
