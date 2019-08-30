@@ -1,0 +1,28 @@
+{
+  "title": "GDCR19 Würzburg @ Intense AG",
+  "url": "https://www.intense.de/kontakt.html",
+  "moderators": [
+    {
+      "name": "Dominik Panzer",
+      "url": "Dominik.Panzer@intense.ag"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "INTENSE AG",
+      "url": "www.intense.ag"
+    }
+  ],
+  "date": {
+    "start": "2019-11-15T09:00:00+01:00",
+    "end": "2019-11-15T17:00:00+01:00"
+  },
+  "location": {
+    "city": "Würzburg",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 49.7913044,
+      "longitude": 9.9533548
+    }
+  }
+}
