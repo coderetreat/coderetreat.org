@@ -4,12 +4,17 @@
     "moderators": [
       {
         "name": "Barney Dellar",
-        "url": "https://github.com/barneydellar"
+        "url": "https://twitter.com/branaby"
       },
-      "Natalia Zon"
+      {
+        "name": "Natalia Zon"
+      }
     ],
-    "sponsors": [
-      "Canon Medical Research Europe"
+    "sponsors": [{
+        "name": "Canon Medical Research Europe",
+        "url": "https://research.eu.medical.canon"
+      }
+      
     ],
     "date": {
       "start": "2019-11-16T08:45:00.000+00:00",
