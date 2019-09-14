@@ -1,0 +1,29 @@
+{
+    "title": "GDCR 2019 in Atlanta",
+    "url": "https://www.coderetreatatl.com/",
+    "moderators": [
+      {
+        "name": "Mike Clement",
+        "url": "https://twitter.com/mdclement"
+      }
+    ],
+    "sponsors": [
+      {
+        "name": "Greater Sum",
+        "url": "https://twitter.com/thegreatersum"
+      }
+    ],
+    "date": {
+      "start": "2019-11-16T12:30:00.000Z",
+      "end": "2019-11-16T21:00:00.000Z"
+    },
+    "location": {
+      "city": "Atlanta",
+      "country": "United States of America ",
+      "coordinates": {
+        "latitude": 33.8142164,
+        "longitude": -84.4205344
+      }
+    }
+  }
+  
