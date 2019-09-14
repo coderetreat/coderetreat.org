@@ -1,0 +1,20 @@
+{
+  "title": "GDCR 2018 in London",
+  "url": "https://www.eventbrite.com/e/global-day-of-coderetreat-london-tickets-51028736324",
+  "moderators": [
+    "@mmhanif"
+  ],
+  "sponsors": [
+    "J.P. Morgan"
+  ],
+  "location": {
+    "city": "London",
+    "country": "United Kingdom",
+    "coordinates": {
+      "latitude": 51.5122022,
+      "longitude": -0.1084704
+    },
+    "utcOffset": 0,
+    "timezone": "Europe/London"
+  }
+}

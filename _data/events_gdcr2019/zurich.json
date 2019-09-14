@@ -1,0 +1,28 @@
+{
+  "title": "GDCR 2019 in Zurich",
+  "url": "https://zurich.codersonly.org/events/code-retreat",
+  "moderators": [
+    {
+      "name": "zarathustra as a service",
+      "url": "https://twitter.com/infinitary"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Namics",
+      "url": "https://namics.com"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T08:30:00+01:00",
+    "end": "2019-11-16T17:30:00+01:00"
+  },
+  "location": {
+    "city": "Zurich",
+    "country": "Switzerland",
+    "coordinates": {
+      "latitude": 47.36466,
+      "longitude": 8.53092
+    }
+  }
+}

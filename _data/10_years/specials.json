@@ -1,0 +1,30 @@
+[
+	{
+		"image":"/images/10-years/confetti.jpg",
+		"title":"A Twitter thread",
+		"description": "Celebrating the 10th Coderetreat Anniversary",
+		"link": "https://twitter.com/coderetreat/status/1088318474487848961",
+		"target": "_blank"
+	},
+	{
+		"image":"/images/10-years/thank-you.jpg",
+		"title":"Coderetreat Contributors",
+		"description": "Giving thanks to the many people who contributed",
+		"link": "/pages/10-years/contributors",
+		"target": ""
+	},
+	{
+		"image":"/images/10-years/letters.jpg",
+		"title":"Coderetreat Articles",
+		"description": "Gathering articles about coderetreat experiences and format",
+		"link": "/articles",
+		"target": ""
+	},
+	{
+		"image":"/images/10-years/pocket-watch.jpg",
+		"title":"Stay tuned...",
+		"description": "More goodness coming soon!",
+		"link": "https://twitter.com/coderetreat",
+		"target": ""
+	}
+]

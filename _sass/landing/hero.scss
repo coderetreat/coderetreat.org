@@ -1,6 +1,5 @@
 #hero {
   $bg-height: 800vw / 14;
-  height: 55vh;
   overflow: hidden;
   background-image: url("/images/mountain_path.svg");
   background-size: cover;
@@ -12,45 +11,32 @@
     h2 {
       font-size: 1.5em;
     }
-    @include span-columns(7 of 12);
-    @include shift(4.5);
     font-family: $title-font;
-    margin-top: 2em;
+    margin: 1em 10% 1em 40%;
     font-size: 1.6em;
     color: $dark;
     text-align: center;
-
-    .calltoaction {
-      @include media($mobile) {
-        display: none;
-      }
-
-      .button {
-        width: 49%;
-        display: inline-block;
-      }
-    }
+    float: right;
   }
   @include media($tablet) {
     .header {
       margin-top: $gutter;
-      background-color: $light;
-      opacity: 0.7;
+      background-color: rgba($light, 0.7);
+      margin: $gutter auto;
+      padding: $gutter;
+      float: none;
     }
     padding: $gutter;
     height: auto;
     min-height: $bg-height;
-    background-size: 100% $bg-height;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-size: cover;
   }
   @include media($mobile) {
-    background-image: url("/images/mountain_path_with_title.svg");
+    background-image: url("/images/mountain_path_with_coderetreat.svg");
     background-size: 100% $bg-height;
     background-repeat: no-repeat;
     background-attachment: scroll;
     .header {
-      opacity: 1;
       h1 {
         display: none;
       }
@@ -59,8 +45,9 @@
         font-size: 1.3em;
       }
       margin-top: $bg-height;
-      @include fill-parent;
-      @include shift(0);
+      margin-bottom: 0;
     }
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }

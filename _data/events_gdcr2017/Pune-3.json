@@ -1,23 +1,38 @@
 {
-    "title": "GDCR17 SimplyTech / Perennial Systems, Pune",
-    "url": "https://www.meetup.com/SimplyTech/events/244860687",
-    "moderators": [
-        "@bharatikoot",
-        "@rkreddykonyala"
-    ],
-    "sponsors": [
-        "@nelkinda",
-        "@perennialsys",
-        "@simplytech_in"
-    ],
     "location": {
         "city": "Pune",
-        "country": "India",
         "coordinates": {
             "latitude": 18.483507,
             "longitude": 73.8555663
         },
-        "utcOffset": 5.5,
-        "timezone": "Asia/Kolkata"
-    }
+        "country": "India",
+        "timezone": "Asia/Kolkata",
+        "utcOffset": 5.5
+    },
+    "moderators": [
+        {
+            "name": "Bharati Bastade Koot",
+            "url": "https://twitter.com/bharatikoot"
+        },
+        {
+            "name": "Rama Krishna",
+            "url": "https://twitter.com/rkreddykonyala"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "Nelkinda",
+            "url": "https://twitter.com/nelkinda"
+        },
+        {
+            "name": "@perennialsys",
+            "url": "https://twitter.com/perennialsys"
+        },
+        {
+            "name": "SimplyTech",
+            "url": "https://twitter.com/simplytech_in"
+        }
+    ],
+    "title": "GDCR17 SimplyTech / Perennial Systems, Pune",
+    "url": "https://www.meetup.com/SimplyTech/events/244860687"
 }

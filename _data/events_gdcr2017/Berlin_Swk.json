@@ -1,23 +1,38 @@
 {
-  "title": "GDCR17 Softwerkskammer Berlin",
-  "url": "https://www.eventbrite.com/e/global-day-of-coderetreat-2017-softwerkskammer-berlin-tickets-39627587180",
-  "moderators": [
-    "@alastairs",
-    "@martinklose",
-    "@mrksdck"
-  ],
-  "sponsors": [
-    "@GoEuro",
-    "@Wikimedia"
-  ],
-  "location": {
-    "city": "Berlin",
-    "country": "Germany",
-    "coordinates": {
-      "latitude": 52.5193449,
-      "longitude": 13.4003222
+    "location": {
+        "city": "Berlin",
+        "coordinates": {
+            "latitude": 52.5193449,
+            "longitude": 13.4003222
+        },
+        "country": "Germany",
+        "timezone": "Europe/Berlin",
+        "utcOffset": 1
     },
-    "utcOffset": 1,
-    "timezone": "Europe/Berlin"
-  }
+    "moderators": [
+        {
+            "name": "Alastair Smith",
+            "url": "https://twitter.com/alastairs"
+        },
+        {
+            "name": "Martin Klose",
+            "url": "https://twitter.com/martinklose"
+        },
+        {
+            "name": "Markus Decke",
+            "url": "https://twitter.com/mrksdck"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "@GoEuro",
+            "url": "https://twitter.com/GoEuro"
+        },
+        {
+            "name": "Wikimedia",
+            "url": "https://twitter.com/Wikimedia"
+        }
+    ],
+    "title": "GDCR17 Softwerkskammer Berlin",
+    "url": "https://www.eventbrite.com/e/global-day-of-coderetreat-2017-softwerkskammer-berlin-tickets-39627587180"
 }

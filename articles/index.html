@@ -1,0 +1,32 @@
+---
+title: Articles
+description: Posts about coderetreat experiences or format
+layout: default
+image:
+    src: /images/10-years/letters.jpg
+---
+
+<h2>Coderetreat Experiences by Former Attendees and Facilitators</h2>
+
+{% include share-your-article.html %}
+
+<h3>AS AN ATTENDEE</h3>
+
+{% assign articles = site.data.articles.experiences.as-an-attendee | where_exp: 'article', 'article.title != ""' | sort: 'year' | reverse %}
+{% include articles-list.html %}
+
+<h3>AS A FACILITATOR</h3>
+
+{% assign articles = site.data.articles.experiences.as-a-facilitator | where_exp: 'article', 'article.title != ""' | sort: 'year' | reverse %}
+{% include articles-list.html %}
+
+<h2>Coderetreat Format</h2>
+
+{% assign articles = site.data.articles.about-the-format | where_exp: 'article', 'article.title != ""' | sort: 'year' | reverse %}
+{% include articles-list.html %}
+
+{% include share-your-article.html %}
+
+<p class="last-section">
+    <a href="{% link pages/blog.html %}">Where's the old Blog section?</a>
+</p>

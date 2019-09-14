@@ -1,8 +1,19 @@
-section#twitter {
-  @include media($tablet) {
-    display: none;
-  }
-  @include media($mobile) {
-    display: none;
-  }
+section#news {
+  @include fill-parent;
+  max-width: 100%;
+  padding: 0 3em 2em 3em;
+  background-color: $blue;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+section#news div {
+  max-width: 68em;
+}
+
+section#news blockquote {
+  background-color: white;
+  padding: 2em;
+  margin: 1em 0 1em 0;
 }

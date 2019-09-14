@@ -4,6 +4,8 @@ author: coreyhaines
 authorname: corey haines
 title: On the role of the coderetreat facilitator
 preview: Coderetreat is a dynamic day with the specifics molded to the individual participants. There is a strong emphasis on self-discovery. The intense pair-swapping allows ideas to rapidly disseminate through the group. The frequent session reflections help with more complete internalization of lessons. Starting over allows experimentation without the baggage of previous experiments. To ensure the objectives of the coderetreat are met and that the participants get the maximum value out of the event, it is essential to have a facilitator for the day of coderetreat. The facilitator's role is to guide the participants through the various paths of experimentation, putting appropriate pressure at each stage of the day.
+image:
+    src: /images/facilitating/guidance.jpg
 ---
 
 Coderetreat is a dynamic day with the specifics molded to the individual participants. There is a strong emphasis on self-discovery. The intense pair-swapping allows ideas to rapidly disseminate through the group. The frequent session reflections help with more complete internalization of lessons. Starting over allows experimentation without the baggage of previous experiments. To ensure the objectives of the coderetreat are met and that the participants get the maximum value out of the event, it is essential to have a facilitator for the day of coderetreat. The facilitator's role is to guide the participants through the various paths of experimentation, putting appropriate pressure at each stage of the day.

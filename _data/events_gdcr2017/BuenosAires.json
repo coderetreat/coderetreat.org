@@ -1,22 +1,34 @@
 {
-  "title": "Buenos Aires Global Day of Code Retreat 2017",
-  "url": "https://www.eventbrite.com/e/buenos-aires-global-day-of-code-retreat-2017-tickets-37863898941",
-  "moderators": [
-    "@ferscorpi",
-    "@pasku1",
-    "@gonzalojg"
-  ],
-  "sponsors": [
-    "@etermax"
-  ],
-  "location": {
-    "city": "Buenos Aires",
-    "country": "Argentina",
-    "coordinates": {
-      "latitude": -34.604624,
-      "longitude": -58.4154677
+    "location": {
+        "city": "Buenos Aires",
+        "coordinates": {
+            "latitude": -34.604624,
+            "longitude": -58.4154677
+        },
+        "country": "Argentina",
+        "timezone": "America/Buenos_Aires",
+        "utcOffset": -3
     },
-    "utcOffset": -3,
-    "timezone": "America/Buenos_Aires"
-  }
+    "moderators": [
+        {
+            "name": "Fernando Scorpiniti",
+            "url": "https://twitter.com/ferscorpi"
+        },
+        {
+            "name": "Guillermo Pascual",
+            "url": "https://twitter.com/pasku1"
+        },
+        {
+            "name": "Gonzalo Garcia",
+            "url": "https://twitter.com/gonzalojg"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "Etermax",
+            "url": "https://twitter.com/etermax"
+        }
+    ],
+    "title": "Buenos Aires Global Day of Code Retreat 2017",
+    "url": "https://www.eventbrite.com/e/buenos-aires-global-day-of-code-retreat-2017-tickets-37863898941"
 }

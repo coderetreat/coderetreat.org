@@ -1,0 +1,19 @@
+{
+  "title": "GDCR18 @Codurance London",
+  "url": "https://www.meetup.com/london-software-craftsmanship/events/255548337",
+  "moderators": [
+    "@yefoakira",
+    "@alfredodev",
+    "@rovout"
+  ],
+  "location": {
+    "city": "London",
+    "country": "United Kingdom",
+    "coordinates": {
+      "latitude": 51.524022,
+      "longitude": -0.100429
+    },
+    "utcOffset": 1,
+    "timezone": "Europe/London"
+  }
+}

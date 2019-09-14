@@ -1,19 +1,28 @@
 {
-  "title": "GDCR17 in TCPísek",
-  "url": "https://www.meetup.com/CodeRetreat-CZ/events/243880403",
-  "moderators": [
-    "@hlavacm",
-    "@honzalilak",
-    "@twista"
-  ],
-  "location": {
-    "city": "Písek",
-    "country": "Czech Republic",
-    "coordinates": {
-      "latitude": 49.313686,
-      "longitude": 14.1353833
+    "location": {
+        "city": "P\u00edsek",
+        "coordinates": {
+            "latitude": 49.313686,
+            "longitude": 14.1353833
+        },
+        "country": "Czech Republic",
+        "timezone": "Europe/Prague",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Prague"
-  }
+    "moderators": [
+        {
+            "name": "Martin Hlav",
+            "url": "https://twitter.com/hlavacm"
+        },
+        {
+            "name": "Honza Lil\u00e1k",
+            "url": "https://twitter.com/honzalilak"
+        },
+        {
+            "name": "\u015feyma",
+            "url": "https://twitter.com/twista"
+        }
+    ],
+    "title": "GDCR17 in TCP\u00edsek",
+    "url": "https://www.meetup.com/CodeRetreat-CZ/events/243880403"
 }

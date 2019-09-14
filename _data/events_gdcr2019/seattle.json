@@ -1,0 +1,36 @@
+{
+    "title": "Seattle Software Crafters - GDCR19",
+    "url": "https://meetup.com/seattle-software-craftsmanship/events/264219649/",
+    "date": {
+        "start": "2019-11-16T09:00:00.000-07:00",
+        "end": "2019-11-16T18:00:00.000-07:00"
+    },
+    "location": {
+        "city": "Seattle",
+        "coordinates": {
+            "latitude": 47.6054765,
+            "longitude": -122.3277882
+        },
+        "country": "United States of America"
+    },
+    "moderators": [
+        {
+            "name": "Steve Kuo",
+            "url": "https://twitter.com/katanation"
+        },
+        {
+            "name": "Paige Watson",
+            "url": "https://twitter.com/paigeisxp"
+        },
+        {
+            "name": "Osman Shoukry",
+            "url": "https://twitter.com/oshoukry"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "CDK Global LLC.",
+            "url": "https://www.cdkglobal.com/"
+        }
+    ]
+}

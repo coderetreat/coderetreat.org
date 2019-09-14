@@ -1,14 +1,26 @@
 {
-  "title": "GDCR17 @MATHEMA in Erlangen",
-  "url": "https://www.mathema.de/veranstaltungen",
-  "location": {
-    "timezone": "Europe/Berlin",
-    "city": "Erlangen",
-    "country": "Germany",
-    "coordinates": {
-      "latitude": 49.5950784,
-      "longitude": 11.0190458
-    }
-  },
-  "moderators": ["@timothep", "@ThomasABertz", "NikoMay"]
+    "location": {
+        "city": "Erlangen",
+        "coordinates": {
+            "latitude": 49.5950784,
+            "longitude": 11.0190458
+        },
+        "country": "Germany",
+        "timezone": "Europe/Berlin"
+    },
+    "moderators": [
+        {
+            "name": "Tim Bourguignon",
+            "url": "https://twitter.com/timothep"
+        },
+        {
+            "name": "Thomas Bertz",
+            "url": "https://twitter.com/ThomasABertz"
+        },
+        {
+            "name": "NikoMay"
+        }
+    ],
+    "title": "GDCR17 @MATHEMA in Erlangen",
+    "url": "https://www.mathema.de/veranstaltungen"
 }

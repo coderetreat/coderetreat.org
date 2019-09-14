@@ -1,17 +1,20 @@
 {
-    "title": "GDCR17 in Munich at Holidu",
-    "url": "https://www.eventbrite.com/e/gdcr17-munich-at-holidu-tickets-39113169543",
-    "moderators": [
-        "@goosebumps4"
-    ],
     "location": {
         "city": "Munich",
-        "country": "Germany",
         "coordinates": {
             "latitude": 48.1788153,
             "longitude": 11.535655
         },
-        "utcOffset": 2,
-        "timezone": "Europe/Berlin"
-    }
+        "country": "Germany",
+        "timezone": "Europe/Berlin",
+        "utcOffset": 2
+    },
+    "moderators": [
+        {
+            "name": "Andrei Bechet",
+            "url": "https://twitter.com/goosebumps4"
+        }
+    ],
+    "title": "GDCR17 in Munich at Holidu",
+    "url": "https://www.eventbrite.com/e/gdcr17-munich-at-holidu-tickets-39113169543"
 }

@@ -1,19 +1,25 @@
 {
-  "title": "GDCR Sydney @ Pivotal Labs",
-  "url": "https://www.meetup.com/PivotalSydney-Tech-Talks/events/244264081/",
-  "moderators": [
-    "Dariusz Lorenc",
-    "Federico Lopez Laborda",
-    "Peter Huynh"
-  ],
-  "location": {
-    "city": "Sydney",
-    "country": "Australia",
-    "coordinates": {
-      "latitude": -33.8679919,
-      "longitude": 151.2049818
+    "location": {
+        "city": "Sydney",
+        "coordinates": {
+            "latitude": -33.8679919,
+            "longitude": 151.2049818
+        },
+        "country": "Australia",
+        "timezone": "Australia/Sydney",
+        "utcOffset": 10
     },
-    "utcOffset": 10,
-    "timezone": "Australia/Sydney"
-  }
+    "moderators": [
+        {
+            "name": "Dariusz Lorenc"
+        },
+        {
+            "name": "Federico Lopez Laborda"
+        },
+        {
+            "name": "Peter Huynh"
+        }
+    ],
+    "title": "GDCR Sydney @ Pivotal Labs",
+    "url": "https://www.meetup.com/PivotalSydney-Tech-Talks/events/244264081/"
 }

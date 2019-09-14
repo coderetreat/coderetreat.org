@@ -3,59 +3,104 @@
   title: GameOfLife
   description: 'It''s written in VBA in #gdcr13 Hangzhou'
   author: Liao-Yuan Zhang
-  views: '134'
   added: Dec 16, 2013
+  type: demo
+  duration: "01:24"
 - youtube: 7opDDBW7JaU
   title: Conways Game of Life on the GPU
   description: This is a great video to show during lunch! Game of life implementation in CUDA. Tips on using CUD…
-  author: Jim Hurne
-  views: '396'
+  author: Ivett Ördög
   added: Dec 7, 2012
+  type: demo
+  duration: "03:54"
 - youtube: a9xAKttWgP4
   title: "Conway's Game Of Life in APL"
   description: This is a great video to show at lunch during a coderetreat!  Click this link for the high resoluti…
-  author: Jim Hurne
-  views: '142'
+  author: DyalgLtd
   added: Dec 7, 2012
+  type: demo
+  duration: "07:47"
 - youtube: KJe9H6qS82I
   title: SmoothLifeL
   description: This is a great video to show during lunch at a coderetreat! SmoothLife is a family of rules creat…
-  author: Jim Hurne
-  views: '128'
+  author: Tim Hutton
   added: Dec 7, 2012
+  type: demo
+  duration: "03:36"
 - youtube: xP5-iIeKXE8
   title: Life in life
   description: "This is a great video to show at a coderetreat during lunch! A video of Conway's Game of Life, emu…"
-  author: Jim Hurne
-  views: '116'
+  author: Phillip Bradbury
   added: Dec 7, 2012
+  type: demo
+  duration: "01:29"
 - youtube: C2vgICfQawE
-  title: Epic conway''s game of life
+  title: Epic conway's game of life
   description: This is a great video to play during lunch at a coderetreat! An epic song for an epic game @ThePok…
-  author: Jim Hurne
-  views: '219'
+  author: Emanuele Ascani
   added: Dec 7, 2012
+  type: demo
+  duration: "06:32"
 - vimeo: '54845248'
-  title: Mixed Constraints - Next Up at Coderetreat
+  title: Mixed Constraints
   description: Up for a challenge? Then let Jesse Wolgamott from Houston, TX, USA introduce three constraints for…
-  author: Jim Hurne
-  views: '100'
+  author: Jesse Wolgamott
   added: Dec 5, 2012
+  type: session
+  duration: "01:04"
 - vimeo: '54845015'
-  title: Code Swap Part 2 - Next Up at Coderetreat
+  title: Code Swap Part 2
   description: Alan Gardner facilitating in Edinburgh, Scotland, UK introduces the second part of Code Swap. Play…
-  author: Jim Hurne
-  views: '116'
+  author: Alan Gardner
   added: Dec 5, 2012
+  type: session
+  duration: "00:53"
 - vimeo: '54829522'
-  title: Code Swap Part 1 - Next Up at Coderetreat
+  title: Code Swap Part 1
   description: Peter Aitken (facilitating in Aberdeen, Scotland, UK), gives us our instructions for the first part…
-  author: Jim Hurne
-  views: '104'
+  author: Peter Aitken
   added: Dec 5, 2012
+  type: session
+  duration: "00:35"
 - vimeo: '54828355'
-  title: No Return Values - Next Up at Coderetreat
+  title: No Return Values
   description: Calling in from Shanghai, China, Joseph Yao lets us know that we cannot use return values in our ne…
-  author: Jim Hurne
-  views: '93'
+  author: Joseph Yao
   added: Dec 5, 2012
+  type: session
+  duration: "00:42"
+- vimeo: 54658144 
+  title: Adversarial Ping Pong
+  description: 
+  author: Mike Gardiner
+  added:  
+  type: session
+  duration: "01:05"
+- vimeo: 54658140
+  title: Mute Ping Pong
+  description: 
+  author: Ray Grasso
+  added:  
+  type: session
+  duration: "00:59"
+- vimeo: 54580988
+  title: Baby Steps
+  description: 
+  author: Toni Tassani
+  added:  
+  type: session
+  duration: "00:38"
+- vimeo: 54580990
+  title: No Conditional Statements
+  description: 
+  author: Manuel Kiessling
+  added:  
+  type: session
+  duration: "00:28"
+- vimeo: 54581232
+  title: Verbs Instead of Nouns
+  description: 
+  author: Miha Filej
+  added:  
+  type: session
+  duration: "00:27"

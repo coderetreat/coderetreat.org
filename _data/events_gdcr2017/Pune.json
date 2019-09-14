@@ -1,20 +1,26 @@
 {
-    "title": "GDCR17 Nelkinda, Pune",
-    "url": "http://nelkinda.com/events/2017/11/18/Global-Day-of-Coderetreat/pune-nelkinda",
-    "moderators": [
-        "@SiddheshNikude"
-    ],
-    "sponsors": [
-        "@nelkinda"
-    ],
     "location": {
         "city": "Pune",
-        "country": "India",
         "coordinates": {
             "latitude": 18.521246,
             "longitude": 73.7764523
         },
-        "utcOffset": 5.5,
-        "timezone": "Asia/Kolkata"
-    }
+        "country": "India",
+        "timezone": "Asia/Kolkata",
+        "utcOffset": 5.5
+    },
+    "moderators": [
+        {
+            "name": "Siddhesh Nikude",
+            "url": "https://twitter.com/SiddheshNikude"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "Nelkinda",
+            "url": "https://twitter.com/nelkinda"
+        }
+    ],
+    "title": "GDCR17 Nelkinda, Pune",
+    "url": "http://nelkinda.com/events/2017/11/18/Global-Day-of-Coderetreat/pune-nelkinda"
 }

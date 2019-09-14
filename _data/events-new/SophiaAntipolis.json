@@ -1,0 +1,17 @@
+{
+  "title": "GDCR18 in Sophia Antipolis",
+  "url": "https://goo.gl/forms/E4lqSPYE9M9Ctp3u2",
+  "moderators": [
+    "@Bureau_du_Code"
+  ],
+  "location": {
+    "city": "Sophia Antipolis",
+    "country": "France",
+    "coordinates": {
+      "latitude": 43.6166482,
+      "longitude": 7.0357542
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Monaco"
+  }
+}
