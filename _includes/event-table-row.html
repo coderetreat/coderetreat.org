@@ -1,0 +1,27 @@
+<td>{{ include.event.date.start | date: "%A" }}</td>
+<td><a href="{{ include.event.url }}">{{ include.event.title }}</a></td>
+<td>
+    {% assign loopCount = include.event.moderators | size | minus: 1 %}
+    <strong>Facilitator{% if loopCount > 0 %}s{% endif %}: </strong>
+    {% for i in (0..loopCount) %}
+    {% assign moderator = include.event.moderators[i] %}
+    {% if moderator.url %}
+    <a href="{{ moderator.url }}">{{ moderator.name }}</a>{% if i != loopCount %}, {% endif %}
+    {% else %}
+    {{ moderator.name }}{% if i != loopCount %}, {% endif %}
+    {% endif %}
+    {% endfor %}
+</td>
+<td>
+    {% assign loopCount = include.event.sponsors | size | minus: 1 %}
+    <strong>Sponsor{% if loopCount > 0 %}s{% endif %}: </strong>
+    {% for i in (0..loopCount) %}
+    {% assign sponsor = include.event.sponsors[i] %}
+    {% if sponsor.url %}
+    <a href="{{ sponsor.url }}">{{ sponsor.name }}</a>{% if i != loopCount %}, {% endif %}
+    {% else %}
+    {{ sponsor.name }}{% if i != loopCount %}, {% endif %}
+    {% endif %}
+    {% endfor %}
+    {% unless include.event.sponsors %}-{% endunless %}
+</td>

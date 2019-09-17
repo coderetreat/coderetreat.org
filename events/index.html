@@ -33,70 +33,22 @@ description: List of events around the world!
     {% for event in virtual_events %}
     <tr data-country="virtual">
         <td>Virtual</td>
-        <td>{{ event.date.start | date: "%A" }}</td>
-        <td><a href="{{ event.url }}">{{ event.title }}</a></td>
-        <td>
-            {% assign loopCount = event.moderators | size | minus: 1 %}
-            {% for i in (0..loopCount) %}
-            {% assign moderator = event.moderators[i] %}
-            {% if moderator.url %}
-            <a href="{{ moderator.url }}">{{ moderator.name }}</a>{% if i != loopCount %}, {% endif %}
-            {% else %}
-            {{ moderator.name }}{% if i != loopCount %}, {% endif %}
-            {% endif %}
-            {% endfor %}
-        </td>
-
-
-        <td>
-            {% assign loopCount = event.sponsors | size | minus: 1 %}
-            {% for i in (0..loopCount) %}
-            {% assign sponsor = event.sponsors[i] %}
-            {% if sponsor.url %}
-            <a href="{{ sponsor.url }}">{{ sponsor.name }}</a>{% if i != loopCount %}, {% endif %}
-            {% else %}
-            {{ sponsor.name }}{% if i != loopCount %}, {% endif %}
-            {% endif %}
-            {% endfor %}
-            {% unless event.sponsors %}-{% endunless %}
-        </td>
+        {% include event-table-row.html event=event %}
     </tr>
     {% endfor %}
     {% assign events = events_with_location | where_exp: 'name', '1' | sort: 'location.city' | sort: 'location.country' %}
     {% for event in events %}
     <tr data-country="{{event.location.country}}">
         <td>{{ event.location.city }}, {{ event.location.country }}</td>
-        <td>{{ event.date.start | date: "%A" }}</td>
-        <td><a href="{{ event.url }}">{{ event.title }}</a></td>
-        <td>
-            {% assign loopCount = event.moderators | size | minus: 1 %}
-            {% for i in (0..loopCount) %}
-            {% assign moderator = event.moderators[i] %}
-            {% if moderator.url %}
-            <a href="{{ moderator.url }}">{{ moderator.name }}</a>{% if i != loopCount %}, {% endif %}
-            {% else %}
-            {{ moderator.name }}{% if i != loopCount %}, {% endif %}
-            {% endif %}
-            {% endfor %}
-        </td>
-
-
-        <td>
-            {% assign loopCount = event.sponsors | size | minus: 1 %}
-            {% for i in (0..loopCount) %}
-            {% assign sponsor = event.sponsors[i] %}
-            {% if sponsor.url %}
-            <a href="{{ sponsor.url }}">{{ sponsor.name }}</a>{% if i != loopCount %}, {% endif %}
-            {% else %}
-            {{ sponsor.name }}{% if i != loopCount %}, {% endif %}
-            {% endif %}
-            {% endfor %}
-            {% unless event.sponsors %}-{% endunless %}
-        </td>
+        {% include event-table-row.html event=event %}
     </tr>
     {% endfor %}
     </tbody>
 </table>
+
+<p class="last-section">
+  <a href="{% link register-event.md %}">Register your event</a>
+</p>
 
 <script>
     $(function () {
