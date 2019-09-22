@@ -2,7 +2,9 @@
   "title": "GDCR 2019 in Münster",
   "url": "https://www.softwerkskammer.org/activities/ms-gdcr-2019",
   "moderators": [
-    "Frank Rehfeldt, Malte Wildt"
+    {
+      "name": "Frank Rehfeldt"
+    }
   ],
   "sponsors": [
     {
