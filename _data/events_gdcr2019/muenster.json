@@ -1,21 +1,8 @@
-General Information
-Title of your event 
-URL 
-Moderators (add row)
-
-Sponsors (add row)
-
-Date
-Start Date (ISO String, e.g. '2019-06-24T21:21:19.781+02:00') End Date (ISO String, e.g. '2019-06-24T21:21:19.781+02:00') 
-Location
-City Country 
-Lat/Long (how to find them) 
-Result
 {
   "title": "GDCR 2019 in Münster",
   "url": "https://www.softwerkskammer.org/activities/ms-gdcr-2019",
   "moderators": [
-    "Frank Rehfeldt"
+    "Frank Rehfeldt, Malte Wildt"
   ],
   "sponsors": [
     {
