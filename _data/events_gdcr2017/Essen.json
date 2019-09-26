@@ -1,18 +1,22 @@
 {
-  "title": "Global Day of Coderetreat 2017 Essen",
-  "url": "https://www.meetup.com/de-DE/JUG-Essen/events/244337551/",
-  "moderators": [
-    "Halil Hancioglu",
-    "Birgit Kratz"
-  ],
-  "location": {
-    "city": "Essen",
-    "country": "Germany",
-    "coordinates": {
-      "latitude": 51.4556366,
-      "longitude": 6.9976476
+    "location": {
+        "city": "Essen",
+        "coordinates": {
+            "latitude": 51.4556366,
+            "longitude": 6.9976476
+        },
+        "country": "Germany",
+        "timezone": "Europe/Berlin",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Berlin"
-  }
+    "moderators": [
+        {
+            "name": "Halil Hancioglu"
+        },
+        {
+            "name": "Birgit Kratz"
+        }
+    ],
+    "title": "Global Day of Coderetreat 2017 Essen",
+    "url": "https://www.meetup.com/de-DE/JUG-Essen/events/244337551/"
 }

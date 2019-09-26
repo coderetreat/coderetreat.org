@@ -1,17 +1,20 @@
 {
-  "title": "Global Day of Code Retreat 2017 - Seattle",
-  "url": "http://bit.ly/gdcr17seattle",
-  "moderators": [
-    "@oshoukry"
-  ],
-  "location": {
-    "city": "Seattle",
-    "country": "United States of America",
-    "coordinates": {
-      "latitude": 47.5971153,
-      "longitude": -122.3285467
+    "location": {
+        "city": "Seattle",
+        "coordinates": {
+            "latitude": 47.5971153,
+            "longitude": -122.3285467
+        },
+        "country": "United States of America",
+        "timezone": "America/Los_Angeles",
+        "utcOffset": -7
     },
-    "utcOffset": -7,
-    "timezone": "America/Los_Angeles"
-  }
+    "moderators": [
+        {
+            "name": "Oz",
+            "url": "https://twitter.com/oshoukry"
+        }
+    ],
+    "title": "Global Day of Code Retreat 2017 - Seattle",
+    "url": "http://bit.ly/gdcr17seattle"
 }

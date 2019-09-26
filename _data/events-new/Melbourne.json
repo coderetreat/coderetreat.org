@@ -1,0 +1,23 @@
+{
+  "title": "#gdcr Melbourne 2018",
+  "url": "https://www.eventbrite.com.au/e/global-day-of-coderetreat-gdcr-melbourne-2018-tickets-45418129849",
+  "moderators": [
+    "@erdbeervogel",
+    "@thelukemccarthy"
+  ],
+  "sponsors": [
+    "@seekjobs",
+    "@thoughtworks",
+    "@REA_Group"
+  ],
+  "location": {
+    "city": "Melbourne",
+    "country": "Australia",
+    "coordinates": {
+      "latitude": -37.846167,
+      "longitude": 144.979726
+    },
+    "utcOffset": 10,
+    "timezone": "Australia/Melbourne"
+  }
+}

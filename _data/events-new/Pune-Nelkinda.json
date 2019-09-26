@@ -1,0 +1,23 @@
+{
+  "title": "GDCR18 Nelkinda / Caring Company / Espressif, Pune",
+  "url": "http://nelkinda.com/events/2018/11/17/Global-Day-of-Coderetreat/Nelkinda/Pune-Nelkinda",
+  "moderators": [
+    "@rkreddykonyala",
+    "@SiddheshNikude",
+    "@ShwetaSadawarte"
+  ],
+  "sponsors": [
+    "Caring Company",
+    "@nelkinda"
+  ],
+  "location": {
+    "city": "Pune",
+    "country": "India",
+    "coordinates": {
+      "latitude": 18.5534022,
+      "longitude": 73.7967793
+    },
+    "utcOffset": 5.5,
+    "timezone": "Asia/Kolkata"
+  }
+}

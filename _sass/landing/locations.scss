@@ -1,0 +1,35 @@
+#locations {
+  .calltoaction {
+    .button {
+      width: 80%;
+      display: inline-block;
+      margin-left: 10%;
+    }
+  }
+  h2 {
+    font-family: 'OrbitronBlack';
+  }
+  .subtitle{
+    font-family: $title-font;
+    font-size: 1.6em;
+    color: $dark;
+    text-align: center;
+    line-height: 1.2em;
+  }
+  #counter {
+    margin: 2.5em;
+  }
+  .countdown {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    color: #1A3238; 
+    text-align: center; 
+  }
+  .countdown .number {
+    font-size: 4em;
+    line-height: 1em; 
+  }
+}

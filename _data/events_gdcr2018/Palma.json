@@ -1,20 +1,26 @@
 {
-  "title": "GDCR18 Mallorca",
-  "url": "https://www.meetup.com/Mallorca-Software-Craftsmanship/",
-  "moderators": [
-    "@scmallorca"
-  ],
-  "sponsors": [
-    "@fdsaprogramacio"
-  ],
-  "location": {
-    "city": "Palma",
-    "country": "Spain",
-    "coordinates": {
-      "latitude": 39.580959,
-      "longitude": 2.649000
+    "location": {
+        "city": "Palma",
+        "coordinates": {
+            "latitude": 39.580959,
+            "longitude": 2.649
+        },
+        "country": "Spain",
+        "timezone": "Europe/Madrid",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Madrid"
-  }
+    "moderators": [
+        {
+            "name": "Mallorca SW Craft",
+            "url": "https://twitter.com/scmallorca"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "FDSA programaci\u00f3n",
+            "url": "https://twitter.com/fdsaprogramacio"
+        }
+    ],
+    "title": "GDCR18 Mallorca",
+    "url": "https://www.meetup.com/Mallorca-Software-Craftsmanship/"
 }

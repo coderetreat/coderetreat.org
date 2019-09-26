@@ -1,18 +1,24 @@
 {
-  "title": "Global Day of Coderetreat 2017",
-  "url": "https://www.meetup.com/de-DE/Software-Craftsmanship-Rhein-Main/events/241598168/",
-  "moderators": [
-    "@svenlange",
-    "@CodeRetreatFfm"
-  ],
-  "location": {
-    "city": "Frankfurt",
-    "country": "Germany",
-    "coordinates": {
-      "latitude": 50.1213475,
-      "longitude": 8.4961386
+    "location": {
+        "city": "Frankfurt",
+        "coordinates": {
+            "latitude": 50.1213475,
+            "longitude": 8.4961386
+        },
+        "country": "Germany",
+        "timezone": "Europe/Berlin",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Berlin"
-  }
+    "moderators": [
+        {
+            "name": "Sven Lange",
+            "url": "https://twitter.com/svenlange"
+        },
+        {
+            "name": "CodeRetreat Rhein-Ma",
+            "url": "https://twitter.com/CodeRetreatFfm"
+        }
+    ],
+    "title": "Global Day of Coderetreat 2017",
+    "url": "https://www.meetup.com/de-DE/Software-Craftsmanship-Rhein-Main/events/241598168/"
 }

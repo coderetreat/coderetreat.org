@@ -1,17 +1,20 @@
 {
-  "title": "JUG Hyderabad GDCR 17",
-  "url": "https://www.meetup.com/jughyderabad/events/244680395",
-  "moderators": [
-    "@prbuddha"
-  ],
-  "location": {
-    "city": "Hyderabad",
-    "country": "India",
-    "coordinates": {
-      "latitude": 17.4276289,
-      "longitude": 78.3313518
+    "location": {
+        "city": "Hyderabad",
+        "coordinates": {
+            "latitude": 17.4276289,
+            "longitude": 78.3313518
+        },
+        "country": "India",
+        "timezone": "Asia/Kolkata",
+        "utcOffset": 5.5
     },
-    "utcOffset": 5.5,
-    "timezone": "Asia/Kolkata"
-  }
+    "moderators": [
+        {
+            "name": "Buddha Jyothiprasad",
+            "url": "https://twitter.com/prbuddha"
+        }
+    ],
+    "title": "JUG Hyderabad GDCR 17",
+    "url": "https://www.meetup.com/jughyderabad/events/244680395"
 }

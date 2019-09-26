@@ -1,17 +1,20 @@
 {
-  "title": "GDCR17 in Brussels",
-  "url": "https://www.eventbrite.ca/e/global-day-code-retreat-in-brussels-tickets-39328399301",
-  "moderators": [
-    "@_toch"
-  ],
-  "location": {
-    "city": "Brussles",
-    "country": "Belgium",
-    "coordinates": {
-      "latitude": 50.8550625,
-      "longitude": 4.3053506
+    "location": {
+        "city": "Brussles",
+        "coordinates": {
+            "latitude": 50.8550625,
+            "longitude": 4.3053506
+        },
+        "country": "Belgium",
+        "timezone": "Europe/Luxembourg",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Luxembourg"
-  }
+    "moderators": [
+        {
+            "name": "Christophe",
+            "url": "https://twitter.com/_toch"
+        }
+    ],
+    "title": "GDCR17 in Brussels",
+    "url": "https://www.eventbrite.ca/e/global-day-code-retreat-in-brussels-tickets-39328399301"
 }

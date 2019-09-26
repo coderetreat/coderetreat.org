@@ -1,18 +1,23 @@
 {
-  "title": "GDCR 17 @ ThoughtWorks London",
-  "url": "https://www.eventbrite.co.uk/e/gdcr-17-at-thoughtworks-london-tickets-39116170519",
-  "moderators": [
-    "@obol8381",
-    "Gergő Takács"
-  ],
-  "location": {
-    "city": "London",
-    "country": "United Kingdom",
-    "coordinates": {
-      "latitude": 51.513109,
-      "longitude": -0.133617
+    "location": {
+        "city": "London",
+        "coordinates": {
+            "latitude": 51.513109,
+            "longitude": -0.133617
+        },
+        "country": "United Kingdom",
+        "timezone": "Europe/London",
+        "utcOffset": 1
     },
-    "utcOffset": 1,
-    "timezone": "Europe/London"
-  }
+    "moderators": [
+        {
+            "name": "Tak\u00e1cs Gerg\u0151",
+            "url": "https://twitter.com/obol8381"
+        },
+        {
+            "name": "Gerg\u0151 Tak\u00e1cs"
+        }
+    ],
+    "title": "GDCR 17 @ ThoughtWorks London",
+    "url": "https://www.eventbrite.co.uk/e/gdcr-17-at-thoughtworks-london-tickets-39116170519"
 }

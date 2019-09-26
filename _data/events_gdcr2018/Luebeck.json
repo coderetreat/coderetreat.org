@@ -1,20 +1,26 @@
 {
-  "title": "GDCR 2018 @ Draeger",
-  "url": "http://meetu.ps/e/FPPgJ/tTkLh/f",
-  "moderators": [
-    "@badbadc0ffee"
-  ],
-  "sponsors": [
-    "@DraegerNews"
-  ],
-  "location": {
-    "city": "Luebeck",
-    "country": "Germany",
-    "coordinates": {
-      "latitude": 53.855961,
-      "longitude": 10.6711248
+    "location": {
+        "city": "Luebeck",
+        "coordinates": {
+            "latitude": 53.855961,
+            "longitude": 10.6711248
+        },
+        "country": "Germany",
+        "timezone": "Europe/Berlin",
+        "utcOffset": 1
     },
-    "utcOffset": 1,
-    "timezone": "Europe/Berlin"
-  }
+    "moderators": [
+        {
+            "name": "Florian \u2615",
+            "url": "https://twitter.com/badbadc0ffee"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "Dr\u00e4ger",
+            "url": "https://twitter.com/DraegerNews"
+        }
+    ],
+    "title": "GDCR 2018 @ Draeger",
+    "url": "http://meetu.ps/e/FPPgJ/tTkLh/f"
 }

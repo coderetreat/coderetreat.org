@@ -1,17 +1,20 @@
 {
-"title": "GDCR17 Ghana",
-  "url": "https://www.eventbrite.com/e/global-day-of-coderetreat-tickets-39180826908",
-  "moderators": [
-    "@eddy_mens"
-  ],
-  "location": {
-    "city": "Accra",
-    "country": "Ghana",
-    "coordinates": {
-      "latitude": 5.6452373,
-      "longitude": -0.1514363
+    "location": {
+        "city": "Accra",
+        "coordinates": {
+            "latitude": 5.6452373,
+            "longitude": -0.1514363
+        },
+        "country": "Ghana",
+        "timezone": "Europe/London",
+        "utcOffset": 1
     },
-    "utcOffset": 1,
-    "timezone": "Europe/London"
-  }
+    "moderators": [
+        {
+            "name": "@eddy_mens",
+            "url": "https://twitter.com/eddy_mens"
+        }
+    ],
+    "title": "GDCR17 Ghana",
+    "url": "https://www.eventbrite.com/e/global-day-of-coderetreat-tickets-39180826908"
 }

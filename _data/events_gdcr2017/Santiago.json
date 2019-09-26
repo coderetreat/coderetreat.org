@@ -1,23 +1,44 @@
 {
-  "title": "GDCR17 in Santiago, Chile",
-  "url": "https://www.meetup.com/preview/Software-Crafters-Chile/events/244512436",
-  "moderators": [
-    "@chile_socrates",
-    "@almanegreteshen",
-    "@taichi2000",
-    "@davidlaym",
-    "@JosephCastroR",
-    "@jchacana",
-    "@morph3o"
-  ],
-  "location": {
-    "city": "Santiago",
-    "country": "Chile",
-    "coordinates": {
-      "latitude": -33.4724727,
-      "longitude": -70.9100286
+    "location": {
+        "city": "Santiago",
+        "coordinates": {
+            "latitude": -33.4724727,
+            "longitude": -70.9100286
+        },
+        "country": "Chile",
+        "timezone": "America/Santiago",
+        "utcOffset": -4
     },
-    "utcOffset": -4,
-    "timezone": "America/Santiago"
-  }
+    "moderators": [
+        {
+            "name": "SoCraTes Chile",
+            "url": "https://twitter.com/chile_socrates"
+        },
+        {
+            "name": "Alma Negrete Shen",
+            "url": "https://twitter.com/almanegreteshen"
+        },
+        {
+            "name": "Germ\u00e1n Gonz\u00e1lez",
+            "url": "https://twitter.com/taichi2000"
+        },
+        {
+            "name": "David Lay",
+            "url": "https://twitter.com/davidlaym"
+        },
+        {
+            "name": "Jos\u00e9 Castro",
+            "url": "https://twitter.com/JosephCastroR"
+        },
+        {
+            "name": "Javier Chacana",
+            "url": "https://twitter.com/jchacana"
+        },
+        {
+            "name": "Piero Divasto",
+            "url": "https://twitter.com/morph3o"
+        }
+    ],
+    "title": "GDCR17 in Santiago, Chile",
+    "url": "https://www.meetup.com/preview/Software-Crafters-Chile/events/244512436"
 }

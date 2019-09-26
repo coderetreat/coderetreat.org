@@ -1,0 +1,17 @@
+{
+  "title": "Global Day of Coderetreat 2018 in Osaka",
+  "url": "https://connpass.com/event/105117/",
+  "moderators": [
+    "@kawakawa"
+  ],
+  "location": {
+    "city": "Osaka",
+    "country": "Japan",
+    "coordinates": {
+      "latitude": 34.7018561,
+      "longitude": 135.5098518
+    },
+    "utcOffset": 9,
+    "timezone": "Asia/Tokyo"
+  }
+}

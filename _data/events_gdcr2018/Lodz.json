@@ -1,21 +1,30 @@
 {
-  "title": "GDCR18 in Lodz",
-  "url": "https://www.meetup.com/Java-User-Group-Lodz/events/255417647/",
-  "moderators": [
-    "@PawelWlodarski",
-    "@PiotrPrzybylak"
-  ],
-  "sponsors": [
-    "@Harman"
-  ],
-  "location": {
-    "city": "Łódź",
-    "country": "Poland",
-    "coordinates": {
-      "latitude": 51.7782253,
-      "longitude": 19.4524516
+    "location": {
+        "city": "\u0141\u00f3d\u017a",
+        "coordinates": {
+            "latitude": 51.7782253,
+            "longitude": 19.4524516
+        },
+        "country": "Poland",
+        "timezone": "Europe/Warsaw",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Warsaw"
-  }
+    "moderators": [
+        {
+            "name": "Pawe\u0142 W\u0142odarski",
+            "url": "https://twitter.com/PawelWlodarski"
+        },
+        {
+            "name": "Piotr Przybylak",
+            "url": "https://twitter.com/PiotrPrzybylak"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "HARMAN",
+            "url": "https://twitter.com/Harman"
+        }
+    ],
+    "title": "GDCR18 in Lodz",
+    "url": "https://www.meetup.com/Java-User-Group-Lodz/events/255417647/"
 }

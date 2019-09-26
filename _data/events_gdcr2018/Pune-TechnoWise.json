@@ -1,21 +1,28 @@
 {
-  "title": "GDCR18 TechnoWise Pune",
-  "url": "https://www.meetup.com/TechnoWise/events/252655936/",
-  "moderators": [
-    "Mayank Dhanawade",
-    "Rajashree Malvade"
-  ],
-  "sponsors": [
-    "@technogise"
-  ],
-  "location": {
-    "city": "Pune",
-    "country": "India",
-    "coordinates": {
-      "latitude": 18.568405,
-      "longitude": 73.909133
+    "location": {
+        "city": "Pune",
+        "coordinates": {
+            "latitude": 18.568405,
+            "longitude": 73.909133
+        },
+        "country": "India",
+        "timezone": "Asia/Kolkata",
+        "utcOffset": 5.5
     },
-    "utcOffset": 5.5,
-    "timezone": "Asia/Kolkata"
-  }
+    "moderators": [
+        {
+            "name": "Mayank Dhanawade"
+        },
+        {
+            "name": "Rajashree Malvade"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "Technogise",
+            "url": "https://twitter.com/technogise"
+        }
+    ],
+    "title": "GDCR18 TechnoWise Pune",
+    "url": "https://www.meetup.com/TechnoWise/events/252655936/"
 }

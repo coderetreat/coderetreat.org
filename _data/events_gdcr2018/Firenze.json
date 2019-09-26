@@ -1,18 +1,24 @@
 {
-    "title": "GDCR18 Firenze",
-    "url": "https://www.meetup.com/it-IT/ALT-AGILE-LEAN-TUSCANY/events/255488183/",
-    "moderators": [
-      "@andreavallotti",
-      "@marcocastellani"
-    ],
     "location": {
-      "city": "Florence",
-      "country": "Italy",
-      "coordinates": {
-        "latitude": 43.7764393,
-        "longitude": 11.2496527
-      },
-      "utcOffset": 2,
-      "timezone": "Europe/Rome"
-    }
-  }
+        "city": "Florence",
+        "coordinates": {
+            "latitude": 43.7764393,
+            "longitude": 11.2496527
+        },
+        "country": "Italy",
+        "timezone": "Europe/Rome",
+        "utcOffset": 2
+    },
+    "moderators": [
+        {
+            "name": "Andrea Vallotti",
+            "url": "https://twitter.com/andreavallotti"
+        },
+        {
+            "name": "Marco Castellani",
+            "url": "https://twitter.com/marcocastellani"
+        }
+    ],
+    "title": "GDCR18 Firenze",
+    "url": "https://www.meetup.com/it-IT/ALT-AGILE-LEAN-TUSCANY/events/255488183/"
+}

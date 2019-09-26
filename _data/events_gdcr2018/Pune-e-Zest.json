@@ -1,22 +1,34 @@
 {
-  "title": "GDCR18 e-Zest, Pune",
-  "url": "https://www.e-zest.com/global-day-of-coderetreat2018",
-  "moderators": [
-    "@bharatikoot",
-    "@SiddheshNikude"
-  ],
-  "sponsors": [
-    "@nelkinda",
-    "@ezest"
-  ],
-  "location": {
-    "city": "Pune",
-    "country": "India",
-    "coordinates": {
-      "latitude": 18.578799,
-      "longitude": 73.7378663
+    "location": {
+        "city": "Pune",
+        "coordinates": {
+            "latitude": 18.578799,
+            "longitude": 73.7378663
+        },
+        "country": "India",
+        "timezone": "Asia/Kolkata",
+        "utcOffset": 5.5
     },
-    "utcOffset": 5.5,
-    "timezone": "Asia/Kolkata"
-  }
+    "moderators": [
+        {
+            "name": "Bharati Bastade Koot",
+            "url": "https://twitter.com/bharatikoot"
+        },
+        {
+            "name": "Christian Hujer",
+            "url": "https://twitter.com/christianhujer"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "Nelkinda",
+            "url": "https://twitter.com/nelkinda"
+        },
+        {
+            "name": "e-Zest Solutions",
+            "url": "https://twitter.com/ezest"
+        }
+    ],
+    "title": "GDCR18 e-Zest, Pune",
+    "url": "https://www.e-zest.com/global-day-of-coderetreat2018"
 }

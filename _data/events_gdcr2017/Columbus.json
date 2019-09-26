@@ -1,17 +1,19 @@
 {
-  "title": "GDCR17 Columbus @ The Forge by Pillar Technology",
-  "url": "http://info.pillartechnology.com/gdcr_pillar_2017_rsvp_ovr",
-  "moderators": [
-    "Mark Holtman (@mholtman)"
-  ],
-  "location": {
-    "city": "Columbus",
-    "country": "United States of America",
-    "coordinates": {
-      "latitude": 39.9746425,
-      "longitude": -82.9998932
+    "location": {
+        "city": "Columbus",
+        "coordinates": {
+            "latitude": 39.9746425,
+            "longitude": -82.9998932
+        },
+        "country": "United States of America",
+        "timezone": "America/New_York",
+        "utcOffset": -4
     },
-    "utcOffset": -4,
-    "timezone": "America/New_York"
-  }
+    "moderators": [
+        {
+            "name": "Mark Holtman (@mholtman)"
+        }
+    ],
+    "title": "GDCR17 Columbus @ The Forge by Pillar Technology",
+    "url": "http://info.pillartechnology.com/gdcr_pillar_2017_rsvp_ovr"
 }

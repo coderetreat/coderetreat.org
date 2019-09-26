@@ -1,20 +1,32 @@
 {
-    "title": "GDCR18 in Dublin",
-    "url": "https://www.meetup.com/Dublin-Software-Crafters/events/255174388/",
-    "moderators": [
-      "@pclavijo",
-      "@gabrielmoral",
-      "@DublinSwCraft",
-      "@CorkSwCraft"
-    ],
     "location": {
-      "city": "Dublin",
-      "country": "Ireland",
-      "coordinates": {
-        "latitude": 53.3244431,
-        "longitude": -6.3857867
-      },
-      "utcOffset": 1,
-      "timezone": "Europe/Dublin"
-    }
-  }
+        "city": "Dublin",
+        "coordinates": {
+            "latitude": 53.3244431,
+            "longitude": -6.3857867
+        },
+        "country": "Ireland",
+        "timezone": "Europe/Dublin",
+        "utcOffset": 1
+    },
+    "moderators": [
+        {
+            "name": "Paulo Clavijo",
+            "url": "https://twitter.com/pclavijo"
+        },
+        {
+            "name": "Gabriel Moral",
+            "url": "https://twitter.com/gabrielmoral"
+        },
+        {
+            "name": "Dublin Software Crafters",
+            "url": "https://twitter.com/DublinSwCraft"
+        },
+        {
+            "name": "Cork Software Craft",
+            "url": "https://twitter.com/CorkSwCraft"
+        }
+    ],
+    "title": "GDCR18 in Dublin",
+    "url": "https://www.meetup.com/Dublin-Software-Crafters/events/255174388/"
+}

@@ -1,20 +1,28 @@
 {
-  "title": "Istanbul JUG Coderetreat Etkinligi 2017",
-  "url": "https://www.meetup.com/Istanbul-Java-User-Group/events/240575967/",
-  "moderators": [
-    "Gökalp Gürbüzer",
-    "Taner Diler",
-    "Altug Bilgin Altintas",
-    "Taylan Kurt"
-  ],
-  "location": {
-    "city": "Istanbul",
-    "country": "Turkey",
-    "coordinates": {
-      "latitude": 41.0427111,
-      "longitude": 29.0069467
+    "location": {
+        "city": "Istanbul",
+        "coordinates": {
+            "latitude": 41.0427111,
+            "longitude": 29.0069467
+        },
+        "country": "Turkey",
+        "timezone": "Europe/Istanbul",
+        "utcOffset": 3
     },
-    "utcOffset": 3,
-    "timezone": "Europe/Istanbul"
-  }
+    "moderators": [
+        {
+            "name": "G\u00f6kalp G\u00fcrb\u00fczer"
+        },
+        {
+            "name": "Taner Diler"
+        },
+        {
+            "name": "Altug Bilgin Altintas"
+        },
+        {
+            "name": "Taylan Kurt"
+        }
+    ],
+    "title": "Istanbul JUG Coderetreat Etkinligi 2017",
+    "url": "https://www.meetup.com/Istanbul-Java-User-Group/events/240575967/"
 }

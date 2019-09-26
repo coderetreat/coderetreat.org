@@ -1,19 +1,28 @@
 {
-  "title": "GDCR18 @Codurance London",
-  "url": "https://www.meetup.com/london-software-craftsmanship/events/255548337",
-  "moderators": [
-    "@yefoakira",
-    "@alfredodev",
-    "@rovout"
-  ],
-  "location": {
-    "city": "London",
-    "country": "United Kingdom",
-    "coordinates": {
-      "latitude": 51.524022,
-      "longitude": -0.100429
+    "location": {
+        "city": "London",
+        "coordinates": {
+            "latitude": 51.524022,
+            "longitude": -0.100429
+        },
+        "country": "United Kingdom",
+        "timezone": "Europe/London",
+        "utcOffset": 1
     },
-    "utcOffset": 1,
-    "timezone": "Europe/London"
-  }
+    "moderators": [
+        {
+            "name": "Jorge Gueorguiev",
+            "url": "https://twitter.com/yefoakira"
+        },
+        {
+            "name": "Alfredo Fern\u00e1ndez",
+            "url": "https://twitter.com/alfredodev"
+        },
+        {
+            "name": "@rovout",
+            "url": "https://twitter.com/rovout"
+        }
+    ],
+    "title": "GDCR18 @Codurance London",
+    "url": "https://www.meetup.com/london-software-craftsmanship/events/255548337"
 }

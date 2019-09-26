@@ -1,3 +1,6 @@
+.format {
+  padding-top: 0.1em;
+}
 .format-background {
   background-image: url("/images/GOL.svg");
   background-attachment: fixed;
@@ -6,7 +9,7 @@
 }
 .format .step {
   @include span-columns(3 of 12);
-  margin-top: $gutter;
+  margin-bottom: $gutter;
   background-color: $light;
   opacity: 0.9;
   color: $dark;

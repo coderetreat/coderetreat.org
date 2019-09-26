@@ -1,18 +1,24 @@
 {
-  "title": "GDCR2018 Pittsburgh",
-  "url": "https://www.meetup.com/Pittsburgh-Code-Supply/events/253736933/",
-  "moderators": [
-    "@colindean",
-    "@justinreese"
-  ],
-  "location": {
-    "city": "Pittsburgh",
-    "country": "United States of America",
-    "coordinates": {
-      "latitude": 40.4599756,
-      "longitude": -79.9308717
+    "location": {
+        "city": "Pittsburgh",
+        "coordinates": {
+            "latitude": 40.4599756,
+            "longitude": -79.9308717
+        },
+        "country": "United States of America",
+        "timezone": "America/New_York",
+        "utcOffset": -4
     },
-    "utcOffset": -4,
-    "timezone": "America/New_York"
-  }
+    "moderators": [
+        {
+            "name": "Colin Dean",
+            "url": "https://twitter.com/colindean"
+        },
+        {
+            "name": "Justin Reese",
+            "url": "https://twitter.com/justinreese"
+        }
+    ],
+    "title": "GDCR2018 Pittsburgh",
+    "url": "https://www.meetup.com/Pittsburgh-Code-Supply/events/253736933/"
 }

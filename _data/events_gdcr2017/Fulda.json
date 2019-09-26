@@ -1,19 +1,22 @@
 {
-  "title": "Global Day of Coderetreat 2017 Fulda",
-  "url": "https://beta.doodle.com/poll/eng47rzzqzchdsnc",
-  "moderators": [
-    "Thomas Papendieck",
-    "Dr. Martine Herpers (@computera42)"
-  ],
-  "location": {
-    "city": "Fulda",
-    "country": "Germany",
-    "coordinates": {
-      "latitude": 50.56522,
-      "longitude": 9.68457
+    "location": {
+        "city": "Fulda",
+        "coordinates": {
+            "latitude": 50.56522,
+            "longitude": 9.68457
+        },
+        "country": "Germany",
+        "timezone": "Europe/Berlin",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Berlin"
-  }
+    "moderators": [
+        {
+            "name": "Thomas Papendieck"
+        },
+        {
+            "name": "Dr. Martine Herpers (@computera42)"
+        }
+    ],
+    "title": "Global Day of Coderetreat 2017 Fulda",
+    "url": "https://beta.doodle.com/poll/eng47rzzqzchdsnc"
 }
-

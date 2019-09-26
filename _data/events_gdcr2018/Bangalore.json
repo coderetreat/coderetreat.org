@@ -1,18 +1,23 @@
 {
-  "title": "GDCR@ExpertTalks",
-  "url": "https://www.meetup.com/Experttalks-bengaluru/",
-  "moderators": [
-    "@vbhagath",
-    "Prathap Reddy"
-  ],
-  "location": {
-    "city": "Bangalore",
-    "country": "India",
-    "coordinates": {
-      "latitude": 12.9564548,
-      "longitude": 77.6394432
+    "location": {
+        "city": "Bangalore",
+        "coordinates": {
+            "latitude": 12.9564548,
+            "longitude": 77.6394432
+        },
+        "country": "India",
+        "timezone": "Asia/Kolkata",
+        "utcOffset": 5.5
     },
-    "utcOffset": 5.5,
-    "timezone": "Asia/Kolkata"
-  }
+    "moderators": [
+        {
+            "name": "Vishwas",
+            "url": "https://twitter.com/vbhagath"
+        },
+        {
+            "name": "Prathap Reddy"
+        }
+    ],
+    "title": "GDCR@ExpertTalks",
+    "url": "https://www.meetup.com/Experttalks-bengaluru/"
 }

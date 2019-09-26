@@ -1,4 +1,4 @@
-$navbar-height: 3*$gutter;
+$navbar-height: 2.5*$gutter;
 $navbar-padding: $gutter/2;
 
 .container {
@@ -28,7 +28,6 @@ $navbar-padding: $gutter/2;
     text-align: left;
     flex-grow: 1;
   }
-  .logo img { max-height: $navbar-height - 2*$navbar-padding; }
   button {
     display: none;
   }
@@ -53,18 +52,6 @@ $navbar-padding: $gutter/2;
   }
 }
 
-.social-media-links {
-  display: flex;
-  flex-grow: 2;
-  div {
-    flex-grow: 1;
-  }
-  a {
-    display: inline-block;
-    max-width: 100px;
-  }
-}
-
 @media only screen and (max-width: 1280px) {
   .navbar-inner {
     display: block;
@@ -76,16 +63,6 @@ $navbar-padding: $gutter/2;
   .nav-links {
     a {
       margin-top: -5px;
-    }
-  }
-  .social-media-links {
-    text-align: right;
-    width: 400px;
-    position: absolute;
-    right: 100px;
-    margin-top: -10px;
-    a {
-      max-width: none;
     }
   }
 }
@@ -125,11 +102,11 @@ $navbar-padding: $gutter/2;
     span {
       display: block;
       position: absolute;
-      top: 35px;
+      top: 28px;
       left: 18px;
       right: 18px;
       height: 5px;
-      background: $green;
+      background: $logo-blue;
       transition: transform 0.3s;
       &::before, &::after {
         position: absolute;
@@ -137,7 +114,7 @@ $navbar-padding: $gutter/2;
         left: 0;
         width: 100%;
         height: 5px;
-        background-color: $green;
+        background-color: $logo-blue;
         content: "";
       }
       &::before {
@@ -164,7 +141,7 @@ $navbar-padding: $gutter/2;
       background-color: $light;
       padding-left: 10px;
       font-size: 20px;
-      margin-top: 60px;
+      margin-top: 45px;
       padding-top: 15px;
       width: 489px;
       a:last-child {
@@ -176,30 +153,11 @@ $navbar-padding: $gutter/2;
   .navbar-inner {
     display: flex;
   }
-
-  .social-media-links {
-    width: 300px;
-    right: 150px;
-    margin-top: 0;
-    display: flex;
-    flex-grow: 2;
-    div {
-      flex-grow: 1;
-    }
-    a {
-      display: inline-block;
-      max-width: 100px;
-    }
-  }
 }
 
 @media only screen and (max-width: 700px) {
   .navbar {
     font-size: 15px;
-  }
-
-  .social-media-links {
-    display: none;
   }
 
   .menu-word {

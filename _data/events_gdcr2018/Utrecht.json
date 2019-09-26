@@ -1,22 +1,33 @@
 {
-  "title": "Global Day of Code Retreat - Utrecht 2018",
-  "url": "https://www.meetup.com/Utrecht-Java-User-Group/events/248206538/",
-  "moderators": [
-    "@ThodorisBais",
-    "Joost Baas",
-    "@abannany"
-  ],
-  "sponsors": [
-   "@CodeSquadNL"
-  ],
-  "location": {
-    "city": "Utrecht",
-    "country": "Netherlands",
-    "coordinates": {
-      "latitude": 52.0907,
-      "longitude": 5.1214
+    "location": {
+        "city": "Utrecht",
+        "coordinates": {
+            "latitude": 52.0907,
+            "longitude": 5.1214
+        },
+        "country": "Netherlands",
+        "timezone": "Europe/Amsterdam",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Amsterdam"
-  }
+    "moderators": [
+        {
+            "name": "Thodoris Bais",
+            "url": "https://twitter.com/ThodorisBais"
+        },
+        {
+            "name": "Joost Baas"
+        },
+        {
+            "name": "abannany",
+            "url": "https://twitter.com/abannany"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "CodeSquad",
+            "url": "https://twitter.com/CodeSquadNL"
+        }
+    ],
+    "title": "Global Day of Code Retreat - Utrecht 2018",
+    "url": "https://www.meetup.com/Utrecht-Java-User-Group/events/248206538/"
 }

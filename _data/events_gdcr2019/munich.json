@@ -1,0 +1,28 @@
+{
+  "title": "GDCR 2019 Munich @ThoughtWorks",
+  "url": "https://www.meetup.com/ThoughtWorks-Muenchen/events/263577205/",
+  "moderators": [
+    {
+      "name": "Andrei Bechet",
+      "url": "https://twitter.com/goosebumps4"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "ThoughtWorks",
+      "url": "https://www.thoughtworks.com/locations/munich"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T09:00:00+01:00",
+    "end": "2019-11-16T17:00:00+01:00"
+  },
+  "location": {
+    "city": "Munich",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 48.1354303,
+      "longitude": 11.6136201
+    }
+  }
+}

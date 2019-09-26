@@ -1,13 +1,13 @@
 {
-  "title": "HackCamp (with Coderetreat!)",
-  "url": "https://hacktalk.de",
-  "location": {
-    "city": "Braunschweig",
-    "country": "Germany",
-    "coordinates": {
-      "latitude": 52.2784933,
-      "longitude": 10.5226413
+    "location": {
+        "city": "Braunschweig",
+        "coordinates": {
+            "latitude": 52.2784933,
+            "longitude": 10.5226413
+        },
+        "country": "Germany",
+        "timezone": "Europe/Berlin"
     },
-    "timezone": "Europe/Berlin"
-  }
+    "title": "HackCamp (with Coderetreat!)",
+    "url": "https://hacktalk.de"
 }

@@ -1,16 +1,19 @@
 {
-  "title": "GDCR17 in Vilnius",
-  "url": "http://global-day-of-coderetreat-vilnius-2017.eventbrite.com",
-  "moderators": [
-    "@ogrigas"
-  ],
-  "location": {
-    "city": "Vilnius",
-    "country": "Lithuania",
-    "coordinates": {
-    	"latitude": 54.687157,
-    	"longitude": 25.279652
+    "location": {
+        "city": "Vilnius",
+        "coordinates": {
+            "latitude": 54.687157,
+            "longitude": 25.279652
+        },
+        "country": "Lithuania",
+        "timezone": "Europe/Vilnius"
     },
-    "timezone": "Europe/Vilnius"
-  }
+    "moderators": [
+        {
+            "name": "Osvaldas Grigas",
+            "url": "https://twitter.com/ogrigas"
+        }
+    ],
+    "title": "GDCR17 in Vilnius",
+    "url": "http://global-day-of-coderetreat-vilnius-2017.eventbrite.com"
 }

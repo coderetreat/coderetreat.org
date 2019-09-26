@@ -1,0 +1,31 @@
+{
+    "title": "GDCR 2019 in Colorado Springs",
+    "url": "https://www.eventbrite.com/e/global-day-of-coderetreat-colorado-springs-tickets-72544898745",
+    "moderators": [
+      {
+        "name": "Paul Borlin",
+        "url": "https://www.linkedin.com/in/paulborlin/"
+      },
+      {
+        "name": "Colby Gooding"
+      }
+    ],
+    "sponsors": [
+      {
+        "name": "Compassion International",
+        "url": "https://www.compassion.com/"
+      }
+    ],
+    "date": {
+      "start": "2019-11-16T08:30:00.000-07:00",
+      "end": "2019-11-16T17:00:00.000-07:00"
+    },
+    "location": {
+      "city": "Colorado Springs",
+      "country": "United States of America",
+      "coordinates": {
+        "latitude": 39.008868,
+        "longitude": -104.808389
+      }
+    }
+  }

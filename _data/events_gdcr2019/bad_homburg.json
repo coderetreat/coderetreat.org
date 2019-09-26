@@ -1,0 +1,27 @@
+{
+  "title": "GDCR 2019 in Bad Homburg vor der Höhe",
+  "url": "https://www.meetup.com/de-DE/OC-Expert-Camp-Bad-Homburg/events/264129740/",
+  "moderators": [
+    {
+      "name": "Thomas Papendieck",
+      "url": "https://github.com/tpd-opitz"
+    }],
+  "sponsors": [
+    {
+      "name": "OPITZ CONSULTING GmbH Deutschland",
+      "url": "https://www.opitz-consulting.com"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T09:00:00+01:00",
+    "end": "2019-11-16T17:00:00+01:00"
+  },
+  "location": {
+    "city": "Bad Homburg vor der Höhe",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 50.21136,
+      "longitude": 8.65348
+    }
+  }
+}

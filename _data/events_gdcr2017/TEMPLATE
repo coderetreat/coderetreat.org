@@ -1,15 +1,24 @@
 {
-  "title": "GDCR17 in Berlin",
-  "url": "https://www.meetup.com/Software-Craftsmanship-Berlin/",
-  "location": {
-    "utcOffset": 2,
-    "timezone": "Europe/Berlin",
-    "city": "Berlin",
-    "country": "Germany",
-    "coordinates": {
-      "latitude": 52.5250871,
-      "longitude": 13.3672133
-    }
-  },
-  "moderators": ["@moderator1", "@moderator2"]
+    "location": {
+        "city": "Berlin",
+        "coordinates": {
+            "latitude": 52.5250871,
+            "longitude": 13.3672133
+        },
+        "country": "Germany",
+        "timezone": "Europe/Berlin",
+        "utcOffset": 2
+    },
+    "moderators": [
+        {
+            "name": "Super Vegas Slots",
+            "url": "https://twitter.com/moderator1"
+        },
+        {
+            "name": "Moderator",
+            "url": "https://twitter.com/moderator2"
+        }
+    ],
+    "title": "GDCR17 in Berlin",
+    "url": "https://www.meetup.com/Software-Craftsmanship-Berlin/"
 }

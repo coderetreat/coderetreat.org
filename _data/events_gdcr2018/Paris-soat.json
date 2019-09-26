@@ -1,21 +1,30 @@
 {
-  "title": "GDCR18 at SOAT in Paris",
-  "url": "https://www.meetup.com/paris-software-craftsmanship/events/255446863/",
-  "moderators": [
-    "@michelle_avomo",
-    "@XDetant"
-  ],
-  "sponsors": [
-    "@SoatGroup"
-  ],
-  "location": {
-    "city": "Paris",
-    "country": "France",
-    "coordinates": {
-      "latitude": 48.8639164,
-      "longitude": 2.3390189
+    "location": {
+        "city": "Paris",
+        "coordinates": {
+            "latitude": 48.8639164,
+            "longitude": 2.3390189
+        },
+        "country": "France",
+        "timezone": "Europe/Paris",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Paris"
-  }
+    "moderators": [
+        {
+            "name": "Michelle",
+            "url": "https://twitter.com/michelle_avomo"
+        },
+        {
+            "name": "Xavier Detant",
+            "url": "https://twitter.com/XDetant"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "SOAT",
+            "url": "https://twitter.com/SoatGroup"
+        }
+    ],
+    "title": "GDCR18 at SOAT in Paris",
+    "url": "https://www.meetup.com/paris-software-craftsmanship/events/255446863/"
 }
