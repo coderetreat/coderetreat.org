@@ -2,10 +2,10 @@
   "title": "GDCR 2019 in Erlangen",
   "url": "https://www.methodpark.com/events-details/global-day-of-coderetreat-in-erlangen-in-november-2019-707.html",
   "moderators": [
-    "Christian Hoffmann",
-    "Florian Bauer",
-    "Michael Gerh\u00e4user",
-    "Stefan Clepce"
+    { "name": "Christian Hoffmann" },
+    { "name": "Florian Bauer" },
+    { "name": "Michael Gerh\\u00e4user" },
+    { "name": "Stefan Clepce" }
   ],
   "sponsors": [
     {
