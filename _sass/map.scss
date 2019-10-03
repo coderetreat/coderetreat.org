@@ -39,6 +39,10 @@ $map-border: $gutter*8;
   display: none;
 }
 
+.ol-viewport {
+  overflow: unset !important;
+}
+
 .ol-viewport .ol-unselectable {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
