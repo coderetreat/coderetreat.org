@@ -1,0 +1,32 @@
+{
+  "title": "GDCR 2019 in Prague",
+  "url": "https://www.meetup.com/CodeRetreat-CZ/events/265154359/",
+  "moderators": [
+    {
+      "name": "Jaroslav Holan",
+      "url": "https://github.com/JaroslavHolan"
+    },
+    {
+      "name": "Dominik Mostek",
+      "url": "https://github.com/DominikMostek"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Zonky",
+      "url": "https://github.com/zonkyio"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T09:00:00+01:00",
+    "end": "2019-11-16T18:00:00+01:00"
+  },
+  "location": {
+    "city": "Prague",
+    "country": "Czech Republic",
+    "coordinates": {
+      "latitude": 50.0894207,
+      "longitude": 14.339685
+    }
+  }
+}

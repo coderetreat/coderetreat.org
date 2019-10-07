@@ -1,0 +1,32 @@
+{
+  "title": "GDCR2019 @ Ticino Software Craftsmanship",
+  "url": "https://gdcr-ticino.fordev.events/event/2019",
+  "moderators": [
+    {
+      "name": "Carlo Corti",
+      "url": "https://twitter.com/araknoid"
+    },
+    {
+      "name": "Mario Pio Gioiosa",
+      "url": "https://twitter.com/mariopiogioiosa"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "lastminute.com",
+      "url": "https://lmgroup.lastminute.com"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T09:00:00.000+02:00",
+    "end": "2019-11-16T17:00:00.000+02:00"
+  },
+  "location": {
+    "city": "Chiasso",
+    "country": "Switzerland",
+    "coordinates": {
+      "latitude": 45.8358475,
+      "longitude": 9.0262319
+    }
+  }
+}

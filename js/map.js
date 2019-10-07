@@ -207,7 +207,7 @@ $(function() {
       popup.setPosition(coord);
       $(popupElem).popover({
         animation: false,
-        placement: "top",
+        placement: "auto",
         html: true,
         content: content
       });

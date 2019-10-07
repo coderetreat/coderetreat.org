@@ -1,0 +1,44 @@
+{
+  "title": "Global Day of Coderetreat 2019 in #tddyyχ",
+  "url": "https://tddyyx.connpass.com/event/148920/",
+  "moderators": [
+    {
+      "name": "yota",
+      "url": "https://twitter.com/y0t4"
+    },
+    {
+      "name": "miholovesq",
+      "url": "https://twitter.com/miholovesq"
+    },
+    {
+      "name": "ug23_",
+      "url": "https://twitter.com/ug23_"
+    },
+    {
+      "name": "yudmo",
+      "url": "https://twitter.com/yudmo_"
+    },
+    {
+      "name": "shuyuhey",
+      "url": "https://twitter.com/shuyuhey"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Attractor Inc.",
+      "url": "https://www.attractor.co.jp/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T09:00:00.000+09:00",
+    "end": "2019-11-16T18:00:00.000+09:00"
+  },
+  "location": {
+    "city": "Akihabara",
+    "country": "Japan",
+    "coordinates": {
+      "latitude": 35.6992563,
+      "longitude": 139.769964
+    }
+  }
+}
