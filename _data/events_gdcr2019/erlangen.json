@@ -1,0 +1,28 @@
+{
+  "title": "GDCR 2019 in Erlangen",
+  "url": "https://www.softwerkskammer.org/activities/gdcr2019-erlangen",
+  "moderators": [
+    { "name": "Christian Hoffmann" },
+    { "name": "Florian Bauer" },
+    { "name": "Michael Gerhäuser" },
+    { "name": "Stefan Clepce" }
+  ],
+  "sponsors": [
+    {
+      "name": "Method Park",
+      "url": "https://www.methodpark.com"
+    }
+  ],
+  "date": {
+    "start": "2019-11-15T09:00:00+01:00",
+    "end": "2019-11-15T16:30:00+01:00"
+  },
+  "location": {
+    "city": "Erlangen",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 49.5443412,
+      "longitude": 11.020604
+    }
+  }
+}
