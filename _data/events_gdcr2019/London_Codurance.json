@@ -1,0 +1,30 @@
+{
+  "title": "GDCR19 in London (@Codurance)",
+  "url": "https://www.meetup.com/london-software-craftsmanship/events/265499324/",
+  "moderators": [
+      {
+          "name": "Christina Ripley-Gonzalez"
+      },
+      {
+          "name": "Jorge Gueorguiev Garcia"
+      }
+  ],
+  "sponsors": [
+    {
+      "name": "Codurance",
+      "url": "codurance.com"
+    }
+  ],
+  "date": {
+    "start": "2019-11-15T08:00:00+00:00",
+    "end": "2019-11-15T18:00:00+00:00"
+  },
+  "location": {
+    "city": "London",
+    "country": "United Kingdom",
+    "coordinates": {
+      "latitude": 51.5228414,
+      "longitude": -0.1015757
+    }
+  }
+}
