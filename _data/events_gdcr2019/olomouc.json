@@ -1,0 +1,32 @@
+{
+  "title": "GDCR 2019 in Olomouc",
+  "url": "https://www.meetup.com/CodeRetreat-CZ/events/265313497/",
+  "moderators": [
+    {
+      "name": "Tomas Latal",
+      "url": "https://twitter.com/TomasLatal"
+    },
+    {
+      "name": "Dalibor Florian",
+      "url": "https://twitter.com/mcbigcz"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Quadient",
+      "url": "http://quadient.cz/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T09:00:00+01:00",
+    "end": "2019-11-16T18:00:00+01:00"
+  },
+  "location": {
+    "city": "Olomouc",
+    "country": "Czech Republic",
+    "coordinates": {
+      "latitude": 49.590796,
+      "longitude": 17.267403
+    }
+  }
+}

@@ -5,6 +5,9 @@
       {
         "name": "Paul Borlin",
         "url": "https://www.linkedin.com/in/paulborlin/"
+      },
+      {
+        "name": "Colby Gooding"
       }
     ],
     "sponsors": [
@@ -21,8 +24,8 @@
       "city": "Colorado Springs",
       "country": "United States of America",
       "coordinates": {
-        "latitude": 39.007576,
-        "longitude": -104.81878
+        "latitude": 39.008868,
+        "longitude": -104.808389
       }
     }
   }

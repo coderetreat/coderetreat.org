@@ -1,0 +1,28 @@
+{
+  "title": "GDCR Poznan",
+  "url": "https://gskit.pl/aktualnosci/GSKIT-Coderetreat2019.html",
+  "moderators": [
+    {
+      "name": "Piotr Sionkowski",
+      "url": "https://pl.linkedin.com/in/piotr-sionkowski-355a8b87"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "GSK",
+      "url": "https://gskit.pl/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T09:00:00+02:00",
+    "end": "2019-11-16T17:00:00+02:00"
+  },
+  "location": {
+    "city": "Poznan",
+    "country": "Poland",
+    "coordinates": {
+      "longitude": 16.8617055,
+      "latitude": 52.4090972
+    }
+  }
+}
