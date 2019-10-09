@@ -2,7 +2,10 @@
   "title": "GDCR 2019 in Bordesholm DIVIS ",
   "url": "https://www.meetup.com/DIVIS-Events/events/265473487",
   "moderators": [
-    "Florian Hohnsbehn"
+    {
+      "name": "Florian Hohnsbehn",
+      "url": "https://twitter.com/captainGut"
+    }
   ],
   "sponsors": [
     {
