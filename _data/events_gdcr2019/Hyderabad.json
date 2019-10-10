@@ -2,16 +2,16 @@
   "title": "Global Day of Coderetreat 2019 @ EPAM Systems Hyderabad",
   "url": "https://community-z.com/events/X8SPZAjT9x",
   "moderators": [
-    "Murali Rudraraju",
-    "Varma Datla",
-    "Bharath Kandukuri",
-    "Vedantham Ram",
-    "Vipul Gupta",
-    "Sandeep Joshi",
-    "Sameena Ali"
-  ],
+{
+            "name": "Bharath Kandukuri",
+            "url": "https://www.linkedin.com/in/bharath-raj-kandukuri-ab642147"
+        }],
   "sponsors": [
-    "EPAM Systems"
+{
+      "name": "EPAM Systems, Hyderabad",
+      "url": "https://github.com/EpamIndia-CodeRetreat"
+    }
+    
   ],
   "date": {
     "start": "2019-11-16T09:00:00.000+05:30",
@@ -26,3 +26,4 @@
     }
   }
 }
+
