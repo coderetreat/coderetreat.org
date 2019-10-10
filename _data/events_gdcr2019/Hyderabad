@@ -1,0 +1,27 @@
+{
+  "title": "Global Day of Coderetreat 2019 @ EPAM Systems Hyderabad",
+  "url": "https://community-z.com/events/X8SPZAjT9x",
+  "moderators": [
+    "Murali Rudraraju",
+    "Varma Datla",
+    "Bharath Kandukuri",
+    "Vedantham Ram",
+    "Vipul Gupta"
+  ],
+  "sponsors": [
+    "Sandeep Joshi",
+    "Sameena Ali"
+  ],
+  "date": {
+    "start": "2019-11-16T09:00:00.000+05:30",
+    "end": "2019-11-16T18:00:00.000+05:30"
+  },
+  "location": {
+    "city": "Hyderabad",
+    "country": "India",
+    "coordinates": {
+      "latitude": 17.385044,
+      "longitude": 78.486671
+    }
+  }
+}
