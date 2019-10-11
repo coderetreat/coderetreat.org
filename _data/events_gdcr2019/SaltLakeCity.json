@@ -2,9 +2,15 @@
   "title": "GDCR 2019 Salt Lake City",
   "url": "https://www.eventbrite.com/e/global-day-of-coderetreat-slc-tickets-76456528535",
   "moderators": [
-    "Neil Sorensen",
-    "Dave Adsit",
-    "Mike Christian"
+    {
+      "name": "Neil Sorensen"
+    },
+    {
+      "name": "Dave Adsit"
+    },
+    {
+      "name": "Mike Christian"
+    }
   ],
   "sponsors": [
     {
