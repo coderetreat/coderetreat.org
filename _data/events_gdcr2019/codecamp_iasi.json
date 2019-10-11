@@ -1,0 +1,32 @@
+{
+  "title": "Coderetreat at Codecamp Iasi",
+  "url": "https://www.meetup.com/Iasi-Software-Craftsmanship-Community/events/264424459",
+  "moderators": [
+    {
+      "name": "Gabriel Enea",
+      "url": ""
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Codecamp",
+      "url": ""
+    },
+    {
+      "name": "Software Craftsmanship Community",
+      "url": ""
+    }
+  ],
+  "date": {
+    "start": "2019-10-26T10:00:00.000Z",
+    "end": "2019-10-26T14:30:00.000Z"
+  },
+  "location": {
+    "city": "Iasi",
+    "country": "Romania",
+    "coordinates": {
+      "latitude": 47.156116,
+      "longitude": 27.5169307
+    }
+  }
+}

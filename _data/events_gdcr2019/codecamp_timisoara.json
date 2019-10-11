@@ -1,0 +1,28 @@
+{
+  "title": "Coderetreat at Codecamp Timisoara",
+  "url": "https://www.eventbrite.com/e/coderetreat-codecamp-timisoara-19-octombrie-2019-tickets-71340265655",
+  "moderators": [
+    {
+      "name": "Florin Coros",
+      "url": ""
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Codecamp",
+      "url": ""
+    }
+  ],
+  "date": {
+    "start": "2019-10-19T08:00:00.000Z",
+    "end": "2019-10-19T14:00:00.000Z"
+  },
+  "location": {
+    "city": "Timisoara",
+    "country": "Romania",
+    "coordinates": {
+      "latitude": 45.75602,
+      "longitude": 21.228371
+    }
+  }
+}
