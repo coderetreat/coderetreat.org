@@ -1,0 +1,27 @@
+{
+  "title": "Coderetreat at Codecamp Cluj-Napoca",
+  "url": "https://www.eventbrite.com/e/coderetreat-codecamp-cluj-napoca-30-november-2019-tickets-71341900545",
+  "moderators": [
+    {
+      "name": "Iulian Dogariu"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Codecamp",
+      "url": "https://codecamp.ro/cluj"
+    }
+  ],
+  "date": {
+    "start": "2019-11-30T08:00:00.000+02:00",
+    "end": "2019-11-30T14:00:00.000+02:00"
+  },
+  "location": {
+    "city": "Cluj-Napoca",
+    "country": "Romania",
+    "coordinates": {
+      "latitude": 46.7833643,
+      "longitude": 23.5464727
+    }
+  }
+}
