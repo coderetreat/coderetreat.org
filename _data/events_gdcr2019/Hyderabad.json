@@ -5,7 +5,16 @@
 {
             "name": "Bharath Kandukuri",
             "url": "https://www.linkedin.com/in/bharath-raj-kandukuri-ab642147"
-        }],
+        },
+    {
+            "name": "Sandeep Joshi"
+            
+        },
+    {
+            "name": "Sameena Ali"
+            
+        }  
+  ],
   "sponsors": [
 {
       "name": "EPAM Systems, Hyderabad",
@@ -21,8 +30,8 @@
     "city": "Hyderabad",
     "country": "India",
     "coordinates": {
-      "latitude": 17.385044,
-      "longitude": 78.486671
+      "latitude": 17.4324493,
+      "longitude": 78.3793073
     }
   }
 }
