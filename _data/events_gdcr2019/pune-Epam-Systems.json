@@ -1,0 +1,27 @@
+{
+  "title": "Global Day of Coderetreat 2019 @ EPAM Systems Pune",
+  "url": "https://community-z.com/events/global-day-of-coderetreat-2019-epam-systems-pune",
+  "moderators": [
+    {
+            "name": "Vipul Gupta"
+        }
+  ],
+  "sponsors": [
+    {
+      "name": "EPAM Systems, Hyderabad",
+      "url": "https://www.epam.com/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T09:00:00+05:30",
+    "end": "2019-11-16T18:00:00+05:30"
+  },
+  "location": {
+    "city": "Pune",
+    "country": "India",
+    "coordinates": {
+      "latitude": 18.531418,
+      "longitude": 73.8702493
+    }
+  }
+}
