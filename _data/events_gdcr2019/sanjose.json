@@ -1,0 +1,23 @@
+{
+  "title": "Global Day of CodeRetreat @ EPAM Systems Inc, San Jose",
+  "url": "https://community-z.com/events/ELR38J4A25",
+  "moderators": [
+    "Rohit Vaidya",
+    "Iaroslav Karandashev"
+  ],
+  "sponsors": [
+    "EPAM Systems Inc"
+  ],
+  "date": {
+    "start": "2019-11-16T17:00:00.000Z",
+    "end": "2019-11-17T01:00:00.000Z"
+  },
+  "location": {
+    "city": "San Jose",
+    "country": "USA",
+    "coordinates": {
+      "latitude": 37.3716482,
+      "longitude": -121.9274999
+    }
+  }
+}
