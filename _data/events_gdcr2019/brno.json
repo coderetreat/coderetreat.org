@@ -2,10 +2,10 @@
   "title": "GDCR19 in Brno",
   "url": "https://www.solarwindsmeetup.com/event/gdcr-2019/",
   "moderators": [
-    "Vladimir Kopso"
+    { "name": "Vladimir Kopso", "url": "https://github.com/vladosaurus" }
   ],
   "sponsors": [
-    "SolarWinds"
+    { "name": "SolarWinds", "url": "https://www.solarwinds.com" }
   ],
   "date": {
     "start": "2019-11-16T08:30:00+1:00",
