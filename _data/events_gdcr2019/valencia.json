@@ -1,0 +1,32 @@
+{
+  "title": "GDCR 2019 in Valencia",
+  "url": "https://www.meetup.com/es-ES/Valencia-Software-Crafters/events/265716240",
+  "moderators": [
+    {
+      "name": "Meritxell Calvo",
+      "url": "https://twitter.com/nyan_dev"
+    },
+    {
+      "name": "Paco Navarro",
+      "url": "https://twitter.com/paconabel"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Flywire",
+      "url": "https://www.flywire.com"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T09:30:00+01:00",
+    "end": "2019-11-16T17:00:00+01:00"
+  },
+  "location": {
+    "city": "Valencia",
+    "country": "Spain",
+    "coordinates": {
+      "latitude": 39.4699075,
+      "longitude": -0.3762881
+    }
+  }
+}
