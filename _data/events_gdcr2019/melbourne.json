@@ -1,0 +1,48 @@
+{
+  "title": "GDCR19 in Melbourne",
+  "url": "https://www.eventbrite.com.au/e/global-day-of-coderetreat-melbourne-2019-tickets-77122889639",
+  "moderators": [
+    {
+      "name": "Kelly Benson (General)",
+      "url": "https://twitter.com/_kellybenson_"
+    },
+    {
+      "name": "Terence Duong (General)",
+      "url": "https://au.linkedin.com/in/terenceduong"
+    },
+    {
+      "name": "Thoai Nguyen (Registration)",
+      "url": "https://twitter.com/thoaionline"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Telstra Purple",
+      "url": "https://www.telstra.com.au/business-enterprise/services/telstra-purple"
+    },
+    {
+      "name": "REA Group",
+      "url": "https://www.rea-group.com/"
+    },
+    {
+      "name": "SEEK",
+      "url": "https://www.seek.com.au"
+    },
+    {
+      "name": "OFS",
+      "url": "https://www.ofsystems.com/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T08:00:00+10:00",
+    "end": "2019-11-16T17:00:00+10:00"
+  },
+  "location": {
+    "city": "Melbourne",
+    "country": "Australia",
+    "coordinates": {
+      "latitude": -37.8206375,
+      "longitude": 144.947873
+    }
+  }
+}
