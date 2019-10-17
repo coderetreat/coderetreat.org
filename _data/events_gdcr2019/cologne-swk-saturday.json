@@ -1,0 +1,42 @@
+{
+  "title": "GDCR 2019 Softwerkskammer Cologne @ lise GmbH",
+  "url": "https://www.meetup.com/de-DE/Softwerkskammer-Koln/events/264788855",
+  "moderators": [
+    { 
+	  "name": "Martin Dieblich" 
+	},
+    { 
+	  "name": "Matthias Schneider" 
+	},
+    {
+      "name": "Stefan Scheidt",
+      "url": "https://twitter.com/stefanscheidt"
+    },
+    {
+      "name": "Steve Korzinetzki",
+      "url": "https://twitter.com/skorzinetzki"
+    },
+	{
+	  "name": "Birgit Kratz",
+	  "url": "https://twitter.com/bikratz"
+	}
+  ],
+  "sponsors": [
+    {
+      "name": "lise GmbH",
+      "url": "https://www.lise.de"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T08:30:00+01:00",
+    "end": "2019-11-16T18:00:00+01:00"
+  },
+  "location": {
+    "city": "Cologne / Köln",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 50.9847388,
+      "longitude": 6.8879454
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "title": "GDCR19 in Brno",
+  "url": "https://www.solarwindsmeetup.com/event/gdcr-2019/",
+  "moderators": [
+    { "name": "Vladimir Kopso", "url": "https://github.com/vladosaurus" }
+  ],
+  "sponsors": [
+    { "name": "SolarWinds", "url": "https://www.solarwinds.com" }
+  ],
+  "date": {
+    "start": "2019-11-16T08:30:00+01:00",
+    "end": "2019-11-16T17:30:00+01:00"
+  },
+  "location": {
+    "city": "Brno",
+    "country": "Czech Republic",
+    "coordinates": {
+      "latitude": 49.181011,
+      "longitude": 16.605747
+    }
+  }
+}

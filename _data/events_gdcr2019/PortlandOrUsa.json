@@ -1,0 +1,36 @@
+{
+  "title": "PDX Global Day of Coderetreat 2019",
+  "url": "https://www.meetup.com/PDX-Software-Practice/events/265390660/",
+  "moderators": [
+    {
+      "name": "Jeff Patterson",
+      "url": "https://twitter.com/ciridium"
+    },
+    {
+      "name": "Matt Plavcan",
+      "url": "https://twitter.com/mplavcan"
+    },
+    {
+      "name": "Fred Wright",
+      "url": "https://www.linkedin.com/in/wrightf"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Slalom Consulting",
+      "url": "https://www.slalom.com/locations/portland"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T08:00:00.000-08:00",
+    "end": "2019-11-16T17:00:00.000-08:00"
+  },
+  "location": {
+    "city": "Portland, Oregon",
+    "country": "United States of America",
+    "coordinates": {
+      "latitude": 45.5127,
+      "longitude": -122.6795
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "title": "GDCR 2019 - Salzburg Software Craftmanship @ Barcamp FH Salzburg",
+  "url": "https://barcamp-sbg.at",
+  "moderators": [
+    {
+      "name": "Christian Folie",
+      "url": "https://twitter.com/Folienmaster"
+    },
+    {
+      "name": "Klaus Bayrhammer",
+      "url": "https://twitter.com/KlausBayrhammer"
+    },
+    {
+      "name": "Georg Schild"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "FH Salzburg",
+      "url": "https://www.fh-salzburg.ac.at/"
+    },
+    {
+      "name": "SWP Softwarepark GmbH",
+      "url": "https://www.softwarepark.cc"
+    },
+    {
+	 "name": "eMundo GmbH",
+      "url": "https://www.e-mundo.de/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-15T09:00:00.000+01:00",
+    "end": "2019-11-15T15:30:00.000+01:00"
+  },
+  "location": {
+    "city": "Salzburg",
+    "country": "Austria",
+    "coordinates": {
+      "latitude": 47.72336,
+      "longitude": 13.0849522
+    }
+  }
+}

@@ -16,4 +16,20 @@
     text-align: center;
     line-height: 1.2em;
   }
+  #counter {
+    margin: 2.5em;
+  }
+  .countdown {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    color: #1A3238; 
+    text-align: center; 
+  }
+  .countdown .number {
+    font-size: 4em;
+    line-height: 1em; 
+  }
 }

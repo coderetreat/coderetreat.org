@@ -1,0 +1,31 @@
+{
+  "location": {
+    "city": "Berlin",
+    "coordinates": {
+      "latitude": 52.5154881,
+      "longitude": 13.4103957
+    },
+    "country": "Germany"
+  },
+  "date": {
+    "start": "2019-11-16T09:00:00.000+02:00",
+    "end": "2019-11-16T18:00:00.000+02:00"
+  },
+  "moderators": [
+    {
+      "name": "Amber Wilson",
+      "url": "https://twitter.com/ambrwlsn90"
+    },
+    {
+      "name": "Kristian Hamilton",
+      "url": "https://twitter.com/khamiltonuk"
+    },
+    {
+      "name": "Raimo Radczewski",
+      "url": "https://twitter.com/rradczewski"
+    }
+  ],
+  "sponsors": [],
+  "title": "GDCR19 with codeBar Berlin",
+  "url": "https://codebar.io/events/code-retreat-berlin-2019/"
+}

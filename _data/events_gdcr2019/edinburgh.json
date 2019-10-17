@@ -1,0 +1,31 @@
+{
+    "title": "Code Retreat Edinburgh (Saturday)",
+    "url": "https://www.eventbrite.com/e/code-retreat-edinburgh-tickets-72708734783",
+    "moderators": [
+      {
+        "name": "Barney Dellar",
+        "url": "https://twitter.com/branaby"
+      },
+      {
+        "name": "Natalia Zon"
+      }
+    ],
+    "sponsors": [{
+        "name": "Canon Medical Research Europe",
+        "url": "https://research.eu.medical.canon"
+      }
+      
+    ],
+    "date": {
+      "start": "2019-11-16T08:45:00.000+00:00",
+      "end": "2019-11-16T17:00:00.000+00:00"
+    },
+    "location": {
+      "city": "Edinburgh",
+      "country": "Scotland",
+      "coordinates": {
+        "latitude": 55.970772,
+        "longitude": -3.180308
+      }
+    }
+  }

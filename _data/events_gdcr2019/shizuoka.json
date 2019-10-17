@@ -1,0 +1,44 @@
+{
+    "location": {
+        "city": "Shizuoka",
+        "coordinates": {
+            "latitude": 34.974044,
+            "longitude": 138.387811
+        },
+        "country": "Japan"
+    },
+    "date": {
+      "start": "2019-11-09T10:00:00.000+09:00",
+      "end": "2019-11-09T17:00:00.000+09:00"
+    },
+    "moderators": [
+        {
+            "name": "Ayumi Hosozawa",
+            "url": "https://twitter.com/ayumi_hsz"
+        },
+        {
+            "name": "Kazuo Matsunaga",
+            "url": "https://twitter.com/kazuomatz"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "Fujinokuni Information Network Organization.",
+            "url": "http://www.fino.jp"
+        },
+        {
+            "name": "Geolocation Technology, Inc.",
+            "url": "https://www.geolocation.co.jp"
+        },
+        {
+            "name": "SHIZUOKAONLINE CO. LTD.",
+            "url": "https://www.esz.co.jp"
+        },
+        {
+            "name": "IPRIO Corporation",
+            "url": "https://www.iprio.com"
+        }
+    ],
+    "title": "Global Day of Coderetreat in Shizuoka",
+    "url": "https://kokokara-net.jp/organizations/1189/activities/452?fbclid=IwAR1rB3uLrc99lQlDZjKuuhCp-qI-CnyxrSC1ScU6XuQxTU8qOo-frg2VFgw"
+}
