@@ -1,0 +1,28 @@
+{
+  "title": "Global Day of Coderetreat Heraklion",
+  "url": "https://www.meetup.com/Heraklion-Software-Crafters/events/265738505/",
+  "moderators": [
+    {
+      "name": "Irini Koutaki",
+      "url": "https://irinikp.com"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Jadu",
+      "url": "https://www.jadu.net"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T10:00:00+02:00",
+    "end": "2019-11-16T17:30:00+02:00"
+  },
+  "location": {
+    "city": "Heraklion",
+    "country": "Greece",
+    "coordinates": {
+      "latitude": 35.3220114,
+      "longitude": 25.1000512
+    }
+  }
+}
