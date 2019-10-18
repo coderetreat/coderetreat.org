@@ -1,0 +1,22 @@
+{
+  "title": "GDCR19 with Klarna Berlin",
+  "url": "https://global-day-of-coderetreat-klarna-berlin.confetti.events/",
+  "moderators": [
+    "Andrew Shelton"
+  ],
+  "sponsors": [
+    "Klarna"
+  ],
+  "date": {
+    "start": "2019-11-16T10:30:00.000+02:00",
+    "end": "2019-11-16T18:00:00.000+02:00"
+  },
+  "location": {
+    "city": "Berlin",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 52.499764,
+      "longitude": 13.427649
+    }
+  }
+}
