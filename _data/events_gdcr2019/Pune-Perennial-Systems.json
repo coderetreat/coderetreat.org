@@ -13,9 +13,18 @@
     {
       "name": "Azhar Laskar",
       "url": "https://github.com/eminentcodex"
+    },
+    {
+      "name": "Sandesh Uttarwar",
+      "url": "https://github.com/uttarwarsandesh33"
     }
   ],
-  "sponsors": [],
+  "sponsors": [
+    {
+      "name": "Perennial Systems, Pune",
+      "url": "http://www.perennialsys.com"
+    }
+  ],
   "date": {
     "start": "2019-11-16T09:30:00.000+05:30",
     "end": "2019-11-16T17:30:00.000+05:30"
