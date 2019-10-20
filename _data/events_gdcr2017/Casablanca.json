@@ -1,17 +1,20 @@
 {
-  "title": "GDCR 17 in Casablanca",
-  "url": "https://www.meetup.com/fr-FR/Software-Crafts-wo-manship-Casablanca/events/245002855/",
-  "moderators": [
-    "@A_ElArbi"
-  ],
-  "location": {
-    "city": "Casablanca",
-    "country": "Morocco",
-	"coordinates": {
-      "latitude": 33.5696389,
-      "longitude": -7.6451054
+    "location": {
+        "city": "Casablanca",
+        "coordinates": {
+            "latitude": 33.5696389,
+            "longitude": -7.6451054
+        },
+        "country": "Morocco",
+        "timezone": "Africa/Casablanca",
+        "utcOffset": 1
     },
-    "utcOffset": 1,
-    "timezone": "Africa/Casablanca"
-  }
+    "moderators": [
+        {
+            "name": "Aboussoror",
+            "url": "https://twitter.com/A_ElArbi"
+        }
+    ],
+    "title": "GDCR 17 in Casablanca",
+    "url": "https://www.meetup.com/fr-FR/Software-Crafts-wo-manship-Casablanca/events/245002855/"
 }

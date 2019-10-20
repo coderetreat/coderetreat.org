@@ -1,26 +1,46 @@
 {
-  "title": "GDCR18 SimplyTech / Perennial Systems, Pune",
-  "url": "https://www.meetup.com/SimplyTech/events/255739000/",
-  "moderators": [
-    "@ShwetaSadawarte",
-    "@azharlaskar",
-    "@pankaj_chndnkr",
-    "@yash_bhs",
-    "@GreatDharmatma"
-  ],
-  "sponsors": [
-    "@nelkinda",
-    "@perennialsys",
-    "@simplytech_in"
-  ],
-  "location": {
-    "city": "Pune",
-    "country": "India",
-    "coordinates": {
-      "latitude": 18.483507,
-      "longitude": 73.8555663
+    "location": {
+        "city": "Pune",
+        "coordinates": {
+            "latitude": 18.483507,
+            "longitude": 73.8555663
+        },
+        "country": "India",
+        "timezone": "Asia/Kolkata",
+        "utcOffset": 5.5
     },
-    "utcOffset": 5.5,
-    "timezone": "Asia/Kolkata"
-  }
+    "moderators": [
+        {
+            "name": "Azhar Laskar",
+            "url": "https://twitter.com/azharlaskar"
+        },
+        {
+            "name": "Pankaj Chandankar",
+            "url": "https://twitter.com/pankaj_chndnkr"
+        },
+        {
+            "name": "Yash Shanker",
+            "url": "https://twitter.com/yash_bhs"
+        },
+        {
+            "name": "Ajitem Sahasrabuddhe",
+            "url": "https://twitter.com/GreatDharmatma"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "Nelkinda",
+            "url": "https://twitter.com/nelkinda"
+        },
+        {
+            "name": "@perennialsys",
+            "url": "https://twitter.com/perennialsys"
+        },
+        {
+            "name": "SimplyTech",
+            "url": "https://twitter.com/simplytech_in"
+        }
+    ],
+    "title": "GDCR18 SimplyTech / Perennial Systems, Pune",
+    "url": "https://www.meetup.com/SimplyTech/events/255739000/"
 }

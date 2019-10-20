@@ -1,0 +1,17 @@
+{
+  "title": "GDCR 2018 in Hannover",
+  "url": "https://www.meetup.com/Zuehlke-Hannover/events/255741486/",
+  "moderators": [
+    "@nilswz"
+  ],
+  "location": {
+    "city": "Hannover",
+    "country": "Germany",
+    "coordinates":{
+    "latitude":52.40769446411487,
+    "longitude":9.802991151809692
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Berlin"
+  }
+}

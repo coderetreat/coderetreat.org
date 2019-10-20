@@ -1,18 +1,24 @@
 {
-  "title": "GDCR17 at Spektrix",
-  "url": "https://www.eventbrite.co.uk/e/gdcr2017-spektrix-tickets-38543450498",
-  "moderators": [
-    "@dannojb",
-    "@mimmozzo"
-  ],
-  "location": {
-    "city": "London",
-    "country": "United Kingdom",
-    "coordinates": {
-      "latitude": 51.5127679,
-      "longitude": -0.1056135
+    "location": {
+        "city": "London",
+        "coordinates": {
+            "latitude": 51.5127679,
+            "longitude": -0.1056135
+        },
+        "country": "United Kingdom",
+        "timezone": "Europe/London",
+        "utcOffset": 1
     },
-    "utcOffset": 1,
-    "timezone": "Europe/London"
-  }
+    "moderators": [
+        {
+            "name": "Dan Bass",
+            "url": "https://twitter.com/dannojb"
+        },
+        {
+            "name": "Domenico Musto",
+            "url": "https://twitter.com/mimmozzo"
+        }
+    ],
+    "title": "GDCR17 at Spektrix",
+    "url": "https://www.eventbrite.co.uk/e/gdcr2017-spektrix-tickets-38543450498"
 }

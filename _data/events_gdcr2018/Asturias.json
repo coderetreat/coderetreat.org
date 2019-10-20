@@ -1,21 +1,36 @@
 {
-  "title": "Asturias GDCR 2018",
-  "url": "https://www.meetup.com/AsturiasHacking/events/254343807/",
-  "moderators": [
-    "@asturiashacking",
-    "@azahara_fergui",
-    "@codecoolture",
-    "@dg_suarez",
-    "@tasug0"
-  ],
-  "location": {
-    "city": "Xixón",
-    "country": "Spain",
-    "coordinates": {
-      "latitude": 43.5229224,
-      "longitude": -5.6276883
+    "location": {
+        "city": "Xix\u00f3n",
+        "coordinates": {
+            "latitude": 43.5229224,
+            "longitude": -5.6276883
+        },
+        "country": "Spain",
+        "timezone": "Europe/Madrid",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Madrid"
-  }
+    "moderators": [
+        {
+            "name": "AsturiasHacking",
+            "url": "https://twitter.com/asturiashacking"
+        },
+        {
+            "name": "Azahara Fern\u00e1ndez",
+            "url": "https://twitter.com/azahara_fergui"
+        },
+        {
+            "name": "Sergio",
+            "url": "https://twitter.com/codecoolture"
+        },
+        {
+            "name": "Diego",
+            "url": "https://twitter.com/dg_suarez"
+        },
+        {
+            "name": "Manuel G\u00f3mez",
+            "url": "https://twitter.com/tasug0"
+        }
+    ],
+    "title": "Asturias GDCR 2018",
+    "url": "https://www.meetup.com/AsturiasHacking/events/254343807/"
 }

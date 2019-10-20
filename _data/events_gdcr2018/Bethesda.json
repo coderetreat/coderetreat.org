@@ -1,21 +1,28 @@
 {
-  "title": "Global Day of Code Retreat - Bethesda",
-  "url": "https://www.eventbrite.com/e/global-day-of-code-retreat-bethesda-registration-51442748646",
-  "moderators": [
-    "Leah Belin",
-    "Steven Stewart"
-  ],
-  "sponsors": [
-    "@Homesnap"
-  ],
-  "location": {
-    "city": "Bethesda",
-    "country": "United States of America",
-    "coordinates": {
-      "latitude": 38.9815464,
-      "longitude": -77.0963168
+    "location": {
+        "city": "Bethesda",
+        "coordinates": {
+            "latitude": 38.9815464,
+            "longitude": -77.0963168
+        },
+        "country": "United States of America",
+        "timezone": "America/New_York",
+        "utcOffset": -4
     },
-    "utcOffset": -4,
-    "timezone": "America/New_York"
-  }
+    "moderators": [
+        {
+            "name": "Leah Belin"
+        },
+        {
+            "name": "Steven Stewart"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "Homesnap",
+            "url": "https://twitter.com/Homesnap"
+        }
+    ],
+    "title": "Global Day of Code Retreat - Bethesda",
+    "url": "https://www.eventbrite.com/e/global-day-of-code-retreat-bethesda-registration-51442748646"
 }

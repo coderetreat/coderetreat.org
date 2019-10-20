@@ -1,19 +1,26 @@
 {
-  "title": "Code Retreat - A day to Celebrate Passion and Software Crafting",
-  "url": "http://meetu.ps/e/FZCzx/vNHvw/f",
-  "moderators": [
-    "@victorrentea",
-    "Bianca Falca",
-    "Marian Stanciu"
-  ],
-  "location": {
-    "city": "Bucharest",
-    "country": "Romania",
-    "coordinates": {
-      "latitude": 44.435642,
-      "longitude": 26.05408
+    "location": {
+        "city": "Bucharest",
+        "coordinates": {
+            "latitude": 44.435642,
+            "longitude": 26.05408
+        },
+        "country": "Romania",
+        "timezone": "Europe/Bucharest",
+        "utcOffset": 3
     },
-    "utcOffset": 3,
-    "timezone": "Europe/Bucharest"
-  }
+    "moderators": [
+        {
+            "name": "Victor Rentea",
+            "url": "https://twitter.com/victorrentea"
+        },
+        {
+            "name": "Bianca Falca"
+        },
+        {
+            "name": "Marian Stanciu"
+        }
+    ],
+    "title": "GDCR18 in Bucharest @ Craftsmanship",
+    "url": "http://meetu.ps/e/FZCzx/vNHvw/f"
 }

@@ -1,17 +1,20 @@
 {
-  "title": "Global Day of Coderetreat @ MozaicWorks",
-  "url": "https://www.meetup.com/The-Bucharest-Agile-Software-Meetup-Group/events/243846221/",
-  "moderators": [
-    "@AlinPandichi"
-  ],
-  "location": {
-    "city": "București",
-    "country": "Romania",
-    "coordinates": {
-      "latitude": 44.4545737,
-      "longitude": 26.0815525
+    "location": {
+        "city": "Bucure\u0219ti",
+        "coordinates": {
+            "latitude": 44.4545737,
+            "longitude": 26.0815525
+        },
+        "country": "Romania",
+        "timezone": "Europe/Bucharest",
+        "utcOffset": 3
     },
-    "utcOffset": 3,
-    "timezone": "Europe/Bucharest"
-  }
+    "moderators": [
+        {
+            "name": "Alin Pandichi",
+            "url": "https://twitter.com/AlinPandichi"
+        }
+    ],
+    "title": "Global Day of Coderetreat @ MozaicWorks",
+    "url": "https://www.meetup.com/The-Bucharest-Agile-Software-Meetup-Group/events/243846221/"
 }

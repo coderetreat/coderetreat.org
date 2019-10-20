@@ -1,0 +1,115 @@
+{
+  "title": "Event Registration",
+  "type": "object",
+  "properties": {
+    "title": {
+      "description": "The title/name of your event",
+      "type": "string",
+      "minLength": 1
+    },
+    "url": {
+      "description":
+        "An URL leading to further information about your event, e.g. sign up on meetup/eventbrite",
+      "type": "string",
+      "minLength": 1
+    },
+    "moderators": {
+      "type": "array",
+      "items": {
+        "description": "List of moderators",
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "Moderator's name",
+            "type": "string"
+          },
+          "url": {
+            "description":
+              "Moderator's url: Twitter profile, GitHub profile, website, ...",
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "required": ["name"]
+      }
+    },
+    "date": {
+      "type": "object",
+      "description": "The start and end time of your event. Please use your local timezone so we know which timezone you're in and can promote your event accordingly",
+      "properties": {
+        "start": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "end": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": ["start", "end"],
+      "additionalProperties": false
+    },
+    "location": {
+      "oneOf": [
+        { "$ref": "#/definitions/real_location" },
+        { "$ref": "#/definitions/virtual_location" }
+      ]
+    },
+    "sponsors": {
+      "type": "array",
+      "items": {
+        "description": "List of sponsors",
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "Sponsor's name",
+            "type": "string"
+          },
+          "url": {
+            "description":
+              "Sponsor's url: Twitter profile, GitHub profile, website, ...",
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "required": ["name"]
+      }
+    }
+  },
+  "definitions": {
+    "virtual_location": {
+      "type": "string",
+      "enum": ["virtual"]
+    },
+    "real_location": {
+      "description":
+        "Further data about the location your event takes place at",
+      "type": "object",
+      "properties": {
+        "city": {
+          "type": "string",
+          "minLength": 1
+        },
+        "country": {
+          "type": "string",
+          "minLength": 1
+        },
+        "coordinates": {
+          "type": "object",
+          "description":
+            "Lat/Long values, given in EPSG:3857 (http://wiki.openstreetmap.org/wiki/EPSG:3857)",
+          "properties": {
+            "latitude": { "type": "number" },
+            "longitude": { "type": "number" }
+          },
+          "additionalProperties": false,
+          "required": ["latitude", "longitude"]
+        }
+      },
+      "additionalProperties": false,
+      "required": ["country", "city"]
+    }
+  },
+  "additionalProperties": false,
+  "required": ["title", "location", "url", "date"]
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Global Day of Coderetreat 2019 @ZühlkeHannover",
+  "url": "https://www.meetup.com/de-DE/Zuehlke-Hannover/events/265285351/",
+  "moderators": [],
+  "sponsors": [
+    {
+      "name": "Zühlke Engineering GmbH",
+      "url": "https://www.zuehlke.com"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T10:00:00.000+01:00",
+    "end": "2019-11-16T15:00:00.000+01:00"
+  },
+  "location": {
+    "city": "Hannover",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 52.407762,
+      "longitude": 9.8004458
+    }
+  }
+}

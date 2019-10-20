@@ -1,0 +1,21 @@
+{
+  "title": "GDCR 2018 at Makers Academy",
+  "url": "https://www.eventbrite.co.uk/e/global-day-of-coderetreat-tickets-51453845838",
+  "moderators": [
+    "Agnes Donat",
+    "Marco Passuello"
+  ],
+  "sponsors": [
+    "@makersacademy"
+  ],
+  "location": {
+    "city": "London",
+    "country": "United Kingdom",
+    "coordinates": {
+      "latitude": 51.51728,
+      "longitude": -0.07362
+    },
+    "utcOffset": 0,
+    "timezone": "Europe/London"
+  }
+}

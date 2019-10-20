@@ -1,0 +1,28 @@
+{
+  "title": "Global day of code retreat Stockholm @ Klarna ",
+  "url": "https://global-day-of-code-retreat-klarna-sthl.confetti.events",
+  "moderators": [
+    {
+      "name": "Mite Mitreski",
+      "url": "https://github.com/mitemitreski"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Klarna",
+      "url": "https://github.com/klarna"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T10:30:56+01:00",
+    "end": "2019-11-16T10:30:56+01:00"
+  },
+  "location": {
+    "city": "Stockholm",
+    "country": "Sweden",
+    "coordinates": {
+      "latitude": 59.337018,
+      "longitude": 18.0625047
+    }
+  }
+}

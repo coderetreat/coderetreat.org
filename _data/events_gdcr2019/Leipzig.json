@@ -1,0 +1,32 @@
+{
+  "title": "GDCR 2019 in Leipzig @ Softwerkskammer Leipzig",
+  "url": "https://www.meetup.com/de-DE/Softwerkskammer-Leipzig/events/265586780/",
+  "moderators": [
+    {
+      "name": "Andreas Gebhardt",
+      "url": "https://twitter.com/agebhar1"
+    },
+    {
+      "name": "Maik Fröbe",
+      "url": "https://twitter.com/maik_froebe"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Exxeta GmbH Leipzig",
+      "url": "https://www.exxeta.com/de/unternehmen/exxeta-gmbh-leipzig/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T08:30:00.000+01:00",
+    "end": "2019-11-16T17:00:00.000+01:00"
+  },
+  "location": {
+    "city": "Leipzig",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 51.3675192,
+      "longitude": 12.4302507
+    }
+  }
+}

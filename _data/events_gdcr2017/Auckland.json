@@ -1,18 +1,24 @@
 {
-  "title": "Global Day of Coderetreat 2017 - Auckland",
-  "url": "https://www.meetup.com/kiwi-code-retreat/events/243504275/",
-  "moderators": [
-    "@mightymuke",
-    "@kiwipom"
-  ],
-  "location": {
-    "city": "Auckland",
-    "country": "New Zealand",
-    "coordinates": {
-      "latitude": -36.8629409,
-      "longitude": 174.7253883
+    "location": {
+        "city": "Auckland",
+        "coordinates": {
+            "latitude": -36.8629409,
+            "longitude": 174.7253883
+        },
+        "country": "New Zealand",
+        "timezone": "Pacific/Auckland",
+        "utcOffset": 12
     },
-    "utcOffset": 12,
-    "timezone": "Pacific/Auckland"
-  }
+    "moderators": [
+        {
+            "name": "Marcus Bristol",
+            "url": "https://twitter.com/mightymuke"
+        },
+        {
+            "name": "Ian Randall",
+            "url": "https://twitter.com/kiwipom"
+        }
+    ],
+    "title": "Global Day of Coderetreat 2017 - Auckland",
+    "url": "https://www.meetup.com/kiwi-code-retreat/events/243504275/"
 }

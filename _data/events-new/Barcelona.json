@@ -1,0 +1,17 @@
+{
+  "title": "GDCR18 in Barcelona",
+  "url": "https://www.meetup.com/es-ES/BarcelonaJUG/events/256208230",
+  "moderators": [
+    "@icougil"
+  ],
+  "location": {
+    "city": "Barcelona",
+    "country": "Spain",
+    "coordinates": {
+      "latitude": 41.3948976,
+      "longitude": 2.0787279
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Madrid"
+  }
+}

@@ -1,24 +1,29 @@
 <section id="locations">
-  <h2>Coderetreat is a day-long, intensive practice event, focusing on the fundamentals of software development and design, away from the pressures of 'getting things done'.  <a href="/pages/about/">More about coderetreats!</a></h2>
-  <h2>So far, there are <a href="/events">{{site.data.events_gdcr2018 | size}} GDCR 2018 events</a> registered around the world!</h2>
-
-  <div id="map">
-    <div id="popup"></div>
-  </div>
-
-  <div class="map-aside" style="align-content: center">
-    <h1>
-    <u>The first coderetreat starts in:</u>
-    {% include countdown.liquid date='2018-11-17T00:00:00.000Z' size='large' name ='gdcr2018' %}
-    </h1>
-  </div>
+    <h2 class="h2-main-page">Global Day of Coderetreat</h2>
+    <p class="subtitle">November 16th (or 15th), 2019</p>
+    <p>For the 10th anniversary, we will promote events that happen either on Friday, Nov 15th or Saturday, Nov 16th.
+      Traditionally, the Global Day of Coderetreat takes place on Saturdays, but we also want to invite companies to promote educational opportunities for their employees by hosting a public coderetreat on Friday. We further want to open the event to people who can not participate in events over the weekend. </p>
+    <p>As a local event organizer, it is up to you to decide whether to host an event on Friday or Saturday, or even both 🎉.</p>
+    <div id="counter">
+      {% include countdown.liquid date='2019-11-16T00:00:00.000Z' name ='gdcr' %}
+    </div>
+    <div id="map">
+      <div id="popup"></div>
+    </div>
+    <p class="subtitle">
+      Last year, there have been {{site.data.events_gdcr2018 | size}} GDCR events around the world!<br/>
+      This year, {{site.data.events_gdcr2019 | size}} events registered so far!
+    </p>
+    <p class="calltoaction">
+      <a class="button" href="/register-event">Register your event!</a>
+    </p>
 </section>
 
 <script>
-$(function() {
-  $.get("/events/gdcr2018.json", function(eventsJson) {
-    var gdcrEvents = mapEventsDataToMapFormat(eventsJson);
-    addEventsToMap(gdcrEvents);
-  });
-});
+    $(function() {
+        $.get("/events/gdcr2019.json", function(eventsJson) {
+            var gdcrEvents = mapEventsDataToMapFormat(eventsJson);
+            addEventsToMap(gdcrEvents);
+        });
+    });
 </script>

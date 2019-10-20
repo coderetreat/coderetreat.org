@@ -1,0 +1,28 @@
+{
+    "title": "GDCR 2019 Sundsvall ",
+    "url": "https://knightec.teamtailor.com/pages/global-day-of-code-retreat-2019",
+    "moderators": [
+      {
+        "name": "Pawel Iwanow",
+        "url": "https://github.com/iveczek"
+      }
+    ],
+    "sponsors": [
+      {
+        "name": "Dewire by Knightec",
+        "url": "https://knightec.teamtailor.com/departments/dewire"
+      }
+    ],
+    "date": {
+      "start": "2019-11-16T08:00:00.000+01:00",
+      "end": "2019-11-16T17:00:00.000+01:00"
+    },
+    "location": {
+      "city": "Sundsvall",
+      "country": "Sweden",
+      "coordinates": {
+        "latitude": 62.3915795,
+        "longitude": 17.3057374
+      }
+    }
+  }

@@ -1,18 +1,24 @@
 {
-  "title": "GDCR18 Ann Arbor @ The Forge by Pillar Technology",
-  "url": "https://www.meetup.com/TechLife-Ann-Arbor/events/252821237/",
-  "moderators": [
-    "@CuriousAgilist",
-    "@jeevsOnline"
-  ],
-  "location": {
-    "city": "Ann Arbor",
-    "country": "United States of America",
-    "coordinates": {
-      "latitude": 42.279835,
-      "longitude": -83.745728
+    "location": {
+        "city": "Ann Arbor",
+        "coordinates": {
+            "latitude": 42.279835,
+            "longitude": -83.745728
+        },
+        "country": "United States of America",
+        "timezone": "America/Detroit",
+        "utcOffset": -4
     },
-    "utcOffset": -4,
-    "timezone": "America/Detroit"
-  }
+    "moderators": [
+        {
+            "name": "Bob Allen",
+            "url": "https://twitter.com/CuriousAgilist"
+        },
+        {
+            "name": "Jeeva Nadarajah",
+            "url": "https://twitter.com/jeevsOnline"
+        }
+    ],
+    "title": "GDCR18 Ann Arbor @ The Forge by Pillar Technology",
+    "url": "https://www.meetup.com/TechLife-Ann-Arbor/events/252821237/"
 }

@@ -1,17 +1,20 @@
 {
-  "title": "GDCR18 in Luzern",
-  "url": "https://zurich.codersonly.org/events/code-retreat/",
-  "moderators": [
-    "@marcoravicini"
-  ],
-  "location": {
-    "city": "Luzern",
-    "country": "Switzerland",
-    "coordinates": {
-      "latitude": 47.063683,
-      "longitude": 8.310984
+    "location": {
+        "city": "Luzern",
+        "coordinates": {
+            "latitude": 47.063683,
+            "longitude": 8.310984
+        },
+        "country": "Switzerland",
+        "timezone": "Europe/Zurich",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Zurich"
-  }
+    "moderators": [
+        {
+            "name": "Marco Ravicini",
+            "url": "https://twitter.com/marcoravicini"
+        }
+    ],
+    "title": "GDCR18 in Luzern",
+    "url": "https://zurich.codersonly.org/events/code-retreat/"
 }

@@ -1,17 +1,20 @@
 {
-  "title": "GDCR18 Winnipeg",
-  "url": "https://www.eventbrite.com/e/gdcr18-winnipeg-tickets-51674255088",
-  "moderators": [
-    "@davidalpert"
-  ],
-  "location": {
-    "city": "Winnipeg",
-    "country": "Canada",
-    "coordinates": {
-      "latitude": 49.8953855,
-      "longitude": -97.1381449
+    "location": {
+        "city": "Winnipeg",
+        "coordinates": {
+            "latitude": 49.8953855,
+            "longitude": -97.1381449
+        },
+        "country": "Canada",
+        "timezone": "America/Winnipeg",
+        "utcOffset": -5
     },
-    "utcOffset": -5,
-    "timezone": "America/Winnipeg"
-  }
+    "moderators": [
+        {
+            "name": "David Alpert",
+            "url": "https://twitter.com/davidalpert"
+        }
+    ],
+    "title": "GDCR18 Winnipeg",
+    "url": "https://www.eventbrite.com/e/gdcr18-winnipeg-tickets-51674255088"
 }

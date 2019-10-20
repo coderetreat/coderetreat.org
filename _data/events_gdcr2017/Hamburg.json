@@ -1,19 +1,28 @@
 {
-  "title": "GDCR17 in Hamburg, Germany",
-  "url": "https://www.meetup.com/de-DE/sokahh/events/239067827/",
-  "moderators": [
-    "@sokahh",
-    "@mreinhardt",
-    "@SvenBunge"
-  ],
-  "location": {
-    "city": "Hamburg",
-    "country": "Germany",
-    "coordinates": {
-      "latitude": 53.5567,
-      "longitude": 9.9085
+    "location": {
+        "city": "Hamburg",
+        "coordinates": {
+            "latitude": 53.5567,
+            "longitude": 9.9085
+        },
+        "country": "Germany",
+        "timezone": "Europe/Berlin",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-   "timezone":"Europe/Berlin"
-  }
+    "moderators": [
+        {
+            "name": "Kalym4x",
+            "url": "https://twitter.com/sokahh"
+        },
+        {
+            "name": "Martin Reinhardt",
+            "url": "https://twitter.com/mreinhardt"
+        },
+        {
+            "name": "Sven Bunge",
+            "url": "https://twitter.com/SvenBunge"
+        }
+    ],
+    "title": "GDCR17 in Hamburg, Germany",
+    "url": "https://www.meetup.com/de-DE/sokahh/events/239067827/"
 }

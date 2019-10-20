@@ -1,0 +1,24 @@
+{
+    "location": {
+        "city": "Resistencia",
+        "coordinates": {
+            "latitude": -27.44021,
+            "longitude": -58.98674
+        },
+        "country": "Argentina",
+        "timezone": "America/Buenos_Aires",
+        "utcOffset": -3
+    },
+    "moderators": [
+        {
+            "name": "Mat\u00edas Mascazzini",
+            "url": "https://twitter.com/matiasmasca"
+        },
+        {
+            "name": "Jose A. Fernandez",
+            "url": "https://twitter.com/fernandezja"
+        }
+    ],
+    "title": "GDCR 18 in Resistencia",
+    "url": "https://gdcr18.eventbrite.com.ar"
+}

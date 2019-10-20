@@ -1,0 +1,20 @@
+{
+  "title": "Coderetreat @ CDK Global (India) Pvt. Ltd. Pune",
+  "url": "https://sites.google.com/view/cdkpuneevents",
+  "moderators": [
+    "@patel_deepesh",
+    "@shrinivas23",
+    "@kgpingle",
+    "@vibzone"
+  ],
+  "location": {
+    "city": "Pune",
+    "country": "India",
+    "coordinates": {
+      "latitude": 18.556056,
+      "longitude": 73.892118
+    },
+    "utcOffset": 5.5,
+    "timezone": "Asia/Kolkata"
+  }
+}

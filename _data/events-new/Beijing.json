@@ -1,0 +1,14 @@
+{
+  "title": "Global Day of Code Retreat 2018 Beijing",
+  "url": "https://www.eventbrite.com/e/global-day-of-code-retreat-2018-beijing-tickets-51685731414",
+  "location": {
+    "city": "Beijing",
+    "country": "China",
+    "coordinates": {
+      "latitude": 40.012426,
+      "longitude": 116.490749
+    },
+    "utcOffset": 8
+  },
+  "moderators": ["@YugangB"]
+}

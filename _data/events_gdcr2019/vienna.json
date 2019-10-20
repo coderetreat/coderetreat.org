@@ -1,0 +1,32 @@
+{
+  "title": "Vienna",
+  "url": "https://techtalk.at/trainings/global-day-of-coderetreat-2019/",
+  "moderators": [
+    {
+      "name": "Sandra Parsick",
+      "url": "https://www.sandra-parsick.de/"
+    },
+    {
+      "name": "Peter \"CodeCop\" Kofler",
+      "url": "https://twitter.com/codecopkofler"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "TechTalk GmbH",
+      "url": "https://techtalk.at/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T09:00:00.000+01:00",
+    "end": "2019-11-16T17:30:00.000+01:00"
+  },
+  "location": {
+    "city": "Vienna",
+    "country": "Austria",
+    "coordinates": {
+      "latitude": 48.23645,
+      "longitude": 16.413294
+    }
+  }
+}

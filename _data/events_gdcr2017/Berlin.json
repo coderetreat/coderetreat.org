@@ -1,20 +1,25 @@
 {
-  "title": "GDCR17 Berlin itemis x HTW",
-  "url": "https://www.meetup.com/de-DE/itemis/events/244452768",
-  "moderators": [
-    "Marcel Toussaint"
-  ],
-  "sponsors": [
-    "@itemis"
-  ],
-  "location": {
-    "city": "Berlin",
-    "country": "Germany",
-    "coordinates": {
-      "latitude": 52.4569344,
-      "longitude": 13.524255
+    "location": {
+        "city": "Berlin",
+        "coordinates": {
+            "latitude": 52.4569344,
+            "longitude": 13.524255
+        },
+        "country": "Germany",
+        "timezone": "Europe/Berlin",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Berlin"
-  }
+    "moderators": [
+        {
+            "name": "Marcel Toussaint"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "itemis",
+            "url": "https://twitter.com/itemis"
+        }
+    ],
+    "title": "GDCR17 Berlin itemis x HTW",
+    "url": "https://www.meetup.com/de-DE/itemis/events/244452768"
 }

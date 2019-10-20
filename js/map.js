@@ -190,22 +190,6 @@ $(function() {
     })
   });
 
-  var geocoder = new Geocoder("nominatim", {
-    provider: "photon",
-    lang: "en",
-    placeholder: "Search for ...",
-    limit: 5,
-    debug: true,
-    autoComplete: true,
-    keepOpen: false,
-    preventDefault: true
-  });
-  map.addControl(geocoder);
-
-  geocoder.on("addresschosen", function(evt) {
-    flyTo(map, evt.coordinate);
-  });
-
   // display popup on click
   map.on("click", function(evt) {
     $(popupElem).popover("destroy");
@@ -223,13 +207,10 @@ $(function() {
       popup.setPosition(coord);
       $(popupElem).popover({
         animation: false,
-        placement: "top",
+        placement: "auto",
         html: true,
-        title: "GDCR events",
         content: content
       });
-      // workaround for already displayed popovers
-      $("div.popover-content").text("GDCR events");
 
       $(popupElem).popover("show");
     }

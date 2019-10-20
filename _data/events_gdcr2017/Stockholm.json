@@ -1,21 +1,29 @@
 {
-  "title": "GDCR17 in Stockholm",
-  "url": "https://www.meetup.com/Stockholm-Software-Craftsmanship/events/244834081/",
-  "moderators": [
-    "@erorcodes",
-    "Stockholm Software Craftsmanship"
-  ],
-  "sponsors": [
-    "@citerus_se"
-  ],
-  "location": {
-    "city": "Stockholm",
-    "country": "Sweden",
-    "coordinates": {
-      "latitude": 59.3359476,
-      "longitude": 18.0533043
+    "location": {
+        "city": "Stockholm",
+        "coordinates": {
+            "latitude": 59.3359476,
+            "longitude": 18.0533043
+        },
+        "country": "Sweden",
+        "timezone": "Europe/Stockholm",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Stockholm"
-  }
+    "moderators": [
+        {
+            "name": "Erika Ornstein",
+            "url": "https://twitter.com/erorcodes"
+        },
+        {
+            "name": "Stockholm Software Craftsmanship"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "Citerus",
+            "url": "https://twitter.com/citerus_se"
+        }
+    ],
+    "title": "GDCR17 in Stockholm",
+    "url": "https://www.meetup.com/Stockholm-Software-Craftsmanship/events/244834081/"
 }

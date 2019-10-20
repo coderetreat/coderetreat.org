@@ -1,19 +1,28 @@
 {
-  "title": "Global Day of Coderetreat @ Codurance",
-  "url": "https://www.meetup.com/london-software-craftsmanship/events/244321442/",
-  "moderators": [
-    "@RobertFirek",
-    "@CarlosMChica",
-    "@yefoakira"
-  ],
-  "location": {
-    "city": "London",
-    "country": "United Kingdom",
-    "coordinates": {
-      "latitude": 51.5238487,
-      "longitude": -0.102661
+    "location": {
+        "city": "London",
+        "coordinates": {
+            "latitude": 51.5238487,
+            "longitude": -0.102661
+        },
+        "country": "United Kingdom",
+        "timezone": "Europe/London",
+        "utcOffset": 1
     },
-    "utcOffset": 1,
-    "timezone": "Europe/London"
-  }
+    "moderators": [
+        {
+            "name": "Robert Firek",
+            "url": "https://twitter.com/RobertFirek"
+        },
+        {
+            "name": "Carlos Morera",
+            "url": "https://twitter.com/CarlosMChica"
+        },
+        {
+            "name": "Jorge Gueorguiev",
+            "url": "https://twitter.com/yefoakira"
+        }
+    ],
+    "title": "Global Day of Coderetreat @ Codurance",
+    "url": "https://www.meetup.com/london-software-craftsmanship/events/244321442/"
 }

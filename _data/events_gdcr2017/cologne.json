@@ -1,17 +1,20 @@
 {
-  "title": "Global Day of Code Retreat 2017 @lisegmbh in Cologne",
-  "url": "http://bit.ly/gdcr-2017-cologne",
-  "moderators": [
-    "@skorzinetzki"
-  ],
-  "location": {
-    "city": "Cologne",
-    "country": "Germany",
-    "coordinates": {
-      "latitude": 50.9847388,
-      "longitude": 6.8879454
+    "location": {
+        "city": "Cologne",
+        "coordinates": {
+            "latitude": 50.9847388,
+            "longitude": 6.8879454
+        },
+        "country": "Germany",
+        "timezone": "Europe/Berlin",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Berlin"
-  }
+    "moderators": [
+        {
+            "name": "Steve Korzinetzki",
+            "url": "https://twitter.com/skorzinetzki"
+        }
+    ],
+    "title": "Global Day of Code Retreat 2017 @lisegmbh in Cologne",
+    "url": "http://bit.ly/gdcr-2017-cologne"
 }

@@ -1,0 +1,15 @@
+{
+  "title": "NRV Dev 2018 Global Day of Code Retreat",
+  "url": "https://www.eventbrite.com/e/nrv-dev-2018-global-day-of-code-retreat-tickets-51572497729?aff=ebdssbdestsearch",
+  "moderators": ["@kevpo"],
+  "location": {
+      "city": "Radford",
+      "country": "United States of America",
+      "coordinates": {
+      "latitude": 37.1203638,
+      "longitude": -80.5691916
+    },
+    "utcOffset": -4,
+    "timezone": "America/New_York"
+  }
+} 

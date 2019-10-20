@@ -1,0 +1,25 @@
+<table class="articles-list">
+    <tbody>
+    {% for article in articles %}
+    <tr data-country="{{article.location.country}}">
+        <td>{{ article.year }}</td>
+        <td><a href="{{ article.url }}">{{ article.title }}</a></td>
+        <td>
+            {% if article.author.link %}
+            <a href="{{ article.author.link }}">{{ article.author.name }}</a>
+            {% else %}
+            {{ article.author.name }}
+            {% endif %}
+        </td>
+        {% assign city = article.location.city | downcase %}
+        {% if city == 'unknown' %}
+        <td>-</td>
+        {% elsif city == 'remote' %}
+        <td>Remote</td>
+        {% else %}
+        <td>{{ article.location.city }} ({{ article.location.country }})</td>
+        {% endif %}
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>

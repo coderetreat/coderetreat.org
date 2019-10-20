@@ -1,0 +1,31 @@
+{
+    "title": "GDCR 2019 in Luzern",
+    "url": "https://ti.to/global-day-of-coderetreat-lucerne/gdcr-lu-2019",
+    "moderators": [
+        {
+            "name": "Marco Ravicini",
+            "url": "https://twitter.com/marcoravicini"
+        },
+        {
+            "name": "Raphael Meyer"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "bbv",
+            "url": "https://bbv.ch"
+        }
+    ],
+    "date": {
+        "start": "2019-11-16T08:30:00+01:00",
+        "end": "2019-11-16T17:30:00+01:00"
+    },
+    "location": {
+        "city": "Luzern",
+        "coordinates": {
+            "latitude": 47.06377,
+            "longitude": 8.31109
+        },
+        "country": "Switzerland"
+    }
+}

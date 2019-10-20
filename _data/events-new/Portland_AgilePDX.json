@@ -1,0 +1,19 @@
+{
+  "title": "AgilePDX Woman-Focused Global Day of Coderetreat",
+  "url": "https://www.meetup.com/AgilePDX-User-Group-Portland-Metro/events/255280597/",
+  "moderators": [
+    "@morganpdx",
+    "@charlenesilver",
+    "@jeanatazuregate"
+  ],
+  "location": {
+    "city": "Portland",
+    "country": "United States of America",
+    "coordinates": {
+      "latitude": 45.5162534,
+      "longitude": -122.6770537
+    },
+    "utcOffset": -7,
+    "timezone": "America/Los_Angeles"
+  }
+}

@@ -1,24 +1,42 @@
 {
-  "title": "GDCR 2018 Kaiserslautern",
-  "url": "http://softwerkskammer-rlp.de/events/4/global-day-of-coderetreat/",
-  "moderators": [
-    "@Softwerkskamme2",
-    "@JUG_KL",
-    "@chaos_inkl"
-  ],
-  "sponsors": [
-    "@Avid",
-    "@TOPdesk_DE",
-    "@EmpolisSoftware"
-  ],
-  "location": {
-    "city": "Kaiserslautern",
-    "country": "Germany",
-    "coordinates": {
-      "latitude": 49.4405018,
-      "longitude": 7.7603026
+    "location": {
+        "city": "Kaiserslautern",
+        "coordinates": {
+            "latitude": 49.4405018,
+            "longitude": 7.7603026
+        },
+        "country": "Germany",
+        "timezone": "Europe/Berlin",
+        "utcOffset": 1
     },
-    "utcOffset": 1,
-    "timezone": "Europe/Berlin"
-  }
+    "moderators": [
+        {
+            "name": "Softwerkskammer Rheinland-Pfalz",
+            "url": "https://twitter.com/Softwerkskamme2"
+        },
+        {
+            "name": "JUG-Kaiserslautern",
+            "url": "https://twitter.com/JUG_KL"
+        },
+        {
+            "name": "Chaos inKL.",
+            "url": "https://twitter.com/chaos_inkl"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "Avid",
+            "url": "https://twitter.com/Avid"
+        },
+        {
+            "name": "TOPdesk DE",
+            "url": "https://twitter.com/TOPdesk_DE"
+        },
+        {
+            "name": "EmpolisSoftware",
+            "url": "https://twitter.com/EmpolisSoftware"
+        }
+    ],
+    "title": "GDCR 2018 Kaiserslautern",
+    "url": "http://softwerkskammer-rlp.de/events/4/global-day-of-coderetreat/"
 }

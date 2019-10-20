@@ -1,16 +1,12 @@
 ---
 layout: default
+title: Hosting a Coderetreat
+description: Help improve developers in your community by hosting a coderetreat in your city
 ---
 
-<h1 class="full-page"><a href="{{ "/hosts/" | relative_url }}">Hosters Tools</a></h1>
+Help improve developers in your community by hosting a coderetreat in your city.
 
-## Help improve developers in your community...
-
-# ...by hosting a coderetreat in your city.
-
-Hosts handle all of the logistics of organizing, finding a local sponsor,
-running a coderetreat and creating an atmosphere of fun and collaboration.
-
+Hosts handle all of the logistics of organizing, finding a local sponsor, running a coderetreat and creating an atmosphere of fun and collaboration.
 
 To host a coderetreat:
 
@@ -19,22 +15,33 @@ To host a coderetreat:
 * Find one or more local sponsors for lunch and other expenses. Coderetreats must be free.
 * Recruit a facilitator to guide the participants through the day.
 * Arrange for a nice, catered lunch. Participants who are willing to come out at 9 in the morning to spend the day coding deserve more than just pizza for lunch.
-* Check the [checklist](/pages/hosting/checklist) for keeping track of things.
+* Check the checklist for keeping track of things.
+
+## Checklist
+
+This list is intended as help for people who want to host a coderetreat:
+
+- Tables and chairs (good for sitting all day)
+- Breakfast snack, e.g. croissants …
+- Healthy lunch (No Pizza!)
+- Afternoon snack, e.g. cake, cookies …
+- Soft-drinks, e.g. water, coffee, tea …
+- Wifi for everyone
+- Power Plugs
+- Flipcharts
+- Stickies and markers
+- Pen and paper for participants
+- Projector
+- Email a reminder to participants one day before event
+- Emergency numbers of host location, e.g. Facility/Security staff
+
+## Blog posts
 
 Here are some additional blog posts about hosting:
 
 * Alex Bolboaca has been organizing and facilitating an ongoing series of coderetreats in Romania. He wrote a great post on [organizing coderetreats](http://www.alexbolboaca.ro/wordpress/articles/how-to-organize-a-code-retreat).
 * John Smith has a great post on the specifics of [what to think about when organizing a coderetreat](http://geekswithblogs.net/onefloridacoder/archive/2010/08/16/setting-up-for-the-orlando-code-retreat.aspx).
 
-If you wish to know even more details about hosting a coderetreat, be sure to check out the [Hosting FAQ](/pages/hosting/faq) page.
-
-# ...by facilitating a coderetreat in your city.
-
-Facilitators guide participants through the exercises and lead the
-retrospectives. Below are the steps to get started:
-1. If possible, [attend at least one coderetreat](/events) before attempting to facilitate a coderetreat yourself
-2. Watch [this recorded facilitator training session](https://vimeo.com/54519386) to learn the basics
-3. Read about [the role of the facilitator](/blog/2011/12/02/on-the-role-of-the-coderetreat-facilitator)
-4. Become familiar with [the structure of a coderetreat](/pages/facilitating/structure-of-a-coderetreat)
-5. Get ideas on what exercises to do each session by reviewing the [activity catalog](/pages/facilitating/activity-catalog) or checkout [this exhaustive collection of constraints](https://drive.google.com/drive/folders/0B3idvASFqaEbN2RkNDYyYjktYTlkZi00ZjFiLWFmMDEtNjJhYTBkYzM2ZDlh?usp=sharing) by [Adrian Bolboaca](https://twitter.com/adibolb)
-6. When you feel ready, volunteer to facilitate a coderetreat!
+<p class="last-section">
+    <a href="{% link pages/hosting/faq.md %}">Check out the Hosting FAQ page</a>
+</p>

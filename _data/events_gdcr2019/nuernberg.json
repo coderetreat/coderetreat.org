@@ -1,0 +1,44 @@
+{
+    "location": {
+        "city": "Nuremberg",
+        "coordinates": {
+            "latitude": 49.45311,
+            "longitude": 11.04607
+        },
+        "country": "Germany"
+    },
+    "moderators": [
+        {
+            "name": "Andy Fischer",
+            "url": "https://twitter.com/Fischermaen"
+        },
+        {
+            "name": "Alex Soler Sanandres",
+            "url": "https://twitter.com/XelamRelos"
+        },
+        {
+            "name": "Marco Emrich",
+            "url": "https://twitter.com/marcoemrich"
+        },
+        {
+            "name": "Ren\u00e9 F\u00fcger",
+            "url": "https://twitter.com/embedjourneyman"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "SCC @ DATEV",
+            "url": "https://twitter.com/SCC_at_DATEV"
+        },
+        {
+            "name": "DATEV",
+            "url": "https://twitter.com/DATEV"
+        }
+    ],
+    "date": {
+        "start": "2019-11-16T09:00:00.000+01:00",
+        "end": "2019-11-16T17:00:00.000+01:00"
+    },
+    "title": "GDCR 2019 @ DATEV",
+    "url": "https://ti.to/gdcr-nuernberg/2019"
+}

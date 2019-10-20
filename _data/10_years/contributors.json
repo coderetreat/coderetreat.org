@@ -1,0 +1,109 @@
+{
+	"contributors": [
+	{
+		"name": "Corey Haines",
+		"screenname": "coreyhaines",
+		"bio": "Magical! Author of Understanding the 4 Rules of Simple Design https://leanpub.com/4rulesofsimpledesign/ … / building @kitty_teaparty / he/him/his"
+	}, {
+		"name": "Gary Bernhardt",
+		"screenname": "garybernhardt",
+		"bio": "Illuminating the dark corners of programming. Destroy All Software (dense programming screencasts); Deconstruct (independent software development conference)."
+	}, {
+		"name": "Patrick Wilson-Welsh",
+		"screenname": "patrickwelsh",
+		"bio": "Agile SW Dev coach, learning addict, programmer, tester, Network Weaver."
+	}, {
+		"name": "Nayan Hajratwala",
+		"screenname": "nhajratw",
+		"bio": "Agile/Lean Coach - Need to deliver more features, faster & with higher quality? Contact me. 4x improvement guaranteed*! (*results likely, but not guaranteed)"
+	}, {
+		"name": "Ivan Kusalic",
+		"screenname": "ikusalic",
+		"bio": "CTO @travel_audience. Architect. Speaker. Deeply curious. In love with life. Personal account - the blame is all mine."
+	}, {
+		"name": "Adrian Bolboaca",
+		"screenname": "adibolb",
+		"bio" : "Author: Coderetreat Book http://leanpub.com/coderetreat  Facilitating Technical Events http://bit.ly/facilitate-tech-events Programmer, Trainer & Coach http://mozaicworks.com"
+	}, {
+		"name": "David Campey",
+		"screenname": "davidcampey",
+		"bio" : "Helping humanity & technology work, play & dance together. In Africa, for Africa. #tech #startups #agriculture #space #africa @afrolabs @FarmPin @HyperFarmSat"
+	}, {
+		"name": "Alexandru Bolboaca",
+		"screenname": "alexboly",
+		"bio" : "Programmer, CTO, designer, writer, trainer, coach, SciFi lover. Love to build & understand things. Author: http://leanpub.com/usablesoftwaredesign"
+	}, {
+		"name": "Peter Kofler",
+		"screenname": "codecopkofler",
+		"bio" : "Software Developer, Completionist and officially appointed Code Cop. I like my code being in order. Obviously I am fanatic about code quality. He/His."
+	}, {
+		"name": "Marco Emrich",
+		"screenname": "marcoemrich",
+		"bio" : "software crafter, web dev, code coach, code retreat facilitator, author, consultant, #tdd, #cleancode, #js, #ruby, #reasonml"
+	}, {
+		"name": "Bob Allen",
+		"screenname": "CuriousAgilist",
+		"bio" : "I coach coders. They school me. We has us some fun."
+	}, {
+		"name": "Maria Diaconu",
+		"screenname": "fireladyM",
+		"bio" : "Entrepreneur loving Tech & Education. Start-ups & Innovative Teams Mentor. Follow & Teach Agile Lean Principles. Communities Founder, including agileworks.ro"
+	}, {
+		"name": "Amir Barylko",
+		"screenname": "abarylko",
+		"bio" : "Software ethusiast, great cook and dad full time!"
+	}, {
+		"name": "Aki Salmi",
+		"screenname": "rinkkasatiainen",
+		"bio" : "Työnohjaaja (STOry), Hiking guide. Programmer. Wanna-be-tester. Friend. See more: http://about.me/rinkkasatiainen"
+	}, {
+		"name": "Osvaldas Grigas",
+		"screenname": "ogrigas",
+		"bio" : "I hope I didn't brain my damage."
+	}, {
+		"name": "Géza Mihala",
+		"screenname": "infinitary",
+		"bio" : "sworn code alchemist // principled self-enveloper // continuous discoverer // fan of crystal // friend of beastie // foe of doctrines // drinker of single malts"
+	}, {
+		"name": "Emma López",
+		"screenname": "hell03610",
+		"bio" : "Trailblazer. The future is radical. She/her. @vlctechhub"
+	}, {
+		"name": "张燎原（Eric Zhang)",
+		"screenname": "zhangliaoyuan",
+		"bio" : "ex-teacher, programmer, be *** in future"
+	}, {
+		"name": "Martin Klose",
+		"screenname": "martinklose",
+		"bio" : "I'm a passionate software craftsman and the co-founder of klosebrothers.de - an IT consultancy. I like to run CodeRetreats."
+	}, {
+		"name": "Raimo Radczewski",
+		"screenname": "rradczewski",
+		"bio" : "Freelance Software Crafter fancying Short Feedback Loops, Humans over Tools, XP & EventSourcing. Organizer @coderetreat & @socratesday_ber DE/EN, he/him"
+	}, {
+		"name": "Matthew Plavcan",
+		"screenname": "mplavcan",
+		"bio" : "Hardware / Software developer, judoka, maker, gamer, railfan, race car driver, Technical Practices Coach. CTO at http://vrmotioncorp.com"
+	}, {
+		"name": "Rachel M. Carmena",
+		"screenname": "bberrycarmen",
+		"bio" : "Software engineer and constant apprentice | Fighting for pragmatism, accessibility, creativity, minimalism, humility, common sense, kaizen, respect & happiness."
+	}, {
+		"name": "Victoria Schiffer",
+		"screenname": "Erdbeervogel",
+		"bio" : "Delivery Manager @seekjobs | Technologist | Agilist | Professional Coach ~ Passions: Leadership, Tech, Teams ~ Mum to #agileBaby #agileToddler ~ DE/EN, she/her"
+	}, {
+		"name": "Thodoris Bais",
+		"screenname": "thodorisbais",
+		"bio" : "Trainer @agileleadersnl, Founder & Leader @utrechtjug, Agile Coach @abnamro, JSR-385 Expert Group (@UnitAPI), Board @coderetreat, Influencer, G(r)eek 'n 🇳🇱."
+	}, {
+		"name": "Juan David Vega",
+		"screenname": "juandvegarguez",
+		"bio" : "Software Developer."
+	}, {
+		"name": "Alin Pandichi",
+		"screenname": "alinpandichi",
+		"bio" : "(Not only) Java developer. Facilitating coding dojos, open spaces, coderetreats and more."
+	}
+]
+}

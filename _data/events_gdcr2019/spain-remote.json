@@ -1,0 +1,35 @@
+{
+  "title": "Remote GDCR 2019 from Spain",
+  "url": "https://github.com/remote-code-retreat/code-retreat-2019",
+  "date": {
+    "start": "2019-11-16T09:00:00.000+01:00",
+    "end": "2019-11-16T14:00:00.000+01:00"
+  },
+  "location": "virtual",
+  "moderators": [
+    {
+      "name": "Xavi Gost",
+      "url": "https://twitter.com/XaV1uzz"
+    },
+    {
+      "name": "Ricardo Borillo",
+      "url": "https://twitter.com/borillo"
+    },
+    {
+      "name": "Yeray Darias",
+      "url": "https://twitter.com/ydarias"
+    },
+    {
+      "name": "Antonio León Alcaide",
+      "url": "https://twitter.com/aLeonAlcaide"
+    },
+    {
+      "name": "Alfredo Artiles",
+      "url": "https://twitter.com/aartiles24"
+    },
+    {
+      "name": "David Matas",
+      "url": "https://twitter.com/davidmatas"
+    }
+  ]
+}

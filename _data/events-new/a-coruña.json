@@ -1,0 +1,19 @@
+{
+  "title": "Global day of code retreat A Coruña #GDCR18",
+  "url": "https://www.meetup.com/es-ES/Coruna-Agile/events/255764663/",
+  "moderators": [
+    "@borjal",
+    "@dani_latorre",
+    "@pablopr"
+  ],
+  "location": {
+    "city": "A Coruña",
+    "country": "Spain",
+    "coordinates": {
+      "latitude": 43.3618728,
+      "longitude": -8.4301933
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Madrid"
+  }
+}

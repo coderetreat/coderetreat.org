@@ -1,23 +1,38 @@
 {
-  "title": "GDCR18 at Dojo in Nantes",
-  "url": "https://www.meetup.com/fr-FR/nantes-software-crafters-Nantes/events/255678035/",
-  "moderators": [
-    "@sebfauvel",
-    "@CeciliaBossard",
-    "@jpalies",
-    "@__MaxS__"
-  ],
-  "sponsors": [
-    "@PALO_IT_Nantes"
-  ],
-  "location": {
-    "city": "Nantes",
-    "country": "France",
-    "coordinates": {
-      "latitude": 47.217959,
-      "longitude": -1.5451488
+    "location": {
+        "city": "Nantes",
+        "coordinates": {
+            "latitude": 47.217959,
+            "longitude": -1.5451488
+        },
+        "country": "France",
+        "timezone": "Europe/Paris",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Paris"
-  }
+    "moderators": [
+        {
+            "name": "Fauvel S\u00e9bastien",
+            "url": "https://twitter.com/sebfauvel"
+        },
+        {
+            "name": "C\u00e9cilia Bossard",
+            "url": "https://twitter.com/CeciliaBossard"
+        },
+        {
+            "name": "Jean Pali\u00e8s",
+            "url": "https://twitter.com/jpalies"
+        },
+        {
+            "name": "Maxime SC",
+            "url": "https://twitter.com/__MaxS__"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "PALO IT Nantes",
+            "url": "https://twitter.com/PALO_IT_Nantes"
+        }
+    ],
+    "title": "GDCR18 at Dojo in Nantes",
+    "url": "https://www.meetup.com/fr-FR/nantes-software-crafters-Nantes/events/255678035/"
 }

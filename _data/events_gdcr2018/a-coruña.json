@@ -1,19 +1,28 @@
 {
-  "title": "Global day of code retreat A Coruña #GDCR18",
-  "url": "https://www.meetup.com/es-ES/Coruna-Agile/events/255764663/",
-  "moderators": [
-    "@borjal",
-    "@dani_latorre",
-    "@pablopr"
-  ],
-  "location": {
-    "city": "A Coruña",
-    "country": "Spain",
-    "coordinates": {
-      "latitude": 43.3618728,
-      "longitude": -8.4301933
+    "location": {
+        "city": "A Coru\u00f1a",
+        "coordinates": {
+            "latitude": 43.3618728,
+            "longitude": -8.4301933
+        },
+        "country": "Spain",
+        "timezone": "Europe/Madrid",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Madrid"
-  }
+    "moderators": [
+        {
+            "name": "Borja Fdez Pillado",
+            "url": "https://twitter.com/borjal"
+        },
+        {
+            "name": "Dani Latorre",
+            "url": "https://twitter.com/dani_latorre"
+        },
+        {
+            "name": "Pablo Pazos",
+            "url": "https://twitter.com/pablopr"
+        }
+    ],
+    "title": "Global day of code retreat A Coru\u00f1a #GDCR18",
+    "url": "https://www.meetup.com/es-ES/Coruna-Agile/events/255764663/"
 }

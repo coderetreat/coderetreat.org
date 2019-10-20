@@ -1,20 +1,25 @@
 {
-  "title": "GDCR18 in Málaga",
-  "url": "https://www.meetup.com/MalagaJUG/events/248220933/",
-  "moderators": [
-    "@MalagaJUG"
-  ],
-  "sponsors": [
-    "theworkshop.com"
-  ],
-  "location": {
-    "city": "Málaga",
-    "country": "Spain",
-    "coordinates": {
-      "latitude": 36.718339,
-      "longitude": -4.5194787
+    "location": {
+        "city": "M\u00e1laga",
+        "coordinates": {
+            "latitude": 36.718339,
+            "longitude": -4.5194787
+        },
+        "country": "Spain",
+        "timezone": "Europe/Madrid",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Madrid"
-  }
+    "moderators": [
+        {
+            "name": "M\u00e1laga JUG",
+            "url": "https://twitter.com/MalagaJUG"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "theworkshop.com"
+        }
+    ],
+    "title": "GDCR18 in M\u00e1laga",
+    "url": "https://www.meetup.com/MalagaJUG/events/248220933/"
 }

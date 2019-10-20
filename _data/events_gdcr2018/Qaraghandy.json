@@ -1,20 +1,26 @@
 {
-  "title": "GDCR18 in Qaraghandy",
-  "url": "https://events.epam.com/events/global-day-of-coderetreat-1",
-  "moderators": [
-    "@andrey_kovalski"
-  ],
-  "sponsors": [
-    "@EPAMKazakhstan"
-  ],
-  "location": {
-    "city": "Qaraghandy",
-    "country": "Kazakhstan",
-    "coordinates": {
-      "latitude": 49.823898,
-      "longitude": 73.0288879
+    "location": {
+        "city": "Qaraghandy",
+        "coordinates": {
+            "latitude": 49.823898,
+            "longitude": 73.0288879
+        },
+        "country": "Kazakhstan",
+        "timezone": "Asia/Almaty",
+        "utcOffset": 6
     },
-    "utcOffset": 6,
-    "timezone": "Asia/Almaty"
-  }
+    "moderators": [
+        {
+            "name": "\u0410\u043d\u0434\u0440\u0435\u0439 \u041a\u043e\u0432\u0430\u043b\u044c\u0441\u043a\u0438\u0439",
+            "url": "https://twitter.com/andrey_kovalski"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "EPAM Kazakhstan",
+            "url": "https://twitter.com/EPAMKazakhstan"
+        }
+    ],
+    "title": "GDCR18 in Qaraghandy",
+    "url": "https://events.epam.com/events/global-day-of-coderetreat-1"
 }

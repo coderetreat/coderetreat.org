@@ -1,18 +1,30 @@
 {
-  "title": "GDCR @ ExpertTalks, Pune",
-  "url": "https://www.meetup.com/expert-talks-Pune/events/255576116/",
-  "moderators": [
-    "@npagnihotri",
-    "@nickdawiz"
-  ],
-  "location": {
-    "city": "Pune",
-    "country": "India",
-    "coordinates": {
-      "latitude": 18.544905,
-      "longitude": 73.909751
+    "location": {
+        "city": "Pune",
+        "coordinates": {
+            "latitude": 18.544905,
+            "longitude": 73.909751
+        },
+        "country": "India",
+        "timezone": "Asia/Kolkata",
+        "utcOffset": 5.5
     },
-    "utcOffset": 5.5,
-    "timezone": "Asia/Kolkata"
-  }
+    "moderators": [
+        {
+            "name": "Nandan Agnihotri",
+            "url": "https://twitter.com/npagnihotri"
+        },
+        {
+            "name": "\u0e20\u0e40\u043a\u0e23",
+            "url": "https://twitter.com/nickdawiz"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "Equal Experts",
+            "url": "https://twitter.com/EqualExperts"
+        }
+    ],
+    "title": "GDCR @ ExpertTalks, Pune",
+    "url": "https://www.meetup.com/expert-talks-Pune/events/255576116/"
 }

@@ -1,20 +1,26 @@
 {
-  "title": "Global Day of Coderetreat 2018 in Pamplona, facilitated by Openbravo",
-  "url": "https://www.eventbrite.es/e/entradas-openbravo-coderetreat-2018-pair-programming-tdd-y-buenas-practicas-de-desarrollo-51963867326",
-  "moderators": [
-    "@AugustoMauch"
-  ],
-  "sponsors": [
-    "@Openbravo"
-  ],
-  "location": {
-    "city": "Mutilva",
-    "country": "Spain",
-    "coordinates": {
-      "latitude": 42.79674389424998,
-      "longitude": -1.6133970022189033
+    "location": {
+        "city": "Mutilva",
+        "coordinates": {
+            "latitude": 42.79674389424998,
+            "longitude": -1.6133970022189033
+        },
+        "country": "Spain",
+        "timezone": "Europe/Madrid",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Madrid"
-  }
+    "moderators": [
+        {
+            "name": "Augusto Mauch",
+            "url": "https://twitter.com/AugustoMauch"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "Openbravo",
+            "url": "https://twitter.com/Openbravo"
+        }
+    ],
+    "title": "Global Day of Coderetreat 2018 in Pamplona, facilitated by Openbravo",
+    "url": "https://www.eventbrite.es/e/entradas-openbravo-coderetreat-2018-pair-programming-tdd-y-buenas-practicas-de-desarrollo-51963867326"
 }

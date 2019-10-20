@@ -1,21 +1,28 @@
 {
-  "title": "Global Day of Coderetreat - Rzeszow 2018",
-  "url": "https://softwaretalks.pl/wydarzenia/global-day-coderetreat-4/",
-  "moderators": [
-    "Mateusz Dronka",
-    "Sylwester Zimon"
-  ],
-  "sponsors": [
-    "@pgssoftware"
-  ],
-  "location": {
-    "city": "Rzeszow",
-    "country": "Poland",
-    "coordinates": {
-      "latitude": 50.0492628,
-      "longitude": 22.006778
+    "location": {
+        "city": "Rzeszow",
+        "coordinates": {
+            "latitude": 50.0492628,
+            "longitude": 22.006778
+        },
+        "country": "Poland",
+        "timezone": "Europe/Warsaw",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Warsaw"
-  }
+    "moderators": [
+        {
+            "name": "Mateusz Dronka"
+        },
+        {
+            "name": "Sylwester Zimon"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "PGS Software",
+            "url": "https://twitter.com/pgssoftware"
+        }
+    ],
+    "title": "Global Day of Coderetreat - Rzeszow 2018",
+    "url": "https://softwaretalks.pl/wydarzenia/global-day-coderetreat-4/"
 }

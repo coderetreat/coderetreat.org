@@ -1,17 +1,20 @@
 {
-  "title": "Global Day of Code Retreat 2018 in Munich",
-  "url": "https://www.meetup.com/munich-software-craft-community/events/254658206/",
-  "moderators": [
-    "@davidvoelkel"
-  ],
-  "location": {
-    "city": "Munich",
-    "country": "Germany",
-    "coordinates": {
-      "latitude": 48.125256,
-      "longitude": 11.588901
+    "location": {
+        "city": "Munich",
+        "coordinates": {
+            "latitude": 48.125256,
+            "longitude": 11.588901
+        },
+        "country": "Germany",
+        "timezone": "Europe/Berlin",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Berlin"
-  }
+    "moderators": [
+        {
+            "name": "David V\u00f6lkel",
+            "url": "https://twitter.com/davidvoelkel"
+        }
+    ],
+    "title": "Global Day of Code Retreat 2018 in Munich",
+    "url": "https://www.meetup.com/munich-software-craft-community/events/254658206/"
 }

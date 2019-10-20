@@ -1,15 +1,24 @@
 {
-  "title": "GDCR17 in SLC",
-  "url": "https://www.meetup.com/UtahJS/events/243091877/",
-  "moderators": ["@version2beta", "@_metasean"],
-  "location": {
-    "city": "Salt Lake City, Utah",
-    "country": "United States of America",
-    "coordinates": {
-      "latitude": 40.765887,
-      "longitude": -111.8909577
+    "location": {
+        "city": "Salt Lake City, Utah",
+        "coordinates": {
+            "latitude": 40.765887,
+            "longitude": -111.8909577
+        },
+        "country": "United States of America",
+        "timezone": "MST7MDT",
+        "utcOffset": -6
     },
-    "utcOffset": -6,
-    "timezone": "MST7MDT"
-  }
+    "moderators": [
+        {
+            "name": "rob martin",
+            "url": "https://twitter.com/version2beta"
+        },
+        {
+            "name": "@_metasean",
+            "url": "https://twitter.com/_metasean"
+        }
+    ],
+    "title": "GDCR17 in SLC",
+    "url": "https://www.meetup.com/UtahJS/events/243091877/"
 }

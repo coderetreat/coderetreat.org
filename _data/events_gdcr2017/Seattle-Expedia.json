@@ -1,14 +1,14 @@
 {
-  "title": "Global Day of Coderetreat 2017 - Expedia Seattle",
-  "url": "https://www.eventbrite.com/e/global-day-of-coderetreat-expedia-seattle-tickets-38775140489",
-  "location": {
-    "utcOffset": -8,
-    "timezone": "America/Los_Angeles",
-    "city": "Seattle, WA",
-    "country": "United States of America",
-    "coordinates": {
-      "latitude": 47.625900,
-      "longitude": -122.368500
-    }
-  }
+    "location": {
+        "city": "Seattle, WA",
+        "coordinates": {
+            "latitude": 47.6259,
+            "longitude": -122.3685
+        },
+        "country": "United States of America",
+        "timezone": "America/Los_Angeles",
+        "utcOffset": -8
+    },
+    "title": "Global Day of Coderetreat 2017 - Expedia Seattle",
+    "url": "https://www.eventbrite.com/e/global-day-of-coderetreat-expedia-seattle-tickets-38775140489"
 }
