@@ -1,0 +1,22 @@
+{
+  "title": "Calgary Code Retreat",
+  "url": "",
+  "moderators": [
+    "ttrungvo"
+  ],
+  "sponsors": [
+    "CAMUG"
+  ],
+  "date": {
+    "start": "",
+    "end": ""
+  },
+  "location": {
+    "city": "Calgary",
+    "country": "Canada",
+    "coordinates": {
+      "latitude": 0,
+      "longitude": 0
+    }
+  }
+}
