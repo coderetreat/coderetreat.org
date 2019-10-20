@@ -1,0 +1,28 @@
+{
+  "title": "Example Mapping meets Global Day of Coderetreat, Munich, 2019",
+  "url": "https://www.meetup.com/munich-software-craft-community/events/265621691/",
+  "moderators": [
+    {
+      "name": "Dimitry Polivaev",
+      "url": "https://www.meetup.com/members/29699352/"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Austin Frazer",
+      "url": "https://www.austinfraser.com/de"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T08:30:00+02:00",
+    "end": "2019-11-16T17:30:00+02:00"
+  },
+  "location": {
+    "city": "Munich",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 48.14105,
+      "longitude": 11.566612
+    }
+  }
+}
