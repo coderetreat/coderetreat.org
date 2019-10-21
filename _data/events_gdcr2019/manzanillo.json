@@ -1,0 +1,40 @@
+{
+  "title": "GDCR Manzanillo 2019",
+  "url": "https://www.facebook.com/events/682902392121431",
+  "moderators": [
+    {
+      "name": "Kevin Perez",
+      "url": "https://github.com/kevinnio"
+    },
+    {
+      "name": "Frank Zenteno",
+      "url": "https://www.facebook.com/sinahi.zenteno"
+    },
+    {
+      "name": "Pedro Arzate",
+      "url": "https://www.facebook.com/PedroArzate117"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "MagmaLabs",
+      "url": "https://www.magmalabs.io"
+    },
+    {
+      "name": "UTeM",
+      "url": "http://utem.edu.mx"
+    }
+  ],
+  "date": {
+    "start": "2019-10-15T10:00:00.000-05:00",
+    "end": "2019-10-15T18:00:00.000-05:00"
+  },
+  "location": {
+    "city": "Manzanillo",
+    "country": "Mexico",
+    "coordinates": {
+      "latitude": 19.1397486,
+      "longitude": -104.3166256
+    }
+  }
+}
