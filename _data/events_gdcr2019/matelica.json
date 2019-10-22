@@ -1,0 +1,23 @@
+{
+  "title": "Halleymedia - GDCR19 a Matelica",
+  "url": "https://www.eventbrite.it/e/biglietti-global-day-of-code-retreat-2019-matelica-77483815177",
+  "moderators": [
+    {
+      "name": "Moreno Gentili",
+      "url": "https://github.com/MorenoGentili"
+    }
+  ],
+  "sponsors": [],
+  "date": {
+    "start": "2019-11-16T08:45:00.000+01:00",
+    "end": "2019-11-16T13:00:00.000+01:00"
+  },
+  "location": {
+    "city": "Matelica",
+    "country": "Italy",
+    "coordinates": {
+      "latitude": 43.2685856,
+      "longitude": 13.0091395
+    }
+  }
+}
