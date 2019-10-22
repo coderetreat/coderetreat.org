@@ -1,0 +1,23 @@
+{
+  "title": "Coffee&Code: Global Day of Coderetreat 2019 - Skien",
+  "url": "https://www.meetup.com/coffee-and-code-skien/events/265834728/",
+  "moderators": [
+    {
+      "name": "Matěj \"Horm\" Horák",
+      "url": "https://github.com/Horm"
+    }
+  ],
+  "sponsors": [],
+  "date": {
+    "start": "2019-11-16T09:00:00.000Z",
+    "end": "2019-11-16T18:00:00.000Z"
+  },
+  "location": {
+    "city": "Skien",
+    "country": "Norway",
+    "coordinates": {
+      "latitude": 59.2121452,
+      "longitude": 9.5998877
+    }
+  }
+}
