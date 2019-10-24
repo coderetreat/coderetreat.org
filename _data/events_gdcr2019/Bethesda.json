@@ -1,0 +1,24 @@
+{
+  "title": "Global Day of Code Retreat 2019 - Bethesda",
+  "url": "https://www.eventbrite.com/e/global-day-of-code-retreat-2019-bethesda-registration-78301332393"
+  "moderators": [
+    "Leah Belin",
+    "Josh Widzer"
+  ],
+  "sponsors": [
+    {
+      "name": "Homesnap",
+      "url": "www.homesnap.com"
+    }
+  ],
+  "location": {
+    "city": "Bethesda",
+    "country": "United States of America",
+    "coordinates": {
+      "latitude": 38.9815464,
+      "longitude": -77.0963168
+    },
+    "utcOffset": -4,
+    "timezone": "America/New_York"
+  }
+}
