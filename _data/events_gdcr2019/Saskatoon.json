@@ -1,0 +1,19 @@
+{
+    "location": {
+        "city": "Saskatoon",
+        "coordinates": {
+            "latitude": 52.1420383,
+            "longitude": -106.6215119
+        },
+        "country": "Canada",
+        "timezone": "America/Regina",
+        "utcOffset": -6
+    },
+    "moderators": [
+        {
+            "name": "Carter Myers"
+        }
+    ],
+    "title": "GDCR19 @SED in Saskatoon",
+    "url": "https://ti.to/global-day-of-code-retreat-sed-systems/gdcr-2019-saskatoon"
+}
