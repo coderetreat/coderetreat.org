@@ -2,7 +2,10 @@
   "title": "GDCR19 in Auckland",
   "url": "https://www.meetup.com/kiwi-code-retreat/events/265961507",
   "moderators": [
-    "@mightymuke"
+    {
+      "name": "Marcus Bristol",
+      "url": "https://twitter.com/mightymuke"
+    }
   ],
   "sponsors": [
     {
