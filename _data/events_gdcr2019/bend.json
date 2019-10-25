@@ -1,0 +1,23 @@
+{
+  "title": "GDCR19 Bend @ OSU Cascades",
+  "url": "https://www.eventbrite.com/e/bend-global-day-of-coderetreat-2019-tickets-78716688735",
+  "moderators": [
+    {
+      "name": "ybakos",
+      "url": "https://github.com/ybakos"
+    }
+  ],
+  "sponsors": [],
+  "date": {
+    "start": "2019-11-16T09:00:00.000-08:00",
+    "end": "2019-11-16T17:00:00.000-08:00"
+  },
+  "location": {
+    "city": "Bend, OR",
+    "country": "United States of America",
+    "coordinates": {
+      "latitude": 44.0429237,
+      "longitude": -121.33567239
+    }
+  }
+}
