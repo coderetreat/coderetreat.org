@@ -3,11 +3,24 @@
   "url": "https://gdcr2019-sophia-antipolis.eventbrite.fr/",
   "moderators": [
     {
-      "name": "Bureau du Code",
-      "url": "https://github.com/BureauDuCode"
+      "name": "Lucas Oms",
+      "url": "https://www.linkedin.com/in/lucas-oms/"
+    },
+    {
+      "name": "Calvin Audier",
+      "url": "https://www.linkedin.com/in/audier-calvin-93759761/"
     }
   ],
-  "sponsors": [],
+  "sponsors": [
+    {
+      "name": "Bureau du Code",
+      "url": "https://www.linkedin.com/company/bureau-du-code/"
+    },
+    {
+      "name": "JobOpportunIT",
+      "url": "https://www.jobopportunit.com/"
+    }
+  ],
   "date": {
     "start": "2019-11-16T09:00:00.000+01:00",
     "end": "2019-11-16T17:00:00.000+01:00"
