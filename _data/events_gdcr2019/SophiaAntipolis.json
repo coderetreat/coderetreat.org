@@ -1,0 +1,23 @@
+{
+  "title": "GDCR 2019 - Sophia Antipolis",
+  "url": "https://gdcr2019-sophia-antipolis.eventbrite.fr/",
+  "moderators": [
+    {
+      "name": "Bureau du Code",
+      "url": "https://github.com/BureauDuCode"
+    }
+  ],
+  "sponsors": [],
+  "date": {
+    "start": "2019-11-16T09:00:00+0100",
+    "end": "2019-11-16T17:00:00+0100"
+  },
+  "location": {
+    "city": "Sophia Antipolis",
+    "country": "France",
+    "coordinates": {
+      "latitude": 43.6155521,
+      "longitude": 7.0695895
+    }
+  }
+} 
