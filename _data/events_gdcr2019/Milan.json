@@ -1,0 +1,40 @@
+{
+  "title": "Global Day of Coderetreat 2019 - Milan",
+  "url": "https://www.eventbrite.it/e/biglietti-global-day-of-coderetreat-2019-milan-78880286059",
+  "moderators": [
+    {
+      "name": "Gabriele Lana",
+      "url": "https://github.com/gabrielelana"
+    },
+    {
+      "name": "Daniele Megna",
+      "url": "https://github.com/danielemegna"
+    },
+    {
+      "name": "Gabriele Tondi",
+      "url": "https://github.com/gabrieletondi"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "XPeppers",
+      "url": "https://xpeppers.com"
+    },
+    {
+      "name": "Connexxo",
+      "url": "https://connexxo.com/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T09:00:00+01:00",
+    "end": "2019-11-16T17:30:00+01:00"
+  },
+  "location": {
+    "city": "Milan",
+    "country": "Italy",
+    "coordinates": {
+      "latitude": 45.49059,
+      "longitude": 9.21544
+    }
+  }
+}
