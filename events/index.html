@@ -68,26 +68,26 @@ description: List of events around the world!
                 $('#gdcrCountry').val(prevCountry);
                 filterRows(prevCountry, prevCountry === 'none');
             };
-        }
+        };
 
         var filterRows = function(filter, showAll = false) {
             var rows = $('tbody tr');
             for (var i = 0; i < rows.length; i++) {
                 row = rows[i];
                 ctry = row.getAttribute("data-country");
-                row.classList.toggle('hidden', !(showAll || ctry === filter))
+                row.classList.toggle('hidden', !(showAll || ctry === filter));
             }
-        }
+        };
 
         var setCountryInURL = function(country) {
             var encodedCountry = encodeURIComponent(country);
             var newUrl = eventsURL + '?country=' + encodedCountry;
             window.history.pushState({ path: newUrl, country: encodedCountry }, '', newUrl);
-        }
+        };
 
         var resetCountryInURL = function() {
-            window.history.pushState({ path: eventsURL }, '', eventsURL)
-        }
+            window.history.pushState({ path: eventsURL }, '', eventsURL);
+        };
 
         $.get('/events/gdcr2019.json', function (eventsJson) {
             var gdcrEvents = mapEventsDataToMapFormat(eventsJson);
