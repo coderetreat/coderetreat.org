@@ -1,0 +1,28 @@
+{
+  "title": "The Forge Columbus Celebrates Coderetreat's 10th Anniversary!",
+  "url": "https://info.pillartechnology.com/ovr.gdcr2019-rsvp",
+  "moderators": [
+    {
+      "name": "Junilu Lacar",
+      "url": "https://twitter.com/jlacar"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "The Forge part of Accenture Industry X.0",
+      "url": "https://pillartechnology.com/forge"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T08:30:00.000-05:00",
+    "end": "2019-11-16T16:30:00.000-05:00"
+  },
+  "location": {
+    "city": "Columbus, OH",
+    "country": "United States of America",
+    "coordinates": {
+      "latitude": 39.9768257,
+      "longitude": -83.0059717
+    }
+  }
+}

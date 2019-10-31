@@ -1,0 +1,40 @@
+{
+  "title": "GDCR19 in Oleiros @Trileuco",
+  "url": "https://www.meetup.com/es-ES/Coruna-Agile/events/265957930/",
+  "moderators": [
+    {
+      "name": "Víctor López",
+      "url": "https://twitter.com/viticlick"
+    },
+    {
+      "name": "Iván Guardado ",
+      "url": "https://twitter.com/ivanguardado"
+    },
+    {
+      "name": "Borja Fernández",
+      "url": "https://twitter.com/BorjaL"
+    },
+    {
+      "name": "Eloy López",
+      "url": "https://github.com/eloylp"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Trileuco Solutions",
+      "url": "https://trileucosolutions.com/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T08:30:00+01:00",
+    "end": "2019-11-16T20:30:00+01:00"
+  },
+  "location": {
+    "city": "Oleiros",
+    "country": "Spain",
+    "coordinates": {
+      "latitude": 43.3252927,
+      "longitude": -8.3645324
+    }
+  }
+}

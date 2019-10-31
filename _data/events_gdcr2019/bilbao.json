@@ -1,0 +1,28 @@
+{
+  "title": "GDCR19 in Bilbao",
+  "url": "https://www.eventbrite.es/e/entradas-global-day-of-coderetreat-bilbao-78151478175",
+  "moderators": [
+    {
+      "name": "Fernando Perez",
+      "url": "https://github.com/ferpega"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Plain Concepts",
+      "url": "https://github.com/PlainConcepts"
+    }
+  ],
+  "date": {
+    "start": "2019-11-15T18:00:00.000+01:00",
+    "end": "2019-11-16T17:00:00.000+01:00"
+  },
+  "location": {
+    "city": "Bilbao",
+    "country": "Spain",
+    "coordinates": {
+      "latitude": 43.262254,
+      "longitude": -2.9287282
+    }
+  }
+}

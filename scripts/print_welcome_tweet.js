@@ -4,6 +4,7 @@ const glob = require("glob");
 const DIR = "_data/events_gdcr2019";
 
 const toWelcomeTweetModerators = moderators => {
+  if(!moderators) return "";
   const names = moderators.map(mod => {
     if (typeof mod === "string") return mod;
     if (mod.url && mod.url.includes("twitter.com"))
