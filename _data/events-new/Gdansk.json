@@ -1,0 +1,21 @@
+{
+  "title": "Global Day of Coderetreat - Gdansk 2018",
+  "url": "https://softwaretalks.pl/wydarzenia/global-day-coderetreat-3/",
+  "moderators": [
+    "Krzysztof Kakol",
+    "Iga Zacher-Czempa"
+  ],
+  "sponsors": [
+    "@pgssoftware"
+  ],
+  "location": {
+    "city": "Gdansk",
+    "country": "Poland",
+    "coordinates": {
+      "latitude": 54.3605361,
+      "longitude": 18.6450142
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Warsaw"
+  }
+}

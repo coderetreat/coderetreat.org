@@ -1,0 +1,28 @@
+{
+    "location": {
+        "city": "Saskatoon",
+        "coordinates": {
+            "latitude": 52.1420383,
+            "longitude": -106.6215119
+        },
+        "country": "Canada"
+    },
+	"date": {
+      "start": "2019-11-16T10:00:00.000-06:00",
+      "end": "2019-11-16T16:00:00.000-06:00"
+    },
+    "moderators": [
+        {
+            "name": "Carter Myers"
+        }
+    ],
+	
+    "sponsors": [
+        {
+            "name": "Calian SED",
+            "url": "https://www.sedsystems.ca/"
+        }
+    ],
+    "title": "GDCR19 @SED in Saskatoon",
+    "url": "https://ti.to/global-day-of-code-retreat-sed-systems/gdcr-2019-saskatoon"
+}

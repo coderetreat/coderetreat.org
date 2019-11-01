@@ -1,0 +1,37 @@
+{
+  "title": "GDCR 2019 Salt Lake City",
+  "url": "https://www.eventbrite.com/e/global-day-of-coderetreat-slc-tickets-76456528535",
+  "moderators": [
+    {
+      "name": "Neil Sorensen"
+    },
+    {
+      "name": "Dave Adsit"
+    },
+    {
+      "name": "Mike Christian"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Pluralsight",
+      "url": "https://www.pluralsight.com"
+    },
+    {
+      "name": "HealthEquity",
+      "url": "https://healthequity.com/careers/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T08:30:00-07:00",
+    "end": "2019-11-16T17:00:00-07:00"
+  },
+  "location": {
+    "city": "Salt Lake City",
+    "country": "Utah",
+    "coordinates": {
+      "latitude": 40.4808104,
+      "longitude": -111.893937
+    }
+  }
+}

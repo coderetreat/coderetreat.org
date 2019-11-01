@@ -1,0 +1,36 @@
+{
+    "location": {
+        "city": "Karlsruhe",
+        "coordinates": {
+            "latitude": 48.994277,
+            "longitude": 8.446993
+        },
+        "country": "Germany"
+    },
+    "date": {
+      "start": "2019-11-16T09:30:00.000+02:00",
+      "end": "2019-11-16T18:00:00.000+02:00"
+    },    
+    "moderators": [
+        {
+            "name": "Urs Metz",
+            "url": "https://twitter.com/ursmetz"
+        },
+        {
+            "name": "Christoph H\u00e4fner",
+            "url": "https://twitter.com/chr1shaefn3r"
+        },
+        {
+            "name": "Peter Fichtner",
+            "url": "https://twitter.com/petfic"
+        }
+    ],
+    "sponsors": [
+    {
+        "name": "Fiducia & GAD IT AG",
+        "url": "https://www.fiduciagad.de/"
+    }
+    ],
+    "title": "GDCR19 Karlsruhe @fiducia_gad",
+    "url": "https://www.softwerkskammer.org/activities/ka-gdcr-19/"
+}

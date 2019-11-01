@@ -1,0 +1,18 @@
+{
+  "title": "GDCR18 - CZE, Olomouc",
+  "url": "http://meetu.ps/e/G0qwt/zBCnJ/f",
+  "moderators": [
+    "@tomaslatal",
+    "@mcbigcz"
+  ],
+  "location": {
+    "city": "Olomouc",
+    "country": "Czech Republic",
+    "coordinates": {
+      "latitude": 49.597897,
+      "longitude": 17.258257
+    },
+    "utcOffset": 2,
+    "timezone": "Europe/Prague"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "title": "Global Day of Coderetreat 10th Anniversary @ Townscript, Pune",
+  "url": "https://www.townscript.com/e/global-day-of-coderetreat-10th-anniversary-144313",
+  "moderators": [
+    {
+      "name": "Piyush Tiwari",
+      "url": "@piyushtechsavy"
+    },
+    {
+      "name": "Pratik Patwari",
+      "url": "@pratikpatwari2 "
+    },
+    {
+      "name": "Sushant Pawar",
+      "url": "@pawarsushant007"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Townscript, Pune",
+      "url": "https://www.townscript.com/"
+    },
+    {
+      "name": "Nelkinda Software Craft Pvt Ltd",
+      "url": "http://nelkinda.com/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T09:00:00+05:30",
+    "end": "2019-11-16T17:00:00+05:30"
+  },
+  "location": {
+    "city": "Pune",
+    "country": "India",
+    "coordinates": {
+      "latitude": 18.5206853,
+      "longitude": 73.9329015
+    }
+  }
+}
+

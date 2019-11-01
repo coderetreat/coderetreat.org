@@ -1,0 +1,19 @@
+{
+  "title": "GDCR18 @fiducia_gad in Karlsruhe",
+  "url": "https://www.softwerkskammer.org/activities/ka-gdcr-18/",
+"moderators": [
+    "@ursmetz",
+    "@chr1shaefn3r",
+    "@petfic"
+  ],
+  "location": {
+    "city": "Karlsruhe",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 48.994277,
+      "longitude": 8.446993
+    },
+    "utcOffset": 1,
+    "timezone": "Europe/Berlin"
+  }
+}

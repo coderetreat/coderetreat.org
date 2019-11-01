@@ -1,0 +1,28 @@
+{
+    "location": {
+        "city": "Luebeck",
+        "coordinates": {
+            "latitude": 53.855961,
+            "longitude": 10.6711248
+        },
+        "country": "Germany"
+    },
+    "date": {
+      "start": "2019-11-16T07:00:00.000+02:00",
+      "end": "2019-11-16T18:00:00.000+02:00"
+    },
+    "moderators": [
+        {
+            "name": "Florian \u2615",
+            "url": "https://twitter.com/badbadc0ffee"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "Dr\u00e4ger",
+            "url": "https://twitter.com/DraegerNews"
+        }
+    ],
+    "title": "GDCR19 L\u00fcbeck Event",
+    "url": "https://www.meetup.com/Softwerkskammer-Luebeck/events/260049765/"
+}

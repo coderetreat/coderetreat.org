@@ -1,0 +1,29 @@
+{
+  "location": "virtual",
+  "date": {
+    "start": "2019-11-16T09:00:00.000+00:00",
+    "end":   "2019-11-16T17:00:00.000+00:00"
+  },
+  "moderators": [
+    {
+      "name": "Rachel Davies",
+      "url": "https://twitter.com/rachelcdavies"
+    },
+    {
+      "name": "Ruddy Riba",
+      "url": "https://twitter.com/RuddyRiba"
+    },
+    {
+      "name": "Rabea Gleissner",
+      "url": "https://twitter.com/aebar"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Tes",
+      "url": "http://engineering.tes.com/"
+    }
+  ],
+  "title": "Fully remote GDCR 2019",
+  "url": "https://engineering.tes.com/remote-gdcr/"
+}

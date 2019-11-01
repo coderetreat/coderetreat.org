@@ -1,0 +1,28 @@
+{
+  "title": "GDCR19 at itemis Hamburg",
+  "url": "https://www.meetup.com/de-DE/itemis/events/264054019/",
+  "moderators": [
+    {
+      "name": "Olaf Gunkel",
+      "url": "https://blogs.itemis.com/author/olaf-gunkel"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "itemis AG",
+      "url": "https://www.itemis.com/de/jobs/standorte/hamburg"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T10:00:00+01:00",
+    "end": "2019-11-16T18:00:00+01:00"
+  },
+  "location": {
+    "city": "Hamburg",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 53.550004,
+      "longitude": 9.998093
+    }
+  }
+}

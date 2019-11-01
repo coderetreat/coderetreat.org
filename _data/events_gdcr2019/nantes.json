@@ -1,0 +1,40 @@
+{
+  "title": "GDCR19 at Dojo in Nantes",
+  "url": "https://www.meetup.com/fr-FR/nantes-software-crafters-Nantes/events/265667033/",
+  "moderators": [
+    {
+        "name": "Fauvel Sébastien",
+        "url": "https://twitter.com/sebfauvel"
+    },
+    {
+        "name": "Cécilia Bossard",
+        "url": "https://twitter.com/CeciliaBossard"
+    },
+    {
+        "name": "Jean Paliès",
+        "url": "https://twitter.com/jpalies"
+    },
+    {
+        "name": "Maxime SC",
+        "url": "https://twitter.com/__MaxS__"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "PALO IT Nantes",
+      "url": "https://twitter.com/PALO_IT_Nantes"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T09:00:00.000+01:00",
+    "end": "2019-11-16T17:00:00.000+01:00"
+  },
+  "location": {
+    "city": "Nantes",
+    "country": "France",
+    "coordinates": {
+      "latitude": 47.214515,
+      "longitude": -1.558925
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "title": "GDCR 2019 in Bordesholm DIVIS ",
+  "url": "https://www.meetup.com/DIVIS-Events/events/265473487",
+  "moderators": [
+    {
+      "name": "Florian Hohnsbehn",
+      "url": "https://twitter.com/captainGut"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Deutsche Industrie Video System GmbH",
+      "url": "https://divis.eu"
+    }
+  ],
+  "date": {
+    "start": "2019-11-15T06:30:00.000+02:00",
+    "end": "2019-11-15T15:00:00.000+02:00"
+  },
+  "location": {
+    "city": "Bordesholm",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 54.1847872,
+      "longitude": 10.05138
+    }
+  }
+}

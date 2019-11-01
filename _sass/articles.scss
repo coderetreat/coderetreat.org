@@ -1,0 +1,50 @@
+table.articles-list {
+  margin-bottom:30px;
+}
+
+.articles-list {
+  border-collapse: separate;
+  border-spacing: 0 1em;
+
+  th {
+    text-align: left;
+  }
+  width: 100%;
+
+  tr {
+    margin: 0.5em 0;
+    background: darken(#F4F9F0, 5%);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+    td:nth-child(1), td:nth-child(2) {
+      font-weight: bold;
+    }
+    td {
+      padding: 0.8em;
+    }
+  } 
+
+  @include media($mobile) {
+    width: 90%;
+    margin: 5%;
+
+    tr {
+      margin: 20px 0;
+      padding: 20px 0;
+      background: darken(#F4F9F0, 5%);
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+      td:nth-child(1), td:nth-child(2) {
+        font-weight: bold;
+      }
+      td:nth-child(3),td:nth-child(4) {
+        text-align: right;
+      }
+      display: block;
+      td {
+        display: block;
+        padding: 0px 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "title": "Women-Focused Global Day of Coderetreat",
+  "url": "https://www.meetup.com/AgilePDX-User-Group-Portland-Metro/events/265197341/",
+  "moderators": [
+    {
+      "name": "Tracie Lee",
+      "url": "https://www.linkedin.com/in/leetracie"
+    },
+    {
+      "name": "Morgan Senkal",
+      "url": "https://www.linkedin.com/in/morganpdx/"
+    },
+    {
+      "name": "Maribel Monica",
+      "url": "https://www.linkedin.com/in/maribel-monica-454aa1a2/"
+    },
+    {
+      "name": "Jean Richardson",
+      "url": "https://www.linkedin.com/in/jeanatazuregate/"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Smarsh",
+      "url": "https://www.smarsh.com"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T09:30:00.000-08:00",
+    "end": "2019-11-16T16:30:00.000-08:00"
+  },
+  "location": {
+    "city": "Portland",
+    "country": "United States of America",
+    "coordinates": {
+      "latitude": 45.5180977,
+      "longitude": -122.6818228
+    }
+  }
+}

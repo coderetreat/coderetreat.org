@@ -1,0 +1,40 @@
+{
+  "title": "Perennial Systems: GDCR 2019",
+  "url": "https://www.meetup.com/SimplyTech/events/265680923/",
+  "moderators": [
+    {
+      "name": "Akhilesh Kshirsagar",
+      "url": "https://github.com/TheOverclockedLad"
+    },
+    {
+      "name": "Akshay Khade",
+      "url": "https://github.com/akshaybkhade"
+    },
+    {
+      "name": "Azhar Laskar",
+      "url": "https://github.com/eminentcodex"
+    },
+    {
+      "name": "Sandesh Uttarwar",
+      "url": "https://github.com/uttarwarsandesh33"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Perennial Systems, Pune",
+      "url": "http://www.perennialsys.com"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T09:30:00.000+05:30",
+    "end": "2019-11-16T17:30:00.000+05:30"
+  },
+  "location": {
+    "city": "Pune",
+    "country": "India",
+    "coordinates": {
+      "latitude": 18.5204,
+      "longitude": 73.8567
+    }
+  }
+}

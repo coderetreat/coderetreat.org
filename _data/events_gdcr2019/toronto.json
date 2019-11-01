@@ -1,0 +1,32 @@
+{
+  "title": "Global Day of Coderetreat Toronto",
+  "url": "https://www.eventbrite.com/e/global-day-of-coderetreat-toronto-registration-76445489517",
+  "moderators": [
+    {
+      "name": "Alistair McKinnell",
+      "url": "https://github.com/amckinnell"
+    },
+    {
+      "name": "Paul Sobocinski",
+      "url": "https://github.com/psobocinski"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Connected",
+      "url": "https://github.com/connected-io"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T09:00:00.000-05:00",
+    "end": "2019-11-16T17:00:00.000-05:00"
+  },
+  "location": {
+    "city": "Toronto",
+    "country": "Canada",
+    "coordinates": {
+      "latitude": 43.646253,
+      "longitude": -79.391735
+    }
+  }
+}

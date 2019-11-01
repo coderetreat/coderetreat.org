@@ -1,0 +1,21 @@
+{
+    "title": "GDCR 2018 in Shanghai",
+    "url": "https://jinshuju.net/f/qL5Ol6",
+    "moderators": [
+        "Wu Ke",
+        "Zhang Yaguang"
+    ],
+    "sponsors": [
+        "SAP"
+    ],
+    "location": {
+        "city": "Shanghai",
+        "country": "China",
+        "coordinates": {
+            "latitude": 31.2019621,
+            "longitude": 121.6006583
+        },
+        "utcOffset": 8,
+        "timezone": "Asia/Shanghai"
+    }
+}

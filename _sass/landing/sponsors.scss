@@ -9,9 +9,13 @@
     border-top: 1px dashed $dark;
     @include span-columns(8 of 12);
     @include shift(2);
-  }
-  .sponsors-body .callToAction {
-    @include span-columns(6 of 12);
-    @include shift(3);
+    @include media($mobile) {
+      @include span-columns(12 of 12);
+      @include shift(0);
+    }
+    .callToAction {
+      @include span-columns(6 of 12);
+      @include shift(3);
+    }
   }
 }

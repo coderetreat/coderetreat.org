@@ -1,0 +1,35 @@
+{
+  "title": "Mix Leap Study - GDCR2019 in Osaka",
+  "url": "https://yahoo-osaka.connpass.com/event/151615/",
+  "moderators": [
+    {
+      "name": "e_yamane",
+      "url": "https://twitter.com/e_yamane"
+    },
+    {
+      "name": "irof",
+      "url": "https://twitter.com/irof"
+    },
+    {
+      "name": "Yohei Tsuji",
+      "url": "https://twitter.com/crossroad0201"
+    },
+    {
+      "name": "kawakawa",
+      "url": "https://twitter.com/kawakawa"
+    }
+  ],
+  "sponsors": [],
+  "date": {
+    "start": "2019-11-16T10:00:00.000+09:00",
+    "end": "2019-11-16T17:00:00.000+09:00"
+  },
+  "location": {
+    "city": "Osaka",
+    "country": "Japan",
+    "coordinates": {
+      "latitude": 34.7036139,
+      "longitude": 135.4952654
+    }
+  }
+}

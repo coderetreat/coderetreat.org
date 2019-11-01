@@ -1,0 +1,32 @@
+{
+  "title": "Global Day of Coderetreat 2019 - Vienna, Austria, 15 November 2019 @ Zühlke",
+  "url": "https://www.eventbrite.com/e/global-day-of-coderetreat-2019-vienna-austria-15-november-2019-tickets-72153187125",
+  "moderators": [
+    {
+      "name": "Ilke Zilci",
+      "url": "https://twitter.com/ilkezilci"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Zühlke Engineering (Austria) GmbH",
+      "url": "https://www.zuehlke.com/at/en/"
+    },
+    {
+      "name": "willhaben",
+      "url": "https://www.willhaben.at/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-15T09:00:00.000+01:00",
+    "end": "2019-11-15T17:30:00.000+01:00"
+  },
+  "location": {
+    "city": "Vienna",
+    "country": "Austria",
+    "coordinates": {
+      "latitude": 48.2423636,
+      "longitude": 16.3828348
+    }
+  }
+}

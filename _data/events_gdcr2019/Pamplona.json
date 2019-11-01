@@ -1,0 +1,38 @@
+{
+  "title": "Global Day of Coderetreat 2019 in Pamplona, Pacman Edition!",
+  "url": "https://www.eventbrite.es/e/entradas-openbravo-coderetreat-2019-buenas-practicas-de-desarrollo-pacman-edition-74085595009",
+  "moderators": [
+    {
+      "name": "Augusto Mauch",
+      "url": "https://github.com/AugustoMauch"
+    },
+    {
+      "name": "Javier Armendáriz",
+      "url": "https://github.com/katanagari7c1"
+    },
+    {
+      "name": "Cristian Berner",
+      "url": "https://github.com/Kryword"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Openbravo",
+      "url": "https://www.openbravo.com"
+    }
+    
+    
+  ],
+  "date": {
+    "start": "2019-11-16T09:00:00+02:00",
+    "end": "2019-11-16T16:30:00+02:00"
+  },
+  "location": {
+    "city": "Mutilva",
+    "country": "Spain",
+    "coordinates": {
+      "latitude": 42.79674389424998,
+      "longitude": -1.6133970022189033
+    }
+  }
+}

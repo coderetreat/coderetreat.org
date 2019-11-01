@@ -1,0 +1,19 @@
+{
+    "location": {
+        "city": "Dearborn",
+        "coordinates": {
+            "latitude": 42.3241,
+            "longitude": 83.2368
+        },
+        "country": "United States of America",
+        "timezone": "America/Detroit",
+        "utcOffset": -4
+    },
+    "moderators": [
+        {
+            "name": "Kim Moscardelli"
+        }
+    ],
+    "title": "GDCR in Dearborn",
+    "url": "https://www.eventbrite.com/e/global-day-of-code-retreat-henry-ford-college-tickets-50880312384?aff=ebdssbdestsearch"
+}

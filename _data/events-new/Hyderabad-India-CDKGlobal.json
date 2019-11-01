@@ -1,0 +1,18 @@
+{
+  "title": "Coderetreat @ CDK Global (India) Pvt. Ltd.",
+  "url": "https://sites.google.com/view/cdkhyderabadevents",
+  "moderators": [
+    "@gsunder",
+    "@shaileshaag"
+  ],
+  "location": {
+    "city": "Hyderabad",
+    "country": "India",
+    "coordinates": {
+      "latitude": 17.4379805,
+      "longitude": 78.3825695
+    },
+    "utcOffset": 5.5,
+    "timezone": "Asia/Kolkata"
+  }
+}

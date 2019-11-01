@@ -1,0 +1,28 @@
+{
+  "title": "GDCR19 Krakow",
+  "url": "https://ti.to/software-crafters-krakow-events/global-day-of-coderetreat",
+  "moderators": [
+    {
+      "name": "Adam Pohorecki",
+      "url": "https://github.com/psyho"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Lunar Logic",
+      "url": "https://github.com/LunarLogic"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T08:30:00.000+02:00",
+    "end": "2019-11-16T17:00:00.000+02:00"
+  },
+  "location": {
+    "city": "Krakow",
+    "country": "Poland",
+    "coordinates": {
+      "latitude": 50.058404,
+      "longitude": 19.925945
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "title": "Coderetreat (GDCR 2019) at Ash Software",
+  "url": "https://www.meetup.com/Programming-Manifesto/events/265175787/",
+  "moderators": [
+    {
+      "name": "Nikhil Khandelwal"
+    },
+    {
+      "name": "Sounik Chandra"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Ash Software, Pune",
+      "url": "https://www.ash-software.com/"
+    },
+    {
+      "name": "Nelkinda Software Craft Pvt Ltd",
+      "url": "http://nelkinda.com/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T09:00:00+05:30",
+    "end": "2019-11-16T18:00:00+05:30"
+  },
+  "location": {
+    "city": "Pune",
+    "country": "India",
+    "coordinates": {
+      "latitude": 18.5356774,
+      "longitude": 73.8298594
+    }
+  }
+}
+

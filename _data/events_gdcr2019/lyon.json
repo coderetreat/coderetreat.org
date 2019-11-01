@@ -1,0 +1,32 @@
+{
+  "title": "Global day of code retreat - Lyon 2019",
+  "url": "https://www.eventbrite.fr/e/billets-global-day-of-code-retreat-77321997175",
+  "moderators": [
+    {
+      "name": "Software Crafters Lyon",
+      "url": "https://github.com/swcraftlyon"
+    },
+    {
+        "name": "Nastasia"
+    },
+    {
+        "name": "Guillaume"
+    },
+    {
+        "name": "Romain"
+    }
+  ],
+  "sponsors": [],
+  "date": {
+    "start": "2019-11-16T09:00:00.000+01:00",
+    "end": "2019-11-16T17:00:00.000+01:00"
+  },
+  "location": {
+    "city": "Lyon",
+    "country": "France",
+    "coordinates": {
+      "latitude": 45.7666797,
+      "longitude": 4.8567078
+    }
+  }
+}

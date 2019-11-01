@@ -1,0 +1,28 @@
+{
+  "title": "GDCR19 in Lisbon",
+  "url": "https://www.meetup.com/expert-talks-portugal/events/265716024",
+  "moderators": [
+    {
+      "name": "Jivago Alves",
+      "url": "https://github.com/jivagoalves"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Equal Experts Portugal",
+      "url": "https://www.equalexperts.com/contact-us/lisbon/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T09:00:00.000+01:00",
+    "end": "2019-11-16T17:00:00.000+01:00"
+  },
+  "location": {
+    "city": "Lisbon",
+    "country": "Portugal",
+    "coordinates": {
+      "latitude": 38.7699744,
+      "longitude": -9.0983609
+    }
+  }
+}

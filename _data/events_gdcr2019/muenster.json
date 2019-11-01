@@ -1,0 +1,27 @@
+{
+  "title": "GDCR 2019 in Münster",
+  "url": "https://www.softwerkskammer.org/activities/ms-gdcr-2019",
+  "moderators": [
+    {
+      "name": "Frank Rehfeldt"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Fiducia & GAD IT AG",
+      "url": "https://www.fiduciagad.de/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T08:00:00+02:00",
+    "end": "2019-11-16T17:00:00+02:00"
+  },
+  "location": {
+    "city": "Münster",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 51.93411,
+      "longitude": 7.58748
+    }
+  }
+}

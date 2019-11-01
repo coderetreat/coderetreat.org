@@ -1,0 +1,20 @@
+{
+    "location": {
+        "city": "Kalispell, MT",
+        "coordinates": {
+            "latitude": 48.1963841,
+            "longitude": -114.3130121
+        },
+        "country": "United States of America",
+        "timezone": "America/Denver",
+        "utcOffset": -7
+    },
+    "moderators": [
+        {
+            "name": "Travis Craft",
+            "url": "https://twitter.com/travislcraft"
+        }
+    ],
+    "title": "Global Day of Coderetreat Kalispell",
+    "url": "https://www.meetup.com/Kalispell-Software-Crafters/events/255411817/"
+}
