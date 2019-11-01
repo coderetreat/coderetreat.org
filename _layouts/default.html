@@ -8,15 +8,13 @@
     {% include navigation.html %}
     <div class="container">
       <div id="main">
+        <h1 class="page_header">{{ page.title }}</h1>
         <div id="content">
           {{ content }}
         </div>
       </div>
     </div>
 
-    <div id="footer">
-      <div class="container-wide">
-      </div>
-    </div>
+    {% include footer.html %}
 </body>
 </html>

@@ -1,22 +1,32 @@
 {
-  "title": "GDCR18 in Columbus OH",
-  "url": "https://www.meetup.com/techlifecolumbus/events/253634066/",
-  "moderators": [
-    "@jlacar",
-    "Jim McClure",
-    "Kevin Smith"
-  ],
-  "sponsors": [
-    "@PillarTech"
-  ],
-  "location": {
-    "city": "Columbus, OH",
-    "country": "United States of America",
-    "coordinates": {
-      "latitude": 39.9748172,
-      "longitude": -82.99992
+    "location": {
+        "city": "Columbus, OH",
+        "coordinates": {
+            "latitude": 39.9748172,
+            "longitude": -82.99992
+        },
+        "country": "United States of America",
+        "timezone": "America/Detroit",
+        "utcOffset": -4
     },
-    "utcOffset": -4,
-    "timezone": "America/Detroit"
-  }
+    "moderators": [
+        {
+            "name": "Junilu Lacar",
+            "url": "https://twitter.com/jlacar"
+        },
+        {
+            "name": "Jim McClure"
+        },
+        {
+            "name": "Kevin Smith"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "Pillar Technology",
+            "url": "https://twitter.com/PillarTech"
+        }
+    ],
+    "title": "GDCR18 in Columbus OH",
+    "url": "https://www.meetup.com/techlifecolumbus/events/253634066/"
 }

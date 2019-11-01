@@ -1,0 +1,32 @@
+{
+  "title": "The Forge Iowa Celebrates Coderetreat’s 10th Anniversary!",
+  "url": "https://info.pillartechnology.com/ihr.gdcr2019-rsvp",
+  "moderators": [
+    {
+      "name": "Anthony Clifton",
+      "url": "https://github.com/aclifton-pillar"
+    },
+    {
+      "name": "Charles Hoffman",
+      "url": "https://github.com/hoff2-ACN"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "The Forge part of Accenture Industry X.0",
+      "url": "https://pillartechnology.com/forge"
+    }
+  ],
+  "date": {
+    "start": "2019-11-15T17:00:00.000-06:00",
+    "end": "2019-11-15T21:00:00.000-06:00"
+  },
+  "location": {
+    "city": "Des Moines",
+    "country": "United States of America",
+    "coordinates": {
+      "latitude": 40.1739688,
+      "longitude": -95.5901173
+    }
+  }
+}

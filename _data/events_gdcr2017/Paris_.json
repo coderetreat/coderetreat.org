@@ -1,20 +1,26 @@
 {
-  "title": "GDCR17 in Paris by Nexeo",
-  "url": "https://global-day-of-code-retreat-by-nexeo.eventbrite.com",
-  "moderators": [
-    "@Nils_Back"
-  ],
-  "sponsors": [
-    "@NexeoFinance"
-  ],
-  "location": {
-    "city": "Paris",
-    "country": "France",
-    "coordinates": {
-      "latitude": 48.8589507,
-      "longitude": 2.2770205
+    "location": {
+        "city": "Paris",
+        "coordinates": {
+            "latitude": 48.8589507,
+            "longitude": 2.2770205
+        },
+        "country": "France",
+        "timezone": "Europe/Paris",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Paris"
-  }
+    "moderators": [
+        {
+            "name": "Nils Lesieur",
+            "url": "https://twitter.com/Nils_Back"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "Nexeo Groupe",
+            "url": "https://twitter.com/NexeoFinance"
+        }
+    ],
+    "title": "GDCR17 in Paris by Nexeo",
+    "url": "https://global-day-of-code-retreat-by-nexeo.eventbrite.com"
 }

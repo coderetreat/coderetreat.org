@@ -18,10 +18,11 @@
 @import "container";
 
 @import "events-table";
+@import "articles";
 @import "hosts-embedded-iframe";
 
 @import "landing/hero";
-@import "landing/map";
+@import "landing/locations";
 @import "landing/format";
 @import "landing/hosting";
 @import "landing/announcement";
@@ -44,6 +45,10 @@
   flex-wrap: wrap;
   list-style: none;
 
+  @include media($mobile) {
+    padding: 0px;
+  }
+
   .video {
     margin: 10px;
     padding-bottom: 5px;
@@ -53,8 +58,17 @@
 
     iframe {
       border: 0px solid $green;
+
+      @include media($mobile) {
+        max-width: 100%;
+      }
     }
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     // box-shadow: 5px 5px 5px $dark;
+
+    @include media($mobile) {
+      max-width: 100%;
+      padding: 0px;
+    }
   }
 }

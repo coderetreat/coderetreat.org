@@ -1,15 +1,24 @@
 {
-  "title": "GDCR 2017 in Olomouc",
-  "url": "https://www.meetup.com/CodeRetreat-CZ/events/243354375/",
-  "moderators": ["@tomaslatal", "@mcBIGcz"],
-  "location": {
-    "city": "Olomouc",
-    "country": "Czech Republic",
-    "coordinates": {
-      "latitude": 49.5927391,
-      "longitude": 17.2710174
+    "location": {
+        "city": "Olomouc",
+        "coordinates": {
+            "latitude": 49.5927391,
+            "longitude": 17.2710174
+        },
+        "country": "Czech Republic",
+        "timezone": "Europe/Vienna",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Vienna"
-  }
+    "moderators": [
+        {
+            "name": "Tomas Latal",
+            "url": "https://twitter.com/tomaslatal"
+        },
+        {
+            "name": "Dalibor Flori\u00e1n",
+            "url": "https://twitter.com/mcBIGcz"
+        }
+    ],
+    "title": "GDCR 2017 in Olomouc",
+    "url": "https://www.meetup.com/CodeRetreat-CZ/events/243354375/"
 }

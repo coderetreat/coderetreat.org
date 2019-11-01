@@ -1,17 +1,19 @@
 {
-  "title": "GDCR 17 in Poznañ",
-  "url": "https://gdcrpoznan17.eventbrite.com/",
-  "moderators": [
-    "Wojciech Buras"
-  ],
-  "location": {
-    "city": "Poznañ",
-    "country": "Poland",
-    "coordinates": {
-      "latitude": 52.4036003,
-      "longitude": 16.9136073
+    "location": {
+        "city": "Pozna\u00f1",
+        "coordinates": {
+            "latitude": 52.4036003,
+            "longitude": 16.9136073
+        },
+        "country": "Poland",
+        "timezone": "Europe/Warsaw",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Warsaw"
-  }
+    "moderators": [
+        {
+            "name": "Wojciech Buras"
+        }
+    ],
+    "title": "GDCR 17 in Pozna\u00f1",
+    "url": "https://gdcrpoznan17.eventbrite.com/"
 }

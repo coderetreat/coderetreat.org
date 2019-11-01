@@ -1,0 +1,105 @@
+{
+  "title": "Global Day of Coderetreat 2019 @ Amdocs, Pune",
+  "url": "https://www.townscript.com/e/global-day-of-coderetreat-2019-amdocs-pune-230011",
+  "moderators": [
+    {
+      "name": "Prasad Bhalkikar",
+      "url": "https://twitter.com/PrasadHasIt"
+    },
+    {
+      "name": "Chaitanya Vysyaraju",
+      "url": "https://twitter.com/chaituasmartguy"
+    },
+    {
+      "name": "Saurabh Sharma",
+      "url": "https://twitter.com/sbhsharma"
+    },
+    {
+      "name": "Kiran Mahamuni",
+      "url": "https://twitter.com/mahamunikm"
+    },
+    {
+      "name": "Poonam Walke"
+    },
+    {
+      "name": "Devendra Ghosh"
+    },
+    {
+      "name": "Nisha Sahu"
+    },
+    {
+      "name": "Laukik Kulkarni"
+    },
+    {
+      "name": "Gaurav Shirdhonkar"
+    },
+    {
+      "name": "Preety Kondyal",
+      "url": "https://twitter.com/preetykondyal"
+    },
+    {
+      "name": "Sayali Bhatambrekar",
+      "url": "https://twitter.com/TheSayali"
+    },
+    {
+      "name": "Dhanish Pathak"
+    },
+    {
+      "name": "Varun Kohli"
+    },
+    {
+      "name": "Vaibhav Pokale"
+    },
+    {
+      "name": "Saransh Jain",
+      "url": "https://twitter.com/sjain028"
+    },
+    {
+      "name": "Gaurav Joshi",
+      "url": "https://twitter.com/gauravjoshi830"
+    },
+    {
+      "name": "Nishant Pandya",
+      "url": "https://twitter.com/NishantPandya6"
+    },
+    {
+      "name": "Sourav Rath",
+      "url": "https://twitter.com/souravrath"
+    },
+    {
+      "name": "Vikash Agarwal"
+    },
+    {
+      "name": "Yashesh Shah"
+    },
+    {
+      "name": "Arunraaj K R"
+    },
+    {
+      "name": "Tushar Wagh"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Amdocs, Pune",
+      "url": "https://www.amdocs.com/"
+    },
+    {
+      "name": "Nelkinda Software Craft Pvt Ltd",
+      "url": "http://nelkinda.com/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T09:00:00+05:30",
+    "end": "2019-11-16T17:00:00+05:30"
+  },
+  "location": {
+    "city": "Pune",
+    "country": "India",
+    "coordinates": {
+      "latitude": 18.5129876,
+      "longitude": 73.9280068
+    }
+  }
+}
+

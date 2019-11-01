@@ -1,17 +1,20 @@
 {
-  "title": "Global Day of Coderetreat 2017 Wroclaw",
-  "url": "https://softwaretalks.pl/wydarzenia/global-day-coderetreat/",
-  "moderators": [
-    "@b_rodak"
-  ],
-  "location": {
-    "city": "Wroclaw",
-    "country": "Poland",
-    "coordinates": {
-      "latitude": 51.0967185,
-      "longitude": 17.0319457
+    "location": {
+        "city": "Wroclaw",
+        "coordinates": {
+            "latitude": 51.0967185,
+            "longitude": 17.0319457
+        },
+        "country": "Poland",
+        "timezone": "Europe/Warsaw",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Warsaw"
-  }
+    "moderators": [
+        {
+            "name": "Bart\u0142omiej Rodak",
+            "url": "https://twitter.com/b_rodak"
+        }
+    ],
+    "title": "Global Day of Coderetreat 2017 Wroclaw",
+    "url": "https://softwaretalks.pl/wydarzenia/global-day-coderetreat/"
 }

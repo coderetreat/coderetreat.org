@@ -1,17 +1,20 @@
 {
-  "title": "CodeRetreat Nagoya GeekBar",
-  "url": "https://geekbar.doorkeeper.jp/events/66374",
-  "moderators": [
-    "@dominion525"
-  ],
-  "location": {
-    "city": "Nagoya",
-    "country": "Japan",
-    "coordinates": {
-      "latitude": 35.170239,
-      "longitude": 136.9226616
+    "location": {
+        "city": "Nagoya",
+        "coordinates": {
+            "latitude": 35.170239,
+            "longitude": 136.9226616
+        },
+        "country": "Japan",
+        "timezone": "Asia/Tokyo",
+        "utcOffset": 9
     },
-    "utcOffset": 9,
-    "timezone": "Asia/Tokyo"
-  }
+    "moderators": [
+        {
+            "name": "\u3069\u307f\u306b\u3092\u3093525",
+            "url": "https://twitter.com/dominion525"
+        }
+    ],
+    "title": "CodeRetreat Nagoya GeekBar",
+    "url": "https://geekbar.doorkeeper.jp/events/66374"
 }

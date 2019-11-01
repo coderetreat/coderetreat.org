@@ -1,0 +1,32 @@
+{
+    "title": "GDCR 2019 San Diego - Learn Academy",
+    "url": "https://www.eventbrite.com/e/san-diego-coderetreat-2019-tickets-78708536351",
+    "date": {
+        "start": "2019-11-16T09:00:00.000-07:00",
+        "end": "2019-11-16T18:00:00.000-07:00"
+    },
+    "location": {
+        "city": "San Diego",
+        "coordinates": {
+            "latitude": 32.7097392,
+            "longitude": -117.1590436
+        },
+        "country": "United States of America"
+    },
+    "moderators": [
+      {
+	"name": "Ben Geyer",
+	"url": "https://twitter.com/_funktional"
+      },
+      {
+	"name": "Matt Clark",
+	"url": "https://www.linkedin.com/in/leadprogrammer/"
+      }
+    ],
+    "sponsors": [
+        {
+	  "name": "Learn Academy",
+	  "url": "https://www.learnacademy.org/"
+        }
+    ]
+}

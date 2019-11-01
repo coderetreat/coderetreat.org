@@ -1,6 +1,5 @@
 {% assign direction = include.direction | default: "down" %}
 {% assign name = include.name | default: "" %}
-{% assign size = include.size | default: "small" %}
 {% assign targetDate = include.date %}
 
 {% assign demo = include.demo | default: "false" %}
@@ -9,20 +8,11 @@
   {% if name == "" %}{% assign name = "demo" %}{% endif %}
 {% endif %}
 
-<div class="row countdown countdown-{{ size }}">
-    <div class="col-md-2">&nbsp;</div>
-    {% if include.size == "large" %}
-      <div class="col-md-2"><span class="cd{{ name }}Days">XX</span>&nbsp;<small>days</small></div>
-      <div class="col-md-2"><span class="cd{{ name }}Hrs">XX</span>&nbsp;<small>hours</small></div>
-      <div class="col-md-2"><span class="cd{{ name }}Mins">XX</span>&nbsp;<small>minutes</small></div>
-      <div class="col-md-2"><span class="cd{{ name }}Secs">XX</span>&nbsp;<small>seconds</small></div>
-    {% else %}
-      <div class="col-md-2"><span class="cd{{ name }}Days">XX</span><br/><small>days</small></div>
-      <div class="col-md-2"><span class="cd{{ name }}Hrs">XX</span><br/><small>hours</small></div>
-      <div class="col-md-2"><span class="cd{{ name }}Mins">XX</span><br/><small>minutes</small></div>
-      <div class="col-md-2"><span class="cd{{ name }}Secs">XX</span><br/><small>seconds</small></div>
-    {% endif %}
-    <div class="col-md-2">&nbsp;</div>
+<div class="countdown">
+  <div><span class="number" id="cd{{ name }}Days">XX</span><br/>days</div>
+  <div><span class="number" id="cd{{ name }}Hrs">XX</span><br/>hours</div>
+  <div><span class="number" id="cd{{ name }}Mins">XX</span><br/>minutes</div>
+  <div><span class="number" id="cd{{ name }}Secs">XX</span><br/>seconds</div>
 </div>
 
 <script type="text/javascript">
@@ -54,10 +44,10 @@ var CountdownWidget = CountdownWidget || function (opts) {
       clearInterval(self.timer);
     }
 
-    $(".cd" + self.name + "Days").text(Math.floor(distance / _day));
-    $(".cd" + self.name + "Hrs").text(Math.floor((distance % _day) / _hour));
-    $(".cd" + self.name + "Mins").text(Math.floor((distance % _hour) / _minute));
-    $(".cd" + self.name + "Secs").text(Math.floor((distance % _minute) / _second));
+    $("#cd" + self.name + "Days").text(Math.floor(distance / _day));
+    $("#cd" + self.name + "Hrs").text(Math.floor((distance % _day) / _hour));
+    $("#cd" + self.name + "Mins").text(Math.floor((distance % _hour) / _minute));
+    $("#cd" + self.name + "Secs").text(Math.floor((distance % _minute) / _second));
   };
 
   this.showRemaining();

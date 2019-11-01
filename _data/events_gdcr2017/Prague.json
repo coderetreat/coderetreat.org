@@ -1,20 +1,32 @@
 {
-  "title": "GDCR17 in Prague",
-  "url": "https://www.meetup.com/CodeRetreat-CZ/events/243105898/",
-  "moderators": [
-    "@coderetreatcz",
-    "@alesroubicek",
-    "@jirkapenzes",
-    "@marianschubert"
-  ],
-  "location": {
-    "city": "Prague",
-    "country": "Czech Republic",
-    "coordinates": {
-      "latitude": 50.0595854,
-      "longitude": 14.3255418
+    "location": {
+        "city": "Prague",
+        "coordinates": {
+            "latitude": 50.0595854,
+            "longitude": 14.3255418
+        },
+        "country": "Czech Republic",
+        "timezone": "Europe/Prague",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Prague"
-  }
+    "moderators": [
+        {
+            "name": "Coderetreat CZ",
+            "url": "https://twitter.com/coderetreatcz"
+        },
+        {
+            "name": "Ale\u0161 Roub\u00ed\u010dek",
+            "url": "https://twitter.com/alesroubicek"
+        },
+        {
+            "name": "Jirka P\u00e9nze\u0161",
+            "url": "https://twitter.com/jirkapenzes"
+        },
+        {
+            "name": "Marian Schubert",
+            "url": "https://twitter.com/marianschubert"
+        }
+    ],
+    "title": "GDCR17 in Prague",
+    "url": "https://www.meetup.com/CodeRetreat-CZ/events/243105898/"
 }

@@ -1,13 +1,15 @@
 {
-  "title": "Global Day Of Code Retreat at itemis Bonn",
-  "url": "https://www.meetup.com/de-DE/preview/itemis/events/244448511",
-  "moderators": [
-    "Olaf Gunkel"
-  ],
-  "location": {
-    "city": "Bonn",
-    "country": "Germany",
-    "utcOffset": 2,
-    "timezone": "Europe/Berlin"
-  }
+    "location": {
+        "city": "Bonn",
+        "country": "Germany",
+        "timezone": "Europe/Berlin",
+        "utcOffset": 2
+    },
+    "moderators": [
+        {
+            "name": "Olaf Gunkel"
+        }
+    ],
+    "title": "Global Day Of Code Retreat at itemis Bonn",
+    "url": "https://www.meetup.com/de-DE/preview/itemis/events/244448511"
 }

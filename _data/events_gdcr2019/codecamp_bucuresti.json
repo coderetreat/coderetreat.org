@@ -1,0 +1,27 @@
+{
+  "title": "Coderetreat at Codecamp Bucuresti",
+  "url": "https://www.eventbrite.com/e/coderetreat-codecamp-bucharest-9-november-2019-tickets-71341376979",
+  "moderators": [
+    {
+      "name": "Victor Rentea"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Codecamp",
+      "url": "https://codecamp.ro/bucharest"
+    }
+  ],
+  "date": {
+    "start": "2019-11-09T08:00:00.000+02:00",
+    "end": "2019-11-09T14:00:00.000+02:00"
+  },
+  "location": {
+    "city": "Bucuresti",
+    "country": "Romania",
+    "coordinates": {
+      "latitude": 44.4377401,
+      "longitude": 25.954554
+    }
+  }
+}

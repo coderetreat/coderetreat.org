@@ -1,0 +1,28 @@
+{
+  "title": "GDCR 2019 in Pittsburgh with Code & Supply",
+  "url": "https://www.meetup.com/Pittsburgh-Code-Supply/events/262826470",
+  "moderators": [
+    {
+      "name": "Colin Dean",
+      "url": "https://github.com/colindean"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Code & Supply",
+      "url": "https://codeandsupply.co"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T09:00:00.000-05:00",
+    "end": "2019-11-16T16:00:00.000-05:00"
+  },
+  "location": {
+    "city": "Pittsburgh",
+    "country": "United States of America",
+    "coordinates": {
+      "latitude": 40.4600439,
+      "longitude": -79.9308164
+    }
+  }
+}

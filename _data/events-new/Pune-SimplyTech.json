@@ -1,0 +1,25 @@
+{
+  "title": "GDCR18 SimplyTech / Perennial Systems, Pune",
+  "url": "https://www.meetup.com/SimplyTech/events/255739000/",
+  "moderators": [
+    "@azharlaskar",
+    "@pankaj_chndnkr",
+    "@yash_bhs",
+    "@GreatDharmatma"
+  ],
+  "sponsors": [
+    "@nelkinda",
+    "@perennialsys",
+    "@simplytech_in"
+  ],
+  "location": {
+    "city": "Pune",
+    "country": "India",
+    "coordinates": {
+      "latitude": 18.483507,
+      "longitude": 73.8555663
+    },
+    "utcOffset": 5.5,
+    "timezone": "Asia/Kolkata"
+  }
+}

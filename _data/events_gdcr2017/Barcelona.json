@@ -1,20 +1,26 @@
 {
-  "title": "Barcelona Global Day of Coderetreat, facilitated by Codurance",
-  "url": "https://www.meetup.com/Barcelona-Software-Craftsmanship/events/244080253/",
-  "moderators": [
-    "@bberrycarmen"
-  ],
-  "sponsors": [
-    "@codurance_ES"
-  ],
-  "location": {
-    "city": "Barcelona",
-    "country": "Spain",
-    "coordinates": {
-      "latitude": 41.3948976,
-      "longitude": 2.0787274
+    "location": {
+        "city": "Barcelona",
+        "coordinates": {
+            "latitude": 41.3948976,
+            "longitude": 2.0787274
+        },
+        "country": "Spain",
+        "timezone": "Europe/Madrid",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Madrid"
-  }
+    "moderators": [
+        {
+            "name": "Rachel M. Carmena",
+            "url": "https://twitter.com/bberrycarmen"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "Codurance Barcelona",
+            "url": "https://twitter.com/codurance_ES"
+        }
+    ],
+    "title": "Barcelona Global Day of Coderetreat, facilitated by Codurance",
+    "url": "https://www.meetup.com/Barcelona-Software-Craftsmanship/events/244080253/"
 }

@@ -1,0 +1,32 @@
+{
+  "title": "GDCR19 in Malmö",
+  "url": "https://stevenrbaker.com/gdcr2019-malmo.html",
+  "moderators": [
+    {
+      "name": "Tomas Malmsten",
+      "url": "https://www.tomasmalmsten.com"
+    },
+    {
+      "name": "Steven Baker",
+      "url": "https://stevenrbaker.com"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Tedsys AB",
+      "url": "https://www.tedkomp.se/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-15T09:30:00+01:00",
+    "end": "2019-11-15T18:00:00+01:00"
+  },
+  "location": {
+    "city": "Malmö",
+    "country": "Sweden",
+    "coordinates": {
+      "latitude": 55.59237,
+      "longitude": 13.0088
+    }
+  }
+}

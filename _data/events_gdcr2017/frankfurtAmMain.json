@@ -1,17 +1,20 @@
 {
-  "title": "GDCR 17 in Frankfurt am Main @itemis ",
-  "url": "https://www.eventbrite.de/e/global-day-of-coderetreat-2017-in-frankfurt-tickets-37800982757",
-  "moderators": [
-    "@MAliKazmi12"
-  ],
-  "location": {
-    "city": "Frankfurt am Main",
-    "country": "Germany",
-    "coordinates": {
-      "latitude": 50.1128534,
-      "longitude": 8.6601713
+    "location": {
+        "city": "Frankfurt am Main",
+        "coordinates": {
+            "latitude": 50.1128534,
+            "longitude": 8.6601713
+        },
+        "country": "Germany",
+        "timezone": "Europe/Berlin",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Berlin"
-  }
+    "moderators": [
+        {
+            "name": "Muhammad Ali Kazmi",
+            "url": "https://twitter.com/MAliKazmi12"
+        }
+    ],
+    "title": "GDCR 17 in Frankfurt am Main @itemis ",
+    "url": "https://www.eventbrite.de/e/global-day-of-coderetreat-2017-in-frankfurt-tickets-37800982757"
 }

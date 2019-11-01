@@ -1,18 +1,23 @@
 {
-  "title": "Global Day of Coderetreat in Sofia",
-  "url": "https://www.eventbrite.com/e/global-day-of-coderetreat-2017-tickets-39040657658",
-  "moderators": [
-    "@KaloyanPetrovOG",
-    "Desislava Ivanovich"
-  ],
-  "location": {
-    "city": "Sofia",
-    "country": "Bulgaria",
-    "coordinates": {
-      "latitude": 42.700671,
-      "longitude": 23.306263
+    "location": {
+        "city": "Sofia",
+        "coordinates": {
+            "latitude": 42.700671,
+            "longitude": 23.306263
+        },
+        "country": "Bulgaria",
+        "timezone": "Europe/Sofia",
+        "utcOffset": 3
     },
-    "utcOffset": 3,
-    "timezone": "Europe/Sofia"
-  }
+    "moderators": [
+        {
+            "name": "Kaloyan Petrov",
+            "url": "https://twitter.com/KaloyanPetrovOG"
+        },
+        {
+            "name": "Desislava Ivanovich"
+        }
+    ],
+    "title": "Global Day of Coderetreat in Sofia",
+    "url": "https://www.eventbrite.com/e/global-day-of-coderetreat-2017-tickets-39040657658"
 }

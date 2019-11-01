@@ -5,7 +5,6 @@ html, body {
   margin: 0;
   background-color: $light;
   color: $dark;
-  padding-bottom: $gutter;
   line-height: $gutter;
   font-family: $body-font;
   @include media($mobile) {
@@ -27,8 +26,7 @@ a {
 }
 
 section {
-  padding: $gutter 0;
-  padding-bottom: $gutter*2;
+  padding-bottom: $gutter;
   @include outer-container;
   @include media($tablet) {
     padding: $gutter;
@@ -39,7 +37,7 @@ h1, h2, h3 {
   font-family: $title-font;
   line-height: 1.1;
 }
-h1, h2 {
+h1 {
   text-align: center;
 }
 h1 {
@@ -48,11 +46,73 @@ h1 {
 }
 h2 { font-size: 1.8em; }
 
+.h2-main-page {
+  padding-top: 0.5em;
+  text-align: center;
+  font-size: 2em;
+}
+
+#content {
+   @include media($mobile) {
+     width: 90%;
+     margin: 5%;
+   }
+}
+
+#footer {
+  color: white;
+  margin-top: 2em;
+  text-align: center;
+  background-color: $dark;
+  padding: 1em;
+}
+
+#footer a {
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+
+#footer .container-wide {
+  margin: 1em;
+}
+
+.quote {
+  border-left: 10px solid #7DBED0;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+.quote:before {
+  color: #7DBED0;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+.quote:after {
+  visibility: hidden;
+  content: close-quote;
+}
+
+.quote .first {
+  display: inline;
+}
+
+cite {
+  color: #7DBED0;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
 .button {
   background-color: $green;
   text-decoration: none;
   color: $light;
   font-size: 1.2em;
+  font-weight: bold;
   padding: $gutter/1.2;
   display: block;
   text-align: center;
@@ -64,12 +124,36 @@ h2 { font-size: 1.8em; }
   border-radius: 4px;
 }
 
-.blue-section {
-  @include fill-parent;
-  padding-bottom: 50;
-  max-width: 100%;
+.last-section {
   background-color: $blue;
-  display: flex;
-  justify-content: center;
-  align-content: center;
+  font-size: 1.2em;
+  padding: $gutter/1.2;
+  display: block;
+  text-align: center;
+  border-radius: 4px;
+  margin-top: 2.5em;
+}
+
+.last-section a {
+  color: $dark;
+  font-weight: bold;
+}
+
+.page_header {
+  background-color: $blue;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  margin: 0;
+  @include media($mobile) {
+    padding-top: 2.5em;
+  }
+}
+
+.data-table td, .data-table th {
+  padding: 0.5em 1em;
+  border: 1px solid grey;
+}
+
+.data-table td:nth-child(1) {
+  text-align: right;
 }

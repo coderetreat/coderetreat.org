@@ -1,0 +1,23 @@
+{
+  "title": "GDCR 2019 Kagawa,Japan",
+  "url": "https://agile459.connpass.com/event/148302/",
+  "moderators": [
+    {
+      "name": "Hook. Men. Coon.",
+      "url": "https://profiles.wordpress.org/hansendo/"
+    }
+  ],
+  "sponsors": [],
+  "date": {
+    "start": "2019-11-15T23:00:00.000Z",
+    "end": "2019-11-16T08:00:00.000Z"
+  },
+  "location": {
+    "city": "Kagawa",
+    "country": "Japan",
+    "coordinates": {
+      "latitude": 34.34605,
+      "longitude": 134.03425
+    }
+  }
+}

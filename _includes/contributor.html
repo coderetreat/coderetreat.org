@@ -1,0 +1,37 @@
+<div class="ProfileCard" style="margin: 30px; max-width: 290px; max-height: 355px; background-color: white">
+  <div class="ProfileCard-bg">
+  	<a href="https://twitter.com/{{contributor.screenname}}" target="_blank">
+      {% assign header_image_path = "/images/contributors/" | append: contributor.screenname | append: "_header.jpg" %}
+      {% assign header_images_list = site.static_files | where:"path",header_image_path %}
+      {% if header_images_list.size == 1 %}
+      <img src="{{ header_image_path }}" style="max-width:100%; max-height:100%;">
+      {% endif %}
+  	</a>
+  </div>
+  <div class="ProfileCard-content">
+    <div>
+    	<a href="https://twitter.com/{{contributor.screenname}}" class="ProfileCard-avatarLink" target="_blank">
+        <img class="ProfileCard-avatarImage" src="/images/contributors/{{contributor.screenname}}_avatar.jpg" style="max-width:70px; max-height:70px;">
+    	</a>
+    </div>
+
+    <div class="ProfileCard-actions">
+    	<a href="https://twitter.com/{{contributor.screenname}}" target="_blank">
+	    	<button type="button" class="
+			    EdgeButton
+			    EdgeButton--secondary
+			    EdgeButton--small
+
+			    button-text
+			    follow-text">
+			      <span aria-hidden="true">Follow</span>
+			  </button>
+		</a>
+	</div>
+
+	  <div class="ProfileNameTruncated-link"><a href="https://twitter.com/{{contributor.screenname}}" target="_blank">{{contributor.name}}</a></div>
+	  <div class="ProfileCard-screennameLink"><a href="https://twitter.com/{{contributor.screenname}}" target="_blank">@{{contributor.screenname}}</a></div>
+	  <div class="ProfileCard-bio" title="{{contributor.bio}}">{{contributor.bio}}</div>
+  </div>
+
+</div>

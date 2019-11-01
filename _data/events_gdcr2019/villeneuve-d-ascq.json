@@ -1,0 +1,32 @@
+{
+  "title": "Global day of code retreat - Lille 2019",
+  "url": "https://www.eventbrite.fr/e/billets-global-day-of-coderetreat-by-symbol-it-78178416749",
+  "moderators": [
+    {
+        "name": "Matthieu Fernandes",
+        "url": "https://twitter.com/passionne42"
+    },
+    {
+        "name": "Thomas Fero",
+        "url": "https://thomasferro.dev"
+    }
+  ],
+  "sponsors": [
+        {
+            "name": "Symbol-IT",
+            "url": "https://www.symbol-it.fr"
+        }
+  ],
+  "date": {
+    "start": "2019-11-15T09:00:00.000+01:00",
+    "end": "2019-11-15T18:00:00.000+01:00"
+  },
+  "location": {
+    "city": "Villeneuve d'Ascq",
+    "country": "France",
+    "coordinates": {
+      "latitude": 50.640307,
+      "longitude": 3.1454514
+    }
+  }
+}

@@ -1,17 +1,20 @@
 {
-  "title": "GDCR17 in Haarlem, NL",
-  "url": "https://www.meetup.com/Haarlem-Software-Development-Meetup/events/243324861/",
-  "moderators": [
-    "@mcbeelen"
-  ],
-  "location": {
-    "city": "Haarlem",
-    "country": "Netherlands",
-    "coordinates": {
-      "latitude": 52.3815753,
-      "longitude": 4.6405239
+    "location": {
+        "city": "Haarlem",
+        "coordinates": {
+            "latitude": 52.3815753,
+            "longitude": 4.6405239
+        },
+        "country": "Netherlands",
+        "timezone": "Europe/Amsterdam",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Amsterdam"
-  }
+    "moderators": [
+        {
+            "name": "Marco Beelen",
+            "url": "https://twitter.com/mcbeelen"
+        }
+    ],
+    "title": "GDCR17 in Haarlem, NL",
+    "url": "https://www.meetup.com/Haarlem-Software-Development-Meetup/events/243324861/"
 }

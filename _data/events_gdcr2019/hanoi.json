@@ -1,0 +1,28 @@
+{
+  "title": "GDCR19 Ha Noi",
+  "url": "https://www.facebook.com/events/345203062898789/",
+  "moderators": [
+    {
+      "name": "Nguyen Binh Son",
+      "url": "https://github.com/binhsonnguyen/"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "CodeGym",
+      "url": "https://codegym.vn"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T09:00:00+07:00",
+    "end": "2019-11-16T17:30:00+07:00"
+  },
+  "location": {
+    "city": "Ha Noi",
+    "country": "Vietnam",
+    "coordinates": {
+      "latitude": 21.0355328,
+      "longitude": 105.768306
+    }
+  }
+}

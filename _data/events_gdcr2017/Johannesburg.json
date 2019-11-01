@@ -1,19 +1,28 @@
 {
-  "title": "GDCR17 in Johannesburg",
-  "url": "https://www.meetup.com/coderetreat/events/244874423/",
-  "moderators": [
-    "@drivenalliance",
-    "@garethstep",
-    "@jancowol"
-  ],
-  "location": {
-    "city": "Johannesburg",
-    "country": "South Africa",
-    "utcOffset": 2,
-    "timezone": "Africa/Johannesburg",
-    "coordinates": {
-      "latitude": -26.1855441,
-      "longitude": 28.0169193
-    }
-  }
+    "location": {
+        "city": "Johannesburg",
+        "coordinates": {
+            "latitude": -26.1855441,
+            "longitude": 28.0169193
+        },
+        "country": "South Africa",
+        "timezone": "Africa/Johannesburg",
+        "utcOffset": 2
+    },
+    "moderators": [
+        {
+            "name": "Driven",
+            "url": "https://twitter.com/drivenalliance"
+        },
+        {
+            "name": "Gareth Stephenson",
+            "url": "https://twitter.com/garethstep"
+        },
+        {
+            "name": "Janco Wolmarans",
+            "url": "https://twitter.com/jancowol"
+        }
+    ],
+    "title": "GDCR17 in Johannesburg",
+    "url": "https://www.meetup.com/coderetreat/events/244874423/"
 }

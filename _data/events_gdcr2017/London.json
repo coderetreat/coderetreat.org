@@ -1,19 +1,28 @@
 {
-  "title": "GDCR17 for Ladies of Code & Queer Code in London",
-  "url": "http://www.queer-code.org/london/coderetreat2017/",
-  "moderators": [
-    "@d_ir",
-    "@aebar",
-    "@singsalad"
-  ],
-  "location": {
-    "city": "London",
-    "country": "United Kingdom",
-    "coordinates": {
-      "latitude": 51.517294,
-      "longitude": -0.073334
+    "location": {
+        "city": "London",
+        "coordinates": {
+            "latitude": 51.517294,
+            "longitude": -0.073334
+        },
+        "country": "United Kingdom",
+        "timezone": "Europe/London",
+        "utcOffset": 1
     },
-    "utcOffset": 1,
-    "timezone": "Europe/London"
-  }
+    "moderators": [
+        {
+            "name": "Daniel Irvine",
+            "url": "https://twitter.com/d_ir"
+        },
+        {
+            "name": "Rabea",
+            "url": "https://twitter.com/aebar"
+        },
+        {
+            "name": "Franzi [say Frun-C]",
+            "url": "https://twitter.com/singsalad"
+        }
+    ],
+    "title": "GDCR17 for Ladies of Code & Queer Code in London",
+    "url": "http://www.queer-code.org/london/coderetreat2017/"
 }

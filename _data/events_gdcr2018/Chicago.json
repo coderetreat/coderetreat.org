@@ -1,21 +1,30 @@
 {
-  "title": "GDCR18 in Chicago",
-  "url": "https://www.meetup.com/8th-light-university/events/254951280/",
-  "moderators": [
-    "@NicoleCarpUSA",
-    "@EMeyer8thLight"
-  ],
-  "sponsors": [
-    "@8thLightInc"
-  ],
-  "location": {
-    "city": "Chicago",
-    "country": "United States of America",
-    "coordinates": {
-      "latitude": 41.8830478,
-      "longitude": -87.6290087
+    "location": {
+        "city": "Chicago",
+        "coordinates": {
+            "latitude": 41.8830478,
+            "longitude": -87.6290087
+        },
+        "country": "United States of America",
+        "timezone": "America/Chicago",
+        "utcOffset": -5
     },
-    "utcOffset": -5,
-    "timezone": "America/Chicago"
-  }
+    "moderators": [
+        {
+            "name": "Nicole",
+            "url": "https://twitter.com/NicoleCarpUSA"
+        },
+        {
+            "name": "Eric Meyer",
+            "url": "https://twitter.com/EMeyer8thLight"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "8th Light",
+            "url": "https://twitter.com/8thLightInc"
+        }
+    ],
+    "title": "GDCR18 in Chicago",
+    "url": "https://www.meetup.com/8th-light-university/events/254951280/"
 }

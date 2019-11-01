@@ -1,20 +1,26 @@
 {
-  "title": "GDCR18 in Brooklyn",
-  "url": "https://www.meetup.com/Community-Position-Dev/events/253609066/",
-  "moderators": [
-    "@horrorcheck"
-  ],
-  "location": {
-    "city": "Brooklyn, NY",
-    "country": "United States of America",
-    "coordinates": {
-      "latitude": 40.7041935,
-      "longitude": -73.9889684
+    "location": {
+        "city": "Brooklyn, NY",
+        "coordinates": {
+            "latitude": 40.7041935,
+            "longitude": -73.9889684
+        },
+        "country": "United States of America",
+        "timezone": "America/New_York",
+        "utcOffset": -4
     },
-    "utcOffset": -4,
-    "timezone": "America/New_York"
-  },
-  "sponsors": [
-    "@positiondev"
-  ]
+    "moderators": [
+        {
+            "name": "Libby Horacek",
+            "url": "https://twitter.com/horrorcheck"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "Position Dev",
+            "url": "https://twitter.com/positiondev"
+        }
+    ],
+    "title": "GDCR18 in Brooklyn",
+    "url": "https://www.meetup.com/Community-Position-Dev/events/253609066/"
 }

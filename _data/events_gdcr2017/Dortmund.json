@@ -1,20 +1,32 @@
 {
-  "title": "Global Day of Coderetreat - Softwerkskammer Ruhr Area",
-  "url": "http://meetu.ps/3cP7p4",
-  "moderators": [
-    "@georgberky",
-    "@SandraParsick",
-    "@ThomasTraude",
-    "@Kiview"
-  ],
-  "location": {
-    "city": "Dortmund",
-    "country": "Germany",
-    "coordinates": {
-      "latitude": 51.492667,
-      "longitude": 7.404709
+    "location": {
+        "city": "Dortmund",
+        "coordinates": {
+            "latitude": 51.492667,
+            "longitude": 7.404709
+        },
+        "country": "Germany",
+        "timezone": "Europe/Berlin",
+        "utcOffset": 2
     },
-    "utcOffset": 2,
-    "timezone": "Europe/Berlin"
-  }
+    "moderators": [
+        {
+            "name": "Georg Berky",
+            "url": "https://twitter.com/georgberky"
+        },
+        {
+            "name": "Sandra Parsick",
+            "url": "https://twitter.com/SandraParsick"
+        },
+        {
+            "name": "Thomas Traude",
+            "url": "https://twitter.com/ThomasTraude"
+        },
+        {
+            "name": "Kevin Wittek",
+            "url": "https://twitter.com/Kiview"
+        }
+    ],
+    "title": "Global Day of Coderetreat - Softwerkskammer Ruhr Area",
+    "url": "http://meetu.ps/3cP7p4"
 }

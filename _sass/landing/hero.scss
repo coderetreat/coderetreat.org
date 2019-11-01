@@ -1,6 +1,5 @@
 #hero {
   $bg-height: 800vw / 14;
-  height: 55vh;
   overflow: hidden;
   background-image: url("/images/mountain_path.svg");
   background-size: cover;
@@ -13,22 +12,11 @@
       font-size: 1.5em;
     }
     font-family: $title-font;
-    margin: 2em 15% 0 0;
+    margin: 1em 10% 1em 40%;
     font-size: 1.6em;
     color: $dark;
     text-align: center;
     float: right;
-
-    .calltoaction {
-      @include media($mobile) {
-        display: none;
-      }
-
-      .button {
-        width: 49%;
-        display: inline-block;
-      }
-    }
   }
   @include media($tablet) {
     .header {
@@ -44,7 +32,7 @@
     background-size: cover;
   }
   @include media($mobile) {
-    background-image: url("/images/mountain_path_with_title.svg");
+    background-image: url("/images/mountain_path_with_coderetreat.svg");
     background-size: 100% $bg-height;
     background-repeat: no-repeat;
     background-attachment: scroll;

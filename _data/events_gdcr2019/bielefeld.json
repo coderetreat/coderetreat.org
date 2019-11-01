@@ -1,0 +1,25 @@
+{
+  "title": "GDCR19 in Bielefeld",
+  "url": "https://www.meetup.com/de-DE/SoCraMOB/events/263254656/",
+  "moderators": [
+    {"name": "Jaroslaw Klose"}
+  ],
+  "sponsors": [
+    {
+      "name": "klose brothers",
+      "url": "https://www.klosebrothers.de/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T08:30:00+01:00",
+    "end": "2019-11-16T16:30:00+01:00"
+  },
+  "location": {
+    "city": "Bielefeld",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 52.0298491,
+      "longitude": 8.5337646
+    }
+  }
+}

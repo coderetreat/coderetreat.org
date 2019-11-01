@@ -22,7 +22,7 @@ We can use this data to create all the tools that bring us closer together on th
 
 We're in the process of moving the NING network to [archive.coderetreat.org](http://archive.coderetreat.org) so no information is lost while we focus on making [this project](https://github.com/coderetreat/coderetreat.github.io) the new landing page for all things related to Coderetreats.
 
-We further began migrating [some content]({% link pages/videos.html %}) to this project and will continue until we feel we covered all the relevant content that used to be available via blogs and forums on the NING network.
+We further began migrating some content to this project and will continue until we feel we covered all the relevant content that used to be available via blogs and forums on the NING network.
 
 In any case, the website will always be available on [web.archive.org](http://web.archive.org/web/20170702131626/http://www.coderetreat.org/). Please consider [donating to archive.org](https://archive.org/donate/) to keep this awesome service alive!
 

@@ -7,15 +7,18 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "ajv": "^4.11.5",
-    "expect": "^1.20.2",
-    "glob": "^7.1.1",
-    "jsonschema": "^1.1.1",
-    "mocha": "^3.2.0",
-    "moment-timezone": "^0.5.13",
-    "yamljs": "^0.2.8"
+    "ajv": "^6.10.2",
+    "expect": "^24.9.0",
+    "glob": "^7.1.4",
+    "jsonschema": "^1.2.4",
+    "mocha": "^6.2.0",
+    "moment-timezone": "^0.5.26",
+    "yamljs": "^0.3.0"
   },
   "dependencies": {
-    "moment": "^2.18.1"
+    "@material/button": "^1.0.1",
+    "@material/card": "^1.0.1",
+    "@material/icon-button": "^1.0.1",
+    "moment": "^2.24.0"
   }
 }

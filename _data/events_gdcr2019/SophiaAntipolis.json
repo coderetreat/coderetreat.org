@@ -1,0 +1,36 @@
+{
+  "title": "GDCR 2019 - Sophia Antipolis",
+  "url": "https://gdcr2019-sophia-antipolis.eventbrite.fr/",
+  "moderators": [
+    {
+      "name": "Lucas Oms",
+      "url": "https://www.linkedin.com/in/lucas-oms/"
+    },
+    {
+      "name": "Calvin Audier",
+      "url": "https://www.linkedin.com/in/audier-calvin-93759761/"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Bureau du Code",
+      "url": "https://www.linkedin.com/company/bureau-du-code/"
+    },
+    {
+      "name": "JobOpportunIT",
+      "url": "https://www.jobopportunit.com/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T09:00:00.000+01:00",
+    "end": "2019-11-16T17:00:00.000+01:00"
+  },
+  "location": {
+    "city": "Sophia Antipolis",
+    "country": "France",
+    "coordinates": {
+      "latitude": 43.6155521,
+      "longitude": 7.0695895
+    }
+  }
+} 

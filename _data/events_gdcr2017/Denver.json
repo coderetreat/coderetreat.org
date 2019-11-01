@@ -1,14 +1,19 @@
 {
-  "title": "Global Day of Code Retreat 2017 Denver",
-  "url": "https://www.eventbrite.com/e/global-day-of-code-retreat-2017-denver-tickets-37865069442",
-  "location": {
-    "city": "Denver",
-    "country": "United States of America",
-    "coordinates": {
-      "latitude": 39.7489555,
-      "longitude": -105.0016706
+    "location": {
+        "city": "Denver",
+        "coordinates": {
+            "latitude": 39.7489555,
+            "longitude": -105.0016706
+        },
+        "country": "United States of America",
+        "utcOffset": -6
     },
-    "utcOffset": -6
-  },
-  "moderators": ["@kimdhendrick"]
+    "moderators": [
+        {
+            "name": "Kim D Hendrick",
+            "url": "https://twitter.com/kimdhendrick"
+        }
+    ],
+    "title": "Global Day of Code Retreat 2017 Denver",
+    "url": "https://www.eventbrite.com/e/global-day-of-code-retreat-2017-denver-tickets-37865069442"
 }

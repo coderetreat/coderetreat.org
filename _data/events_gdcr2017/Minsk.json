@@ -1,17 +1,20 @@
 {
-  "title": "GDCR17 in Minsk",
-  "url": "https://www.meetup.com/Global-Day-of-Coderetreat-2017",
-  "moderators": [
-    "@sergyenko"
-  ],
-  "location": {
-    "city": "Minsk",
-    "country": "Belarus",
-    "coordinates": {
-      "latitude": 53.8835606,
-      "longitude": 27.438866
+    "location": {
+        "city": "Minsk",
+        "coordinates": {
+            "latitude": 53.8835606,
+            "longitude": 27.438866
+        },
+        "country": "Belarus",
+        "timezone": "Europe/Minsk",
+        "utcOffset": 3
     },
-    "utcOffset": 3,
-    "timezone": "Europe/Minsk"
-  }
+    "moderators": [
+        {
+            "name": "Sergey Sergy\u0435nko",
+            "url": "https://twitter.com/sergyenko"
+        }
+    ],
+    "title": "GDCR17 in Minsk",
+    "url": "https://www.meetup.com/Global-Day-of-Coderetreat-2017"
 }

@@ -1,15 +1,24 @@
 {
-  "title": "GDCR17 in Cambridge, UK",
-  "url": "https://www.meetup.com/Cambridge-Software-Crafters/events/244355943/",
-  "moderators": [
-    "@SamirTalwar",
-    "@alextercete",
-    "@AmelieCornelis"
-  ],
-  "location": {
-    "city": "Cambridge",
-    "country": "United Kingdom",
-    "utcOffset": 1,
-    "timezone": "Europe/London"
-  }
+    "location": {
+        "city": "Cambridge",
+        "country": "United Kingdom",
+        "timezone": "Europe/London",
+        "utcOffset": 1
+    },
+    "moderators": [
+        {
+            "name": "not here",
+            "url": "https://twitter.com/SamirTalwar"
+        },
+        {
+            "name": "Alex Tercete",
+            "url": "https://twitter.com/alextercete"
+        },
+        {
+            "name": "Am\u00e9lie Corn\u00e9lis",
+            "url": "https://twitter.com/AmelieCornelis"
+        }
+    ],
+    "title": "GDCR17 in Cambridge, UK",
+    "url": "https://www.meetup.com/Cambridge-Software-Crafters/events/244355943/"
 }

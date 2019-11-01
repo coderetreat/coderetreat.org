@@ -1,0 +1,22 @@
+{
+  "title": "GDCR18 Cambridge, UK",
+  "url": "https://www.meetup.com/Cambridge-Software-Crafters/events/254650705/",
+  "moderators": [
+    "@ilkezilci",
+    "@AmelieCornelis",
+    "@alextercete"
+  ],
+  "sponsors": [
+    "@redgate"
+  ],
+  "location": {
+    "city": "Cambridge",
+    "country": "United Kingdom",
+    "coordinates": {
+      "latitude": 52.20806,
+      "longitude": 0.1225
+    },
+    "utcOffset": 1,
+    "timezone": "Europe/London"
+  }
+}

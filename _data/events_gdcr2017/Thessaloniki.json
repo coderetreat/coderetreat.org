@@ -1,17 +1,20 @@
 {
-  "title": "GDCR in Thessaloniki",
-  "url": "http://coderetreat.gr",
-  "moderators": [
-    "@softwaregarden"
-  ],
-  "location": {
-    "city": "Thessaloniki",
-    "country": "Greece",
-    "coordinates": {
-      "latitude": 40.6211912,
-      "longitude": 22.9284748
+    "location": {
+        "city": "Thessaloniki",
+        "coordinates": {
+            "latitude": 40.6211912,
+            "longitude": 22.9284748
+        },
+        "country": "Greece",
+        "timezone": "Europe/Athens",
+        "utcOffset": 3
     },
-    "utcOffset": 3,
-    "timezone": "Europe/Athens"
-  }
+    "moderators": [
+        {
+            "name": "Software Gardener",
+            "url": "https://twitter.com/softwaregarden"
+        }
+    ],
+    "title": "GDCR in Thessaloniki",
+    "url": "http://coderetreat.gr"
 }

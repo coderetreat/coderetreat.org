@@ -1,0 +1,23 @@
+{
+  "title": "GDCR 2018 @ GittiGidiyor",
+  "url": "https://goo.gl/forms/k3jgGzIHQCrUOdFS2",
+  "moderators": [
+    "@h_yardimci",
+    "@cmyeniceri",
+    "@sekersizcayy",
+    "@veysiertekin"
+  ],
+  "sponsors": [
+    "@GittiGidiyor"
+  ],
+  "location": {
+    "city": "Istanbul",
+    "country": "Turkey",
+    "coordinates": {
+      "latitude": 40.9902205,
+      "longitude": 29.1025393
+    },
+    "utcOffset": 3,
+    "timezone": "Europe/Istanbul"
+  }
+}

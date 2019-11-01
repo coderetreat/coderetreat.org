@@ -6,7 +6,7 @@ $map-border: $gutter*8;
   background-color: $blue;
   max-width: 95%;
   height: 400px;
-  margin: 0 auto;
+  margin: 1em auto;
 }
 
 .ol-mouse-position {
@@ -37,6 +37,10 @@ $map-border: $gutter*8;
 
 .ol-unsupported {
   display: none;
+}
+
+.ol-viewport {
+  overflow: unset !important;
 }
 
 .ol-viewport .ol-unselectable {

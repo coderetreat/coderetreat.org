@@ -10,3 +10,12 @@
     @include shift(2);
   }
 }
+
+.announcement-body a {
+  background-color: $green;
+  color: white;
+  font-size: 1.2em;
+  padding: $gutter/1.2;
+  display: block;
+  text-align: center;
+}
