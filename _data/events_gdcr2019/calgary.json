@@ -1,22 +1,33 @@
 {
-  "title": "Calgary Code Retreat",
-  "url": "",
+  "title": "Global day of code retreat in Calgary",
+  "url": "https://www.meetup.com/Calgary-Software-Crafters/events/266157163",
   "moderators": [
-    "ttrungvo"
+    "ttrungvo",
+    "jacqueline"
   ],
-  "sponsors": [
-    "CAMUG"
+  "sponsors": [{
+      "name": "Brightside",
+      "url": "https://www.hibrightside.ca/"
+    },
+    {
+      "name": "Shareworks By Morgan Stanley",
+      "url": "https://www.shareworks.com/"
+    },
+    {
+      "name": "Eagle Recruiting",
+      "url": "https://www.eagleonline.com/"
+    }
   ],
   "date": {
-    "start": "",
-    "end": ""
+    "start": "2019-11-16T09:00:00.000-06:00",
+    "end": "2019-11-16T17:00:00-06:00"
   },
   "location": {
     "city": "Calgary",
     "country": "Canada",
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 51.042866,
+      "longitude": -114.0914883
     }
   }
 }
