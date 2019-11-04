@@ -1,0 +1,29 @@
+{
+	"title": "GDCR19 at Elsevier, Oxford",
+	"url": "https://www.meetup.com/OXAGILE/events/266203648/",
+	"moderators": [{
+			"name": "Rajan Patil",
+			"url": "https://github.com/rajanpatil"
+		},
+		{
+			"name": "Krishnan Mani",
+			"url": "https://github.com/krishnan-mani"
+		}
+	],
+	"sponsors": [{
+		"name": "Elsevier",
+		"url": "https://www.elsevier.com/en-gb"
+	}],
+	"date": {
+		"start": "2019-11-15T08:30:00.000+00:00",
+		"end": "2019-11-15T17:30:00.000+00:00"
+	},
+	"location": {
+		"city": "Oxford",
+		"country": "United Kingdom",
+		"coordinates": {
+			"latitude": 51.75222,
+			"longitude": -1.25596
+		}
+	}
+}
