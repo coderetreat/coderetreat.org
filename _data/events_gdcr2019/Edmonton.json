@@ -1,0 +1,26 @@
+{
+  "title": "GDCR 2019 in Edmonton",
+  "url": "https://ti.to/global-day-of-code-retreat-sed-systems/gdcr-2019-edmonton/",
+  "moderators": [
+    { "name": "Bill Kozak" }
+  ],
+  "sponsors": [
+    {
+      "name": "Calian SED",
+      "url": "https://www.sedsystems.ca/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T10:00:00.000-07:00",
+    "end": "2019-11-16T16:00:00.000-07:00"
+  },
+  "location": {
+    "city": "Edmonton",
+    "country": "Canada",
+    "coordinates": {
+      "latitude": 53.518309,
+      "longitude": -113.520311
+    }
+  }
+}
+
