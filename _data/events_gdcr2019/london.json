@@ -1,0 +1,29 @@
+{
+  "title": "GDCR19 in London",
+  "url": "https://www.eventbrite.co.uk/e/8th-light-global-day-of-coderetreat-london-tickets-79724567327",
+  "moderators": [
+    {
+      "name": "Ashley Bye",
+      "url": "https://github.com/ambye85"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "8th Light",
+      "url": "https://8thlight.com/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T09:00:00+00:00",
+    "end": "2019-11-16T17:00:00+00:00"
+  },
+  "location": {
+    "city": "London",
+    "country": "United Kingdom",
+    "coordinates": {
+      "latitude": 51.536691,
+      "longitude": -0.101209
+    }
+  }
+}
+
