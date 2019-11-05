@@ -1,0 +1,28 @@
+{
+  "title": "GDCR19 in Johannesburg at Platform45",
+  "url": "http://bit.ly/gdcr2019-jnb",
+  "moderators": [
+    {
+      "name": "Barry Tandy",
+      "url": "https://twitter.com/BarryTandy"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Platform45",
+      "url": "https://www.platform45.com/"
+    }
+  ],
+  "date": {
+      "start": "2019-11-16T08:30:00+02:00",
+      "end": "2019-11-16T17:00:00+02:00"
+    },
+  "location": {
+    "city": "Johannesburg",
+    "country": "South Africa",
+    "coordinates": {
+      "latitude": -26.145507,
+      "longitude": 28.04421
+    }
+  }
+}
