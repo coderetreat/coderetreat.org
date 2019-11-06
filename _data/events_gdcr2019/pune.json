@@ -1,7 +1,16 @@
 {
   "title": "Global Day of Coderetreat 2019 @ Equal Experts",
   "url": "https://www.meetup.com/expert-talks-Pune/events/264152214/",
-  "moderators": [],
+  "moderators": [
+    {
+      "name": "Aashish Ghogre",
+      "url": "https://github.com/ashishghogre"
+    },
+    {
+      "name": "Sagar Mate",
+      "url": "https://www.linkedin.com/in/sagar-mate-6063125b/"
+    }
+  ],
   "sponsors": [
     {
       "name": "Equal Experts, Pune",
