@@ -1,0 +1,36 @@
+{
+  "title": "Global Day of Code Retreat 2019 at Lifull Connect",
+  "url": "https://www.meetup.com/Software-Crafters-Barcelona/events/264920275/",
+  "moderators": [
+      {
+          "name": "Manuel Rivero",
+          "url": "https://twitter.com/@trikitrok"
+      },
+      {
+          "name": "Alvaro Garcia",
+          "url": "https://twitter.com/@alvarobiz"
+      },
+      {
+          "name": "Pau Trepat",
+          "url": "https://twitter.com/@trepixxx"
+      }
+  ],
+  "sponsors": [
+      {
+        "name": "Lifull Connect",
+        "url": "https://www.lifullconnect.com/"
+      }
+    ],
+  "date": {
+    "start": "2019-11-16T09:30:00+01:00",
+    "end": "2019-11-16T17:00:00+01:00"
+  },
+  "location": {
+    "city": "Barcelona",
+    "country": "Spain",
+    "coordinates": {
+      "latitude": 41.3881671,
+      "longitude": 2.130195
+    }
+  }
+}

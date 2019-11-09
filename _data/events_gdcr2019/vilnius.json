@@ -1,0 +1,28 @@
+{
+  "title": "GDCR19 in Vilnius",
+  "url": "https://gdcr2019-vilnius.eventbrite.com",
+  "moderators": [
+    {
+      "name": "Osvaldas Grigas",
+      "url": "https://github.com/ogrigas"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Inventi",
+      "url": "https://github.com/inventi"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T08:45:00.000+02:00",
+    "end": "2019-11-16T16:30:00.000+02:00"
+  },
+  "location": {
+    "city": "Vilnius",
+    "country": "Lithuania",
+    "coordinates": {
+      "latitude": 54.701825,
+      "longitude": 25.2630313
+    }
+  }
+}

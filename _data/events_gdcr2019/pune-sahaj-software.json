@@ -1,0 +1,36 @@
+{
+    "title": "GCDR19 at Sahaj Software Solutions Pune",
+    "url": "https://www.meetup.com/devday_pune/events/265797208/",
+    "moderators": [
+      {
+        "name": "Pradip Hudekar",
+        "url": "https://www.linkedin.com/in/pradiphudekar/"
+      },
+      {
+        "name": "Karun Japhet",
+        "url": "https://www.linkedin.com/in/karunjaphet/"
+      },{
+        "name": "Kulbhushan Singhal",
+        "url": "https://www.linkedin.com/in/kulbhushansinghal/"
+      }
+    ],
+    "sponsors": [
+      {
+        "name": "Sahaj Software Solutions",
+        "url": "https://sahajsoft.com/"
+      }
+    ],
+    "date": {
+      "start": "2019-11-16T09:00:00+05:30",
+      "end": "2019-11-16T18:00:00+05:30"
+    },
+    "location": {
+      "city": "Pune",
+      "country": "India",
+      "coordinates": {
+        "latitude": 18.543429,
+        "longitude": 73.9075676
+      }
+    }
+  }
+  

@@ -22,11 +22,11 @@
     "end": "2019-11-16T17:00:00.000+01:00"
   },
   "location": {
-    "city": "LYON",
+    "city": "Lyon",
     "country": "France",
     "coordinates": {
-      "latitude": 0,
-      "longitude": 0
+      "latitude": 45.7666797,
+      "longitude": 4.8567078
     }
   }
 }

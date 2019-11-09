@@ -1,0 +1,28 @@
+{
+    "title": "Global Day of Coderetreat Skopje 2019",
+    "url": "https://www.eventbrite.com/e/global-day-of-coderetreat-skopje-2019-tickets-80266199363",
+    "date": {
+        "start": "2019-11-16T09:00:00.000+01:00",
+        "end": "2019-11-16T17:00:00.000+01:00"
+    },
+    "location": {
+        "city": "Skopje",
+        "coordinates": {
+            "latitude": 41.9991487,
+            "longitude": 21.3898709
+        },
+        "country": "North Macedonia"
+    },
+    "moderators": [
+        {
+            "name": "Tomche Delev",
+            "url": "https://twitter.com/tdelev"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "Sorsix International",
+            "url": "https://www.sorsix.com/"
+        }
+    ]
+}

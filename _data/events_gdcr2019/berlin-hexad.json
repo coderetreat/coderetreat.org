@@ -1,0 +1,36 @@
+{
+  "title": "GDCR19 with Hexad GmbH & Volkswagen Digital:Lab",
+  "url": "https://www.meetup.com/Hexad-Technical-Meetups/events/266227351",
+  "moderators": [
+    {
+      "name": "Abhimanyu Chakravarty",
+      "url": "https://github.com/achakravarty"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Hexad GmbH",
+      "url": "https://hexad.de"
+    },
+    {
+      "name": "Volkswagen Digital:Lab",
+      "url": "https://www.volkswagenag.com/"
+    },
+    {
+      "name": "Nelkinda Software Craft Pvt Ltd",
+      "url": "http://nelkinda.com/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T08:00:00.000+01:00",
+    "end": "2019-11-16T17:00:00.000+01:00"
+  },
+  "location": {
+    "city": "Berlin",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 52.4995057,
+      "longitude": 13.4540569
+    }
+  }
+}

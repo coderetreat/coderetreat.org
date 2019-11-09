@@ -1,0 +1,32 @@
+{
+  "title": "The Forge Chicago Celebrates Coderetreat’s 10th Anniversary!",
+  "url": "https://info.pillartechnology.com/chi.gdcr2019-rsvp",
+  "moderators": [
+    {
+      "name": "Dave Schinkel",
+      "url": "https://twitter.com/WeDoTDD"
+    },
+    {
+      "name": "Turk Qualls",
+      "url": "https://github.com/turkquallsAC"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "The Forge part of Accenture Industry X.0",
+      "url": "https://pillartechnology.com/forge"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T17:00:00.000-08:45",
+    "end": "2019-11-16T21:00:00.000-03:00"
+  },
+  "location": {
+    "city": "Chicago",
+    "country": "United States of America",
+    "coordinates": {
+      "latitude": 41.896305,
+      "longitude": -87.651275
+    }
+  }
+}

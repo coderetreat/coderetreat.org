@@ -1,0 +1,27 @@
+{
+  "title": "Global Day of Coderetreat at Tavisca",
+  "url": "https://www.townscript.com/e/global-day-of-coderetreat-034223",
+  "sponsors": [
+    {
+      "name": "Tavisca Solutions, Pune",
+      "url": "https://www.tavisca.com/"
+    },
+    {
+      "name": "Nelkinda Software Craft Pvt Ltd",
+      "url": "http://nelkinda.com/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T09:00:00+05:30",
+    "end": "2019-11-16T17:00:00+05:30"
+  },
+  "location": {
+    "city": "Pune",
+    "country": "India",
+    "coordinates": {
+      "latitude": 18.5594304,
+      "longitude": 73.9109293
+    }
+  }
+}
+

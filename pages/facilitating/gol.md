@@ -59,6 +59,8 @@ You can find the schema by Marco Emrich in other formats: [PDF or SVG](https://g
 
 And another PDF version by [Lemi Orhan Ergin, Software Craftsmanship Turkey](/docs/gol-schemas/Lemi-Orhan-Ergin.pdf).
 
+Last but not least, Markus Decke created a [pocketmod handout](https://github.com/mrksdck/coderetreat-pocketmod)!
+
 ## Game of Life challenge
 
 To practice on paper in order to understand the rules of Conway's Game of Life:

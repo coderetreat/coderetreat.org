@@ -4,6 +4,8 @@ title: Hosting a Coderetreat
 description: Help improve developers in your community by hosting a coderetreat in your city
 ---
 
+<h2><a href="{% link hosts/index.html %}">GDCR Hosting Tool for 2019</a></h2>
+
 Help improve developers in your community by hosting a coderetreat in your city.
 
 Hosts handle all of the logistics of organizing, finding a local sponsor, running a coderetreat and creating an atmosphere of fun and collaboration.

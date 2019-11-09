@@ -18,9 +18,9 @@ const toWelcomeTweetModerators = moderators => {
 
 const toWelcomeTweet = event => {
   const moderators = toWelcomeTweetModerators(event.moderators);
-  return `🌐 Welcome ${event.location.city}, ${
+  return `🌐 ${event.location.city}, ${
     event.location.country
-  }${moderators} to the Global Day Of Coderetreat 2019! #gdcr19 #coderetreat ${
+  }${moderators} ${
     event.url
   }`;
 };
@@ -29,6 +29,7 @@ const events = glob
   .sync(path.resolve(__dirname, "../_data/events_gdcr2019/") + "/*.json")
   .sort((fa, fb) => fs.statSync(fa).mtimeMs - fs.statSync(fb).mtimeMs)
   .map(file => JSON.parse(fs.readFileSync(file)))
+  .filter(event => event.date.start.startsWith("2019-11-15"))
   .map(toWelcomeTweet);
 
 console.log(events.join("\n"));
