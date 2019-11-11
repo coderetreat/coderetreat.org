@@ -1,0 +1,47 @@
+{
+  "title": "Coderetreat @ Jyaasa",
+  "url": "https://docs.google.com/forms/d/e/1FAIpQLScUrq2KP9Oyqqh2b2qqmG3Hbjkf8FtMSNsOEyqqkOyzxBdc8Q/viewform",
+  "moderators": [
+    {
+      "name": "Neha Suwal"
+    },
+    {
+      "name": "Rasna Shakya"
+    },
+    {
+      "name": "Santosh Sah"
+    },
+    {
+      "name": "Nikesh Suwal"
+    },
+    {
+      "name": "Kuber Aaganja"
+    },
+    {
+      "name": "Umesh Prasad Kafle"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Jyaasa Technologies",
+      "url": "http://jyaasa.com"
+    },
+    {
+      "name": "Nelkinda Software Craft Pvt Ltd",
+      "url": "http://nelkinda.com/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T09:00:00+05:45",
+    "end": "2019-11-16T16:00:00+05:45"
+  },
+  "location": {
+    "city": "Lalitpur",
+    "country": "Nepal",
+    "coordinates": {
+      "latitude": 27.69108,
+      "longitude": 85.3075354
+    }
+  }
+}
+
