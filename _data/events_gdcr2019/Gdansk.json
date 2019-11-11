@@ -1,0 +1,28 @@
+{
+  "title": "GDCR Gdansk",
+  "url": "https://events.epam.com/events/global-day-of-coderetreat-2019",
+  "moderators": [
+    {
+      "name": "Michal Gruca",
+      "url": "https://twitter.com/michalgruca"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Epam Systems",
+      "url": "https://epam.com/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T09:00:00+02:00",
+    "end": "2019-11-16T17:00:00+02:00"
+  },
+  "location": {
+    "city": "Gdansk",
+    "country": "Poland",
+    "coordinates": {
+      "longitude": 18.5712367,
+      "latitude": 54.4041516
+    }
+  }
+}
