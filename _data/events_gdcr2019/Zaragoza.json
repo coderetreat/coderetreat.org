@@ -1,0 +1,24 @@
+{
+  "title": "GDCR19 in Zaragoza",
+  "url": "https://www.meetup.com/es-ES/agilearagon/events/266254640/",
+  "moderators": [],
+  "sponsors": [],
+  "date": {
+    "start": "2019-11-15T17:30:00+01:00",
+    "end": "2019-11-15T21:00:00+01:00"
+  },
+    "moderators": [
+        {
+            "name": "Pedro Lafuente",
+            "url": "https://twitter.com/nimpedrojo"
+        }
+    ],
+  "location": {
+    "city": "Zaragoza",
+    "country": "Spain",
+    "coordinates": {
+      "latitude": 41.6508941,
+      "longitude": -0.8828317
+    }
+  }
+}
