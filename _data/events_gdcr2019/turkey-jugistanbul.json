@@ -1,0 +1,31 @@
+{
+  "title": "Global Day of Coderetreat @JUG_ISTANBUL",
+  "url": "https://www.meetup.com/Istanbul-Java-User-Group/events/266430576/",
+  "moderators": [
+    {
+      "name": "Taner Diler",
+      "url": "https://github.com/tanerdiler"
+    },
+    {
+      "name": "Gökalp Gürbüzer",
+      "url": "https://github.com/ajitatif"
+    },
+    {
+      "name": "Hakan Özler",
+      "url": "https://github.com/ozlerhakan"
+    }
+  ],
+  "sponsors": [],
+  "date": {
+    "start": "2019-11-16T10:00:00+03:00",
+    "end": "2019-11-16T16:00:00+03:00"
+  },
+  "location": {
+    "city": "Istanbul",
+    "country": "Turkey",
+    "coordinates": {
+      "latitude": 41.0234339,
+      "longitude": 29.0390972
+    }
+  }
+}
