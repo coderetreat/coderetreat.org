@@ -1,6 +1,15 @@
 {
   "title": "Global day of code retreat in Calgary",
   "url": "https://www.meetup.com/Calgary-Software-Crafters/events/266220142/",
+  "moderators": [{
+      "name": "Jacqueline",
+      "url": "https://www.linkedin.com/in/jacqueline-bilston-bb09b1122/"
+    },
+    {
+      "name": "Tony Vo",
+      "url": "https://twitter.com/ttrungvo"
+    }
+  ],
   "sponsors": [{
       "name": "Brightside",
       "url": "https://www.hibrightside.ca/"
@@ -8,6 +17,10 @@
     {
       "name": "Shareworks By Morgan Stanley",
       "url": "https://www.shareworks.com/"
+    },
+    {
+      "name": "Clio",
+      "url": "https://www.clio.com/"
     },
     {
       "name": "Eagle Recruiting",
