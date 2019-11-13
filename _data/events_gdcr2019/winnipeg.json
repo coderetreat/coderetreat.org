@@ -1,0 +1,28 @@
+{
+  "title": "Winnipeg Code Retreat 2019",
+  "url": "https://bernardic.ca/2019/10/16/winnipeg-code-retreat-2019/",
+  "moderators": [
+    {
+      "name": "Dan Bernardić",
+      "url": "https://bernardic.ca/"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "FarmLink Marketing Solutions",
+      "url": "https://www.farmlinksolutions.ca/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-15T10:00:00-06:00",
+    "end": "2019-11-15T17:00:00-06:00"
+  },
+  "location": {
+    "city": "Winnipeg",
+    "country": "Canada",
+    "coordinates": {
+      "latitude": 49.8951,
+      "longitude": -97.1384
+    }
+  }
+}

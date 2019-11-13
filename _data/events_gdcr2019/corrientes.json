@@ -1,0 +1,36 @@
+{
+    "title": "GDCR Global Day of Code Retreat 2019 Corrientes",
+    "url": "https://gdcr-corrientes-2019.eventbrite.com.ar/",
+    "moderators": [
+      {
+        "name": "Matías Mascazzini @matiasmasca",
+        "url": "https://twitter.com/matiasmasca"
+      },
+      {
+        "name": "Jose A. Fernandez @fernandezja",
+        "url": "https://twitter.com/fernandezja"
+      }
+    ],
+    "sponsors": [
+      {
+        "name": "Desarrollos NEA",
+        "url": "https://www.desarrollosnea.com"
+      },
+      {
+        "name": "Terciar",
+        "url": "https://terciar.info"
+      }
+    ],
+    "date": {
+      "start": "2019-11-16T10:00:00-03:00",
+      "end": "2019-11-16T17:00:00-03:00"
+    },
+    "location": {
+      "city": "Corrientes",
+      "country": "Argentina",
+      "coordinates": {
+        "latitude": -27.4618742,
+        "longitude": -58.8328237
+      }
+    }
+  }

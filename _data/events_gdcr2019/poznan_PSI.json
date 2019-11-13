@@ -1,0 +1,28 @@
+{
+  "title": "GDCR Poznań (PSI)",
+  "url": "https://www.meetup.com/Poznan-Java-User-Group/events/265867297/",
+  "moderators": [
+    {
+      "name": "Wojciech Buras",
+      "url": "https://www.linkedin.com/in/wojciechburas/"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "PSI Polska sp. z o.o.",
+      "url": "https://psi.pl/pl/home/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T09:00:00+02:00",
+    "end": "2019-11-16T16:00:00+02:00"
+  },
+  "location": {
+    "city": "Poznań",
+    "country": "Poland",
+    "coordinates": {
+      "latitude": 52.403597,
+      "longitude": 16.9136073
+    }
+  }
+}

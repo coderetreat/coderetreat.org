@@ -1,0 +1,36 @@
+{
+  "title": "GDCR19 with Volkswagen Digital:Lab and Hexad GmbH",
+  "url": "https://www.eventbrite.com/e/gdcr-2019-berlin-at-volkswagen-digitallab-and-hexad-gmbh-tickets-79690405147",
+  "moderators": [
+    {
+      "name": "Abhimanyu Chakravarty",
+      "url": "https://github.com/achakravarty"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Volkswagen Digital:Lab",
+      "url": "https://www.volkswagenag.com/"
+    },
+    {
+      "name": "Hexad GmbH",
+      "url": "http://hexad.de/"
+    },
+    {
+      "name": "Nelkinda Software Craft Pvt Ltd",
+      "url": "http://nelkinda.com/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-15T08:00:00.000+01:00",
+    "end": "2019-11-15T17:00:00.000+01:00"
+  },
+  "location": {
+    "city": "Berlin",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 52.499781,
+      "longitude": 13.455376
+    }
+  }
+}

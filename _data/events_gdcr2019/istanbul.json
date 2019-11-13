@@ -1,0 +1,28 @@
+{
+  "title": "Global Day of Coderetreat 2019, Istanbul",
+  "url": "https://kommunity.com/software-craftsmanship-turkey/events/global-day-of-coderetreat-festival-istanbul",
+  "moderators": [
+    {
+      "name": "SCTurkey",
+      "url": "https://kommunity.com/software-craftsmanship-turkey"
+    }
+  ],
+  "sponsors": [
+  {
+      "name": "Prisync",
+      "url": "https://prisync.com"
+    }
+  ],
+  "date": {
+    "start": "2019-10-16T10:00:00.000+03:00",
+    "end": "2019-10-16T17:00:00.000+03:00"
+  },
+  "location": {
+    "city": "Istanbul",
+    "country": "Turkey",
+    "coordinates": {
+      "latitude": 41.071488,
+      "longitude": 29.0092313
+    }
+  }
+}

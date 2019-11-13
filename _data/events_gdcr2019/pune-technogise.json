@@ -1,14 +1,22 @@
 {
-  "title": "Global Day of Code Retreat 2019 @ Technogise, Pune",
+  "title": "Global Day of CodeRetreat 2019 @ Technogise, Pune",
   "url": "https://www.meetup.com/TechnoWise/events/265528506/",
   "moderators": [
     {
       "name": "Sagar Yadav",
-      "url": "@byte_walker"
+      "url": "https://twitter.com/byte_walker"
     },
     {
       "name": "Abhijit Hycinth",
-      "url": "@abhijithycinth"
+      "url": "https://twitter.com/abhijithycinth"
+    },
+    {
+      "name": "Jimit Shah",
+      "url": "https://twitter.com/jimit24365"
+    },
+    {
+      "name": "Datta Kale",
+      "url": "https://twitter.com/way2datta"
     }
   ],
   "sponsors": [

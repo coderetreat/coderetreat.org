@@ -2,14 +2,14 @@
   "location": {
     "city": "Berlin",
     "coordinates": {
-      "latitude": 52.5154881,
-      "longitude": 13.4103957
+      "latitude": 52.506380,
+      "longitude": 13.373239
     },
     "country": "Germany"
   },
   "date": {
-    "start": "2019-11-16T09:00:00.000+02:00",
-    "end": "2019-11-16T18:00:00.000+02:00"
+    "start": "2019-11-16T09:30:00.000+01:00",
+    "end": "2019-11-16T17:30:00.000+01:00"
   },
   "moderators": [
     {
@@ -25,7 +25,12 @@
       "url": "https://twitter.com/rradczewski"
     }
   ],
-  "sponsors": [],
+  "sponsors": [
+    {
+      "name": "Lisk", 
+      "url": "https://lisk.io/"
+    } 
+  ],
   "title": "GDCR19 with codeBar Berlin",
   "url": "https://codebar.io/events/code-retreat-berlin-2019/"
 }

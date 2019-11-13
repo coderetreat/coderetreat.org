@@ -20,11 +20,11 @@ Use the same capitalization rules for Coderetreat as you would use for the seaso
 
 ### Fonts
 
-* [Orbitron](http://www.theleagueofmoveabletype.com/fonts/12-orbitron)
+* [Orbitron](https://www.theleagueofmoveabletype.com/orbitron)
     * Suggested usage: Level 1 headers
 * [Amaranth](https://www.google.com/fonts/specimen/Amaranth)
     * Suggested usage: Level 2 Headers
-* [Roboto Slab](http://www.theleagueofmoveabletype.com/fonts/12-orbitron)
+* [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab)
     * Suggested usage: Body Text
 
 ### Color Scheme

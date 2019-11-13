@@ -1,0 +1,28 @@
+{
+  "title": "GDCR19 @ Media.net",
+  "url": "http://j.mp/gdcr19mumbai",
+  "moderators": [
+    {
+      "name": "Coderetreat Mumbai",
+      "url": "https://twitter.com/coderetreatmum"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Media.net",
+      "url": "https://media.net"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T09:30:00.000+05:30",
+    "end": "2019-11-16T17:00:00.000+05:30"
+  },
+  "location": {
+    "city": "Mumbai",
+    "country": "India",
+    "coordinates": {
+      "latitude": 19.1246861,
+      "longitude": 72.8463366
+    }
+  }
+}

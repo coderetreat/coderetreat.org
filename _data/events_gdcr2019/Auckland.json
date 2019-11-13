@@ -1,0 +1,28 @@
+{
+  "title": "GDCR19 in Auckland",
+  "url": "https://www.meetup.com/kiwi-code-retreat/events/265961507",
+  "moderators": [
+    {
+      "name": "Marcus Bristol",
+      "url": "https://twitter.com/mightymuke"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Pushpay",
+      "url": "https://pushpay.com/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T08:00:00.000+13:00",
+    "end": "2019-11-16T17:00:00.000+13:00"
+  },
+  "location": {
+    "city": "Auckland",
+    "country": "New Zealand",
+    "coordinates": {
+      "latitude": -36.8475001,
+      "longitude": 174.7576072
+    }
+  }
+}

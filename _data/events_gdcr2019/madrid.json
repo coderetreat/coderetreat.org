@@ -1,0 +1,32 @@
+{
+  "title": "GDCR19 in Madrid @Spotahome",
+  "url": "https://www.eventbrite.es/e/global-day-of-coderetreat-2019-spotahome-tickets-79122835531",
+  "moderators": [
+    {
+      "name": "Sergio Álvarez",
+      "url": "https://twitter.com/codecoolture"
+    },
+    {
+      "name": "Sergio Sánchez",
+      "url": "https://twitter.com/ssanchezmarc"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Spotahome",
+      "url": "https://www.spotahome.com/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T09:00:00+01:00",
+    "end": "2019-11-16T18:30:00+01:00"
+  },
+  "location": {
+    "city": "Madrid",
+    "country": "Spain",
+    "coordinates": {
+      "latitude": 40.40461,
+      "longitude": -3.6965667
+    }
+  }
+}

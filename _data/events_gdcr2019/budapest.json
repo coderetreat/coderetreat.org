@@ -1,0 +1,36 @@
+{
+    "title": "Global Day of Coderetreat @ Inter-Mikrum",
+    "url": "https://www.meetup.com/Coderetreat-Budapest/events/266086898/",
+    "moderators": [
+      {
+        "name": "Kornél Simon",
+        "url": "https://www.meetup.com/Coderetreat-Budapest/members/195413961/profile/"
+      },
+      {
+        "name": "András Szalai",
+        "url": "https://www.meetup.com/Coderetreat-Budapest/members/237615678/profile/"
+      },
+      {
+        "name": "Ivett Ordog PhD.",
+        "url": "https://www.meetup.com/Coderetreat-Budapest/members/36972882/profile/"
+      }
+    ],
+    "sponsors": [
+      {
+        "name": "Inter-Mikrum Zrt.",
+        "url": "https://mikrum.hu/"
+      }
+    ],
+    "date": {
+      "start": "2019-11-16T09:00:00.000+01:00",
+      "end": "2019-11-16T18:00:00.000+01:00"
+    },
+    "location": {
+      "city": "Budapest",
+      "country": "Hungary",
+      "coordinates": {
+        "latitude": 47.5543056,
+        "longitude": 19.0767403
+      }
+    }
+  }
