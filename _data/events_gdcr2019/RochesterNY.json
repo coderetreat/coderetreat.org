@@ -1,0 +1,24 @@
+{
+  "title": "GDCR19 in Rochester, NY",
+  "url": "https://www.meetup.com/RocDev/events/265934597/",
+  "moderators": [{
+      "name": "Gary Passero"
+    },
+    {
+      "name": "Chris Horn"
+    }
+  ],
+  "sponsors": [],
+  "date": {
+    "start": "2019-11-16T08:30:00-04:00",
+    "end": "2019-11-16T16:30:00-04:00"
+  },
+  "location": {
+    "city": "Rochester, NY",
+    "country": "United States of America",
+    "coordinates": {
+      "latitude": 43.157981,
+      "longitude": -77.60576
+    }
+  }
+}
