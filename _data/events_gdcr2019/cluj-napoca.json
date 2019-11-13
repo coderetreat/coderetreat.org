@@ -1,0 +1,18 @@
+{
+    "title": "GDCR19 Cluj-Napoca",
+    "url": "http://www.rabs.ro/global-day-of-coderetreat-2019/255",
+    "moderators": [],
+    "sponsors": [],
+    "date": {
+      "start": "2019-11-16T08:30:00.123+02:00",
+      "end": "2019-11-16T18:00:00.456+02:00"
+    },
+    "location": {
+      "city": "Cluj-Napoca",
+      "country": "Romania",
+      "coordinates": {
+        "latitude": 46.7685162,
+        "longitude": 23.5859378
+      }
+    }
+  }
