@@ -33,12 +33,17 @@ const formatModerators = event => ({
   })
 });
 
+const joinHumane = xs => {
+  if(xs.length === 0) return "";
+  if(xs.length === 1) return xs[0];
+
+  return xs.slice(0, -1).join(", ") + " & " + xs.slice(-1)[0];
+}
+
 const flattenCity = event => ({ ...event, city: event.location.city });
 
 const buildTweet = ({ cities, moderators }) =>
-  `🌐 Good Morning ${cities.join(", ")}! Have a great day ${moderators.join(
-    ", "
-  )} #coderetreat #gdcr19`;
+  `🌐 Good Morning ${joinHumane(cities)}! Have a great day ${joinHumane(moderators)} #coderetreat #gdcr19`;
 
 const sortByCity = (e1, e2) => {
   const n1 = e1.city.toUpperCase();
