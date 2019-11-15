@@ -1,0 +1,37 @@
+{
+  "title": "Global Day Of CodeRetreat 2019 @ Opcito (Pune)",
+  "url": "https://www.townscript.com/e/global-day-of-coderetreat-2019-opcito-pune-230011",
+  "moderators": [
+    {
+      "name": "Sharib Jafari",
+      "url": "https://twitter.com/SharibJafari"
+    },
+    {
+      "name": "Vineet Kulkarni",
+      "url": "https://twitter.com/VineetKulkarni"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Opcito, Pune",
+      "url": "https://www.opcito.com/"
+    },
+    {
+      "name": "Nelkinda Software Craft Pvt Ltd",
+      "url": "http://nelkinda.com/"
+    }
+  ],
+  "date": {
+    "start": "2019-11-16T09:30:00+05:30",
+    "end": "2019-11-16T17:30:00+05:30"
+  },
+  "location": {
+    "city": "Pune",
+    "country": "India",
+    "coordinates": {
+      "latitude": 18.5511794,
+      "longitude": 73.7913919
+    }
+  }
+}
+
