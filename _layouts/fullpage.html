@@ -1,0 +1,16 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+
+  <body class="global_day">
+    {% include navigation.html %}
+    <div class="container">
+      <h1 class="page_header">{{ page.title }}</h1>
+      {{ content }}
+    </div>
+
+    {% include footer.html %}
+</body>
+</html>
