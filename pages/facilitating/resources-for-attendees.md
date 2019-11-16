@@ -19,6 +19,10 @@ Help your attendees with starting points in different programming languages:
 
 They can use an online coding environment like [Cyber-Dojo](http://www.cyber-dojo.org/). It offers 30 different languages, each with at least one testing framework (most languages have multiple frameworks) all wired up and ready to go: no downloading, installing, or configuring, etc. 
 
+## Booklet
+
+[Markus Decke](https://twitter.com/mrksdck) created [this very useful booklet](https://github.com/mrksdck/coderetreat-pocketmod). Thanks Markus!!
+
 ## Game of Life schemas
 
 Take a look at [Conway's Game of Life (GoL)](/pages/facilitating/gol/#game-of-life-schemas-provided-by-the-community).
