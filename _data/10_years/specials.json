@@ -21,6 +21,13 @@
 		"target": ""
 	},
 	{
+		"image":"/images/10-years/timeline.jpg",
+		"title":"Timeline #gdcr19",
+		"description": "Showing the timeline with all the registered events",
+		"link": "/timeline",
+		"target": ""
+	},
+	{
 		"image":"/images/10-years/pocket-watch.jpg",
 		"title":"Stay tuned...",
 		"description": "More goodness coming soon!",
