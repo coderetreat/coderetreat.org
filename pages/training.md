@@ -29,6 +29,10 @@ image:
   </ul>
 </section>
 
+<h2>Training Podcast</h2>
+<div class="tip">Peter Kofler has recorded the most common questions asked in training sessions. He is answering questions about Coderetreat hosting, facilitation and participation.</div>
+<h3><a href="https://coderetreat-facilitation.code-cop.org/">Coderetreat Facilitation Podcast</a></h3>
+
 <h2>Upcoming training sessions</h2>
 
 <div class="tip">Like last year, we will have Hangout sessions to help you get started with running and facilitating a coderetreat.</div>
@@ -69,7 +73,7 @@ image:
       {% endif %}
     {% endfor %}
     </div>
-    
+
     <h2>Past training sessions - 2017</h2>
     <div class="Umd">
       {% for training in site.data.trainings.trainings-2017 %}
