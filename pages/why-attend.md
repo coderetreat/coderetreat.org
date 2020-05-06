@@ -17,8 +17,4 @@ description: If you have never attended a coderetreat and you would like to know
 {% endfor %}
 {% endfor %}
 
-<p class="last-section">
-    <a href="{% link pages/10-years/index.md %}">Do you know that we're celebrating 10th Coderetreat Anniversary?</a>
-</p>
-
 </div>
