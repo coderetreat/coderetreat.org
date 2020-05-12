@@ -1,0 +1,25 @@
+{
+  "name": "coderetreat.org",
+  "version": "1.0.0",
+  "description": "The coderetreat.org website - assets and js",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderetreat/coderetreat.org.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coderetreat/coderetreat.org/issues"
+  },
+  "homepage": "https://github.com/coderetreat/coderetreat.org#readme"
+}
