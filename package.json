@@ -5,11 +5,14 @@
   "dependencies": {
     "bootstrap": "^4.4.1",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "parcel-bundler": "^1.12.4",
+    "popper.js": "^1.16.1"
   },
   "devDependencies": {},
   "scripts": {
-    "build": "echo Nothing to be done yet",
+    "build": "parcel build js/*.js --out-dir js/bundled/",
+    "watch": "parcel watch js/*.js --out-dir js/bundled/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

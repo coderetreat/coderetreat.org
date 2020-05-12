@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- seo -%}
+  <link rel="stylesheet" href="{{ "/css/theme_facilitators.min.css" | relative_url }}">
+  {%- feed_meta -%}
+</head>
+
+<body>
+
+  <main class="page-content" aria-label="Content">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><img src="{% link /assets/logo-300x.png %}" class="d-inline-block align-top" height="30">&nbsp;Coderetreat</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Global Day on Nov 6th-7th 2020</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Communities</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <div class="container">
+      {{ content }}
+    </div>
+  </main>
+
+  <footer class="footer h-card">
+    <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+    <div class="wrapper">
+
+      <h2 class="footer-heading">{{ site.title | escape }}</h2>
+
+      <div class="footer-col-wrapper">
+        <div class="footer-col footer-col-1">
+          <ul class="contact-list">
+            <li class="p-name">
+              {%- if site.author -%}
+              {{ site.author | escape }}
+              {%- else -%}
+              {{ site.title | escape }}
+              {%- endif -%}
+            </li>
+            {%- if site.email -%}
+            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            {%- endif -%}
+          </ul>
+        </div>
+
+        <div class="footer-col footer-col-2">
+          {%- include social.html -%}
+        </div>
+
+        <div class="footer-col footer-col-3">
+          <p>{{- site.description | escape -}}</p>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+  <script type="application/javascript" src="{{ "/js/bundled/default.js" | relative_url }}"></script>
+
+</body>
+
+</html>
