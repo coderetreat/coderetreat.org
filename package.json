@@ -2,7 +2,6 @@
   "name": "coderetreat.org",
   "version": "1.0.0",
   "description": "The coderetreat.org website - assets and js",
-  "main": "index.js",
   "dependencies": {
     "bootstrap": "^4.4.1",
     "font-awesome": "^4.7.0",
@@ -10,6 +9,7 @@
   },
   "devDependencies": {},
   "scripts": {
+    "build": "echo Nothing to be done yet",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
