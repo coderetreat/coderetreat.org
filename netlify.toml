@@ -1,3 +1,0 @@
-[build]
-  publish = "_site"
-  command = "DEBUG=* npm ci && jekyll build --verbose"
