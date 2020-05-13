@@ -1,1 +1,67 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+
+@each $name, $color in $participants {
+    $theme-colors: map-merge($theme-colors, ("participants-#{$name}": $color))
+}
+$theme-colors: map-merge($theme-colors, ("participants-bg-light": theme-color-level("participants-primary", -11)));
+
+@each $name, $color in $facilitators {
+    $theme-colors: map-merge($theme-colors, ("facilitators-#{$name}": $color))
+}
+$theme-colors: map-merge($theme-colors, ("facilitators-bg-light": theme-color-level("facilitators-primary", -11)));
+
+
+$navbar-padding-y: $spacer;
+$enable-shadows: true;
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+.navbar {
+  .navbar-collapse.collapse.show,
+  .navbar-collapse.collapsing {
+    .nav-divider {
+      display: none;
+    }
+  }
+  .nav-divider {
+    padding: 0px $spacer;
+    &:after {
+      content: " ";
+      display: inline-flex;
+      border-right: 2px solid theme-color-level("light", 2);
+      width: 1px;
+      height: 100%;
+      box-shadow: 1px 1px 1px 2px theme-color-level("light", 0.2);
+      border-radius: 2px;
+    }
+  }
+}
+
+.btn-facilitators {
+  @include button-variant(
+    map-get($facilitators, "primary"),
+    map-get($facilitators, "primary")
+  );
+}
+
+.btn-participants {
+  @include button-variant(
+    map-get($participants, "primary"),
+    map-get($participants, "primary")
+  );
+}
+
+.drop-shadow {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 2px;
+}
+
+.drop-shadow-small {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
+  border-radius: 2px;
+}
+
+@import "pages/home";

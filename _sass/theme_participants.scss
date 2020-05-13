@@ -1,7 +1,5 @@
-$theme-colors: (
-    "primary":    #74BCCD,
-    "secondary":  #9BD7EB,
-    "light":      #F4F9F0
-);
+@import "color_schemes";
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+$theme-colors: $participants;
+
+@import "theme";

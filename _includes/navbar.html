@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-{{page.audience}}-light drop-shadow-small" style="z-index: 1;">
+  <div class="container">
+    <a class="navbar-brand" href="#"
+      ><img
+        src="{% link /assets/logo-300x.png %}"
+        class="d-inline-block align-top"
+        height="30"
+      />&nbsp;Coderetreat</a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        {%- assign navbarInclude = "navbar_items_" | append: page.audience | append: ".html" -%}
+        {% include {{navbarInclude}} %}
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,32 +1,71 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: participants
+layout: base
+audience: participants
 ---
 
-<div class="home">
-    {%- if site.posts.size > 0 -%}
-      <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-      <ul class="post-list">
-        {%- for post in site.posts -%}
-        <li>
-          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
-          <h3>
-            <a class="post-link" href="{{ post.url | relative_url }}">
-              {{ post.title | escape }}
-            </a>
-          </h3>
-          {%- if site.show_excerpts -%}
-            {{ post.excerpt }}
-          {%- endif -%}
-        </li>
-        {%- endfor -%}
-      </ul>
-  
-      <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-    {%- endif -%}
-  
+<div class="jumbotron jumbotron-fluid py-0 border jumbotron-gol text-light">
+  <div class="p-0 my-0 py-0">
+    <div class="row p-0 m-0">
+      <div class="col-12 col-lg-6 offset-lg-3 py-5">
+        <h1 class="text-center display-lg-1 display-4">Coderetreat</h1>
+        <h2 class="text-center">
+          A free full-day workshop <br />to practice the fundamentals of
+          programming
+        </h2>
+        <p class="text-center pt-3">
+          <a class="btn btn-primary">Join a local community</a>
+        </p>
+      </div>
+    </div>
   </div>
-  
+</div>
+
+<div class="container">
+  <div class="card-deck">
+    <div class="card">
+      <img
+        src="{% link /assets/globaldayofcoderetreat_hosts.jpg %}"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">Global Day of Coderetreat</h5>
+        <p class="card-text">
+          Join thousands of developers on Nov 6th-Nov 7th in the largest free
+          community workshop worldwide.
+        </p>
+        <a href="#" class="btn btn-primary">Find an event in your area</a>
+      </div>
+    </div>
+    <div class="card">
+      <img
+        src="{% link /assets/globaldayofcoderetreat_hosts.jpg %}"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">Global Day of Coderetreat</h5>
+        <p class="card-text">
+          Join thousands of developers on Nov 6th-Nov 7th in the largest free
+          community workshop worldwide.
+        </p>
+        <a href="#" class="btn btn-primary">Find an event in your area</a>
+      </div>
+    </div>
+    <div class="card">
+      <img
+        src="{% link /assets/globaldayofcoderetreat_hosts.jpg %}"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">Global Day of Coderetreat</h5>
+        <p class="card-text">
+          Join thousands of developers on Nov 6th-Nov 7th in the largest free
+          community workshop worldwide.
+        </p>
+        <a href="#" class="btn btn-primary">Find an event in your area</a>
+      </div>
+    </div>
+  </div>
+</div>
