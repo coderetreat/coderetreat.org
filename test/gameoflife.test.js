@@ -27,6 +27,15 @@ describe("the standard rules", () => {
 
     expect(result).toEqual(false);
   });
+
+  it("a living cell with more than 3 living neighbours dies", () => {
+    let livingCell = true;
+    let numOfLivingNeighbours = 4;
+
+    let result = isCellAliveInNextGeneration(livingCell, numOfLivingNeighbours);
+
+    expect(result).toEqual(false);
+  });
 });
 
 let isCellAliveInNextGeneration = (isCellAlive, numOfLivingNeighbours) => {
