@@ -51,6 +51,15 @@ describe("the standard rules", () => {
       expect(result).toEqual(false);
     });
   });
+
+  it("a dead cell with 3 living neighbours comes alive", () => {
+    let livingCell = false;
+    let numOfLivingNeighbours = 3;
+
+    let result = isCellAliveInNextGeneration(livingCell, numOfLivingNeighbours);
+
+    expect(result).toEqual(true);
+  });
 });
 
 let isCellAliveInNextGeneration = (isCellAlive, numOfLivingNeighbours) => {
