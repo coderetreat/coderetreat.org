@@ -4,6 +4,8 @@
 // a living cell with more than 3 neighbours dies
 // a dead cell with != 3 living neighbours, stays dead
 
+import { isCellAliveInNextGeneration } from "../js/gameOfLife/rules";
+
 describe("the standard rules", () => {
   [2, 3].forEach((numOfLivingNeighbours) => {
     describe("a living cell with 2-3 living neighbours lives", () => {
@@ -61,9 +63,3 @@ describe("the standard rules", () => {
     expect(result).toEqual(true);
   });
 });
-
-let isCellAliveInNextGeneration = (isCellAlive, numOfLivingNeighbours) => {
-  return (
-    (numOfLivingNeighbours == 2 && isCellAlive) || numOfLivingNeighbours == 3
-  );
-};
