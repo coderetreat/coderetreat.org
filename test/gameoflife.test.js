@@ -2,6 +2,7 @@
 // a dead cell with exactly 3 neighbours lives
 // a living cell with 1 or fewer living neighbours dies
 // a living cell with more than 3 neighbours dies
+// a dead cell with != 3 living neighbours, stays dead
 
 describe("the standard rules", () => {
   [2, 3].forEach((numOfLivingNeighbours) => {
