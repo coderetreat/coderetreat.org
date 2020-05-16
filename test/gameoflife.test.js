@@ -29,5 +29,5 @@ describe("the standard rules", () => {
 });
 
 let isCellAliveInNextGeneration = (isCellAlive, numOfLivingNeighbours) => {
-  return true;
+  return numOfLivingNeighbours > 1;
 };
