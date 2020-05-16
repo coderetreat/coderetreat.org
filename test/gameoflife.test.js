@@ -38,8 +38,8 @@ describe("the standard rules", () => {
     expect(result).toEqual(false);
   });
 
-  describe("a dead cell with !=3 living neighbours stays dead", () => {
-    it("2 neighbours", () => {
+  describe("a dead cell with anything but 3 living neighbours stays dead", () => {
+    it("2 living neighbours", () => {
       let livingCell = false;
       let numOfLivingNeighbours = 2;
 
