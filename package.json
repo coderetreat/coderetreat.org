@@ -17,8 +17,8 @@
     "jest": "^26.0.1"
   },
   "scripts": {
-    "build": "parcel build js/*.js --out-dir js/bundled/",
-    "watch": "parcel watch js/*.js --out-dir js/bundled/",
+    "build": "parcel build js/*.js --public-url /js/bundled --out-dir js/bundled/",
+    "watch": "parcel watch js/*.js --public-url /js/bundled --out-dir js/bundled/",
     "test": "jest --watch"
   },
   "repository": {
