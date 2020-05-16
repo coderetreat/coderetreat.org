@@ -1,20 +1,21 @@
 // a living cell with 2-3 living neighbours lives
 // a dead cell with exactly 3 neighbours lives
 // a living cell with 1 or fewer living neighbours dies
-// a living cell with 4-8 neighbours dies
+// a living cell with more than 3 neighbours dies
 
 describe("the standard rules", () => {
-  describe("a living cell with 2-3 living neighbours lives", () => {
-    it("3 living neighbours", () => {
-      let livingCell = true;
-      let numOfLivingNeighbours = 3;
+  [2, 3].forEach((numOfLivingNeighbours) => {
+    describe("a living cell with 2-3 living neighbours lives", () => {
+      it(`${numOfLivingNeighbours} living neighbours`, () => {
+        let livingCell = true;
 
-      let result = isCellAliveInNextGeneration(
-        livingCell,
-        numOfLivingNeighbours
-      );
+        let result = isCellAliveInNextGeneration(
+          livingCell,
+          numOfLivingNeighbours
+        );
 
-      expect(result).toEqual(true);
+        expect(result).toEqual(true);
+      });
     });
   });
 
