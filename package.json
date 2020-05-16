@@ -9,11 +9,16 @@
     "parcel-bundler": "^1.12.4",
     "popper.js": "^1.16.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "babel-jest": "^26.0.1",
+    "jest": "^26.0.1"
+  },
   "scripts": {
     "build": "parcel build js/*.js --out-dir js/bundled/",
     "watch": "parcel watch js/*.js --out-dir js/bundled/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watch"
   },
   "repository": {
     "type": "git",
