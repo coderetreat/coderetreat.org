@@ -1,7 +1,8 @@
 import * as PIXI from "pixi.js";
 
 const toRgb = (r, g, b) => {
-  return (r % 256) * 256 * 256 + (g % 256) * 256 + (b % 256);
+  let color = (r % 256) * 256 * 256 + (g % 256) * 256 + (b % 256);
+  return color;
 };
 
 const view = document.getElementById("gameCanvas");
@@ -29,13 +30,13 @@ var graphicsGrid = grid.map((row) => {
   });
 });
 
-app.ticker.speed = 0.1;
+app.ticker.speed = 0.001;
 
 let timePassed = 0;
 
 // Listen for frame updates
 app.ticker.add((delta) => {
-  timePassed += delta * 0.1;
+  timePassed = (timePassed + delta * 1000 | 0);
   for (let y = 0; y < graphicsGrid.length; y++) {
     for (let x = 0; x < graphicsGrid[0].length; x++) {
       var square = graphicsGrid[y][x][1];
