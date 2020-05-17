@@ -1,5 +1,9 @@
 import * as PIXI from "pixi.js";
 
+const toRgb = (r, g, b) => {
+  return (r % 256) * 256 * 256 + (g % 256) * 256 + (b % 256);
+};
+
 const view = document.getElementById("gameCanvas");
 // The application will create a renderer using WebGL, if possible,
 // with a fallback to a canvas render. It will also setup the ticker
@@ -12,36 +16,33 @@ const app = new PIXI.Application({
   antialias: true,
 });
 
-// The application will create a canvas element for you that you
-// can then insert into the DOM
-// document.body.appendChild(app.view);
+var grid = [
+  [1, 1, 1, 1],
+  [1, 1, 0, 1],
+];
 
-// load the texture we need
-app.loader.add("bunny", "js/bunny.png").load((loader, resources) => {
-  // This creates a texture from a 'bunny.png' image
-  const bunny = new PIXI.Sprite(resources.bunny.texture);
-
-  // Setup the position of the bunny
-  bunny.x = app.renderer.width / 2;
-  bunny.y = app.renderer.height / 2;
-
-  // Rotate around the center
-  bunny.anchor.x = 0.5;
-  bunny.anchor.y = 0.5;
-
-  var circle = new PIXI.Graphics();
-  circle.beginFill(0x5cafe2);
-  circle.drawCircle(0, 0, 80);
-  circle.x = 320;
-  circle.y = 180;
-
-  // Add the bunny to the scene we are building
-  app.stage.addChild(bunny);
-  app.stage.addChild(circle);
-
-  // Listen for frame updates
-  app.ticker.add(() => {
-    // each frame we spin the bunny around a bit
-    bunny.rotation += 0.01;
+var graphicsGrid = grid.map((row) => {
+  return row.map((el) => {
+    var square = new PIXI.Graphics();
+    app.stage.addChild(square);
+    return [el, square];
   });
+});
+
+app.ticker.speed = 0.1;
+
+let timePassed = 0;
+
+// Listen for frame updates
+app.ticker.add((delta) => {
+  timePassed += delta * 0.1;
+  for (let y = 0; y < graphicsGrid.length; y++) {
+    for (let x = 0; x < graphicsGrid[0].length; x++) {
+      var square = graphicsGrid[y][x][1];
+      var color = toRgb(timePassed, timePassed, timePassed);
+      square.clear();
+      square.beginFill(color);
+      square.drawRect(x * 20, y * 20, 10, 10);
+    }
+  }
 });
