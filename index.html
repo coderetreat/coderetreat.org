@@ -22,25 +22,9 @@ audience: participants
 </div>
 
 <div class="container">
-  <div id="carousel-quotes" class="carousel slide mt-5 col-lg-8 offset-lg-2" style="overflow:hidden; height: 160px" data-ride="carousel">
-    <div class="carousel-inner">
-      {% for quote in site.data.quotes %}
-      <div class="carousel-item px-5 {% if forloop.first %}active{% endif %}">
-          <blockquote class="blockquote">
-            <p class="mb-0">{{ quote.text }}</p>
-            <footer class="blockquote-footer"><a href="{{ quote.url }}">{{ quote.author }}</a></footer>
-          </blockquote>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
   <div class="card-deck">
     <div class="card">
-      <img
-        src="{% link /assets/globaldayofcoderetreat_hosts.jpg %}"
-        class="card-img-top"
-        alt="..."
-      />
+      <img src="{% link /assets/globaldayofcoderetreat_hosts.jpg %}" class="card-img-top" alt="..." />
       <div class="card-body">
         <h5 class="card-title">Global Day of Coderetreat</h5>
         <p class="card-text">
@@ -51,34 +35,44 @@ audience: participants
       </div>
     </div>
     <div class="card">
-      <img
-        src="https://place-hold.it/300x150"
-        class="card-img-top"
-        alt="..."
-      />
+      <img src="https://place-hold.it/300x150" class="card-img-top" alt="..." />
       <div class="card-body">
         <h5 class="card-title">About the workshop</h5>
         <p class="card-text">
-          What is a coderetreat anyway? It's a day of deliberate practice, far away of the pressure of getting things done. A space for you to try out Test-Driven-Development and other practices.
+          What is a coderetreat anyway? It's a day of deliberate practice, far away of the pressure of getting things
+          done. A space for you to try out Test-Driven-Development and other practices.
         </p>
         <a href="#" class="btn btn-primary">Learn more</a>
       </div>
     </div>
     <div class="card">
-      <img
-      src="https://place-hold.it/300x150"
-      class="card-img-top"
-        alt="..."
-      />
+      <img src="https://place-hold.it/300x150" class="card-img-top" alt="..." />
       <div class="card-body">
-        <h5 class="card-title">Something something host your own</h5>
+        <h5 class="card-title">Getting started</h5>
         <p class="card-text">
-          Starting your own blabla
+          What do you need to prepare? How do you set up an IDE? We'll answer these and a lot of frequently asked
+          questions in our <i>Getting Started</i>-guide!
         </p>
-        <a href="#" class="btn btn-facilitators-primary">Go to the facilitators area</a>
+        <a href="#" class="btn btn-primary">To the guide</a>
       </div>
     </div>
   </div>
 </div>
-
+<div class="bg-light my-5">
+  <div class="container py-5">
+    <div id="carousel-quotes" class="carousel slide col-lg-8 offset-lg-2" style="overflow:hidden; height: 160px"
+      data-ride="carousel">
+      <div class="carousel-inner">
+        {% for quote in site.data.quotes %}
+        <div class="carousel-item px-5 {% if forloop.first %}active{% endif %}">
+          <blockquote class="blockquote">
+            <p class="mb-0">{{ quote.text }}</p>
+            <footer class="blockquote-footer"><a href="{{ quote.url }}">{{ quote.author }}</a></footer>
+          </blockquote>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
 <script type="application/javascript" src="{{ "/js/bundled/gameCanvas.js" | relative_url }}"></script>
