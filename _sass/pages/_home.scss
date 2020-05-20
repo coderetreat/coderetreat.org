@@ -10,6 +10,13 @@
     );
   position: relative;
 
+  .jumbotron-gol-controls {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 0;
+  }
+
   #gameCanvas {
     z-index: -1;
     position: absolute;
