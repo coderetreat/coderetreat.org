@@ -18,10 +18,10 @@
     "npm-run-all": "^4.1.5"
   },
   "scripts": {
-    "start": "run-p watch watch:jekyll",
-    "build": "parcel build js/*.js --public-url /js/bundled --out-dir _site/js/bundled/",
-    "watch": "parcel watch js/*.js --public-url /js/bundled --out-dir _site/js/bundled/",
-    "watch:jekyll": "bundle exec jekyll serve --livereload",
+    "start": "run-p -ln watch:jekyll watch",
+    "build": "parcel build js/*.js --log-level 4 --public-url /js/bundled --out-dir _site/js/bundled/",
+    "watch": "parcel watch js/*.js --log-level 4 --public-url /js/bundled --out-dir _site/js/bundled/",
+    "watch:jekyll": "bundle exec jekyll serve --livereload -V",
     "test": "jest --watch"
   },
   "repository": {

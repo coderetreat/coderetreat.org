@@ -46,8 +46,14 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules/
+  - js/
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
   - .cache/
+
+keep_files:
+  - js/
+  - js/bundled/
+  - js/bundled/*
