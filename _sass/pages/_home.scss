@@ -1,20 +1,21 @@
 .jumbotron-gol {
   overflow: hidden;
+  height: 50vh;
   background: linear-gradient(
       90deg,
       rgba(0, 0, 0, 0.65) 0%,
       rgba(0, 0, 0, 0.8) 40%,
       rgba(0, 0, 0, 0.8) 60%,
       rgba(0, 0, 0, 0.65) 100%
-    ),
-    url("/assets/gosper.gif");
+    );
   position: relative;
-}
 
-#gameCanvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  #gameCanvas {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
