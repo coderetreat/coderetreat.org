@@ -2,8 +2,9 @@ import * as PIXI from "pixi.js";
 import { computeNextGeneration } from "./gameOfLife/computeNextGeneration";
 
 const CELL_SIZE = 20;
-const TICK_EVERY_MS = 5000;
-const ALPHA_DELTA = 0.02;
+const TICK_EVERY_MS = 3000;
+const ALPHA_DELTA = 0.01;
+const SEED_THRESHOLD = 0.7;
 
 const view = document.getElementById("gameCanvas");
 const app = new PIXI.Application({
@@ -23,7 +24,7 @@ let grid = Array(gridY)
   .map(() =>
     Array(gridX)
       .fill(0)
-      .map(() => (Math.random() > 0.8 ? 1 : 0))
+      .map(() => (Math.random() > SEED_THRESHOLD ? 1 : 0))
   );
 
 let graphics = grid.map((row, y) =>
@@ -33,6 +34,7 @@ let graphics = grid.map((row, y) =>
     point.x = x * CELL_SIZE;
     point.y = y * CELL_SIZE;
     point.alpha = 0;
+    point.alphaDelta = grid[y][x] == 1 ? ALPHA_DELTA : -ALPHA_DELTA;
     point.beginFill(0xffffff);
     point.drawCircle(CELL_SIZE / 2, CELL_SIZE / 2, (CELL_SIZE - 2) / 2);
     app.stage.addChild(point);
@@ -64,6 +66,7 @@ const updateAlphaDelta = () => {
 let secondsPassed = 0;
 let nextSecond = 1;
 
+drawGeneration(0);
 updateAlphaDelta();
 let timeInMs = 0;
 
