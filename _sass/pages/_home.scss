@@ -1,6 +1,7 @@
 .jumbotron-gol {
   overflow: hidden;
-  height: 50vh;
+  min-height: 50vh;
+  height: initial;
   background: linear-gradient(
       90deg,
       rgba(0, 0, 0, 0.1) 0%,
@@ -9,6 +10,11 @@
       rgba(0, 0, 0, 0.1) 100%
     );
   position: relative;
+
+  .jumbotron-gol-content {
+    margin-top: 10%;
+    margin-bottom: 80px;
+  }
 
   .jumbotron-gol-controls {
     position: absolute;
