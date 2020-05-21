@@ -1,19 +1,11 @@
 import * as PIXI from "pixi.js";
 import { computeNextGeneration } from "./gameOfLife/computeNextGeneration";
 
-const toRgb = (r, g, b) => {
-  r = (r * 256) | 0;
-  b = (b * 256) | 0;
-  g = (g * 256) | 0;
-  let color = (r % 256) * 256 * 256 + (g % 256) * 256 + (b % 256);
-  return color;
-};
+const CELL_SIZE = 20;
+const TICK_EVERY_MS = 5000;
+const ALPHA_DELTA = 0.02;
 
 const view = document.getElementById("gameCanvas");
-// The application will create a renderer using WebGL, if possible,
-// with a fallback to a canvas render. It will also setup the ticker
-// and the root stage PIXI.Container
-
 const app = new PIXI.Application({
   view,
   resizeTo: view.parentElement,
@@ -22,42 +14,49 @@ const app = new PIXI.Application({
   resolution: 2,
 });
 
-let cellSize = 14;
-
 let { width, height } = app.screen;
-let gridX = (width / cellSize) | 0;
-let gridY = (height / cellSize) | 0;
+let gridX = (width / CELL_SIZE) | 0;
+let gridY = (height / CELL_SIZE) | 0;
 
 let grid = Array(gridY)
   .fill(0)
   .map(() =>
     Array(gridX)
       .fill(0)
-      .map(() => (Math.random() > 0.9 ? 1 : 0))
+      .map(() => (Math.random() > 0.8 ? 1 : 0))
   );
 
 let graphics = grid.map((row, y) =>
   row.map((_, x) => {
     let point = new PIXI.Graphics();
-    point.x = x * cellSize;
-    point.y = y * cellSize;
+    point.interactive = true;
+    point.x = x * CELL_SIZE;
+    point.y = y * CELL_SIZE;
+    point.alpha = 0;
+    point.beginFill(0xffffff);
+    point.drawCircle(CELL_SIZE / 2, CELL_SIZE / 2, (CELL_SIZE - 2) / 2);
     app.stage.addChild(point);
     return point;
   })
 );
 
-const drawGeneration = (currentGrid, oldGrid) => {
-  for (let y = 0; y < currentGrid.length; y++) {
-    for (let x = 0; x < currentGrid[0].length; x++) {
-      if (oldGrid && currentGrid[y][x] == oldGrid[y][x]) continue;
-
-      let isCellAlive = currentGrid[y][x] === 1;
+const drawGeneration = (delta) => {
+  for (let y = 0; y < grid.length; y++) {
+    for (let x = 0; x < grid[0].length; x++) {
       let point = graphics[y][x];
-      point.clear();
-      if (isCellAlive) {
-        point.beginFill(0xffffff);
-        point.drawCircle(cellSize/2, cellSize/2, (cellSize - 2) / 2);
-      }
+      point.alpha = Math.max(
+        0,
+        Math.min(1, point.alpha + point.alphaDelta * delta)
+      );
+    }
+  }
+};
+
+const updateAlphaDelta = () => {
+  for (let y = 0; y < grid.length; y++) {
+    for (let x = 0; x < grid[0].length; x++) {
+      let point = graphics[y][x];
+      point.alphaDelta = grid[y][x] == 1 ? ALPHA_DELTA : -ALPHA_DELTA;
     }
   }
 };
@@ -65,18 +64,16 @@ const drawGeneration = (currentGrid, oldGrid) => {
 let secondsPassed = 0;
 let nextSecond = 1;
 
-drawGeneration(grid);
-
+updateAlphaDelta();
 let timeInMs = 0;
-let tickEveryMs = 500;
 
 // Listen for frame updates
 app.ticker.add((delta) => {
   timeInMs += app.ticker.elapsedMS;
-  if (timeInMs > tickEveryMs) {
-    timeInMs = timeInMs % tickEveryMs;
-    let oldGrid = grid;
+  if (timeInMs > TICK_EVERY_MS) {
+    timeInMs = timeInMs % TICK_EVERY_MS;
     grid = computeNextGeneration(grid);
-    drawGeneration(grid, oldGrid);
+    updateAlphaDelta();
   }
+  drawGeneration(delta);
 });
