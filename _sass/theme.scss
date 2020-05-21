@@ -1,8 +1,17 @@
+@import "fonts/orbitron";
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/root";
 @import "../node_modules/bootstrap/scss/reboot";
+
+/* latin */
+@font-face {
+  font-family: 'Orbitron';
+  font-display: swap;
+  src: url(/assets/Orbitron-VariableFont_wght.ttf) format('ttf');
+}
+
 
 @each $name, $color in $participants {
     $theme-colors: map-merge($theme-colors, ("participants-#{$name}": $color))
@@ -15,7 +24,7 @@ $theme-colors: map-merge($theme-colors, ("participants-bg-light": theme-color-le
 $theme-colors: map-merge($theme-colors, ("facilitators-bg-light": theme-color-level("facilitators-primary", -11)));
 
 
-$font-family-sans-serif:      "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-sans-serif:      "Roboto", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 $font-family-base:            $font-family-sans-serif;
 
@@ -25,6 +34,7 @@ $enable-shadows: true;
 
 .navbar {
   .navbar-brand {
+    font-family: Orbitron;
     font-weight: bold;
     color: $navbar-light-color;
     text-transform: uppercase;
@@ -37,6 +47,10 @@ $enable-shadows: true;
     .nav-divider {
       display: none;
     }
+  }
+  .nav-item {
+    font-weight: 500;
+    text-transform: uppercase;
   }
 }
 

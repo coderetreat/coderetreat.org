@@ -12,6 +12,10 @@
   position: relative;
 
   .jumbotron-gol-content {
+    h1 {
+      font-family: Orbitron;
+      font-weight: lighter;
+    }
     user-select: none;
     margin-top: 10%;
     margin-bottom: 80px;
