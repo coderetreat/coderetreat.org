@@ -15,11 +15,18 @@ $theme-colors: map-merge($theme-colors, ("participants-bg-light": theme-color-le
 $theme-colors: map-merge($theme-colors, ("facilitators-bg-light": theme-color-level("facilitators-primary", -11)));
 
 
-$navbar-padding-y: $spacer;
 $enable-shadows: true;
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 .navbar {
+  .navbar-brand {
+    font-weight: bold;
+    color: $navbar-light-color;
+    text-transform: uppercase;
+    &>img {
+      padding-right: $spacer/2;
+    }
+  }
   .navbar-collapse.collapse.show,
   .navbar-collapse.collapsing {
     .nav-divider {
