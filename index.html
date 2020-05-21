@@ -56,20 +56,19 @@ audience: participants
     </div>
   </div>
 </div>
-<div class="bg-light my-5">
-  <div class="container py-5">
-    <div id="carousel-quotes" class="carousel slide col-lg-8 offset-lg-2" style="overflow:hidden; height: 160px"
-      data-ride="carousel">
-      <div class="carousel-inner">
-        {% for quote in site.data.quotes %}
-        <div class="carousel-item px-5 {% if forloop.first %}active{% endif %}">
+<div class="bg-light my-5 py-5">
+  <div id="carousel-quotes" class="carousel slide" style="overflow:hidden" data-ride="carousel">
+    <div class="carousel-inner">
+      {% for quote in site.data.quotes %}
+      <div class="carousel-item px-5 {% if forloop.first %}active{% endif %}">
+        <div class="container">
           <blockquote class="blockquote">
             <p class="mb-0">{{ quote.text }}</p>
             <footer class="blockquote-footer"><a href="{{ quote.url }}">{{ quote.author }}</a></footer>
           </blockquote>
         </div>
-        {% endfor %}
       </div>
+      {% endfor %}
     </div>
   </div>
 </div>
