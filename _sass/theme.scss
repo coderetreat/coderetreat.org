@@ -38,18 +38,6 @@ $enable-shadows: true;
       display: none;
     }
   }
-  .nav-divider {
-    padding: 0px $spacer;
-    &:after {
-      content: " ";
-      display: inline-flex;
-      border-right: 2px solid theme-color-level("light", 2);
-      width: 1px;
-      height: 100%;
-      box-shadow: 1px 1px 1px 2px theme-color-level("light", 0.2);
-      border-radius: 2px;
-    }
-  }
 }
 
 .btn-facilitators {
