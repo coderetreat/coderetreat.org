@@ -54,7 +54,10 @@ export class GolApp {
             return point;
           })
       );
-    this.graphics.forEach((graphic) => this.pixiApp.stage.addChild(graphic));
+
+    this.graphics.forEach((row) =>
+      row.forEach((graphic) => this.pixiApp.stage.addChild(graphic))
+    );
 
     this.drawGeneration(0);
     this.updateAlphaDelta();
