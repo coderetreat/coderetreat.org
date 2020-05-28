@@ -15,6 +15,7 @@ const createApp = ({ view, seed, autoStart }, opts) => {
   return new GolApp(
     {
       view,
+      autoPreventDefault: false,
       resizeTo: view.parentElement,
       antialias: true,
       autoDensity: true,

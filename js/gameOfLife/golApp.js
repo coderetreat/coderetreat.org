@@ -15,6 +15,7 @@ export class GolApp {
     this.alphaDelta = alphaDelta;
 
     this.pixiApp = new PIXI.Application(pixiOpts);
+    this.pixiApp.renderer.view.style['touch-action'] = 'auto';
 
     this.grid = Array(GRID_Y)
       .fill(0)
