@@ -3,7 +3,7 @@ import qs from "qs";
 import seedrandom from "seedrandom";
 
 const DEFAULT_OPTIONS = {
-  seed: (Math.random() * 10000) | 0,
+  seed: String((Math.random() * 10000) | 0),
   autoStart: !window.matchMedia("(prefers-reduced-motion: reduce)").matches,
 };
 
@@ -50,7 +50,7 @@ document
           ...options,
           view: newCanvas,
           autoStart: wasStarted,
-          seed: (Math.random() * 10000) | 0,
+          seed: String((Math.random() * 10000) | 0),
         },
         { tickEveryMs: app.tickEveryMs, alphaDelta: app.alphaDelta }
       );
