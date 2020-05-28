@@ -10,12 +10,15 @@ const GRID_X = 100;
 const GRID_Y = 100;
 
 export class GolApp {
-  constructor(pixiOpts, { random, tickEveryMs = TICK_EVERY_MS, alphaDelta = ALPHA_DELTA }) {
+  constructor(
+    pixiOpts,
+    { random, tickEveryMs = TICK_EVERY_MS, alphaDelta = ALPHA_DELTA }
+  ) {
     this.tickEveryMs = tickEveryMs;
     this.alphaDelta = alphaDelta;
 
     this.pixiApp = new PIXI.Application(pixiOpts);
-    this.pixiApp.renderer.view.style['touch-action'] = 'auto';
+    this.pixiApp.renderer.view.style["touch-action"] = "auto";
 
     this.grid = Array(GRID_Y)
       .fill(0)
@@ -48,10 +51,10 @@ export class GolApp {
               this.grid[y][x] == 1 ? this.alphaDelta : -this.alphaDelta;
             point.beginFill(0xffffff);
             point.drawCircle(CELL_SIZE / 2, CELL_SIZE / 2, (CELL_SIZE - 2) / 2);
-            this.pixiApp.stage.addChild(point);
             return point;
           })
       );
+    this.graphics.forEach((graphic) => this.pixiApp.stage.addChild(graphic));
 
     this.drawGeneration(0);
     this.updateAlphaDelta();
@@ -123,7 +126,8 @@ export class GolApp {
     for (let y = 0; y < this.graphics.length; y++) {
       for (let x = 0; x < this.graphics[0].length; x++) {
         let point = this.graphics[y][x];
-        point.alphaDelta = this.grid[y][x] == 1 ? this.alphaDelta : -this.alphaDelta;
+        point.alphaDelta =
+          this.grid[y][x] == 1 ? this.alphaDelta : -this.alphaDelta;
       }
     }
   }
