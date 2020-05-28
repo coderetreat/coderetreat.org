@@ -4,11 +4,17 @@ audience: participants
 ---
 
 <div class="jumbotron jumbotron-fluid py-0 border jumbotron-gol text-light">
+  <canvas id="gameCanvas"></canvas>
+  <div id="gameCanvasOverlay"></div>
+
   <div class="jumbotron-gol-controls">
-    <!--<a>GO FULLSCREEN THIS WILL BE AN ICON AS SOON AS I FIGURE OUT HOW FONT AWESOME AND THIS PIECE OF MAGIC PARCEL WORK TOGETHER</a>-->
+    <button class="btn btn-link" id="jumbotron-gol-control-pause">
+      <i class="fas fa-pause"></i>
+      <i class="fas fa-play"></i>
+    </button>
   </div>
   <div class="jumbotron-gol-content container">
-    <h1 class="text-center display-lg-1 display-4">Coderetreat</h1>
+    <h1 class="text-center col-12 display-lg-1 display-4">Coderetreat</h1>
     <h2 class="text-center col-12 col-lg-6 offset-lg-3">
       A free full-day workshop to practice professional software development
     </h2>
@@ -16,13 +22,12 @@ audience: participants
       <a class="btn btn-primary text-light">Join a local community</a>
     </p>
   </div>
-  <canvas id="gameCanvas"></canvas>
 </div>
 
 <div class="container">
   <div class="card-deck">
     <div class="card">
-      <img src="{% link /assets/globaldayofcoderetreat_hosts.jpg %}" class="card-img-top" alt="..." />
+      <img src="{% link /assets/home-gdcr.jpg %}" class="card-img-top card-img-tinted" alt="A photo of a hangout session with lots of coderetreat sessions going on at the same time in different places of the world" />
       <div class="card-body">
         <h5 class="card-title">Global Day of Coderetreat</h5>
         <p class="card-text">
@@ -31,9 +36,12 @@ audience: participants
         </p>
         <a href="#" class="btn btn-primary">Find an event in your area</a>
       </div>
+      <div class="card-footer py-1">
+        <span class="small">Photo by <a href="https://twitter.com/racingDeveloper/status/665529557961830400">@racingDeveloper</a></span>
+      </div>
     </div>
     <div class="card">
-      <img src="https://place-hold.it/300x150" class="card-img-top" alt="..." />
+      <img src="{% link /assets/home-what-is-a-coderetreat.jpg %}" class="card-img-top card-img-tinted" alt="a poster of the rules of game of life, put up on a window in Berlin" />
       <div class="card-body">
         <h5 class="card-title">What is a coderetreat?</h5>
         <p class="card-text">
@@ -42,9 +50,12 @@ audience: participants
         </p>
         <a href="#" class="btn btn-primary">Learn more</a>
       </div>
+      <div class="card-footer py-1">
+        <span class="small">Photo by <a href="https://twitter.com/martinklose/status/931791467642793984/photo/1">@martinKlose</a></span>
+      </div>
     </div>
     <div class="card">
-      <img src="https://place-hold.it/300x150" class="card-img-top" alt="..." />
+      <img src="{% link /assets/home-getting-started.jpg %}" class="card-img-top card-img-tinted" alt="a laptop next to a notepad and a glass of water" />
       <div class="card-body">
         <h5 class="card-title">Getting started</h5>
         <p class="card-text">
@@ -52,6 +63,9 @@ audience: participants
           questions in our <i>Getting Started</i>-guide!
         </p>
         <a href="#" class="btn btn-primary">To the guide</a>
+      </div>
+      <div class="card-footer py-1">
+        <span class="small">Photo by <a href="https://pixabay.com/de/photos/laptop-notebook-start-computer-849798/">StartupStockPhotos</a></span>
       </div>
     </div>
   </div>
@@ -70,6 +84,11 @@ audience: participants
       </div>
       {% endfor %}
     </div>
+  </div>
+</div>
+<div>
+  <div class="container">
+    <h1>📰 Latest news and articles</h1>
   </div>
 </div>
 <script type="application/javascript" src="{{ "/js/bundled/gameCanvas.js" | relative_url }}"></script>
