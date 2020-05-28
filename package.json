@@ -8,7 +8,8 @@
     "jquery": "^3.5.1",
     "parcel-bundler": "^1.12.4",
     "pixi.js": "^5.2.4",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "seedrandom": "^3.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",

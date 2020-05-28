@@ -1,102 +1,100 @@
-import * as PIXI from "pixi.js";
-import { computeNextGeneration } from "./gameOfLife/computeNextGeneration";
+import { GolApp } from "./gameOfLife/golApp";
+import qs from "qs";
+import seedrandom from "seedrandom";
 
-const CELL_SIZE = 20;
-const TICK_EVERY_MS = 3000;
-const ALPHA_DELTA = 0.01;
-const SEED_THRESHOLD = 0.7;
+const DEFAULT_OPTIONS = {
+  seed: (Math.random() * 10000) | 0,
+  autoStart: !window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+};
 
-const view = document.getElementById("gameCanvas");
-const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const createApp = ({ view, seed, autoStart }, opts) => {
+  history.pushState({}, "", "?" + qs.stringify({ seed }));
 
-const app = new PIXI.Application({
-  view,
-  resizeTo: view.parentElement,
-  antialias: true,
-  autoDensity: true,
-  resolution: 2,
-  autoStart: !reducedMotion
-});
+  const random = seedrandom(seed);
 
-document.querySelector(`#jumbotron-gol-control-pause ${reducedMotion ? ".fa-pause" : ".fa-play"}`).classList.add("d-none");
-document.querySelector("#jumbotron-gol-control-pause").addEventListener("click", (e) => {
-  e.preventDefault();
-  const shouldStart = !app.ticker.started;
-  if(shouldStart) {
-    app.start();
-  } else {
-    app.stop();
-  }
-  document.querySelector("#jumbotron-gol-control-pause [data-icon=pause]").classList.toggle("d-none");
-  document.querySelector("#jumbotron-gol-control-pause [data-icon=play]").classList.toggle("d-none");
-})
-
-
-
-let { width, height } = app.screen;
-let gridX = (width / CELL_SIZE) | 0;
-let gridY = (height / CELL_SIZE) | 0;
-
-let grid = Array(gridY)
-  .fill(0)
-  .map(() =>
-    Array(gridX)
-      .fill(0)
-      .map(() => (Math.random() > SEED_THRESHOLD ? 1 : 0))
+  return new GolApp(
+    {
+      view,
+      resizeTo: view.parentElement,
+      antialias: true,
+      autoDensity: true,
+      resolution: 2,
+      autoStart,
+    },
+    { ...opts, random }
   );
+};
 
-let graphics = grid.map((row, y) =>
-  row.map((_, x) => {
-    let point = new PIXI.Graphics();
-    point.interactive = true;
-    point.x = x * CELL_SIZE;
-    point.y = y * CELL_SIZE;
-    point.alpha = !reducedMotion ? 0 : grid[y][x];
-    point.alphaDelta = grid[y][x] == 1 ? ALPHA_DELTA : -ALPHA_DELTA;
-    point.beginFill(0xffffff);
-    point.drawCircle(CELL_SIZE / 2, CELL_SIZE / 2, (CELL_SIZE - 2) / 2);
-    app.stage.addChild(point);
-    return point;
-  })
-);
+const options = {
+  view: document.getElementById("gameCanvas"),
+  ...DEFAULT_OPTIONS,
+  ...qs.parse(window.location.search, { ignoreQueryPrefix: true }),
+};
 
-const drawGeneration = (delta) => {
-  for (let y = 0; y < grid.length; y++) {
-    for (let x = 0; x < grid[0].length; x++) {
-      let point = graphics[y][x];
-      point.alpha = Math.max(
-        0,
-        Math.min(1, point.alpha + point.alphaDelta * delta)
+let app = createApp(options);
+
+document
+  .querySelector("#jumbotron-gol-control-shuffle")
+  .addEventListener("click", (e) => {
+    e.preventDefault();
+    const wasStarted = app.started;
+    app.destroy();
+
+    const oldCanvas = document.querySelector("#gameCanvas");
+    const newCanvas = oldCanvas.cloneNode();
+    oldCanvas.replaceWith(newCanvas);
+
+    setTimeout(() => {
+      app = createApp(
+        {
+          ...options,
+          view: newCanvas,
+          autoStart: wasStarted,
+          seed: (Math.random() * 10000) | 0,
+        },
+        { tickEveryMs: app.tickEveryMs, alphaDelta: app.alphaDelta }
       );
+    }, 0);
+  });
+
+document
+  .querySelector("#jumbotron-gol-control-speed-slower")
+  .addEventListener("click", (e) => {
+    e.preventDefault();
+    app.slower();
+  });
+document
+  .querySelector("#jumbotron-gol-control-speed-reset")
+  .addEventListener("click", (e) => {
+    e.preventDefault();
+    app.resetSpeed();
+  });
+document
+  .querySelector("#jumbotron-gol-control-speed-faster")
+  .addEventListener("click", (e) => {
+    e.preventDefault();
+    app.faster();
+  });
+
+document
+  .querySelector(
+    `#jumbotron-gol-control-pause ${!app.started ? ".fa-pause" : ".fa-play"}`
+  )
+  .classList.add("d-none");
+document
+  .querySelector("#jumbotron-gol-control-pause")
+  .addEventListener("click", (e) => {
+    e.preventDefault();
+    const shouldStart = !app.started;
+    if (shouldStart) {
+      app.start();
+    } else {
+      app.stop();
     }
-  }
-};
-
-const updateAlphaDelta = () => {
-  for (let y = 0; y < grid.length; y++) {
-    for (let x = 0; x < grid[0].length; x++) {
-      let point = graphics[y][x];
-      point.alphaDelta = grid[y][x] == 1 ? ALPHA_DELTA : -ALPHA_DELTA;
-    }
-  }
-};
-
-let secondsPassed = 0;
-let nextSecond = 1;
-
-drawGeneration(0);
-updateAlphaDelta();
-let timeInMs = 0;
-
-if(reducedMotion) app.render();
-
-// Listen for frame updates
-app.ticker.add((delta) => {
-  timeInMs += app.ticker.elapsedMS;
-  if (timeInMs > TICK_EVERY_MS) {
-    timeInMs = timeInMs % TICK_EVERY_MS;
-    grid = computeNextGeneration(grid);
-    updateAlphaDelta();
-  }
-  drawGeneration(delta);
-});
+    document
+      .querySelector("#jumbotron-gol-control-pause [data-icon=pause]")
+      .classList.toggle("d-none");
+    document
+      .querySelector("#jumbotron-gol-control-pause [data-icon=play]")
+      .classList.toggle("d-none");
+  });
