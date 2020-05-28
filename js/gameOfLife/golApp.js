@@ -18,6 +18,7 @@ export class GolApp {
     this.alphaDelta = alphaDelta;
 
     this.pixiApp = new PIXI.Application(pixiOpts);
+    this.pixiApp.ticker.maxFPS = 30;
     this.pixiApp.renderer.view.style["touch-action"] = "auto";
 
     this.grid = Array(GRID_Y)
