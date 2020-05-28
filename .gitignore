@@ -6,3 +6,4 @@ vendor
 node_modules
 .cache
 js/bundled/
+.idea
