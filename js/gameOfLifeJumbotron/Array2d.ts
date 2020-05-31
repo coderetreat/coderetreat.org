@@ -1,34 +1,37 @@
-const fastInit = (width, height, initFn) => {
-  const array = new Array(height);
-  for (let y = 0; y < height; y++) {
-    array[y] = new Array(width);
-    for (let x = 0; x < width; x++) {
-      array[y][x] = initFn(x, y);
-    }
-  }
-  return array;
-};
+class Array2d<T> {
+  width: number;
+  height: number;
+  backing: T[][];
 
-class Array2d {
-  constructor(widthOrBacking, height, initFn) {
+  constructor(
+    widthOrBacking: number | T[][],
+    height?: number,
+    initFn?: (x: number, y: number) => T
+  ) {
     if (Array.isArray(widthOrBacking) && Array.isArray(widthOrBacking[0])) {
       const backing = widthOrBacking;
       this.height = backing.length;
       this.width = backing[0].length;
       this.backing = backing;
     } else {
-      const width = widthOrBacking;
+      const width = <number>widthOrBacking;
       this.width = width;
       this.height = height;
-      this.backing = fastInit(width, height, initFn);
+      this.backing = new Array(height);
+      for (let y = 0; y < height; y++) {
+        this.backing[y] = new Array(width);
+        for (let x = 0; x < width; x++) {
+          this.backing[y][x] = initFn(x, y);
+        }
+      }
     }
   }
 
-  get(x, y) {
+  get(x: number, y: number) {
     return this.backing[y][x];
   }
 
-  map(fn) {
+  map<U>(fn: (elem: T, x: number, y: number) => U) {
     const newBacking = new Array(this.height);
     for (let y = 0; y < this.height; y++) {
       newBacking[y] = new Array(this.width);
@@ -37,7 +40,7 @@ class Array2d {
       }
     }
 
-    return new Array2d(newBacking);
+    return new Array2d<U>(newBacking);
   }
 
   forEach(fn) {
@@ -48,7 +51,26 @@ class Array2d {
     }
   }
 
-  resize(newWidth, newHeight, inserter, remover) {
+  forEachZippedWith<U>(
+    other: Array2d<U>,
+    fn: (values: [T, U], x: number, y: number) => any
+  ) {
+    let max_y = Math.min(this.height, other.height);
+    let max_x = Math.min(this.width, other.width);
+
+    for(let y = 0; y < max_y; y++) {
+      for(let x = 0; x < max_x; x++) {
+        fn([this.get(x, y), other.get(x, y)], x, y);
+      }
+    }
+  }
+
+  resize(
+    newWidth: number,
+    newHeight: number,
+    inserter: (x: number, y: number) => T,
+    remover: (value: T, x: number, y: number) => any
+  ) {
     this.forEach((value, x, y) => {
       if (x >= newWidth || y >= newHeight) {
         remover(value, x, y);
