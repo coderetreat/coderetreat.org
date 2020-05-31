@@ -45,7 +45,7 @@ describe("Array2d", () => {
 ]`);
   });
 
-  it("can be zipped with another 2d array", () => {
+  it("can be zip-foreached with another 2d array", () => {
     const array1 = new Array2d([
       [1, 2, 3],
       [4, 5, 6],
