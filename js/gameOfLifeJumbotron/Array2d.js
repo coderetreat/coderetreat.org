@@ -1,12 +1,19 @@
+const fastInit = (width, height, initFn) => {
+    const array = new Array(height);
+    for(let y = 0; y < height; y++) {
+        array[y] = new Array(width);
+        for(let x = 0; x < width; x++) {
+            array[y][x] = initFn(x, y);
+        }
+    }
+    return array;
+}
+
 class Array2d {
   constructor(width, height, initFn) {
     this.width = width;
     this.height = height;
-    this.backing = new Array(height)
-      .fill(undefined)
-      .map((_, y) =>
-        new Array(width).fill(undefined).map((_, x) => initFn(x, y))
-      );
+    this.backing = fastInit(width, height, initFn);
   }
 
   get(x, y) {

@@ -64,7 +64,8 @@ describe("Array2d", () => {
 
 describe("Array2d - Benchmarking", () => {
   it("should be fast on initialization", () => {
-    //     Array2d#Init x 2,487 ops/sec ±0.27% (95 runs sampled)
+    //      Array2d#Init x 2,487 ops/sec ±0.27% (95 runs sampled)
+    //      Array2d#Init x 3,333 ops/sec ±3.02% (93 runs sampled)
     const suite = new Benchmark.Suite();
     suite.add("Array2d#Init", () => {
       new Array2d(100, 100, (x, y) => x + "/" + y);
@@ -76,7 +77,8 @@ describe("Array2d - Benchmarking", () => {
   });
 
   it("should be fast on mapping", () => {
-    //    Array2d#map x 1,635 ops/sec ±0.47% (96 runs sampled)
+    //      Array2d#map x 1,635 ops/sec ±0.47% (96 runs sampled)
+    //      Array2d#map x 1,854 ops/sec ±0.98% (94 runs sampled)
     const array = new Array2d(100, 100, (x, y) => x + "/" + y);
     const suite = new Benchmark.Suite();
     suite.add("Array2d#map", () => {
@@ -90,6 +92,7 @@ describe("Array2d - Benchmarking", () => {
 
   it("should be fast on forEach", () => {
     //    Array2d#forEach x 2,324 ops/sec ±0.77% (93 runs sampled)
+    //    Array2d#forEach x 2,275 ops/sec ±0.76% (96 runs sampled)
     const array = new Array2d(100, 100, (x, y) => x + "/" + y);
     const suite = new Benchmark.Suite();
     suite.add("Array2d#forEach", () => {
@@ -103,6 +106,7 @@ describe("Array2d - Benchmarking", () => {
 
   it("should be fast on resize", () => {
     //    Array2d#resize x 1,484 ops/sec ±0.31% (95 runs sampled)
+    //    Array2d#resize x 1,662 ops/sec ±1.07% (90 runs sampled)
     const array = new Array2d(100, 100, (x, y) => x + "/" + y);
     const suite = new Benchmark.Suite();
     suite.add("Array2d#resize", () => {
