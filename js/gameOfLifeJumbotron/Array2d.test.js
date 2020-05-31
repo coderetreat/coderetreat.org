@@ -1,4 +1,8 @@
+/**
+ * @jest-environment node
+ */
 import { Array2d } from "./Array2d";
+import Benchmark from "benchmark";
 
 describe("Array2d", () => {
   it("initializes using a map function", () => {
@@ -56,4 +60,57 @@ describe("Array2d", () => {
     expect(remover).toHaveBeenCalledWith(1, 1, 0);
     expect(remover).toHaveBeenCalledWith(3, 1, 1);
   });
+});
+
+describe("Array2d - Benchmarking", () => {
+  it("should be fast on initialization", () => {
+    //     Array2d#Init x 2,487 ops/sec ±0.27% (95 runs sampled)
+    const suite = new Benchmark.Suite();
+    suite.add("Array2d#Init", () => {
+      new Array2d(100, 100, (x, y) => x + "/" + y);
+    });
+    suite.on('cycle', function(event) {
+      console.log(String(event.target));
+    })
+    suite.run();
+  });
+
+  it("should be fast on mapping", () => {
+    //    Array2d#map x 1,635 ops/sec ±0.47% (96 runs sampled)
+    const array = new Array2d(100, 100, (x, y) => x + "/" + y);
+    const suite = new Benchmark.Suite();
+    suite.add("Array2d#map", () => {
+      array.map((value) => value.toUpperCase());
+    });
+    suite.on('cycle', function(event) {
+      console.log(String(event.target));
+    })
+    suite.run();
+  });
+
+  it("should be fast on forEach", () => {
+    //    Array2d#forEach x 2,324 ops/sec ±0.77% (93 runs sampled)
+    const array = new Array2d(100, 100, (x, y) => x + "/" + y);
+    const suite = new Benchmark.Suite();
+    suite.add("Array2d#forEach", () => {
+      array.forEach((value) => value.toUpperCase());
+    });
+    suite.on('cycle', function(event) {
+      console.log(String(event.target));
+    })
+    suite.run();
+  });
+
+  it("should be fast on resize", () => {
+    //    Array2d#resize x 1,484 ops/sec ±0.31% (95 runs sampled)
+    const array = new Array2d(100, 100, (x, y) => x + "/" + y);
+    const suite = new Benchmark.Suite();
+    suite.add("Array2d#resize", () => {
+      array.resize(50, 200, (x, y) => x+"/"+y, (elem) => elem.toUpperCase());
+    });
+    suite.on('cycle', function(event) {
+      console.log(String(event.target));
+    })
+    suite.run();
+  })
 });
