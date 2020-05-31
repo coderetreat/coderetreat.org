@@ -1,19 +1,27 @@
 const fastInit = (width, height, initFn) => {
-    const array = new Array(height);
-    for(let y = 0; y < height; y++) {
-        array[y] = new Array(width);
-        for(let x = 0; x < width; x++) {
-            array[y][x] = initFn(x, y);
-        }
+  const array = new Array(height);
+  for (let y = 0; y < height; y++) {
+    array[y] = new Array(width);
+    for (let x = 0; x < width; x++) {
+      array[y][x] = initFn(x, y);
     }
-    return array;
-}
+  }
+  return array;
+};
 
 class Array2d {
-  constructor(width, height, initFn) {
-    this.width = width;
-    this.height = height;
-    this.backing = fastInit(width, height, initFn);
+  constructor(widthOrBacking, height, initFn) {
+    if (Array.isArray(widthOrBacking) && Array.isArray(widthOrBacking[0])) {
+      const backing = widthOrBacking;
+      this.height = backing.length;
+      this.width = backing[0].length;
+      this.backing = backing;
+    } else {
+      const width = widthOrBacking;
+      this.width = width;
+      this.height = height;
+      this.backing = fastInit(width, height, initFn);
+    }
   }
 
   get(x, y) {
@@ -21,15 +29,23 @@ class Array2d {
   }
 
   map(fn) {
-    return new Array2d(this.width, this.height, (x, y) =>
-      fn(this.get(x, y), x, y)
-    );
+    const newBacking = new Array(this.height);
+    for (let y = 0; y < this.height; y++) {
+      newBacking[y] = new Array(this.width);
+      for (let x = 0; x < this.width; x++) {
+        newBacking[y][x] = fn(this.backing[y][x], x, y);
+      }
+    }
+
+    return new Array2d(newBacking);
   }
 
   forEach(fn) {
-    return this.backing.forEach((row, y) =>
-      row.forEach((value, x) => fn(value, x, y))
-    );
+    for (let y = 0; y < this.height; y++) {
+      for (let x = 0; x < this.width; x++) {
+        fn(this.backing[y][x], x, y);
+      }
+    }
   }
 
   resize(newWidth, newHeight, inserter, remover) {
@@ -51,10 +67,6 @@ class Array2d {
     .map((row) => row.map((column) => JSON.stringify(column)).join(", "))
     .join("],\n  [")}]
 ]`;
-  }
-
-  static fromArray(arr) {
-    return new Array2d(arr[0].length, arr.length, (x, y) => arr[y][x]);
   }
 }
 

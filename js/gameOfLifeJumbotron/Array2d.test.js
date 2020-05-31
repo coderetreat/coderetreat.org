@@ -16,13 +16,13 @@ describe("Array2d", () => {
   });
 
   it("can be initialized from a two dimensional primitive array", () => {
-    const arr = Array2d.fromArray([[0], [1]]);
+    const arr = new Array2d([[0], [1]]);
     expect(arr.get(0, 0)).toEqual(0);
     expect(arr.get(0, 1)).toEqual(1);
   });
 
   it("provides a map function to transform values", () => {
-    const arr = Array2d.fromArray([
+    const arr = new Array2d([
       [1, 2],
       [3, 4],
     ]);
@@ -34,7 +34,7 @@ describe("Array2d", () => {
   });
 
   it("provides a toString method", () => {
-    const arr = Array2d.fromArray([
+    const arr = new Array2d([
       [1, 2],
       [3, 4],
     ]);
@@ -45,27 +45,69 @@ describe("Array2d", () => {
 ]`);
   });
 
-  it("can be resized with an insertion and removal function", () => {
-    const inserter = (x, y) => x + "/" + y;
-    const remover = jest.fn();
+  describe('#resize', () => {
+    it("can be resized with an insertion and removal function", () => {
+      const inserter = (x, y) => x + "/" + y;
+      const remover = jest.fn();
+  
+      const arr = new Array2d([
+        [0, 1],
+        [2, 3],
+      ]);
+      const newArray = arr.resize(1, 3, inserter, remover);
+  
+      expect(newArray).toMatchObject({ width: 1, height: 3 });
+      expect(newArray.get(0, 2)).toEqual("0/2");
+      expect(remover).toHaveBeenCalledWith(1, 1, 0);
+      expect(remover).toHaveBeenCalledWith(3, 1, 1);
+    });
 
-    const arr = Array2d.fromArray([
-      [0, 1],
-      [2, 3],
-    ]);
-    const newArray = arr.resize(1, 3, inserter, remover);
+    it("can be resized with an insertion and removal function (mirror)", () => {
+      const inserter = (x, y) => x + "/" + y;
+      const remover = jest.fn();
+  
+      const arr = new Array2d([
+        [0, 1],
+        [2, 3],
+      ]);
+      const newArray = arr.resize(3, 1, inserter, remover);
+  
+      expect(newArray).toMatchObject({ width: 3, height: 1 });
+      expect(newArray.get(2, 0)).toEqual("2/0");
+      expect(remover).toHaveBeenCalledWith(2, 0, 1);
+      expect(remover).toHaveBeenCalledWith(3, 1, 1);
+    });
 
-    expect(newArray).toMatchObject({ width: 1, height: 3 });
-    expect(newArray.get(0, 2)).toEqual("0/2");
-    expect(remover).toHaveBeenCalledWith(1, 1, 0);
-    expect(remover).toHaveBeenCalledWith(3, 1, 1);
+    it("supports shrinking", () => {
+      const inserter = jest.fn();
+      const remover = jest.fn();
+  
+      const arr = new Array2d([
+        [0, 1, 2],
+        [3, 4, 5],
+        [6, 7, 8],
+      ]);
+      const newArray = arr.resize(2, 2, inserter, remover);
+  
+      expect(newArray).toMatchObject({ width: 2, height: 2 });
+      expect(newArray.get(1, 1)).toEqual(4);
+
+      expect(inserter).not.toHaveBeenCalled();
+      expect(remover).toHaveBeenCalledTimes(5);
+      expect(remover).toHaveBeenCalledWith(2, 2, 0);
+      expect(remover).toHaveBeenCalledWith(5, 2, 1);
+      expect(remover).toHaveBeenCalledWith(8, 2, 2);
+      expect(remover).toHaveBeenCalledWith(6, 0, 2);
+      expect(remover).toHaveBeenCalledWith(7, 1, 2);
+    });
   });
+
 });
 
-describe("Array2d - Benchmarking", () => {
+// Disabled by default
+xdescribe("Array2d - Benchmarking", () => {
+  // Run this in-band (npm test -- -i) to disable parallelization
   it("should be fast on initialization", () => {
-    //      Array2d#Init x 2,487 ops/sec ±0.27% (95 runs sampled)
-    //      Array2d#Init x 3,333 ops/sec ±3.02% (93 runs sampled)
     const suite = new Benchmark.Suite();
     suite.add("Array2d#Init", () => {
       new Array2d(100, 100, (x, y) => x + "/" + y);
@@ -77,8 +119,6 @@ describe("Array2d - Benchmarking", () => {
   });
 
   it("should be fast on mapping", () => {
-    //      Array2d#map x 1,635 ops/sec ±0.47% (96 runs sampled)
-    //      Array2d#map x 1,854 ops/sec ±0.98% (94 runs sampled)
     const array = new Array2d(100, 100, (x, y) => x + "/" + y);
     const suite = new Benchmark.Suite();
     suite.add("Array2d#map", () => {
@@ -91,8 +131,6 @@ describe("Array2d - Benchmarking", () => {
   });
 
   it("should be fast on forEach", () => {
-    //    Array2d#forEach x 2,324 ops/sec ±0.77% (93 runs sampled)
-    //    Array2d#forEach x 2,275 ops/sec ±0.76% (96 runs sampled)
     const array = new Array2d(100, 100, (x, y) => x + "/" + y);
     const suite = new Benchmark.Suite();
     suite.add("Array2d#forEach", () => {
@@ -105,8 +143,6 @@ describe("Array2d - Benchmarking", () => {
   });
 
   it("should be fast on resize", () => {
-    //    Array2d#resize x 1,484 ops/sec ±0.31% (95 runs sampled)
-    //    Array2d#resize x 1,662 ops/sec ±1.07% (90 runs sampled)
     const array = new Array2d(100, 100, (x, y) => x + "/" + y);
     const suite = new Benchmark.Suite();
     suite.add("Array2d#resize", () => {
