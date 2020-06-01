@@ -93,6 +93,20 @@ describe("GraphicsController", () => {
     ).toBeTruthy();
   });
 
+  it("provides the app ticker", () => {
+    element.width = 48;
+    element.height = 24;
+    controller = new GraphicsController({
+      element,
+      fadeFactor: 1,
+      radius: 20,
+      gap: 4,
+      fps: 30,
+    });
+
+    expect(controller.ticker).toEqual(controller.pixiApp.ticker);
+  });
+
   describe("drawing", () => {
     it("will initialize the alpha delta value so living cells will fade in", () => {
       element.width = 48;
@@ -108,9 +122,9 @@ describe("GraphicsController", () => {
       const game = new GameOfLife(new Array2d([[X, O]]));
       controller.updateFromGame(game);
 
-      expect(PIXI.Graphics.mock.results[0].value.alphaDelta).toEqual(1 / 1000);
+      expect(PIXI.Graphics.mock.results[0].value.alphaDelta).toEqual(1 / 30);
       expect(PIXI.Graphics.mock.results[0].value.alpha).toEqual(0);
-      expect(PIXI.Graphics.mock.results[1].value.alphaDelta).toEqual(-1 / 1000);
+      expect(PIXI.Graphics.mock.results[1].value.alphaDelta).toEqual(-1 / 30);
       expect(PIXI.Graphics.mock.results[1].value.alpha).toEqual(0);
     });
 
@@ -145,9 +159,9 @@ describe("GraphicsController", () => {
 
       const game = new GameOfLife(new Array2d([[X, O]]));
       controller.updateFromGame(game);
-      controller.updateAlphaValues(500);
+      controller.updateAlphaValues(2);
 
-      expect(PIXI.Graphics.mock.results[0].value.alpha).toEqual(500 / 1000);
+      expect(PIXI.Graphics.mock.results[0].value.alpha).toEqual(2 / 30);
       expect(PIXI.Graphics.mock.results[1].value.alpha).toEqual(0);
     });
   });

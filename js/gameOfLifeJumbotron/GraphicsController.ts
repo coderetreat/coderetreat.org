@@ -61,8 +61,8 @@ export class GraphicsController {
         graphics.alpha = shouldFade ? 0 : cellAlive ? 1 : 0;
         graphics.alphaDelta =
           shouldFade && cellAlive
-            ? <number>this.fadeFactor / 1000
-            : -(<number>this.fadeFactor) / 1000;
+            ? this.fadeStep
+            : -this.fadeStep;
         this.pixiApp.stage.addChild(graphics);
         return graphics;
       },
@@ -79,5 +79,13 @@ export class GraphicsController {
         Math.min(1, graphics.alpha + graphics.alphaDelta * delta)
       );
     });
+  }
+
+  get ticker(): PIXI.Ticker {
+    return this.pixiApp.ticker;
+  }
+
+  get fadeStep(): number {
+    return <number>this.fadeFactor / this.pixiApp.ticker.maxFPS;
   }
 }
