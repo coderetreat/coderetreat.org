@@ -71,6 +71,7 @@ class Array2d<T> {
     inserter: (x: number, y: number) => T,
     remover: (value: T, x: number, y: number) => any
   ) {
+    if(newWidth === this.width && newHeight === this.height) return this;
     this.forEach((value, x, y) => {
       if (x >= newWidth || y >= newHeight) {
         remover(value, x, y);
