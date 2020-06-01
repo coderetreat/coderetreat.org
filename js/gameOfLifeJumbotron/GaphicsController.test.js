@@ -130,7 +130,25 @@ describe("GraphicsController", () => {
 
       expect(PIXI.Graphics.mock.results[0].value.alpha).toEqual(1);
       expect(PIXI.Graphics.mock.results[1].value.alpha).toEqual(0);
+    });
 
+    it("advances the alpha value on every tick", () => {
+      element.width = 48;
+      element.height = 24;
+      controller = new GraphicsController({
+        element,
+        fadeFactor: 1,
+        radius: 20,
+        gap: 4,
+        fps: 30,
+      });
+
+      const game = new GameOfLife(new Array2d([[X, O]]));
+      controller.updateFromGame(game);
+      controller.updateAlphaValues(500);
+
+      expect(PIXI.Graphics.mock.results[0].value.alpha).toEqual(500 / 1000);
+      expect(PIXI.Graphics.mock.results[1].value.alpha).toEqual(0);
     });
   });
 });

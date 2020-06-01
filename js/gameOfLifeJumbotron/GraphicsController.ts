@@ -66,7 +66,18 @@ export class GraphicsController {
         this.pixiApp.stage.addChild(graphics);
         return graphics;
       },
-      (element) => {}
+      (element) => {
+        this.pixiApp.stage.removeChild(element);
+      }
     );
+  }
+
+  updateAlphaValues(delta: number) {
+    this.graphics.forEach((graphics) => {
+      graphics.alpha = Math.max(
+        0,
+        Math.min(1, graphics.alpha + graphics.alphaDelta * delta)
+      );
+    });
   }
 }
