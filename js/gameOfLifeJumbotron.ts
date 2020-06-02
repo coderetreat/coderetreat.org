@@ -4,13 +4,15 @@ import * as GameOfLifeUrlBinding from "./gameOfLifeJumbotron/GameOfLifeUrlBindin
 
 let game = GameOfLifeUrlBinding.tryInitializeFromHistory();
 if (!game) {
+  const seed = String((Math.random() * 10000) | 0);
   game = GameOfLife.fromSeed(
-    String((Math.random() * 10000) | 0),
+    seed,
     0.7,
     100,
     50,
     StandardRules
   );
+  GameOfLifeUrlBinding.setUrlParameters({seed})
 }
 
 const controller = new GameController(
