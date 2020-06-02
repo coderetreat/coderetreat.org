@@ -44,7 +44,7 @@ export class GraphicsController {
     this.pixiApp.render();
   }
 
-  updateFromGame(game: GameOfLife, reset: boolean = false) {
+  _handlePossibleResize(game: GameOfLife) {
     let { width, height } = this.pixiApp.screen;
     let gridX = Math.ceil(width / (this.radius * 2 + this.gap));
     let gridY = Math.ceil(height / (this.radius * 2 + this.gap));
@@ -52,7 +52,6 @@ export class GraphicsController {
     let gridWidth = Math.min(game.grid.width, gridX);
     let gridHeight = Math.min(game.grid.height, gridY);
 
-    const shouldFade = this.fadeFactor !== false;
     this.visibleDots = this.visibleDots.resize(
       gridWidth,
       gridHeight,
@@ -61,7 +60,7 @@ export class GraphicsController {
         const newDot: any = new PIXI.Graphics();
         newDot.x = this.gap + this.radius + x * (this.radius * 2 + this.gap);
         newDot.y = this.gap + this.radius + y * (this.radius * 2 + this.gap);
-        newDot.alpha = shouldFade ? 0 : cellAlive ? 1 : 0;
+        newDot.alpha = this.shouldFade ? 0 : cellAlive ? 1 : 0;
         newDot.beginFill(0xffffff);
         newDot.drawCircle(0, 0, this.radius);
         this.pixiApp.stage.addChild(newDot);
@@ -71,14 +70,18 @@ export class GraphicsController {
         this.pixiApp.stage.removeChild(element);
       }
     );
+  }
+
+  updateFromGame(game: GameOfLife, resetAlpha: boolean = false) {
+    this._handlePossibleResize(game);
 
     this.visibleDots.forEach((graphics, x, y) => {
       const cellAlive = game.isAliveAt(x, y);
-      if(reset) {
-        graphics.alpha = shouldFade ? 0 : cellAlive ? 1 : 0
+      if(resetAlpha) {
+        graphics.alpha = this.shouldFade ? 0 : cellAlive ? 1 : 0
       }
       graphics.alphaDelta =
-        shouldFade && cellAlive ? this.fadeStep : -this.fadeStep;
+        this.shouldFade && cellAlive ? this.fadeStep : -this.fadeStep;
     });
   }
 
@@ -97,5 +100,9 @@ export class GraphicsController {
 
   get fadeStep(): number {
     return <number>this.fadeFactor / this.pixiApp.ticker.maxFPS;
+  }
+
+  get shouldFade(): Boolean {
+    return this.fadeFactor !== false;
   }
 }
