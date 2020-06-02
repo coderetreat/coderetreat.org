@@ -7,7 +7,7 @@ import { GameOfLife, X, O, StandardRules } from "./GameOfLife";
 import { Array2d } from "./Array2d";
 
 jest.mock("pixi.js", () => ({
-  Graphics: jest.fn().mockImplementation(() => ({})),
+  Graphics: jest.fn().mockImplementation(() => ({beginFill: jest.fn(), drawCircle: jest.fn()})),
   Application: jest.fn().mockImplementation(({ view }) => ({
     ticker: {},
     screen: view,
@@ -163,6 +163,27 @@ describe("GraphicsController", () => {
 
       expect(PIXI.Graphics.mock.results[0].value.alpha).toEqual(2 / 30);
       expect(PIXI.Graphics.mock.results[1].value.alpha).toEqual(0);
+    });
+
+    it("updates the alphaDelta on every updateFromGame tick", () => {
+      element.width = 48;
+      element.height = 24;
+      controller = new GraphicsController({
+        element,
+        fadeFactor: 1,
+        radius: 20,
+        gap: 4,
+        fps: 30,
+      });
+
+      const game = new GameOfLife(new Array2d([[X, O]]), StandardRules);
+      controller.updateFromGame(game);
+      game.tick();
+      controller.updateFromGame(game);
+      
+
+      expect(PIXI.Graphics.mock.results[0].value.alphaDelta).toEqual(-1 / 30);
+      expect(PIXI.Graphics.mock.results[1].value.alphaDelta).toEqual(-1 / 30);
     });
   });
 });

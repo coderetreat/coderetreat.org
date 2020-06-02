@@ -167,9 +167,14 @@ describe("GameController", () => {
       ticker.add.mock.calls.forEach(([cb]) => cb(1));
       expect(controller.game.tick).not.toHaveBeenCalled();
 
+      controller.graphicsController.updateFromGame.mockClear();
+
       ticker.elapsedMS = 600;
       ticker.add.mock.calls.forEach(([cb]) => cb(1));
       expect(controller.game.tick).toHaveBeenCalled();
+      expect(controller.graphicsController.updateFromGame).toHaveBeenCalledWith(
+        controller.game
+      );
     });
 
     it("will not start the timer if reduced-motion is active", () => {

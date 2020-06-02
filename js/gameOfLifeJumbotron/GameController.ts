@@ -58,6 +58,7 @@ export class GameController {
       this.game = GameOfLife.fromSeed(seed, 0.7, 100, 100, StandardRules);
       window.history.pushState({}, null, "?" + qs.stringify({ seed }));
     }
+
   }
 
   start() {
@@ -70,6 +71,7 @@ export class GameController {
       this.msElapsedSinceLastUpsTick += this.graphicsController.ticker.elapsedMS;
       if (this.msElapsedSinceLastUpsTick > 1000) {
         this.game.tick();
+        this.graphicsController.updateFromGame(this.game);
         this.msElapsedSinceLastUpsTick = this.msElapsedSinceLastUpsTick % 1000;
       }
     });

@@ -1,6 +1,6 @@
 import { Array2d } from "./Array2d";
-import * as seedrandom from "seedrandom";
 import * as ABAB from "abab";
+const seedrandom = require("seedrandom");
 
 export const X = true;
 export const O = false;

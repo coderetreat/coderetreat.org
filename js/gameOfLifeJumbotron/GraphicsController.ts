@@ -48,21 +48,19 @@ export class GraphicsController {
     let gridWidth = Math.min(game.grid.width, gridX);
     let gridHeight = Math.min(game.grid.height, gridY);
 
+    const shouldFade = this.fadeFactor !== false;
     this.graphics = this.graphics.resize(
       gridWidth,
       gridHeight,
       (x, y) => {
         const cellAlive = game.isAliveAt(x, y);
-        const shouldFade = this.fadeFactor !== false;
         const graphics: any = new PIXI.Graphics();
         // gap radius M radius | gap radius M radius gap
         graphics.x = this.gap + this.radius + x * (this.radius * 2 + this.gap);
         graphics.y = this.gap + this.radius + y * (this.radius * 2 + this.gap);
         graphics.alpha = shouldFade ? 0 : cellAlive ? 1 : 0;
-        graphics.alphaDelta =
-          shouldFade && cellAlive
-            ? this.fadeStep
-            : -this.fadeStep;
+        graphics.beginFill(0xffffff);
+        graphics.drawCircle(0, 0, this.radius);
         this.pixiApp.stage.addChild(graphics);
         return graphics;
       },
@@ -70,6 +68,12 @@ export class GraphicsController {
         this.pixiApp.stage.removeChild(element);
       }
     );
+
+    this.graphics.forEach((graphics, x, y) => {
+      const cellAlive = game.isAliveAt(x, y);
+      graphics.alphaDelta =
+        shouldFade && cellAlive ? this.fadeStep : -this.fadeStep;
+    });
   }
 
   updateAlphaValues(delta: number) {
