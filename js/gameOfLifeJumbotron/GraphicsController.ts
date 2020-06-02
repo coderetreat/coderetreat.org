@@ -12,7 +12,7 @@ type GraphicsControllerOpts = {
 
 export class GraphicsController {
   pixiApp: PIXI.Application;
-  graphics: Array2d<PIXI.Graphics>;
+  visibleDots: Array2d<PIXI.Graphics>;
   gap: number;
   radius: number;
   fadeFactor: number | false;
@@ -37,7 +37,7 @@ export class GraphicsController {
     this.fadeFactor = fadeFactor;
     this.pixiApp.ticker.maxFPS = fps;
     element.style["touch-action"] = "auto";
-    this.graphics = new Array2d<PIXI.Graphics>([]);
+    this.visibleDots = new Array2d<PIXI.Graphics>([]);
   }
 
   render() {
@@ -53,26 +53,26 @@ export class GraphicsController {
     let gridHeight = Math.min(game.grid.height, gridY);
 
     const shouldFade = this.fadeFactor !== false;
-    this.graphics = this.graphics.resize(
+    this.visibleDots = this.visibleDots.resize(
       gridWidth,
       gridHeight,
       (x, y) => {
         const cellAlive = game.isAliveAt(x, y);
-        const graphics: any = new PIXI.Graphics();
-        graphics.x = this.gap + this.radius + x * (this.radius * 2 + this.gap);
-        graphics.y = this.gap + this.radius + y * (this.radius * 2 + this.gap);
-        graphics.alpha = shouldFade ? 0 : cellAlive ? 1 : 0;
-        graphics.beginFill(0xffffff);
-        graphics.drawCircle(0, 0, this.radius);
-        this.pixiApp.stage.addChild(graphics);
-        return graphics;
+        const newDot: any = new PIXI.Graphics();
+        newDot.x = this.gap + this.radius + x * (this.radius * 2 + this.gap);
+        newDot.y = this.gap + this.radius + y * (this.radius * 2 + this.gap);
+        newDot.alpha = shouldFade ? 0 : cellAlive ? 1 : 0;
+        newDot.beginFill(0xffffff);
+        newDot.drawCircle(0, 0, this.radius);
+        this.pixiApp.stage.addChild(newDot);
+        return newDot;
       },
       (element) => {
         this.pixiApp.stage.removeChild(element);
       }
     );
 
-    this.graphics.forEach((graphics, x, y) => {
+    this.visibleDots.forEach((graphics, x, y) => {
       const cellAlive = game.isAliveAt(x, y);
       if(reset) {
         graphics.alpha = shouldFade ? 0 : cellAlive ? 1 : 0
@@ -83,7 +83,7 @@ export class GraphicsController {
   }
 
   updateAlphaValues(delta: number) {
-    this.graphics.forEach((graphics) => {
+    this.visibleDots.forEach((graphics) => {
       graphics.alpha = Math.max(
         0,
         Math.min(1, graphics.alpha + graphics.alphaDelta * delta)
