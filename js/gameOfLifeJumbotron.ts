@@ -5,14 +5,8 @@ import * as GameOfLifeUrlBinding from "./gameOfLifeJumbotron/GameOfLifeUrlBindin
 let game = GameOfLifeUrlBinding.tryInitializeFromHistory();
 if (!game) {
   const seed = String((Math.random() * 10000) | 0);
-  game = GameOfLife.fromSeed(
-    seed,
-    0.7,
-    100,
-    50,
-    StandardRules
-  );
-  GameOfLifeUrlBinding.setUrlParameters({seed})
+  game = GameOfLife.fromSeed(seed, 0.7, 100, 50, StandardRules);
+  GameOfLifeUrlBinding.setUrlParameters({ seed });
 }
 
 const controller = new GameController(
@@ -44,3 +38,15 @@ playPause.addEventListener("click", () => {
   }
   updateIconVisiblity();
 });
+
+document
+  .querySelector("#jumbotron-gol-control-speed-slower")
+  .addEventListener("click", () => controller.changeSpeed(1 / 1.5));
+
+document
+  .querySelector("#jumbotron-gol-control-speed-faster")
+  .addEventListener("click", () => controller.changeSpeed(1.5));
+
+document
+  .querySelector("#jumbotron-gol-control-speed-reset")
+  .addEventListener("click", () => controller.resetSpeed());

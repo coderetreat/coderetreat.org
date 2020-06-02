@@ -143,5 +143,17 @@ describe("GameController", () => {
       controller.resume();
       expect(ticker.stop).toHaveBeenCalled();
     });
+
+    it("provides a changeSpeed method that applies a factor to UPS and fadeFactor", () => {
+      const controller = new GameController(element);
+      controller.changeSpeed(1.2);
+
+      expect(controller.graphicsController.fadeFactor).toEqual(1.2);
+      expect(controller.ups).toEqual(1.2);
+
+      controller.changeSpeed(2);
+      expect(controller.graphicsController.fadeFactor).toEqual(2.4);
+      expect(controller.ups).toEqual(2.4);
+    });
   });
 });

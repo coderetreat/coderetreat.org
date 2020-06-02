@@ -64,6 +64,16 @@ export class GameController {
     this.graphicsController.ticker.stop();
   }
 
+  changeSpeed(factor: number) {
+    this.ups *= factor;
+    this.graphicsController.fadeFactor = (this.graphicsController.fadeFactor || 1)*factor;
+  }
+
+  resetSpeed() {
+    this.ups = 1;
+    this.graphicsController.fadeFactor = 1;
+  }
+
   resume() {
     if (this.reducedMotion) {
       this.reducedMotion = false;
