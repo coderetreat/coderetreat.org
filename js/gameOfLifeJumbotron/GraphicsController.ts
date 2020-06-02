@@ -55,7 +55,6 @@ export class GraphicsController {
       (x, y) => {
         const cellAlive = game.isAliveAt(x, y);
         const graphics: any = new PIXI.Graphics();
-        // gap radius M radius | gap radius M radius gap
         graphics.x = this.gap + this.radius + x * (this.radius * 2 + this.gap);
         graphics.y = this.gap + this.radius + y * (this.radius * 2 + this.gap);
         graphics.alpha = shouldFade ? 0 : cellAlive ? 1 : 0;
