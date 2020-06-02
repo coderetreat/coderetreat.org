@@ -43,15 +43,21 @@ export class GameController {
           this.msElapsedSinceLastUpsTick % this.msPerGameTick;
       }
     });
-    if (this.reducedMotion) return;
-    this.graphicsController.ticker.start();
+    if (this.reducedMotion) {
+      this.graphicsController.render();
+    } else {
+      this.graphicsController.ticker.start();
+    }
   }
 
   shuffle() {
-    const seed = String(Math.random()*10000 | 0);
+    const seed = String((Math.random() * 10000) | 0);
     this.game = GameOfLife.fromSeed(seed, 0.7, 100, 100, StandardRules);
-    GameOfLifeUrlBinding.setUrlParameters({seed});
-    this.graphicsController.updateFromGame(this.game);
+    GameOfLifeUrlBinding.setUrlParameters({ seed });
+    this.graphicsController.updateFromGame(this.game, true);
+    if(this.reducedMotion) {
+      this.graphicsController.render();
+    };
   }
 
   pause() {
@@ -59,6 +65,10 @@ export class GameController {
   }
 
   resume() {
+    if (this.reducedMotion) {
+      this.reducedMotion = false;
+      this.graphicsController.fadeFactor = 1;
+    }
     this.graphicsController.ticker.start();
   }
 

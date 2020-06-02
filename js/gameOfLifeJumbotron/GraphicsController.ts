@@ -40,7 +40,11 @@ export class GraphicsController {
     this.graphics = new Array2d<PIXI.Graphics>([]);
   }
 
-  updateFromGame(game: GameOfLife) {
+  render() {
+    this.pixiApp.render();
+  }
+
+  updateFromGame(game: GameOfLife, reset: boolean = false) {
     let { width, height } = this.pixiApp.screen;
     let gridX = Math.ceil(width / (this.radius * 2 + this.gap));
     let gridY = Math.ceil(height / (this.radius * 2 + this.gap));
@@ -70,6 +74,9 @@ export class GraphicsController {
 
     this.graphics.forEach((graphics, x, y) => {
       const cellAlive = game.isAliveAt(x, y);
+      if(reset) {
+        graphics.alpha = shouldFade ? 0 : cellAlive ? 1 : 0
+      }
       graphics.alphaDelta =
         shouldFade && cellAlive ? this.fadeStep : -this.fadeStep;
     });
