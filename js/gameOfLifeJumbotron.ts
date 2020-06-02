@@ -39,14 +39,29 @@ playPause.addEventListener("click", () => {
   updateIconVisiblity();
 });
 
+const updateSpeedFactor = () =>
+  (document.querySelector("#jumbotron-gol-control-speed-factor").innerHTML = `${
+    ((controller.ups * 100) | 0) / 100
+  }x`);
+
 document
   .querySelector("#jumbotron-gol-control-speed-slower")
-  .addEventListener("click", () => controller.changeSpeed(1 / 1.5));
+  .addEventListener("click", () => {
+    controller.changeSpeed(1 / 2);
+    updateSpeedFactor();
+  });
 
 document
   .querySelector("#jumbotron-gol-control-speed-faster")
-  .addEventListener("click", () => controller.changeSpeed(1.5));
+  .addEventListener("click", () => {
+    controller.changeSpeed(2);
+    updateSpeedFactor();
+  });
 
 document
   .querySelector("#jumbotron-gol-control-speed-reset")
-  .addEventListener("click", () => controller.resetSpeed());
+  .addEventListener("click", () => {
+    controller.resetSpeed();
+    updateSpeedFactor();
+
+  });
