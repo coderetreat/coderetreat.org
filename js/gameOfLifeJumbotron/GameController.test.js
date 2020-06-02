@@ -12,6 +12,13 @@ describe("GameController", () => {
   let element;
 
   beforeEach(() => {
+    Object.defineProperty(window, "matchMedia", {
+      writable: true,
+      value: jest.fn().mockReturnValue({matches: false}),
+    });
+  })
+
+  beforeEach(() => {
     jest.clearAllMocks();
     const container = document.createElement("div");
     element = document.createElement("canvas");
@@ -20,9 +27,24 @@ describe("GameController", () => {
 
   it("initializes the GraphicsController on the given canvas", () => {
     const controller = new GameController(element);
+    controller.initializeGraphics();
 
     expect(GraphicsController).toHaveBeenCalledTimes(1);
     expect(GraphicsController.mock.calls[0][0]).toMatchObject({ element });
+  });
+
+  describe("reduced-motion", () => {
+    it("will initialize the GraphicsController with fadeFactor=false", () => {
+      window.matchMedia.mockReturnValue({ matches: true });
+
+      const controller = new GameController(element);
+      controller.initializeGraphics();
+
+      expect(GraphicsController).toHaveBeenCalledTimes(1);
+      expect(GraphicsController.mock.calls[0][0]).toMatchObject({
+        fadeFactor: false,
+      });
+    });
   });
 
   describe("Game initialization", () => {

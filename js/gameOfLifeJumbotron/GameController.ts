@@ -6,15 +6,21 @@ export class GameController {
   canvas: HTMLCanvasElement;
   graphicsController: GraphicsController;
   game: GameOfLife;
+  reducedMotion: Boolean;
 
   constructor(canvas: HTMLCanvasElement) {
     this.canvas = canvas;
+    this.reducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+  }
 
+  initializeGraphics() {
     this.graphicsController = new GraphicsController({
-      element: canvas,
+      element: this.canvas,
       fps: 30,
       radius: 20,
-      fadeFactor: false,
+      fadeFactor: this.reducedMotion ? false : 1,
       gap: 4,
     });
   }
@@ -37,7 +43,13 @@ export class GameController {
       const probability = urlParams.probability
         ? Number(urlParams.probability)
         : 0.7;
-      this.game = GameOfLife.fromSeed(urlParams.seed, probability, 100, 100, rules);
+      this.game = GameOfLife.fromSeed(
+        urlParams.seed,
+        probability,
+        100,
+        100,
+        rules
+      );
     } else if (urlParams.state) {
       this.game = GameOfLife.fromPacked(<string>urlParams.state);
     } else {
