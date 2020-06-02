@@ -4,6 +4,7 @@
 import { GameController } from "./GameController";
 import { GraphicsController } from "./GraphicsController";
 import { GameOfLife, StandardRules } from "./GameOfLife";
+import * as qs from "qs";
 jest.mock("./GraphicsController");
 jest.mock("./GameOfLife");
 
@@ -39,7 +40,11 @@ describe("GameController", () => {
 
     it("allows to specify a packed game value", () => {
       const packed = "B3|S23|W1|H1|GAA==";
-      window.history.replaceState({}, "", "?state="+encodeURIComponent(packed));
+      window.history.replaceState(
+        {},
+        "",
+        "?state=" + encodeURIComponent(packed)
+      );
 
       const controller = new GameController(element);
       controller.initializeGame();
@@ -53,7 +58,40 @@ describe("GameController", () => {
       const controller = new GameController(element);
       controller.initializeGame();
 
-      expect(GameOfLife.fromSeed).toHaveBeenCalledWith(expect.anything(), 0.7, 100, 100, StandardRules);
+      expect(GameOfLife.fromSeed).toHaveBeenCalledWith(
+        expect.anything(),
+        0.7,
+        100,
+        100,
+        StandardRules
+      );
+    });
+  });
+
+  describe("Updating the url so it's shareable", () => {
+    it("when randomly initializing", () => {
+      window.history.replaceState({}, "", "/");
+
+      const controller = new GameController(element);
+      controller.initializeGame();
+
+      expect(window.location.search).toContain("?seed=");
+    });
+    it("is symmetric, so seeding from a URL will yield the same call to #fromSeed", () => {
+      window.history.replaceState({}, "", "/");
+
+      new GameController(element).initializeGame();
+      const seed = qs.parse(window.location.search, { ignoreQueryPrefix: true })
+        .seed;
+
+      new GameController(element).initializeGame();
+      expect(GameOfLife.fromSeed).toHaveBeenCalledWith(
+        seed,
+        0.7,
+        100,
+        100,
+        StandardRules
+      );
     });
   });
 });

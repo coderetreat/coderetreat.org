@@ -5,6 +5,7 @@ import { GraphicsController } from "./GraphicsController";
 export class GameController {
   canvas: HTMLCanvasElement;
   graphicsController: GraphicsController;
+  game: GameOfLife;
 
   constructor(canvas: HTMLCanvasElement) {
     this.canvas = canvas;
@@ -36,11 +37,13 @@ export class GameController {
       const probability = urlParams.probability
         ? Number(urlParams.probability)
         : 0.7;
-      GameOfLife.fromSeed(urlParams.seed, probability, 100, 100, rules);
+      this.game = GameOfLife.fromSeed(urlParams.seed, probability, 100, 100, rules);
     } else if (urlParams.state) {
-      GameOfLife.fromPacked(<string>urlParams.state);
+      this.game = GameOfLife.fromPacked(<string>urlParams.state);
     } else {
-      GameOfLife.fromSeed(String(Math.random()*100000 | 0), 0.7, 100, 100, StandardRules);
+      const seed = String((Math.random() * 100000) | 0);
+      this.game = GameOfLife.fromSeed(seed, 0.7, 100, 100, StandardRules);
+      window.history.pushState({}, null, "?" + qs.stringify({ seed }));
     }
   }
 }
