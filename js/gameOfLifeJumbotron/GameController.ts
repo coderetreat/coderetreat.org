@@ -7,6 +7,7 @@ export class GameController {
   graphicsController: GraphicsController;
   game: GameOfLife;
   reducedMotion: Boolean;
+  ups: number = 1;
   msElapsedSinceLastUpsTick: number = 0;
 
   constructor(canvas: HTMLCanvasElement, game: GameOfLife) {
@@ -36,12 +37,17 @@ export class GameController {
     );
     this.graphicsController.ticker.add(() => {
       this.msElapsedSinceLastUpsTick += this.graphicsController.ticker.elapsedMS;
-      if (this.msElapsedSinceLastUpsTick > 1000) {
+      if (this.msElapsedSinceLastUpsTick > this.msPerGameTick) {
         this.game.tick();
         this.graphicsController.updateFromGame(this.game);
-        this.msElapsedSinceLastUpsTick = this.msElapsedSinceLastUpsTick % 1000;
+        this.msElapsedSinceLastUpsTick =
+          this.msElapsedSinceLastUpsTick % this.msPerGameTick;
       }
     });
     this.graphicsController.ticker.start();
+  }
+
+  get msPerGameTick(): number {
+    return 1000 / this.ups;
   }
 }
