@@ -80,7 +80,7 @@ export class GameOfLife {
   }
 
   static fromSeed(
-    seed: any,
+    seed: String,
     probability: number,
     width: number,
     height: number,
