@@ -30,7 +30,6 @@ export class GameController {
   }
 
   start() {
-    if (this.reducedMotion) return;
     this.graphicsController.updateFromGame(this.game);
     this.graphicsController.ticker.add((delta) =>
       this.graphicsController.updateAlphaValues(delta)
@@ -44,6 +43,7 @@ export class GameController {
           this.msElapsedSinceLastUpsTick % this.msPerGameTick;
       }
     });
+    if (this.reducedMotion) return;
     this.graphicsController.ticker.start();
   }
 
@@ -52,6 +52,18 @@ export class GameController {
     this.game = GameOfLife.fromSeed(seed, 0.7, 100, 100, StandardRules);
     GameOfLifeUrlBinding.setUrlParameters({seed});
     this.graphicsController.updateFromGame(this.game);
+  }
+
+  pause() {
+    this.graphicsController.ticker.stop();
+  }
+
+  resume() {
+    this.graphicsController.ticker.start();
+  }
+
+  get isRunning() {
+    return this.graphicsController.ticker.started;
   }
 
   get msPerGameTick(): number {

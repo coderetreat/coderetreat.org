@@ -123,5 +123,25 @@ describe("GameController", () => {
         "seed=" + GameOfLife.fromSeed.mock.calls[0][0]
       );
     });
+
+    it("provides a pause and a resume function", () => {
+      let ticker = {
+        start: jest.fn(),
+        stop: jest.fn(),
+        add: jest.fn(),
+      };
+
+      const controller = new GameController(element);
+      controller.graphicsController.ticker = ticker;
+
+      controller.start();
+      expect(ticker.start).toHaveBeenCalled();
+
+      controller.pause();
+      expect(ticker.stop).toHaveBeenCalled();
+
+      controller.resume();
+      expect(ticker.stop).toHaveBeenCalled();
+    });
   });
 });

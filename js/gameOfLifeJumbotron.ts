@@ -18,6 +18,27 @@ const controller = new GameController(
   game
 );
 controller.start();
+
 document
   .querySelector("#jumbotron-gol-control-shuffle")
   .addEventListener("click", () => controller.shuffle());
+
+const playPause = document.querySelector("#jumbotron-gol-control-pause");
+const updateIconVisiblity = () => {
+  if (controller.isRunning) {
+    playPause.querySelector(".fa-play").classList.add("d-none");
+    playPause.querySelector(".fa-pause").classList.remove("d-none");
+  } else {
+    playPause.querySelector(".fa-play").classList.remove("d-none");
+    playPause.querySelector(".fa-pause").classList.add("d-none");
+  }
+};
+updateIconVisiblity();
+playPause.addEventListener("click", () => {
+  if (controller.isRunning) {
+    controller.pause();
+  } else {
+    controller.resume();
+  }
+  updateIconVisiblity();
+});
