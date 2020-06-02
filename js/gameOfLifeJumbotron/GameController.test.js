@@ -14,9 +14,9 @@ describe("GameController", () => {
   beforeEach(() => {
     Object.defineProperty(window, "matchMedia", {
       writable: true,
-      value: jest.fn().mockReturnValue({matches: false}),
+      value: jest.fn().mockReturnValue({ matches: false }),
     });
-  })
+  });
 
   beforeEach(() => {
     jest.clearAllMocks();
@@ -114,6 +114,75 @@ describe("GameController", () => {
         100,
         StandardRules
       );
+    });
+  });
+
+  describe("starting", () => {
+    let ticker;
+    beforeEach(() => {
+      ticker = {
+        start: jest.fn(),
+        stop: jest.fn(),
+        add: jest.fn(),
+      };
+    });
+    it("will draw the first generation provided by game", () => {
+      const controller = new GameController(element);
+      controller.initializeGraphics();
+      controller.initializeGame();
+      controller.graphicsController.ticker = ticker;
+
+      controller.start();
+
+      expect(controller.graphicsController.updateFromGame).toHaveBeenCalledWith(
+        controller.game
+      );
+    });
+
+    it("will start the ticker bound to call #updateAlphaValues", () => {
+      const controller = new GameController(element);
+      controller.initializeGraphics();
+      controller.initializeGame();
+      controller.graphicsController.ticker = ticker;
+
+      controller.start();
+
+      expect(ticker.start).toHaveBeenCalled();
+      ticker.add.mock.calls[0][0](1);
+      expect(
+        controller.graphicsController.updateAlphaValues
+      ).toHaveBeenCalledWith(1);
+    });
+
+    it("will use the timer to call .game#tick every second", () => {
+      const controller = new GameController(element);
+      controller.initializeGraphics();
+      controller.initializeGame();
+      controller.graphicsController.ticker = ticker;
+      controller.game = { tick: jest.fn() };
+      ticker.elapsedMS = 500;
+
+      controller.start();
+
+      ticker.add.mock.calls.forEach(([cb]) => cb(1));
+      expect(controller.game.tick).not.toHaveBeenCalled();
+
+      ticker.elapsedMS = 600;
+      ticker.add.mock.calls.forEach(([cb]) => cb(1));
+      expect(controller.game.tick).toHaveBeenCalled();
+    });
+
+    it("will not start the timer if reduced-motion is active", () => {
+      window.matchMedia.mockReturnValue({ matches: true });
+      const controller = new GameController(element);
+      controller.initializeGraphics();
+      controller.initializeGame();
+      controller.graphicsController.ticker = ticker;
+      controller.game = { tick: jest.fn() };
+      ticker.elapsedMS = 500;
+
+      controller.start();
+      expect(ticker.start).not.toHaveBeenCalled();
     });
   });
 });

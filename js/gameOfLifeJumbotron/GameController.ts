@@ -7,6 +7,7 @@ export class GameController {
   graphicsController: GraphicsController;
   game: GameOfLife;
   reducedMotion: Boolean;
+  msElapsedSinceLastUpsTick: number = 0;
 
   constructor(canvas: HTMLCanvasElement) {
     this.canvas = canvas;
@@ -57,5 +58,21 @@ export class GameController {
       this.game = GameOfLife.fromSeed(seed, 0.7, 100, 100, StandardRules);
       window.history.pushState({}, null, "?" + qs.stringify({ seed }));
     }
+  }
+
+  start() {
+    if(this.reducedMotion) return;
+    this.graphicsController.updateFromGame(this.game);
+    this.graphicsController.ticker.add((delta) =>
+      this.graphicsController.updateAlphaValues(delta)
+    );
+    this.graphicsController.ticker.add(() => {
+      this.msElapsedSinceLastUpsTick += this.graphicsController.ticker.elapsedMS;
+      if (this.msElapsedSinceLastUpsTick > 1000) {
+        this.game.tick();
+        this.msElapsedSinceLastUpsTick = this.msElapsedSinceLastUpsTick % 1000;
+      }
+    });
+    this.graphicsController.ticker.start();
   }
 }
