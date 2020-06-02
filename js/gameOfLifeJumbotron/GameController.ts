@@ -1,5 +1,5 @@
 import { GameOfLife, StandardRules } from "./GameOfLife";
-import * as qs from "qs";
+import * as GameOfLifeUrlBinding from "./GameOfLifeUrlBinding";
 import { GraphicsController } from "./GraphicsController";
 
 export class GameController {
@@ -45,6 +45,13 @@ export class GameController {
       }
     });
     this.graphicsController.ticker.start();
+  }
+
+  shuffle() {
+    const seed = String(Math.random()*10000 | 0);
+    this.game = GameOfLife.fromSeed(seed, 0.7, 100, 100, StandardRules);
+    GameOfLifeUrlBinding.setUrlParameters({seed});
+    this.graphicsController.updateFromGame(this.game);
   }
 
   get msPerGameTick(): number {

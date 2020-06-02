@@ -1,8 +1,8 @@
 import { GameController } from "./gameOfLifeJumbotron/GameController";
 import { StandardRules, GameOfLife } from "./gameOfLifeJumbotron/GameOfLife";
-import * as gameOfLifeUrlBinding from "./gameOfLifeJumbotron/GameOfLifeUrlBinding";
+import * as GameOfLifeUrlBinding from "./gameOfLifeJumbotron/GameOfLifeUrlBinding";
 
-let game = gameOfLifeUrlBinding.tryInitializeFromHistory();
+let game = GameOfLifeUrlBinding.tryInitializeFromHistory();
 if (!game) {
   game = GameOfLife.fromSeed(
     String((Math.random() * 10000) | 0),
@@ -18,3 +18,6 @@ const controller = new GameController(
   game
 );
 controller.start();
+document
+  .querySelector("#jumbotron-gol-control-shuffle")
+  .addEventListener("click", () => controller.shuffle());

@@ -109,4 +109,19 @@ describe("GameController", () => {
       expect(ticker.start).not.toHaveBeenCalled();
     });
   });
+
+  describe("controls", () => {
+    it("provides a shuffle function that will reinitialize the game and update the url", () => {
+      window.history.pushState({}, "", "/");
+      const controller = new GameController(element);
+
+      GameOfLife.fromSeed.mockClear();
+      controller.shuffle();
+
+      expect(GameOfLife.fromSeed).toHaveBeenCalled();
+      expect(window.location.search).toContain(
+        "seed=" + GameOfLife.fromSeed.mock.calls[0][0]
+      );
+    });
+  });
 });
