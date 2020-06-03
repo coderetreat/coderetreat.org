@@ -1,7 +1,6 @@
 import { GameController } from "./gameOfLifeJumbotron/GameController";
 import { StandardRules, GameOfLife } from "./gameOfLifeJumbotron/GameOfLife";
 import * as GameOfLifeUrlBinding from "./gameOfLifeJumbotron/GameOfLifeUrlBinding";
-import { Canvas } from "canvas";
 
 let game = GameOfLifeUrlBinding.tryInitializeFromHistory();
 if (!game) {
@@ -67,6 +66,20 @@ document
     updateSpeedFactor();
   });
 
+const shareButton = document.querySelector("#jumbotron-gol-control-share");
+shareButton.addEventListener("click", (e) => {
+  const url = window.location.origin+"?state="+encodeURIComponent(controller.game.serialize());
+  if((<any>navigator).share) {
+    (<any>navigator).share({
+      url
+    })
+  } else if(navigator.clipboard) {
+    navigator.clipboard.writeText(url);
+  } 
+  history.pushState({}, "", url);
+  
+});
+
 let isFullscreen = false;
 let originalBoundingRect;
 const nextTick = () => new Promise((resolve) => window.setTimeout(resolve));
@@ -76,9 +89,7 @@ const overflowContainer = <HTMLElement>(
 const contentContainer = <HTMLElement>(
   document.querySelector(".jumbotron-gol-content")
 );
-const overlay = <HTMLElement>(
-  document.querySelector("#gameCanvasOverlay")
-);
+const overlay = <HTMLElement>document.querySelector("#gameCanvasOverlay");
 
 const goFullscreen = async () => {
   originalBoundingRect = container.getBoundingClientRect();
