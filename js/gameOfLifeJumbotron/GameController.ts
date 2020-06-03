@@ -20,12 +20,15 @@ export class GameController {
   }
 
   initializeGraphics() {
+    const { width, height } = this.canvas.parentElement.getBoundingClientRect();
+    const radius = Math.max(10, (width / 100) | 0, (height / 100) | 0);
+    const gap = Math.max(2, (0.4 * radius) | 0);
     this.graphicsController = new GraphicsController({
       element: this.canvas,
       fps: 30,
-      radius: 20,
+      radius,
+      gap,
       fadeFactor: this.reducedMotion ? false : 1,
-      gap: 4,
     });
   }
 
@@ -55,9 +58,9 @@ export class GameController {
     this.game = GameOfLife.fromSeed(seed, 0.7, 100, 100, StandardRules);
     GameOfLifeUrlBinding.setUrlParameters({ seed });
     this.graphicsController.updateFromGame(this.game, true);
-    if(this.reducedMotion) {
+    if (this.reducedMotion) {
       this.graphicsController.render();
-    };
+    }
   }
 
   pause() {
@@ -66,7 +69,8 @@ export class GameController {
 
   changeSpeed(factor: number) {
     this.ups *= factor;
-    this.graphicsController.fadeFactor = (this.graphicsController.fadeFactor || 1)*factor;
+    this.graphicsController.fadeFactor =
+      (this.graphicsController.fadeFactor || 1) * factor;
   }
 
   resetSpeed() {

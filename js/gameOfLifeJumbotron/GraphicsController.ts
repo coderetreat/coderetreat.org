@@ -44,6 +44,10 @@ export class GraphicsController {
     this.pixiApp.render();
   }
 
+  resizeCanvas() {
+    this.pixiApp.resize();
+  }
+
   resizeDots(game: GameOfLife, radius: number, gap: number) {
     this.radius = radius;
     this.gap = gap;
