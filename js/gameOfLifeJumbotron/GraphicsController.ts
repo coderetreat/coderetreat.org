@@ -27,6 +27,7 @@ export class GraphicsController {
     this.pixiApp = new PIXI.Application({
       view: element,
       resizeTo: element.parentElement,
+      transparent: true,
       antialias: true,
       autoDensity: true,
       resolution: 2,
@@ -66,7 +67,7 @@ export class GraphicsController {
     newDot.x = this.gap + this.radius + x * (this.radius * 2 + this.gap);
     newDot.y = this.gap + this.radius + y * (this.radius * 2 + this.gap);
     newDot.alpha = this.shouldFade ? 0 : cellAlive ? 1 : 0;
-    newDot.beginFill(0xffffff);
+    newDot.beginFill(0x74BCCC);
     newDot.drawCircle(0, 0, this.radius);
     return newDot;
   }

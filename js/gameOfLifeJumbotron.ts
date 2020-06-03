@@ -76,13 +76,16 @@ const overflowContainer = <HTMLElement>(
 const contentContainer = <HTMLElement>(
   document.querySelector(".jumbotron-gol-content")
 );
+const overlay = <HTMLElement>(
+  document.querySelector("#gameCanvasOverlay")
+);
 
 const goFullscreen = async () => {
-  document.querySelector("#gameCanvasOverlay").classList.add("d-none");
   originalBoundingRect = container.getBoundingClientRect();
   const { top, left, width, height } = originalBoundingRect;
   container.style.zIndex = "1000";
   contentContainer.style.opacity = "0";
+  overlay.style.opacity = "0";
   container.style.position = "fixed";
   container.style.top = top + "px";
   container.style.left = left + "px";
@@ -106,6 +109,7 @@ const goFullscreen = async () => {
   const onEndOfTransition = (e) => {
     if (e.target !== container) return;
     contentContainer.style.display = "none";
+    overlay.style.display = "none";
     document.body.style.overflow = "hidden";
     container.style.transition = "";
     controller.graphicsController.resizeCanvas();
@@ -123,8 +127,10 @@ const undoFullscreen = async () => {
   container.style.height = originalBoundingRect.height + "px";
   document.body.style.overflow = "auto";
   contentContainer.style.display = "block";
+  overlay.style.display = "block";
   await nextTick();
   contentContainer.style.opacity = "1";
+  overlay.style.opacity = "1";
 
   const onEndOfTransition = (e) => {
     if (e.target !== container) return;
