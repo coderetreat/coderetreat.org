@@ -44,6 +44,29 @@ export class GraphicsController {
     this.pixiApp.render();
   }
 
+  resizeDots(game: GameOfLife, radius: number, gap: number) {
+    this.radius = radius;
+    this.gap = gap;
+
+    this.visibleDots = this.visibleDots.resize(
+      0,
+      0,
+      () => null,
+      (dot) => this.pixiApp.stage.removeChild(dot)
+    );
+    this._handlePossibleResize(game);
+  }
+
+  _createNewDot(x, y, cellAlive) {
+    const newDot: any = new PIXI.Graphics();
+    newDot.x = this.gap + this.radius + x * (this.radius * 2 + this.gap);
+    newDot.y = this.gap + this.radius + y * (this.radius * 2 + this.gap);
+    newDot.alpha = this.shouldFade ? 0 : cellAlive ? 1 : 0;
+    newDot.beginFill(0xffffff);
+    newDot.drawCircle(0, 0, this.radius);
+    return newDot;
+  }
+
   _handlePossibleResize(game: GameOfLife) {
     let { width, height } = this.pixiApp.screen;
     let gridX = Math.ceil(width / (this.radius * 2 + this.gap));
@@ -57,12 +80,7 @@ export class GraphicsController {
       gridHeight,
       (x, y) => {
         const cellAlive = game.isAliveAt(x, y);
-        const newDot: any = new PIXI.Graphics();
-        newDot.x = this.gap + this.radius + x * (this.radius * 2 + this.gap);
-        newDot.y = this.gap + this.radius + y * (this.radius * 2 + this.gap);
-        newDot.alpha = this.shouldFade ? 0 : cellAlive ? 1 : 0;
-        newDot.beginFill(0xffffff);
-        newDot.drawCircle(0, 0, this.radius);
+        const newDot = this._createNewDot(x, y, cellAlive);
         this.pixiApp.stage.addChild(newDot);
         return newDot;
       },
@@ -77,8 +95,8 @@ export class GraphicsController {
 
     this.visibleDots.forEach((graphics, x, y) => {
       const cellAlive = game.isAliveAt(x, y);
-      if(resetAlpha) {
-        graphics.alpha = this.shouldFade ? 0 : cellAlive ? 1 : 0
+      if (resetAlpha) {
+        graphics.alpha = this.shouldFade ? 0 : cellAlive ? 1 : 0;
       }
       graphics.alphaDelta =
         this.shouldFade && cellAlive ? this.fadeStep : -this.fadeStep;

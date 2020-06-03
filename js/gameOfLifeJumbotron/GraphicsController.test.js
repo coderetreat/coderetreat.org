@@ -7,12 +7,16 @@ import { GameOfLife, X, O, StandardRules } from "./GameOfLife";
 import { Array2d } from "./Array2d";
 
 jest.mock("pixi.js", () => ({
-  Graphics: jest.fn().mockImplementation(() => ({beginFill: jest.fn(), drawCircle: jest.fn()})),
+  Graphics: jest.fn().mockImplementation(() => ({
+    beginFill: jest.fn(),
+    drawCircle: jest.fn(),
+  })),
   Application: jest.fn().mockImplementation(({ view }) => ({
     ticker: {},
     screen: view,
     stage: {
       addChild: jest.fn(),
+      removeChild: jest.fn(),
     },
   })),
 }));
@@ -90,6 +94,65 @@ describe("GraphicsController", () => {
     ).toBeTruthy();
     expect(
       dotInstances.some((graphic) => graphic.x == 112 && graphic.y == 68)
+    ).toBeTruthy();
+  });
+
+  it("supports resizing the dots", () => {
+    element.width = 100;
+    element.height = 50;
+    controller = new GraphicsController({
+      element,
+      radius: 20,
+      fadeFactor: 1,
+      gap: 4,
+      fps: 30,
+    });
+
+    const game = new GameOfLife(
+      new Array2d([
+        [X, O, X],
+        [X, X, X],
+        [X, X, X],
+        [X, X, X],
+      ]),
+      StandardRules
+    );
+    controller.updateFromGame(game);
+
+    PIXI.Graphics.mockClear();
+    controller.pixiApp.stage.addChild.mockClear();
+    controller.resizeDots(game, 10, 4);
+
+    expect(PIXI.Graphics).toHaveBeenCalledTimes(9);
+    expect(controller.pixiApp.stage.addChild).toHaveBeenCalledTimes(9);
+
+    const dotInstances = PIXI.Graphics.mock.results.map(({ value }) => value);
+    expect(
+      dotInstances.some((graphic) => graphic.x == 14 && graphic.y == 14)
+    ).toBeTruthy();
+    expect(
+      dotInstances.some((graphic) => graphic.x == 38 && graphic.y == 14)
+    ).toBeTruthy();
+    expect(
+      dotInstances.some((graphic) => graphic.x == 62 && graphic.y == 14)
+    ).toBeTruthy();
+    expect(
+      dotInstances.some((graphic) => graphic.x == 14 && graphic.y == 38)
+    ).toBeTruthy();
+    expect(
+      dotInstances.some((graphic) => graphic.x == 38 && graphic.y == 38)
+    ).toBeTruthy();
+    expect(
+      dotInstances.some((graphic) => graphic.x == 62 && graphic.y == 38)
+    ).toBeTruthy();
+    expect(
+      dotInstances.some((graphic) => graphic.x == 14 && graphic.y == 62)
+    ).toBeTruthy();
+    expect(
+      dotInstances.some((graphic) => graphic.x == 38 && graphic.y == 62)
+    ).toBeTruthy();
+    expect(
+      dotInstances.some((graphic) => graphic.x == 62 && graphic.y == 62)
     ).toBeTruthy();
   });
 
@@ -180,7 +243,6 @@ describe("GraphicsController", () => {
       controller.updateFromGame(game);
       game.tick();
       controller.updateFromGame(game);
-      
 
       expect(PIXI.Graphics.mock.results[0].value.alphaDelta).toEqual(-1 / 30);
       expect(PIXI.Graphics.mock.results[1].value.alphaDelta).toEqual(-1 / 30);
