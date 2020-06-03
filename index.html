@@ -4,27 +4,35 @@ audience: participants
 ---
 
 <div class="jumbotron jumbotron-fluid py-0 border jumbotron-gol text-light">
-  <canvas id="gameCanvas"></canvas>
-  <div id="gameCanvasOverlay"></div>
+  <div id="gameContainer">
+    <div id="gameOverflowContainer">
+      <canvas id="gameCanvas"></canvas>
+    </div>
+    <div id="gameCanvasOverlay"></div>
 
-  <div class="jumbotron-gol-controls">
-    <button title="Slow down animation" class="btn btn-link" id="jumbotron-gol-control-speed-slower">
-      <i class="fas fa-fast-backward"></i>
-    </button>
-    <button title="Reset animation speed" class="btn btn-link" id="jumbotron-gol-control-speed-reset">
-      <i class="fas fa-tachometer-alt"></i>
-    </button>
-    <strong><span id="jumbotron-gol-control-speed-factor" class="text-primary">1x</span></strong>
-    <button title="Speed up animation" class="btn btn-link" id="jumbotron-gol-control-speed-faster">
-      <i class="fas fa-fast-forward"></i>
-    </button>
-    <button title="Shuffle the board" class="btn btn-link" id="jumbotron-gol-control-shuffle">
-      <i class="fas fa-random"></i>
-    </button>
-    <button title="Pause the animation" class="btn btn-link" id="jumbotron-gol-control-pause">
-      <i class="fas fa-pause"></i>
-      <i class="fas fa-play"></i>
-    </button>
+    <div class="jumbotron-gol-controls">
+      <button title="Slow down animation" class="btn btn-link" id="jumbotron-gol-control-speed-slower">
+        <i class="fas fa-fast-backward"></i>
+      </button>
+      <button title="Reset animation speed" class="btn btn-link" id="jumbotron-gol-control-speed-reset">
+        <i class="fas fa-tachometer-alt"></i>
+      </button>
+      <strong><span id="jumbotron-gol-control-speed-factor" class="text-primary">1x</span></strong>
+      <button title="Speed up animation" class="btn btn-link" id="jumbotron-gol-control-speed-faster">
+        <i class="fas fa-fast-forward"></i>
+      </button>
+      <button title="Shuffle the board" class="btn btn-link" id="jumbotron-gol-control-shuffle">
+        <i class="fas fa-random"></i>
+      </button>
+      <button title="Pause the animation" class="btn btn-link" id="jumbotron-gol-control-pause">
+        <i class="fas fa-pause"></i>
+        <i class="fas fa-play"></i>
+      </button>
+      <button title="Go fullscreen" class="btn btn-link" id="jumbotron-gol-control-fullscreen">
+        <i class="fas fa-expand"></i>
+        <i class="fas fa-compress d-none"></i>
+      </button>
+    </div>
   </div>
   <div class="jumbotron-gol-content container">
     <h1 class="text-center col-12 display-lg-1 display-5">Coderetreat</h1>
