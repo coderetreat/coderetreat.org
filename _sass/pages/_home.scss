@@ -24,6 +24,9 @@
   }
 
   .jumbotron-gol-content {
+    z-index: 1001;
+    transition: opacity 1s ease-in-out 0s;
+    position: relative;
     > * {
       position: relative;
     }

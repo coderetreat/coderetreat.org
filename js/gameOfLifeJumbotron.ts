@@ -73,12 +73,16 @@ const nextTick = () => new Promise((resolve) => window.setTimeout(resolve));
 const overflowContainer = <HTMLElement>(
   container.querySelector("#gameOverflowContainer")
 );
+const contentContainer = <HTMLElement>(
+  document.querySelector(".jumbotron-gol-content")
+);
 
 const goFullscreen = async () => {
   document.querySelector("#gameCanvasOverlay").classList.add("d-none");
   originalBoundingRect = container.getBoundingClientRect();
   const { top, left, width, height } = originalBoundingRect;
   container.style.zIndex = "1000";
+  contentContainer.style.opacity = "0";
   container.style.position = "fixed";
   container.style.top = top + "px";
   container.style.left = left + "px";
@@ -101,23 +105,26 @@ const goFullscreen = async () => {
   container.style.height = "100vh";
   const onEndOfTransition = (e) => {
     if (e.target !== container) return;
-    console.log("Transition done");
+    contentContainer.style.display = "none";
     document.body.style.overflow = "hidden";
     container.style.transition = "";
-    controller.graphicsController.pixiApp.resize();
+    controller.graphicsController.resizeCanvas();
     container.removeEventListener("transitionend", onEndOfTransition);
     isFullscreen = true;
   };
   container.addEventListener("transitionend", onEndOfTransition);
 };
 
-const undoFullscreen = () => {
+const undoFullscreen = async () => {
   container.style.transition = "all 1s ease-in-out 0s";
   container.style.top = originalBoundingRect.top + "px";
   container.style.left = originalBoundingRect.left + "px";
   container.style.width = originalBoundingRect.width + "px";
   container.style.height = originalBoundingRect.height + "px";
   document.body.style.overflow = "auto";
+  contentContainer.style.display = "block";
+  await nextTick();
+  contentContainer.style.opacity = "1";
 
   const onEndOfTransition = (e) => {
     if (e.target !== container) return;
@@ -134,7 +141,7 @@ const undoFullscreen = () => {
 
     overflowContainer.style.width = "auto";
     overflowContainer.style.height = "auto";
-    controller.graphicsController.pixiApp.resize();
+    controller.graphicsController.resizeCanvas();
 
     container.removeEventListener("transitionend", onEndOfTransition);
     isFullscreen = false;
