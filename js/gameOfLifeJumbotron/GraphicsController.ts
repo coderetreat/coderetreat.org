@@ -1,7 +1,7 @@
 import * as PIXI from "pixi.js";
-import { Viewport } from "pixi-viewport";
 import { Array2d } from "./Array2d";
 import { GameOfLife } from "./GameOfLife";
+import { Viewport } from "pixi-viewport";
 
 type GraphicsControllerOpts = {
   element: HTMLCanvasElement;
