@@ -1,6 +1,8 @@
 import { GameController } from "./gameOfLifeJumbotron/GameController";
 import { StandardRules, GameOfLife } from "./gameOfLifeJumbotron/GameOfLife";
 import * as GameOfLifeUrlBinding from "./gameOfLifeJumbotron/GameOfLifeUrlBinding";
+import { graphicsUtils } from "pixi.js";
+import { GraphicsController } from "./gameOfLifeJumbotron/GraphicsController";
 
 let game = GameOfLifeUrlBinding.tryInitializeFromHistory();
 if (!game) {
@@ -92,6 +94,7 @@ const contentContainer = <HTMLElement>(
 const overlay = <HTMLElement>document.querySelector("#gameCanvasOverlay");
 
 const goFullscreen = async () => {
+  controller.graphicsController.viewport.pause = false;
   originalBoundingRect = container.getBoundingClientRect();
   const { top, left, width, height } = originalBoundingRect;
   container.style.zIndex = "1000";
