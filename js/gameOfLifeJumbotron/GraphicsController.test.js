@@ -13,6 +13,7 @@ jest.mock("pixi.js", () => ({
   })),
   Application: jest.fn().mockImplementation(({ view }) => ({
     ticker: {},
+    renderer: { plugins: { interaction: {} } },
     screen: view,
     stage: {
       addChild: jest.fn(),
@@ -46,6 +47,7 @@ describe("GraphicsController", () => {
       resizeTo: element.parentElement,
       antialias: true,
       autoDensity: true,
+      transparent: true,
       resolution: 2,
       autoStart: false,
     });
@@ -74,7 +76,7 @@ describe("GraphicsController", () => {
     controller.updateFromGame(game);
 
     expect(PIXI.Graphics).toHaveBeenCalledTimes(6);
-    expect(controller.pixiApp.stage.addChild).toHaveBeenCalledTimes(6);
+    expect(controller.viewport.addChild).toHaveBeenCalledTimes(6);
 
     const dotInstances = PIXI.Graphics.mock.results.map(({ value }) => value);
     expect(
@@ -120,11 +122,11 @@ describe("GraphicsController", () => {
     controller.updateFromGame(game);
 
     PIXI.Graphics.mockClear();
-    controller.pixiApp.stage.addChild.mockClear();
+    controller.viewport.addChild.mockClear();
     controller.resizeDots(game, 10, 4);
 
     expect(PIXI.Graphics).toHaveBeenCalledTimes(9);
-    expect(controller.pixiApp.stage.addChild).toHaveBeenCalledTimes(9);
+    expect(controller.viewport.addChild).toHaveBeenCalledTimes(9);
 
     const dotInstances = PIXI.Graphics.mock.results.map(({ value }) => value);
     expect(

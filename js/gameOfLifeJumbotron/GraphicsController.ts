@@ -17,7 +17,7 @@ export class GraphicsController {
   gap: number;
   radius: number;
   fadeFactor: number | false;
-  viewport: Viewport;
+  viewport: any;
 
   constructor({
     element,
@@ -38,15 +38,11 @@ export class GraphicsController {
     this.viewport = new Viewport({
       screenWidth: element.width,
       screenHeight: element.height,
-      interaction: this.pixiApp.renderer.plugins.interaction
+      interaction: this.pixiApp.renderer.plugins.interaction,
     });
     this.pixiApp.stage.addChild(this.viewport);
     this.viewport.pause = true;
-    this.viewport
-    .drag()
-    .pinch()
-    .wheel()
-    .decelerate()
+    this.viewport.drag().pinch().wheel().decelerate();
     this.radius = radius;
     this.gap = gap;
     this.fadeFactor = fadeFactor;
@@ -81,7 +77,7 @@ export class GraphicsController {
     newDot.x = this.gap + this.radius + x * (this.radius * 2 + this.gap);
     newDot.y = this.gap + this.radius + y * (this.radius * 2 + this.gap);
     newDot.alpha = this.shouldFade ? 0 : cellAlive ? 1 : 0;
-    newDot.beginFill(0x74BCCC);
+    newDot.beginFill(0x74bccc);
     newDot.drawCircle(0, 0, this.radius);
     return newDot;
   }
@@ -89,9 +85,15 @@ export class GraphicsController {
   _handlePossibleResize(game: GameOfLife) {
     let { width, height } = this.pixiApp.screen;
     this.viewport.resize(width, height);
-    
-    let gridX = Math.ceil((this.viewport.worldScreenWidth+this.viewport.left) / (this.radius * 2 + this.gap));
-    let gridY = Math.ceil((this.viewport.worldScreenHeight+this.viewport.top) / (this.radius * 2 + this.gap));
+
+    let gridX = Math.ceil(
+      (this.viewport.worldScreenWidth + this.viewport.left) /
+        (this.radius * 2 + this.gap)
+    );
+    let gridY = Math.ceil(
+      (this.viewport.worldScreenHeight + this.viewport.top) /
+        (this.radius * 2 + this.gap)
+    );
 
     let gridWidth = Math.min(game.grid.width, gridX);
     let gridHeight = Math.min(game.grid.height, gridY);
