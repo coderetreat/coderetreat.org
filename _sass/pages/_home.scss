@@ -37,14 +37,25 @@
   }
 
   .jumbotron-gol-controls {
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
     background: rgba(255, 255, 255, 1);
     position: absolute;
     z-index: 0;
     right: -5px;
     top: -5px;
+    max-width: 50px;
+    transition: 1s ease-in-out;
     padding-top: 5px;
     padding-right: 5px;
     border-radius: 3px;
+    &:hover {
+      max-width: 100vw;
+    }
+    .controls {
+      float: right;
+    }
   }
 
   #gameCanvasOverlay {
