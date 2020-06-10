@@ -97,6 +97,7 @@ const goFullscreen = async () => {
   const { top, left, width, height } = originalBoundingRect;
   container.style.zIndex = "1000";
   contentContainer.style.opacity = "0";
+  contentContainer.style.zIndex = "1001";
   overlay.style.opacity = "0";
   container.style.position = "fixed";
   container.style.top = top + "px";
@@ -147,6 +148,7 @@ const undoFullscreen = async () => {
   const onEndOfTransition = (e) => {
     if (e.target !== container) return;
     document.querySelector("#gameCanvasOverlay").classList.remove("d-none");
+    contentContainer.style.zIndex = "0";
     container.style.zIndex = "0";
     container.style.transition = "";
     container.style.position = "absolute";
