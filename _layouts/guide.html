@@ -1,0 +1,20 @@
+---
+layout: base
+toc: true
+---
+
+<div class="container-fluid p-5">
+  <div class="row">
+    <h1 class="col-12 d-md-none">{{ page.title }}</h1>
+    <div class="col-12 col-md-3">
+      <div class="toc">
+        <h4>Table of Contents</h4>
+        {{ content | toc_only }}
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <h1 class="d-none d-md-block">{{ page.title }}</h1>
+      {{ content}}
+    </div>
+  </div>
+</div>

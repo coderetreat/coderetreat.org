@@ -1,0 +1,9 @@
+.toc {
+  @include media-breakpoint-up("md") {
+    position: fixed;
+  }
+
+  ul {
+      list-style-type: decimal;
+  }
+}
