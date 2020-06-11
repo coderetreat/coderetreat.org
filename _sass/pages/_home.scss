@@ -62,8 +62,11 @@ body.fullscreen {
     padding-right: 5px;
     border-radius: 3px;
     .controls {
-      *, *:active, *:hover, *:focus {
-        outline:none;
+      *,
+      *:active,
+      *:hover,
+      *:focus {
+        outline: none;
         box-shadow: none !important;
       }
       float: right;
@@ -75,10 +78,15 @@ body.fullscreen {
       animation: jumbotron-hide-content 1s both;
     }
     #gameContainer {
+      position: fixed;
+      z-index: 1000;
+      top: var(--gol-top);
+      left: var(--gol-left);
+      height: var(--gol-height);
       animation: jumbotron-fullscreen-game 1s both;
     }
     .jumbotron-gol-controls {
-      animation: jumbotron-show-all-controls 1s both;      
+      animation: jumbotron-show-all-controls 1s both;
     }
   }
   &.fullscreen-reverse {
@@ -86,50 +94,115 @@ body.fullscreen {
       animation: jumbotron-show-content 1s both;
     }
     #gameContainer {
+      z-index: initial;
       animation: jumbotron-undo-fullscreen-game 1s both;
     }
     .jumbotron-gol-controls {
-      animation: jumbotron-hide-controls 1s both;      
+      animation: jumbotron-hide-controls 1s both;
     }
   }
 }
 
 @keyframes jumbotron-show-all-controls {
-  from { max-width: 50px; }
-  to { max-width: 100%; }
+  from {
+    max-width: 50px;
+  }
+  to {
+    max-width: 100%;
+  }
 }
 
 @keyframes jumbotron-hide-controls {
-  from { max-width: 100%; }
-  to { max-width: 50px; }
+  from {
+    max-width: 100%;
+  }
+  to {
+    max-width: 50px;
+  }
 }
 
 @keyframes jumbotron-fullscreen-game {
-  from { position: absolute; height: var(--gol-height); z-index: inherit; }
-  1% { z-index: 1000; position: fixed; top: var(--gol-top); left: var(--gol-left); height: var(--gol-height); width: var(--gol-width); }
-  to { top: 0px; position: fixed; left: 0px; width: 100vw; height: 100vh; z-index: 1000; }
+  from {
+    z-index: 1000;
+    position: fixed;
+    top: var(--gol-top);
+    left: var(--gol-left);
+    height: var(--gol-height);
+    width: var(--gol-width);
+  }
+  to {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    width: 100vw;
+    height: 100%;
+    height: 100vh;
+    z-index: 1000;
+  }
 }
 
 @keyframes jumbotron-undo-fullscreen-game {
-  from { top: 0px; position: fixed; left: 0px; width: 100vw; height: 100vh; z-index: 1000; }
-  99% { z-index: 1000; position: fixed; top: var(--gol-top); left: var(--gol-left); height: var(--gol-height); width: var(--gol-width); }
-  to { position: absolute; height: var(--gol-height); z-index: inherit; }
+  from {
+    top: 0px;
+    position: fixed;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+  }
+  to {
+    z-index: 1000;
+    position: fixed;
+    top: var(--gol-top);
+    left: var(--gol-left);
+    height: var(--gol-height);
+    width: var(--gol-width);
+  }
+  to {
+    position: absolute;
+    height: var(--gol-height);
+    z-index: inherit;
+  }
 }
 
 @keyframes jumbotron-hide-content {
-  from { opacity: 1; z-index: 1000; }
-  1% { opacity: 1; z-index: 1000; }
-  99% { z-index: 1000; opacity: 0; }
-  to { opacity: 0; z-index: -100; }
+  from {
+    opacity: 1;
+    z-index: 1000;
+  }
+  1% {
+    opacity: 1;
+    z-index: 1000;
+  }
+  99% {
+    z-index: 1000;
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+    z-index: -100;
+  }
 }
 
 @keyframes jumbotron-show-content {
-  from { opacity: 0; z-index: -100; }
-  1% { z-index: 1000; opacity: 0; }
-  99% { opacity: 1; z-index: 1000; }
-  to { opacity: 1; z-index: 1000; }
+  from {
+    opacity: 0;
+    z-index: -100;
+  }
+  1% {
+    z-index: 1000;
+    opacity: 0;
+  }
+  99% {
+    opacity: 1;
+    z-index: 1000;
+  }
+  to {
+    opacity: 1;
+    z-index: 1000;
+  }
 }
-
 
 /**
   controller.graphicsController.viewport.pause = false;
@@ -172,9 +245,6 @@ body.fullscreen {
   container.addEventListener("transitionend", onEndOfTransition);
 
 **/
-
-
-
 
 #carousel-quotes {
   height: calc(1.25em * 4);
