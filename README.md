@@ -36,10 +36,10 @@ Audiences:
     * Referring link from individual event (deep link)
         * basic information on content
         * refresh concepts
+        * info on specific constraints that will be used and the subsqeuent preparations that participants need to do upfront. (e.g. TCR or steeple-chase)
     * Recurring participant ()
         * try new things (constraints?)
         * find another community to participate in (idea exchange)
-     
 * Facilitators - responsible for the content of the event
         * guidelines
         * tactics
