@@ -25,3 +25,28 @@ See [this issue](https://github.com/eventmachine/eventmachine/issues/820#issueco
 
 
 ## Contribute
+
+Audiences:
+* Participants - attend an event not involved in organization (Occasion-driven:) 
+    * New participant (word of mouth promotion to visit site)
+        * What is it?
+        * When is it?
+        * Why bother?
+        * How can I ...?
+    * Referring link from individual event (deep link)
+        * basic information on content
+        * refresh concepts
+    * Recurring participant ()
+        * try new things (constraints?)
+        * find another community to participate in (idea exchange)
+     
+* Facilitators - responsible for the content of the event
+        * guidelines
+        * tactics
+* Hosts - Third party who is responsible for the setup, infrastructure (location, food, etc)
+
+Not everyone is in distinct roles: Some are running the whole show, for the first time!
+
+ 
+
+
