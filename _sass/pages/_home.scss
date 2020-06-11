@@ -50,18 +50,22 @@ body.fullscreen {
   }
 
   .jumbotron-gol-controls {
-    text-align: right;
     white-space: nowrap;
     overflow: hidden;
     background: rgba(255, 255, 255, 1);
     position: absolute;
     z-index: 0;
     right: -5px;
+    max-width: 50px;
     top: -5px;
     padding-top: 5px;
     padding-right: 5px;
     border-radius: 3px;
     .controls {
+      *, *:active, *:hover, *:focus {
+        outline:none;
+        box-shadow: none !important;
+      }
       float: right;
     }
   }
@@ -73,6 +77,9 @@ body.fullscreen {
     #gameContainer {
       animation: jumbotron-fullscreen-game 1s both;
     }
+    .jumbotron-gol-controls {
+      animation: jumbotron-show-all-controls 1s both;      
+    }
   }
   &.fullscreen-reverse {
     .jumbotron-gol-content {
@@ -81,7 +88,20 @@ body.fullscreen {
     #gameContainer {
       animation: jumbotron-undo-fullscreen-game 1s both;
     }
+    .jumbotron-gol-controls {
+      animation: jumbotron-hide-controls 1s both;      
+    }
   }
+}
+
+@keyframes jumbotron-show-all-controls {
+  from { max-width: 50px; }
+  to { max-width: 100%; }
+}
+
+@keyframes jumbotron-hide-controls {
+  from { max-width: 100%; }
+  to { max-width: 50px; }
 }
 
 @keyframes jumbotron-fullscreen-game {
