@@ -5,10 +5,10 @@
   >🌐 Global Day (Nov 6th-7th 2020)</a>
 </li>
 <li class="nav-item">
-  <a class="nav-link" href="#news">📰 News</a>
+  <a class="nav-link" href="{% if page.url != "/" %}{% link index.html %}{% endif %}#news">📰 News</a>
 </li>
 <li class="nav-item">
-  <a class="nav-link" href="#">👋 Communities</a>
+  <a class="nav-link" href="{% link communities.md %}">👋 Communities</a>
 </li>
 <li class="nav-item dropdown">
   <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
