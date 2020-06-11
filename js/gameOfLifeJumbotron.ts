@@ -68,105 +68,63 @@ document
 
 const shareButton = document.querySelector("#jumbotron-gol-control-share");
 shareButton.addEventListener("click", (e) => {
-  const url = window.location.origin+"?state="+encodeURIComponent(controller.game.serialize());
-  if((<any>navigator).share) {
+  const url =
+    window.location.origin +
+    "?state=" +
+    encodeURIComponent(controller.game.serialize());
+  if ((<any>navigator).share) {
     (<any>navigator).share({
-      url
-    })
-  } else if(navigator.clipboard) {
+      url,
+    });
+  } else if (navigator.clipboard) {
     navigator.clipboard.writeText(url);
-  } 
+  }
   history.pushState({}, "", url);
-  
 });
 
-let isFullscreen = false;
-let originalBoundingRect;
 const nextTick = () => new Promise((resolve) => window.setTimeout(resolve));
+let isFullscreen = false;
+
 const overflowContainer = <HTMLElement>(
   container.querySelector("#gameOverflowContainer")
 );
-const contentContainer = <HTMLElement>(
-  document.querySelector(".jumbotron-gol-content")
-);
-const overlay = <HTMLElement>document.querySelector("#gameCanvasOverlay");
 
 const goFullscreen = async () => {
-  controller.graphicsController.viewport.pause = false;
-  originalBoundingRect = container.getBoundingClientRect();
-  const { top, left, width, height } = originalBoundingRect;
-  container.style.zIndex = "1000";
-  contentContainer.style.opacity = "0";
-  contentContainer.style.zIndex = "1001";
-  overlay.style.opacity = "0";
-  container.style.position = "fixed";
-  container.style.top = top + "px";
-  container.style.left = left + "px";
-  container.style.width = width + "px";
-  container.style.height = height + "px";
+  // Set position of container in absolute coordinates
+  const { top, left, width, height } = container.getBoundingClientRect();
+  document.documentElement.style.setProperty("--gol-top", top + "px");
+  document.documentElement.style.setProperty("--gol-left", left + "px");
+  document.documentElement.style.setProperty("--gol-width", width + "px");
+  document.documentElement.style.setProperty("--gol-height", height + "px");
 
-  delete overflowContainer.style.right;
+  // Prerender the game in fullscreen
   delete overflowContainer.style.bottom;
-  overflowContainer.style.height = "100vh";
+  delete overflowContainer.style.right;
   overflowContainer.style.width = "100vw";
   overflowContainer.style.height = "100vh";
-  controller.graphicsController.pixiApp.resize();
+  controller.graphicsController.resizeCanvas();
+
+  document.body.classList.add("fullscreen");
 
   await nextTick();
-  container.style.transition = "all 1s ease-in-out 0s";
-  await nextTick();
-  container.style.top = "0px";
-  container.style.left = "0px";
-  container.style.width = "100vw";
-  container.style.height = "100vh";
-  const onEndOfTransition = (e) => {
-    if (e.target !== container) return;
-    contentContainer.style.display = "none";
-    overlay.style.display = "none";
-    document.body.style.overflow = "hidden";
-    container.style.transition = "";
-    controller.graphicsController.resizeCanvas();
-    container.removeEventListener("transitionend", onEndOfTransition);
-    isFullscreen = true;
-  };
-  container.addEventListener("transitionend", onEndOfTransition);
+  container.parentElement.classList.remove("fullscreen-reverse");
+  container.parentElement.classList.add("fullscreen");
+
+  isFullscreen = true;
 };
 
 const undoFullscreen = async () => {
-  container.style.transition = "all 1s ease-in-out 0s";
-  container.style.top = originalBoundingRect.top + "px";
-  container.style.left = originalBoundingRect.left + "px";
-  container.style.width = originalBoundingRect.width + "px";
-  container.style.height = originalBoundingRect.height + "px";
-  document.body.style.overflow = "auto";
-  contentContainer.style.display = "block";
-  overlay.style.display = "block";
-  await nextTick();
-  contentContainer.style.opacity = "1";
-  overlay.style.opacity = "1";
+  document.body.classList.remove("fullscreen");
+  container.parentElement.classList.add("fullscreen-reverse");
 
-  const onEndOfTransition = (e) => {
-    if (e.target !== container) return;
-    document.querySelector("#gameCanvasOverlay").classList.remove("d-none");
-    contentContainer.style.zIndex = "0";
-    container.style.zIndex = "0";
-    container.style.transition = "";
-    container.style.position = "absolute";
-    container.style.top = "0px";
-    container.style.left = "0px";
-    container.style.right = "0px";
-    container.style.bottom = "0px";
-    container.style.width = "auto";
-    container.style.height = "auto";
-
+  setTimeout(() => {
     overflowContainer.style.width = "auto";
     overflowContainer.style.height = "auto";
+    overflowContainer.style.right = "0px";
+    overflowContainer.style.bottom = "0px";
     controller.graphicsController.resizeCanvas();
-
-    container.removeEventListener("transitionend", onEndOfTransition);
-    isFullscreen = false;
-  };
-  container.addEventListener("transitionend", onEndOfTransition);
+  }, 1000);
+  isFullscreen = false;
 };
 
 const fullscreenToggle = document.querySelector(

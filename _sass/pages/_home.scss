@@ -1,3 +1,16 @@
+body.fullscreen {
+  animation: jumbotron-hide-scrollbar 1s forwards;
+}
+
+@keyframes jumbotron-hide-scrollbar {
+  0% {
+    overflow: auto;
+  }
+  100% {
+    overflow: hidden;
+  }
+}
+
 .jumbotron-gol {
   overflow: hidden;
   position: relative;
@@ -45,28 +58,103 @@
     z-index: 0;
     right: -5px;
     top: -5px;
-    max-width: 50px;
-    transition: 1s ease-in-out;
     padding-top: 5px;
     padding-right: 5px;
     border-radius: 3px;
-    &:hover {
-      max-width: 100vw;
-    }
     .controls {
       float: right;
     }
   }
 
-  #gameCanvasOverlay {
-    transition: opacity 1s ease-in-out 0s;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  &.fullscreen {
+    .jumbotron-gol-content {
+      animation: jumbotron-hide-content 1s both;
+    }
+    #gameContainer {
+      animation: jumbotron-fullscreen-game 1s both;
+    }
+  }
+  &.fullscreen-reverse {
+    .jumbotron-gol-content {
+      animation: jumbotron-show-content 1s both;
+    }
+    #gameContainer {
+      animation: jumbotron-undo-fullscreen-game 1s both;
+    }
   }
 }
+
+@keyframes jumbotron-fullscreen-game {
+  from { position: absolute; height: var(--gol-height); z-index: inherit; }
+  1% { z-index: 1000; position: fixed; top: var(--gol-top); left: var(--gol-left); height: var(--gol-height); width: var(--gol-width); }
+  to { top: 0px; position: fixed; left: 0px; width: 100vw; height: 100vh; z-index: 1000; }
+}
+
+@keyframes jumbotron-undo-fullscreen-game {
+  from { top: 0px; position: fixed; left: 0px; width: 100vw; height: 100vh; z-index: 1000; }
+  99% { z-index: 1000; position: fixed; top: var(--gol-top); left: var(--gol-left); height: var(--gol-height); width: var(--gol-width); }
+  to { position: absolute; height: var(--gol-height); z-index: inherit; }
+}
+
+@keyframes jumbotron-hide-content {
+  from { opacity: 1; z-index: 1000; }
+  1% { opacity: 1; z-index: 1000; }
+  99% { z-index: 1000; opacity: 0; }
+  to { opacity: 0; z-index: -100; }
+}
+
+@keyframes jumbotron-show-content {
+  from { opacity: 0; z-index: -100; }
+  1% { z-index: 1000; opacity: 0; }
+  99% { opacity: 1; z-index: 1000; }
+  to { opacity: 1; z-index: 1000; }
+}
+
+
+/**
+  controller.graphicsController.viewport.pause = false;
+  originalBoundingRect = container.getBoundingClientRect();
+  const { top, left, width, height } = originalBoundingRect;
+  container.style.zIndex = "1000";
+  contentContainer.style.opacity = "0";
+  contentContainer.style.zIndex = "1001";
+  overlay.style.opacity = "0";
+  container.style.position = "fixed";
+  container.style.top = top + "px";
+  container.style.left = left + "px";
+  container.style.width = width + "px";
+  container.style.height = height + "px";
+
+  delete overflowContainer.style.right;
+  delete overflowContainer.style.bottom;
+  overflowContainer.style.height = "100vh";
+  overflowContainer.style.width = "100vw";
+  overflowContainer.style.height = "100vh";
+  controller.graphicsController.pixiApp.resize();
+
+  await nextTick();
+  container.style.transition = "all 1s ease-in-out 0s";
+  await nextTick();
+  container.style.top = "0px";
+  container.style.left = "0px";
+  container.style.width = "100vw";
+  container.style.height = "100vh";
+  const onEndOfTransition = (e) => {
+    if (e.target !== container) return;
+    contentContainer.style.display = "none";
+    overlay.style.display = "none";
+    document.body.style.overflow = "hidden";
+    container.style.transition = "";
+    controller.graphicsController.resizeCanvas();
+    container.removeEventListener("transitionend", onEndOfTransition);
+    isFullscreen = true;
+  };
+  container.addEventListener("transitionend", onEndOfTransition);
+
+**/
+
+
+
 
 #carousel-quotes {
   height: calc(1.25em * 4);
