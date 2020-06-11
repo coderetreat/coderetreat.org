@@ -2,40 +2,76 @@
 layout: base
 audience: facilitators
 ---
-<div class="jumbotron jumbotron-fluid text-center" style="background-size: cover; background-position: middle; min-height: 400px; background: url('{% link /facilitators/assets/home-jumbotron.jpg %}')">
-    <h1 class="text-white d-inline-block px-5 py-3" style="background-color: rgba(0,0,0,0.4);">Organize your own coderetreat!</h1>
+
+<div
+  class="jumbotron jumbotron-fluid text-center"
+  style="
+    background-size: cover;
+    background-position: middle;
+    min-height: 400px;
+    background: url('{% link /facilitators/assets/home-jumbotron.jpg %}');
+  "
+>
+  <div
+    class="px-5 py-3 d-inline-block text-light"
+    style="background-color: rgba(0, 0, 0, 0.4);"
+  >
+    <div class="container">
+      <h1>Organize your own coderetreat!</h1>
+      <p>
+        Hundreds of volunteers organize a coderetreat in their community each
+        year. <br/><strong>Join us!</strong>
+      </p>
+      <a class="btn btn-primary col-12 col-md-3 m-1" href="{% link facilitators/facilitation.md %}">Facilitation Guide</a>
+      <a class="btn btn-primary col-12 col-md-3 m-1" href="{% link facilitators/hosting.md %}">Hosting Guide</a>
+      <a class="btn btn-primary col-12 col-md-3 m-1" href="{% link facilitators/register.md %}">Register an event</a>
+    </div>
+  </div>
 </div>
 <div class="container">
-    <div class="card-deck">
-      <div class="card">
-        <img src="https://place-hold.it/300x150" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Trainings</h5>
-          <p class="card-text">
-            Experienced facilitators teach you everything you need to know to run your own coderetreat <b>for free</b>. Check for the next online trainings!
-          </p>
-          <a href="{% link facilitators/training-sessions.md %}" class="btn btn-primary">Join a training session</a>
-        </div>
+  <div class="card-deck">
+    <div class="card">
+      <img src="https://place-hold.it/300x150" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Trainings</h5>
+        <p class="card-text">
+          Experienced facilitators teach you everything you need to know to run
+          your own coderetreat <b>for free</b>. Check for the next online
+          trainings!
+        </p>
+        <a
+          href="{% link facilitators/training-sessions.md %}"
+          class="btn btn-primary"
+          >Join a training session</a
+        >
       </div>
-      <div class="card">
-        <img src="https://place-hold.it/300x150" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Constraints</h5>
-          <p class="card-text">
-            Find new challenging constraints to mix things up at your event, or go with the classic structure – you decide! We collected some constraints and we're eager to hear yours!
-          </p>
-          <a href="{% link facilitators/constraints.md %}" class="btn btn-primary">To the constraints</a>
-        </div>
+    </div>
+    <div class="card">
+      <img src="https://place-hold.it/300x150" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Constraints</h5>
+        <p class="card-text">
+          Find new challenging constraints to mix things up at your event, or go
+          with the classic structure – you decide! We collected some constraints
+          and we're eager to hear yours!
+        </p>
+        <a href="{% link facilitators/constraints.md %}" class="btn btn-primary"
+          >To the constraints</a
+        >
       </div>
-      <div class="card">
-        <img src="https://place-hold.it/300x150" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Marketing</h5>
-          <p class="card-text">
-            All you need to promote your event, what to ask sponsors for, how much money you need to factor in for a day-long event. We got you covered!
-          </p>
-          <a href="{% link facilitators/marketing.md %}" class="btn btn-primary">How to ask for $$$</a>
-        </div>
+    </div>
+    <div class="card">
+      <img src="https://place-hold.it/300x150" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Marketing</h5>
+        <p class="card-text">
+          All you need to promote your event, what to ask sponsors for, how much
+          money you need to factor in for a day-long event. We got you covered!
+        </p>
+        <a href="{% link facilitators/marketing.md %}" class="btn btn-primary"
+          >How to ask for $$$</a
+        >
       </div>
     </div>
   </div>
+</div>
