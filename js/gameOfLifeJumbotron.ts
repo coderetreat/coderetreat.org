@@ -90,6 +90,7 @@ const overflowContainer = <HTMLElement>(
 );
 
 const goFullscreen = async () => {
+  controller.graphicsController.viewport.pause = false;
   // Set position of container in absolute coordinates
   const { top, left, width, height } = container.getBoundingClientRect();
   document.documentElement.style.setProperty("--gol-top", top + "px");
@@ -114,10 +115,12 @@ const goFullscreen = async () => {
 };
 
 const undoFullscreen = async () => {
+  controller.graphicsController.viewport.pause = true;
   document.body.classList.remove("fullscreen");
   container.parentElement.classList.add("fullscreen-reverse");
 
   setTimeout(() => {
+    container.parentElement.classList.remove("fullscreen");
     overflowContainer.style.width = "auto";
     overflowContainer.style.height = "auto";
     overflowContainer.style.right = "0px";
