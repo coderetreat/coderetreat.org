@@ -78,6 +78,10 @@ body.fullscreen {
       animation: jumbotron-hide-content 1s both;
     }
     #gameContainer {
+      cursor: grab;
+      &:active {
+        cursor: grabbing;
+      }
       position: fixed;
       z-index: 1000;
       top: var(--gol-top);
@@ -151,6 +155,7 @@ body.fullscreen {
     height: 100vh;
     z-index: 1000;
   }
+  99% { z-index: 1000; }
   to {
     z-index: 1000;
     position: fixed;
@@ -158,10 +163,6 @@ body.fullscreen {
     left: var(--gol-left);
     height: var(--gol-height);
     width: var(--gol-width);
-  }
-  to {
-    position: absolute;
-    height: var(--gol-height);
     z-index: inherit;
   }
 }
