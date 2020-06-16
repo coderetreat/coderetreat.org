@@ -116,11 +116,12 @@ const goFullscreen = async () => {
 
 const undoFullscreen = async () => {
   controller.graphicsController.viewport.pause = true;
-  document.body.classList.remove("fullscreen");
   container.parentElement.classList.add("fullscreen-reverse");
 
   setTimeout(() => {
+    document.body.classList.remove("fullscreen");
     container.parentElement.classList.remove("fullscreen");
+    container.parentElement.classList.remove("fullscreen-reverse");
     overflowContainer.style.width = "auto";
     overflowContainer.style.height = "auto";
     overflowContainer.style.right = "0px";
