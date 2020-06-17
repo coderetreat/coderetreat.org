@@ -3,7 +3,6 @@
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/root";
-@import "../node_modules/bootstrap/scss/reboot";
 
 /* latin */
 @font-face {
@@ -36,6 +35,10 @@ $h4-font-size:                $font-size-base * 1.25;
 $h5-font-size:                $font-size-base * 1.2;
 $h6-font-size:                $font-size-base;
 
+$link-color:                              darken(theme-color("primary"), 30%);
+$link-hover-color:                        darken($link-color, 15%);
+$link-decoration:                         none;
+$link-hover-decoration:                   underline;
 
 $enable-shadows: true;
 @import "../node_modules/bootstrap/scss/bootstrap";
