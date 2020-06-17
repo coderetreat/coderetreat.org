@@ -16,7 +16,7 @@
 
   <main class="page-content" aria-label="Content">
     {% include navbar.html %}
-    <script type="application/javascript" src="{{ "/js/bundled/default.js" | relative_url }}"></script>
+    <script async type="application/javascript" src="{{ "/js/bundled/default.js" | relative_url }}"></script>
     {{ content }}
   </main>
 
@@ -25,8 +25,8 @@
       <div class="row">
       <div class="col-lg-3">
         <ul class="list-unstyled">
-          <li><a href="https://twitter.com/coderetreat"><i class="fab fa-twitter mr-1"></i>Follow us on Twitter</a></li>
-          <li><a href="https://github.com/coderetreat"><i class="fab fa-github mr-1"></i>Contribute on GitHub</a></li>
+          <li><a class="text-light" href="https://twitter.com/coderetreat"><i class="fab fa-twitter mr-1"></i>Follow us on Twitter</a></li>
+          <li><a class="text-light" href="https://github.com/coderetreat"><i class="fab fa-github mr-1"></i>Contribute on GitHub</a></li>
         </ul>
       </div>
       <div class="col-lg-3 offset-lg-6">
