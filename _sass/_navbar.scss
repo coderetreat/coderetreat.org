@@ -14,6 +14,10 @@
         margin-top: 1rem;
       }
     }
+    /* Add a border when fullscreen, but not on mobile and not on buttons */
+    .navbar-collapse:not(.show) .nav-link:hover:not(.btn) {
+        border-bottom: 2px solid $navbar-light-color;
+    }
     .nav-item {
       font-weight: 500;
       font-size: 1.1*$font-size-base;
@@ -22,9 +26,6 @@
         margin: 0 0.5rem;
         padding-top: 0.7rem;
         padding-bottom: 0.2rem;
-        &:hover:not(.btn) {
-            border-bottom: 2px solid $navbar-light-color;
-        }
         &.btn {
           padding: 0.5rem 1rem;
         }
