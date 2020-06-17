@@ -1,0 +1,34 @@
+.navbar {
+    .navbar-brand {
+      font-family: Orbitron;
+      font-weight: bold;
+      color: $navbar-light-color;
+      text-transform: uppercase;
+      &>img {
+        padding-right: $spacer/2;
+      }
+    }
+    .navbar-collapse.collapse.show,
+    .navbar-collapse.collapsing {
+      .nav-item .nav-link.btn {
+        margin-top: 1rem;
+      }
+    }
+    .nav-item {
+      font-weight: 500;
+      font-size: 1.1*$font-size-base;
+      text-transform: uppercase;
+      .nav-link {
+        margin: 0 0.5rem;
+        padding-top: 0.7rem;
+        padding-bottom: 0.2rem;
+        &:hover:not(.btn) {
+            border-bottom: 2px solid $navbar-light-color;
+        }
+        &.btn {
+          padding: 0.5rem 1rem;
+        }
+      }
+    }
+  }
+  
