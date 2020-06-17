@@ -210,11 +210,11 @@ body.fullscreen {
   height: calc(1.5em * 4);
 
   @include media-breakpoint-down("xs") {
-    height: calc(1.25em * 8);
+    height: calc(2em * 8);
   }
 
   @include media-breakpoint-down("md") {
-    height: calc(1.25em * 6);
+    height: calc(2em * 6);
   }
 }
 
