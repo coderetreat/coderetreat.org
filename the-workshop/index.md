@@ -31,6 +31,9 @@ That said, no stack is ALSO OK: we use Cyber-Dojo a LOT (https://cyber-dojo.org/
 
 ## What is a coderetreat?
 
+## <a name="what-is-game-of-life">What is Game Of Life?</a>
+{% comment %}This headline is linked to from the "What Is This" link on /index.html, so please keep the name as it is here {% endcomment %}
+
 ## The learning goals
 
 ### Practicing Test-Driven-Development
