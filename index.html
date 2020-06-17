@@ -162,7 +162,7 @@ audience: participants
       {% for item in site.data.news %}
       <div class="news-item card my-4">
         <div class="card-body">
-          <h5 class="card-title">{{ item.title }}</h5>
+          <h5 class="card-title"><a class="text-dark" href="{{ item.url }}">{{ item.title }}</a></h5>
           <h6 class="card-subtitle text-muted">by {% if item.author.link %}<a
               href="{{ item.author.link }}">{{ item.author.name }}</a>{% else %}{{ item.author.name }}{% endif %},
             {{ item.year }}, {{ item.language }}
