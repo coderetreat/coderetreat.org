@@ -1,46 +1,40 @@
-import 'ol/ol.css';
-import {Map, View} from 'ol';
-import {defaults as defaultInteractions, DragRotateAndZoom} from 'ol/interaction';
-import VectorSource from 'ol/source/Vector';
-import VectorLayer from 'ol/layer/Vector';
-import countries from 'world-atlas/land-110m.json'
+import "ol/ol.css";
+import Map from "ol/Map";
+import View from "ol/View";
 import TopoJSON from "ol/format/TopoJSON";
-import {Fill, Stroke, Style} from 'ol/style';
-
-var features = (
-    new TopoJSON({
-    })
-).readFeatures(countries);
-
-var source = new VectorSource({
-    features: features,
-    overlaps: false
-});
+import { Vector as VectorLayer } from "ol/layer";
+import VectorSource from "ol/source/Vector";
+import { Fill, Stroke, Style } from "ol/style";
 
 var style = new Style({
-    fill: new Fill({
-        color: 'rgba(0, 255, 85, 0.4)'
+  fill: new Fill({
+    color: "rgba(255, 255, 255, 0.6)",
+  }),
+  stroke: new Stroke({
+    color: "#319FD3",
+    width: 1,
+  }),
+});
+
+var vector = new VectorLayer({
+  source: new VectorSource({
+    url:
+      "https://openlayers.org/en/latest/examples/data/topojson/world-110m.json",
+    format: new TopoJSON({
+      // don't want to render the full world polygon (stored as 'land' layer),
+      // which repeats all countries
+      layers: ["countries"],
     }),
-    stroke: new Stroke({
-        color: '#2020FF',
-        width: 1
-    })
+    overlaps: false,
+  }),
+  style: style,
 });
-
-var vectorLayer = new VectorLayer({
-    source: source,
-    style: style
-});
-
 
 var map = new Map({
-    target: 'map',
-    interactions: defaultInteractions().extend([
-        new DragRotateAndZoom()
-    ]),
-    layers: [vectorLayer],
-    view: new View({
-        center: [0,0],
-        zoom: 19
-    })
+  layers: [vector],
+  target: "map",
+  view: new View({
+    center: [0, 0],
+    zoom: 1,
+  }),
 });

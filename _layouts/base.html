@@ -9,6 +9,9 @@
   {%- seo -%}
   <link rel="stylesheet" href="{{ "/css/theme_" | append: stylesheet | append: ".min.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/js/bundled/default.css" | relative_url }}">
+  {% for extraStyle in page.extraStyles %}
+  <link rel="stylesheet" href="{{ extraStyle }}">
+  {% endfor %}
   {%- feed_meta -%}
 </head>
 

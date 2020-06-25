@@ -14,7 +14,7 @@
     "popper.js": "^1.16.1",
     "qs": "^6.9.4",
     "seedrandom": "^3.0.5",
-    "world-atlas": "^2.0.2"
+    "world-atlas": "^1.1.4"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
