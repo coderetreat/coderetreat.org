@@ -3,10 +3,12 @@ layout: base
 audience: participants
 ---
 <div class="jumbotron jumbotron-fluid m-0 p-0">
-    <img src="{% link globalday/map.jpg %}" class="w-100" style="max-height: 500px"/>
+    <div class="w-100" style="max-height: 500px; height: 500px" id="map">
+    </div>
 </div>
 <div class="container">
     <div>
         <p>Join thousands of developers</p>
     </div>
 </div>
+<script async type="application/javascript" src="{{ "/js/bundled/map.js" | relative_url }}"></script>
