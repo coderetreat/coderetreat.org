@@ -7,9 +7,39 @@ extraStyles: ["/js/bundled/map.css"]
     <div class="w-100" style="max-height: 500px; height: 500px" id="map">
     </div>
 </div>
-<div class="container">
+<div class="container mt-5">
     <div>
-        <p>Join thousands of developers</p>
+        <p class="lead">Global Day Of Coderetreat is a community event happening on <strong>November 6 - November 7
+                2020</strong>. Join this year and practice your skills, embrace new paradigms and get to meet new people
+            from all over the world!</p>
+        <p>With COVID-19 having a severe impact on the availability of on-site events, we're embracing the virtual
+            events we had in the past more than ever. Local on-site events are marked with a 🔴, while virtual events
+            are marked with 🔵. We encourage you to stay safe, the map is here to help you find either a local event or
+            an event that matches your timezone.</p>
+        <p>Want to host your own? Check out our <a href="{% link facilitators/index.html %}">Facilitator's Section</a>
+            to find out how you can run your own event!</p>
+    </div>
+</div>
+<div class="bg-light text-dark">
+    <div class="container py-3">
+        <div class="row">
+            <div class="col-3">
+                <img src="{% link assets/home-gdcr.jpg %}" class="w-100">
+            </div>
+            <div class="col-9">
+                <h3 class="h3">What's there to learn?</h3>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container py-3">
+    <h1 class="h3">Where it's happening</h1>
+
+</div>
+<div class="bg-light text-dark">
+    <div class="container py-3">
+        <p class="h5 text-center">Hosting your own? Put it on our map by <a href="{% link facilitators/register.md %}">submitting a Pull Request!</a></p>
     </div>
 </div>
 <script async type="application/javascript" src="{{ "/js/bundled/map.js" | relative_url }}"></script>
