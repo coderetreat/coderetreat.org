@@ -69,5 +69,21 @@ $enable-shadows: true;
   border-radius: 2px;
 }
 
+main blockquote {
+  &:before {
+    content: '“';
+    font-size: 5rem;
+    line-height: 1;
+    font-family: "Times New Roman", Times, Georgia, Cambria,serif;
+    font-weight: bold;
+    float: left;
+    padding-right: $spacer;
+  }
+  font-size: 1.25rem;
+  border-left: 3px solid theme-color("primary");
+  padding-left: $spacer;
+  margin: $spacer*2 $spacer;
+}
+
 @import "toc";
 @import "pages/home";
