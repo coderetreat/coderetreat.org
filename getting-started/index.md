@@ -5,17 +5,7 @@ audience: participants
 intro: |
     It doesn't take much to join a coderetreat, not even necessarily bringing your own computer. We'll try to cover some frequently asked questions here and provide you with everything you need for your first coderetreat!
 ---
-## What is a coderetreat?
-
-A coderetreat is a workshop in Extreme Programming practices. We focus on *Pair Programming* and *Test-Driven-Development*, as we consider these **personal** skills that are best learned in a safe environment. 
-
-The workshop is usually given as a full-day event and is generally free to attend, with lunch and snacks covered through sponsorships (this might vary between local events!).
-
-Check out [our workshop guide]({% link the-workshop/index.md %}) to find out everything about the format!
-
-## Why is that relevant to me?
-
-> We left the CodeRetreat with a better understanding of how to write clean, simple and flexible programs that minimize the cost of change over time. Big win for everyone.
+## Why should I care?
 
 Developers are usually expected to learn on the job, with companies expecting rigor and best practices without giving space for experimentation and exchange beyond your own team. Coderetreats are there to provide you with a space that doesn't have a deadline, nor any pressure of performing.
 
@@ -24,6 +14,17 @@ We found that people join coderetreats for varying reasons: First and foremost, 
 Other people might join to look beyond their everyday-work and to explore what other developers have been working with. Coderetreats are an excellent occasion to explore **a new programming language** through tests, as this usually reveals interesting language features and paradigms. Ever wanted to dip your toes into *Elixir* or *COBOL*? The crowd at a coderetreat probably has someone who's working in those languages and can show you the ropes!
 
 Last but not least, you'll find that coderetreat crowds are usually quite mixed in expertise. If you're already familiar with a programming language, or even with TDD, a coderetreat is a great opportunity for you to practice **mentoring other developers**. **Mentoring** is a crucial responsibility of a **senior** developer, but it takes patience, practice and mindfullness, all of which a coderetreat is designed to enable.
+
+> We left the CodeRetreat with a better understanding of how to write clean, simple and flexible programs that minimize the cost of change over time. Big win for everyone.
+
+## I'm in, but what is a coderetreat?
+
+A coderetreat is a workshop in Extreme Programming practices. We focus on *Pair Programming* and *Test-Driven-Development*, as we consider these **personal** skills that are best learned in a safe environment. 
+
+The workshop is usually given as a full-day event and is generally free to attend, with lunch and snacks covered through sponsorships (this might vary between local events!).
+
+Check out [our workshop guide]({% link the-workshop/index.md %}) to find out everything about the format!
+
 
 ## What to prepare
 
