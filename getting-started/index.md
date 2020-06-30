@@ -46,4 +46,3 @@ Please also make sure to setup your laptop so you can start right away. A sessio
 <li><input type="checkbox" class="mr-1"> <a href="https://git-scm.com/">git</a> for versioning </li>
 <li><input type="checkbox" class="mr-1"> An empty project with a failing test-case (e.g. <a href="https://github.com/swkBerlin/kata-bootstraps"><code>kata-bootstraps</code></a>)</li>
 </ul>
-

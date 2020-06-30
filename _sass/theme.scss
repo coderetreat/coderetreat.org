@@ -70,6 +70,7 @@ $enable-shadows: true;
 }
 
 main blockquote {
+  background: theme-color("light");
   &:before {
     content: '“';
     font-size: 5rem;
@@ -79,9 +80,12 @@ main blockquote {
     float: left;
     padding-right: $spacer;
   }
+  > p {
+    margin: 0;
+  }
   font-size: 1.25rem;
   border-left: 3px solid theme-color("primary");
-  padding-left: $spacer;
+  padding: $spacer/2;
   margin: $spacer*2 $spacer;
 }
 
