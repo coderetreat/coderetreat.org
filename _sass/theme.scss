@@ -69,7 +69,7 @@ $enable-shadows: true;
   border-radius: 2px;
 }
 
-main blockquote {
+main blockquote:not(.blockquote) {
   background: theme-color("light");
   &:before {
     content: '“';
