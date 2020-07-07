@@ -96,9 +96,9 @@ audience: facilitators
         <div class="col-lg-9">
             <h1 class="h3">Latest episodes of <a href="https://twitter.com/codecopkofler">Peter Kofler</a>'s podcast for coderetreat facilitators</h1>
             <ul class="list-unstyled">
-            {% for entry in site.data.podcast.feed.entry limit:5 %}
-            {% assign link = entry.link | where: "_attributes.rel", "alternate" | first %}
-                <li class=""><a href="{{ link._attributes.href }}">{{ entry.title._text }}</a></p>
+            {% for entry in site.data.podcast.rss.channel.item limit:5 %}
+                <li class=""><p><strong><a href="{{ entry.link._text }}">{{ entry.title._text }}</a> ({{ entry.pubDate._text | date: "%b %d, %Y"}})</strong><br/>
+                    {{ entry | map: "itunes:subtitle" | map: "_text" }}</p>
                     
                 </li>
             {% endfor %}
