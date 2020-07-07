@@ -1,17 +1,34 @@
 ---
 layout: post
 audience: facilitators
+title: Resources for your attendees
+description: Starting points in different programming languages among others
+image:
+    src: /images/facilitating/keyboard.jpg
 ---
-# Facilitation Material
+<h1 class="display-1">Resources</h1>
 
-- PDF files of the rules (https://github.com/marcoemrich/game-of-life-rules)
-- More on GDRive: https://drive.google.com/drive/u/0/folders/10Qm7rdS3tifD7EOWK65e3n4CVrQaLYoa
-- Pocketmod by @mrksdck
-- Rachel's TCR/TDD primer (https://rachelcarmena.github.io/2018/11/13/test-driven-programming-workflows.html)
-- Matt's https://drive.google.com/drive/u/0/folders/0B5c0gS3XXAGfa0xGdE1qNW1NX1k
-- Some explanation on what to do with the material (hang it on the walls and keep referring to them etc.)
+## Starting Points
 
-# Marketing Material
+Help your attendees with starting points in different programming languages:
 
-- Coderetreat Logo and Stickers
-- Explainer texts and ad text
+* [Starting Points by Corey Haines](https://github.com/coreyhaines/coderetreat/tree/master/starting_points)
+* [Corey Haines' Github repo with Gherkin for Game of Life](https://github.com/coreyhaines/practice_game_of_life): Since the [Cucumber framework](https://docs.cucumber.io/installation/) that parses Gherkin can be found for several languages, it's useful for GOL in any of those languages.
+* [Kata Bootstraps by Softwerkskammer Berlin](https://github.com/swkBerlin/kata-bootstraps)
+* [Presets by Remote Global Day of the Coderetreat Spain](https://github.com/remote-code-retreat/code-retreat-2019/tree/master/presets)
+
+## Environment
+
+They can use an online coding environment like [Cyber-Dojo](http://www.cyber-dojo.org/). It offers 30 different languages, each with at least one testing framework (most languages have multiple frameworks) all wired up and ready to go: no downloading, installing, or configuring, etc. 
+
+## Booklet
+
+[Markus Decke](https://twitter.com/mrksdck) created [this very useful booklet](https://github.com/mrksdck/coderetreat-pocketmod). Thanks Markus!!
+
+## Game of Life schemas
+
+Take a look at [Conway's Game of Life (GoL)](/pages/facilitating/gol/#game-of-life-schemas-provided-by-the-community).
+
+## Acknowledgments
+
+* Thanks [Bob Allen](https://twitter.com/CuriousAgilist) for his help with the content of this page.
