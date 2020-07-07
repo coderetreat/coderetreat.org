@@ -7,3 +7,4 @@ node_modules
 .cache
 js/bundled/
 .idea
+_data/podcast.*
