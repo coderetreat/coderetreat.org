@@ -1,1 +1,1926 @@
-{"declaration":{"attributes":{"version":"1.0","encoding":"UTF-8"}},"elements":[{"type":"instruction","name":"xml-stylesheet","instruction":"href=\"http://www.blogger.com/styles/atom.css\" type=\"text/css\""},{"type":"element","name":"feed","attributes":{"xmlns":"http://www.w3.org/2005/Atom","xmlns:openSearch":"http://a9.com/-/spec/opensearchrss/1.0/","xmlns:blogger":"http://schemas.google.com/blogger/2008","xmlns:georss":"http://www.georss.org/georss","xmlns:gd":"http://schemas.google.com/g/2005","xmlns:thr":"http://purl.org/syndication/thread/1.0"},"elements":[{"type":"element","name":"id","elements":[{"type":"text","text":"tag:blogger.com,1999:blog-7232365251100855767"}]},{"type":"element","name":"updated","elements":[{"type":"text","text":"2020-06-22T23:26:34.410+02:00"}]},{"type":"element","name":"category","attributes":{"term":"facilitation"}},{"type":"element","name":"category","attributes":{"term":"overview"}},{"type":"element","name":"category","attributes":{"term":"guest"}},{"type":"element","name":"category","attributes":{"term":"Game of Life"}},{"type":"element","name":"category","attributes":{"term":"constraints"}},{"type":"element","name":"category","attributes":{"term":"pair-programming"}},{"type":"element","name":"category","attributes":{"term":"top3"}},{"type":"element","name":"category","attributes":{"term":"hosting"}},{"type":"element","name":"category","attributes":{"term":"learnings"}},{"type":"element","name":"category","attributes":{"term":"pair-facilitation"}},{"type":"element","name":"category","attributes":{"term":"participants"}},{"type":"element","name":"category","attributes":{"term":"coding"}},{"type":"element","name":"category","attributes":{"term":"questions"}},{"type":"element","name":"category","attributes":{"term":"retrospective"}},{"type":"element","name":"category","attributes":{"term":"video"}},{"type":"element","name":"category","attributes":{"term":"hands-on"}},{"type":"element","name":"category","attributes":{"term":"lunch"}},{"type":"element","name":"category","attributes":{"term":"mob-programming"}},{"type":"element","name":"category","attributes":{"term":"registration"}},{"type":"element","name":"category","attributes":{"term":"remote"}},{"type":"element","name":"title","attributes":{"type":"text"},"elements":[{"type":"text","text":"Coderetreat Facilitation"}]},{"type":"element","name":"subtitle","attributes":{"type":"html"},"elements":[{"type":"text","text":"A podcast answering questions about Coderetreat hosting, facilitation and participation. It will help you run Coderetreats, Coding Dojos, hands on meetups and classic training."}]},{"type":"element","name":"link","attributes":{"rel":"http://schemas.google.com/g/2005#feed","type":"application/atom+xml","href":"https://coderetreat-facilitation.code-cop.org/feeds/posts/default"}},{"type":"element","name":"link","attributes":{"rel":"self","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default"}},{"type":"element","name":"link","attributes":{"rel":"alternate","type":"text/html","href":"https://coderetreat-facilitation.code-cop.org/"}},{"type":"element","name":"link","attributes":{"rel":"hub","href":"http://pubsubhubbub.appspot.com/"}},{"type":"element","name":"author","elements":[{"type":"element","name":"name","elements":[{"type":"text","text":"Peter Kofler"}]},{"type":"element","name":"uri","elements":[{"type":"text","text":"http://www.blogger.com/profile/09597605582212160361"}]},{"type":"element","name":"email","elements":[{"type":"text","text":"noreply@blogger.com"}]},{"type":"element","name":"gd:image","attributes":{"rel":"http://schemas.google.com/g/2005#thumbnail","width":"32","height":"32","src":"//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"}}]},{"type":"element","name":"generator","attributes":{"version":"7.00","uri":"http://www.blogger.com"},"elements":[{"type":"text","text":"Blogger"}]},{"type":"element","name":"openSearch:totalResults","elements":[{"type":"text","text":"17"}]},{"type":"element","name":"openSearch:startIndex","elements":[{"type":"text","text":"1"}]},{"type":"element","name":"openSearch:itemsPerPage","elements":[{"type":"text","text":"25"}]},{"type":"element","name":"entry","elements":[{"type":"element","name":"id","elements":[{"type":"text","text":"tag:blogger.com,1999:blog-7232365251100855767.post-4188282620042309929"}]},{"type":"element","name":"published","elements":[{"type":"text","text":"2020-06-22T23:12:00.001+02:00"}]},{"type":"element","name":"updated","elements":[{"type":"text","text":"2020-06-22T23:26:34.403+02:00"}]},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"coding"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"constraints"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"guest"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"overview"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"video"}},{"type":"element","name":"title","attributes":{"type":"text"},"elements":[{"type":"text","text":"16: Corey Haines' Cleveland Coderetreat Introduction Part 1"}]},{"type":"element","name":"content","attributes":{"type":"html"},"elements":[{"type":"text","text":"In this episode <a href=\"https://twitter.com/coreyhaines\">Corey Haines</a> will introduce you to: <ul><li>The goal of the Coderetreat</li><li>The 4 Rules of Simple Design</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/16---Corey-Haines-Cleveland-Coderetreat-Introduction-Part-1.mp3\">MP3 (10 minutes - 18 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p> <p>Check out the full video here:</p><iframe src=\"https://player.vimeo.com/video/18955165\" width=\"560\" height=\"315\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe> Material in this episode: <ul><li><a href=\"https://vimeo.com/18955165\">Corey Haines' Cleveland Code Retreat Introduction</a> from <a href=\"https://vimeo.com/coreyhaines\">Corey Haines</a> on <a href=\"https://vimeo.com\">Vimeo</a></li><li><a href=\"http://blog.coreyhaines.com/2011/01/on-goals-of-coderetreat.html\">On the goals of Coderetreat</a></li><li><a href=\"https://martinfowler.com/bliki/BeckDesignRules.html\">Kent Beck's four rules of simple design</a></li></ul><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a>.)</small>"}]},{"type":"element","name":"link","attributes":{"rel":"replies","type":"text/html","href":"https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=4188282620042309929&isPopup=true","title":"0 Comments"}},{"type":"element","name":"link","attributes":{"rel":"edit","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/4188282620042309929"}},{"type":"element","name":"link","attributes":{"rel":"self","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/4188282620042309929"}},{"type":"element","name":"link","attributes":{"rel":"alternate","type":"text/html","href":"https://coderetreat-facilitation.code-cop.org/2020/06/16-corey-haines-cleveland-coderetreat.html","title":"16: Corey Haines' Cleveland Coderetreat Introduction Part 1"}},{"type":"element","name":"author","elements":[{"type":"element","name":"name","elements":[{"type":"text","text":"Peter Kofler"}]},{"type":"element","name":"uri","elements":[{"type":"text","text":"http://www.blogger.com/profile/09597605582212160361"}]},{"type":"element","name":"email","elements":[{"type":"text","text":"noreply@blogger.com"}]},{"type":"element","name":"gd:image","attributes":{"rel":"http://schemas.google.com/g/2005#thumbnail","width":"32","height":"32","src":"//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"}}]},{"type":"element","name":"thr:total","elements":[{"type":"text","text":"0"}]}]},{"type":"element","name":"entry","elements":[{"type":"element","name":"id","elements":[{"type":"text","text":"tag:blogger.com,1999:blog-7232365251100855767.post-1690785732789209564"}]},{"type":"element","name":"published","elements":[{"type":"text","text":"2020-06-18T09:37:00.000+02:00"}]},{"type":"element","name":"updated","elements":[{"type":"text","text":"2020-06-18T09:37:01.562+02:00"}]},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"facilitation"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"hosting"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"pair-programming"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"top3"}},{"type":"element","name":"title","attributes":{"type":"text"},"elements":[{"type":"text","text":"15: The intro, facilitate forming pairs and difference to a Coding Dojo"}]},{"type":"element","name":"content","attributes":{"type":"html"},"elements":[{"type":"text","text":"This episode contains: <ul><li>What to put into the intro for the day?</li><li>How to facilitate forming pairs?</li><li>Which are the differences between organizing a Coderetreat and a Coding Dojo night?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/15---The-intro,-facilitate-forming-pairs-and-difference-to-a-Coding-Dojo.mp3\">MP3 (8 minutes - 12 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"}]},{"type":"element","name":"link","attributes":{"rel":"replies","type":"text/html","href":"https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=1690785732789209564&isPopup=true","title":"0 Comments"}},{"type":"element","name":"link","attributes":{"rel":"edit","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/1690785732789209564"}},{"type":"element","name":"link","attributes":{"rel":"self","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/1690785732789209564"}},{"type":"element","name":"link","attributes":{"rel":"alternate","type":"text/html","href":"https://coderetreat-facilitation.code-cop.org/2020/06/15-intro-facilitate-forming-pairs-and.html","title":"15: The intro, facilitate forming pairs and difference to a Coding Dojo"}},{"type":"element","name":"author","elements":[{"type":"element","name":"name","elements":[{"type":"text","text":"Peter Kofler"}]},{"type":"element","name":"uri","elements":[{"type":"text","text":"http://www.blogger.com/profile/09597605582212160361"}]},{"type":"element","name":"email","elements":[{"type":"text","text":"noreply@blogger.com"}]},{"type":"element","name":"gd:image","attributes":{"rel":"http://schemas.google.com/g/2005#thumbnail","width":"32","height":"32","src":"//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"}}]},{"type":"element","name":"thr:total","elements":[{"type":"text","text":"0"}]}]},{"type":"element","name":"entry","elements":[{"type":"element","name":"id","elements":[{"type":"text","text":"tag:blogger.com,1999:blog-7232365251100855767.post-8994671586385163950"}]},{"type":"element","name":"published","elements":[{"type":"text","text":"2020-05-18T07:59:00.000+02:00"}]},{"type":"element","name":"updated","elements":[{"type":"text","text":"2020-05-18T08:19:05.383+02:00"}]},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"guest"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"learnings"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"overview"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"video"}},{"type":"element","name":"title","attributes":{"type":"text"},"elements":[{"type":"text","text":"14: Alex Bolboaca's Message for Coderetreat Attendees"}]},{"type":"element","name":"content","attributes":{"type":"html"},"elements":[{"type":"text","text":"In this episode <a href=\"https://alexbolboaca.ro/\">Alex Bolboaca</a> will answer the following questions: <ul><li>What makes Coderetreats magical?</li><li>How to get the most out of a Coderetreat?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/14---Alex-Bolboacas-Message-for-Coderetreat-Attendees.mp3\">MP3 (7 minutes - 10 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p> <p>Check out the video here:</p><iframe src=\"https://player.vimeo.com/video/145525880\" width=\"640\" height=\"360\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe> Material in this episode: <ul><li><a href=\"https://vimeo.com/145525880\">Alex Bolboaca on Coderetreat</a> from <a href=\"https://vimeo.com/agileworks\">AgileWorks</a> on <a href=\"https://vimeo.com\">Vimeo</a></li><li><a href=\"https://alexbolboaca.ro/coderetreat/how-to-get-the-most-out-of-a-code-retreat\">How to get the most out of a Code Retreat</a></li><li><a href=\"https://coderetreat-facilitation.code-cop.org/2020/02/deleting-code-questions-that-people-ask.html\">Episode 07: Deleting the code</a></li><li><a href=\"https://coderetreat-facilitation.code-cop.org/2019/11/number-participants-pizza-and-seeing.html\">Episode 01: Seeing different languages</a></li></ul><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a>.)</small>"}]},{"type":"element","name":"link","attributes":{"rel":"replies","type":"text/html","href":"https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=8994671586385163950&isPopup=true","title":"0 Comments"}},{"type":"element","name":"link","attributes":{"rel":"edit","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/8994671586385163950"}},{"type":"element","name":"link","attributes":{"rel":"self","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/8994671586385163950"}},{"type":"element","name":"link","attributes":{"rel":"alternate","type":"text/html","href":"https://coderetreat-facilitation.code-cop.org/2020/05/14-alex-bolboacas-message-for.html","title":"14: Alex Bolboaca's Message for Coderetreat Attendees"}},{"type":"element","name":"author","elements":[{"type":"element","name":"name","elements":[{"type":"text","text":"Peter Kofler"}]},{"type":"element","name":"uri","elements":[{"type":"text","text":"http://www.blogger.com/profile/09597605582212160361"}]},{"type":"element","name":"email","elements":[{"type":"text","text":"noreply@blogger.com"}]},{"type":"element","name":"gd:image","attributes":{"rel":"http://schemas.google.com/g/2005#thumbnail","width":"32","height":"32","src":"//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"}}]},{"type":"element","name":"thr:total","elements":[{"type":"text","text":"0"}]}]},{"type":"element","name":"entry","elements":[{"type":"element","name":"id","elements":[{"type":"text","text":"tag:blogger.com,1999:blog-7232365251100855767.post-591371871615118133"}]},{"type":"element","name":"published","elements":[{"type":"text","text":"2020-05-11T23:48:00.002+02:00"}]},{"type":"element","name":"updated","elements":[{"type":"text","text":"2020-05-18T08:23:48.480+02:00"}]},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"constraints"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"facilitation"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"learnings"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"pair-programming"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"top3"}},{"type":"element","name":"title","attributes":{"type":"text"},"elements":[{"type":"text","text":"13: Primary job of facilitator, first session without pairing and supporting participants' learning journey"}]},{"type":"element","name":"content","attributes":{"type":"html"},"elements":[{"type":"text","text":"Today I talk about the following questions: <ul><li>What is your primary job as facilitator?</li><li>Is it allowed to run the first session without any pairing?</li><li>What is Ping Pong?</li><li>How to support participants to continue their learning journey after the Coderetreat?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/13---Primary-job-of-facilitator,-first-session-without-pairing-and-supporting-participants-learning-journey.mp3\">MP3 (9 minutes - 13 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p>Mentioned in this episode: <ul><li><a href=\"https://coderetreat-facilitation.code-cop.org/2020/03/coding-dojo-mindset-and-game-of-life-is.html\">Episode 10: Coding Dojo Mindset</a></li><li><a href=\"https://blog.code-cop.org/2017/10/difficulty-of-coding-exercises.html\">Managing the Difficulty of Coding Exercises</a></li><li><a href=\"https://coderetreat-facilitation.code-cop.org/2020/04/12-what-to-look-for-and-ask-about-other.html\">Episode 12: What to look for and ask about other than the code</a></li><li><a href=\"https://coderetreat-facilitation.code-cop.org/2020/02/why-pair-program-finish-game-of-life.html\">Episode 08: Why pair program</a></li><li><a href=\"https://coderetreat-facilitation.code-cop.org/2020/02/deleting-code-questions-that-people-ask.html\">Episode 07: single participant staying alone</a></li><li><a href=\"https://blog.code-cop.org/2016/11/followup-global-day-of-coderetreat-2016.html\">A box of things to take from the Coderetreat</a></li></ul><p>Thanks to <a href=\"https://twitter.com/dertseha\">Christian Haas</a> for feedback on audio quality of this podcast.</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"}]},{"type":"element","name":"link","attributes":{"rel":"replies","type":"text/html","href":"https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=591371871615118133&isPopup=true","title":"0 Comments"}},{"type":"element","name":"link","attributes":{"rel":"edit","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/591371871615118133"}},{"type":"element","name":"link","attributes":{"rel":"self","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/591371871615118133"}},{"type":"element","name":"link","attributes":{"rel":"alternate","type":"text/html","href":"https://coderetreat-facilitation.code-cop.org/2020/05/13-primary-job-of-facilitator-first.html","title":"13: Primary job of facilitator, first session without pairing and supporting participants' learning journey"}},{"type":"element","name":"author","elements":[{"type":"element","name":"name","elements":[{"type":"text","text":"Peter Kofler"}]},{"type":"element","name":"uri","elements":[{"type":"text","text":"http://www.blogger.com/profile/09597605582212160361"}]},{"type":"element","name":"email","elements":[{"type":"text","text":"noreply@blogger.com"}]},{"type":"element","name":"gd:image","attributes":{"rel":"http://schemas.google.com/g/2005#thumbnail","width":"32","height":"32","src":"//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"}}]},{"type":"element","name":"thr:total","elements":[{"type":"text","text":"0"}]}]},{"type":"element","name":"entry","elements":[{"type":"element","name":"id","elements":[{"type":"text","text":"tag:blogger.com,1999:blog-7232365251100855767.post-8613242995955216259"}]},{"type":"element","name":"published","elements":[{"type":"text","text":"2020-04-27T06:47:00.000+02:00"}]},{"type":"element","name":"updated","elements":[{"type":"text","text":"2020-05-05T22:47:28.773+02:00"}]},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"facilitation"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"guest"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"retrospective"}},{"type":"element","name":"title","attributes":{"type":"text"},"elements":[{"type":"text","text":"12: What to look for and ask about other than the code"}]},{"type":"element","name":"content","attributes":{"type":"html"},"elements":[{"type":"text","text":"In this episode my co-facilitator <a href=\"https://www.linkedin.com/in/oliver-spann/\">Oliver Spann</a> shares some tips for non-coding facilitators: <ul><li>What to look for during sessions (while people work) other than the code?</li><li>What to ask in retrospectives if you did not understand the code?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/12---What-to-look-for-and-ask-about-other-than-the-code.mp3\">MP3 (8 minutes - 6 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><p>Thank you Oliver for sharing your knowledge. You can learn more from Oliver at <a href=\"https://medium.com/@olivercecilspann\">his blog</a>. Related to this episode is Oliver's latest article <a href=\"https://medium.com/@olivercecilspann/can-you-facilitate-a-coderetreat-as-a-scrum-master-f18a39274560\">Can you facilitate a Coderetreat as a Scrum Master?</a></p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"}]},{"type":"element","name":"link","attributes":{"rel":"replies","type":"text/html","href":"https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=8613242995955216259&isPopup=true","title":"0 Comments"}},{"type":"element","name":"link","attributes":{"rel":"edit","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/8613242995955216259"}},{"type":"element","name":"link","attributes":{"rel":"self","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/8613242995955216259"}},{"type":"element","name":"link","attributes":{"rel":"alternate","type":"text/html","href":"https://coderetreat-facilitation.code-cop.org/2020/04/12-what-to-look-for-and-ask-about-other.html","title":"12: What to look for and ask about other than the code"}},{"type":"element","name":"author","elements":[{"type":"element","name":"name","elements":[{"type":"text","text":"Peter Kofler"}]},{"type":"element","name":"uri","elements":[{"type":"text","text":"http://www.blogger.com/profile/09597605582212160361"}]},{"type":"element","name":"email","elements":[{"type":"text","text":"noreply@blogger.com"}]},{"type":"element","name":"gd:image","attributes":{"rel":"http://schemas.google.com/g/2005#thumbnail","width":"32","height":"32","src":"//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"}}]},{"type":"element","name":"thr:total","elements":[{"type":"text","text":"0"}]}]},{"type":"element","name":"entry","elements":[{"type":"element","name":"id","elements":[{"type":"text","text":"tag:blogger.com,1999:blog-7232365251100855767.post-6857565190470580608"}]},{"type":"element","name":"published","elements":[{"type":"text","text":"2020-04-18T20:19:00.000+02:00"}]},{"type":"element","name":"updated","elements":[{"type":"text","text":"2020-04-26T21:58:15.808+02:00"}]},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"constraints"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"facilitation"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"hosting"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"overview"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"remote"}},{"type":"element","name":"title","attributes":{"type":"text"},"elements":[{"type":"text","text":"11: A remote Coderetreat and overview of constraints"}]},{"type":"element","name":"content","attributes":{"type":"html"},"elements":[{"type":"text","text":"In this episode: <ul><li>How to run a remote Coderetreat?</li><li>What are constraints?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/11---A-remote-Coderetreat-and-overview-of-constraints.mp3\">MP3 (8 minutes - 12 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p>Material used for this episode: <ul><li><a href=\"https://medium.com/@philborlin/retrospective-on-a-remote-global-day-of-coderetreat-ace1baf20bae\">Retrospective on a Remote Global Day of Coderetreat</a></li><li><a href=\"https://manynames.sevensuns.at/technojoy/2014/12/2080-a-coding-dojo-constraint-just-for-fun.html\">20/80 - A coding dojo constraint just for fun</a></li></ul><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"}]},{"type":"element","name":"link","attributes":{"rel":"replies","type":"text/html","href":"https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=6857565190470580608&isPopup=true","title":"0 Comments"}},{"type":"element","name":"link","attributes":{"rel":"edit","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/6857565190470580608"}},{"type":"element","name":"link","attributes":{"rel":"self","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/6857565190470580608"}},{"type":"element","name":"link","attributes":{"rel":"alternate","type":"text/html","href":"https://coderetreat-facilitation.code-cop.org/2020/04/11-remote-coderetreat-and-overview-of.html","title":"11: A remote Coderetreat and overview of constraints"}},{"type":"element","name":"author","elements":[{"type":"element","name":"name","elements":[{"type":"text","text":"Peter Kofler"}]},{"type":"element","name":"uri","elements":[{"type":"text","text":"http://www.blogger.com/profile/09597605582212160361"}]},{"type":"element","name":"email","elements":[{"type":"text","text":"noreply@blogger.com"}]},{"type":"element","name":"gd:image","attributes":{"rel":"http://schemas.google.com/g/2005#thumbnail","width":"32","height":"32","src":"//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"}}]},{"type":"element","name":"thr:total","elements":[{"type":"text","text":"0"}]}]},{"type":"element","name":"entry","elements":[{"type":"element","name":"id","elements":[{"type":"text","text":"tag:blogger.com,1999:blog-7232365251100855767.post-1365751981227488973"}]},{"type":"element","name":"published","elements":[{"type":"text","text":"2020-03-31T23:28:00.001+02:00"}]},{"type":"element","name":"updated","elements":[{"type":"text","text":"2020-03-31T23:28:14.812+02:00"}]},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"facilitation"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"Game of Life"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"overview"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"top3"}},{"type":"element","name":"title","attributes":{"type":"text"},"elements":[{"type":"text","text":"Coding Dojo Mindset and Game of Life is mandatory"}]},{"type":"element","name":"content","attributes":{"type":"html"},"elements":[{"type":"text","text":"In this episode I am answering <ul><li>What is the Coding Dojo Mindset? (What is the core mindset of a Coderetreat?)</li><li>Is Game of Life mandatory?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/10---Coding-Dojo-Mindset-and-Game-of-Life-is-mandatory.mp3\">MP3 (8 minutes - 12 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p>Mentioned in this episode: <ul><li><a href=\"https://alexbolboaca.ro/coderetreat/the-coderetreat-problem-is-not-the-problem\">Alex Bolboaca: The Coderetreat Problem Is Not The Problem</a></li></ul><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"}]},{"type":"element","name":"link","attributes":{"rel":"replies","type":"text/html","href":"https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=1365751981227488973&isPopup=true","title":"0 Comments"}},{"type":"element","name":"link","attributes":{"rel":"edit","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/1365751981227488973"}},{"type":"element","name":"link","attributes":{"rel":"self","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/1365751981227488973"}},{"type":"element","name":"link","attributes":{"rel":"alternate","type":"text/html","href":"https://coderetreat-facilitation.code-cop.org/2020/03/coding-dojo-mindset-and-game-of-life-is.html","title":"Coding Dojo Mindset and Game of Life is mandatory"}},{"type":"element","name":"author","elements":[{"type":"element","name":"name","elements":[{"type":"text","text":"Peter Kofler"}]},{"type":"element","name":"uri","elements":[{"type":"text","text":"http://www.blogger.com/profile/09597605582212160361"}]},{"type":"element","name":"email","elements":[{"type":"text","text":"noreply@blogger.com"}]},{"type":"element","name":"gd:image","attributes":{"rel":"http://schemas.google.com/g/2005#thumbnail","width":"32","height":"32","src":"//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"}}]},{"type":"element","name":"thr:total","elements":[{"type":"text","text":"0"}]}]},{"type":"element","name":"entry","elements":[{"type":"element","name":"id","elements":[{"type":"text","text":"tag:blogger.com,1999:blog-7232365251100855767.post-2635335793854750304"}]},{"type":"element","name":"published","elements":[{"type":"text","text":"2020-03-15T23:49:00.000+01:00"}]},{"type":"element","name":"updated","elements":[{"type":"text","text":"2020-03-15T23:49:28.853+01:00"}]},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"constraints"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"Game of Life"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"guest"}},{"type":"element","name":"title","attributes":{"type":"text"},"elements":[{"type":"text","text":"Constraint for first session and alternative exercises for Game of Life"}]},{"type":"element","name":"content","attributes":{"type":"html"},"elements":[{"type":"text","text":"In this (longer) episode I asked <a href=\"https://www.sandra-parsick.de/\">Sandra Parsick</a> about <ul><li>the best constraint for the first session and</li><li>alternative exercises for Game of Life.</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/09---Constraint-for-first-session-and-alternative-exercises-for-Game-of-Life.mp3\">MP3 (12 minutes - 9 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><p>Thank you Sandra.</p>Mentioned in this episode: <ul><li><a href=\"https://alexbolboaca.ro/coderetreat/the-coderetreat-problem-is-not-the-problem\">The Coderetreat Problem Is Not The Problem</a></li><li><a href=\"https://kata-log.rocks/mars-rover-kata\">Mars Rover kata</a></li><li><a href=\"https://en.wikipedia.org/wiki/Snake_(video_game)\">Snake/Nibbles/Tron</a></li></ul><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"}]},{"type":"element","name":"link","attributes":{"rel":"replies","type":"text/html","href":"https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=2635335793854750304&isPopup=true","title":"0 Comments"}},{"type":"element","name":"link","attributes":{"rel":"edit","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/2635335793854750304"}},{"type":"element","name":"link","attributes":{"rel":"self","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/2635335793854750304"}},{"type":"element","name":"link","attributes":{"rel":"alternate","type":"text/html","href":"https://coderetreat-facilitation.code-cop.org/2020/03/constraint-for-first-session-and.html","title":"Constraint for first session and alternative exercises for Game of Life"}},{"type":"element","name":"author","elements":[{"type":"element","name":"name","elements":[{"type":"text","text":"Peter Kofler"}]},{"type":"element","name":"uri","elements":[{"type":"text","text":"http://www.blogger.com/profile/09597605582212160361"}]},{"type":"element","name":"email","elements":[{"type":"text","text":"noreply@blogger.com"}]},{"type":"element","name":"gd:image","attributes":{"rel":"http://schemas.google.com/g/2005#thumbnail","width":"32","height":"32","src":"//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"}}]},{"type":"element","name":"thr:total","elements":[{"type":"text","text":"0"}]}]},{"type":"element","name":"entry","elements":[{"type":"element","name":"id","elements":[{"type":"text","text":"tag:blogger.com,1999:blog-7232365251100855767.post-5839554246386478285"}]},{"type":"element","name":"published","elements":[{"type":"text","text":"2020-02-16T17:11:00.000+01:00"}]},{"type":"element","name":"updated","elements":[{"type":"text","text":"2020-02-16T17:11:11.766+01:00"}]},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"facilitation"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"Game of Life"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"overview"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"pair-facilitation"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"pair-programming"}},{"type":"element","name":"title","attributes":{"type":"text"},"elements":[{"type":"text","text":"Why pair program, finish the Game of Life and how many facilitators do we need"}]},{"type":"element","name":"content","attributes":{"type":"html"},"elements":[{"type":"text","text":"In this episode: <ul><li>Why do we pair program the whole Coderetreat?</li><li>Is it possible to finish the Game of Life assignment in a single session?</li><li>How many facilitators do we need and when do we need more than one?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/08---Why-pair-program,-finish-the-Game-of-Life-and-how-many-facilitators-do-we-need.mp3\">MP3 (8 minutes - 12 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"}]},{"type":"element","name":"link","attributes":{"rel":"replies","type":"text/html","href":"https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=5839554246386478285&isPopup=true","title":"0 Comments"}},{"type":"element","name":"link","attributes":{"rel":"edit","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/5839554246386478285"}},{"type":"element","name":"link","attributes":{"rel":"self","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/5839554246386478285"}},{"type":"element","name":"link","attributes":{"rel":"alternate","type":"text/html","href":"https://coderetreat-facilitation.code-cop.org/2020/02/why-pair-program-finish-game-of-life.html","title":"Why pair program, finish the Game of Life and how many facilitators do we need"}},{"type":"element","name":"author","elements":[{"type":"element","name":"name","elements":[{"type":"text","text":"Peter Kofler"}]},{"type":"element","name":"uri","elements":[{"type":"text","text":"http://www.blogger.com/profile/09597605582212160361"}]},{"type":"element","name":"email","elements":[{"type":"text","text":"noreply@blogger.com"}]},{"type":"element","name":"gd:image","attributes":{"rel":"http://schemas.google.com/g/2005#thumbnail","width":"32","height":"32","src":"//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"}}]},{"type":"element","name":"thr:total","elements":[{"type":"text","text":"0"}]}]},{"type":"element","name":"entry","elements":[{"type":"element","name":"id","elements":[{"type":"text","text":"tag:blogger.com,1999:blog-7232365251100855767.post-9151114534139066088"}]},{"type":"element","name":"published","elements":[{"type":"text","text":"2020-02-03T08:10:00.000+01:00"}]},{"type":"element","name":"updated","elements":[{"type":"text","text":"2020-04-15T19:08:39.071+02:00"}]},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"coding"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"overview"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"pair-programming"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"questions"}},{"type":"element","name":"title","attributes":{"type":"text"},"elements":[{"type":"text","text":"Deleting the code, questions that people ask and single participant staying alone"}]},{"type":"element","name":"content","attributes":{"type":"html"},"elements":[{"type":"text","text":"In this episode I answer these questions: <ul><li>Why do we delete the code after each session?</li><li>How many questions do people ask?</li><li>What about a single participant staying alone?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/07---Deleting-the-code,-questions-that-people-ask-and-single-participant-staying-alone.mp3\">MP3 (9 minutes - 14 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"}]},{"type":"element","name":"link","attributes":{"rel":"replies","type":"text/html","href":"https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=9151114534139066088&isPopup=true","title":"0 Comments"}},{"type":"element","name":"link","attributes":{"rel":"edit","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/9151114534139066088"}},{"type":"element","name":"link","attributes":{"rel":"self","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/9151114534139066088"}},{"type":"element","name":"link","attributes":{"rel":"alternate","type":"text/html","href":"https://coderetreat-facilitation.code-cop.org/2020/02/deleting-code-questions-that-people-ask.html","title":"Deleting the code, questions that people ask and single participant staying alone"}},{"type":"element","name":"author","elements":[{"type":"element","name":"name","elements":[{"type":"text","text":"Peter Kofler"}]},{"type":"element","name":"uri","elements":[{"type":"text","text":"http://www.blogger.com/profile/09597605582212160361"}]},{"type":"element","name":"email","elements":[{"type":"text","text":"noreply@blogger.com"}]},{"type":"element","name":"gd:image","attributes":{"rel":"http://schemas.google.com/g/2005#thumbnail","width":"32","height":"32","src":"//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"}}]},{"type":"element","name":"thr:total","elements":[{"type":"text","text":"0"}]}]},{"type":"element","name":"entry","elements":[{"type":"element","name":"id","elements":[{"type":"text","text":"tag:blogger.com,1999:blog-7232365251100855767.post-7990567405854346751"}]},{"type":"element","name":"published","elements":[{"type":"text","text":"2020-01-20T08:50:00.000+01:00"}]},{"type":"element","name":"updated","elements":[{"type":"text","text":"2020-01-20T08:50:55.621+01:00"}]},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"guest"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"mob-programming"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"pair-facilitation"}},{"type":"element","name":"title","attributes":{"type":"text"},"elements":[{"type":"text","text":"Facilitating mob programming and choosing your pair facilitator"}]},{"type":"element","name":"content","attributes":{"type":"html"},"elements":[{"type":"text","text":"This is the second part of my discussion with <a href=\"https://www.lisihocke.com/\">Lisi Hocke</a>. (The first part is <a href=\"https://coderetreat-facilitation.code-cop.org/2019/12/most-important-about-workshops-and.html\">here</a>.) This time we talked about: <ul><li>How to facilitate a mob programming session?</li><li>What to look for in your pair facilitator?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/06---Facilitating-mob-programming-and-choosing-your-pair-facilitator.mp3\">MP3 (9 minutes - 6.5 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><p>Thank you Lisi for visiting the Coderetreat Facilitation podcast. You can reach Lisi at <a href=\"https://twitter.com/lisihocke\">@lisihocke</a>.</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"}]},{"type":"element","name":"link","attributes":{"rel":"replies","type":"text/html","href":"https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=7990567405854346751&isPopup=true","title":"0 Comments"}},{"type":"element","name":"link","attributes":{"rel":"edit","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/7990567405854346751"}},{"type":"element","name":"link","attributes":{"rel":"self","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/7990567405854346751"}},{"type":"element","name":"link","attributes":{"rel":"alternate","type":"text/html","href":"https://coderetreat-facilitation.code-cop.org/2020/01/facilitating-mob-programming-and.html","title":"Facilitating mob programming and choosing your pair facilitator"}},{"type":"element","name":"author","elements":[{"type":"element","name":"name","elements":[{"type":"text","text":"Peter Kofler"}]},{"type":"element","name":"uri","elements":[{"type":"text","text":"http://www.blogger.com/profile/09597605582212160361"}]},{"type":"element","name":"email","elements":[{"type":"text","text":"noreply@blogger.com"}]},{"type":"element","name":"gd:image","attributes":{"rel":"http://schemas.google.com/g/2005#thumbnail","width":"32","height":"32","src":"//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"}}]},{"type":"element","name":"thr:total","elements":[{"type":"text","text":"0"}]}]},{"type":"element","name":"entry","elements":[{"type":"element","name":"id","elements":[{"type":"text","text":"tag:blogger.com,1999:blog-7232365251100855767.post-556904392865849351"}]},{"type":"element","name":"published","elements":[{"type":"text","text":"2020-01-09T14:05:00.000+01:00"}]},{"type":"element","name":"updated","elements":[{"type":"text","text":"2020-04-15T18:34:28.389+02:00"}]},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"facilitation"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"overview"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"participants"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"top3"}},{"type":"element","name":"title","attributes":{"type":"text"},"elements":[{"type":"text","text":"Day structure, facilitation styles and non developers showing up"}]},{"type":"element","name":"content","attributes":{"type":"html"},"elements":[{"type":"text","text":"In this episode I am talking about <ul><li>Coderetreat Day Structure,</li><li>the best way to facilitate and</li><li>non developers participating.</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/05---Day-structure,-facilitation-styles-and-non-developers-showing-up.mp3\">MP3 (9 minutes - 13 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><p>Mentioned in this episode: <a href=\"https://www.coderetreat.org/pages/facilitating/structure-of-a-coderetreat/\">Structure of a Coderetreat</a></p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"}]},{"type":"element","name":"link","attributes":{"rel":"replies","type":"text/html","href":"https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=556904392865849351&isPopup=true","title":"0 Comments"}},{"type":"element","name":"link","attributes":{"rel":"edit","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/556904392865849351"}},{"type":"element","name":"link","attributes":{"rel":"self","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/556904392865849351"}},{"type":"element","name":"link","attributes":{"rel":"alternate","type":"text/html","href":"https://coderetreat-facilitation.code-cop.org/2020/01/day-structure-facilitation-styles-and.html","title":"Day structure, facilitation styles and non developers showing up"}},{"type":"element","name":"author","elements":[{"type":"element","name":"name","elements":[{"type":"text","text":"Peter Kofler"}]},{"type":"element","name":"uri","elements":[{"type":"text","text":"http://www.blogger.com/profile/09597605582212160361"}]},{"type":"element","name":"email","elements":[{"type":"text","text":"noreply@blogger.com"}]},{"type":"element","name":"gd:image","attributes":{"rel":"http://schemas.google.com/g/2005#thumbnail","width":"32","height":"32","src":"//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"}}]},{"type":"element","name":"thr:total","elements":[{"type":"text","text":"0"}]}]},{"type":"element","name":"entry","elements":[{"type":"element","name":"id","elements":[{"type":"text","text":"tag:blogger.com,1999:blog-7232365251100855767.post-4786828078982253832"}]},{"type":"element","name":"published","elements":[{"type":"text","text":"2019-12-23T06:00:00.000+01:00"}]},{"type":"element","name":"updated","elements":[{"type":"text","text":"2020-01-27T14:11:04.124+01:00"}]},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"facilitation"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"overview"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"questions"}},{"type":"element","name":"title","attributes":{"type":"text"},"elements":[{"type":"text","text":"What is a Coderetreat, organisers participating in coding and answering questions"}]},{"type":"element","name":"content","attributes":{"type":"html"},"elements":[{"type":"text","text":"In this episode: <ul><li>What is a Coderetreat?</li><li>Should organizers participate in coding?</li><li>How much should a facilitator answer questions from participants?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/04---What-is-a-Coderetreat,-organisers-participating-in-coding-and-answering-questions.mp3\">MP3 (9 minutes - 13 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><p>Thanks to <a href=\"https://twitter.com/dtanzer\">David Tanzer</a> and <a href=\"https://twitter.com/mrksdck\">Markus Decke</a> for feedback on this podcast.</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"}]},{"type":"element","name":"link","attributes":{"rel":"replies","type":"text/html","href":"https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=4786828078982253832&isPopup=true","title":"0 Comments"}},{"type":"element","name":"link","attributes":{"rel":"edit","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/4786828078982253832"}},{"type":"element","name":"link","attributes":{"rel":"self","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/4786828078982253832"}},{"type":"element","name":"link","attributes":{"rel":"alternate","type":"text/html","href":"https://coderetreat-facilitation.code-cop.org/2019/12/what-is-coderetreat-organisers.html","title":"What is a Coderetreat, organisers participating in coding and answering questions"}},{"type":"element","name":"author","elements":[{"type":"element","name":"name","elements":[{"type":"text","text":"Peter Kofler"}]},{"type":"element","name":"uri","elements":[{"type":"text","text":"http://www.blogger.com/profile/09597605582212160361"}]},{"type":"element","name":"email","elements":[{"type":"text","text":"noreply@blogger.com"}]},{"type":"element","name":"gd:image","attributes":{"rel":"http://schemas.google.com/g/2005#thumbnail","width":"32","height":"32","src":"//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"}}]},{"type":"element","name":"thr:total","elements":[{"type":"text","text":"0"}]}]},{"type":"element","name":"entry","elements":[{"type":"element","name":"id","elements":[{"type":"text","text":"tag:blogger.com,1999:blog-7232365251100855767.post-1507039770344445870"}]},{"type":"element","name":"published","elements":[{"type":"text","text":"2019-12-21T00:24:00.000+01:00"}]},{"type":"element","name":"updated","elements":[{"type":"text","text":"2019-12-21T00:24:00.636+01:00"}]},{"type":"element","name":"title","attributes":{"type":"text"},"elements":[{"type":"text","text":"About This Podcast"}]},{"type":"element","name":"content","attributes":{"type":"html"},"elements":[{"type":"text","text":"<p>I regularly <a href=\"https://blog.code-cop.org/2016/07/hosting-public-coderetreats.html\">facilitate Coderetreats</a> - as part of my work as <a href=\"https://www.code-cop.org/\">Code Cop</a> and for the local Software Crafters community. To support people organising events in other cities, I run Coderetreat facilitation trainings each year, especially in the months before the Global Day (of Coderetreat). Based on the feedback I get, e.g. <i>Thanks for the training today! Very helpful!</i> I see that these trainings are helpful for people who want to run Coderetreats. Often people ask the same questions, so I decided to record the most common questions. I will publish the recordings as I create them in this podcast.</p> <p>Subscribe to it here: <b><a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">RSS Feed</a></b></p> <p>In this podcast I am answering questions about Coderetreat hosting, facilitation and participation. It will help you run Coderetreats, Coding Dojos, hands on meetups and even classic training. Each episode covers two to three questions and takes up to 10 minutes. From time to time I will invite guest facilitators to discuss with me. In the first few episodes I will also cover basic questions about the Coderetreat itself, e.g. What is a Coderetreat?</p> <p>As each episode is short, I plan to release at least two each month. While I am too late for #GDCR19, there should be around 30 questions and answers ready for people who want to help organising the next #GDCR20. That would be like three hours facilitation training. That would be great. Let's see how far I get.</p> <p>If you have any questions regarding your Coderetreat, Coding Dojo or hands-on workshop, please send me an email or leave a comment. I will answer the question in one of the next episodes.</p>"}]},{"type":"element","name":"link","attributes":{"rel":"replies","type":"text/html","href":"https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=1507039770344445870&isPopup=true","title":"0 Comments"}},{"type":"element","name":"link","attributes":{"rel":"edit","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/1507039770344445870"}},{"type":"element","name":"link","attributes":{"rel":"self","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/1507039770344445870"}},{"type":"element","name":"link","attributes":{"rel":"alternate","type":"text/html","href":"https://coderetreat-facilitation.code-cop.org/2019/12/about-this-podcast.html","title":"About This Podcast"}},{"type":"element","name":"author","elements":[{"type":"element","name":"name","elements":[{"type":"text","text":"Peter Kofler"}]},{"type":"element","name":"uri","elements":[{"type":"text","text":"http://www.blogger.com/profile/09597605582212160361"}]},{"type":"element","name":"email","elements":[{"type":"text","text":"noreply@blogger.com"}]},{"type":"element","name":"gd:image","attributes":{"rel":"http://schemas.google.com/g/2005#thumbnail","width":"32","height":"32","src":"//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"}}]},{"type":"element","name":"thr:total","elements":[{"type":"text","text":"0"}]}]},{"type":"element","name":"entry","elements":[{"type":"element","name":"id","elements":[{"type":"text","text":"tag:blogger.com,1999:blog-7232365251100855767.post-2653927848515651303"}]},{"type":"element","name":"published","elements":[{"type":"text","text":"2019-12-08T22:14:00.000+01:00"}]},{"type":"element","name":"updated","elements":[{"type":"text","text":"2019-12-08T22:14:10.679+01:00"}]},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"guest"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"hands-on"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"pair-facilitation"}},{"type":"element","name":"title","attributes":{"type":"text"},"elements":[{"type":"text","text":"Most important about workshops and benefits of pair facilitation"}]},{"type":"element","name":"content","attributes":{"type":"html"},"elements":[{"type":"text","text":"In this episode I am asking <a href=\"https://www.lisihocke.com/\">MIATPP Lisi Hocke</a> the following questions: <ul><li>What is the most important thing when running workshops?</li><li>Are there any book recommendations for running hands-on workshops?</li><li>What are the benefits of pair facilitation?</li></ul><p>Download it here: <a href=\"https://www.code-cop.org/podcast/03---Most-important-about-workshops-and-benefits-of-pair-facilitation.mp3\">MP3 (9 minutes - 6.3 Mb)</a></p><p>Lisi, thank you for sharing your experience. You can reach Lisi for further discussions at <a href=\"https://twitter.com/lisihocke\">@lisihocke</a>. Earlier this year, Lisi has been awarded <a href=\"https://agiletestingdays.com/miatpp/\">the MIATPP, short for the Most Influential Agile Testing Professional Person 2019</a>. Congratulations!</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"}]},{"type":"element","name":"link","attributes":{"rel":"replies","type":"text/html","href":"https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=2653927848515651303&isPopup=true","title":"0 Comments"}},{"type":"element","name":"link","attributes":{"rel":"edit","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/2653927848515651303"}},{"type":"element","name":"link","attributes":{"rel":"self","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/2653927848515651303"}},{"type":"element","name":"link","attributes":{"rel":"alternate","type":"text/html","href":"https://coderetreat-facilitation.code-cop.org/2019/12/most-important-about-workshops-and.html","title":"Most important about workshops and benefits of pair facilitation"}},{"type":"element","name":"author","elements":[{"type":"element","name":"name","elements":[{"type":"text","text":"Peter Kofler"}]},{"type":"element","name":"uri","elements":[{"type":"text","text":"http://www.blogger.com/profile/09597605582212160361"}]},{"type":"element","name":"email","elements":[{"type":"text","text":"noreply@blogger.com"}]},{"type":"element","name":"gd:image","attributes":{"rel":"http://schemas.google.com/g/2005#thumbnail","width":"32","height":"32","src":"//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"}}]},{"type":"element","name":"thr:total","elements":[{"type":"text","text":"0"}]}]},{"type":"element","name":"entry","elements":[{"type":"element","name":"id","elements":[{"type":"text","text":"tag:blogger.com,1999:blog-7232365251100855767.post-2215167063935472915"}]},{"type":"element","name":"published","elements":[{"type":"text","text":"2019-11-24T21:37:00.002+01:00"}]},{"type":"element","name":"updated","elements":[{"type":"text","text":"2020-02-16T14:41:38.207+01:00"}]},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"Game of Life"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"participants"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"registration"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"retrospective"}},{"type":"element","name":"title","attributes":{"type":"text"},"elements":[{"type":"text","text":"Minimum number participants, retrospective without observations and explain the Game of Life"}]},{"type":"element","name":"content","attributes":{"type":"html"},"elements":[{"type":"text","text":"In this episode I will answer the following questions: <ul><li>Should we consider a minimum number of participants to run a Coderetreat?</li><li>What to focus on during a retrospective if no \"noticeable\" events had happened during that session?</li><li>How to help new participants get used to the exercise of Game of Life?</li></ul><p><a href=\"https://www.code-cop.org/podcast/02---Minimum-number-participants,-retrospective-without-observations-and-explain-the-Game-of-Life.mp3\">Download it here.</a></p><p>Thanks to my friends Paul Rohorzka, David Leitner and Christian Haas from <a href=\"https://developermelange.github.io/\">Developer Melange</a> and <a href=\"https://twitter.com/rradczewski\">Raimo Radczewski</a> for feedback on this episode.</p><p><a href=\"https://github.com/marcoemrich/game-of-life-rules\">Posters with the rules by Marco Emrich.</a></p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"}]},{"type":"element","name":"link","attributes":{"rel":"replies","type":"text/html","href":"https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=2215167063935472915&isPopup=true","title":"0 Comments"}},{"type":"element","name":"link","attributes":{"rel":"edit","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/2215167063935472915"}},{"type":"element","name":"link","attributes":{"rel":"self","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/2215167063935472915"}},{"type":"element","name":"link","attributes":{"rel":"alternate","type":"text/html","href":"https://coderetreat-facilitation.code-cop.org/2019/11/minimum-number-participants.html","title":"Minimum number participants, retrospective without observations and explain the Game of Life"}},{"type":"element","name":"author","elements":[{"type":"element","name":"name","elements":[{"type":"text","text":"Peter Kofler"}]},{"type":"element","name":"uri","elements":[{"type":"text","text":"http://www.blogger.com/profile/09597605582212160361"}]},{"type":"element","name":"email","elements":[{"type":"text","text":"noreply@blogger.com"}]},{"type":"element","name":"gd:image","attributes":{"rel":"http://schemas.google.com/g/2005#thumbnail","width":"32","height":"32","src":"//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"}}]},{"type":"element","name":"thr:total","elements":[{"type":"text","text":"0"}]}]},{"type":"element","name":"entry","elements":[{"type":"element","name":"id","elements":[{"type":"text","text":"tag:blogger.com,1999:blog-7232365251100855767.post-5893593985530432607"}]},{"type":"element","name":"published","elements":[{"type":"text","text":"2019-11-13T17:35:00.002+01:00"}]},{"type":"element","name":"updated","elements":[{"type":"text","text":"2020-04-15T19:09:35.700+02:00"}]},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"hosting"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"learnings"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"lunch"}},{"type":"element","name":"category","attributes":{"scheme":"http://www.blogger.com/atom/ns#","term":"participants"}},{"type":"element","name":"title","attributes":{"type":"text"},"elements":[{"type":"text","text":"Number participants, pizza and seeing different languages"}]},{"type":"element","name":"content","attributes":{"type":"html"},"elements":[{"type":"text","text":"In this episode I am discussing <ul><li>What is the ideal number of participants?</li><li>Is Pizza allowed for lunch?</li><li>Learning a new language - is that one of the valid outcomes?</li></ul><p><a href=\"https://www.code-cop.org/podcast/01---Number-participants,-pizza-and-seeing-different-languages.mp3\">Download it here.</a></p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"}]},{"type":"element","name":"link","attributes":{"rel":"replies","type":"text/html","href":"https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=5893593985530432607&isPopup=true","title":"0 Comments"}},{"type":"element","name":"link","attributes":{"rel":"edit","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/5893593985530432607"}},{"type":"element","name":"link","attributes":{"rel":"self","type":"application/atom+xml","href":"https://www.blogger.com/feeds/7232365251100855767/posts/default/5893593985530432607"}},{"type":"element","name":"link","attributes":{"rel":"alternate","type":"text/html","href":"https://coderetreat-facilitation.code-cop.org/2019/11/number-participants-pizza-and-seeing.html","title":"Number participants, pizza and seeing different languages"}},{"type":"element","name":"author","elements":[{"type":"element","name":"name","elements":[{"type":"text","text":"Peter Kofler"}]},{"type":"element","name":"uri","elements":[{"type":"text","text":"http://www.blogger.com/profile/09597605582212160361"}]},{"type":"element","name":"email","elements":[{"type":"text","text":"noreply@blogger.com"}]},{"type":"element","name":"gd:image","attributes":{"rel":"http://schemas.google.com/g/2005#thumbnail","width":"32","height":"32","src":"//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"}}]},{"type":"element","name":"thr:total","elements":[{"type":"text","text":"0"}]}]}]}]}
+{
+    "_declaration": {
+        "_attributes": {
+            "version": "1.0",
+            "encoding": "UTF-8"
+        }
+    },
+    "_instruction": {
+        "xml-stylesheet": "href=\"http://www.blogger.com/styles/atom.css\" type=\"text/css\""
+    },
+    "feed": {
+        "_attributes": {
+            "xmlns": "http://www.w3.org/2005/Atom",
+            "xmlns:openSearch": "http://a9.com/-/spec/opensearchrss/1.0/",
+            "xmlns:blogger": "http://schemas.google.com/blogger/2008",
+            "xmlns:georss": "http://www.georss.org/georss",
+            "xmlns:gd": "http://schemas.google.com/g/2005",
+            "xmlns:thr": "http://purl.org/syndication/thread/1.0"
+        },
+        "id": {
+            "_text": "tag:blogger.com,1999:blog-7232365251100855767"
+        },
+        "updated": {
+            "_text": "2020-06-22T23:26:34.410+02:00"
+        },
+        "category": [
+            {
+                "_attributes": {
+                    "term": "facilitation"
+                }
+            },
+            {
+                "_attributes": {
+                    "term": "overview"
+                }
+            },
+            {
+                "_attributes": {
+                    "term": "guest"
+                }
+            },
+            {
+                "_attributes": {
+                    "term": "Game of Life"
+                }
+            },
+            {
+                "_attributes": {
+                    "term": "constraints"
+                }
+            },
+            {
+                "_attributes": {
+                    "term": "pair-programming"
+                }
+            },
+            {
+                "_attributes": {
+                    "term": "top3"
+                }
+            },
+            {
+                "_attributes": {
+                    "term": "hosting"
+                }
+            },
+            {
+                "_attributes": {
+                    "term": "learnings"
+                }
+            },
+            {
+                "_attributes": {
+                    "term": "pair-facilitation"
+                }
+            },
+            {
+                "_attributes": {
+                    "term": "participants"
+                }
+            },
+            {
+                "_attributes": {
+                    "term": "coding"
+                }
+            },
+            {
+                "_attributes": {
+                    "term": "questions"
+                }
+            },
+            {
+                "_attributes": {
+                    "term": "retrospective"
+                }
+            },
+            {
+                "_attributes": {
+                    "term": "video"
+                }
+            },
+            {
+                "_attributes": {
+                    "term": "hands-on"
+                }
+            },
+            {
+                "_attributes": {
+                    "term": "lunch"
+                }
+            },
+            {
+                "_attributes": {
+                    "term": "mob-programming"
+                }
+            },
+            {
+                "_attributes": {
+                    "term": "registration"
+                }
+            },
+            {
+                "_attributes": {
+                    "term": "remote"
+                }
+            }
+        ],
+        "title": {
+            "_attributes": {
+                "type": "text"
+            },
+            "_text": "Coderetreat Facilitation"
+        },
+        "subtitle": {
+            "_attributes": {
+                "type": "html"
+            },
+            "_text": "A podcast answering questions about Coderetreat hosting, facilitation and participation. It will help you run Coderetreats, Coding Dojos, hands on meetups and classic training."
+        },
+        "link": [
+            {
+                "_attributes": {
+                    "rel": "http://schemas.google.com/g/2005#feed",
+                    "type": "application/atom+xml",
+                    "href": "https://coderetreat-facilitation.code-cop.org/feeds/posts/default"
+                }
+            },
+            {
+                "_attributes": {
+                    "rel": "self",
+                    "type": "application/atom+xml",
+                    "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default"
+                }
+            },
+            {
+                "_attributes": {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://coderetreat-facilitation.code-cop.org/"
+                }
+            },
+            {
+                "_attributes": {
+                    "rel": "hub",
+                    "href": "http://pubsubhubbub.appspot.com/"
+                }
+            }
+        ],
+        "author": {
+            "name": {
+                "_text": "Peter Kofler"
+            },
+            "uri": {
+                "_text": "http://www.blogger.com/profile/09597605582212160361"
+            },
+            "email": {
+                "_text": "noreply@blogger.com"
+            },
+            "gd:image": {
+                "_attributes": {
+                    "rel": "http://schemas.google.com/g/2005#thumbnail",
+                    "width": "32",
+                    "height": "32",
+                    "src": "//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"
+                }
+            }
+        },
+        "generator": {
+            "_attributes": {
+                "version": "7.00",
+                "uri": "http://www.blogger.com"
+            },
+            "_text": "Blogger"
+        },
+        "openSearch:totalResults": {
+            "_text": "17"
+        },
+        "openSearch:startIndex": {
+            "_text": "1"
+        },
+        "openSearch:itemsPerPage": {
+            "_text": "25"
+        },
+        "entry": [
+            {
+                "id": {
+                    "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-4188282620042309929"
+                },
+                "published": {
+                    "_text": "2020-06-22T23:12:00.001+02:00"
+                },
+                "updated": {
+                    "_text": "2020-06-22T23:26:34.403+02:00"
+                },
+                "category": [
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "coding"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "constraints"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "guest"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "overview"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "video"
+                        }
+                    }
+                ],
+                "title": {
+                    "_attributes": {
+                        "type": "text"
+                    },
+                    "_text": "16: Corey Haines' Cleveland Coderetreat Introduction Part 1"
+                },
+                "content": {
+                    "_attributes": {
+                        "type": "html"
+                    },
+                    "_text": "In this episode <a href=\"https://twitter.com/coreyhaines\">Corey Haines</a> will introduce you to: <ul><li>The goal of the Coderetreat</li><li>The 4 Rules of Simple Design</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/16---Corey-Haines-Cleveland-Coderetreat-Introduction-Part-1.mp3\">MP3 (10 minutes - 18 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p> <p>Check out the full video here:</p><iframe src=\"https://player.vimeo.com/video/18955165\" width=\"560\" height=\"315\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe> Material in this episode: <ul><li><a href=\"https://vimeo.com/18955165\">Corey Haines' Cleveland Code Retreat Introduction</a> from <a href=\"https://vimeo.com/coreyhaines\">Corey Haines</a> on <a href=\"https://vimeo.com\">Vimeo</a></li><li><a href=\"http://blog.coreyhaines.com/2011/01/on-goals-of-coderetreat.html\">On the goals of Coderetreat</a></li><li><a href=\"https://martinfowler.com/bliki/BeckDesignRules.html\">Kent Beck's four rules of simple design</a></li></ul><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a>.)</small>"
+                },
+                "link": [
+                    {
+                        "_attributes": {
+                            "rel": "replies",
+                            "type": "text/html",
+                            "href": "https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=4188282620042309929&isPopup=true",
+                            "title": "0 Comments"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "edit",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/4188282620042309929"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "self",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/4188282620042309929"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "alternate",
+                            "type": "text/html",
+                            "href": "https://coderetreat-facilitation.code-cop.org/2020/06/16-corey-haines-cleveland-coderetreat.html",
+                            "title": "16: Corey Haines' Cleveland Coderetreat Introduction Part 1"
+                        }
+                    }
+                ],
+                "author": {
+                    "name": {
+                        "_text": "Peter Kofler"
+                    },
+                    "uri": {
+                        "_text": "http://www.blogger.com/profile/09597605582212160361"
+                    },
+                    "email": {
+                        "_text": "noreply@blogger.com"
+                    },
+                    "gd:image": {
+                        "_attributes": {
+                            "rel": "http://schemas.google.com/g/2005#thumbnail",
+                            "width": "32",
+                            "height": "32",
+                            "src": "//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"
+                        }
+                    }
+                },
+                "thr:total": {
+                    "_text": "0"
+                }
+            },
+            {
+                "id": {
+                    "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-1690785732789209564"
+                },
+                "published": {
+                    "_text": "2020-06-18T09:37:00.000+02:00"
+                },
+                "updated": {
+                    "_text": "2020-06-18T09:37:01.562+02:00"
+                },
+                "category": [
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "facilitation"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "hosting"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "pair-programming"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "top3"
+                        }
+                    }
+                ],
+                "title": {
+                    "_attributes": {
+                        "type": "text"
+                    },
+                    "_text": "15: The intro, facilitate forming pairs and difference to a Coding Dojo"
+                },
+                "content": {
+                    "_attributes": {
+                        "type": "html"
+                    },
+                    "_text": "This episode contains: <ul><li>What to put into the intro for the day?</li><li>How to facilitate forming pairs?</li><li>Which are the differences between organizing a Coderetreat and a Coding Dojo night?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/15---The-intro,-facilitate-forming-pairs-and-difference-to-a-Coding-Dojo.mp3\">MP3 (8 minutes - 12 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                },
+                "link": [
+                    {
+                        "_attributes": {
+                            "rel": "replies",
+                            "type": "text/html",
+                            "href": "https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=1690785732789209564&isPopup=true",
+                            "title": "0 Comments"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "edit",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/1690785732789209564"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "self",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/1690785732789209564"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "alternate",
+                            "type": "text/html",
+                            "href": "https://coderetreat-facilitation.code-cop.org/2020/06/15-intro-facilitate-forming-pairs-and.html",
+                            "title": "15: The intro, facilitate forming pairs and difference to a Coding Dojo"
+                        }
+                    }
+                ],
+                "author": {
+                    "name": {
+                        "_text": "Peter Kofler"
+                    },
+                    "uri": {
+                        "_text": "http://www.blogger.com/profile/09597605582212160361"
+                    },
+                    "email": {
+                        "_text": "noreply@blogger.com"
+                    },
+                    "gd:image": {
+                        "_attributes": {
+                            "rel": "http://schemas.google.com/g/2005#thumbnail",
+                            "width": "32",
+                            "height": "32",
+                            "src": "//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"
+                        }
+                    }
+                },
+                "thr:total": {
+                    "_text": "0"
+                }
+            },
+            {
+                "id": {
+                    "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-8994671586385163950"
+                },
+                "published": {
+                    "_text": "2020-05-18T07:59:00.000+02:00"
+                },
+                "updated": {
+                    "_text": "2020-05-18T08:19:05.383+02:00"
+                },
+                "category": [
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "guest"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "learnings"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "overview"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "video"
+                        }
+                    }
+                ],
+                "title": {
+                    "_attributes": {
+                        "type": "text"
+                    },
+                    "_text": "14: Alex Bolboaca's Message for Coderetreat Attendees"
+                },
+                "content": {
+                    "_attributes": {
+                        "type": "html"
+                    },
+                    "_text": "In this episode <a href=\"https://alexbolboaca.ro/\">Alex Bolboaca</a> will answer the following questions: <ul><li>What makes Coderetreats magical?</li><li>How to get the most out of a Coderetreat?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/14---Alex-Bolboacas-Message-for-Coderetreat-Attendees.mp3\">MP3 (7 minutes - 10 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p> <p>Check out the video here:</p><iframe src=\"https://player.vimeo.com/video/145525880\" width=\"640\" height=\"360\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe> Material in this episode: <ul><li><a href=\"https://vimeo.com/145525880\">Alex Bolboaca on Coderetreat</a> from <a href=\"https://vimeo.com/agileworks\">AgileWorks</a> on <a href=\"https://vimeo.com\">Vimeo</a></li><li><a href=\"https://alexbolboaca.ro/coderetreat/how-to-get-the-most-out-of-a-code-retreat\">How to get the most out of a Code Retreat</a></li><li><a href=\"https://coderetreat-facilitation.code-cop.org/2020/02/deleting-code-questions-that-people-ask.html\">Episode 07: Deleting the code</a></li><li><a href=\"https://coderetreat-facilitation.code-cop.org/2019/11/number-participants-pizza-and-seeing.html\">Episode 01: Seeing different languages</a></li></ul><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a>.)</small>"
+                },
+                "link": [
+                    {
+                        "_attributes": {
+                            "rel": "replies",
+                            "type": "text/html",
+                            "href": "https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=8994671586385163950&isPopup=true",
+                            "title": "0 Comments"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "edit",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/8994671586385163950"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "self",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/8994671586385163950"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "alternate",
+                            "type": "text/html",
+                            "href": "https://coderetreat-facilitation.code-cop.org/2020/05/14-alex-bolboacas-message-for.html",
+                            "title": "14: Alex Bolboaca's Message for Coderetreat Attendees"
+                        }
+                    }
+                ],
+                "author": {
+                    "name": {
+                        "_text": "Peter Kofler"
+                    },
+                    "uri": {
+                        "_text": "http://www.blogger.com/profile/09597605582212160361"
+                    },
+                    "email": {
+                        "_text": "noreply@blogger.com"
+                    },
+                    "gd:image": {
+                        "_attributes": {
+                            "rel": "http://schemas.google.com/g/2005#thumbnail",
+                            "width": "32",
+                            "height": "32",
+                            "src": "//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"
+                        }
+                    }
+                },
+                "thr:total": {
+                    "_text": "0"
+                }
+            },
+            {
+                "id": {
+                    "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-591371871615118133"
+                },
+                "published": {
+                    "_text": "2020-05-11T23:48:00.002+02:00"
+                },
+                "updated": {
+                    "_text": "2020-05-18T08:23:48.480+02:00"
+                },
+                "category": [
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "constraints"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "facilitation"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "learnings"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "pair-programming"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "top3"
+                        }
+                    }
+                ],
+                "title": {
+                    "_attributes": {
+                        "type": "text"
+                    },
+                    "_text": "13: Primary job of facilitator, first session without pairing and supporting participants' learning journey"
+                },
+                "content": {
+                    "_attributes": {
+                        "type": "html"
+                    },
+                    "_text": "Today I talk about the following questions: <ul><li>What is your primary job as facilitator?</li><li>Is it allowed to run the first session without any pairing?</li><li>What is Ping Pong?</li><li>How to support participants to continue their learning journey after the Coderetreat?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/13---Primary-job-of-facilitator,-first-session-without-pairing-and-supporting-participants-learning-journey.mp3\">MP3 (9 minutes - 13 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p>Mentioned in this episode: <ul><li><a href=\"https://coderetreat-facilitation.code-cop.org/2020/03/coding-dojo-mindset-and-game-of-life-is.html\">Episode 10: Coding Dojo Mindset</a></li><li><a href=\"https://blog.code-cop.org/2017/10/difficulty-of-coding-exercises.html\">Managing the Difficulty of Coding Exercises</a></li><li><a href=\"https://coderetreat-facilitation.code-cop.org/2020/04/12-what-to-look-for-and-ask-about-other.html\">Episode 12: What to look for and ask about other than the code</a></li><li><a href=\"https://coderetreat-facilitation.code-cop.org/2020/02/why-pair-program-finish-game-of-life.html\">Episode 08: Why pair program</a></li><li><a href=\"https://coderetreat-facilitation.code-cop.org/2020/02/deleting-code-questions-that-people-ask.html\">Episode 07: single participant staying alone</a></li><li><a href=\"https://blog.code-cop.org/2016/11/followup-global-day-of-coderetreat-2016.html\">A box of things to take from the Coderetreat</a></li></ul><p>Thanks to <a href=\"https://twitter.com/dertseha\">Christian Haas</a> for feedback on audio quality of this podcast.</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                },
+                "link": [
+                    {
+                        "_attributes": {
+                            "rel": "replies",
+                            "type": "text/html",
+                            "href": "https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=591371871615118133&isPopup=true",
+                            "title": "0 Comments"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "edit",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/591371871615118133"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "self",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/591371871615118133"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "alternate",
+                            "type": "text/html",
+                            "href": "https://coderetreat-facilitation.code-cop.org/2020/05/13-primary-job-of-facilitator-first.html",
+                            "title": "13: Primary job of facilitator, first session without pairing and supporting participants' learning journey"
+                        }
+                    }
+                ],
+                "author": {
+                    "name": {
+                        "_text": "Peter Kofler"
+                    },
+                    "uri": {
+                        "_text": "http://www.blogger.com/profile/09597605582212160361"
+                    },
+                    "email": {
+                        "_text": "noreply@blogger.com"
+                    },
+                    "gd:image": {
+                        "_attributes": {
+                            "rel": "http://schemas.google.com/g/2005#thumbnail",
+                            "width": "32",
+                            "height": "32",
+                            "src": "//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"
+                        }
+                    }
+                },
+                "thr:total": {
+                    "_text": "0"
+                }
+            },
+            {
+                "id": {
+                    "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-8613242995955216259"
+                },
+                "published": {
+                    "_text": "2020-04-27T06:47:00.000+02:00"
+                },
+                "updated": {
+                    "_text": "2020-05-05T22:47:28.773+02:00"
+                },
+                "category": [
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "facilitation"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "guest"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "retrospective"
+                        }
+                    }
+                ],
+                "title": {
+                    "_attributes": {
+                        "type": "text"
+                    },
+                    "_text": "12: What to look for and ask about other than the code"
+                },
+                "content": {
+                    "_attributes": {
+                        "type": "html"
+                    },
+                    "_text": "In this episode my co-facilitator <a href=\"https://www.linkedin.com/in/oliver-spann/\">Oliver Spann</a> shares some tips for non-coding facilitators: <ul><li>What to look for during sessions (while people work) other than the code?</li><li>What to ask in retrospectives if you did not understand the code?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/12---What-to-look-for-and-ask-about-other-than-the-code.mp3\">MP3 (8 minutes - 6 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><p>Thank you Oliver for sharing your knowledge. You can learn more from Oliver at <a href=\"https://medium.com/@olivercecilspann\">his blog</a>. Related to this episode is Oliver's latest article <a href=\"https://medium.com/@olivercecilspann/can-you-facilitate-a-coderetreat-as-a-scrum-master-f18a39274560\">Can you facilitate a Coderetreat as a Scrum Master?</a></p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                },
+                "link": [
+                    {
+                        "_attributes": {
+                            "rel": "replies",
+                            "type": "text/html",
+                            "href": "https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=8613242995955216259&isPopup=true",
+                            "title": "0 Comments"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "edit",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/8613242995955216259"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "self",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/8613242995955216259"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "alternate",
+                            "type": "text/html",
+                            "href": "https://coderetreat-facilitation.code-cop.org/2020/04/12-what-to-look-for-and-ask-about-other.html",
+                            "title": "12: What to look for and ask about other than the code"
+                        }
+                    }
+                ],
+                "author": {
+                    "name": {
+                        "_text": "Peter Kofler"
+                    },
+                    "uri": {
+                        "_text": "http://www.blogger.com/profile/09597605582212160361"
+                    },
+                    "email": {
+                        "_text": "noreply@blogger.com"
+                    },
+                    "gd:image": {
+                        "_attributes": {
+                            "rel": "http://schemas.google.com/g/2005#thumbnail",
+                            "width": "32",
+                            "height": "32",
+                            "src": "//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"
+                        }
+                    }
+                },
+                "thr:total": {
+                    "_text": "0"
+                }
+            },
+            {
+                "id": {
+                    "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-6857565190470580608"
+                },
+                "published": {
+                    "_text": "2020-04-18T20:19:00.000+02:00"
+                },
+                "updated": {
+                    "_text": "2020-04-26T21:58:15.808+02:00"
+                },
+                "category": [
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "constraints"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "facilitation"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "hosting"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "overview"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "remote"
+                        }
+                    }
+                ],
+                "title": {
+                    "_attributes": {
+                        "type": "text"
+                    },
+                    "_text": "11: A remote Coderetreat and overview of constraints"
+                },
+                "content": {
+                    "_attributes": {
+                        "type": "html"
+                    },
+                    "_text": "In this episode: <ul><li>How to run a remote Coderetreat?</li><li>What are constraints?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/11---A-remote-Coderetreat-and-overview-of-constraints.mp3\">MP3 (8 minutes - 12 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p>Material used for this episode: <ul><li><a href=\"https://medium.com/@philborlin/retrospective-on-a-remote-global-day-of-coderetreat-ace1baf20bae\">Retrospective on a Remote Global Day of Coderetreat</a></li><li><a href=\"https://manynames.sevensuns.at/technojoy/2014/12/2080-a-coding-dojo-constraint-just-for-fun.html\">20/80 - A coding dojo constraint just for fun</a></li></ul><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                },
+                "link": [
+                    {
+                        "_attributes": {
+                            "rel": "replies",
+                            "type": "text/html",
+                            "href": "https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=6857565190470580608&isPopup=true",
+                            "title": "0 Comments"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "edit",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/6857565190470580608"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "self",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/6857565190470580608"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "alternate",
+                            "type": "text/html",
+                            "href": "https://coderetreat-facilitation.code-cop.org/2020/04/11-remote-coderetreat-and-overview-of.html",
+                            "title": "11: A remote Coderetreat and overview of constraints"
+                        }
+                    }
+                ],
+                "author": {
+                    "name": {
+                        "_text": "Peter Kofler"
+                    },
+                    "uri": {
+                        "_text": "http://www.blogger.com/profile/09597605582212160361"
+                    },
+                    "email": {
+                        "_text": "noreply@blogger.com"
+                    },
+                    "gd:image": {
+                        "_attributes": {
+                            "rel": "http://schemas.google.com/g/2005#thumbnail",
+                            "width": "32",
+                            "height": "32",
+                            "src": "//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"
+                        }
+                    }
+                },
+                "thr:total": {
+                    "_text": "0"
+                }
+            },
+            {
+                "id": {
+                    "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-1365751981227488973"
+                },
+                "published": {
+                    "_text": "2020-03-31T23:28:00.001+02:00"
+                },
+                "updated": {
+                    "_text": "2020-03-31T23:28:14.812+02:00"
+                },
+                "category": [
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "facilitation"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "Game of Life"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "overview"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "top3"
+                        }
+                    }
+                ],
+                "title": {
+                    "_attributes": {
+                        "type": "text"
+                    },
+                    "_text": "Coding Dojo Mindset and Game of Life is mandatory"
+                },
+                "content": {
+                    "_attributes": {
+                        "type": "html"
+                    },
+                    "_text": "In this episode I am answering <ul><li>What is the Coding Dojo Mindset? (What is the core mindset of a Coderetreat?)</li><li>Is Game of Life mandatory?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/10---Coding-Dojo-Mindset-and-Game-of-Life-is-mandatory.mp3\">MP3 (8 minutes - 12 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p>Mentioned in this episode: <ul><li><a href=\"https://alexbolboaca.ro/coderetreat/the-coderetreat-problem-is-not-the-problem\">Alex Bolboaca: The Coderetreat Problem Is Not The Problem</a></li></ul><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                },
+                "link": [
+                    {
+                        "_attributes": {
+                            "rel": "replies",
+                            "type": "text/html",
+                            "href": "https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=1365751981227488973&isPopup=true",
+                            "title": "0 Comments"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "edit",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/1365751981227488973"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "self",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/1365751981227488973"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "alternate",
+                            "type": "text/html",
+                            "href": "https://coderetreat-facilitation.code-cop.org/2020/03/coding-dojo-mindset-and-game-of-life-is.html",
+                            "title": "Coding Dojo Mindset and Game of Life is mandatory"
+                        }
+                    }
+                ],
+                "author": {
+                    "name": {
+                        "_text": "Peter Kofler"
+                    },
+                    "uri": {
+                        "_text": "http://www.blogger.com/profile/09597605582212160361"
+                    },
+                    "email": {
+                        "_text": "noreply@blogger.com"
+                    },
+                    "gd:image": {
+                        "_attributes": {
+                            "rel": "http://schemas.google.com/g/2005#thumbnail",
+                            "width": "32",
+                            "height": "32",
+                            "src": "//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"
+                        }
+                    }
+                },
+                "thr:total": {
+                    "_text": "0"
+                }
+            },
+            {
+                "id": {
+                    "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-2635335793854750304"
+                },
+                "published": {
+                    "_text": "2020-03-15T23:49:00.000+01:00"
+                },
+                "updated": {
+                    "_text": "2020-03-15T23:49:28.853+01:00"
+                },
+                "category": [
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "constraints"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "Game of Life"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "guest"
+                        }
+                    }
+                ],
+                "title": {
+                    "_attributes": {
+                        "type": "text"
+                    },
+                    "_text": "Constraint for first session and alternative exercises for Game of Life"
+                },
+                "content": {
+                    "_attributes": {
+                        "type": "html"
+                    },
+                    "_text": "In this (longer) episode I asked <a href=\"https://www.sandra-parsick.de/\">Sandra Parsick</a> about <ul><li>the best constraint for the first session and</li><li>alternative exercises for Game of Life.</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/09---Constraint-for-first-session-and-alternative-exercises-for-Game-of-Life.mp3\">MP3 (12 minutes - 9 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><p>Thank you Sandra.</p>Mentioned in this episode: <ul><li><a href=\"https://alexbolboaca.ro/coderetreat/the-coderetreat-problem-is-not-the-problem\">The Coderetreat Problem Is Not The Problem</a></li><li><a href=\"https://kata-log.rocks/mars-rover-kata\">Mars Rover kata</a></li><li><a href=\"https://en.wikipedia.org/wiki/Snake_(video_game)\">Snake/Nibbles/Tron</a></li></ul><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                },
+                "link": [
+                    {
+                        "_attributes": {
+                            "rel": "replies",
+                            "type": "text/html",
+                            "href": "https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=2635335793854750304&isPopup=true",
+                            "title": "0 Comments"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "edit",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/2635335793854750304"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "self",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/2635335793854750304"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "alternate",
+                            "type": "text/html",
+                            "href": "https://coderetreat-facilitation.code-cop.org/2020/03/constraint-for-first-session-and.html",
+                            "title": "Constraint for first session and alternative exercises for Game of Life"
+                        }
+                    }
+                ],
+                "author": {
+                    "name": {
+                        "_text": "Peter Kofler"
+                    },
+                    "uri": {
+                        "_text": "http://www.blogger.com/profile/09597605582212160361"
+                    },
+                    "email": {
+                        "_text": "noreply@blogger.com"
+                    },
+                    "gd:image": {
+                        "_attributes": {
+                            "rel": "http://schemas.google.com/g/2005#thumbnail",
+                            "width": "32",
+                            "height": "32",
+                            "src": "//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"
+                        }
+                    }
+                },
+                "thr:total": {
+                    "_text": "0"
+                }
+            },
+            {
+                "id": {
+                    "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-5839554246386478285"
+                },
+                "published": {
+                    "_text": "2020-02-16T17:11:00.000+01:00"
+                },
+                "updated": {
+                    "_text": "2020-02-16T17:11:11.766+01:00"
+                },
+                "category": [
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "facilitation"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "Game of Life"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "overview"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "pair-facilitation"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "pair-programming"
+                        }
+                    }
+                ],
+                "title": {
+                    "_attributes": {
+                        "type": "text"
+                    },
+                    "_text": "Why pair program, finish the Game of Life and how many facilitators do we need"
+                },
+                "content": {
+                    "_attributes": {
+                        "type": "html"
+                    },
+                    "_text": "In this episode: <ul><li>Why do we pair program the whole Coderetreat?</li><li>Is it possible to finish the Game of Life assignment in a single session?</li><li>How many facilitators do we need and when do we need more than one?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/08---Why-pair-program,-finish-the-Game-of-Life-and-how-many-facilitators-do-we-need.mp3\">MP3 (8 minutes - 12 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                },
+                "link": [
+                    {
+                        "_attributes": {
+                            "rel": "replies",
+                            "type": "text/html",
+                            "href": "https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=5839554246386478285&isPopup=true",
+                            "title": "0 Comments"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "edit",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/5839554246386478285"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "self",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/5839554246386478285"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "alternate",
+                            "type": "text/html",
+                            "href": "https://coderetreat-facilitation.code-cop.org/2020/02/why-pair-program-finish-game-of-life.html",
+                            "title": "Why pair program, finish the Game of Life and how many facilitators do we need"
+                        }
+                    }
+                ],
+                "author": {
+                    "name": {
+                        "_text": "Peter Kofler"
+                    },
+                    "uri": {
+                        "_text": "http://www.blogger.com/profile/09597605582212160361"
+                    },
+                    "email": {
+                        "_text": "noreply@blogger.com"
+                    },
+                    "gd:image": {
+                        "_attributes": {
+                            "rel": "http://schemas.google.com/g/2005#thumbnail",
+                            "width": "32",
+                            "height": "32",
+                            "src": "//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"
+                        }
+                    }
+                },
+                "thr:total": {
+                    "_text": "0"
+                }
+            },
+            {
+                "id": {
+                    "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-9151114534139066088"
+                },
+                "published": {
+                    "_text": "2020-02-03T08:10:00.000+01:00"
+                },
+                "updated": {
+                    "_text": "2020-04-15T19:08:39.071+02:00"
+                },
+                "category": [
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "coding"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "overview"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "pair-programming"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "questions"
+                        }
+                    }
+                ],
+                "title": {
+                    "_attributes": {
+                        "type": "text"
+                    },
+                    "_text": "Deleting the code, questions that people ask and single participant staying alone"
+                },
+                "content": {
+                    "_attributes": {
+                        "type": "html"
+                    },
+                    "_text": "In this episode I answer these questions: <ul><li>Why do we delete the code after each session?</li><li>How many questions do people ask?</li><li>What about a single participant staying alone?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/07---Deleting-the-code,-questions-that-people-ask-and-single-participant-staying-alone.mp3\">MP3 (9 minutes - 14 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                },
+                "link": [
+                    {
+                        "_attributes": {
+                            "rel": "replies",
+                            "type": "text/html",
+                            "href": "https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=9151114534139066088&isPopup=true",
+                            "title": "0 Comments"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "edit",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/9151114534139066088"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "self",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/9151114534139066088"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "alternate",
+                            "type": "text/html",
+                            "href": "https://coderetreat-facilitation.code-cop.org/2020/02/deleting-code-questions-that-people-ask.html",
+                            "title": "Deleting the code, questions that people ask and single participant staying alone"
+                        }
+                    }
+                ],
+                "author": {
+                    "name": {
+                        "_text": "Peter Kofler"
+                    },
+                    "uri": {
+                        "_text": "http://www.blogger.com/profile/09597605582212160361"
+                    },
+                    "email": {
+                        "_text": "noreply@blogger.com"
+                    },
+                    "gd:image": {
+                        "_attributes": {
+                            "rel": "http://schemas.google.com/g/2005#thumbnail",
+                            "width": "32",
+                            "height": "32",
+                            "src": "//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"
+                        }
+                    }
+                },
+                "thr:total": {
+                    "_text": "0"
+                }
+            },
+            {
+                "id": {
+                    "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-7990567405854346751"
+                },
+                "published": {
+                    "_text": "2020-01-20T08:50:00.000+01:00"
+                },
+                "updated": {
+                    "_text": "2020-01-20T08:50:55.621+01:00"
+                },
+                "category": [
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "guest"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "mob-programming"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "pair-facilitation"
+                        }
+                    }
+                ],
+                "title": {
+                    "_attributes": {
+                        "type": "text"
+                    },
+                    "_text": "Facilitating mob programming and choosing your pair facilitator"
+                },
+                "content": {
+                    "_attributes": {
+                        "type": "html"
+                    },
+                    "_text": "This is the second part of my discussion with <a href=\"https://www.lisihocke.com/\">Lisi Hocke</a>. (The first part is <a href=\"https://coderetreat-facilitation.code-cop.org/2019/12/most-important-about-workshops-and.html\">here</a>.) This time we talked about: <ul><li>How to facilitate a mob programming session?</li><li>What to look for in your pair facilitator?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/06---Facilitating-mob-programming-and-choosing-your-pair-facilitator.mp3\">MP3 (9 minutes - 6.5 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><p>Thank you Lisi for visiting the Coderetreat Facilitation podcast. You can reach Lisi at <a href=\"https://twitter.com/lisihocke\">@lisihocke</a>.</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                },
+                "link": [
+                    {
+                        "_attributes": {
+                            "rel": "replies",
+                            "type": "text/html",
+                            "href": "https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=7990567405854346751&isPopup=true",
+                            "title": "0 Comments"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "edit",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/7990567405854346751"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "self",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/7990567405854346751"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "alternate",
+                            "type": "text/html",
+                            "href": "https://coderetreat-facilitation.code-cop.org/2020/01/facilitating-mob-programming-and.html",
+                            "title": "Facilitating mob programming and choosing your pair facilitator"
+                        }
+                    }
+                ],
+                "author": {
+                    "name": {
+                        "_text": "Peter Kofler"
+                    },
+                    "uri": {
+                        "_text": "http://www.blogger.com/profile/09597605582212160361"
+                    },
+                    "email": {
+                        "_text": "noreply@blogger.com"
+                    },
+                    "gd:image": {
+                        "_attributes": {
+                            "rel": "http://schemas.google.com/g/2005#thumbnail",
+                            "width": "32",
+                            "height": "32",
+                            "src": "//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"
+                        }
+                    }
+                },
+                "thr:total": {
+                    "_text": "0"
+                }
+            },
+            {
+                "id": {
+                    "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-556904392865849351"
+                },
+                "published": {
+                    "_text": "2020-01-09T14:05:00.000+01:00"
+                },
+                "updated": {
+                    "_text": "2020-04-15T18:34:28.389+02:00"
+                },
+                "category": [
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "facilitation"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "overview"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "participants"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "top3"
+                        }
+                    }
+                ],
+                "title": {
+                    "_attributes": {
+                        "type": "text"
+                    },
+                    "_text": "Day structure, facilitation styles and non developers showing up"
+                },
+                "content": {
+                    "_attributes": {
+                        "type": "html"
+                    },
+                    "_text": "In this episode I am talking about <ul><li>Coderetreat Day Structure,</li><li>the best way to facilitate and</li><li>non developers participating.</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/05---Day-structure,-facilitation-styles-and-non-developers-showing-up.mp3\">MP3 (9 minutes - 13 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><p>Mentioned in this episode: <a href=\"https://www.coderetreat.org/pages/facilitating/structure-of-a-coderetreat/\">Structure of a Coderetreat</a></p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                },
+                "link": [
+                    {
+                        "_attributes": {
+                            "rel": "replies",
+                            "type": "text/html",
+                            "href": "https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=556904392865849351&isPopup=true",
+                            "title": "0 Comments"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "edit",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/556904392865849351"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "self",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/556904392865849351"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "alternate",
+                            "type": "text/html",
+                            "href": "https://coderetreat-facilitation.code-cop.org/2020/01/day-structure-facilitation-styles-and.html",
+                            "title": "Day structure, facilitation styles and non developers showing up"
+                        }
+                    }
+                ],
+                "author": {
+                    "name": {
+                        "_text": "Peter Kofler"
+                    },
+                    "uri": {
+                        "_text": "http://www.blogger.com/profile/09597605582212160361"
+                    },
+                    "email": {
+                        "_text": "noreply@blogger.com"
+                    },
+                    "gd:image": {
+                        "_attributes": {
+                            "rel": "http://schemas.google.com/g/2005#thumbnail",
+                            "width": "32",
+                            "height": "32",
+                            "src": "//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"
+                        }
+                    }
+                },
+                "thr:total": {
+                    "_text": "0"
+                }
+            },
+            {
+                "id": {
+                    "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-4786828078982253832"
+                },
+                "published": {
+                    "_text": "2019-12-23T06:00:00.000+01:00"
+                },
+                "updated": {
+                    "_text": "2020-01-27T14:11:04.124+01:00"
+                },
+                "category": [
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "facilitation"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "overview"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "questions"
+                        }
+                    }
+                ],
+                "title": {
+                    "_attributes": {
+                        "type": "text"
+                    },
+                    "_text": "What is a Coderetreat, organisers participating in coding and answering questions"
+                },
+                "content": {
+                    "_attributes": {
+                        "type": "html"
+                    },
+                    "_text": "In this episode: <ul><li>What is a Coderetreat?</li><li>Should organizers participate in coding?</li><li>How much should a facilitator answer questions from participants?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/04---What-is-a-Coderetreat,-organisers-participating-in-coding-and-answering-questions.mp3\">MP3 (9 minutes - 13 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><p>Thanks to <a href=\"https://twitter.com/dtanzer\">David Tanzer</a> and <a href=\"https://twitter.com/mrksdck\">Markus Decke</a> for feedback on this podcast.</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                },
+                "link": [
+                    {
+                        "_attributes": {
+                            "rel": "replies",
+                            "type": "text/html",
+                            "href": "https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=4786828078982253832&isPopup=true",
+                            "title": "0 Comments"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "edit",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/4786828078982253832"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "self",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/4786828078982253832"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "alternate",
+                            "type": "text/html",
+                            "href": "https://coderetreat-facilitation.code-cop.org/2019/12/what-is-coderetreat-organisers.html",
+                            "title": "What is a Coderetreat, organisers participating in coding and answering questions"
+                        }
+                    }
+                ],
+                "author": {
+                    "name": {
+                        "_text": "Peter Kofler"
+                    },
+                    "uri": {
+                        "_text": "http://www.blogger.com/profile/09597605582212160361"
+                    },
+                    "email": {
+                        "_text": "noreply@blogger.com"
+                    },
+                    "gd:image": {
+                        "_attributes": {
+                            "rel": "http://schemas.google.com/g/2005#thumbnail",
+                            "width": "32",
+                            "height": "32",
+                            "src": "//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"
+                        }
+                    }
+                },
+                "thr:total": {
+                    "_text": "0"
+                }
+            },
+            {
+                "id": {
+                    "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-1507039770344445870"
+                },
+                "published": {
+                    "_text": "2019-12-21T00:24:00.000+01:00"
+                },
+                "updated": {
+                    "_text": "2019-12-21T00:24:00.636+01:00"
+                },
+                "title": {
+                    "_attributes": {
+                        "type": "text"
+                    },
+                    "_text": "About This Podcast"
+                },
+                "content": {
+                    "_attributes": {
+                        "type": "html"
+                    },
+                    "_text": "<p>I regularly <a href=\"https://blog.code-cop.org/2016/07/hosting-public-coderetreats.html\">facilitate Coderetreats</a> - as part of my work as <a href=\"https://www.code-cop.org/\">Code Cop</a> and for the local Software Crafters community. To support people organising events in other cities, I run Coderetreat facilitation trainings each year, especially in the months before the Global Day (of Coderetreat). Based on the feedback I get, e.g. <i>Thanks for the training today! Very helpful!</i> I see that these trainings are helpful for people who want to run Coderetreats. Often people ask the same questions, so I decided to record the most common questions. I will publish the recordings as I create them in this podcast.</p> <p>Subscribe to it here: <b><a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">RSS Feed</a></b></p> <p>In this podcast I am answering questions about Coderetreat hosting, facilitation and participation. It will help you run Coderetreats, Coding Dojos, hands on meetups and even classic training. Each episode covers two to three questions and takes up to 10 minutes. From time to time I will invite guest facilitators to discuss with me. In the first few episodes I will also cover basic questions about the Coderetreat itself, e.g. What is a Coderetreat?</p> <p>As each episode is short, I plan to release at least two each month. While I am too late for #GDCR19, there should be around 30 questions and answers ready for people who want to help organising the next #GDCR20. That would be like three hours facilitation training. That would be great. Let's see how far I get.</p> <p>If you have any questions regarding your Coderetreat, Coding Dojo or hands-on workshop, please send me an email or leave a comment. I will answer the question in one of the next episodes.</p>"
+                },
+                "link": [
+                    {
+                        "_attributes": {
+                            "rel": "replies",
+                            "type": "text/html",
+                            "href": "https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=1507039770344445870&isPopup=true",
+                            "title": "0 Comments"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "edit",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/1507039770344445870"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "self",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/1507039770344445870"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "alternate",
+                            "type": "text/html",
+                            "href": "https://coderetreat-facilitation.code-cop.org/2019/12/about-this-podcast.html",
+                            "title": "About This Podcast"
+                        }
+                    }
+                ],
+                "author": {
+                    "name": {
+                        "_text": "Peter Kofler"
+                    },
+                    "uri": {
+                        "_text": "http://www.blogger.com/profile/09597605582212160361"
+                    },
+                    "email": {
+                        "_text": "noreply@blogger.com"
+                    },
+                    "gd:image": {
+                        "_attributes": {
+                            "rel": "http://schemas.google.com/g/2005#thumbnail",
+                            "width": "32",
+                            "height": "32",
+                            "src": "//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"
+                        }
+                    }
+                },
+                "thr:total": {
+                    "_text": "0"
+                }
+            },
+            {
+                "id": {
+                    "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-2653927848515651303"
+                },
+                "published": {
+                    "_text": "2019-12-08T22:14:00.000+01:00"
+                },
+                "updated": {
+                    "_text": "2019-12-08T22:14:10.679+01:00"
+                },
+                "category": [
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "guest"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "hands-on"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "pair-facilitation"
+                        }
+                    }
+                ],
+                "title": {
+                    "_attributes": {
+                        "type": "text"
+                    },
+                    "_text": "Most important about workshops and benefits of pair facilitation"
+                },
+                "content": {
+                    "_attributes": {
+                        "type": "html"
+                    },
+                    "_text": "In this episode I am asking <a href=\"https://www.lisihocke.com/\">MIATPP Lisi Hocke</a> the following questions: <ul><li>What is the most important thing when running workshops?</li><li>Are there any book recommendations for running hands-on workshops?</li><li>What are the benefits of pair facilitation?</li></ul><p>Download it here: <a href=\"https://www.code-cop.org/podcast/03---Most-important-about-workshops-and-benefits-of-pair-facilitation.mp3\">MP3 (9 minutes - 6.3 Mb)</a></p><p>Lisi, thank you for sharing your experience. You can reach Lisi for further discussions at <a href=\"https://twitter.com/lisihocke\">@lisihocke</a>. Earlier this year, Lisi has been awarded <a href=\"https://agiletestingdays.com/miatpp/\">the MIATPP, short for the Most Influential Agile Testing Professional Person 2019</a>. Congratulations!</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                },
+                "link": [
+                    {
+                        "_attributes": {
+                            "rel": "replies",
+                            "type": "text/html",
+                            "href": "https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=2653927848515651303&isPopup=true",
+                            "title": "0 Comments"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "edit",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/2653927848515651303"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "self",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/2653927848515651303"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "alternate",
+                            "type": "text/html",
+                            "href": "https://coderetreat-facilitation.code-cop.org/2019/12/most-important-about-workshops-and.html",
+                            "title": "Most important about workshops and benefits of pair facilitation"
+                        }
+                    }
+                ],
+                "author": {
+                    "name": {
+                        "_text": "Peter Kofler"
+                    },
+                    "uri": {
+                        "_text": "http://www.blogger.com/profile/09597605582212160361"
+                    },
+                    "email": {
+                        "_text": "noreply@blogger.com"
+                    },
+                    "gd:image": {
+                        "_attributes": {
+                            "rel": "http://schemas.google.com/g/2005#thumbnail",
+                            "width": "32",
+                            "height": "32",
+                            "src": "//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"
+                        }
+                    }
+                },
+                "thr:total": {
+                    "_text": "0"
+                }
+            },
+            {
+                "id": {
+                    "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-2215167063935472915"
+                },
+                "published": {
+                    "_text": "2019-11-24T21:37:00.002+01:00"
+                },
+                "updated": {
+                    "_text": "2020-02-16T14:41:38.207+01:00"
+                },
+                "category": [
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "Game of Life"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "participants"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "registration"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "retrospective"
+                        }
+                    }
+                ],
+                "title": {
+                    "_attributes": {
+                        "type": "text"
+                    },
+                    "_text": "Minimum number participants, retrospective without observations and explain the Game of Life"
+                },
+                "content": {
+                    "_attributes": {
+                        "type": "html"
+                    },
+                    "_text": "In this episode I will answer the following questions: <ul><li>Should we consider a minimum number of participants to run a Coderetreat?</li><li>What to focus on during a retrospective if no \"noticeable\" events had happened during that session?</li><li>How to help new participants get used to the exercise of Game of Life?</li></ul><p><a href=\"https://www.code-cop.org/podcast/02---Minimum-number-participants,-retrospective-without-observations-and-explain-the-Game-of-Life.mp3\">Download it here.</a></p><p>Thanks to my friends Paul Rohorzka, David Leitner and Christian Haas from <a href=\"https://developermelange.github.io/\">Developer Melange</a> and <a href=\"https://twitter.com/rradczewski\">Raimo Radczewski</a> for feedback on this episode.</p><p><a href=\"https://github.com/marcoemrich/game-of-life-rules\">Posters with the rules by Marco Emrich.</a></p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                },
+                "link": [
+                    {
+                        "_attributes": {
+                            "rel": "replies",
+                            "type": "text/html",
+                            "href": "https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=2215167063935472915&isPopup=true",
+                            "title": "0 Comments"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "edit",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/2215167063935472915"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "self",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/2215167063935472915"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "alternate",
+                            "type": "text/html",
+                            "href": "https://coderetreat-facilitation.code-cop.org/2019/11/minimum-number-participants.html",
+                            "title": "Minimum number participants, retrospective without observations and explain the Game of Life"
+                        }
+                    }
+                ],
+                "author": {
+                    "name": {
+                        "_text": "Peter Kofler"
+                    },
+                    "uri": {
+                        "_text": "http://www.blogger.com/profile/09597605582212160361"
+                    },
+                    "email": {
+                        "_text": "noreply@blogger.com"
+                    },
+                    "gd:image": {
+                        "_attributes": {
+                            "rel": "http://schemas.google.com/g/2005#thumbnail",
+                            "width": "32",
+                            "height": "32",
+                            "src": "//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"
+                        }
+                    }
+                },
+                "thr:total": {
+                    "_text": "0"
+                }
+            },
+            {
+                "id": {
+                    "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-5893593985530432607"
+                },
+                "published": {
+                    "_text": "2019-11-13T17:35:00.002+01:00"
+                },
+                "updated": {
+                    "_text": "2020-04-15T19:09:35.700+02:00"
+                },
+                "category": [
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "hosting"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "learnings"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "lunch"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "scheme": "http://www.blogger.com/atom/ns#",
+                            "term": "participants"
+                        }
+                    }
+                ],
+                "title": {
+                    "_attributes": {
+                        "type": "text"
+                    },
+                    "_text": "Number participants, pizza and seeing different languages"
+                },
+                "content": {
+                    "_attributes": {
+                        "type": "html"
+                    },
+                    "_text": "In this episode I am discussing <ul><li>What is the ideal number of participants?</li><li>Is Pizza allowed for lunch?</li><li>Learning a new language - is that one of the valid outcomes?</li></ul><p><a href=\"https://www.code-cop.org/podcast/01---Number-participants,-pizza-and-seeing-different-languages.mp3\">Download it here.</a></p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                },
+                "link": [
+                    {
+                        "_attributes": {
+                            "rel": "replies",
+                            "type": "text/html",
+                            "href": "https://www.blogger.com/comment.g?blogID=7232365251100855767&postID=5893593985530432607&isPopup=true",
+                            "title": "0 Comments"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "edit",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/5893593985530432607"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "self",
+                            "type": "application/atom+xml",
+                            "href": "https://www.blogger.com/feeds/7232365251100855767/posts/default/5893593985530432607"
+                        }
+                    },
+                    {
+                        "_attributes": {
+                            "rel": "alternate",
+                            "type": "text/html",
+                            "href": "https://coderetreat-facilitation.code-cop.org/2019/11/number-participants-pizza-and-seeing.html",
+                            "title": "Number participants, pizza and seeing different languages"
+                        }
+                    }
+                ],
+                "author": {
+                    "name": {
+                        "_text": "Peter Kofler"
+                    },
+                    "uri": {
+                        "_text": "http://www.blogger.com/profile/09597605582212160361"
+                    },
+                    "email": {
+                        "_text": "noreply@blogger.com"
+                    },
+                    "gd:image": {
+                        "_attributes": {
+                            "rel": "http://schemas.google.com/g/2005#thumbnail",
+                            "width": "32",
+                            "height": "32",
+                            "src": "//1.bp.blogspot.com/-MEKdHSSl7Ag/UcFwAR3kjEI/AAAAAAAAAMA/SMdvu1JRgWk/s113/Google-Blogger_Profil_113x113.gif"
+                        }
+                    }
+                },
+                "thr:total": {
+                    "_text": "0"
+                }
+            }
+        ]
+    }
+}
