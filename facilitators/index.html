@@ -8,10 +8,14 @@ audience: facilitators
   style="
     background: url('{% link /facilitators/assets/home-jumbotron.jpg %}');
     background-size: cover;
+    position: relative;
     background-position: center;
     min-height: 400px;
   "
 >
+  <div style="position: absolute; bottom: 0; right: 0" class="bg-light px-1">
+      <small><a href="https://twitter.com/SCC_at_DATEV/status/1195605012216504320">Photo by @SCC_at_DATEV </a></small>
+  </div>
   <div
     class="px-5 py-3 d-inline-block text-light"
     style="background-color: rgba(0, 0, 0, 0.8);"
@@ -31,7 +35,7 @@ audience: facilitators
 <div class="container">
   <div class="card-deck">
     <div class="card">
-      <img src="https://place-hold.it/300x150" class="card-img-top" alt="..." />
+      <img src="{% link facilitators/assets/home-training.jpg %}" class="card-img-top" alt="A screenshot from one of the training sessions" />
       <div class="card-body">
         <h5 class="card-title">Trainings</h5>
         <p class="card-text">
@@ -45,9 +49,13 @@ audience: facilitators
           >Join a training session</a
         >
       </div>
+      <div class="card-footer py-1">
+        <span class="small">Screenshot from <a
+            href="https://www.youtube.com/watch?v=GvC-jlxWo1c"> Alastair Smith's training session</a></span>
+      </div>
     </div>
     <div class="card">
-      <img src="https://place-hold.it/300x150" class="card-img-top" alt="..." />
+      <img src="{% link facilitators/assets/home-constraints.jpg %}" class="card-img-top" alt="A photo of a flipchart explaining a constraint (this one: 2 minutes to green or revert)" />
       <div class="card-body">
         <h5 class="card-title">Constraints</h5>
         <p class="card-text">
@@ -59,9 +67,13 @@ audience: facilitators
           >To the constraints</a
         >
       </div>
+      <div class="card-footer py-1">
+        <span class="small">Photo by <a
+            href="https://twitter.com/swkBerlin/status/741605291888873472/photo/2">@swkBerlin</a></span>
+      </div>
     </div>
     <div class="card">
-      <img src="https://place-hold.it/300x150" class="card-img-top" alt="..." />
+      <img src="{% link facilitators/assets/home-marketing.jpg %}" class="card-img-top" alt="A collection of folded pocketmods explaining the coderetreat format" />
       <div class="card-body">
         <h5 class="card-title">Marketing</h5>
         <p class="card-text">
@@ -71,6 +83,10 @@ audience: facilitators
         <a href="{% link facilitators/marketing.md %}" class="btn btn-primary"
           >How to ask for $$$</a
         >
+      </div>
+      <div class="card-footer py-1">
+        <span class="small">Photo by <a
+            href="https://twitter.com/CoderetreatMum/status/1195569142511722498/photo/1">@CoderetreatMum</a></span>
       </div>
     </div>
   </div>
