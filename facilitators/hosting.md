@@ -86,19 +86,15 @@ During the Global Day of Coderetreat, hosts play an even more important role. Be
 ## How do I become a host or facilitator?
 
 By registering an event, you're automatically considered a host or facilitator, no registration necesssary!
-However, we strongly suggest attending a host or facilitator [training](/training) session and joining the GDCR [Slack channel](/slack).
+However, we strongly suggest attending a host or facilitator [training]({% link facilitators/training-sessions.html %}) session and joining the `#coderetreat` [Slack channel](https://slack.softwarecrafters.org).
 
 ## Is there a place where I can exchange ideas with other hosts and facilitators?
 
-Yes! Join the [Slack channel](/slack) to particpate in discussion about organizing and running a Coderetreat.
+Yes! Join the [Slack channel](https://slack.softwarecrafters.org) to particpate in discussion about organizing and running a Coderetreat.
 
 
 ----------------------------
 # Planning for GDCR
-
-## How do I register my event on Coderetreat.org?
-
-Follow the intructions [here](/register-event).
 
 ## When should I open registration for my local Coderetreat?
 
@@ -152,7 +148,7 @@ If you are in this situation, then you may have opened registration too early. W
 
 ## Where should I advertise my Coderetreat?
 
-There are many places. First, you should list your event on [Coderetreat.org](/register-event)(see the next question for details). The Coderetreat.org website is the central place for all Coderetreat [event listings](/events) so your event is sure to be seen by Coderetreat enthusiasts.
+There are many places. First, you should list your event on [Coderetreat.org]({% link index.html %})(see the next question for details). The Coderetreat.org website is the central place for all Coderetreat event listings so your event is sure to be seen by Coderetreat enthusiasts.
 
 You can also list your event using an alternative registration system. A lot of hosts like to use [Eventbrite](http://www.eventbrite.com/) or [gathers.us](http://gathers.us/). We’ve also heard some people really like to use [meetup.com](http://meetup.com). 
 

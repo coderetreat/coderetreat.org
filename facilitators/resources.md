@@ -27,7 +27,7 @@ They can use an online coding environment like [Cyber-Dojo](http://www.cyber-doj
 
 ## Game of Life schemas
 
-Take a look at [Conway's Game of Life (GoL)](/pages/facilitating/gol/#game-of-life-schemas-provided-by-the-community).
+Take a look at [Conway's Game of Life (GoL)]({% link facilitators/gameoflife.md %}).
 
 ## Acknowledgments
 
