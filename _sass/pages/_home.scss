@@ -62,7 +62,7 @@ body.fullscreen {
     position: absolute;
     z-index: 0;
     right: -5px;
-    max-width: 50px;
+    max-width: 100px;
     top: -5px;
     padding-top: 5px;
     padding-right: 5px;
@@ -115,7 +115,7 @@ body.fullscreen {
 
 @keyframes jumbotron-show-all-controls {
   from {
-    max-width: 50px;
+    max-width: 100px;
   }
   to {
     max-width: 100%;
@@ -127,7 +127,7 @@ body.fullscreen {
     max-width: 100%;
   }
   to {
-    max-width: 50px;
+    max-width: 100px;
   }
 }
 
