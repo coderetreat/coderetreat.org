@@ -32,6 +32,8 @@ plugins:
   - jekyll-feed
   - jekyll-toc
 
+permalink: pretty
+
 toc:
   min_level: 1
   max_level: 2
