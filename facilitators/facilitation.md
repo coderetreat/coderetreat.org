@@ -89,9 +89,11 @@ Be careful to only do this once and only if the room is safe. A corporate enviro
 
 # Schedule of the day
 
+Publishing the rough schedule in advance will help your attendees tremendously, but that doesn't mean that you need to follow it to the last bit. There are times where a session can be too difficult for the attendees, so extending it for another session might help with achieving learning goals. Make sure to account for enough breaks though, even if you decide to continue a session.
+
 ## Sessions
 
-Don’t announce the time left in every session and don’t let them worry about the time (if they ask be non-specific). Remember, a coderetreat is away from the pressures of 'getting things done'.
+Don’t announce the time left in every session and don’t let them worry about the time (if they ask, feel free to be non-specific). Remember, a coderetreat is away from the pressures of 'getting things done'.
 
 For the first few coderetreats, you can use the ideas below to guide attendees as a facilitator. Over time, based on experience observing pairs through the sessions, you will learn to stretch beyond these suggestions.
 
@@ -101,18 +103,20 @@ The first session should be very simple. This is an opportunity for people to ma
 
 Allow pairs to get a feel for the problem domain. Not everyone has seen Conway's Game of Life before, so this session will allow them to wrap their head around the task. After the first session, it can sometimes be useful to discuss the idea of deleting the code. Some people might have a bit of resistance to the idea. Gently explain that those are the rules.
 
-It’s ok if they spend a significant portion of session 1 getting the tools setup:
-
-* Help them if you know the environment.
-* Grab someone else in the room to help them.
-* They could write their own testing framework: only requires an AssertTrue method, throws exceptions if fails, or prints failed or passed to the console.
+It’s ok if they spend a significant portion of session 1 getting the tools setup. Despite you asking people to set their laptops up in advance, there will be technical hurdles that will make the first session a prep-session for the following sessions – and that's ok!
 
 ### Session Retrospective
 
-* Remember: you are facilitating a discussion, not lecturing a group.
-* Ask questions rather than telling. Let the group discover things on their own.
-* Try to get everyone involved. Ask people who haven't contributed much what they think (or some other specific question).
+After each session, you **need** to hold a retrospective. The purpose is for people to exchange their insights, but also for them to get to know each other a bit.
+
+* Remember: **You are facilitating a discussion**, not lecturing a group.
+* **Ask questions rather than telling**. Let the group discover things on their own.
+* **Try to get everyone involved**. Ask people who haven't contributed much what they think (or some other specific question).
 * After the first session it might be good to ask about deleting their code: Who found it difficult to delete their code? Why was it difficult?
+
+<div class="advise" markdown="1">
+Make sure to be decisive about the timeframe of the retrospective, but also make sure that it isn't dominated by a few vocal people. The latter is more important than the former.
+</div>
 
 ### Session 2
 
@@ -128,7 +132,7 @@ Suggest that teams begin to stretch themselves. Discuss polymorphism as a better
 
 ## Lunch
 
-Lunch should be long. Participants should have the opportunity to socialize and discuss the morning.
+Lunch should be long. Participants should have the opportunity to socialize and discuss the morning. A lunch break is an explicit disruption of flow, so expect a slow start after it. **Two hours** will allow for a comfortable lunchtime plus socialising afterwards.
 
 ### Session 4, 5, 6
 
@@ -140,14 +144,13 @@ Explain to teams that the afternoon is about going past any self-imposed limits.
 * No language primitives
 * TDD As If You Meant It
 
-
 ## The Closing Circle
 
 It is important to get together at the end of the day and reflect. The standard way if to have a closing circle where everyone answers 3 questions. 
 
 Depending on the size of the group, you'll want to emphasize brevity. With 20-30 people, it can potentially take a while.
 
-## The Three Questions
+### The Three Questions
 
 Prior to the closing circle, tell them the following three questions and then give them a break to think about these three questions. 
 
@@ -172,28 +175,26 @@ While coderetreat is not a day to learn a new language, it is perfectly acceptab
 
 After all, 45 minutes goes by quickly, and it is a waste to spend the majority of the time getting a development environment raised up.
 
-## Handling Difficult Participants
+## Handling difficult participants
 
 * Watch out for people who are very dominant and ask them to pull back a little bit. (Ping pong helps with that)
 * If someone does not delete the code or do as told, ask a second time and then ignore this person. We are not the police ;-)
 * It is more important to create a healthy learning environment than to follow all the rules to the letter.
+* If someone's behaviour is impacting the experience of others, sternly reassert the goal of the day and don't feel shy to ask them to leave.
 
-# FAQ
+# Frequently Asked Questions
 
 ## Common questions participants ask and how to respond
 
 * Are we really going to work on the same problem all day long? 
     * Yes. Conway's Game of life works very well for that sort of thing. 
     * It doesn't get old. There is always something new to learn
+    * Game Of Life is just the conversation starter
 
 * How much time is left before the iteration is over? 
     * A couple of minutes (never be specific, never tell them exactly how much time is left)
 
 ## Common first-time facilitator questions
-
-* What do I do if I have a participant who is disruptive in some way (rude, inexperienced, etc)?
-    * Don't let it bother you too much. The format of the event prevents a single person from sabotaging the entire day (except for really small groups).
-    * If someone complains, remind them that they don't have the pair with that person again. So it was only one iteration that was "bad".
 
 * What do I do if I don't know the answer to a question?
     * Throw it back to the group: "That's a great question. Does anyone want to try to answer it?"
