@@ -23,7 +23,9 @@ The coderetreat day consists of 5-6 sessions, each session's learnings building 
 
 The morning focuses on becoming comfortable with the problem domain, breaking old habits and beginning focused self-discovery. The afternoon pushes the envelope by challenging pairs to stretch their skills and understanding of abstractions, modular design and test-driven development. With most groups, the focus should be on the fundamentals of software development and modular design, primarily the [4 rules of simple design](http://wiki.c2.com/?XpSimplicityRules). Spend the day practicing these concepts, rather than pushing into new learnings.
 
-**If this is your first coderetreat, check out Alastair walking you through his structure of the day and the constraints he's using in [his online training on YouTube](https://www.youtube.com/watch?v=GvC-jlxWo1c&feature=emb_title)**
+<div class="advise" markdown="1">
+**Beginners Advise**: If this is your first coderetreat, check out Alastair walking you through his structure of the day and the constraints he's using in [his online training on YouTube](https://www.youtube.com/watch?v=GvC-jlxWo1c&feature=emb_title)
+</div>
 
 # Welcome, introductions, explanation of the problem
 
@@ -46,6 +48,9 @@ Before you introduce the workshop, it is important to go through a couple of org
 **Beginners Advise**: If this is your first coderetreat facilitation, it is perfectly fine to advertise it as such. You're organizing it because you'd like to contribute to a community, not because of your vast expertise in the field. You can call on your participants to help you make the day worth it, e.g. by appealing to their self-organization skills. 
 
 A workshop with a lot of people can be messy and exhausting. Establish rituals like the **hand-rule** (if you see me raise your hand, finish your sentence and raise your hand too) to quickly gather attention quickly and quiet down the room.
+</div>
+<div class="remote" markdown="1">
+**Remote Advise**: Remote facilitation can be very challenging. Make sure to have a companion document (e.g. a MURAL/Miro Board, or a Google Docs) where you keep everything written down. Attention spans can be difficult to manage remotely, so having written rules help people keep up at their pace.
 </div>
 
 ## Introducing the workshop
