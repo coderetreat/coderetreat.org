@@ -82,7 +82,7 @@ A workshop with a lot of people can be messy and exhausting. Establish rituals l
 Depending on your audience, it might be helpful to introduce Test-Driven-Development and the rules around Pair-Programming. If you feel comfortable with facilitating such an exercise, it can be helpful to ask people to line themselves up in order of personally perceived experience (without questioning it!).
 
 <div class="advise" markdown="1">
-The "experience scale" can also make for a nice matching for the first coding session! Ask everyone to sort themselves by experience in Test-Driven-Development and then match those with little experience with those with most experience.
+**Beginners Advise**: The "experience scale" can also make for a nice matching for the first coding session! Ask everyone to sort themselves by experience in Test-Driven-Development and then match those with little experience with those with most experience.
 
 Be careful to only do this once and only if the room is safe. A corporate environment might not make for a good place for people to *expose their ignorance*.
 </div>
@@ -115,7 +115,7 @@ After each session, you **need** to hold a retrospective. The purpose is for peo
 * After the first session it might be good to ask about deleting their code: Who found it difficult to delete their code? Why was it difficult?
 
 <div class="advise" markdown="1">
-Make sure to be decisive about the timeframe of the retrospective, but also make sure that it isn't dominated by a few vocal people. The latter is more important than the former.
+**Beginners Advise**: Make sure to be decisive about the timeframe of the retrospective, but also make sure that it isn't dominated by a few vocal people. The latter is more important than the former.
 </div>
 
 ### Session 2
