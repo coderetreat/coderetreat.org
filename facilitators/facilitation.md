@@ -56,44 +56,46 @@ A workshop with a lot of people can be messy and exhausting. Establish rituals l
 ## Introducing the workshop
 
 * **Establish agency**: The workshop is mostly autodidactic, so it's important to manage expectations here. It is up to the people themselves to make the best out of it. You're just here to provide guidance and set up the space.
-* Introduce Coderetreat (just like it is introduced above)
-* Mention that the goal of the day is to practice our craft
-* Discuss the idea of “Reducing the Cost of Change” in our code
-* Discuss the [four rules of simple design](http://c2.com/cgi/wiki?XpSimplicityRules):
+* **Establish learning goals**: Mention that the goal of the day is to practice our craft
+  * Practicing Test-Driven-Development
+  * Exploring new languages and paradigms
+  * Mentoring other developers
+* Discuss the idea of **“Reducing the Cost of Change”** in our code
+* Discuss the [**four rules of simple design**](http://c2.com/cgi/wiki?XpSimplicityRules):
   * Passes all Tests
   * Expresses Intent (Clear, Expressive, & Consistent)
   * No Duplication
   * Minimal methods, classes, & modules (no superfluous abstractions)
 * Introduce the coderetreat format:
   * Make sure participants know they shouldn’t try to finish the problem and why that is important
-  * Discuss that you will stop participants and they need to just stop
-  * Let participants know that at the end of the session you will ask everyone to delete their code and stand up. By forcing people to delete their code it allows them to write code and not worry about finishing.  This allows them to experiment and practice in a way they can’t at work.
-* Introduce Conway’s Game of Life
-* Encourage everyone to have the courage to experiment and to try new approaches to solving the problem or techniques for writing code.
-* Ask everyone to introduce themselves, what language they prefer and are setup to use, and what language they would like to get experience with at coderetreat. You can write the names and languages on a whiteboard to know who to pair with.
+  * Let participants know that at the end of the session you will ask everyone to delete their code and stand up. This allows them to experiment and practice in a way they can’t at work.
+* Introduce **Conway’s Game of Life**
+  * Use **posters** or **videos** as found on our [Game Of Life resources page]({% link facilitators/gameoflife.md %})
+  * Make sure people can ask broad questions right away
+* Encourage everyone to have the **courage to experiment** and to try new approaches to solving the problem or techniques for writing code.
+* Ask everyone to **introduce themselves**, but make sure that everyone is brief (1-2 sentences max):
+  * What language they prefer and are setup to use
+  * What language they would like to get experience with
 
-Optional things you can discuss:
+### Gauging prior experience
 
-* The TDD Cycle Red/Green/Refactor and writing the least amount of code to get it to pass
-* Characteristics and qualities of “Good” Code (What does good code look like?)
+Depending on your audience, it might be helpful to introduce Test-Driven-Development and the rules around Pair-Programming. If you feel comfortable with facilitating such an exercise, it can be helpful to ask people to line themselves up in order of personally perceived experience (without questioning it!).
 
-You can use your own style of facilitation, leave the participants alone, ask a lot of questions or try to teach them. If in doubt do less of facilitation. Take notes throughout the day:
+<div class="advise" markdown="1">
+The "experience scale" can also make for a nice matching for the first coding session! Ask everyone to sort themselves by experience in Test-Driven-Development and then match those with little experience with those with most experience.
 
-* Something that was interesting
-* Something that worked well
-* Something that didn't work so well (mistakes)
+Be careful to only do this once and only if the room is safe. A corporate environment might not make for a good place for people to *expose their ignorance*.
+</div>
 
-# Lunch
+# Schedule of the day
 
-Lunch should be long. Participants should have the opportunity to socialize and discuss the morning.
-
-# Sessions
+## Sessions
 
 Don’t announce the time left in every session and don’t let them worry about the time (if they ask be non-specific). Remember, a coderetreat is away from the pressures of 'getting things done'.
 
 For the first few coderetreats, you can use the ideas below to guide attendees as a facilitator. Over time, based on experience observing pairs through the sessions, you will learn to stretch beyond these suggestions.
 
-## Session 1
+### Session 1
 
 The first session should be very simple. This is an opportunity for people to make sure they have their environments setup for TDD.
 
@@ -105,7 +107,14 @@ It’s ok if they spend a significant portion of session 1 getting the tools set
 * Grab someone else in the room to help them.
 * They could write their own testing framework: only requires an AssertTrue method, throws exceptions if fails, or prints failed or passed to the console.
 
-## Session 2
+### Session Retrospective
+
+* Remember: you are facilitating a discussion, not lecturing a group.
+* Ask questions rather than telling. Let the group discover things on their own.
+* Try to get everyone involved. Ask people who haven't contributed much what they think (or some other specific question).
+* After the first session it might be good to ask about deleting their code: Who found it difficult to delete their code? Why was it difficult?
+
+### Session 2
 
 Discuss appropriate data structures around the problem. Is an array the right way to hold the cells? Introduce the idea of primitive obsession.
 
@@ -113,11 +122,15 @@ It is very common to implement Game of life as a two dimensional array. You migh
 
 People tend to want to focus on how to represent the system. But have them start with the rules and how to implement them.
 
-## Session 3
+### Session 3
 
 Suggest that teams begin to stretch themselves. Discuss polymorphism as a better solution than boolean flags. Further reinforce the avoidance of primitive obsession. Push heavy exploration of abstractions.
 
-## Session 4, 5, 6
+## Lunch
+
+Lunch should be long. Participants should have the opportunity to socialize and discuss the morning.
+
+### Session 4, 5, 6
 
 Explain to teams that the afternoon is about going past any self-imposed limits. Below are some constraints that can be introduced, chosen based on the experience of the individual pairs.
 
@@ -127,14 +140,8 @@ Explain to teams that the afternoon is about going past any self-imposed limits.
 * No language primitives
 * TDD As If You Meant It
 
-# Iteration Retrospectives
 
-* Remember: you are facilitating a discussion, not lecturing a group.
-* Ask questions rather than telling. Let the group discover things on their own.
-* Try to get everyone involved. Ask people who haven't contributed much what they think (or some other specific question).
-* After the first session it might be good to ask about deleting their code: Who found it difficult to delete their code? Why was it difficult?
-
-# The Closing Circle
+## The Closing Circle
 
 It is important to get together at the end of the day and reflect. The standard way if to have a closing circle where everyone answers 3 questions. 
 
@@ -150,14 +157,14 @@ Then in the closing circle ask each participant to answer each of the questions:
 * What, if anything, surprised you today?
 * What, if anything, will you do differently in the future?
 
-## Some tips
+# Facilitation advise
 
 * Enforce the "keep it short" rule as best you can
 * Don't take notes if that will make people uncomfortable
 * It's okay to ask for facilitation feedback afterwards, but don't ask for it during the circle
 * Go first (to show people how it's done)
 
-# Whatever Language You Want!
+## Whatever Language You Want!
 
 The ideas presented and practiced in coderetreat are applicable to any object-oriented language. To this end, it is suggested that coderetreats are explicitly multi-lingual. 
 
@@ -165,7 +172,7 @@ While coderetreat is not a day to learn a new language, it is perfectly acceptab
 
 After all, 45 minutes goes by quickly, and it is a waste to spend the majority of the time getting a development environment raised up.
 
-# Handling Difficult Participants
+## Handling Difficult Participants
 
 * Watch out for people who are very dominant and ask them to pull back a little bit. (Ping pong helps with that)
 * If someone does not delete the code or do as told, ask a second time and then ignore this person. We are not the police ;-)
