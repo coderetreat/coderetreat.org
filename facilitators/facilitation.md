@@ -184,22 +184,29 @@ After all, 45 minutes goes by quickly, and it is a waste to spend the majority o
 
 # Frequently Asked Questions
 
-## Common questions participants ask and how to respond
+### Are we really going to work on the same program all day long? 
 
-* Are we really going to work on the same problem all day long? 
-    * Yes. Conway's Game of life works very well for that sort of thing. 
-    * It doesn't get old. There is always something new to learn
-    * Game Of Life is just the conversation starter
+Yes, because the task is not the learning goal we're focusing on. We found Game Of Life to be **just challenging enough** to make it a worthwhile exercise, but also **unambiguous** enough so the usual misunderstandings between requirement and implementation don't inhibit learning.
 
-* How much time is left before the iteration is over? 
-    * A couple of minutes (never be specific, never tell them exactly how much time is left)
+Throughout the day, we focus on the habits of how we build the code. The constraints we add challenge our default assumptions and reflexes when it comes to coding. By leaving our comfort zone, we're able to critically examine how we've built code in the past.
 
-## Common first-time facilitator questions
+It doesn't get old. There is always something new to learn, be it from your pairing partner, coding in a new language, or because one of the [constraints]({% link facilitators/constraints.md %}) challenges your habits.
 
-* What do I do if I don't know the answer to a question?
-    * Throw it back to the group: "That's a great question. Does anyone want to try to answer it?"
+We're using Game Of Life and the constraint to channel the learning goal for each particular session.
 
-* What do I do if we have an odd number of people?
-    * You can allow three people to program together rather than two. Having a group of three works fine.
-    * Don’t let anyone work alone. Everyone should be working with someone else.
+Constrainted Learning
+Analysis paralysis
+ Game Of Life is just the conversation starter
+
+### How much time is left before the iteration is over? 
+
+ A couple of minutes (never be specific, never tell them exactly how much time is left)
+
+### What do I do if I don't know the answer to a question?
+
+Throw it back to the group: "That's a great question. Does anyone want to try to answer it?"
+
+### What do I do if we have an odd number of people?
+
+You can allow three people to program together rather than two. Having a group of three works fine. Don’t let anyone work alone. Everyone should be working with someone else.
 
