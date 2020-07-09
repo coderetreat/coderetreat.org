@@ -3,12 +3,12 @@ layout: guide
 toc: true
 audience: facilitators
 title: Facilitation
-intro: This page outlines what the structure of a coderetreat day should look like, as well as tips for effective facilitation. 
+intro: This page outlines what the structure of a Coderetreat day should look like, as well as tips for effective facilitation. 
 ---
 
 # Overview 
 
-A coderetreat has an established, time-tested format that is optimized for focused practice.
+A Coderetreat has an established, time-tested format that is optimized for focused practice.
 
 * **Total Duration**: 8.30am to 5pm
 * **Length of every session**: 45 minutes followed by a 15 minute retrospective and break
@@ -19,17 +19,17 @@ A coderetreat has an established, time-tested format that is optimized for focus
 
 # The Day
 
-The coderetreat day consists of 5-6 sessions, each session's learnings building upon previous sessions. 
+The Coderetreat day consists of 5-6 sessions, each session's learnings building upon previous sessions. 
 
 The morning focuses on becoming comfortable with the problem domain, breaking old habits and beginning focused self-discovery. The afternoon pushes the envelope by challenging pairs to stretch their skills and understanding of abstractions, modular design and test-driven development. With most groups, the focus should be on the fundamentals of software development and modular design, primarily the [4 rules of simple design](http://wiki.c2.com/?XpSimplicityRules). Spend the day practicing these concepts, rather than pushing into new learnings.
 
-<div class="advise" markdown="1">
-**Beginners Advise**: If this is your first coderetreat, check out Alastair walking you through his structure of the day and the constraints he's using in [his online training on YouTube](https://www.youtube.com/watch?v=GvC-jlxWo1c&feature=emb_title)
+<div class="advice" markdown="1">
+**Beginners Advice**: If this is your first Coderetreat, check out Alastair walking you through his structure of the day and the constraints he's using in [his online training on YouTube](https://www.youtube.com/watch?v=GvC-jlxWo1c&feature=emb_title)
 </div>
 
 # Welcome, introductions, explanation of the problem
 
-**A good framing is important to setup a space for learning and exploration**. Remember, if attendees arrive on a Saturday, a lot of them have five days of a day-job in software development behind them, along with all the hybris of commercial software development. Your task as a facilitator is to get everyone into a learning mindset, away from the obligations of developing software to order.
+**A good framing is important to setup a space for learning and exploration**. Remember, if attendees arrive on a Saturday, a lot of them have five days of a day-job in software development behind them, along with all the stress of commercial software development. Your task as a facilitator is to get everyone into a learning mindset, away from the obligations of developing software to order.
 
 **Writers and musicians are always practicing**. As software developers we don’t very often practice. Coderetreat is our chance to practice outside of work constraints. We need to practice because at work we are often on deadlines so we must cut corners. 
 
@@ -37,20 +37,21 @@ The morning focuses on becoming comfortable with the problem domain, breaking ol
 
 Before you introduce the workshop, it is important to go through a couple of organizational things to make sure everyone is comfortable. Some people like surprises, some people really don't. Be on the safe side and spill the beans, it's better to be more verbose than to leave people in the unknown.
 
-* **Welcome everyone** (duh)
-* **Introduce everyone who's organizing today's event** - make sure they wear nametags with a marker so they can be easily found.
-* **Give a shout-out to the host** and ask them to briefly explain the location (bathrooms, smokers place, getting in and out, their phone number, etc.)
-* If you have a sponsor, now is the time to give them **at most five minutes** to advertise their company. If they have slides, make sure they are brief.
-* **Read out the important bits of your Code of Conduct**, that is, a short version if you have it, who to contact in case of a violation, and consequences of violating it.
-* **Lay out the schedule of the day**: When are the breaks, when do you wrap things up? People are used to very structured workshops and presentations. This is not one of these, people in their sessions are free to take a break between them in their pair, and they're free to skip a session if they don't feel like it.
+* **Welcome everyone** - This is important!: Participants have volunteered their entire day, and this is a key opportunity to affirm their choice.
+* **Group Introduction** - Let everyone have a chance to speak early, which helps communication in the group throughout the day. Keep it brief!
+* **Introduce everyone who's organizing today's event** - make sure they wear name tags with a marker, so they can be easily found.
+* **Give a shout-out to the host** - ask them to briefly explain the location (bathrooms, smokers place, getting in and out, their phone number, etc.)
+* **Sponsorship** - If you have a sponsor, let to advertise their company. Keep it brief, so the group stays active and involved!
+* **Read out the important bits of your Code of Conduct** - a short version if you have it, who to contact in case of a violation, and consequences of violating it.
+* **Lay out the schedule of the day** - When are the breaks, when do you wrap things up? People are accustomed to very structured workshops and presentations. This is not one of these, people in their sessions are free to take a break between them in their pair, and they're free to skip a session if they don't feel like it.
 
-<div class="advise" markdown="1">
-**Beginners Advise**: If this is your first coderetreat facilitation, it is perfectly fine to advertise it as such. You're organizing it because you'd like to contribute to a community, not because of your vast expertise in the field. You can call on your participants to help you make the day worth it, e.g. by appealing to their self-organization skills. 
+<div class="advice" markdown="1">
+**Beginners Advice**: If this is your first Coderetreat facilitation, it is perfectly fine to advertise it as such. You're organizing it because you'd like to contribute to a community, not because of your vast expertise in the field. You can call on your participants to help you make the day worth it, e.g. by appealing to their self-organization skills. 
 
 A workshop with a lot of people can be messy and exhausting. Establish rituals like the **hand-rule** (if you see me raise your hand, finish your sentence and raise your hand too) to quickly gather attention quickly and quiet down the room.
 </div>
 <div class="remote" markdown="1">
-**Remote Advise**: Remote facilitation can be very challenging. Make sure to have a companion document (e.g. a MURAL/Miro Board, or a Google Docs) where you keep everything written down. Attention spans can be difficult to manage remotely, so having written rules help people keep up at their pace.
+**Remote Advice**: Remote facilitation can be very challenging. Make sure to have a companion document (e.g. a MURAL/Miro Board, or a Google Docs) where you keep everything written down. Attention spans can be difficult to manage remotely, so having written rules help people keep up at their pace.
 </div>
 
 ## Introducing the workshop
@@ -60,29 +61,27 @@ A workshop with a lot of people can be messy and exhausting. Establish rituals l
   * Practicing Test-Driven-Development
   * Exploring new languages and paradigms
   * Mentoring other developers
-* Discuss the idea of **“Reducing the Cost of Change”** in our code
-* Discuss the [**four rules of simple design**](http://c2.com/cgi/wiki?XpSimplicityRules):
+* **Discuss the idea of “Reducing the Cost of Change”** in our code
+* **Discuss the [Four Rules of Simple Design](http://c2.com/cgi/wiki?XpSimplicityRules)**:
   * Passes all Tests
   * Expresses Intent (Clear, Expressive, & Consistent)
   * No Duplication
   * Minimal methods, classes, & modules (no superfluous abstractions)
-* Introduce the coderetreat format:
+* **Introduce the Coderetreat format**:
   * Make sure participants know they shouldn’t try to finish the problem and why that is important
   * Let participants know that at the end of the session you will ask everyone to delete their code and stand up. This allows them to experiment and practice in a way they can’t at work.
-* Introduce **Conway’s Game of Life**
+* **Introduce [Conway’s Game of Life](https://en.wikipedia.org/wiki/Conways_Game_of_Life)**
   * Use **posters** or **videos** as found on our [Game Of Life resources page]({% link facilitators/gameoflife.md %})
   * Make sure people can ask broad questions right away
-* Encourage everyone to have the **courage to experiment** and to try new approaches to solving the problem or techniques for writing code.
-* Ask everyone to **introduce themselves**, but make sure that everyone is brief (1-2 sentences max):
-  * What language they prefer and are setup to use
-  * What language they would like to get experience with
+* **Encourage everyone to have the courage to experiment** and to try new approaches to solving the problem or techniques for writing code.
+
 
 ### Gauging prior experience
 
 Depending on your audience, it might be helpful to introduce Test-Driven-Development and the rules around Pair-Programming. If you feel comfortable with facilitating such an exercise, it can be helpful to ask people to line themselves up in order of personally perceived experience (without questioning it!).
 
-<div class="advise" markdown="1">
-**Beginners Advise**: The "experience scale" can also make for a nice matching for the first coding session! Ask everyone to sort themselves by experience in Test-Driven-Development and then match those with little experience with those with most experience.
+<div class="advice" markdown="1">
+**Beginners Advice**: The "experience scale" can also make for a nice matching for the first coding session! Ask everyone to sort themselves by experience in Test-Driven-Development and then match those with little experience with those with most experience.
 
 Be careful to only do this once and only if the room is safe. A corporate environment might not make for a good place for people to *expose their ignorance*.
 </div>
@@ -93,9 +92,9 @@ Publishing the rough schedule in advance will help your attendees tremendously, 
 
 ## Sessions
 
-Don’t announce the time left in every session and don’t let them worry about the time (if they ask, feel free to be non-specific). Remember, a coderetreat is away from the pressures of 'getting things done'.
+Don’t announce the time left in every session and don’t let them worry about the time (if they ask, feel free to be non-specific). Remember, a Coderetreat is away from the pressures of 'getting things done'.
 
-For the first few coderetreats, you can use the ideas below to guide attendees as a facilitator. Over time, based on experience observing pairs through the sessions, you will learn to stretch beyond these suggestions.
+For the first few Coderetreats, you can use the ideas below to guide attendees as a facilitator. Over time, based on experience observing pairs through the sessions, you will learn to stretch beyond these suggestions.
 
 ### Session 1
 
@@ -114,8 +113,8 @@ After each session, you **need** to hold a retrospective. The purpose is for peo
 * **Try to get everyone involved**. Ask people who haven't contributed much what they think (or some other specific question).
 * After the first session it might be good to ask about deleting their code: Who found it difficult to delete their code? Why was it difficult?
 
-<div class="advise" markdown="1">
-**Beginners Advise**: Make sure to be decisive about the timeframe of the retrospective, but also make sure that it isn't dominated by a few vocal people. The latter is more important than the former.
+<div class="advice" markdown="1">
+**Beginners Advice**: Make sure to be decisive about the timeframe of the retrospective, but also make sure that it isn't dominated by a few vocal people. The latter is more important than the former.
 </div>
 
 ### Session 2
@@ -160,7 +159,7 @@ Then in the closing circle ask each participant to answer each of the questions:
 * What, if anything, surprised you today?
 * What, if anything, will you do differently in the future?
 
-# Facilitation advise
+# Facilitation advice
 
 * Enforce the "keep it short" rule as best you can
 * Don't take notes if that will make people uncomfortable
@@ -169,9 +168,9 @@ Then in the closing circle ask each participant to answer each of the questions:
 
 ## Whatever Language You Want!
 
-The ideas presented and practiced in coderetreat are applicable to any object-oriented language. To this end, it is suggested that coderetreats are explicitly multi-lingual. 
+The ideas presented and practiced in Coderetreat are applicable to any object-oriented language. To this end, it is suggested that Coderetreats are explicitly multi-lingual. 
 
-While coderetreat is not a day to learn a new language, it is perfectly acceptable for someone to work in a language they are not familiar with. The facilitator should stress that at least one member of the pair should have a working environment. 
+While Coderetreat is not a day to learn a new language, it is perfectly acceptable for someone to work in a language they are not familiar with. The facilitator should stress that at least one member of the pair should have a working environment. 
 
 After all, 45 minutes goes by quickly, and it is a waste to spend the majority of the time getting a development environment raised up.
 
