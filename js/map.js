@@ -1,40 +1,36 @@
-import "ol/ol.css";
-import Map from "ol/Map";
-import View from "ol/View";
-import TopoJSON from "ol/format/TopoJSON";
-import { Vector as VectorLayer } from "ol/layer";
-import VectorSource from "ol/source/Vector";
-import { Fill, Stroke, Style } from "ol/style";
+import "leaflet/dist/leaflet.css";
+import L from "leaflet";
+import "leaflet.vectorgrid";
+import geo from "./map/ne_10m_time_zones.json";
 
-var style = new Style({
-  fill: new Fill({
-    color: "rgba(255, 255, 255, 0.6)",
-  }),
-  stroke: new Stroke({
-    color: "#319FD3",
-    width: 1,
-  }),
-});
+var mymap = L.map('map').setView([45, Math.random()*180], 2);
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    minZoom: 2,
+    id: 'rradczewski/ckcggc2xd0azq1iqd9t5f0yhk',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'pk.eyJ1IjoicnJhZGN6ZXdza2kiLCJhIjoiY2tjZ2cyenJqMGp1YzJ0bHBrOTR5dHlsdyJ9.6kI34USWMzJ3hxS7j946xg'
+}).addTo(mymap);
 
-var vector = new VectorLayer({
-  source: new VectorSource({
-    url:
-      "https://openlayers.org/en/latest/examples/data/topojson/world-110m.json",
-    format: new TopoJSON({
-      // don't want to render the full world polygon (stored as 'land' layer),
-      // which repeats all countries
-      layers: ["countries"],
-    }),
-    overlaps: false,
-  }),
-  style: style,
-});
+console.log(geo);
 
-var map = new Map({
-  layers: [vector],
-  target: "map",
-  view: new View({
-    center: [0, 0],
-    zoom: 1,
-  }),
-});
+var vectorGrid = L.vectorGrid.slicer( geo, {
+  rendererFactory: L.svg.tile,
+  vectorTileLayerStyles: {
+    sliced: function(properties) {
+      return {
+        stroke: true,
+        opacity: 0.2,
+        weight: 0.5,
+      }
+    }
+  },
+  interactive: true,
+  getFeatureId: function(f) {
+    return f.properties.wb_a3;
+  }
+})
+
+vectorGrid.addTo(mymap);
