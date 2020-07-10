@@ -1,6 +1,6 @@
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
-import "leaflet.vectorgrid";
+import "leaflet.vectorgrid/dist/Leaflet.VectorGrid";
 import geo from "./map/ne_10m_time_zones.json";
 
 var mymap = L.map('map').setView([45, Math.random()*180], 2);
