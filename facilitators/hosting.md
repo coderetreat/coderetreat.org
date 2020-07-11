@@ -4,19 +4,79 @@ toc: true
 audience: facilitators
 title: Hosting a Coderetreat
 description: Help improve developers in your community by hosting a coderetreat in your city
+intro: >
+    Hosts handle all of the logistics of organizing, finding a local sponsor, running a coderetreat and creating an atmosphere of fun and collaboration.
+    <br/>
+    Read on to find out how you can support the facilitators in running a smooth event!
 ---
-<p class="lead">Hosts handle all of the logistics of organizing, finding a local sponsor, running a coderetreat and creating an atmosphere of fun and collaboration.</p>
 
-To host a coderetreat:
+# What's hosting, what's facilitating?
 
-* Pick a date and time to hold your coderetreat. Coderetreats lasts for a day (9:00am-5:00pm). Because of this, coderetreats are usually held on a Saturday.
-* Find a place to hold your coderetreat. Many local tech companies are willing to serve as a venue.
-* Find one or more local sponsors for lunch and other expenses. Coderetreats must be free.
-* Recruit a facilitator to guide the participants through the day.
-* Arrange for a nice, catered lunch. Participants who are willing to come out at 9 in the morning to spend the day coding deserve more than just pizza for lunch.
-* Check the checklist for keeping track of things.
+We're purposefully separating the duties of organizers into facilitation and hosting: A coderetreat is designed as a full-day workshop, and having to do both hosting- and facilitation-related duties throughout the day is very exhausting for a single person.
 
-## Checklist
+Facilitation is everything from explaining the format, responding to questions and providing guidance throughout the sessions, so it's a full-time endeavour throughout the whole day.
+
+Hosting means making sure that everyone has the resources they need to get through the day. From power plugs to the right lunch order, a host makes sure that the facilitator can focus on their moderation and the attendees can focus on their learning.
+
+We're focussing on hosting duties in this guide. Head over to the [facilitation guide]({% link facilitators/facilitation.md %}) for more information on the role of the facilitator.
+
+<div class="advice" markdown="1">
+If you can't find a second person to co-organize, it is highly adviced to keep the number of attendees low, less than 10. Make sure to not exhaust yourself, but rather focus on the necessities required to make the day work. You can appeal to your attendees to help you make the event worthwhile and sustainable.
+</div>
+
+# Finding a venue
+
+Finding a venue might be the most difficult part of your hosting duties. While officies are usually well equipped with meeting rooms, the fact that a coderetreat usually takes place on a **Saturday** might pose extra challenges, as companies might require security personnel to be present.
+
+The company providing the venue should be regarded a *sponsor* and as such be given a short opportunity to introduce themselves. See [our Sponsoring chapter](#sponsoring) for more information.
+
+<div class="advice" markdown="1">
+If your venue requires a third person to let you in, make sure that person is aware of the time and that you have their phone number. It is best to have multiple people able to open up in the morning.
+
+There's nothing worse than standing in front of a locked door on a Saturday morning!
+</div>
+
+## Criteria
+
+- Central location, easily reachable by public transport
+- Accessible (e.g. lifts, accessible bathrooms, level flooring)
+- Large meeting-rooms or a large conference room
+- Public WiFi (or guest access with enough tokens and without bandwidth limitation)
+- Available on Saturday, from 8am to 5pm (an hour earlier to an hour later than official times)
+
+# Registration
+
+We highly advice you to have people sign-up for the event in advance. Both the fact that it takes place on a Saturday, and that it is free of charge increase the likelihood of no-shows.
+
+There are popular platforms for event registration, e.g. [ti.to](ti.to), [EventBrite](https://www.eventbrite.com/) or even [meetup](https://www.meetup.com/).
+
+<div class="advice" markdown="1">
+Most of these platforms don't handle deposits too well. We found *EventBrite*, followed by *ti.to*, to be the easiest to handle deposits and the subsequent refunds. Be aware that you might need to pay transaction fees, even for cancelled orders.
+</div>
+
+## Ticket prices
+
+A coderetreat is designed to be a low-barrier event to expose developers to development practices we deem helpful to advance their career. It is neither a commercial, nor a certifiable workshop. The best coderetreats are those that are most inclusive to anyone regardless of their economical situation.
+
+As such, public coderetreats, and in particular events for the *Global Day Of Coderetreat* have to be **free of charge** in order to be listed and advertised on our platform.
+
+In order to lower the no-show rate, charging a **deposit** of up to 10€/10$ (or a comparable amount) is recommended, though. That deposit must be refunded if the person shows up on the day, even if they don't participate for the full-day.
+
+<div class="advice" markdown="1">
+A deposit of 10€/10$ works because it adds a monetary investment to the persons incentives of actually attending. At the same time, this also establishes a barrier to participate.
+
+If you invite people explicitly (e.g. by reaching out to diversity initiatives), consider providing them with a special link / voucher code that waives the deposit. This will not just avoid the barrier put up by the deposit, but also underline your invitation.
+</div>
+
+# Sponsoring {#sponsoring}
+
+## Free giveaways
+
+## Shoutouts and presentation
+
+# Food and Drinks
+
+## No Pizza Rule
 
 This list is intended as help for people who want to host a coderetreat:
 
@@ -34,12 +94,19 @@ This list is intended as help for people who want to host a coderetreat:
 - Email a reminder to participants one day before event
 - Emergency numbers of host location, e.g. Facility/Security staff
 
-## Blog posts
 
-Here are some additional blog posts about hosting:
+# Code of Conduct
 
-* Alex Bolboaca has been organizing and facilitating an ongoing series of coderetreats in Romania. He wrote a great post on [organizing coderetreats](http://www.alexbolboaca.ro/wordpress/articles/how-to-organize-a-code-retreat).
-* John Smith has a great post on the specifics of [what to think about when organizing a coderetreat](http://geekswithblogs.net/onefloridacoder/archive/2010/08/16/setting-up-for-the-orlando-code-retreat.aspx).
+
+
+To host a coderetreat:
+
+* Pick a date and time to hold your coderetreat. Coderetreats lasts for a day (9:00am-5:00pm). Because of this, coderetreats are usually held on a Saturday.
+* Find a place to hold your coderetreat. Many local tech companies are willing to serve as a venue.
+* Find one or more local sponsors for lunch and other expenses. Coderetreats must be free.
+* Recruit a facilitator to guide the participants through the day.
+* Arrange for a nice, catered lunch. Participants who are willing to come out at 9 in the morning to spend the day coding deserve more than just pizza for lunch.
+* Check the checklist for keeping track of things.
 
 # General questions
 
@@ -225,5 +292,48 @@ In the United States, lunch typically costs between $10 and $20 per person and o
 
 Yes. SWAG is fun and can help make the day more interesting. However, any promotional materials, goods, or merchandise provided by local sponsors should be in good taste. Items which might harm, offend, or disturb participants must be avoided. Remember, we’re trying to create a fun and educational day for our participants, not to offend them.
 
+# Checklists
+
+## A month before
+
+<ul class="list-unstyled mx-3">
+<li><input type="checkbox" class="mr-1"> Create event page (ti.to, meetup, eventbrite, etc.)</li>
+<li><input type="checkbox" class="mr-1"> List event on coderetreat.org (see <a href="{% link facilitators/register.md %}">Register</a>)</li>
+<li><input type="checkbox" class="mr-1"> Invite local communities</li>
+</ul>
+
+## A week before
+
+<ul class="list-unstyled mx-3">
+<li><input type="checkbox" class="mr-1"> Ask attendees about their dietary requirements</li>
+<li><input type="checkbox" class="mr-1"> Process cancellations of people who subsequently cancel their RSVP</li>
+<li><input type="checkbox" class="mr-1"> Update lunch order accordingly</li>
+</ul>
+
+## The day before
+
+<ul class="list-unstyled mx-3">
+<li><input type="checkbox" class="mr-1"> Print/create posters for Game Of Life (see <a href="{% link facilitators/resources.md %}">Resources</a>)</li>
+<li><input type="checkbox" class="mr-1"> Put up signs making it easier to get to the venue</li>
+<li><input type="checkbox" class="mr-1"> Print out and put up Code of Conduct and contact information</li>
+<li><input type="checkbox" class="mr-1"> Print out nametags</li>
+<li><input type="checkbox" class="mr-1"> Rearrange venue for pairs of two sitting on one table</li>
+<li><input type="checkbox" class="mr-1"> Update lunch order with latest RSVPs</li>
+</ul>
+
+## In the morning
+
+<ul class="list-unstyled mx-3">
+<li><input type="checkbox" class="mr-1"> Set up check-in area with nametags and the list of attendees</li>
+<li><input type="checkbox" class="mr-1"> Make coffee</li>
+<li><input type="checkbox" class="mr-1"> Set up the breakfast/snacks area (food, plates, napkins, glasses, juice)</li>
+</ul>
+
+<div class="advice" markdown="1">
+A good way to occupy early arrivals is to put up this checklist with explicit instructions and ask everyone to lend a hand. People appreciate being asked to help out and it creates an atmosphere of contribution and collaboration among everyone.
+</div>
 
 
+# Further Reading
+
+* John Smith has a great post on the specifics of [what to think about when organizing a coderetreat](http://geekswithblogs.net/onefloridacoder/archive/2010/08/16/setting-up-for-the-orlando-code-retreat.aspx).

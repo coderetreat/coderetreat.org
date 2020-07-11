@@ -24,7 +24,7 @@ The Coderetreat day consists of 5-6 sessions, each session's learnings building 
 The morning focuses on becoming comfortable with the problem domain, breaking old habits and beginning focused self-discovery. The afternoon pushes the envelope by challenging pairs to stretch their skills and understanding of abstractions, modular design and test-driven development. With most groups, the focus should be on the fundamentals of software development and modular design, primarily the [4 rules of simple design](http://wiki.c2.com/?XpSimplicityRules). Spend the day practicing these concepts, rather than pushing into new learnings.
 
 <div class="advice" markdown="1">
-**Beginners Advice**: If this is your first Coderetreat, check out Alastair walking you through his structure of the day and the constraints he's using in [his online training on YouTube](https://www.youtube.com/watch?v=GvC-jlxWo1c&feature=emb_title)
+If this is your first Coderetreat, check out Alastair walking you through his structure of the day and the constraints he's using in [his online training on YouTube](https://www.youtube.com/watch?v=GvC-jlxWo1c&feature=emb_title)
 </div>
 
 # Welcome, introductions, explanation of the problem
@@ -46,12 +46,12 @@ Before you introduce the workshop, it is important to go through a couple of org
 * **Lay out the schedule of the day** - When are the breaks, when do you wrap things up? People are accustomed to very structured workshops and presentations. This is not one of these, people in their sessions are free to take a break between them in their pair, and they're free to skip a session if they don't feel like it.
 
 <div class="advice" markdown="1">
-**Beginners Advice**: If this is your first Coderetreat facilitation, it is perfectly fine to advertise it as such. You're organizing it because you'd like to contribute to a community, not because of your vast expertise in the field. You can call on your participants to help you make the day worth it, e.g. by appealing to their self-organization skills. 
+If this is your first Coderetreat facilitation, it is perfectly fine to advertise it as such. You're organizing it because you'd like to contribute to a community, not because of your vast expertise in the field. You can call on your participants to help you make the day worth it, e.g. by appealing to their self-organization skills. 
 
 A workshop with a lot of people can be messy and exhausting. Establish rituals like the **hand-rule** (if you see me raise your hand, finish your sentence and raise your hand too) to quickly gather attention quickly and quiet down the room.
 </div>
 <div class="remote" markdown="1">
-**Remote Advice**: Remote facilitation can be very challenging. Make sure to have a companion document (e.g. a MURAL/Miro Board, or a Google Docs) where you keep everything written down. Attention spans can be difficult to manage remotely, so having written rules help people keep up at their pace.
+Remote facilitation can be very challenging. Make sure to have a companion document (e.g. a MURAL/Miro Board, or a Google Docs) where you keep everything written down. Attention spans can be difficult to manage remotely, so having written rules help people keep up at their pace.
 </div>
 
 ## Introducing the workshop
@@ -81,7 +81,7 @@ A workshop with a lot of people can be messy and exhausting. Establish rituals l
 Depending on your audience, it might be helpful to introduce Test-Driven-Development and the rules around Pair-Programming. If you feel comfortable with facilitating such an exercise, it can be helpful to ask people to line themselves up in order of personally perceived experience (without questioning it!).
 
 <div class="advice" markdown="1">
-**Beginners Advice**: The "experience scale" can also make for a nice matching for the first coding session! Ask everyone to sort themselves by experience in Test-Driven-Development and then match those with little experience with those with most experience.
+The "experience scale" can also make for a nice matching for the first coding session! Ask everyone to sort themselves by experience in Test-Driven-Development and then match those with little experience with those with most experience.
 
 Be careful to only do this once and only if the room is safe. A corporate environment might not make for a good place for people to *expose their ignorance*.
 </div>
@@ -114,7 +114,7 @@ After each session, you **need** to hold a retrospective. The purpose is for peo
 * After the first session it might be good to ask about deleting their code: Who found it difficult to delete their code? Why was it difficult?
 
 <div class="advice" markdown="1">
-**Beginners Advice**: Make sure to be decisive about the timeframe of the retrospective, but also make sure that it isn't dominated by a few vocal people. The latter is more important than the former.
+Make sure to be decisive about the timeframe of the retrospective, but also make sure that it isn't dominated by a few vocal people. The latter is more important than the former.
 </div>
 
 ### Session 2
@@ -209,3 +209,6 @@ Throw it back to the group: "That's a great question. Does anyone want to try to
 
 You can allow three people to program together rather than two. Having a group of three works fine. Don’t let anyone work alone. Everyone should be working with someone else.
 
+# Further Reading
+
+- Alex Bolboaca has been organizing and facilitating an ongoing series of coderetreats in Romania. He wrote a great post on [organizing coderetreats](http://www.alexbolboaca.ro/wordpress/articles/how-to-organize-a-code-retreat).
