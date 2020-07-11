@@ -6,45 +6,65 @@
 
 /* latin */
 @font-face {
-  font-family: 'Orbitron';
+  font-family: "Orbitron";
   font-display: swap;
-  src: url(/assets/Orbitron-VariableFont_wght.ttf) format('ttf');
+  src: url(/assets/Orbitron-VariableFont_wght.ttf) format("ttf");
 }
-
 
 @each $name, $color in $participants {
-    $theme-colors: map-merge($theme-colors, ("participants-#{$name}": $color))
+  $theme-colors: map-merge(
+    $theme-colors,
+    (
+      "participants-#{$name}": $color,
+    )
+  );
 }
-$theme-colors: map-merge($theme-colors, ("participants-bg-light": theme-color-level("participants-primary", -11)));
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "participants-bg-light": theme-color-level("participants-primary", -11),
+  )
+);
 
 @each $name, $color in $facilitators {
-    $theme-colors: map-merge($theme-colors, ("facilitators-#{$name}": $color))
+  $theme-colors: map-merge(
+    $theme-colors,
+    (
+      "facilitators-#{$name}": $color,
+    )
+  );
 }
-$theme-colors: map-merge($theme-colors, ("facilitators-bg-light": theme-color-level("facilitators-primary", -11)));
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "facilitators-bg-light": theme-color-level("facilitators-primary", -11),
+  )
+);
 
-
-$font-family-sans-serif:      "Open Sans", "Roboto", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-$font-family-base:            $font-family-sans-serif;
+$font-family-sans-serif: "Open Sans", "Roboto", "Helvetica Neue", Arial,
+  "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+  "Liberation Mono", "Courier New", monospace;
+$font-family-base: $font-family-sans-serif;
 $font-size-base: 0.9rem;
 
-$h1-font-size:                $font-size-base * 2;
-$h2-font-size:                $font-size-base * 1.75;
-$h3-font-size:                $font-size-base * 1.5;
-$h4-font-size:                $font-size-base * 1.25;
-$h5-font-size:                $font-size-base * 1.2;
-$h6-font-size:                $font-size-base;
+$h1-font-size: $font-size-base * 2;
+$h2-font-size: $font-size-base * 1.75;
+$h3-font-size: $font-size-base * 1.5;
+$h4-font-size: $font-size-base * 1.25;
+$h5-font-size: $font-size-base * 1.2;
+$h6-font-size: $font-size-base;
 
-$link-color:                              darken(theme-color("primary"), 30%);
-$link-hover-color:                        darken($link-color, 15%);
-$link-decoration:                         none;
-$link-hover-decoration:                   underline;
+$link-color: darken(theme-color("primary"), 30%);
+$link-hover-color: darken($link-color, 15%);
+$link-decoration: none;
+$link-hover-decoration: underline;
 
 $enable-shadows: true;
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "navbar";
 @import "display-responsive";
-
 
 .btn-facilitators {
   @include button-variant(
@@ -73,10 +93,10 @@ $enable-shadows: true;
 main blockquote:not(.blockquote) {
   background: theme-color("light");
   &:before {
-    content: '“';
+    content: "“";
     font-size: 5rem;
     line-height: 1;
-    font-family: "Times New Roman", Times, Georgia, Cambria,serif;
+    font-family: "Times New Roman", Times, Georgia, Cambria, serif;
     font-weight: bold;
     float: left;
     padding-right: $spacer;
@@ -87,13 +107,15 @@ main blockquote:not(.blockquote) {
   font-size: 1.25rem;
   border-left: 3px solid theme-color("primary");
   padding: $spacer/2;
-  margin: $spacer*2 $spacer;
+  margin: $spacer * 2 $spacer;
 }
 
-
 main div.guide {
+  @include media-breakpoint-up("md") {
+    padding: 0 $spacer * 5;
+  }
   h1:not(:first-child):not(.display-1) {
-    margin-top: $spacer*4;
+    margin-top: $spacer * 4;
   }
 }
 

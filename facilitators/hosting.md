@@ -70,13 +70,55 @@ If you invite people explicitly (e.g. by reaching out to diversity initiatives),
 
 # Sponsoring {#sponsoring}
 
+Besides venue and lunch, there are usually no big costs occuring with events. It's good to offer individual sponsorship (e.g. transit tickets) and mention that in your invitation, or having an extra budget for things like Post-It's or Sharpies (see [Raimo's facilitation setup](https://ymmv.craftswerk.io/2018/09/ftt-a-decent-facilitation-setup) for some recommendations).
+
+For these costs, it can be feasible to enlist a sponsor, but be aware that sponsorsing is akeen to an endorsement, so please make sure your sponsor aligns with our [Code of Conduct]({% link resources/code-of-conduct.md %}), otherwise we will not list your event. It should also be said that a coderetreat is supposed to happen in a safe learning environment, so any recruiting endeavours or gamification (such as turning the coderetreat in a hackathon) are a big no.
+
+The average cost of running an event in Germany can be calculated between 10-30€ per attendee, with the majority of costs being lunch and snacks. Sponsors usually need invoices for costs occured, so make sure you keep the receipts!
+
 ## Free giveaways
+
+A sponsor may offer free giveaways, as long as they are useful. It is helpful to be absolutely explicit about the exact giveaways that will be provided. Arguably, items like notepads or pens that will be used by attendees throughout the session provide much more value to both sponsor and attendee than, say, bottle openers or branded t-shirts.
+
+Make sure you check-in with your sponsor about the giveaways they plan to offer. 
+
+<div class="advice" markdown="1">
+Sponsorship is a trading agreement. You offer exposure in return for coverage of the costs occuring. Your attendees are a valuable audience to any company looking to hire software developers, so be sure you vet and pick your sponsor and the amount of influence they have on the event accordingly.
+</div>
 
 ## Shoutouts and presentation
 
-# Food and Drinks
+It is common to give a sponsor a few minutes at the start of the event to present their company (along with the casual "oh by the way, of course we're also hiring"). This is quite alright, but make sure that you've agreed upfront about the time allocated for this advertisement. Be vary of slides and long company intros.
+
+It is also quite alright to tweet a thank-you message associating the sponsor.
+
+<div class="gdcr" markdown="1">
+In previous years, **Global Day Of Coderetreat** gathered global sponsors who's logo needed to be put up on the slides at local events. The sponsorship money went towards charitable causes like CoderDojo. We stopped any initiatives on the global level, but you're free to find a similar agreement with your local sponsor.
+</div>
+
+# Food and Drinks {#food-and-drinks}
+
+Running a full-day event **must** involve catering of some sort. Smaller events might be able to crowdsource a lunch buffet, but for less connected groups, lunch is best provided through catering or delivery. 
+
+Per person attending (including host, facilitator and any venue staff), you should account between 10€ and 20€ in cost for catering (Germany, other countries might vary).
 
 ## No Pizza Rule
+
+It is important to not serve any carb-heavy food throughout the day (hence the infamous **No Pizza Rule**). Salads or small bowls are usually quite appreciated and don't turn the session right after lunch into a napping session.
+
+Throughout the day, brainfood like fresh fruit or nuts is appreciated.
+
+## Catering notes
+
+Depending on how much time in advance you can spend on this, it might make sense to pre-order individual meals for your attendees.
+
+This way, attendees can choose their meal in advance and can raise and respect any dietary requirements they might have themselves.
+
+If you decide to provide individual meals, a small buffet might still be appreciated.
+
+
+
+
 
 This list is intended as help for people who want to host a coderetreat:
 

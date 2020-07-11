@@ -114,7 +114,7 @@ After each session, you **need** to hold a retrospective. The purpose is for peo
 * After the first session it might be good to ask about deleting their code: Who found it difficult to delete their code? Why was it difficult?
 
 <div class="advice" markdown="1">
-Make sure to be decisive about the timeframe of the retrospective, but also make sure that it isn't dominated by a few vocal people. The latter is more important than the former.
+ Make sure to be decisive about the timeframe of the retrospective, but also make sure that it isn't dominated by a few vocal people. The latter is more important than the former.
 </div>
 
 ### Session 2
