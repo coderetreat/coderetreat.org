@@ -20,10 +20,10 @@
     float: left;
   }
   @if $text != null {
-      > p:first-child:before {
-          content: "#{$text}: ";
-          font-weight: bold;
-      }
+    > p:first-child:before {
+      content: "#{$text}: ";
+      font-weight: bold;
+    }
   }
   > p:last-child {
     margin-bottom: 0;
@@ -33,13 +33,29 @@
   padding: $spacer/2;
   padding-left: calc(40px + #{$spacer}* 2);
   margin: $spacer * 2 $spacer;
+
+  @include media-breakpoint-down("md") {
+    margin: $spacer * 2 0;
+    font-size: 0.9rem;
+    padding: $spacer/2;
+    &:before {
+      margin: $spacer/2;
+      float: right;
+      position: relative;
+      top: unset;
+      left: unset;
+      bottom: unset;
+      height: $width;
+      display: block;
+    }
+  }
 }
 
 main div.advice {
   @include helpful-box(
     url("data:image/svg+xml,%3Csvg height='512' width='512' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3ClinearGradient id='a'%3E%3Cstop offset='0' stop-color='%23ffe59a'/%3E%3Cstop offset='1' stop-color='%23ffffd5'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='256' x2='256' xlink:href='%23a' y1='512' y2='406'/%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='256' x2='256' y1='436' y2='0'%3E%3Cstop offset='0' stop-color='%23fd5900'/%3E%3Cstop offset='1' stop-color='%23ffde00'/%3E%3C/linearGradient%3E%3ClinearGradient id='d' gradientUnits='userSpaceOnUse' x1='256' x2='256' xlink:href='%23a' y1='240' y2='120'/%3E%3ClinearGradient id='e' gradientUnits='userSpaceOnUse' x1='256' x2='256' xlink:href='%23a' y1='300' y2='270'/%3E%3Cpath d='M316 512H196c-8.284 0-15-6.716-15-15v-76c0-8.284 6.716-15 15-15h120c8.284 0 15 6.716 15 15v76c0 8.284-6.716 15-15 15z' fill='url(%23b)'/%3E%3Cpath d='M256 0C156.748 0 76 80.748 76 180c0 65.601 29.842 99.99 56.171 130.331C157.281 339.268 181 366.601 181 421v15h150v-15c0-54.399 23.719-81.732 48.829-110.669C406.158 279.99 436 245.601 436 180 436 80.748 355.252 0 256 0z' fill='url(%23c)'/%3E%3Cpath d='M256 240c-8.284 0-15-6.716-15-15v-90c0-8.284 6.716-15 15-15s15 6.716 15 15v90c0 8.284-6.716 15-15 15z' fill='url(%23d)'/%3E%3Ccircle cx='256' cy='285' fill='url(%23e)' r='15'/%3E%3C/svg%3E"),
     50px,
-    "Beginner Tip"
+    "Tip"
   );
 }
 
