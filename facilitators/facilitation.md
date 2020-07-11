@@ -166,6 +166,12 @@ Then in the closing circle ask each participant to answer each of the questions:
 * It's okay to ask for facilitation feedback afterwards, but don't ask for it during the circle
 * Go first (to show people how it's done)
 
+## Keep it simple, but experiment
+
+Even though the basic Coderetreat format should not be drastically altered, we do want people to experiment and to try out new ideas. As such, we create an environment where anyone can propose and implement a good idea. 
+
+An experiment is a welcome distraction, as is a deep-dive as long as a pair isn't derailing completely.
+
 ## Whatever Language You Want!
 
 The ideas presented and practiced in Coderetreat are applicable to any object-oriented language. To this end, it is suggested that Coderetreats are explicitly multi-lingual. 
