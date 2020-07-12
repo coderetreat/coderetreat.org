@@ -192,29 +192,23 @@ After all, 45 minutes goes by quickly, and it is a waste to spend the majority o
 
 ### Are we really going to work on the same program all day long? 
 
-Yes, because the task is not the learning goal we're focusing on. We found Game Of Life to be **just challenging enough** to make it a worthwhile exercise, but also **unambiguous** enough so the usual misunderstandings between requirement and implementation don't inhibit learning.
+Yes, because the learning goal we're focusing on isn't the program itself. Throughout the day, we focus on the habits of **how** we build the code.  We found Game Of Life to be **just challenging enough** to make it a worthwhile exercise, but also **unambiguous** enough so the usual misunderstandings between requirement and implementation don't inhibit learning.
 
-Throughout the day, we focus on the habits of how we build the code. The constraints we add challenge our default assumptions and reflexes when it comes to coding. By leaving our comfort zone, we're able to critically examine how we've built code in the past.
+The constraints we add challenge our default assumptions and reflexes when it comes to coding. By leaving our comfort zone, we're able to critically examine how we've built code in the past.
 
-It doesn't get old. There is always something new to learn, be it from your pairing partner, coding in a new language, or because one of the [constraints]({% link facilitators/constraints.md %}) challenges your habits.
-
-We're using Game Of Life and the constraint to channel the learning goal for each particular session.
-
-Constrainted Learning
-Analysis paralysis
- Game Of Life is just the conversation starter
+Because there is always something new to learn, be it from your pairing partner, coding in a new language, or because one of the [constraints]({% link facilitators/constraints.md %}) challenges your habits, it doesn't get old.
 
 ### How much time is left before the iteration is over? 
 
- A couple of minutes (never be specific, never tell them exactly how much time is left)
+"A couple of minutes" (Informing them exactly how much time is left works against the goal of "doing things right", so try to avoid a specific number.)
 
 ### What do I do if I don't know the answer to a question?
 
-Throw it back to the group: "That's a great question. Does anyone want to try to answer it?"
+As a facilitator, your role is to promote discussion, and you're not expected have all the answers.  Let the group explore the topic: "That's a great question. What do you think?"
 
 ### What do I do if we have an odd number of people?
 
-You can allow three people to program together rather than two. Having a group of three works fine. Don’t let anyone work alone. Everyone should be working with someone else.
+You can allow three people to program together rather than two. Having a trio works fine.  Everyone should be working with someone else, to get feedback and cross-learning from their peers.
 
 # Further Reading
 
