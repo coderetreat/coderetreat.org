@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 audience: facilitators
 title: Resources for your attendees
 description: Starting points in different programming languages among others

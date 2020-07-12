@@ -1,6 +1,7 @@
 ---
 layout: guide
 toc: true
+comments: true
 audience: facilitators
 title: Hosting a Coderetreat
 description: Help improve developers in your community by hosting a coderetreat in your city

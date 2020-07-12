@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 audience: facilitators
 title: Conway's Game of Life
 ---

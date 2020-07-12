@@ -21,6 +21,7 @@
     {% include navbar.html %}
     <script async type="application/javascript" src="{{ "/js/bundled/default.js" | relative_url }}"></script>
     {{ content }}
+    {% include disqus_comments.html %}
   </main>
 
   <footer class="footer bg-dark text-light mt-5 pt-3 pb-5">

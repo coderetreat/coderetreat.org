@@ -34,6 +34,9 @@ plugins:
 
 permalink: pretty
 
+disqus:
+  shortname: coderetreat
+
 toc:
   min_level: 1
   max_level: 2
