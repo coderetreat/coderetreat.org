@@ -40,7 +40,6 @@ const highlightFeaturesInSameTimezone = (layer) => {
   const allFeatureLayers = Object.values(map._layers).filter(layer => layer.feature && layer.feature.properties.featurecla === "Timezone");
   allFeatureLayers.forEach(layer => timezones.resetStyle(layer));
   const layersInSameTimezone = allFeatureLayers.filter(otherLayer => otherLayer.feature.properties.zone == layer.feature.properties.zone);
-  console.log(layersInSameTimezone);
   layersInSameTimezone.forEach(layer => layer.setStyle({ opacity: 0.8 }));
 }
 
