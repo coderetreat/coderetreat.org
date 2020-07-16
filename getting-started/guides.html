@@ -17,13 +17,12 @@ audience: participants
 <script type="application/javascript" src="{{ "/js/bundled/guides.js" | relative_url }}"></script>
 <script type="text/javascript">
   const setupSteps = {{ site.setup_steps | jsonify }};
-
+  console.log(setupSteps);
   const availableGuides = [
     { os: "windows", language: "javascript", steps: [
       "windows-git",
-      "windows-nodejs",
-      "windows-vscode",
-      "windows-vscode-nodejs"
+      "windows-node",
+      "windows-vscode"
     ]},
     { os: "windows", language: "java", steps: [
       "windows-git",

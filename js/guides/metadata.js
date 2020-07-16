@@ -24,7 +24,7 @@ export const LANGUAGES = {
     icon: icons.java,
     name: "Java",
   },
-  java: {
+  ruby: {
     icon: icons.ruby,
     name: "Ruby",
   },
