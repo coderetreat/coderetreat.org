@@ -37,6 +37,7 @@
   },
   "scripts": {
     "start": "run-p -ln watch:jekyll watch",
+    "build:netlify": "npm run fetch:podcast && parcel build js/*.js js/*.jsx js/*.ts js/*.tsx --log-level 4 --public-url /js/bundled --out-dir _site/js/bundled/ --cache-dir $NETLIFY_BUILD_BASE/cache/parcel",
     "build": "npm run fetch:podcast && parcel build js/*.js js/*.jsx js/*.ts js/*.tsx --log-level 4 --public-url /js/bundled --out-dir _site/js/bundled/",
     "watch": "npm run fetch:podcast && parcel watch js/*.js js/*.jsx js/*.ts js/*.tsx --no-source-maps --log-level 4 --public-url /js/bundled --out-dir _site/js/bundled/",
     "watch:jekyll": "bundle exec jekyll serve --livereload -V",
