@@ -16,3 +16,7 @@ We recommend using `git` for a couple of reasons: There are some sessions which 
 It also comes with *Git Bash*, a terminal application that works a bit better with commandline tools that are made for Linux, such as `node`, `mvn` or `git` itself. If you've picked a language where we recommend *Visual Studio Code*, we'll get back to this later as we integrate it into your editor!
 
 To install `git`, visit the link in the *TLDR* section. If in doubt, get the **64bit** version. You can also install *GitHub Desktop* if you'd like to have a more visual way of using `git`. Despite the name, it can be used with any `git` repository, not just those hosted on *GitHub*.
+
+To verify that everything is working, open *Git Bash* and type `git --version`, which should look something like this:
+
+<TODO>INSERT SCREENSHOT OF GIT BASH WITH GIT VERSION</TODO>
