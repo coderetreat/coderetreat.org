@@ -8,6 +8,6 @@ external_resources:
     url: https://desktop.github.com/
     description: "Optional: A convenient UI for Git provided by GitHub"
 ---
-# Install GIT
+## Install GIT
 
 Woop

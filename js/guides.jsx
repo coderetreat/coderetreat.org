@@ -1,4 +1,4 @@
-import { render, h } from "preact";
+import { Fragment, render, h } from "preact";
 import { useState, useEffect } from "preact/hooks";
 import * as qs from "qs";
 import classNames from "classnames";
@@ -97,6 +97,40 @@ const operatingSystemAndLanguageFromUrl = () => {
   return null;
 };
 
+const updateUrlFromOperatingSystemAndLanguage = (selectedGuideId) => {
+  window.history.pushState(
+    {},
+    null,
+    "?" +
+      qs.stringify({
+        os: selectedGuideId.os,
+        language: selectedGuideId.language,
+      })
+  );
+};
+
+const Guide = ({ guide, steps }) => (
+  <div>
+    <h1>{guide.name}</h1>
+    <div className="toc d-inline-block p-md-3 my-3">
+      <h4 class="h4">Table of Contents</h4>
+      <ol className="section-nav">
+        {steps.map((s) => (
+          <li key={s.slug}>
+            <a href={`#${s.slug}`}>{s.title}</a>
+          </li>
+        ))}
+      </ol>
+    </div>
+    {steps.map((s) => (
+      <Fragment>
+        <a name={s.slug}></a>
+        <div dangerouslySetInnerHTML={{ __html: s?.output }}></div>
+      </Fragment>
+    ))}
+  </div>
+);
+
 const Guides = ({ setupSteps, availableGuides }) => {
   const [selectedGuideId, setSelectedGuideId] = useState(
     operatingSystemAndLanguageFromUrl
@@ -108,21 +142,18 @@ const Guides = ({ setupSteps, availableGuides }) => {
         selectedGuideId.os === os && selectedGuideId.language === language
     );
 
-  const stepsForSelectedGuide = selectedGuide?.steps.map((stepId) =>
-    setupSteps.find(({ slug }) => slug === stepId)
+  const stepsForSelectedGuide = selectedGuide?.steps.map(
+    (stepId) =>
+      setupSteps.find(({ slug }) => slug === stepId) || {
+        slug: stepId,
+        title: stepId,
+        output: "MISSING",
+      }
   );
 
   useEffect(() => {
     if (selectedGuideId == null) return;
-    window.history.pushState(
-      {},
-      null,
-      "?" +
-        qs.stringify({
-          os: selectedGuideId.os,
-          language: selectedGuideId.language,
-        })
-    );
+    updateUrlFromOperatingSystemAndLanguage(selectedGuideId);
   }, [selectedGuideId]);
 
   return (
@@ -140,10 +171,9 @@ const Guides = ({ setupSteps, availableGuides }) => {
         repository for boilerplates in a lot of different languages!
       </p>
       <hr />
-      {stepsForSelectedGuide &&
-        stepsForSelectedGuide.map((s) => (
-          <div dangerouslySetInnerHTML={{ __html: s?.output }}></div>
-        ))}
+      {selectedGuide && (
+        <Guide guide={selectedGuide} steps={stepsForSelectedGuide} />
+      )}
     </div>
   );
 };

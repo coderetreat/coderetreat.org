@@ -19,7 +19,8 @@ audience: participants
   const setupSteps = {{ site.setup_steps | jsonify }};
   console.log(setupSteps);
   const availableGuides = [
-    { os: "windows", language: "javascript", steps: [
+    { os: "windows", language: "javascript", name: "Setting up Node on Windows", 
+    steps: [
       "windows-git",
       "windows-node",
       "windows-vscode"
