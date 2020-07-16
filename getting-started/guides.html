@@ -1,0 +1,42 @@
+---
+layout: base
+comments: true
+audience: participants
+---
+
+<div class="container my-5">
+  <h1 class="display-1 display-4-md">Setup Guides</h1>
+  <p class="lead">
+    Setting up a modern development environment is difficult. Check out our
+    guides on how to get your device ready for a coderetreat!
+  </p>
+
+  <div id="guides"></div>
+</div>
+
+<script type="application/javascript" src="{{ "/js/bundled/guides.js" | relative_url }}"></script>
+<script type="text/javascript">
+  const setupSteps = {{ site.setup_steps | jsonify }};
+
+  const availableGuides = [
+    { os: "windows", language: "javascript", steps: [
+      "windows-git",
+      "windows-nodejs",
+      "windows-vscode",
+      "windows-vscode-nodejs"
+    ]},
+    { os: "windows", language: "java", steps: [
+      "windows-git",
+      "windows-intellij",
+      "windows-intellij-java",
+    ]},
+    { os: "macosx", language: "javascript", steps: [
+      "macosx-brew",
+      "macosx-git",
+      "macosx-nodejs",
+      "macosx-vscode",
+      "macosx-vscode-nodejs",
+    ]}
+  ];
+  initializeGuide({setupSteps, availableGuides});
+</script>
