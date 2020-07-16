@@ -6,7 +6,7 @@ import { OPERATING_SYSTEMS, LANGUAGES } from "./guides/metadata";
 
 const SelectionButton = ({ image, text, className, ...buttonProps }) => (
   <button
-    className={classNames("btn btn-outline-primary text-dark m-2", className)}
+    className={classNames("btn btn-outline-primary btn-disabled-grayscale text-dark m-2", className)}
     {...buttonProps}
   >
     <img class="m-2" src={image} style={{ height: 52, width: 52 }} />
@@ -48,7 +48,7 @@ const GuideSelector = ({
 
   return (
     <div className="row">
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-md-4">
         <h4>Operating System</h4>
         {Object.entries(OPERATING_SYSTEMS).map(([key, os]) => (
           <SelectionButton
@@ -56,14 +56,15 @@ const GuideSelector = ({
             text={os.name}
             key={key}
             className={{ active: key === selectedOperatingSystem }}
-            onClick={() => {
+            onClick={(e) => {
+              e.target.blur();
               selectOperatingSystem(key);
               selectLanguage(null);
             }}
           />
         ))}
       </div>
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-md-8">
         <h4>Programming Language</h4>
         {Object.entries(LANGUAGES).map(([key, language]) => (
           <SelectionButton
@@ -71,7 +72,8 @@ const GuideSelector = ({
             text={language.name}
             disabled={!isLanguageAvailable(key)}
             className={{ active: key === selectedLanguage }}
-            onClick={() => {
+            onClick={(e) => {
+              e.target.blur();
               selectLanguage(key);
               onSelectionChanged({
                 language: key,
@@ -111,18 +113,19 @@ const updateUrlFromOperatingSystemAndLanguage = (selectedGuideId) => {
 
 const Resources = ({ resources }) => (
   <div className="tldr">
-    <ul className="list-unstyled">
-      {resources.map((resource) =>
-        resource.type === "url" ? (
-          <li>
-            <a href={resource.url}>
-              {resource.description} ({resource.url})
-            </a>
-          </li>
-        ) : (
-          <li>{resource.description}</li>
-        )
-      )}
+    <ul className="">
+      {resources.map((resource) => {
+        if (resource.type === "url") {
+          return (
+            <li>
+              <span>{resource.description}</span>
+              <br />
+              <a href={resource.url}>{resource.url}</a>
+            </li>
+          );
+        }
+        return <li>{resource.description}</li>;
+      })}
     </ul>
   </div>
 );

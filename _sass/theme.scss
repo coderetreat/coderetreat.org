@@ -119,6 +119,10 @@ main div.guide {
   }
 }
 
+button.btn-disabled-grayscale[disabled] {
+  filter: grayscale(100%);
+}
+
 @import "toc";
 @import "helpful-boxes";
 @import "pages/home";
