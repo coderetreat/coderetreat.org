@@ -4,7 +4,7 @@ comments: true
 audience: participants
 ---
 
-<div class="container my-5">
+<div class="container my-5 guide">
   <h1 class="display-1 display-4-md">Setup Guides</h1>
   <p class="lead">
     Setting up a modern development environment is difficult. Check out our
@@ -19,24 +19,31 @@ audience: participants
   const setupSteps = {{ site.setup_steps | jsonify }};
   console.log(setupSteps);
   const availableGuides = [
-    { os: "windows", language: "javascript", name: "Setting up Node on Windows", 
-    steps: [
-      "windows-git",
-      "windows-node",
-      "windows-vscode"
-    ]},
-    { os: "windows", language: "java", steps: [
-      "windows-git",
-      "windows-intellij",
-      "windows-intellij-java",
-    ]},
-    { os: "macosx", language: "javascript", steps: [
-      "macosx-brew",
-      "macosx-git",
-      "macosx-nodejs",
-      "macosx-vscode",
-      "macosx-vscode-nodejs",
-    ]}
+    {
+      os: "windows", language: "javascript", name: "Setting up Node on Windows",
+      steps: [
+        "node-intro",
+        "windows-git",
+        "windows-node",
+        "windows-vscode"
+      ]
+    },
+    {
+      os: "windows", language: "java", steps: [
+        "windows-git",
+        "windows-intellij",
+        "windows-intellij-java",
+      ]
+    },
+    {
+      os: "macosx", language: "javascript", steps: [
+        "macosx-brew",
+        "macosx-git",
+        "macosx-nodejs",
+        "macosx-vscode",
+        "macosx-vscode-nodejs",
+      ]
+    }
   ];
-  initializeGuide({setupSteps, availableGuides});
+  initializeGuide({ setupSteps, availableGuides });
 </script>

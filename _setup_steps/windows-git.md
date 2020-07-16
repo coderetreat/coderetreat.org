@@ -1,6 +1,6 @@
 ---
-title: Install Git
-external_resources:
+title: Installing git, a version control system
+resources:
   - type: url
     url: https://git-scm.com/download/win
     description: Download link for Git for Windows including Git Bash
@@ -8,6 +8,5 @@ external_resources:
     url: https://desktop.github.com/
     description: "Optional: A convenient UI for Git provided by GitHub"
 ---
-## Install GIT
 
-Woop
+Git

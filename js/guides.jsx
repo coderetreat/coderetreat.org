@@ -109,6 +109,24 @@ const updateUrlFromOperatingSystemAndLanguage = (selectedGuideId) => {
   );
 };
 
+const Resources = ({ resources }) => (
+  <div className="tldr">
+    <ul className="list-unstyled">
+      {resources.map((resource) =>
+        resource.type === "url" ? (
+          <li>
+            <a href={resource.url}>
+              {resource.description} ({resource.url})
+            </a>
+          </li>
+        ) : (
+          <li>{resource.description}</li>
+        )
+      )}
+    </ul>
+  </div>
+);
+
 const Guide = ({ guide, steps }) => (
   <div>
     <h1>{guide.name}</h1>
@@ -124,7 +142,10 @@ const Guide = ({ guide, steps }) => (
     </div>
     {steps.map((s) => (
       <Fragment>
-        <a name={s.slug}></a>
+        <h2 className="h2">
+          <a name={s.slug}>{s.title}</a>
+        </h2>
+        {s.resources && <Resources resources={s.resources} />}
         <div dangerouslySetInnerHTML={{ __html: s?.output }}></div>
       </Fragment>
     ))}
@@ -168,7 +189,9 @@ const Guides = ({ setupSteps, availableGuides }) => {
         <a href="https://github.com/swkBerlin/kata-bootstraps">
           kata-bootstraps
         </a>{" "}
-        repository for boilerplates in a lot of different languages!
+        repository for boilerplates in a lot of different languages, or add your
+        guide (💙) by submitting a{" "}
+        <a href="https://github.com/coderetreat/coderetreat">Pull Request</a>!
       </p>
       <hr />
       {selectedGuide && (
