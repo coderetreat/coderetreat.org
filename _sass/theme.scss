@@ -111,8 +111,10 @@ main blockquote:not(.blockquote) {
 }
 
 main div.guide {
+  font-size: 1.2em;
+
   @include media-breakpoint-up("md") {
-    padding: 0 $spacer * 5;
+    padding: 0 $spacer * 8;
   }
   h1:not(:first-child):not(.display-1) {
     margin-top: $spacer * 4;
