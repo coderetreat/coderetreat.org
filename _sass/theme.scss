@@ -117,6 +117,10 @@ main div.guide {
   h1:not(:first-child):not(.display-1) {
     margin-top: $spacer * 4;
   }
+  
+  h2:not(:first-child) {
+    margin-top: $spacer * 4;
+  }
 }
 
 button.btn-disabled-grayscale[disabled] {

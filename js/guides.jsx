@@ -6,7 +6,10 @@ import { OPERATING_SYSTEMS, LANGUAGES } from "./guides/metadata";
 
 const SelectionButton = ({ image, text, className, ...buttonProps }) => (
   <button
-    className={classNames("btn btn-outline-primary btn-disabled-grayscale text-dark m-2", className)}
+    className={classNames(
+      "btn btn-outline-primary btn-disabled-grayscale text-dark m-2",
+      className
+    )}
     {...buttonProps}
   >
     <img class="m-2" src={image} style={{ height: 52, width: 52 }} />
@@ -121,6 +124,16 @@ const Resources = ({ resources }) => (
               <span>{resource.description}</span>
               <br />
               <a href={resource.url}>{resource.url}</a>
+            </li>
+          );
+        } else if (resource.type === "shell") {
+          return (
+            <li>
+              <span>{resource.description}</span>
+              <br />
+              <pre>
+                <code>{resource.command}</code>
+              </pre>
             </li>
           );
         }
