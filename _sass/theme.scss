@@ -40,7 +40,6 @@ $theme-colors: map-merge(
     "facilitators-bg-light": theme-color-level("facilitators-primary", -11),
   )
 );
-
 $font-family-sans-serif: "Open Sans", "Roboto", "Helvetica Neue", Arial,
   "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
   "Segoe UI Symbol", "Noto Color Emoji";
@@ -56,6 +55,7 @@ $h4-font-size: $font-size-base * 1.25;
 $h5-font-size: $font-size-base * 1.2;
 $h6-font-size: $font-size-base;
 
+$code-background-color: $gray-800;
 $link-color: darken(theme-color("primary"), 30%);
 $link-hover-color: darken($link-color, 15%);
 $link-decoration: none;
@@ -112,24 +112,27 @@ main blockquote:not(.blockquote) {
 
 main div.guide {
   font-size: 1.2em;
+  h1:not(.display-1), h2, h3, h4 { font-weight: bold;}
 
-  @include media-breakpoint-up("md") {
+  @include media-breakpoint-up("lg") {
     padding: 0 $spacer * 8;
   }
   h1:not(:first-child):not(.display-1) {
     margin-top: $spacer * 4;
   }
   
-  h2:not(:first-child) {
+  h2,h3,h4  {
     margin-top: $spacer * 4;
   }
 }
+
 
 button.btn-disabled-grayscale[disabled] {
   filter: grayscale(100%);
 }
 
 @import "toc";
+@import "syntax_highlighting";
 @import "helpful-boxes";
 @import "pages/home";
 @import "pages/training-sessions";
