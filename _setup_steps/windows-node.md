@@ -8,7 +8,7 @@ resources:
     command: "node -p '1+1'"
     description: "Type in the shell to verify your node installation is working"
 ---
-<video width="100%" controls class="my-2 drop-shadow-small" src="{% link getting-started/guides/windows-node.mp4 %}"></video>
+<video width="100%" controls class="my-2 drop-shadow" src="{% link getting-started/guides/windows-node.mp4 %}"></video>
 
 NodeJs is the most popular *JavaScript* runtime for any server-side tasks. It also powers a lot of other applications, suchs as *Slack* or *VisualStudio Code*. It comes with `npm`, a package manager that allows you to install third-party code and use it in your application. We'll use `npm` later to install `jest`, a test-runner for JavaScript.
 

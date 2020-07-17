@@ -6,11 +6,18 @@
  */
 
  div.highlight {
-    padding: $spacer/2;
     background: $code-background-color;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
     border-radius: 2px;
-    margin: $spacer;
+    .highlight {
+        margin: 0;
+    }
+    @include media-breakpoint-up("md") {
+        margin: $spacer;
+    }
+    pre.highlight {
+        padding: $spacer/2;
+    }
     .highlighter-rouge & {
       background: $code-background-color;
     }
