@@ -49,6 +49,15 @@ const GuideSelector = ({
     );
   };
 
+  useEffect(() => {
+    if (selectedLanguage && selectedOperatingSystem) {
+      onSelectionChanged({
+        language: selectedLanguage,
+        os: selectedOperatingSystem,
+      });
+    }
+  }, [selectedLanguage, selectedOperatingSystem]);
+
   return (
     <div className="row">
       <div class="col-12 col-md-4">
@@ -78,10 +87,6 @@ const GuideSelector = ({
             onClick={(e) => {
               e.target.blur();
               selectLanguage(key);
-              onSelectionChanged({
-                language: key,
-                os: selectedOperatingSystem,
-              });
             }}
             key={key}
           />
