@@ -1,5 +1,5 @@
 import { Fragment, render, h } from "preact";
-import { useState, useEffect } from "preact/hooks";
+import { useState, useEffect, useRef } from "preact/hooks";
 import * as qs from "qs";
 import classNames from "classnames";
 import { OPERATING_SYSTEMS, LANGUAGES } from "./guides/metadata";
@@ -143,32 +143,39 @@ const Resources = ({ resources }) => (
   </div>
 );
 
-const Guide = ({ guide, steps }) => (
-  <div>
-    <h1>{guide.name}</h1>
-    <div className="toc d-inline-block p-md-3 my-3">
-      <h4 class="h4">Table of Contents</h4>
-      <ol className="section-nav">
+const Guide = ({ guide, steps }) => {
+  const section = useRef(null);
+  useEffect(() => {
+    section.current && section.current.scrollIntoView({ behavior: "smooth" });
+  }, [guide, steps, section]);
+
+  return (
+    <div ref={section}>
+      <h1>{guide.name}</h1>
+      <div className="toc d-inline-block p-md-3 my-3">
+        <h4 class="h4">Table of Contents</h4>
+        <ol className="section-nav">
+          {steps.map((s) => (
+            <li key={s.slug}>
+              <a href={`#${s.slug}`}>{s.title}</a>
+            </li>
+          ))}
+        </ol>
+      </div>
+      <section class="content">
         {steps.map((s) => (
-          <li key={s.slug}>
-            <a href={`#${s.slug}`}>{s.title}</a>
-          </li>
+          <Fragment>
+            <h2 className="h2">
+              <a name={s.slug}>{s.title}</a>
+            </h2>
+            {s.resources && <Resources resources={s.resources} />}
+            <div dangerouslySetInnerHTML={{ __html: s?.output }}></div>
+          </Fragment>
         ))}
-      </ol>
+      </section>
     </div>
-    <section class="content">
-      {steps.map((s) => (
-        <Fragment>
-          <h2 className="h2">
-            <a name={s.slug}>{s.title}</a>
-          </h2>
-          {s.resources && <Resources resources={s.resources} />}
-          <div dangerouslySetInnerHTML={{ __html: s?.output }}></div>
-        </Fragment>
-      ))}
-    </section>
-  </div>
-);
+  );
+};
 
 const Guides = ({ setupSteps, availableGuides }) => {
   const [selectedGuideId, setSelectedGuideId] = useState(
