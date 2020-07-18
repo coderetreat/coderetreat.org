@@ -12,6 +12,7 @@
     .highlight {
         margin: 0;
     }
+    margin: $spacer 0;
     @include media-breakpoint-up("md") {
         margin: $spacer;
     }
