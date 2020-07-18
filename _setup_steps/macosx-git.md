@@ -5,9 +5,17 @@ resources:
     command: brew install git
     description: Command to install git using brew
 ---
-<video width="100%" controls class="my-2 drop-shadow-small" src="{% link getting-started/guides/macosx-git.mp4 %}"></video>
 
-`git` is a version control system, that means it is used to archive and share files in a way that makes it easy for collaborators to work in their changes. It is similar to *Dropbox* or *Google Drive*, but it's not real-time as they are. Instead, it records only the changes you did (e.g. removing a line, changing a word etc.) locally. When you're ready, you can *pull* the latest version from a remote repository (a lot of which are hosted on *GitHub* or *GitLab*). Git will try to work in your changes into whatever happened remotely. If everything went smoothly, you can *push* your changes back up. If not, you have to resolve a *merge-conflict*.
+<video 
+  width="100%" 
+  controls 
+  class="my-2 drop-shadow-small" 
+  preload="none"
+  poster="{% link getting-started/guides/macosx-git.mp4.thumb.jpg %}"
+  src="{% link getting-started/guides/macosx-git.mp4 %}"></video>
+<span class="text-center d-block small">A screencast of installing git (2.7MB)</span>
+
+`git` is a version control system, that means it is used to archive and share files in a way that makes it easy for collaborators to work in their changes. It is similar to _Dropbox_ or _Google Drive_, but it's not real-time as they are. Instead, it records only the changes you did (e.g. removing a line, changing a word etc.) locally. When you're ready, you can _pull_ the latest version from a remote repository (a lot of which are hosted on _GitHub_ or _GitLab_). Git will try to work in your changes into whatever happened remotely. If everything went smoothly, you can _push_ your changes back up. If not, you have to resolve a _merge-conflict_.
 
 We recommend using `git` for a couple of reasons: There are some sessions which need `git`, so you can roll-back your changes quickly. But it also comes handy when setting up your local development environment! We will use it later to clone `kata-bootstraps`, a public repository that contains a lot of different starter projects for a variety of languages. And we will of course put your empty starter project under version control, too!
 
@@ -18,7 +26,7 @@ coderetreat@MacBook-Pro ~ % git --version
 git version 2.24.3 (Apple Git-128)
 ```
 
-We are almost done here. As `git` is designed for teams that work on the same project, it needs your *name* and your *email address*. This will be public information for anyone who's looking at your projects and you can choose whatever yu want here.
+We are almost done here. As `git` is designed for teams that work on the same project, it needs your _name_ and your _email address_. This will be public information for anyone who's looking at your projects and you can choose whatever yu want here.
 
 In the terminal, type:
 

@@ -12,7 +12,14 @@ resources:
     description: Download "jest" and save it as a development dependency
 ---
 
-<video width="100%" controls class="my-2 drop-shadow" src="{% link getting-started/guides/windows-vscode-node-empty-project.mp4 %}"></video>
+<video 
+  width="100%" 
+  controls 
+  class="my-2 drop-shadow-small" 
+  preload="none"
+  poster="{% link getting-started/guides/windows-vscode-node-empty-project.mp4.thumb.jpg %}"
+  src="{% link getting-started/guides/windows-vscode-node-empty-project.mp4 %}"></video>
+<span class="text-center d-block small">A screencast of setting up an empty project in JavaScript on Windows (6.4MB)</span>
 
 Now we're ready to create our first failing testcase. Create a new folder somewhere (e.g. in your *Documents* folder) and open that folder in *Visual Studio Code* using *Open folder...". 
 

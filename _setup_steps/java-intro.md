@@ -2,6 +2,6 @@
 title: Overview
 ---
 
-_NodeJs_ is a runtime for executing _JavaScript_ on the server-side. It is the most popular runtime for using JavaScript on a server, and the basis for most frontend projects as well!
+*Java* is one of the most popular programming languages in the world. It powers every *Android* device, and a lot of companies use it to run their webservices with *Spring* (an extensive application framework).
 
-Node comes with `npm`, a package manager that allows you to conveniently install third-party packages, such as `jest` (a test-runner), or `express` (a webserver) or even frontend-specific JavaScript libraries like `VueJS` or `Angular`. Even _VisualStudio Code_, the code editor we'll use in this tutorial, is written using NodeJs!
+In this tutorial, we will set up a state-of-the-art java project with *maven* (`mvn`), a package management tool, and *JUnit 5*, a popular testing library. We will use *JetBrains IntelliJ Community Edition* for editing code. It is quite a powerhouse and offers a lot of features that make working with Java very pleasant.

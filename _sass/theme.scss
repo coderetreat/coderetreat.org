@@ -112,7 +112,16 @@ main blockquote:not(.blockquote) {
 
 main div.guide {
   font-size: 1.2em;
-  h1:not(.display-1), h2, h3, h4 { font-weight: bold;}
+
+  section.content {
+    h1,
+    h2,
+    h3,
+    h4 {
+      margin-top: $spacer * 4;
+      font-weight: bold;
+    }
+  }
 
   @include media-breakpoint-up("lg") {
     padding: 0 $spacer * 8;
@@ -120,12 +129,7 @@ main div.guide {
   h1:not(:first-child):not(.display-1) {
     margin-top: $spacer * 4;
   }
-  
-  h2,h3,h4  {
-    margin-top: $spacer * 4;
-  }
 }
-
 
 button.btn-disabled-grayscale[disabled] {
   filter: grayscale(100%);

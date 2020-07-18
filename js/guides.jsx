@@ -156,15 +156,17 @@ const Guide = ({ guide, steps }) => (
         ))}
       </ol>
     </div>
-    {steps.map((s) => (
-      <Fragment>
-        <h2 className="h2">
-          <a name={s.slug}>{s.title}</a>
-        </h2>
-        {s.resources && <Resources resources={s.resources} />}
-        <div dangerouslySetInnerHTML={{ __html: s?.output }}></div>
-      </Fragment>
-    ))}
+    <section class="content">
+      {steps.map((s) => (
+        <Fragment>
+          <h2 className="h2">
+            <a name={s.slug}>{s.title}</a>
+          </h2>
+          {s.resources && <Resources resources={s.resources} />}
+          <div dangerouslySetInnerHTML={{ __html: s?.output }}></div>
+        </Fragment>
+      ))}
+    </section>
   </div>
 );
 
@@ -209,7 +211,7 @@ const Guides = ({ setupSteps, availableGuides }) => {
         guide (💙) by submitting a{" "}
         <a href="https://github.com/coderetreat/coderetreat">Pull Request</a>!
       </p>
-      <hr />
+      <hr className="my-5" />
       {selectedGuide && (
         <Guide guide={selectedGuide} steps={stepsForSelectedGuide} />
       )}

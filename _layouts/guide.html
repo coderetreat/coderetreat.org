@@ -12,5 +12,7 @@ toc: true
     {{ content | toc_only }}
   </div>
   {% endif %}
-  {{ content | inject_anchors }}
+  <section class="content">
+    {{ content | inject_anchors }}
+  </section>
 </div>
