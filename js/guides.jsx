@@ -50,7 +50,12 @@ const GuideSelector = ({
   };
 
   useEffect(() => {
-    if (selectedLanguage && selectedOperatingSystem) {
+    if (
+      selectedLanguage &&
+      selectedOperatingSystem &&
+      selectedLanguage != selectedGuideId?.language &&
+      selectedLanguage != selectedGuideId?.os
+    ) {
       onSelectionChanged({
         language: selectedLanguage,
         os: selectedOperatingSystem,
@@ -148,14 +153,9 @@ const Resources = ({ resources }) => (
   </div>
 );
 
-const Guide = ({ guide, steps }) => {
-  const section = useRef(null);
-  useEffect(() => {
-    section.current && section.current.scrollIntoView({ behavior: "smooth" });
-  }, [guide, steps, section]);
-
+const Guide = ({ guide, steps, containerRef }) => {
   return (
-    <div ref={section}>
+    <div ref={containerRef}>
       <h1>{guide.name}</h1>
       <div className="toc d-inline-block p-md-3 my-3">
         <h4 class="h4">Table of Contents</h4>
@@ -207,12 +207,19 @@ const Guides = ({ setupSteps, availableGuides }) => {
     updateUrlFromOperatingSystemAndLanguage(selectedGuideId);
   }, [selectedGuideId]);
 
+  const guideRef = useRef(null);
+
+  const selectGuideAndScrollIntoView = (guideId) => {
+    setSelectedGuideId(guideId);
+    guideRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div>
       <GuideSelector
         selectedGuideId={selectedGuideId}
         availableGuides={availableGuides}
-        onSelectionChanged={setSelectedGuideId}
+        onSelectionChanged={selectGuideAndScrollIntoView}
       />
       <p>
         Your setup isn't covered here? Check out the{" "}
@@ -225,7 +232,11 @@ const Guides = ({ setupSteps, availableGuides }) => {
       </p>
       <hr className="my-5" />
       {selectedGuide && (
-        <Guide guide={selectedGuide} steps={stepsForSelectedGuide} />
+        <Guide
+          containerRef={guideRef}
+          guide={selectedGuide}
+          steps={stepsForSelectedGuide}
+        />
       )}
     </div>
   );
