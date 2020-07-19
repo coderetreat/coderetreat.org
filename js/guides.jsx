@@ -54,7 +54,7 @@ const GuideSelector = ({
       selectedLanguage &&
       selectedOperatingSystem &&
       selectedLanguage != selectedGuideId?.language &&
-      selectedLanguage != selectedGuideId?.os
+      selectedOperatingSystem != selectedGuideId?.os
     ) {
       onSelectionChanged({
         language: selectedLanguage,
