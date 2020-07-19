@@ -85,14 +85,14 @@ import static org.junit.jupiter.api.Assertion.*;
 class HelloWorldTest {
   @Test
   public void saysHelloWorld() {
-    assertEquals(new HelloWorld().say(), "Hello World");
+    assertEquals("Hello World", new HelloWorld().say());
   }
 }
 ```
 
 We import several functions and annotations from `junit`, namely the `@Test` annotation, which tells JUnit that this method describes a test case, and the `assertEquals` assertion, which is used to compare an expected value to the actual value.
 
-The test method itself simply creates a new `HelloWorld` instance and calls `say()` on it, which we expected to return `Hello World`, as denoted by the second argument we provide to `assertEquals`.
+The test method itself simply creates a new `HelloWorld` instance and calls `say()` on it, which we expected to return `Hello World`, as denoted by the first argument we provide to `assertEquals`.
 
 Run this test by pressing either `Shift+F10` or by clicking on the green arrow next to the method/class and selecting "Run test".
 
@@ -114,12 +114,12 @@ import static org.junit.jupiter.api.Assertion.*;
 class HelloWorldTest {
   @Test
   public void saysHelloWorld() {
-    assertEquals(new HelloWorld().say(), "Hello World");
+    assertEquals("Hello World", new HelloWorld().say());
   }
 
   @Test
   public void saysGoodbyeWorld() {
-    assertEquals(new HelloWorld().say(), "Goodbye World");
+    assertEquals("Goodbye World", new HelloWorld().say());
   }
 }
 ```
