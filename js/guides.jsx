@@ -1,5 +1,5 @@
 import { Fragment, render, h } from "preact";
-import { useState, useEffect, useRef } from "preact/hooks";
+import { useState, useEffect, useLayoutEffect, useRef } from "preact/hooks";
 import * as qs from "qs";
 import classNames from "classnames";
 import { OPERATING_SYSTEMS, LANGUAGES } from "./guides/metadata";
@@ -120,8 +120,7 @@ const updateUrlFromOperatingSystemAndLanguage = (selectedGuideId) => {
       qs.stringify({
         os: selectedGuideId.os,
         language: selectedGuideId.language,
-      }) +
-      (window.location.hash ? window.location.hash : "")
+      })
   );
 };
 
@@ -184,9 +183,11 @@ const Guide = ({ guide, steps, containerRef }) => {
 };
 
 const Guides = ({ setupSteps, availableGuides }) => {
+  const [manualSelection, setIsManualSelection] = useState(false);
   const [selectedGuideId, setSelectedGuideId] = useState(
     operatingSystemAndLanguageFromUrl
   );
+
   const selectedGuide =
     selectedGuideId &&
     availableGuides.find(
@@ -204,15 +205,20 @@ const Guides = ({ setupSteps, availableGuides }) => {
   );
 
   useEffect(() => {
-    if (selectedGuideId == null) return;
+    if (selectedGuideId == null || !manualSelection) return;
     updateUrlFromOperatingSystemAndLanguage(selectedGuideId);
   }, [selectedGuideId]);
+
+  useLayoutEffect(() => {
+    if (guideRef.current === null) return;
+    guideRef.current.scrollIntoView({ behavior: "smooth" });
+  }, [guideRef, selectedGuideId]);
 
   const guideRef = useRef(null);
 
   const selectGuideAndScrollIntoView = (guideId) => {
+    setIsManualSelection(true);
     setSelectedGuideId(guideId);
-    guideRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
