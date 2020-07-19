@@ -120,7 +120,8 @@ const updateUrlFromOperatingSystemAndLanguage = (selectedGuideId) => {
       qs.stringify({
         os: selectedGuideId.os,
         language: selectedGuideId.language,
-      })
+      }) +
+      (window.location.hash ? window.location.hash : "")
   );
 };
 
@@ -247,4 +248,15 @@ const Guides = ({ setupSteps, availableGuides }) => {
     <Guides setupSteps={setupSteps} availableGuides={availableGuides} />,
     document.querySelector("#guides")
   );
+
+  window.addEventListener("DOMContentLoaded", () => {
+    if (!window.location.hash) return;
+    window.setTimeout(() => {
+      const elem = document.querySelector(
+        `${window.location.hash}, [name="${window.location.hash.substring(1)}"]`
+      );
+      if (!elem) return;
+      elem.scrollIntoView({ behavior: "smooth" });
+    }, 100);
+  });
 };
