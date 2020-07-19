@@ -1,5 +1,6 @@
 ---
 layout: post
+title: Frequently Asked Questions
 audience: participants
 ---
 <h1 class="display-1">FAQ</h1>

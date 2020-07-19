@@ -1,5 +1,6 @@
 ---
 layout: post
+title: Code of Conduct
 audience: participants
 ---
 # Code of Conduct

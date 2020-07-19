@@ -3,7 +3,7 @@ layout: guide
 toc: true
 comments: true
 audience: facilitators
-title: Hosting a Coderetreat
+title: Hosting Guide
 description: Help improve developers in your community by hosting a coderetreat in your city
 intro: >
     Hosts handle all of the logistics of organizing, finding a local sponsor, running a coderetreat and creating an atmosphere of fun and collaboration.

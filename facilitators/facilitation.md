@@ -3,7 +3,7 @@ layout: guide
 toc: true
 comments: true
 audience: facilitators
-title: Facilitation
+title: Facilitation Guide
 intro: This page outlines what the structure of a Coderetreat day should look like, as well as tips for effective facilitation. 
 ---
 
