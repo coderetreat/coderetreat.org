@@ -16,10 +16,10 @@ export const LANGUAGES = {
     icon: icons.nodejs,
     name: "JavaScript",
   },
-  python: {
-    icon: icons.python,
-    name: "Python3",
-  },
+  // python: {
+  //   icon: icons.python,
+  //   name: "Python3",
+  // },
   java: {
     icon: icons.java,
     name: "Java",
