@@ -18,7 +18,9 @@ resources:
   src="{% link getting-started/guides/windows-git.mp4 %}"></video>
 <span class="text-center d-block small">A screencast of setting up git on Windows (1.2MB)</span>
 
-`git` is a version control system, that means it is used to archive and share files in a way that makes it easy for collaborators to work in their changes. It is similar to _Dropbox_ or _Google Drive_, but it's not real-time as they are. Instead, it records only the changes you did (e.g. removing a line, changing a word etc.) locally. When you're ready, you can _pull_ the latest version from a remote repository (a lot of which are hosted on _GitHub_ or _GitLab_). Git will try to work in your changes into whatever happened remotely. If everything went smoothly, you can _push_ your changes back up. If not, you have to resolve a _merge-conflict_.
+`git` is a version control system, that means it is used to archive and share files in a way that makes it easy for collaborators to work in their changes. It is similar to _Dropbox_ or _Google Drive_, but it's not realtime/instant, as they are. 
+
+Instead, it records only the changes you did (e.g. removing a line, changing a word etc.) locally. When you're ready, you can _pull_ the latest version from a remote repository (a lot of which are hosted on _GitHub_ or _GitLab_). Git will try to work in your changes into whatever happened remotely. If everything went smoothly, you can _push_ your changes back up. If not, you have to resolve a _merge-conflict_.
 
 We recommend using `git` for a couple of reasons: There are some sessions which need `git`, so you can roll-back your changes quickly. But it also comes handy when setting up your local development environment! We will use it later to clone `kata-bootstraps`, a public repository that contains a lot of different starter projects for a variety of languages. And we will of course put your empty starter project under version control, too!
 
