@@ -2,6 +2,8 @@
 title: Overview
 ---
 
-*Java* is one of the most popular programming languages in the world. It powers every *Android* device, and a lot of companies use it to run their webservices with *Spring* (an extensive application framework).
+*Ruby* is a very popular programming language in the likes of *Python* or *Perl*. It is most famous for *Ruby on Rails*, a revolutionary web-framework that made it incredibly easy to develop apps for the web.
 
-In this tutorial, we will set up a state-of-the-art java project with *maven* (`mvn`), a package management tool, and *JUnit 5*, a popular testing library. We will use *JetBrains IntelliJ Community Edition* for editing code. It is quite a powerhouse and offers a lot of features that make working with Java very pleasant.
+It is an excellent language for *Test-Driven-Development*, as a lot of learning material incorporates *TDD* as the default way of developing.
+
+We'll use *bundler*, a package manager for Ruby, to install *RSpec*, a popular testrunner for Ruby. And we'll makes ure to put our result under version control using *git*.

@@ -4,6 +4,12 @@ resources:
   - type: shell
     command: brew install git
     description: Command to install git using brew
+  - type: shell
+    command: git --global config user.name "YOUR NAME"
+    description: Command to set your user name in git
+  - type: shell
+    command: git --global config user.email "YOUR-EMAIL@ADDRESS.ORG"
+    description: Command to set your email in git
 ---
 
 <video 

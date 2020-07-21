@@ -7,6 +7,12 @@ resources:
   - type: url
     url: https://desktop.github.com/
     description: "Optional: A convenient UI for Git provided by GitHub"
+  - type: shell
+    command: git --global config user.name "YOUR NAME"
+    description: Command to set your user name in git
+  - type: shell
+    command: git --global config user.email "YOUR-EMAIL@ADDRESS.ORG"
+    description: Command to set your email in git
 ---
 
 <video 

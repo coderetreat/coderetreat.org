@@ -141,7 +141,7 @@ const Resources = ({ resources }) => (
             <li>
               <span>{resource.description}</span>
               <br />
-              <pre>
+              <pre className="d-block bg-dark text-light p-1 mr-1">
                 <code>{resource.command}</code>
               </pre>
             </li>

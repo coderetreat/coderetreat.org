@@ -12,6 +12,14 @@ export const OPERATING_SYSTEMS = {
 };
 
 export const LANGUAGES = {
+  ruby: {
+    icon: icons.ruby,
+    name: "Ruby",
+  },
+  java: {
+    icon: icons.java,
+    name: "Java",
+  },
   javascript: {
     icon: icons.nodejs,
     name: "JavaScript",
@@ -20,14 +28,6 @@ export const LANGUAGES = {
   //   icon: icons.python,
   //   name: "Python3",
   // },
-  java: {
-    icon: icons.java,
-    name: "Java",
-  },
-  ruby: {
-    icon: icons.ruby,
-    name: "Ruby",
-  },
   kotlin: {
     icon: icons.kotlin,
     name: "Kotlin",
