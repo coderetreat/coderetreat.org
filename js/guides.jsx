@@ -237,6 +237,12 @@ const Guides = ({ setupSteps, availableGuides }) => {
         guide (💙) by submitting a{" "}
         <a href="https://github.com/coderetreat/coderetreat">Pull Request</a>!
       </p>
+      <p className="small text-muted">
+        <strong>Disclaimer:&nbsp;</strong>While we took a lot of caution with
+        compiling these guides, we are not liable for any damages caused by
+        following these guides. The guides are provided "AS IS" and free of
+        charge.
+      </p>
       <hr className="my-5" />
       {selectedGuide && (
         <Guide
