@@ -6,4 +6,4 @@ title: Overview
 
 It is an excellent language for *Test-Driven-Development*, as a lot of learning material incorporates *TDD* as the default way of developing.
 
-We'll use *bundler*, a package manager for Ruby, to install *RSpec*, a popular testrunner for Ruby. And we'll makes ure to put our result under version control using *git*.
+We'll use *bundler*, a package manager for Ruby, to install *RSpec*, a popular testrunner for Ruby. And we'll make sure to put our result under version control using *git*.
