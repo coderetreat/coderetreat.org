@@ -4,16 +4,11 @@ resources:
   - type: url
     url: https://code.visualstudio.com/Download
     description: Download link for VisualStudio Code
+video:
+  poster: /getting-started/guides/windows-vscode-install.mp4.thumb.jpg
+  src: /getting-started/guides/windows-vscode-install.mp4
+  description: A screencast of setting up VSCode on Windows (1.7MB)
 ---
-
-<video 
-  width="100%" 
-  controls 
-  class="my-2 drop-shadow-small" 
-  preload="none"
-  poster="{% link getting-started/guides/windows-vscode-install.mp4.thumb.jpg %}"
-  src="{% link getting-started/guides/windows-vscode-install.mp4 %}"></video>
-<span class="text-center d-block small">A screencast of setting up VSCode on Windows (1.7MB)</span>
 
 We'll install _VisualStudio Code_, a free code editor that comes with a lot of handy features when you're developing _JavaScript_ applications. Clicking _Download_ will get you the "User-space" version, which can be installed without Administrative privileges.
 

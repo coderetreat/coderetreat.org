@@ -4,16 +4,11 @@ resources:
   - type: url
     url: https://code.visualstudio.com/Download
     description: Download link for VisualStudio Code
+video:
+  poster: /getting-started/guides/macosx-vscode.mp4.thumb.jpg
+  src: /getting-started/guides/macosx-vscode.mp4
+  description: A screencast of installing VisualStudio Code (0.8MB)</span>
 ---
-
-<video 
-  width="100%" 
-  controls 
-  class="my-2 drop-shadow-small" 
-  preload="none"
-  poster="{% link getting-started/guides/macosx-vscode.mp4.thumb.jpg %}"
-  src="{% link getting-started/guides/macosx-vscode.mp4 %}"></video>
-<span class="text-center d-block small">A screencast of installing VisualStudio Code (0.8MB)</span>
 
 Our first step is to download and install *VisualStudio Code*, a popular code editor.
 

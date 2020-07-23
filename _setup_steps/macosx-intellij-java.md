@@ -4,16 +4,11 @@ resources:
   - type: shell
     command: git init .
     description: Initialize a new git repository in the current folder
+video:
+  poster: /getting-started/guides/macosx-intellij-java.mp4.thumb.jpg
+  src: /getting-started/guides/macosx-intellij-java.mp4
+  description: A screencast of setting up an empty Java Project in IntelliJ (9.8MB)
 ---
-
-<video 
-  width="100%" 
-  controls 
-  class="my-2 drop-shadow-small" 
-  preload="none"
-  poster="{% link getting-started/guides/macosx-intellij-java.mp4.thumb.jpg %}"
-  src="{% link getting-started/guides/macosx-intellij-java.mp4 %}"></video>
-<span class="text-center d-block small">A screencast of setting up an empty Java Project in IntelliJ (9.8MB)</span>
 
 Now we're getting to the most important part: Setting up an empty project! Start _IntelliJ_, it should be in your _Applications_ folder. The setup wizard will start, the defaults are okay and you can just proceed by clicking _Next_.
 

@@ -13,16 +13,11 @@ resources:
   - type: shell
     command: git commit -m "MESSAGE"
     description: Commit all staged files to git with the commit message MESSAGE
+video:
+  poster: /getting-started/guides/macosx-vscode-ruby-3-git-commit.mp4.thumb.jpg
+  src: /getting-started/guides/macosx-vscode-ruby-3-git-commit.mp4
+  description: A screencast of committing the project to git (0.4MB)
 ---
-
-<video 
-  width="100%" 
-  controls 
-  class="my-2 drop-shadow-small" 
-  preload="none"
-  poster="{% link getting-started/guides/macosx-vscode-ruby-3-git-commit.mp4.thumb.jpg %}"
-  src="{% link getting-started/guides/macosx-vscode-ruby-3-git-commit.mp4 %}"></video>
-<span class="text-center d-block small">A screencast of committing the project to git (0.4MB)</span>
 
 Now that we have the project in a good shape, it's time to add it to `git`. Open a new terminal and `cd` to the project folder. Run `git init .` to initialize a new repository in the folder we're developing our application in.
 

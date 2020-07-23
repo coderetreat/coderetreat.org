@@ -4,16 +4,11 @@ resources:
   - type: shell
     command: brew install ruby
     description: Install command for ruby
+video:
+  poster: /getting-started/guides/macosx-ruby.mp4.thumb.jpg
+  src: /getting-started/guides/macosx-ruby.mp4
+  description: A screencast of installing Ruby (5.4MB)
 ---
-
-<video 
-  width="100%" 
-  controls 
-  class="my-2 drop-shadow-small" 
-  preload="none"
-  poster="{% link getting-started/guides/macosx-ruby.mp4.thumb.jpg %}"
-  src="{% link getting-started/guides/macosx-ruby.mp4 %}"></video>
-<span class="text-center d-block small">A screencast of installing Ruby (5.4MB)</span>
 
 We will continue by installing a recent version of *Ruby* using *brew*. Open a Terminal (again, `Cmd+Space`, type in `terminal`, press `Enter`) and run `brew install ruby`.
 

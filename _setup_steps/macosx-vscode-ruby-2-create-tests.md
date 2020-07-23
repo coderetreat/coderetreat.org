@@ -1,15 +1,10 @@
 ---
 title: Creating the tests
+video:
+  poster: /getting-started/guides/macosx-vscode-ruby-2-create-tests.mp4.thumb.jpg
+  src: /getting-started/guides/macosx-vscode-ruby-2-create-tests.mp4
+  description: A screencast of creating the tests in Ruby (1.2MB)
 ---
-
-<video 
-  width="100%" 
-  controls 
-  class="my-2 drop-shadow-small" 
-  preload="none"
-  poster="{% link getting-started/guides/macosx-vscode-ruby-2-create-tests.mp4.thumb.jpg %}"
-  src="{% link getting-started/guides/macosx-vscode-ruby-2-create-tests.mp4 %}"></video>
-<span class="text-center d-block small">A screencast of creating the tests in Ruby (1.2MB)</span>
 
 It is time to create our first test to see if *RSpec* is installed correctly. Create a file `spec/hello_world_spec.rb` with the following content:
 

@@ -91,7 +91,7 @@ $enable-shadows: true;
 }
 
 .setup-guide > div:nth-child(2n) {
-  background: lighten(theme-color("primary"), 15%);
+  background: $gray-100;
 }
 
 main blockquote:not(.blockquote) {
@@ -140,4 +140,5 @@ button.btn-disabled-grayscale[disabled] {
 @import "syntax_highlighting";
 @import "helpful-boxes";
 @import "pages/home";
+@import "pages/setup-guides";
 @import "pages/training-sessions";

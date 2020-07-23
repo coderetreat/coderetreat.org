@@ -4,16 +4,11 @@ resources:
   - type: url
     url: https://brew.sh/
     description: Homepage with one-line installer for brew
+video:
+  src: /getting-started/guides/macosx-brew.mp4
+  poster: /getting-started/guides/macosx-brew.mp4.thumb.jpg
+  description: A screencast of installing brew (4.9MB)
 ---
-
-<video 
-  width="100%" 
-  controls 
-  class="my-2 drop-shadow-small" 
-  preload="none"
-  poster="{% link getting-started/guides/macosx-brew.mp4.thumb.jpg %}"
-  src="{% link getting-started/guides/macosx-brew.mp4 %}"></video>
-<span class="text-center d-block small">A screencast of installing brew (4.9MB)</span>
 
 We will start with installing _brew_, a system package manager for Mac OS X. A system package manager allows you to download and update applications. Think of it like the _AppStore_, just without a UI.
 

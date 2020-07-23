@@ -171,17 +171,17 @@ const Guide = ({ guide, steps, containerRef }) => {
   return (
     <div ref={containerRef} className="mt-5">
       <div className="p-5">
-      <h1>{guide.name}</h1>
-      <div className="toc d-inline-block p-md-3 my-3">
-        <h4 class="h4">Table of Contents</h4>
-        <ol className="section-nav">
-          {steps.map((s) => (
-            <li key={s.slug}>
-              <a href={`#${s.slug}`}>{s.title}</a>
-            </li>
-          ))}
-        </ol>
-      </div>
+        <h1>{guide.name}</h1>
+        <div className="toc d-inline-block p-md-3 my-3">
+          <h4 class="h4">Table of Contents</h4>
+          <ol className="section-nav">
+            {steps.map((s) => (
+              <li key={s.slug}>
+                <a href={`#${s.slug}`}>{s.title}</a>
+              </li>
+            ))}
+          </ol>
+        </div>
       </div>
       <section class="content px-0 container-fluid setup-guide">
         {steps.map((s) => (
@@ -196,12 +196,14 @@ const Guide = ({ guide, steps, containerRef }) => {
                 <div dangerouslySetInnerHTML={{ __html: s?.output }}></div>
               </div>
               <div className="col-12 order-1 order-lg-2 col-lg-6 mb-5 mb-lg-0">
-                {s.video &&
-                  (Array.isArray(s.video) ? (
-                    s.video.map((video) => <Video video={video} />)
-                  ) : (
-                    <Video video={s.video} />
-                  ))}
+                <div className="videos">
+                  {s.video &&
+                    (Array.isArray(s.video) ? (
+                      s.video.map((video) => <Video video={video} />)
+                    ) : (
+                      <Video video={s.video} />
+                    ))}
+                </div>
               </div>
             </div>
           </div>
@@ -253,26 +255,26 @@ const Guides = ({ setupSteps, availableGuides }) => {
   return (
     <Fragment>
       <div className="container-fluid px-5">
-      <GuideSelector
-        selectedGuideId={selectedGuideId}
-        availableGuides={availableGuides}
-        onSelectionChanged={selectGuideAndScrollIntoView}
-      />
-      <p>
-        Your setup isn't covered here? Check out the{" "}
-        <a href="https://github.com/swkBerlin/kata-bootstraps">
-          kata-bootstraps
-        </a>{" "}
-        repository for boilerplates in a lot of different languages, or add your
-        guide (💙) by submitting a{" "}
-        <a href="https://github.com/coderetreat/coderetreat">Pull Request</a>!
-      </p>
-      <p className="small text-muted">
-        <strong>Disclaimer:&nbsp;</strong>While we took a lot of caution with
-        compiling these guides, we are not liable for any damages caused by
-        following these guides. The guides are provided "AS IS" and free of
-        charge.
-      </p>
+        <GuideSelector
+          selectedGuideId={selectedGuideId}
+          availableGuides={availableGuides}
+          onSelectionChanged={selectGuideAndScrollIntoView}
+        />
+        <p>
+          Your setup isn't covered here? Check out the{" "}
+          <a href="https://github.com/swkBerlin/kata-bootstraps">
+            kata-bootstraps
+          </a>{" "}
+          repository for boilerplates in a lot of different languages, or add
+          your guide (💙) by submitting a{" "}
+          <a href="https://github.com/coderetreat/coderetreat">Pull Request</a>!
+        </p>
+        <p className="small text-muted">
+          <strong>Disclaimer:&nbsp;</strong>While we took a lot of caution with
+          compiling these guides, we are not liable for any damages caused by
+          following these guides. The guides are provided "AS IS" and free of
+          charge.
+        </p>
       </div>
       {selectedGuide && (
         <Guide

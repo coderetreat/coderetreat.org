@@ -10,16 +10,11 @@ resources:
   - type: shell
     command: bundle init
     description: Alternative command to create an initial Gemfile.
+video:
+  poster: /getting-started/guides/macosx-vscode-ruby-1-setup-rspec.mp4.thumb.jpg
+  src: /getting-started/guides/macosx-vscode-ruby-1-setup-rspec.mp4
+  description: A screencast of installing RSpec (0.5MB)
 ---
-
-<video 
-  width="100%" 
-  controls 
-  class="my-2 drop-shadow-small" 
-  preload="none"
-  poster="{% link getting-started/guides/macosx-vscode-ruby-1-setup-rspec.mp4.thumb.jpg %}"
-  src="{% link getting-started/guides/macosx-vscode-ruby-1-setup-rspec.mp4 %}"></video>
-<span class="text-center d-block small">A screencast of installing RSpec (0.5MB)</span>
 
 We'll continue with installing *RSpec*, a testrunner that is provided as a *Ruby Gem* (that's what third-party libraries are called in Ruby).
 
