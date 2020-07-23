@@ -64,8 +64,8 @@ const GuideSelector = ({
   }, [selectedLanguage, selectedOperatingSystem]);
 
   return (
-    <div className="row">
-      <div class="col-12 col-md-4">
+    <div className="">
+      <div class="d-block">
         <h4>Operating System</h4>
         {Object.entries(OPERATING_SYSTEMS).map(([key, os]) => (
           <SelectionButton
@@ -81,7 +81,7 @@ const GuideSelector = ({
           />
         ))}
       </div>
-      <div class="col-12 col-md-8">
+      <div class="mt-3">
         <h4>Programming Language</h4>
         {Object.entries(LANGUAGES).map(([key, language]) => (
           <SelectionButton
@@ -125,7 +125,7 @@ const updateUrlFromOperatingSystemAndLanguage = (selectedGuideId) => {
 };
 
 const Resources = ({ resources }) => (
-  <div className="tldr">
+  <div className="tldr mt-0">
     <ul className="">
       {resources.map((resource) => {
         if (resource.type === "url") {
@@ -153,9 +153,24 @@ const Resources = ({ resources }) => (
   </div>
 );
 
+const Video = ({ video }) => (
+  <Fragment>
+    <video
+      style={{ width: "100%" }}
+      controls
+      class="mb-2 drop-shadow-small"
+      preload="none"
+      poster={video.poster}
+      src={video.src}
+    ></video>
+    <span class="text-center d-block small">{video.description}</span>
+  </Fragment>
+);
+
 const Guide = ({ guide, steps, containerRef }) => {
   return (
-    <div ref={containerRef}>
+    <div ref={containerRef} className="mt-5">
+      <div className="p-5">
       <h1>{guide.name}</h1>
       <div className="toc d-inline-block p-md-3 my-3">
         <h4 class="h4">Table of Contents</h4>
@@ -167,15 +182,29 @@ const Guide = ({ guide, steps, containerRef }) => {
           ))}
         </ol>
       </div>
-      <section class="content">
+      </div>
+      <section class="content px-0 container-fluid setup-guide">
         {steps.map((s) => (
-          <Fragment>
-            <h2 className="h2">
+          <div className="p-5">
+            <h2 className="h1 mt-0 mb-5">
               <a name={s.slug}>{s.title}</a>
             </h2>
-            {s.resources && <Resources resources={s.resources} />}
-            <div dangerouslySetInnerHTML={{ __html: s?.output }}></div>
-          </Fragment>
+
+            <div className="row">
+              <div className="col-12 order-2 order-lg-1 col-lg-6">
+                {s.resources && <Resources resources={s.resources} />}
+                <div dangerouslySetInnerHTML={{ __html: s?.output }}></div>
+              </div>
+              <div className="col-12 order-1 order-lg-2 col-lg-6 mb-5 mb-lg-0">
+                {s.video &&
+                  (Array.isArray(s.video) ? (
+                    s.video.map((video) => <Video video={video} />)
+                  ) : (
+                    <Video video={s.video} />
+                  ))}
+              </div>
+            </div>
+          </div>
         ))}
       </section>
     </div>
@@ -222,7 +251,8 @@ const Guides = ({ setupSteps, availableGuides }) => {
   };
 
   return (
-    <div>
+    <Fragment>
+      <div className="container-fluid px-5">
       <GuideSelector
         selectedGuideId={selectedGuideId}
         availableGuides={availableGuides}
@@ -243,7 +273,7 @@ const Guides = ({ setupSteps, availableGuides }) => {
         following these guides. The guides are provided "AS IS" and free of
         charge.
       </p>
-      <hr className="my-5" />
+      </div>
       {selectedGuide && (
         <Guide
           containerRef={guideRef}
@@ -251,7 +281,7 @@ const Guides = ({ setupSteps, availableGuides }) => {
           steps={stepsForSelectedGuide}
         />
       )}
-    </div>
+    </Fragment>
   );
 };
 

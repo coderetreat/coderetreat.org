@@ -1,15 +1,10 @@
 ---
 title: Creating and running tests
+video:
+    src: /getting-started/guides/windows-intellij-kotlin-3-create-tests.mp4
+    poster: /getting-started/guides/windows-intellij-kotlin-3-create-tests.mp4.thumb.jpg
+    description: A screencast of creating and running tests in Kotlin (1.9MB)
 ---
-
-<video 
-  width="100%" 
-  controls 
-  class="my-2 drop-shadow-small" 
-  preload="none"
-  poster="{% link getting-started/guides/windows-intellij-kotlin-3-create-tests.mp4.thumb.jpg %}"
-  src="{% link getting-started/guides/windows-intellij-kotlin-3-create-tests.mp4 %}"></video>
-<span class="text-center d-block small">A screencast of creating and running tests in Kotlin (1.9MB)</span>
 
 Finally, we can create our tests to make sure that everything is working correctly. Create the folder `src/main/kotlin` and place a new Kotlin class `HelloWorld.kt` in there with a simple method that returns `"Hello World"` when called:
 

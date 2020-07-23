@@ -1,15 +1,10 @@
 ---
 title: Committing the boilerplate
+video:
+  poster: /getting-started/guides/windows-intellij-kotlin-4-git-commit.mp4.thumb.jpg
+  src: /getting-started/guides/windows-intellij-kotlin-4-git-commit.mp4
+  description: "A screencast of initializing the repo and committing to git (0.9MB)"
 ---
-
-<video 
-  width="100%" 
-  controls 
-  class="my-2 drop-shadow-small" 
-  preload="none"
-  poster="{% link getting-started/guides/windows-intellij-kotlin-4-git-commit.mp4.thumb.jpg %}"
-  src="{% link getting-started/guides/windows-intellij-kotlin-4-git-commit.mp4 %}"></video>
-<span class="text-center d-block small">A screencast of initializing the repo and committing to git (0.9MB)</span>
 
 Now that we have the project in a good shape, it's time to add it to `git`. Open a new terminal and `cd` to the project folder. Run `git init .` to initialize a new repository in the folder we're developing our application in.
 

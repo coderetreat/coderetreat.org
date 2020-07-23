@@ -90,6 +90,10 @@ $enable-shadows: true;
   border-radius: 2px;
 }
 
+.setup-guide > div:nth-child(2n) {
+  background: lighten(theme-color("primary"), 15%);
+}
+
 main blockquote:not(.blockquote) {
   background: theme-color("light");
   &:before {
@@ -123,9 +127,6 @@ main div.guide {
     }
   }
 
-  @include media-breakpoint-up("lg") {
-    padding: 0 $spacer * 8;
-  }
   h1:not(:first-child):not(.display-1) {
     margin-top: $spacer * 4;
   }

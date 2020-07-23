@@ -13,16 +13,14 @@ resources:
   - type: shell
     command: git --global config user.email "YOUR-EMAIL@ADDRESS.ORG"
     description: Command to set your email in git
+video:
+  - poster: /getting-started/guides/windows-git.mp4.thumb.jpg
+    src: /getting-started/guides/windows-git.mp4
+    description: A screencast of setting up git on Windows (1.2MB)
+  - poster: /getting-started/guides/windows-git-setup-user.mp4.thumb.jpg
+    src: /getting-started/guides/windows-git-setup-user.mp4
+    description: A screencast of configuring git on Windows (1.2MB)
 ---
-
-<video 
-  width="100%" 
-  controls 
-  class="my-2 drop-shadow-small" 
-  preload="none"
-  poster="{% link getting-started/guides/windows-git.mp4.thumb.jpg %}"
-  src="{% link getting-started/guides/windows-git.mp4 %}"></video>
-<span class="text-center d-block small">A screencast of setting up git on Windows (1.2MB)</span>
 
 `git` is a version control system, that means it is used to archive and share files in a way that makes it easy for collaborators to work in their changes. It is similar to _Dropbox_ or _Google Drive_, but it's not realtime/instant, as they are. 
 
@@ -47,11 +45,3 @@ git --global config user.name "YOUR NAME"
 git --global config user.email "YOUR-EMAIL@ADDRESS.ORG"
 ```
 
-<video 
-  width="100%" 
-  controls 
-  class="my-2 drop-shadow-small" 
-  preload="none"
-  poster="{% link getting-started/guides/windows-git-setup-user.mp4.thumb.jpg %}"
-  src="{% link getting-started/guides/windows-git-setup-user.mp4 %}"></video>
-<span class="text-center d-block small">A screencast of configuring git on Windows (1.2MB)</span>

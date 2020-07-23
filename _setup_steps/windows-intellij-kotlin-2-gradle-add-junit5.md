@@ -1,15 +1,10 @@
 ---
 title: Setting up JUnit5 in the project
+video:
+    src: /getting-started/guides/windows-intellij-kotlin-2-gradle-add-junit5.mp4
+    poster: /getting-started/guides/windows-intellij-kotlin-2-gradle-add-junit5.mp4.thumb.jpg
+    description: "A screencast of configuring gradle for JUnit5 (0.8MB)"
 ---
-
-<video 
-  width="100%" 
-  controls 
-  class="my-2 drop-shadow-small" 
-  preload="none"
-  poster="{% link getting-started/guides/windows-intellij-kotlin-2-gradle-add-junit5.mp4.thumb.jpg %}"
-  src="{% link getting-started/guides/windows-intellij-kotlin-2-gradle-add-junit5.mp4 %}"></video>
-<span class="text-center d-block small">A screencast of configuring gradle for JUnit5 (0.8MB)</span>
 
 Another slight annoyance is the fact that by default, a new *gradle* project ships with *JUnit4*, an old version. Upgrade it by changing the *junit* dependency declaration to use `kotlin.test` with the junit5 adapter, and to use the *JUnit5*-platform to run tests.
 
