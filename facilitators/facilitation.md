@@ -160,6 +160,10 @@ Then in the closing circle ask each participant to answer each of the questions:
 * What, if anything, surprised you today?
 * What, if anything, will you do differently in the future?
 
+If the group is large, you might not want to ask/answer all three questions to keep it short.
+
+This is also a good opportunity to solicit feedback about how to improve the next event, though you might want to do it via sticky notes or a white board, as some feedback might be specific, private, or redundant.
+
 # Facilitation advice
 
 * Enforce the "keep it short" rule as best you can
