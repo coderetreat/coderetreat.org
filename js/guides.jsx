@@ -170,8 +170,8 @@ const Video = ({ video }) => (
 const Guide = ({ guide, steps, containerRef }) => {
   return (
     <div ref={containerRef} className="mt-5">
-      <div className="p-5">
-        <h1>{guide.name}</h1>
+      <div className="px-3 px-lg-5 py-5">
+        <h1 className="display-4">{guide.name}</h1>
         <div className="toc d-inline-block p-md-3 my-3">
           <h4 class="h4">Table of Contents</h4>
           <ol className="section-nav">
@@ -183,9 +183,9 @@ const Guide = ({ guide, steps, containerRef }) => {
           </ol>
         </div>
       </div>
-      <section class="content px-0 container-fluid setup-guide">
+      <section class="content setup-guide">
         {steps.map((s) => (
-          <div className="p-5">
+          <div className="px-3 px-lg-5 py-5">
             <h2 className="h1 mt-0 mb-5">
               <a name={s.slug}>{s.title}</a>
             </h2>
@@ -253,8 +253,15 @@ const Guides = ({ setupSteps, availableGuides }) => {
   };
 
   return (
-    <Fragment>
-      <div className="container-fluid px-5">
+    <div class="px-0 my-5 guide">
+      <div class="px-3 px-lg-5">
+        <h1 class="display-1 display-4-md">Setup Guides</h1>
+        <p class="lead">
+          Setting up a modern development environment is difficult. Check out
+          our guides on how to get your device ready for a coderetreat!
+        </p>
+      </div>
+      <div className="px-3 px-lg-5">
         <GuideSelector
           selectedGuideId={selectedGuideId}
           availableGuides={availableGuides}
@@ -283,7 +290,7 @@ const Guides = ({ setupSteps, availableGuides }) => {
           steps={stepsForSelectedGuide}
         />
       )}
-    </Fragment>
+    </div>
   );
 };
 
