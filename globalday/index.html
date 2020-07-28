@@ -1,0 +1,70 @@
+---
+layout: base
+title: Global Day Of Coderetreat
+audience: participants
+extraStyles: ["/js/bundled/map.css"]
+description: |
+    Global Day Of Coderetreat is a community event happening on November 6 - November 7 2020. 
+    Join this year and practice your skills, embrace new paradigms and get to meet new people
+    from all over the world!
+---
+<div class="jumbotron jumbotron-fluid m-0 p-0">
+    <div class="w-100" style="max-height: 500px; height: 500px; position: relative; z-index: 0" id="map">
+    </div>
+</div>
+<div class="container my-5">
+    <div>
+        <p class="lead">Global Day Of Coderetreat is a community event happening on <strong>November 6 - November 7
+                2020</strong>. Join this year and practice your skills, embrace new paradigms and get to meet new people
+            from all over the world!</p>
+        <p>With COVID-19 having a severe impact on the availability of on-site events, we're embracing the virtual
+            events we had in the past more than ever. Local on-site events are marked with a 🔴, while virtual events
+            are marked with 🔵. We encourage you to stay safe, the map is here to help you find either a local event or
+            an event that matches your timezone.</p>
+        <p>Want to host your own? Check out our <a href="{% link facilitators/index.html %}">Facilitator's Section</a>
+            to find out how you can run your own event!</p>
+    </div>
+</div>
+<div class="bg-light text-dark my-5">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-3">
+                <img src="{% link assets/home-gdcr.jpg %}" class="w-100">
+            </div>
+            <div class="col-9">
+                <h1 class="h2">What's there to learn?</h1>
+                <p>A coderetreat is an excellent occasion to practice <b>Test-Driven-Development</b> and <b>Pair
+                        Programming</b>, but it's also a great chance to see a new programming language for the first
+                    time or to practice mentoring.</p>
+                <p>During the day, you get to work on the same problem with different people for 45 minutes each. It's a
+                    great way to explore different angles and perspectives, and once you're past the desire to "get it
+                    done", it becomes a unique learning experience.</p>
+                <p>Read more about the workshop format in our <a href="{% link the-workshop/index.md %}">workshop
+                        guide</a>.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container py-5 my-5">
+    <div class="row align-items-center">
+        <div class="col-12">
+            <h1 class="h2">Where it's happening</h1>
+            <p>For this year, we will provide you with guidance to find an event that works for you, both time and
+                safety-wise. We advise everyone to take all precautions they deem necessary, so if an on-site event
+                isn't for you, we hope you'll find a remote event that matches your timezone.</p>
+            <p>Stay tuned for the first events to be listed on our page!</p>
+            <div class="text-center">
+                <img alt="A screenshot of last year's map showing hundreds of events all over the world" src="{% link globalday/last-year-map.jpg %}" class="img-fluid" />
+                <small>A screenshot from last year's map</small>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-light text-dark">
+    <div class="container py-5 my-5">
+        <p class="lead text-center">Hosting your own? Put it on our map by <a
+                href="{% link facilitators/register.md %}">submitting a Pull Request!</a></p>
+        <p>Every year, hundreds of volunteers organize coderetreats. We're here to support you on the journey of organizing your first coderetreat. <br/>Head over to the <a href="{% link facilitators/index.html %}">Facilitators Section</a> for Training events, checklists, facilitation videos and more!</p>
+    </div>
+</div>
+<script async type="application/javascript" src="{{ "/js/bundled/map.js" | relative_url }}"></script>

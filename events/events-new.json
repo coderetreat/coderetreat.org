@@ -1,3 +1,0 @@
----
----
-{{ site.data.events-new | jsonify }}

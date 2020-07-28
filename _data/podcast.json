@@ -1,0 +1,1847 @@
+{
+    "_declaration": {
+        "_attributes": {
+            "version": "1.0",
+            "encoding": "UTF-8"
+        }
+    },
+    "rss": {
+        "_attributes": {
+            "xmlns:atom": "http://www.w3.org/2005/Atom",
+            "xmlns:openSearch": "http://a9.com/-/spec/opensearchrss/1.0/",
+            "xmlns:blogger": "http://schemas.google.com/blogger/2008",
+            "xmlns:georss": "http://www.georss.org/georss",
+            "xmlns:gd": "http://schemas.google.com/g/2005",
+            "xmlns:thr": "http://purl.org/syndication/thread/1.0",
+            "xmlns:media": "http://search.yahoo.com/mrss/",
+            "xmlns:itunes": "http://www.itunes.com/dtds/podcast-1.0.dtd",
+            "xmlns:dc": "http://purl.org/dc/elements/1.1/",
+            "version": "2.0"
+        },
+        "channel": {
+            "lastBuildDate": {
+                "_text": "Mon, 22 Jun 2020 21:26:34 +0000"
+            },
+            "category": [
+                {
+                    "_text": "facilitation"
+                },
+                {
+                    "_text": "overview"
+                },
+                {
+                    "_text": "guest"
+                },
+                {
+                    "_text": "Game of Life"
+                },
+                {
+                    "_text": "constraints"
+                },
+                {
+                    "_text": "pair-programming"
+                },
+                {
+                    "_text": "top3"
+                },
+                {
+                    "_text": "hosting"
+                },
+                {
+                    "_text": "learnings"
+                },
+                {
+                    "_text": "pair-facilitation"
+                },
+                {
+                    "_text": "participants"
+                },
+                {
+                    "_text": "coding"
+                },
+                {
+                    "_text": "questions"
+                },
+                {
+                    "_text": "retrospective"
+                },
+                {
+                    "_text": "video"
+                },
+                {
+                    "_text": "hands-on"
+                },
+                {
+                    "_text": "lunch"
+                },
+                {
+                    "_text": "mob-programming"
+                },
+                {
+                    "_text": "registration"
+                },
+                {
+                    "_text": "remote"
+                }
+            ],
+            "title": {
+                "_text": "Coderetreat Facilitation"
+            },
+            "description": {
+                "_text": "A podcast answering questions about Coderetreat hosting, facilitation and participation. It will help you run Coderetreats, Coding Dojos, hands on meetups and classic training."
+            },
+            "link": {
+                "_text": "https://coderetreat-facilitation.code-cop.org/"
+            },
+            "managingEditor": {
+                "_text": "noreply@blogger.com (Peter Kofler)"
+            },
+            "generator": {
+                "_text": "code-cop.org"
+            },
+            "openSearch:totalResults": {
+                "_text": "17"
+            },
+            "openSearch:startIndex": {
+                "_text": "1"
+            },
+            "openSearch:itemsPerPage": {
+                "_text": "25"
+            },
+            "atom:link": [
+                {
+                    "_attributes": {
+                        "rel": "self",
+                        "type": "application/rss+xml",
+                        "href": "https://www.code-cop.org/podcast/rss_feed.php"
+                    }
+                },
+                {
+                    "_attributes": {
+                        "rel": "hub",
+                        "href": "http://pubsubhubbub.appspot.com/"
+                    }
+                }
+            ],
+            "media:credit": {
+                "_attributes": {
+                    "role": "author"
+                },
+                "_text": "Peter Kofler"
+            },
+            "image": {
+                "link": {
+                    "_text": "https://coderetreat-facilitation.code-cop.org/"
+                },
+                "url": {
+                    "_text": "https://www.code-cop.org/podcast/profiles/GDCR13_1013_144.jpg"
+                },
+                "title": {
+                    "_text": "Coderetreat Facilitation"
+                }
+            },
+            "media:thumbnail": {
+                "_attributes": {
+                    "url": "https://www.code-cop.org/podcast/profiles/GDCR13_1013_144.jpg"
+                }
+            },
+            "media:category": [
+                {
+                    "_attributes": {
+                        "scheme": "http://www.itunes.com/dtds/podcast-1.0.dtd"
+                    },
+                    "_text": "Education"
+                },
+                {
+                    "_attributes": {
+                        "scheme": "http://www.itunes.com/dtds/podcast-1.0.dtd"
+                    },
+                    "_text": "Technology"
+                }
+            ],
+            "language": {
+                "_text": "en"
+            },
+            "media:rating": {
+                "_text": "nonadult"
+            },
+            "copyright": {
+                "_text": "Licensed under Creative Commons Attribution 3.0 Unported License"
+            },
+            "media:copyright": {
+                "_text": "Licensed under Creative Commons Attribution 3.0 Unported License"
+            },
+            "itunes:title": {
+                "_text": "Coderetreat Facilitation"
+            },
+            "itunes:subtitle": {
+                "_text": "A podcast answering questions about Coderetreat hosting, facilitation and participation."
+            },
+            "itunes:summary": {
+                "_text": "A podcast answering questions about Coderetreat hosting, facilitation and participation. It will help you run Coderetreats, Coding Dojos, hands on meetups and classic training."
+            },
+            "itunes:owner": {
+                "itunes:email": {
+                    "_text": "noreply@blogger.com"
+                },
+                "itunes:name": {
+                    "_text": "Peter Kofler"
+                }
+            },
+            "itunes:author": {
+                "_text": "Peter Kofler"
+            },
+            "itunes:image": {
+                "_attributes": {
+                    "href": "https://www.code-cop.org/podcast/profiles/GDCR13_1013_1400.jpg"
+                }
+            },
+            "itunes:category": [
+                {
+                    "_attributes": {
+                        "text": "Education"
+                    }
+                },
+                {
+                    "_attributes": {
+                        "text": "Technology"
+                    }
+                }
+            ],
+            "itunes:type": {
+                "_text": "episodic"
+            },
+            "itunes:explicit": {
+                "_text": "no"
+            },
+            "item": [
+                {
+                    "guid": {
+                        "_attributes": {
+                            "isPermaLink": "false"
+                        },
+                        "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-4188282620042309929"
+                    },
+                    "pubDate": {
+                        "_text": "Mon, 22 Jun 2020 21:12:00 +0000"
+                    },
+                    "category": [
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "coding"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "constraints"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "guest"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "overview"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "video"
+                        }
+                    ],
+                    "title": {
+                        "_text": "16: Corey Haines' Cleveland Coderetreat Introduction Part 1"
+                    },
+                    "description": {
+                        "_text": "In this episode <a href=\"https://twitter.com/coreyhaines\">Corey Haines</a> will introduce you to: <ul><li>The goal of the Coderetreat</li><li>The 4 Rules of Simple Design</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/16---Corey-Haines-Cleveland-Coderetreat-Introduction-Part-1.mp3\">MP3 (10 minutes - 18 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p> <p>Check out the full video here:</p><iframe src=\"https://player.vimeo.com/video/18955165\" width=\"560\" height=\"315\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe> Material in this episode: <ul><li><a href=\"https://vimeo.com/18955165\">Corey Haines' Cleveland Code Retreat Introduction</a> from <a href=\"https://vimeo.com/coreyhaines\">Corey Haines</a> on <a href=\"https://vimeo.com\">Vimeo</a></li><li><a href=\"http://blog.coreyhaines.com/2011/01/on-goals-of-coderetreat.html\">On the goals of Coderetreat</a></li><li><a href=\"https://martinfowler.com/bliki/BeckDesignRules.html\">Kent Beck's four rules of simple design</a></li></ul><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a>.)</small>"
+                    },
+                    "link": {
+                        "_text": "https://coderetreat-facilitation.code-cop.org/2020/06/16-corey-haines-cleveland-coderetreat.html"
+                    },
+                    "author": {
+                        "_text": "noreply@blogger.com (Peter Kofler)"
+                    },
+                    "thr:total": {
+                        "_text": "0"
+                    },
+                    "dc:creator": {
+                        "_text": "Peter Kofler"
+                    },
+                    "enclosure": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/16---Corey-Haines-Cleveland-Coderetreat-Introduction-Part-1.mp3",
+                            "length": "19540010",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "media:content": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/16---Corey-Haines-Cleveland-Coderetreat-Introduction-Part-1.mp3",
+                            "length": "19540010",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "itunes:title": {
+                        "_text": "16: Corey Haines' Cleveland Coderetreat Introduction Part 1"
+                    },
+                    "itunes:season": {
+                        "_text": "1"
+                    },
+                    "itunes:episode": {
+                        "_text": "16"
+                    },
+                    "itunes:subtitle": {
+                        "_text": "In this episode Corey Haines will introduce you to: The goal of the Coderetreat The 4 Rules of Simple Design"
+                    },
+                    "itunes:summary": {
+                        "_text": "In this episode <a href=\"https://twitter.com/coreyhaines\">Corey Haines</a> will introduce you to: <ul><li>The goal of the Coderetreat</li><li>The 4 Rules of Simple Design</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/16---Corey-Haines-Cleveland-Coderetreat-Introduction-Part-1.mp3\">MP3 (10 minutes - 18 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p> <p>Check out the full video here:</p><iframe src=\"https://player.vimeo.com/video/18955165\" width=\"560\" height=\"315\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe> Material in this episode: <ul><li><a href=\"https://vimeo.com/18955165\">Corey Haines' Cleveland Code Retreat Introduction</a> from <a href=\"https://vimeo.com/coreyhaines\">Corey Haines</a> on <a href=\"https://vimeo.com\">Vimeo</a></li><li><a href=\"http://blog.coreyhaines.com/2011/01/on-goals-of-coderetreat.html\">On the goals of Coderetreat</a></li><li><a href=\"https://martinfowler.com/bliki/BeckDesignRules.html\">Kent Beck's four rules of simple design</a></li></ul><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a>.)</small>"
+                    },
+                    "itunes:author": {
+                        "_text": "Peter Kofler"
+                    },
+                    "itunes:duration": {
+                        "_text": "00:10:00"
+                    },
+                    "itunes:keywords": {
+                        "_text": "coding, constraints, guest, overview, video"
+                    },
+                    "itunes:episodeType": {
+                        "_text": "full"
+                    },
+                    "itunes:explicit": {
+                        "_text": "no"
+                    }
+                },
+                {
+                    "guid": {
+                        "_attributes": {
+                            "isPermaLink": "false"
+                        },
+                        "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-1690785732789209564"
+                    },
+                    "pubDate": {
+                        "_text": "Thu, 18 Jun 2020 07:37:00 +0000"
+                    },
+                    "category": [
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "facilitation"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "hosting"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "pair-programming"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "top3"
+                        }
+                    ],
+                    "title": {
+                        "_text": "15: The intro, facilitate forming pairs and difference to a Coding Dojo"
+                    },
+                    "description": {
+                        "_text": "This episode contains: <ul><li>What to put into the intro for the day?</li><li>How to facilitate forming pairs?</li><li>Which are the differences between organizing a Coderetreat and a Coding Dojo night?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/15---The-intro,-facilitate-forming-pairs-and-difference-to-a-Coding-Dojo.mp3\">MP3 (8 minutes - 12 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                    },
+                    "link": {
+                        "_text": "https://coderetreat-facilitation.code-cop.org/2020/06/15-intro-facilitate-forming-pairs-and.html"
+                    },
+                    "author": {
+                        "_text": "noreply@blogger.com (Peter Kofler)"
+                    },
+                    "thr:total": {
+                        "_text": "0"
+                    },
+                    "dc:creator": {
+                        "_text": "Peter Kofler"
+                    },
+                    "enclosure": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/15---The-intro,-facilitate-forming-pairs-and-difference-to-a-Coding-Dojo.mp3",
+                            "length": "12161159",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "media:content": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/15---The-intro,-facilitate-forming-pairs-and-difference-to-a-Coding-Dojo.mp3",
+                            "length": "12161159",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "itunes:title": {
+                        "_text": "15: The intro, facilitate forming pairs and difference to a Coding Dojo"
+                    },
+                    "itunes:season": {
+                        "_text": "1"
+                    },
+                    "itunes:episode": {
+                        "_text": "15"
+                    },
+                    "itunes:subtitle": {
+                        "_text": "This episode contains: What to put into the intro for the day? How to facilitate forming pairs? Which are the differences between organizing a Coderetreat and a Coding Dojo night?"
+                    },
+                    "itunes:summary": {
+                        "_text": "This episode contains: <ul><li>What to put into the intro for the day?</li><li>How to facilitate forming pairs?</li><li>Which are the differences between organizing a Coderetreat and a Coding Dojo night?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/15---The-intro,-facilitate-forming-pairs-and-difference-to-a-Coding-Dojo.mp3\">MP3 (8 minutes - 12 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                    },
+                    "itunes:author": {
+                        "_text": "Peter Kofler"
+                    },
+                    "itunes:duration": {
+                        "_text": "00:08:00"
+                    },
+                    "itunes:keywords": {
+                        "_text": "facilitation, hosting, pair-programming, top3"
+                    },
+                    "itunes:episodeType": {
+                        "_text": "full"
+                    },
+                    "itunes:explicit": {
+                        "_text": "no"
+                    }
+                },
+                {
+                    "guid": {
+                        "_attributes": {
+                            "isPermaLink": "false"
+                        },
+                        "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-8994671586385163950"
+                    },
+                    "pubDate": {
+                        "_text": "Mon, 18 May 2020 05:59:00 +0000"
+                    },
+                    "category": [
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "guest"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "learnings"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "overview"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "video"
+                        }
+                    ],
+                    "title": {
+                        "_text": "14: Alex Bolboaca's Message for Coderetreat Attendees"
+                    },
+                    "description": {
+                        "_text": "In this episode <a href=\"https://alexbolboaca.ro/\">Alex Bolboaca</a> will answer the following questions: <ul><li>What makes Coderetreats magical?</li><li>How to get the most out of a Coderetreat?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/14---Alex-Bolboacas-Message-for-Coderetreat-Attendees.mp3\">MP3 (7 minutes - 10 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p> <p>Check out the video here:</p><iframe src=\"https://player.vimeo.com/video/145525880\" width=\"640\" height=\"360\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe> Material in this episode: <ul><li><a href=\"https://vimeo.com/145525880\">Alex Bolboaca on Coderetreat</a> from <a href=\"https://vimeo.com/agileworks\">AgileWorks</a> on <a href=\"https://vimeo.com\">Vimeo</a></li><li><a href=\"https://alexbolboaca.ro/coderetreat/how-to-get-the-most-out-of-a-code-retreat\">How to get the most out of a Code Retreat</a></li><li><a href=\"https://coderetreat-facilitation.code-cop.org/2020/02/deleting-code-questions-that-people-ask.html\">Episode 07: Deleting the code</a></li><li><a href=\"https://coderetreat-facilitation.code-cop.org/2019/11/number-participants-pizza-and-seeing.html\">Episode 01: Seeing different languages</a></li></ul><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a>.)</small>"
+                    },
+                    "link": {
+                        "_text": "https://coderetreat-facilitation.code-cop.org/2020/05/14-alex-bolboacas-message-for.html"
+                    },
+                    "author": {
+                        "_text": "noreply@blogger.com (Peter Kofler)"
+                    },
+                    "thr:total": {
+                        "_text": "0"
+                    },
+                    "dc:creator": {
+                        "_text": "Peter Kofler"
+                    },
+                    "enclosure": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/14---Alex-Bolboacas-Message-for-Coderetreat-Attendees.mp3",
+                            "length": "10845132",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "media:content": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/14---Alex-Bolboacas-Message-for-Coderetreat-Attendees.mp3",
+                            "length": "10845132",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "itunes:title": {
+                        "_text": "14: Alex Bolboaca's Message for Coderetreat Attendees"
+                    },
+                    "itunes:season": {
+                        "_text": "1"
+                    },
+                    "itunes:episode": {
+                        "_text": "14"
+                    },
+                    "itunes:subtitle": {
+                        "_text": "In this episode Alex Bolboaca will answer the following questions: What makes Coderetreats magical? How to get the most out of a Coderetreat?"
+                    },
+                    "itunes:summary": {
+                        "_text": "In this episode <a href=\"https://alexbolboaca.ro/\">Alex Bolboaca</a> will answer the following questions: <ul><li>What makes Coderetreats magical?</li><li>How to get the most out of a Coderetreat?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/14---Alex-Bolboacas-Message-for-Coderetreat-Attendees.mp3\">MP3 (7 minutes - 10 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p> <p>Check out the video here:</p><iframe src=\"https://player.vimeo.com/video/145525880\" width=\"640\" height=\"360\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe> Material in this episode: <ul><li><a href=\"https://vimeo.com/145525880\">Alex Bolboaca on Coderetreat</a> from <a href=\"https://vimeo.com/agileworks\">AgileWorks</a> on <a href=\"https://vimeo.com\">Vimeo</a></li><li><a href=\"https://alexbolboaca.ro/coderetreat/how-to-get-the-most-out-of-a-code-retreat\">How to get the most out of a Code Retreat</a></li><li><a href=\"https://coderetreat-facilitation.code-cop.org/2020/02/deleting-code-questions-that-people-ask.html\">Episode 07: Deleting the code</a></li><li><a href=\"https://coderetreat-facilitation.code-cop.org/2019/11/number-participants-pizza-and-seeing.html\">Episode 01: Seeing different languages</a></li></ul><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a>.)</small>"
+                    },
+                    "itunes:author": {
+                        "_text": "Peter Kofler"
+                    },
+                    "itunes:duration": {
+                        "_text": "00:07:00"
+                    },
+                    "itunes:keywords": {
+                        "_text": "guest, learnings, overview, video"
+                    },
+                    "itunes:episodeType": {
+                        "_text": "full"
+                    },
+                    "itunes:explicit": {
+                        "_text": "no"
+                    }
+                },
+                {
+                    "guid": {
+                        "_attributes": {
+                            "isPermaLink": "false"
+                        },
+                        "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-591371871615118133"
+                    },
+                    "pubDate": {
+                        "_text": "Mon, 11 May 2020 21:48:00 +0000"
+                    },
+                    "category": [
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "constraints"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "facilitation"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "learnings"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "pair-programming"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "top3"
+                        }
+                    ],
+                    "title": {
+                        "_text": "13: Primary job of facilitator, first session without pairing and supporting participants' learning journey"
+                    },
+                    "description": {
+                        "_text": "Today I talk about the following questions: <ul><li>What is your primary job as facilitator?</li><li>Is it allowed to run the first session without any pairing?</li><li>What is Ping Pong?</li><li>How to support participants to continue their learning journey after the Coderetreat?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/13---Primary-job-of-facilitator,-first-session-without-pairing-and-supporting-participants-learning-journey.mp3\">MP3 (9 minutes - 13 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p>Mentioned in this episode: <ul><li><a href=\"https://coderetreat-facilitation.code-cop.org/2020/03/coding-dojo-mindset-and-game-of-life-is.html\">Episode 10: Coding Dojo Mindset</a></li><li><a href=\"https://blog.code-cop.org/2017/10/difficulty-of-coding-exercises.html\">Managing the Difficulty of Coding Exercises</a></li><li><a href=\"https://coderetreat-facilitation.code-cop.org/2020/04/12-what-to-look-for-and-ask-about-other.html\">Episode 12: What to look for and ask about other than the code</a></li><li><a href=\"https://coderetreat-facilitation.code-cop.org/2020/02/why-pair-program-finish-game-of-life.html\">Episode 08: Why pair program</a></li><li><a href=\"https://coderetreat-facilitation.code-cop.org/2020/02/deleting-code-questions-that-people-ask.html\">Episode 07: single participant staying alone</a></li><li><a href=\"https://blog.code-cop.org/2016/11/followup-global-day-of-coderetreat-2016.html\">A box of things to take from the Coderetreat</a></li></ul><p>Thanks to <a href=\"https://twitter.com/dertseha\">Christian Haas</a> for feedback on audio quality of this podcast.</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                    },
+                    "link": {
+                        "_text": "https://coderetreat-facilitation.code-cop.org/2020/05/13-primary-job-of-facilitator-first.html"
+                    },
+                    "author": {
+                        "_text": "noreply@blogger.com (Peter Kofler)"
+                    },
+                    "thr:total": {
+                        "_text": "0"
+                    },
+                    "dc:creator": {
+                        "_text": "Peter Kofler"
+                    },
+                    "enclosure": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/13---Primary-job-of-facilitator,-first-session-without-pairing-and-supporting-participants-learning-journey.mp3",
+                            "length": "13770876",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "media:content": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/13---Primary-job-of-facilitator,-first-session-without-pairing-and-supporting-participants-learning-journey.mp3",
+                            "length": "13770876",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "itunes:title": {
+                        "_text": "13: Primary job of facilitator, first session without pairing and supporting participants' learning journey"
+                    },
+                    "itunes:season": {
+                        "_text": "1"
+                    },
+                    "itunes:episode": {
+                        "_text": "13"
+                    },
+                    "itunes:subtitle": {
+                        "_text": "Today I talk about the following questions: What is your primary job as facilitator? Is it allowed to run the first session without any pairing? What is Ping Pong? How to support participants to continue their learning journey after the Coderetreat?"
+                    },
+                    "itunes:summary": {
+                        "_text": "Today I talk about the following questions: <ul><li>What is your primary job as facilitator?</li><li>Is it allowed to run the first session without any pairing?</li><li>What is Ping Pong?</li><li>How to support participants to continue their learning journey after the Coderetreat?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/13---Primary-job-of-facilitator,-first-session-without-pairing-and-supporting-participants-learning-journey.mp3\">MP3 (9 minutes - 13 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p>Mentioned in this episode: <ul><li><a href=\"https://coderetreat-facilitation.code-cop.org/2020/03/coding-dojo-mindset-and-game-of-life-is.html\">Episode 10: Coding Dojo Mindset</a></li><li><a href=\"https://blog.code-cop.org/2017/10/difficulty-of-coding-exercises.html\">Managing the Difficulty of Coding Exercises</a></li><li><a href=\"https://coderetreat-facilitation.code-cop.org/2020/04/12-what-to-look-for-and-ask-about-other.html\">Episode 12: What to look for and ask about other than the code</a></li><li><a href=\"https://coderetreat-facilitation.code-cop.org/2020/02/why-pair-program-finish-game-of-life.html\">Episode 08: Why pair program</a></li><li><a href=\"https://coderetreat-facilitation.code-cop.org/2020/02/deleting-code-questions-that-people-ask.html\">Episode 07: single participant staying alone</a></li><li><a href=\"https://blog.code-cop.org/2016/11/followup-global-day-of-coderetreat-2016.html\">A box of things to take from the Coderetreat</a></li></ul><p>Thanks to <a href=\"https://twitter.com/dertseha\">Christian Haas</a> for feedback on audio quality of this podcast.</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                    },
+                    "itunes:author": {
+                        "_text": "Peter Kofler"
+                    },
+                    "itunes:duration": {
+                        "_text": "00:09:00"
+                    },
+                    "itunes:keywords": {
+                        "_text": "constraints, facilitation, learnings, pair-programming, top3"
+                    },
+                    "itunes:episodeType": {
+                        "_text": "full"
+                    },
+                    "itunes:explicit": {
+                        "_text": "no"
+                    }
+                },
+                {
+                    "guid": {
+                        "_attributes": {
+                            "isPermaLink": "false"
+                        },
+                        "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-8613242995955216259"
+                    },
+                    "pubDate": {
+                        "_text": "Mon, 27 Apr 2020 04:47:00 +0000"
+                    },
+                    "category": [
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "facilitation"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "guest"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "retrospective"
+                        }
+                    ],
+                    "title": {
+                        "_text": "12: What to look for and ask about other than the code"
+                    },
+                    "description": {
+                        "_text": "In this episode my co-facilitator <a href=\"https://www.linkedin.com/in/oliver-spann/\">Oliver Spann</a> shares some tips for non-coding facilitators: <ul><li>What to look for during sessions (while people work) other than the code?</li><li>What to ask in retrospectives if you did not understand the code?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/12---What-to-look-for-and-ask-about-other-than-the-code.mp3\">MP3 (8 minutes - 6 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><p>Thank you Oliver for sharing your knowledge. You can learn more from Oliver at <a href=\"https://medium.com/@olivercecilspann\">his blog</a>. Related to this episode is Oliver's latest article <a href=\"https://medium.com/@olivercecilspann/can-you-facilitate-a-coderetreat-as-a-scrum-master-f18a39274560\">Can you facilitate a Coderetreat as a Scrum Master?</a></p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                    },
+                    "link": {
+                        "_text": "https://coderetreat-facilitation.code-cop.org/2020/04/12-what-to-look-for-and-ask-about-other.html"
+                    },
+                    "author": {
+                        "_text": "noreply@blogger.com (Peter Kofler)"
+                    },
+                    "thr:total": {
+                        "_text": "0"
+                    },
+                    "dc:creator": {
+                        "_text": "Peter Kofler"
+                    },
+                    "enclosure": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/12---What-to-look-for-and-ask-about-other-than-the-code.mp3",
+                            "length": "6766831",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "media:content": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/12---What-to-look-for-and-ask-about-other-than-the-code.mp3",
+                            "length": "6766831",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "itunes:title": {
+                        "_text": "12: What to look for and ask about other than the code"
+                    },
+                    "itunes:season": {
+                        "_text": "1"
+                    },
+                    "itunes:episode": {
+                        "_text": "12"
+                    },
+                    "itunes:subtitle": {
+                        "_text": "In this episode my co-facilitator Oliver Spann shares some tips for non-coding facilitators: What to look for during sessions (while people work) other than the code? What to ask in retrospectives if you did not understand the code?"
+                    },
+                    "itunes:summary": {
+                        "_text": "In this episode my co-facilitator <a href=\"https://www.linkedin.com/in/oliver-spann/\">Oliver Spann</a> shares some tips for non-coding facilitators: <ul><li>What to look for during sessions (while people work) other than the code?</li><li>What to ask in retrospectives if you did not understand the code?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/12---What-to-look-for-and-ask-about-other-than-the-code.mp3\">MP3 (8 minutes - 6 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><p>Thank you Oliver for sharing your knowledge. You can learn more from Oliver at <a href=\"https://medium.com/@olivercecilspann\">his blog</a>. Related to this episode is Oliver's latest article <a href=\"https://medium.com/@olivercecilspann/can-you-facilitate-a-coderetreat-as-a-scrum-master-f18a39274560\">Can you facilitate a Coderetreat as a Scrum Master?</a></p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                    },
+                    "itunes:author": {
+                        "_text": "Peter Kofler"
+                    },
+                    "itunes:duration": {
+                        "_text": "00:08:00"
+                    },
+                    "itunes:keywords": {
+                        "_text": "facilitation, guest, retrospective"
+                    },
+                    "itunes:episodeType": {
+                        "_text": "full"
+                    },
+                    "itunes:explicit": {
+                        "_text": "no"
+                    }
+                },
+                {
+                    "guid": {
+                        "_attributes": {
+                            "isPermaLink": "false"
+                        },
+                        "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-6857565190470580608"
+                    },
+                    "pubDate": {
+                        "_text": "Sat, 18 Apr 2020 18:19:00 +0000"
+                    },
+                    "category": [
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "constraints"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "facilitation"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "hosting"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "overview"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "remote"
+                        }
+                    ],
+                    "title": {
+                        "_text": "11: A remote Coderetreat and overview of constraints"
+                    },
+                    "description": {
+                        "_text": "In this episode: <ul><li>How to run a remote Coderetreat?</li><li>What are constraints?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/11---A-remote-Coderetreat-and-overview-of-constraints.mp3\">MP3 (8 minutes - 12 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p>Material used for this episode: <ul><li><a href=\"https://medium.com/@philborlin/retrospective-on-a-remote-global-day-of-coderetreat-ace1baf20bae\">Retrospective on a Remote Global Day of Coderetreat</a></li><li><a href=\"https://manynames.sevensuns.at/technojoy/2014/12/2080-a-coding-dojo-constraint-just-for-fun.html\">20/80 - A coding dojo constraint just for fun</a></li></ul><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                    },
+                    "link": {
+                        "_text": "https://coderetreat-facilitation.code-cop.org/2020/04/11-remote-coderetreat-and-overview-of.html"
+                    },
+                    "author": {
+                        "_text": "noreply@blogger.com (Peter Kofler)"
+                    },
+                    "thr:total": {
+                        "_text": "0"
+                    },
+                    "dc:creator": {
+                        "_text": "Peter Kofler"
+                    },
+                    "enclosure": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/11---A-remote-Coderetreat-and-overview-of-constraints.mp3",
+                            "length": "13128466",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "media:content": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/11---A-remote-Coderetreat-and-overview-of-constraints.mp3",
+                            "length": "13128466",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "itunes:title": {
+                        "_text": "11: A remote Coderetreat and overview of constraints"
+                    },
+                    "itunes:season": {
+                        "_text": "1"
+                    },
+                    "itunes:episode": {
+                        "_text": "11"
+                    },
+                    "itunes:subtitle": {
+                        "_text": "In this episode: How to run a remote Coderetreat? What are constraints?"
+                    },
+                    "itunes:summary": {
+                        "_text": "In this episode: <ul><li>How to run a remote Coderetreat?</li><li>What are constraints?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/11---A-remote-Coderetreat-and-overview-of-constraints.mp3\">MP3 (8 minutes - 12 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p>Material used for this episode: <ul><li><a href=\"https://medium.com/@philborlin/retrospective-on-a-remote-global-day-of-coderetreat-ace1baf20bae\">Retrospective on a Remote Global Day of Coderetreat</a></li><li><a href=\"https://manynames.sevensuns.at/technojoy/2014/12/2080-a-coding-dojo-constraint-just-for-fun.html\">20/80 - A coding dojo constraint just for fun</a></li></ul><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                    },
+                    "itunes:author": {
+                        "_text": "Peter Kofler"
+                    },
+                    "itunes:duration": {
+                        "_text": "00:08:00"
+                    },
+                    "itunes:keywords": {
+                        "_text": "constraints, facilitation, hosting, overview, remote"
+                    },
+                    "itunes:episodeType": {
+                        "_text": "full"
+                    },
+                    "itunes:explicit": {
+                        "_text": "no"
+                    }
+                },
+                {
+                    "guid": {
+                        "_attributes": {
+                            "isPermaLink": "false"
+                        },
+                        "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-1365751981227488973"
+                    },
+                    "pubDate": {
+                        "_text": "Tue, 31 Mar 2020 21:28:00 +0000"
+                    },
+                    "category": [
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "facilitation"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "Game of Life"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "overview"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "top3"
+                        }
+                    ],
+                    "title": {
+                        "_text": "Coding Dojo Mindset and Game of Life is mandatory"
+                    },
+                    "description": {
+                        "_text": "In this episode I am answering <ul><li>What is the Coding Dojo Mindset? (What is the core mindset of a Coderetreat?)</li><li>Is Game of Life mandatory?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/10---Coding-Dojo-Mindset-and-Game-of-Life-is-mandatory.mp3\">MP3 (8 minutes - 12 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p>Mentioned in this episode: <ul><li><a href=\"https://alexbolboaca.ro/coderetreat/the-coderetreat-problem-is-not-the-problem\">Alex Bolboaca: The Coderetreat Problem Is Not The Problem</a></li></ul><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                    },
+                    "link": {
+                        "_text": "https://coderetreat-facilitation.code-cop.org/2020/03/coding-dojo-mindset-and-game-of-life-is.html"
+                    },
+                    "author": {
+                        "_text": "noreply@blogger.com (Peter Kofler)"
+                    },
+                    "thr:total": {
+                        "_text": "0"
+                    },
+                    "dc:creator": {
+                        "_text": "Peter Kofler"
+                    },
+                    "enclosure": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/10---Coding-Dojo-Mindset-and-Game-of-Life-is-mandatory.mp3",
+                            "length": "12767815",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "media:content": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/10---Coding-Dojo-Mindset-and-Game-of-Life-is-mandatory.mp3",
+                            "length": "12767815",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "itunes:title": {
+                        "_text": "Coding Dojo Mindset and Game of Life is mandatory"
+                    },
+                    "itunes:season": {
+                        "_text": "1"
+                    },
+                    "itunes:episode": {
+                        "_text": "10"
+                    },
+                    "itunes:subtitle": {
+                        "_text": "In this episode I am answering What is the Coding Dojo Mindset? (What is the core mindset of a Coderetreat?) Is Game of Life mandatory?"
+                    },
+                    "itunes:summary": {
+                        "_text": "In this episode I am answering <ul><li>What is the Coding Dojo Mindset? (What is the core mindset of a Coderetreat?)</li><li>Is Game of Life mandatory?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/10---Coding-Dojo-Mindset-and-Game-of-Life-is-mandatory.mp3\">MP3 (8 minutes - 12 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p>Mentioned in this episode: <ul><li><a href=\"https://alexbolboaca.ro/coderetreat/the-coderetreat-problem-is-not-the-problem\">Alex Bolboaca: The Coderetreat Problem Is Not The Problem</a></li></ul><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                    },
+                    "itunes:author": {
+                        "_text": "Peter Kofler"
+                    },
+                    "itunes:duration": {
+                        "_text": "00:08:00"
+                    },
+                    "itunes:keywords": {
+                        "_text": "facilitation, Game of Life, overview, top3"
+                    },
+                    "itunes:episodeType": {
+                        "_text": "full"
+                    },
+                    "itunes:explicit": {
+                        "_text": "no"
+                    }
+                },
+                {
+                    "guid": {
+                        "_attributes": {
+                            "isPermaLink": "false"
+                        },
+                        "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-2635335793854750304"
+                    },
+                    "pubDate": {
+                        "_text": "Sun, 15 Mar 2020 22:49:00 +0000"
+                    },
+                    "category": [
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "constraints"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "Game of Life"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "guest"
+                        }
+                    ],
+                    "title": {
+                        "_text": "Constraint for first session and alternative exercises for Game of Life"
+                    },
+                    "description": {
+                        "_text": "In this (longer) episode I asked <a href=\"https://www.sandra-parsick.de/\">Sandra Parsick</a> about <ul><li>the best constraint for the first session and</li><li>alternative exercises for Game of Life.</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/09---Constraint-for-first-session-and-alternative-exercises-for-Game-of-Life.mp3\">MP3 (12 minutes - 9 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><p>Thank you Sandra.</p>Mentioned in this episode: <ul><li><a href=\"https://alexbolboaca.ro/coderetreat/the-coderetreat-problem-is-not-the-problem\">The Coderetreat Problem Is Not The Problem</a></li><li><a href=\"https://kata-log.rocks/mars-rover-kata\">Mars Rover kata</a></li><li><a href=\"https://en.wikipedia.org/wiki/Snake_(video_game)\">Snake/Nibbles/Tron</a></li></ul><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                    },
+                    "link": {
+                        "_text": "https://coderetreat-facilitation.code-cop.org/2020/03/constraint-for-first-session-and.html"
+                    },
+                    "author": {
+                        "_text": "noreply@blogger.com (Peter Kofler)"
+                    },
+                    "thr:total": {
+                        "_text": "0"
+                    },
+                    "dc:creator": {
+                        "_text": "Peter Kofler"
+                    },
+                    "enclosure": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/09---Constraint-for-first-session-and-alternative-exercises-for-Game-of-Life.mp3",
+                            "length": "9233695",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "media:content": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/09---Constraint-for-first-session-and-alternative-exercises-for-Game-of-Life.mp3",
+                            "length": "9233695",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "itunes:title": {
+                        "_text": "Constraint for first session and alternative exercises for Game of Life"
+                    },
+                    "itunes:season": {
+                        "_text": "1"
+                    },
+                    "itunes:episode": {
+                        "_text": "9"
+                    },
+                    "itunes:subtitle": {
+                        "_text": "In this (longer) episode I asked Sandra Parsick about the best constraint for the first session and alternative exercises for Game of Life."
+                    },
+                    "itunes:summary": {
+                        "_text": "In this (longer) episode I asked <a href=\"https://www.sandra-parsick.de/\">Sandra Parsick</a> about <ul><li>the best constraint for the first session and</li><li>alternative exercises for Game of Life.</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/09---Constraint-for-first-session-and-alternative-exercises-for-Game-of-Life.mp3\">MP3 (12 minutes - 9 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><p>Thank you Sandra.</p>Mentioned in this episode: <ul><li><a href=\"https://alexbolboaca.ro/coderetreat/the-coderetreat-problem-is-not-the-problem\">The Coderetreat Problem Is Not The Problem</a></li><li><a href=\"https://kata-log.rocks/mars-rover-kata\">Mars Rover kata</a></li><li><a href=\"https://en.wikipedia.org/wiki/Snake_(video_game)\">Snake/Nibbles/Tron</a></li></ul><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                    },
+                    "itunes:author": {
+                        "_text": "Peter Kofler"
+                    },
+                    "itunes:duration": {
+                        "_text": "00:12:00"
+                    },
+                    "itunes:keywords": {
+                        "_text": "constraints, Game of Life, guest"
+                    },
+                    "itunes:episodeType": {
+                        "_text": "full"
+                    },
+                    "itunes:explicit": {
+                        "_text": "no"
+                    }
+                },
+                {
+                    "guid": {
+                        "_attributes": {
+                            "isPermaLink": "false"
+                        },
+                        "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-5839554246386478285"
+                    },
+                    "pubDate": {
+                        "_text": "Sun, 16 Feb 2020 16:11:00 +0000"
+                    },
+                    "category": [
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "facilitation"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "Game of Life"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "overview"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "pair-facilitation"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "pair-programming"
+                        }
+                    ],
+                    "title": {
+                        "_text": "Why pair program, finish the Game of Life and how many facilitators do we need"
+                    },
+                    "description": {
+                        "_text": "In this episode: <ul><li>Why do we pair program the whole Coderetreat?</li><li>Is it possible to finish the Game of Life assignment in a single session?</li><li>How many facilitators do we need and when do we need more than one?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/08---Why-pair-program,-finish-the-Game-of-Life-and-how-many-facilitators-do-we-need.mp3\">MP3 (8 minutes - 12 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                    },
+                    "link": {
+                        "_text": "https://coderetreat-facilitation.code-cop.org/2020/02/why-pair-program-finish-game-of-life.html"
+                    },
+                    "author": {
+                        "_text": "noreply@blogger.com (Peter Kofler)"
+                    },
+                    "thr:total": {
+                        "_text": "0"
+                    },
+                    "dc:creator": {
+                        "_text": "Peter Kofler"
+                    },
+                    "enclosure": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/08---Why-pair-program,-finish-the-Game-of-Life-and-how-many-facilitators-do-we-need.mp3",
+                            "length": "12615477",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "media:content": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/08---Why-pair-program,-finish-the-Game-of-Life-and-how-many-facilitators-do-we-need.mp3",
+                            "length": "12615477",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "itunes:title": {
+                        "_text": "Why pair program, finish the Game of Life and how many facilitators do we need"
+                    },
+                    "itunes:season": {
+                        "_text": "1"
+                    },
+                    "itunes:episode": {
+                        "_text": "8"
+                    },
+                    "itunes:subtitle": {
+                        "_text": "In this episode: Why do we pair program the whole Coderetreat? Is it possible to finish the Game of Life assignment in a single session? How many facilitators do we need and when do we need more than one?"
+                    },
+                    "itunes:summary": {
+                        "_text": "In this episode: <ul><li>Why do we pair program the whole Coderetreat?</li><li>Is it possible to finish the Game of Life assignment in a single session?</li><li>How many facilitators do we need and when do we need more than one?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/08---Why-pair-program,-finish-the-Game-of-Life-and-how-many-facilitators-do-we-need.mp3\">MP3 (8 minutes - 12 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                    },
+                    "itunes:author": {
+                        "_text": "Peter Kofler"
+                    },
+                    "itunes:duration": {
+                        "_text": "00:08:00"
+                    },
+                    "itunes:keywords": {
+                        "_text": "facilitation, Game of Life, overview, pair-facilitation, pair-programming"
+                    },
+                    "itunes:episodeType": {
+                        "_text": "full"
+                    },
+                    "itunes:explicit": {
+                        "_text": "no"
+                    }
+                },
+                {
+                    "guid": {
+                        "_attributes": {
+                            "isPermaLink": "false"
+                        },
+                        "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-9151114534139066088"
+                    },
+                    "pubDate": {
+                        "_text": "Mon, 03 Feb 2020 07:10:00 +0000"
+                    },
+                    "category": [
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "coding"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "overview"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "pair-programming"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "questions"
+                        }
+                    ],
+                    "title": {
+                        "_text": "Deleting the code, questions that people ask and single participant staying alone"
+                    },
+                    "description": {
+                        "_text": "In this episode I answer these questions: <ul><li>Why do we delete the code after each session?</li><li>How many questions do people ask?</li><li>What about a single participant staying alone?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/07---Deleting-the-code,-questions-that-people-ask-and-single-participant-staying-alone.mp3\">MP3 (9 minutes - 14 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                    },
+                    "link": {
+                        "_text": "https://coderetreat-facilitation.code-cop.org/2020/02/deleting-code-questions-that-people-ask.html"
+                    },
+                    "author": {
+                        "_text": "noreply@blogger.com (Peter Kofler)"
+                    },
+                    "thr:total": {
+                        "_text": "0"
+                    },
+                    "dc:creator": {
+                        "_text": "Peter Kofler"
+                    },
+                    "enclosure": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/07---Deleting-the-code,-questions-that-people-ask-and-single-participant-staying-alone.mp3",
+                            "length": "14474327",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "media:content": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/07---Deleting-the-code,-questions-that-people-ask-and-single-participant-staying-alone.mp3",
+                            "length": "14474327",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "itunes:title": {
+                        "_text": "Deleting the code, questions that people ask and single participant staying alone"
+                    },
+                    "itunes:season": {
+                        "_text": "1"
+                    },
+                    "itunes:episode": {
+                        "_text": "7"
+                    },
+                    "itunes:subtitle": {
+                        "_text": "In this episode I answer these questions: Why do we delete the code after each session? How many questions do people ask? What about a single participant staying alone?"
+                    },
+                    "itunes:summary": {
+                        "_text": "In this episode I answer these questions: <ul><li>Why do we delete the code after each session?</li><li>How many questions do people ask?</li><li>What about a single participant staying alone?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/07---Deleting-the-code,-questions-that-people-ask-and-single-participant-staying-alone.mp3\">MP3 (9 minutes - 14 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                    },
+                    "itunes:author": {
+                        "_text": "Peter Kofler"
+                    },
+                    "itunes:duration": {
+                        "_text": "00:09:00"
+                    },
+                    "itunes:keywords": {
+                        "_text": "coding, overview, pair-programming, questions"
+                    },
+                    "itunes:episodeType": {
+                        "_text": "full"
+                    },
+                    "itunes:explicit": {
+                        "_text": "no"
+                    }
+                },
+                {
+                    "guid": {
+                        "_attributes": {
+                            "isPermaLink": "false"
+                        },
+                        "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-7990567405854346751"
+                    },
+                    "pubDate": {
+                        "_text": "Mon, 20 Jan 2020 07:50:00 +0000"
+                    },
+                    "category": [
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "guest"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "mob-programming"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "pair-facilitation"
+                        }
+                    ],
+                    "title": {
+                        "_text": "Facilitating mob programming and choosing your pair facilitator"
+                    },
+                    "description": {
+                        "_text": "This is the second part of my discussion with <a href=\"https://www.lisihocke.com/\">Lisi Hocke</a>. (The first part is <a href=\"https://coderetreat-facilitation.code-cop.org/2019/12/most-important-about-workshops-and.html\">here</a>.) This time we talked about: <ul><li>How to facilitate a mob programming session?</li><li>What to look for in your pair facilitator?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/06---Facilitating-mob-programming-and-choosing-your-pair-facilitator.mp3\">MP3 (9 minutes - 6.5 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><p>Thank you Lisi for visiting the Coderetreat Facilitation podcast. You can reach Lisi at <a href=\"https://twitter.com/lisihocke\">@lisihocke</a>.</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                    },
+                    "link": {
+                        "_text": "https://coderetreat-facilitation.code-cop.org/2020/01/facilitating-mob-programming-and.html"
+                    },
+                    "author": {
+                        "_text": "noreply@blogger.com (Peter Kofler)"
+                    },
+                    "thr:total": {
+                        "_text": "0"
+                    },
+                    "dc:creator": {
+                        "_text": "Peter Kofler"
+                    },
+                    "enclosure": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/06---Facilitating-mob-programming-and-choosing-your-pair-facilitator.mp3",
+                            "length": "6791256",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "media:content": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/06---Facilitating-mob-programming-and-choosing-your-pair-facilitator.mp3",
+                            "length": "6791256",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "itunes:title": {
+                        "_text": "Facilitating mob programming and choosing your pair facilitator"
+                    },
+                    "itunes:season": {
+                        "_text": "1"
+                    },
+                    "itunes:episode": {
+                        "_text": "6"
+                    },
+                    "itunes:subtitle": {
+                        "_text": "This is the second part of my discussion with Lisi Hocke . (The first part is here .) This time we talked about: How to facilitate a mob programming session? What to look for in your pair facilitator?"
+                    },
+                    "itunes:summary": {
+                        "_text": "This is the second part of my discussion with <a href=\"https://www.lisihocke.com/\">Lisi Hocke</a>. (The first part is <a href=\"https://coderetreat-facilitation.code-cop.org/2019/12/most-important-about-workshops-and.html\">here</a>.) This time we talked about: <ul><li>How to facilitate a mob programming session?</li><li>What to look for in your pair facilitator?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/06---Facilitating-mob-programming-and-choosing-your-pair-facilitator.mp3\">MP3 (9 minutes - 6.5 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><p>Thank you Lisi for visiting the Coderetreat Facilitation podcast. You can reach Lisi at <a href=\"https://twitter.com/lisihocke\">@lisihocke</a>.</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                    },
+                    "itunes:author": {
+                        "_text": "Peter Kofler"
+                    },
+                    "itunes:duration": {
+                        "_text": "00:09:00"
+                    },
+                    "itunes:keywords": {
+                        "_text": "guest, mob-programming, pair-facilitation"
+                    },
+                    "itunes:episodeType": {
+                        "_text": "full"
+                    },
+                    "itunes:explicit": {
+                        "_text": "no"
+                    }
+                },
+                {
+                    "guid": {
+                        "_attributes": {
+                            "isPermaLink": "false"
+                        },
+                        "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-556904392865849351"
+                    },
+                    "pubDate": {
+                        "_text": "Thu, 09 Jan 2020 13:05:00 +0000"
+                    },
+                    "category": [
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "facilitation"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "overview"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "participants"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "top3"
+                        }
+                    ],
+                    "title": {
+                        "_text": "Day structure, facilitation styles and non developers showing up"
+                    },
+                    "description": {
+                        "_text": "In this episode I am talking about <ul><li>Coderetreat Day Structure,</li><li>the best way to facilitate and</li><li>non developers participating.</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/05---Day-structure,-facilitation-styles-and-non-developers-showing-up.mp3\">MP3 (9 minutes - 13 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><p>Mentioned in this episode: <a href=\"https://www.coderetreat.org/pages/facilitating/structure-of-a-coderetreat/\">Structure of a Coderetreat</a></p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                    },
+                    "link": {
+                        "_text": "https://coderetreat-facilitation.code-cop.org/2020/01/day-structure-facilitation-styles-and.html"
+                    },
+                    "author": {
+                        "_text": "noreply@blogger.com (Peter Kofler)"
+                    },
+                    "thr:total": {
+                        "_text": "0"
+                    },
+                    "dc:creator": {
+                        "_text": "Peter Kofler"
+                    },
+                    "enclosure": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/05---Day-structure,-facilitation-styles-and-non-developers-showing-up.mp3",
+                            "length": "14430987",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "media:content": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/05---Day-structure,-facilitation-styles-and-non-developers-showing-up.mp3",
+                            "length": "14430987",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "itunes:title": {
+                        "_text": "Day structure, facilitation styles and non developers showing up"
+                    },
+                    "itunes:season": {
+                        "_text": "1"
+                    },
+                    "itunes:episode": {
+                        "_text": "5"
+                    },
+                    "itunes:subtitle": {
+                        "_text": "In this episode I am talking about Coderetreat Day Structure, the best way to facilitate and non developers participating."
+                    },
+                    "itunes:summary": {
+                        "_text": "In this episode I am talking about <ul><li>Coderetreat Day Structure,</li><li>the best way to facilitate and</li><li>non developers participating.</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/05---Day-structure,-facilitation-styles-and-non-developers-showing-up.mp3\">MP3 (9 minutes - 13 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><p>Mentioned in this episode: <a href=\"https://www.coderetreat.org/pages/facilitating/structure-of-a-coderetreat/\">Structure of a Coderetreat</a></p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                    },
+                    "itunes:author": {
+                        "_text": "Peter Kofler"
+                    },
+                    "itunes:duration": {
+                        "_text": "00:09:00"
+                    },
+                    "itunes:keywords": {
+                        "_text": "facilitation, overview, participants, top3"
+                    },
+                    "itunes:episodeType": {
+                        "_text": "full"
+                    },
+                    "itunes:explicit": {
+                        "_text": "no"
+                    }
+                },
+                {
+                    "guid": {
+                        "_attributes": {
+                            "isPermaLink": "false"
+                        },
+                        "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-4786828078982253832"
+                    },
+                    "pubDate": {
+                        "_text": "Mon, 23 Dec 2019 05:00:00 +0000"
+                    },
+                    "category": [
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "facilitation"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "overview"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "questions"
+                        }
+                    ],
+                    "title": {
+                        "_text": "What is a Coderetreat, organisers participating in coding and answering questions"
+                    },
+                    "description": {
+                        "_text": "In this episode: <ul><li>What is a Coderetreat?</li><li>Should organizers participate in coding?</li><li>How much should a facilitator answer questions from participants?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/04---What-is-a-Coderetreat,-organisers-participating-in-coding-and-answering-questions.mp3\">MP3 (9 minutes - 13 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><p>Thanks to <a href=\"https://twitter.com/dtanzer\">David Tanzer</a> and <a href=\"https://twitter.com/mrksdck\">Markus Decke</a> for feedback on this podcast.</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                    },
+                    "link": {
+                        "_text": "https://coderetreat-facilitation.code-cop.org/2019/12/what-is-coderetreat-organisers.html"
+                    },
+                    "author": {
+                        "_text": "noreply@blogger.com (Peter Kofler)"
+                    },
+                    "thr:total": {
+                        "_text": "0"
+                    },
+                    "dc:creator": {
+                        "_text": "Peter Kofler"
+                    },
+                    "enclosure": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/04---What-is-a-Coderetreat,-organisers-participating-in-coding-and-answering-questions.mp3",
+                            "length": "13338410",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "media:content": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/04---What-is-a-Coderetreat,-organisers-participating-in-coding-and-answering-questions.mp3",
+                            "length": "13338410",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "itunes:title": {
+                        "_text": "What is a Coderetreat, organisers participating in coding and answering questions"
+                    },
+                    "itunes:season": {
+                        "_text": "1"
+                    },
+                    "itunes:episode": {
+                        "_text": "4"
+                    },
+                    "itunes:subtitle": {
+                        "_text": "In this episode: What is a Coderetreat? Should organizers participate in coding? How much should a facilitator answer questions from participants?"
+                    },
+                    "itunes:summary": {
+                        "_text": "In this episode: <ul><li>What is a Coderetreat?</li><li>Should organizers participate in coding?</li><li>How much should a facilitator answer questions from participants?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/04---What-is-a-Coderetreat,-organisers-participating-in-coding-and-answering-questions.mp3\">MP3 (9 minutes - 13 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><p>Thanks to <a href=\"https://twitter.com/dtanzer\">David Tanzer</a> and <a href=\"https://twitter.com/mrksdck\">Markus Decke</a> for feedback on this podcast.</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                    },
+                    "itunes:author": {
+                        "_text": "Peter Kofler"
+                    },
+                    "itunes:duration": {
+                        "_text": "00:09:00"
+                    },
+                    "itunes:keywords": {
+                        "_text": "facilitation, overview, questions"
+                    },
+                    "itunes:episodeType": {
+                        "_text": "full"
+                    },
+                    "itunes:explicit": {
+                        "_text": "no"
+                    }
+                },
+                {
+                    "guid": {
+                        "_attributes": {
+                            "isPermaLink": "false"
+                        },
+                        "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-1507039770344445870"
+                    },
+                    "pubDate": {
+                        "_text": "Fri, 20 Dec 2019 23:24:00 +0000"
+                    },
+                    "title": {
+                        "_text": "About This Podcast"
+                    },
+                    "description": {
+                        "_text": "<p>I regularly <a href=\"https://blog.code-cop.org/2016/07/hosting-public-coderetreats.html\">facilitate Coderetreats</a> - as part of my work as <a href=\"https://www.code-cop.org/\">Code Cop</a> and for the local Software Crafters community. To support people organising events in other cities, I run Coderetreat facilitation trainings each year, especially in the months before the Global Day (of Coderetreat). Based on the feedback I get, e.g. <i>Thanks for the training today! Very helpful!</i> I see that these trainings are helpful for people who want to run Coderetreats. Often people ask the same questions, so I decided to record the most common questions. I will publish the recordings as I create them in this podcast.</p> <p>Subscribe to it here: <b><a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">RSS Feed</a></b></p> <p>In this podcast I am answering questions about Coderetreat hosting, facilitation and participation. It will help you run Coderetreats, Coding Dojos, hands on meetups and even classic training. Each episode covers two to three questions and takes up to 10 minutes. From time to time I will invite guest facilitators to discuss with me. In the first few episodes I will also cover basic questions about the Coderetreat itself, e.g. What is a Coderetreat?</p> <p>As each episode is short, I plan to release at least two each month. While I am too late for #GDCR19, there should be around 30 questions and answers ready for people who want to help organising the next #GDCR20. That would be like three hours facilitation training. That would be great. Let's see how far I get.</p> <p>If you have any questions regarding your Coderetreat, Coding Dojo or hands-on workshop, please send me an email or leave a comment. I will answer the question in one of the next episodes.</p>"
+                    },
+                    "link": {
+                        "_text": "https://coderetreat-facilitation.code-cop.org/2019/12/about-this-podcast.html"
+                    },
+                    "author": {
+                        "_text": "noreply@blogger.com (Peter Kofler)"
+                    },
+                    "thr:total": {
+                        "_text": "0"
+                    },
+                    "dc:creator": {
+                        "_text": "Peter Kofler"
+                    },
+                    "itunes:title": {
+                        "_text": "About This Podcast"
+                    },
+                    "itunes:season": {
+                        "_text": "1"
+                    },
+                    "itunes:subtitle": {
+                        "_text": "I regularly <a href=\"https://blog."
+                    },
+                    "itunes:summary": {
+                        "_text": "<p>I regularly <a href=\"https://blog.code-cop.org/2016/07/hosting-public-coderetreats.html\">facilitate Coderetreats</a> - as part of my work as <a href=\"https://www.code-cop.org/\">Code Cop</a> and for the local Software Crafters community. To support people organising events in other cities, I run Coderetreat facilitation trainings each year, especially in the months before the Global Day (of Coderetreat). Based on the feedback I get, e.g. <i>Thanks for the training today! Very helpful!</i> I see that these trainings are helpful for people who want to run Coderetreats. Often people ask the same questions, so I decided to record the most common questions. I will publish the recordings as I create them in this podcast.</p> <p>Subscribe to it here: <b><a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">RSS Feed</a></b></p> <p>In this podcast I am answering questions about Coderetreat hosting, facilitation and participation. It will help you run Coderetreats, Coding Dojos, hands on meetups and even classic training. Each episode covers two to three questions and takes up to 10 minutes. From time to time I will invite guest facilitators to discuss with me. In the first few episodes I will also cover basic questions about the Coderetreat itself, e.g. What is a Coderetreat?</p> <p>As each episode is short, I plan to release at least two each month. While I am too late for #GDCR19, there should be around 30 questions and answers ready for people who want to help organising the next #GDCR20. That would be like three hours facilitation training. That would be great. Let's see how far I get.</p> <p>If you have any questions regarding your Coderetreat, Coding Dojo or hands-on workshop, please send me an email or leave a comment. I will answer the question in one of the next episodes.</p>"
+                    },
+                    "itunes:author": {
+                        "_text": "Peter Kofler"
+                    },
+                    "itunes:episodeType": {
+                        "_text": "full"
+                    },
+                    "itunes:explicit": {
+                        "_text": "no"
+                    }
+                },
+                {
+                    "guid": {
+                        "_attributes": {
+                            "isPermaLink": "false"
+                        },
+                        "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-2653927848515651303"
+                    },
+                    "pubDate": {
+                        "_text": "Sun, 08 Dec 2019 21:14:00 +0000"
+                    },
+                    "category": [
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "guest"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "hands-on"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "pair-facilitation"
+                        }
+                    ],
+                    "title": {
+                        "_text": "Most important about workshops and benefits of pair facilitation"
+                    },
+                    "description": {
+                        "_text": "In this episode I am asking <a href=\"https://www.lisihocke.com/\">MIATPP Lisi Hocke</a> the following questions: <ul><li>What is the most important thing when running workshops?</li><li>Are there any book recommendations for running hands-on workshops?</li><li>What are the benefits of pair facilitation?</li></ul><p>Download it here: <a href=\"https://www.code-cop.org/podcast/03---Most-important-about-workshops-and-benefits-of-pair-facilitation.mp3\">MP3 (9 minutes - 6.3 Mb)</a></p><p>Lisi, thank you for sharing your experience. You can reach Lisi for further discussions at <a href=\"https://twitter.com/lisihocke\">@lisihocke</a>. Earlier this year, Lisi has been awarded <a href=\"https://agiletestingdays.com/miatpp/\">the MIATPP, short for the Most Influential Agile Testing Professional Person 2019</a>. Congratulations!</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                    },
+                    "link": {
+                        "_text": "https://coderetreat-facilitation.code-cop.org/2019/12/most-important-about-workshops-and.html"
+                    },
+                    "author": {
+                        "_text": "noreply@blogger.com (Peter Kofler)"
+                    },
+                    "thr:total": {
+                        "_text": "0"
+                    },
+                    "dc:creator": {
+                        "_text": "Peter Kofler"
+                    },
+                    "enclosure": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/03---Most-important-about-workshops-and-benefits-of-pair-facilitation.mp3",
+                            "length": "6645457",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "media:content": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/03---Most-important-about-workshops-and-benefits-of-pair-facilitation.mp3",
+                            "length": "6645457",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "itunes:title": {
+                        "_text": "Most important about workshops and benefits of pair facilitation"
+                    },
+                    "itunes:season": {
+                        "_text": "1"
+                    },
+                    "itunes:episode": {
+                        "_text": "3"
+                    },
+                    "itunes:subtitle": {
+                        "_text": "In this episode I am asking MIATPP Lisi Hocke the following questions: What is the most important thing when running workshops? Are there any book recommendations for running hands-on workshops? What are the benefits of pair facilitation?"
+                    },
+                    "itunes:summary": {
+                        "_text": "In this episode I am asking <a href=\"https://www.lisihocke.com/\">MIATPP Lisi Hocke</a> the following questions: <ul><li>What is the most important thing when running workshops?</li><li>Are there any book recommendations for running hands-on workshops?</li><li>What are the benefits of pair facilitation?</li></ul><p>Download it here: <a href=\"https://www.code-cop.org/podcast/03---Most-important-about-workshops-and-benefits-of-pair-facilitation.mp3\">MP3 (9 minutes - 6.3 Mb)</a></p><p>Lisi, thank you for sharing your experience. You can reach Lisi for further discussions at <a href=\"https://twitter.com/lisihocke\">@lisihocke</a>. Earlier this year, Lisi has been awarded <a href=\"https://agiletestingdays.com/miatpp/\">the MIATPP, short for the Most Influential Agile Testing Professional Person 2019</a>. Congratulations!</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                    },
+                    "itunes:author": {
+                        "_text": "Peter Kofler"
+                    },
+                    "itunes:duration": {
+                        "_text": "00:09:00"
+                    },
+                    "itunes:keywords": {
+                        "_text": "guest, hands-on, pair-facilitation"
+                    },
+                    "itunes:episodeType": {
+                        "_text": "full"
+                    },
+                    "itunes:explicit": {
+                        "_text": "no"
+                    }
+                },
+                {
+                    "guid": {
+                        "_attributes": {
+                            "isPermaLink": "false"
+                        },
+                        "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-2215167063935472915"
+                    },
+                    "pubDate": {
+                        "_text": "Sun, 24 Nov 2019 20:37:00 +0000"
+                    },
+                    "category": [
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "Game of Life"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "participants"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "registration"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "retrospective"
+                        }
+                    ],
+                    "title": {
+                        "_text": "Minimum number participants, retrospective without observations and explain the Game of Life"
+                    },
+                    "description": {
+                        "_text": "In this episode I will answer the following questions: <ul><li>Should we consider a minimum number of participants to run a Coderetreat?</li><li>What to focus on during a retrospective if no \"noticeable\" events had happened during that session?</li><li>How to help new participants get used to the exercise of Game of Life?</li></ul><p><a href=\"https://www.code-cop.org/podcast/02---Minimum-number-participants,-retrospective-without-observations-and-explain-the-Game-of-Life.mp3\">Download it here.</a></p><p>Thanks to my friends Paul Rohorzka, David Leitner and Christian Haas from <a href=\"https://developermelange.github.io/\">Developer Melange</a> and <a href=\"https://twitter.com/rradczewski\">Raimo Radczewski</a> for feedback on this episode.</p><p><a href=\"https://github.com/marcoemrich/game-of-life-rules\">Posters with the rules by Marco Emrich.</a></p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                    },
+                    "link": {
+                        "_text": "https://coderetreat-facilitation.code-cop.org/2019/11/minimum-number-participants.html"
+                    },
+                    "author": {
+                        "_text": "noreply@blogger.com (Peter Kofler)"
+                    },
+                    "thr:total": {
+                        "_text": "0"
+                    },
+                    "dc:creator": {
+                        "_text": "Peter Kofler"
+                    },
+                    "enclosure": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/02---Minimum-number-participants,-retrospective-without-observations-and-explain-the-Game-of-Life.mp3",
+                            "length": "13648133",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "media:content": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/02---Minimum-number-participants,-retrospective-without-observations-and-explain-the-Game-of-Life.mp3",
+                            "length": "13648133",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "itunes:title": {
+                        "_text": "Minimum number participants, retrospective without observations and explain the Game of Life"
+                    },
+                    "itunes:season": {
+                        "_text": "1"
+                    },
+                    "itunes:episode": {
+                        "_text": "2"
+                    },
+                    "itunes:subtitle": {
+                        "_text": "In this episode I will answer the following questions: Should we consider a minimum number of participants to run a Coderetreat? What to focus on during a retrospective if no \"noticeable\" events had happened during that session? How to help new participants get used to the exercise of Game of Life?"
+                    },
+                    "itunes:summary": {
+                        "_text": "In this episode I will answer the following questions: <ul><li>Should we consider a minimum number of participants to run a Coderetreat?</li><li>What to focus on during a retrospective if no \"noticeable\" events had happened during that session?</li><li>How to help new participants get used to the exercise of Game of Life?</li></ul><p><a href=\"https://www.code-cop.org/podcast/02---Minimum-number-participants,-retrospective-without-observations-and-explain-the-Game-of-Life.mp3\">Download it here.</a></p><p>Thanks to my friends Paul Rohorzka, David Leitner and Christian Haas from <a href=\"https://developermelange.github.io/\">Developer Melange</a> and <a href=\"https://twitter.com/rradczewski\">Raimo Radczewski</a> for feedback on this episode.</p><p><a href=\"https://github.com/marcoemrich/game-of-life-rules\">Posters with the rules by Marco Emrich.</a></p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                    },
+                    "itunes:author": {
+                        "_text": "Peter Kofler"
+                    },
+                    "itunes:keywords": {
+                        "_text": "Game of Life, participants, registration, retrospective"
+                    },
+                    "itunes:episodeType": {
+                        "_text": "full"
+                    },
+                    "itunes:explicit": {
+                        "_text": "no"
+                    }
+                },
+                {
+                    "guid": {
+                        "_attributes": {
+                            "isPermaLink": "false"
+                        },
+                        "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-5893593985530432607"
+                    },
+                    "pubDate": {
+                        "_text": "Wed, 13 Nov 2019 16:35:00 +0000"
+                    },
+                    "category": [
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "hosting"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "learnings"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "lunch"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "participants"
+                        }
+                    ],
+                    "title": {
+                        "_text": "Number participants, pizza and seeing different languages"
+                    },
+                    "description": {
+                        "_text": "In this episode I am discussing <ul><li>What is the ideal number of participants?</li><li>Is Pizza allowed for lunch?</li><li>Learning a new language - is that one of the valid outcomes?</li></ul><p><a href=\"https://www.code-cop.org/podcast/01---Number-participants,-pizza-and-seeing-different-languages.mp3\">Download it here.</a></p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                    },
+                    "link": {
+                        "_text": "https://coderetreat-facilitation.code-cop.org/2019/11/number-participants-pizza-and-seeing.html"
+                    },
+                    "author": {
+                        "_text": "noreply@blogger.com (Peter Kofler)"
+                    },
+                    "thr:total": {
+                        "_text": "0"
+                    },
+                    "dc:creator": {
+                        "_text": "Peter Kofler"
+                    },
+                    "enclosure": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/01---Number-participants,-pizza-and-seeing-different-languages.mp3",
+                            "length": "13271169",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "media:content": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/01---Number-participants,-pizza-and-seeing-different-languages.mp3",
+                            "length": "13271169",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "itunes:title": {
+                        "_text": "Number participants, pizza and seeing different languages"
+                    },
+                    "itunes:season": {
+                        "_text": "1"
+                    },
+                    "itunes:episode": {
+                        "_text": "1"
+                    },
+                    "itunes:subtitle": {
+                        "_text": "In this episode I am discussing What is the ideal number of participants? Is Pizza allowed for lunch? Learning a new language - is that one of the valid outcomes?"
+                    },
+                    "itunes:summary": {
+                        "_text": "In this episode I am discussing <ul><li>What is the ideal number of participants?</li><li>Is Pizza allowed for lunch?</li><li>Learning a new language - is that one of the valid outcomes?</li></ul><p><a href=\"https://www.code-cop.org/podcast/01---Number-participants,-pizza-and-seeing-different-languages.mp3\">Download it here.</a></p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                    },
+                    "itunes:author": {
+                        "_text": "Peter Kofler"
+                    },
+                    "itunes:keywords": {
+                        "_text": "hosting, learnings, lunch, participants"
+                    },
+                    "itunes:episodeType": {
+                        "_text": "full"
+                    },
+                    "itunes:explicit": {
+                        "_text": "no"
+                    }
+                }
+            ]
+        }
+    },
+    "_comment": [
+        " download 0.98667097091675 ",
+        " other 0.0066330432891846 "
+    ]
+}
