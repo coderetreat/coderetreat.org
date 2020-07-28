@@ -2,7 +2,7 @@
 layout: post
 title: Activity Catalog
 audience: facilitators
-description: A catalog of challenges or activities attempted at previous coderetreats
+description: A catalog of challenges or activities attempted at previous Coderetreats
 ---
 
 <h1 class="display-1">Constraints</h1>
@@ -12,59 +12,45 @@ Most of the activities documented here are designed to help participants think a
 
 You should not feel that the list below are the only activities you can try at a coderetreat. You are welcome and encouraged to find challenges which best meet the needs of the group you are facilitating. In fact, you do not have to use any of the activities presented here.
 
-<!--
-## Suggesting a new Activity
+## Pairing Constraints
+- **Strong-Style Pairing**: The person at the keyboard (Driver) types the code. The person who is not at the keyboard (Navigator) makes all code design decisions.  The Navigator instructs the Driver to implement their intent with the highest level of abstraction that the Driver can fluently work with. Driver and Navigator switch on a fixed boundary  (eg: 2-5 minute timer, or completing code to make test pass)
+- **Ping-Pong**: One pair partner writes the test (Test-First code!), the other implements the code to make the test pass.  With this pattern, with one partner may write all the tests, or the partners may take turns.
+- **Mute Ping-Pong**: Similar as Ping-Pong, but one partner will only be writing tests, and the other will be only writing the code to make the test pass.  The pair may not to discuss or communicate about the problem in any way other than through the code (no comments, etc.: Follow the intent!)
+- **Ball-Board**: One partner controls the mouse, but may not type any code.  Other partner controls the keyboard, but is not allowed to use any cursor navigation or hot-key shortcuts.
+- **Mobbing**: Group of three or more people, with Driver and Navigator roles rotating.  Partners who are not Driver or Navigator suggest problem strategies and answer questions from Navigator. 
 
-If you have an activity you would like to see added to this list, please post the suggestion on the What are some exercises and constraints that people use during sessions? topic under the Facilitator Group's forum (note: you will have to join the group first before you can post).
--->
+## Test-Driven Development Constraints 
+- **Lazy Coder** (Use with Ping-Pong): The Driver actively tries to use the least amount of code to make a test pass.  This helps guide test construction strategies and build minimal code. 
+- **Evil Coder (aka "Adversarial Coder","Find the Loophole")** (Use with Ping-Pong): The Driver is antagonistic: They will implement the code that makes the test pass, but may introduce as much complexity into the code as they wish or choose an obscure implementation strategy. This helps guide expressive test intent. (Evil Coder combined with Mute Ping-Pong is a very advanced activity, but can be extremely fun for experienced coders.)
+- **TDD As If You Meant It** [(blog post)](https://cumulative-hypotheses.org/2011/08/30/tdd-as-if-you-meant-it/): All code must **_only_** be written in the test.  The **_only_** way to create production code is through refactoring (via Extract Method/Class/Field/Variable, etc).  This creates very tight, minimal production code.
+- **Test-and-Commit-or-Revert (aka Baby Steps)**: (Requires source control) Every pair has their own timer. They set it for 5 minutes. They have 5 minutes to write the test and make the code pass. If the test code is green when the timer expires, they may commit the code. If the tests are not passing then they must revert the code to the last green state (effectively deleting 5 minutes worth of work).  Pairs may also choose to use the interval for refactoring, but the same rule applies: Failure to refactor to green in time requires a revert.   
+- **Steeplechase**: Like Test-and-Commit-or-Revert, but the timer interval gets progressively _shorter_ throughout the session. (eg. start at 5 minutes, but shrinks to 2 minutes by the end of the session.)  **Not for the faint of heart.**
 
-## Basic Activities
+## Development Tool Constraints
+- **No Mouse**: Not allowed to touch the mouse (might need to use it at first to discover the right keystroke shortcuts)
+- **Text editor only**: Do not use an integrated environment, only a pain text editor and command-line compiler.  This helps expose how much a developer really knows about their language syntax, and can highlight how IDE features accelerate development (syntax highlighting, auto-completion, refactoring, etc)
+- **Paper only**: Developers write and simulate all code without a computer.  Very useful for understanding the problem domain (Game of Life) and exploring design strategies or language fluency.
 
-Simple activities which are good for less-experienced groups.
+## Programming Language Constraints
+- **No Primitives**: All methods (other than constructors) must take classes as arguments.  Bare integers, strings, etc are not permitted.  Advanced: Try to avoid any primitives as return values (This makes predicate test methods more challenging!)   
+- **No conditional statements**: No if/switch/while/loop statements permitted.  Coders may explore decision-control though polymorphism or lookup structures (control arrays, hash tables, list comprehension, etc)
+- **Imperative Programming (aka "tell don’t ask" style)**: No method may return a value (every method must be void): This can be very challenging as many coders have not been exposed to languages that use callback methods or pass-by-reference modification.
+- **Immutable Code (aka Functional Programming style)**: Once a memory location ("variable") value has been set, it may not be modified.  All methods are effectively stateless.  (There may need to one or two exceptions in the main body of the program for some languages, but encourage the coder to avoid them.) 
 
-- **Ping Pong**: One person writes the test, the other implements the test.
-- **Mute Ping Pong**: Same as Ping Pong, but the pair is not allowed to talk. No cheating with comments or any form of writing. You can talk about things not related to the problem, but you cannot talk about design. (Facilitator note: this should be teaching about expressive design).
-- **Evil Coder**: An activity where the person implementing tries to implement the code in a way the tester doesn’t expect (also teaches expressive design).
-- You could combine Mute ping pong and Evil coder.
-- **Navigator-driver**
+## Software Design Legibility Constraints
+- **Short methods**: Limit the number of statements permitted for a function.  For terse languages (Python, etc), this can be a little as 3 lines.  For more verbose languages (C++, Java), five are permitted.
+- **No Sawtooth**: No more than one level of indentation per method
+- **Literate Programming**: Write you code read as if it were proper sentences. ("Let the code be read as if it was a small story.")
+- **Code Swap**: Instead of deleting code, the pairs swap code with another pair for the next iteration! This activity might be challenging, depending on how comfortable the group is with multiple programming languages.
 
-## Missing Tool Activities
-
-Activities which involve removing a tool developers are used to using in order to help them learn how to use other tools more effectively.
-
-- **No Mouse**: Not allowed to touch the mouse (you can use the mouse to discover the keystrokes)
-- **Text editor only**: No editor (not the best idea) teaches people to know their languages well enough they don’t need
-- **Paper only**
-
-## Missing Feature Activities
-
-Activities which involve removing a common langauge feature developers are used to using in order to help them learn how to use higher-levels of abstraction to write better code.
-
-- **No naked primitives**: They must be enclosed in a class
-- **No conditional statements**: No ifs, no switch, no loops for conditional.
-  - The alternatives are polymorphism and hashtables
-  - Conditional statements are a form of primitive obsession (we tend to use the lowest level of abstraction instead of choosing a higher level). For example, we may choose an int for an employee number instead of an employee number class.
-- **Every method must be void**: Very challenging; it encourages “tell don’t ask” style. In game of life, you might have a `GetNextGenaration` method. Instead you might write `CreateNextGeneration`.
-- **No loops**
-
-## Quality Constraint Activities
-
-Activities which impose specific quality constraints to help developers practice a particur aspect of well-written code.
-
-- **Only four lines per method**
-- **Immutables only, please**
-
-## Stretch Activities
-
-Activities designed to stretch a group. Most of these activities tend to try to push developers into new ways of thinking about their code.
-
-- **Verbs instead of Nouns**
-- **Code Swap**: A good activity for the last two activities of the day are:
-  - After the second to last session have them stand up but don’t delete their code, then sit down and write what you do and don’t like about your code
-  - And then for the last session they aren’t going to swap pairs, instead they are going to swap stations and work on another pair’s code. You need to facilitate this in a very active way. Ask each pair what they’ve decided to improve on. Encourage them to go back to the four rules. This activity does not work if every pair is in a different programming language.
-- **Mute with find the loophole**
-- **TDD as if you meant it**
-- **Taking Baby steps**: Every pair has their own timer. They set it for 5 minutes. They have 5 minutes to write the code. Then 5 minutes to implement the test. Then 5 minutes to refactor. If they don’t finish before the timer goes off they have to delete and start over. (People get frustrated for the first 10 minutes.)
+## Software Problem Domain Constraints
+- **Build Different Feature**:  If pair has written code top-down, have them try bottom-up.  If they worked on rules previously, have them try building the grid or time-stepping, etc.
+- **Mid-iteration Requirements Change**: After 25-30 minutes, pause the group, and add an additional requirement that may work contrary to the code they may have already built.  Examples:
+   - Zombies:  Once a cell dies and then comes back alive, it returns as a zombie and can never be killed again.
+   - Live cells are colored:  When born, takes on the color of the majority of its neighbors. (Three-way ties are a neutral color.)
+   - Hexagonal grid instead of squares: (6 neighbors, switch rules to B2/S34 instead of B3/S23)
+   - 3D space instead of 2D grid: (26 neighbors, switch rules to B4/S4 instead of B3/S23)
+   
 
 ## Videos
 
@@ -184,6 +170,6 @@ Activities designed to stretch a group. Most of these activities tend to try to 
       </div>
     </div>
   </div>
-</div>  
+</div>
 
 <a href="https://drive.google.com/drive/folders/0B3idvASFqaEbN2RkNDYyYjktYTlkZi00ZjFiLWFmMDEtNjJhYTBkYzM2ZDlh?usp=sharing">Look at this exhaustive collection of constraints by Adrian Bolboaca</a>
