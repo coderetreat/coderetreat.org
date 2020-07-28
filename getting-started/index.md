@@ -2,7 +2,7 @@
 layout: guide
 title: Getting Started
 audience: participants
-intro: |
+description: |
     It doesn't take much to join a coderetreat, not even necessarily bringing your own computer. We'll try to cover some frequently asked questions here and provide you with everything you need for your first coderetreat!
 ---
 ## Why should I care?

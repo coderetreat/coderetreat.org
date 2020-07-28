@@ -3,7 +3,7 @@ layout: guide
 title: The Workshop
 audience: participants
 toc: true
-intro: |
+description: |
   Coderetreat is a pattern for deliberate practice of software development. We create a safe-to-fail environment free from the pressures of software delivery. Participants learn through working with each other, developing their habits for Test-Driven Development, XP practices, new languages, communication skills, and mentoring.
 ---
 
