@@ -1,0 +1,3 @@
+---
+---
+{{ site.data.events-gdcr2020 | jsonify }}
