@@ -7,43 +7,9 @@ description: |
     Join this year and practice your skills, embrace new paradigms and get to meet new people
     from all over the world!
 ---
-<div class="jumbotron jumbotron-fluid m-0 p-0">
-    <div class="container" style="line-height: 200%;align-content: ;">
-        <h1 style="line-height: 3;font-size: 3rem;font-weight: 900;font-family: &quot;Arial Black&quot;, Helvetica;">I'm
-            based in <select>
-                <option>cyberspace</option>
-            </select>.<br> My Timezone is <select>
-                <option>UTC-1</option>
-            </select>. <br>I want to attend an event that starts at <select>
-                <option>9:00 AM</option>
-            </select></h1>
-        <button>9 virtual events found</button><button>10 on-site events found</button>
-    </div>
+<div id="events">
 </div>
-<div class="bg-light text-dark py-5">
-    <div style="overflow-x: scroll; white-space: nowrap;">
-    {% for i in (0..20) %}
-    <div style="display: inline-block">
-    
-    <div class="card m-3" style="width: 18rem;  white-space: normal;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-    </div>
-</div>
+
 <div class="container my-5">
     <div>
         <p class="lead">Global Day Of Coderetreat is a community event happening on <strong>November 6 - November 7
@@ -103,3 +69,4 @@ description: |
             facilitation videos and more!</p>
     </div>
 </div>
+<script type="application/javascript" src="{{ "/js/bundled/events.js" | relative_url }}"></script>
