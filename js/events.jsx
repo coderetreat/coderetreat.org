@@ -20,7 +20,7 @@ const Events = () => {
     <Fragment>
       <div class="jumbotron jumbotron-fluid m-0 p-0">
         <div class="container" style={{ lineHeight: "200%" }}>
-          <h1 style='line-height: 3;font-size: 3rem;font-weight: 900;font-family: "Arial Black", Helvetica;'>
+          <h1 style='line-height: 1.5;font-size: 3rem;font-weight: 900;font-family: "Arial Black", Helvetica;'>
             I'm based in{" "}
             <select>
               <option>cyberspace</option>
