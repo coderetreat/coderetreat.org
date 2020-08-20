@@ -11,7 +11,7 @@ const Events = () => {
   useEffect(() => {
     const Run = async () => {
       const result = await fetch("/events/events.json");
-      setEventList(Object.values(await result.json()));
+      setEventList(Object.values(await result.json()).sort((a,b) => new Date(b.date.start) - new Date(a.date.start)))
     };
     Run();
   }, []);
