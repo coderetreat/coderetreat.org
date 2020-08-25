@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "preact/hooks";
 import * as jsjoda from "@js-joda/core";
 import "regenerator-runtime/runtime";
 import EventCard from "./events/EventCard";
-const { ZonedDateTime, LocalDate, LocalTime, ZoneId } = jsjoda;
+const { ZonedDateTime, LocalDate, LocalTime, ZoneId, convert } = jsjoda;
 
 const Events = () => {
   const zoneList = [
@@ -50,23 +50,34 @@ const Events = () => {
   const [timeZone, setTimeZone] = useState(zoneList[0]);
   const [startTime, setStartTime] = useState(timeList[0]);
   const [eventList, setEventList] = useState([]);
+  const [eventsByStartTime, setEventsByStartTime] = useState({});
   const scrollContainer = useRef(null);
   const scrollSpy = useRef([]);
 
   useEffect(() => {
     const Run = async () => {
       const result = await fetch("/events/events.json");
-      setEventList(
-        Object.values(await result.json())
-          .map((event) => ({
-            ...event,
-            date: {
-              start: ZonedDateTime.parse(event.date.start),
-              end: ZonedDateTime.parse(event.date.end),
-            },
-          }))
-          .sort((a, b) => a.date.start.compareTo(b.date.start))
-      );
+      const allEvents = Object.values(await result.json())
+        .map((event) => ({
+          ...event,
+          date: {
+            start: ZonedDateTime.parse(event.date.start),
+            end: ZonedDateTime.parse(event.date.end),
+          },
+        }))
+        .sort((a, b) => a.date.start.compareTo(b.date.start));
+      setEventList(allEvents);
+
+      const byStartTime = allEvents.reduce((grouped, event) => {
+        const startTimeInUtc = event.date.start
+          .withZoneSameInstant(ZoneId.UTC)
+          .toString();
+        return {
+          ...grouped,
+          [startTimeInUtc]: [...(grouped[startTimeInUtc] || []), event],
+        };
+      }, {});
+      setEventsByStartTime(byStartTime);
     };
     Run();
   }, []);
@@ -79,17 +90,24 @@ const Events = () => {
     console.log(time.withZoneSameInstant(ZoneId.UTC).toString());
 
     let i;
-    for(i = 0; i < eventList.length; i++) {
-      console.log("Testing", eventList[i].date.start.withZoneSameInstant(ZoneId.UTC).toString());
-      if(eventList[i].date.start.isEqual(time)) {
+    const startTimes = Object.keys(eventsByStartTime);
+    for (i = 0; i < startTimes.length; i++) {
+      const eventStartTime = ZonedDateTime.parse(
+        startTimes[i]
+      ).withZoneSameInstant(ZoneId.UTC);
+
+      console.log("Testing", eventStartTime);
+      if (eventStartTime.isAfter(time) || eventStartTime.isEqual(time)) {
         break;
       }
     }
 
-    console.log("Earliest event is", eventList[i]);
-    scrollContainer.current.scrollTo({ left: scrollSpy.current[i]?.base.offsetLeft, behavior: "smooth" });
-
-    }, [timeZone, startTime, eventList]);
+    console.log("Earliest event is", startTimes[i]);
+    scrollContainer.current.scrollTo({
+      left: scrollSpy.current[startTimes[i]]?.offsetLeft,
+      behavior: "smooth",
+    });
+  }, [timeZone, startTime, eventList]);
 
   return (
     <Fragment>
@@ -120,8 +138,23 @@ const Events = () => {
           ref={scrollContainer}
           style={{ overflowX: "scroll", whiteSpace: "nowrap" }}
         >
-          {eventList.map((e, i) => (
-            <EventCard event={e} ref={(ref) => (scrollSpy.current[i] = ref)} />
+          {Object.keys(eventsByStartTime).map((startTime) => (
+            <div
+              style={{ display: "inline-block" }}
+              class="mx-5"
+              ref={(ref) => (scrollSpy.current[startTime] = ref)}
+            >
+              <h1 class="mx-4">
+                {convert(
+                  ZonedDateTime.parse(startTime).withZoneSameInstant(
+                    ZoneId.of(timeZone)
+                  ).toLocalDateTime()
+                ).toDate().toLocaleString()}
+              </h1>
+              {eventsByStartTime[startTime].map((e) => (
+                <EventCard usersTimezone={ZoneId.of(timeZone)} event={e} />
+              ))}
+            </div>
           ))}
         </div>
       </div>
