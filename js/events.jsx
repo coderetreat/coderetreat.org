@@ -3,7 +3,16 @@ import { useState, useEffect, useRef } from "preact/hooks";
 import * as jsjoda from "@js-joda/core";
 import "regenerator-runtime/runtime";
 import EventCard from "./events/EventCard";
-const { ZonedDateTime, LocalDate, LocalTime, ZoneId, convert } = jsjoda;
+const {
+  ZonedDateTime,
+  LocalDate,
+  LocalTime,
+  ZoneId,
+  ZoneOffset,
+  convert,
+} = jsjoda;
+
+const DAY_OF_EVENT_NEEDS_TO_CHANGE = "2019-11-16";
 
 const Events = () => {
   const zoneList = [
@@ -47,9 +56,13 @@ const Events = () => {
     "UTC+14:00",
   ];
   const timeList = ["09:00"];
-  const [timeZone, setTimeZone] = useState(zoneList[0]);
+  const [timeZone, setTimeZone] = useState(
+    ZoneId.ofOffset(
+      "UTC",
+      ZoneOffset.ofTotalMinutes(new Date(DAY_OF_EVENT_NEEDS_TO_CHANGE).getTimezoneOffset() * -1)
+    ).id()
+  );
   const [startTime, setStartTime] = useState(timeList[0]);
-  const [eventList, setEventList] = useState([]);
   const [eventsByStartTime, setEventsByStartTime] = useState({});
   const scrollContainer = useRef(null);
   const scrollSpy = useRef([]);
@@ -66,7 +79,6 @@ const Events = () => {
           },
         }))
         .sort((a, b) => a.date.start.compareTo(b.date.start));
-      setEventList(allEvents);
 
       const byStartTime = allEvents.reduce((grouped, event) => {
         const startTimeInUtc = event.date.start
@@ -83,7 +95,7 @@ const Events = () => {
   }, []);
 
   useEffect(() => {
-    const time = LocalDate.parse("2019-11-16")
+    const time = LocalDate.parse(DAY_OF_EVENT_NEEDS_TO_CHANGE)
       .atTime(LocalTime.parse(startTime))
       .atZone(ZoneId.of(timeZone));
 
@@ -102,12 +114,11 @@ const Events = () => {
       }
     }
 
-    console.log("Earliest event is", startTimes[i]);
     scrollContainer.current.scrollTo({
       left: scrollSpy.current[startTimes[i]]?.offsetLeft,
       behavior: "smooth",
     });
-  }, [timeZone, startTime, eventList]);
+  }, [timeZone, startTime, eventsByStartTime]);
 
   return (
     <Fragment>
@@ -146,10 +157,12 @@ const Events = () => {
             >
               <h1 class="mx-4">
                 {convert(
-                  ZonedDateTime.parse(startTime).withZoneSameInstant(
-                    ZoneId.of(timeZone)
-                  ).toLocalDateTime()
-                ).toDate().toLocaleString()}
+                  ZonedDateTime.parse(startTime)
+                    .withZoneSameInstant(ZoneId.of(timeZone))
+                    .toLocalDateTime()
+                )
+                  .toDate()
+                  .toLocaleString()}
               </h1>
               {eventsByStartTime[startTime].map((e) => (
                 <EventCard usersTimezone={ZoneId.of(timeZone)} event={e} />
