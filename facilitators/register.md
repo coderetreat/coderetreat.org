@@ -28,7 +28,7 @@ This year, registering your event at coderetreat.org is easier than it has ever 
     * `location.city`
     * `location.country`
         
-   For a physcial location, please make sure you use the full name of the country. Examples below:
+   For a physical location, please make sure you use the full name of the country. Examples below:
 
     - United Kingdom ✅
     - ~~UK~~
