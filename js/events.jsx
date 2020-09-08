@@ -54,19 +54,19 @@ const Events = () => {
         <div class = "container"
           style={{ overflowX: "scroll", whiteSpace: "nowrap" }}
         >
+          <h1><b>Events Timeline</b></h1>
+
           {Object.keys(eventsByStartTime).map((startTime) => (
             <div
               class="mr-5"
             >
-              <h1 class="mr-4">
+              <h3 class="mr-4"> Starting at&nbsp;
                 {convert(
                   ZonedDateTime.parse(startTime)
-                    .withZoneSameInstant(ZoneId.of(timeZone))
-                    .toLocalDateTime()
                 )
                   .toDate()
-                  .toLocaleString()}
-              </h1>
+                  .toUTCString()}
+              </h3>
               {eventsByStartTime[startTime].map((e) => (
                 <EventCard usersTimezone={ZoneId.of(timeZone)} event={e} />
               ))}
