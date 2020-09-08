@@ -22,14 +22,10 @@ export default ({ event, usersTimezone }) => (
         </li>
         <li class="list-group-item">{event.format}</li>
         <li class="list-group-item">{event.spoken_language}</li>
-        <li class="list-group-item">{event.location}</li>
       </ul>
       <div class="card-body">
-        <a href="#" class="card-link">
+        <a href={event.url} class="card-link">
           {event.url}
-        </a>
-        <a href="#" class="card-link">
-          {event.moderators}
         </a>
       </div>
     </div>
