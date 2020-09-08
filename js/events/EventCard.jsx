@@ -20,8 +20,8 @@ export default ({ event, usersTimezone }) => (
             .toDate()
             .toUTCString()}
         </li>
-        <li class="list-group-item">{event.format}</li>
-        <li class="list-group-item">{event.spoken_language}</li>
+        <li class="list-group-item"><b>Event format:</b> {event.format}</li>
+        <li class="list-group-item"><b>Spoken language:</b> {event.spoken_language}</li>
       </ul>
       <div class="card-body">
         <a href={event.url} class="card-link">
