@@ -66,4 +66,4 @@ This year, registering your event at coderetreat.org is easier than it has ever 
 
 5. GitHub will automatically verify that your JSON file is valid, and merge your request.
 
-7. Your event will appear on [Events](/globalday/) page.
+7. Your event will appear on [Events]({% link events/index.html %}) page.
