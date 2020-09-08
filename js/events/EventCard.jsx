@@ -1,5 +1,6 @@
 import { render, h } from "preact";
 import * as jsJoda from "@js-joda/core";
+import {convert} from "@js-joda/core";
 const { ZoneId } = jsJoda;
 
 export default ({ event, usersTimezone }) => (
@@ -11,15 +12,13 @@ export default ({ event, usersTimezone }) => (
       </div>
       <ul class="list-group list-group-flush">
         <li class="list-group-item">
-          {event.date.start
-            .withZoneSameInstant(usersTimezone)
-            .toLocalTime()
-            .toString()}{" "}
-          -{" "}
-          {event.date.end
-            .withZoneSameInstant(usersTimezone)
-            .toLocalTime()
-            .toString()}
+          {convert(event.date.start)
+            .toDate()
+            .toUTCString()}{" "}
+          -<br/>
+          {convert(event.date.end)
+            .toDate()
+            .toUTCString()}
         </li>
         <li class="list-group-item">{event.format}</li>
         <li class="list-group-item">{event.spoken_language}</li>
