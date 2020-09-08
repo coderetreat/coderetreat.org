@@ -2,16 +2,14 @@
 layout: base
 title: Global Day Of Coderetreat
 audience: participants
-extraStyles: ["/js/bundled/map.css"]
 description: |
-    Global Day Of Coderetreat is a community event happening on November 6 - November 7 2020. 
+    Global Day Of Coderetreat is a community event happening on November 6 - November 7 2020.
     Join this year and practice your skills, embrace new paradigms and get to meet new people
     from all over the world!
 ---
-<div class="jumbotron jumbotron-fluid m-0 p-0">
-    <div class="w-100" style="max-height: 500px; height: 500px; position: relative; z-index: 0" id="map">
-    </div>
+<div id="events">
 </div>
+
 <div class="container my-5">
     <div>
         <p class="lead">Global Day Of Coderetreat is a community event happening on <strong>November 6 - November 7
@@ -54,7 +52,8 @@ description: |
                 isn't for you, we hope you'll find a remote event that matches your timezone.</p>
             <p>Stay tuned for the first events to be listed on our page!</p>
             <div class="text-center">
-                <img alt="A screenshot of last year's map showing hundreds of events all over the world" src="{% link globalday/last-year-map.jpg %}" class="img-fluid" />
+                <img alt="A screenshot of last year's map showing hundreds of events all over the world"
+                    src="{% link events/last-year-map.jpg %}" class="img-fluid" />
                 <small>A screenshot from last year's map</small>
             </div>
         </div>
@@ -64,7 +63,10 @@ description: |
     <div class="container py-5 my-5">
         <p class="lead text-center">Hosting your own? Put it on our map by <a
                 href="{% link facilitators/register.md %}">submitting a Pull Request!</a></p>
-        <p>Every year, hundreds of volunteers organize coderetreats. We're here to support you on the journey of organizing your first coderetreat. <br/>Head over to the <a href="{% link facilitators/index.html %}">Facilitators Section</a> for Training events, checklists, facilitation videos and more!</p>
+        <p>Every year, hundreds of volunteers organize coderetreats. We're here to support you on the journey of
+            organizing your first coderetreat. <br />Head over to the <a
+                href="{% link facilitators/index.html %}">Facilitators Section</a> for Training events, checklists,
+            facilitation videos and more!</p>
     </div>
 </div>
-<script async type="application/javascript" src="{{ "/js/bundled/map.js" | relative_url }}"></script>
+<script type="application/javascript" src="{{ "/js/bundled/events.js" | relative_url }}"></script>
