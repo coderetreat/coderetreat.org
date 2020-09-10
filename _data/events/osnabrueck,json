@@ -1,0 +1,32 @@
+{
+  "location": {
+    "city": "Osnabrueck",
+    "coordinates": {
+      "latitude": 52.2730543,
+      "longitude": 8.0481713
+    },
+    "country": "Germany"
+  },
+  "date": {
+    "start": "2020-11-06T09:00:00.000+02:00",
+    "end": "2020-11-06T18:00:00.000+02:00"
+  },
+  "moderators": [
+    {
+      "name": "Sascha Doemer",
+      "url": "https://twitter.com/saschadoemer"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "LMIS AG",
+      "url": "https://lmis.de"
+    }
+  ],
+  "title": "GDCR2020 Online Event",
+  "url": "http://www.coderetreat.org/",
+  "spoken_language": "English",
+  "format": "classic",
+  "description": "Common GDCR event hosted by LMIS AG. We meet in person with the necessary requirements regarding the current COVID-19 situation. We are happy to welcome each participant."
+
+}
