@@ -1,5 +1,6 @@
 import * as jsjoda from "@js-joda/core";
 import "@js-joda/timezone";
+import slug from "slug";
 import classNames from "classnames";
 import { Fragment, render, h } from "preact";
 import { useCallback, useState } from "preact/hooks";
@@ -14,6 +15,7 @@ import {
   useTabular,
 } from "./register-wizard/hooks";
 import { PayloadPresentation } from "./register-wizard/PayloadPresentation";
+import { DownloadButton } from "./register-wizard/DownloadButton";
 import validateEvent from "./register-wizard/validateEvent";
 
 const tryParseDateTime = (time, timezone) => {
@@ -43,6 +45,18 @@ const dropEmptyKeys = (obj) =>
           return { ...o, [k]: dropEmptyKeys(obj[k]) };
         return { ...o, [k]: obj[k] };
       }, {});
+
+const slugifyEvent = (payload) => {
+  const segments = [
+    ...(payload.location === "virtual"
+      ? ["virtual"]
+      : [payload.location.country, payload.location.city]),
+    payload.date.start.slice(0, 10),
+    payload.title,
+  ].filter((a) => !!a);
+
+  return slug(segments.join("-"));
+};
 
 const Wizard = () => {
   const [title, setTitle] = useInputValue("");
@@ -113,14 +127,16 @@ const Wizard = () => {
           city,
           country,
           coordinates: {
-            latitude,
-            longitude,
+            latitude: Number(latitude),
+            longitude: Number(longitude),
           },
         },
   });
   const isValid = validateEvent(payload);
 
-  const jsonPayload = JSON.stringify(payload, null, 2);
+  const suggestedFilename = slugifyEvent(payload);
+
+  const payloadAsFormattedString = JSON.stringify(payload, null, 2);
 
   return (
     <div className="container bg-light p-md-5 drop-shadow-small">
@@ -443,9 +459,18 @@ const Wizard = () => {
         </Fragment>
       )}
       <h3>Your Registration Payload</h3>
-      <PayloadPresentation payload={jsonPayload} />
+      <pre class="bg-dark text-light px-2 my-0 border-bottom border-light">
+        ./data/_events/{suggestedFilename}.json{" "}
+        <span class="text-success">(Suggested filename)</span>
+      </pre>
+      <PayloadPresentation payload={payloadAsFormattedString} />
       <div class="form-row">
-        <CopyToClipboardButton text={jsonPayload} />
+        <DownloadButton
+          text={payloadAsFormattedString}
+          filename={suggestedFilename}
+        />
+        &nbsp;
+        <CopyToClipboardButton text={payloadAsFormattedString} />
         &nbsp;
         {isValid ? (
           <button class="btn btn-success">Valid</button>
@@ -464,9 +489,15 @@ const Wizard = () => {
       </div>
       <div class="collapse my-2" id="errorCollapse">
         {!isValid && (
-          <pre class="p-2 border border-danger rounded">
-            {JSON.stringify(validateEvent.errors, null, 2)}
-          </pre>
+          <Fragment>
+            <p>
+              We can only provide you with the raw output of our JSON Schema
+              validator here. Sorry for that.
+            </p>
+            <pre class="p-2 border bg-white border-danger rounded">
+              {JSON.stringify(validateEvent.errors, null, 2)}
+            </pre>
+          </Fragment>
         )}
       </div>
     </div>

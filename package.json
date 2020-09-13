@@ -19,7 +19,8 @@
     "preact": "^10.4.8",
     "qs": "^6.9.4",
     "react-bootstrap-typeahead": "^5.1.1",
-    "seedrandom": "^3.0.5"
+    "seedrandom": "^3.0.5",
+    "slug": "^3.3.4"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",

@@ -14,7 +14,7 @@ export const CopyToClipboardButton = ({ text }) => {
   };
 
   return (
-    <button class="btn btn-primary" onClick={copyJsonToClipboard}>
+    <button class="btn btn-secondary" onClick={copyJsonToClipboard}>
       {copied ? "Copied to clipboard!" : "Copy to clipboard"}
     </button>
   );
