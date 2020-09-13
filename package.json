@@ -5,6 +5,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.1",
     "@js-joda/core": "^3.1.0",
+    "@js-joda/timezone": "^2.3.0",
     "abab": "^2.0.3",
     "ajv": "^6.12.3",
     "bootstrap": "^4.5.0",
@@ -21,6 +22,7 @@
     "proj4": "^2.6.2",
     "proj4leaflet": "^1.0.2",
     "qs": "^6.9.4",
+    "react-bootstrap-typeahead": "^5.1.1",
     "seedrandom": "^3.0.5"
   },
   "devDependencies": {
