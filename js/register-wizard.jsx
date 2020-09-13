@@ -1,130 +1,48 @@
-import "regenerator-runtime/runtime";
-import { render, Fragment, h } from "preact";
-import classNames from "classnames";
-import { useState, useEffect, useCallback, useRef } from "preact/hooks";
-import { AsyncTypeahead, Typeahead } from "react-bootstrap-typeahead";
-import "react-bootstrap-typeahead/css/Typeahead.css";
 import * as jsjoda from "@js-joda/core";
 import "@js-joda/timezone";
-
-const useInputValue = (initial) => {
-  const [value, setValue] = useState(initial);
-  return [
-    value,
-    useCallback((event) => setValue(event.target.value)),
-    setValue,
-  ];
-};
-
-const useCheckbox = (initial) => {
-  const [value, setValue] = useState(initial);
-  return [value, useCallback((event) => setValue(event.target.checked))];
-};
-
-const selectNode = (e) => {
-  const node = e.target;
-
-  if (document.body.createTextRange) {
-    const range = document.body.createTextRange();
-    range.moveToElementText(node);
-    range.select();
-  } else if (window.getSelection) {
-    const selection = window.getSelection();
-    const range = document.createRange();
-    range.selectNodeContents(node);
-    selection.removeAllRanges();
-    selection.addRange(range);
-  }
-};
-
-const PayloadPresentation = ({ payload }) => {
-  const [enableSelection, setEnableSelection] = useState(true);
-
-  useEffect(() => {
-    setEnableSelection(true);
-  }, [payload]);
-
-  const onClick = useCallback((e) => {
-    if (enableSelection) {
-      selectNode(e);
-      setEnableSelection(false);
-    }
-  });
-
-  return (
-    <pre class="bg-dark text-light p-2" onClick={onClick}>
-      {payload}
-    </pre>
-  );
-};
-
-const CopyToClipboardButton = ({ text }) => {
-  const [copied, setCopied] = useState(false);
-
-  useEffect(() => {
-    setCopied(false);
-  }, [text]);
-
-  const copyJsonToClipboard = async () => {
-    await navigator.clipboard.writeText(text);
-    setCopied(true);
-  };
-
-  return (
-    <button class="btn btn-primary" onClick={copyJsonToClipboard}>
-      {copied ? "Copied to clipboard!" : "Copy to clipboard"}
-    </button>
-  );
-};
-
-const findCities = async (searchTerm) => {
-  const response = await fetch(
-    `https://api.tiles.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(
-      searchTerm
-    )}.json?types=place&access_token=pk.eyJ1IjoicnJhZGN6ZXdza2kiLCJhIjoiY2tjZ2cyenJqMGp1YzJ0bHBrOTR5dHlsdyJ9.6kI34USWMzJ3hxS7j946xg`
-  );
-  if (!response.ok)
-    throw new Error("Error while fetching cities: " + JSON.stringify(response));
-
-  return (await response.json()).features;
-};
-
-const CityInput = ({ onAutoComplete, onBlur }) => {
-  const [isLoading, setIsLoading] = useState(false);
-  const [options, setOptions] = useState([]);
-
-  return (
-    <AsyncTypeahead
-      isLoading={isLoading}
-      labelKey="text"
-      onChange={onAutoComplete}
-      renderMenuItemChildren={(option) => option.place_name}
-      onBlur={onBlur}
-      onSearch={async (query) => {
-        setIsLoading(true);
-        const cities = await findCities(query);
-        setIsLoading(false);
-        setOptions(cities);
-      }}
-      options={options}
-    />
-  );
-};
+import classNames from "classnames";
+import { Fragment, render, h } from "preact";
+import { useCallback, useState } from "preact/hooks";
+import { Typeahead } from "react-bootstrap-typeahead";
+import "react-bootstrap-typeahead/css/Typeahead.css";
+import "regenerator-runtime/runtime";
+import { CityInput } from "./register-wizard/CityInput";
+import { CopyToClipboardButton } from "./register-wizard/CopyToClipboardButton";
+import {
+  useCheckbox,
+  useInputValue,
+  useTabular,
+} from "./register-wizard/hooks";
+import { PayloadPresentation } from "./register-wizard/PayloadPresentation";
+import validateEvent from "./register-wizard/validateEvent";
 
 const tryParseDateTime = (time, timezone) => {
   if (timezone === "" || time === "") return ["", null];
   try {
     return [
-      jsjoda.LocalDateTime.parse(time)
-        .atZone(jsjoda.ZoneId.of(timezone))
-        .withFixedOffsetZone()
-        .toString(),
+      jsjoda.DateTimeFormatter.ISO_OFFSET_DATE_TIME.format(
+        jsjoda.LocalDateTime.parse(time)
+          .atZone(jsjoda.ZoneId.of(timezone))
+          .withFixedOffsetZone()
+      ),
       null,
     ];
   } catch (e) {
     return ["", e];
   }
 };
+
+const dropEmptyKeys = (obj) =>
+  typeof obj !== "object"
+    ? obj
+    : Object.keys(obj).reduce((o, k) => {
+        if (!obj[k] || obj[k] == "") return o;
+        if (Array.isArray(obj[k]))
+          return { ...o, [k]: obj[k].map(dropEmptyKeys) };
+        if (typeof obj[k] === "object")
+          return { ...o, [k]: dropEmptyKeys(obj[k]) };
+        return { ...o, [k]: obj[k] };
+      }, {});
 
 const Wizard = () => {
   const [title, setTitle] = useInputValue("");
@@ -141,6 +59,15 @@ const Wizard = () => {
   const [latitude, onChangeLatitude, setLatitude] = useInputValue("");
   const [longitude, onChangeLongitude, setLongitude] = useInputValue("");
   const [country, onChangeCountry, setCountry] = useInputValue("");
+
+  const [mods, updateMod, deleteMod] = useTabular({
+    name: "",
+    url: "",
+  });
+  const [sponsors, updateSponsor, deleteSponsor] = useTabular({
+    name: "",
+    url: "",
+  });
 
   const [timezone, setTimezone] = useState(
     jsjoda.ZoneId.systemDefault().normalized().toString()
@@ -164,33 +91,39 @@ const Wizard = () => {
     if (e.target.value != city) setCity(e.target.value);
   });
 
-  const jsonPayload = JSON.stringify(
-    {
-      title,
-      description,
-      format,
-      spokenLanguage,
-      url,
-      code_of_conduct: coc,
-      date: {
-        start: fullStartTime,
-        end: fullEndTime,
-      },
-      location: isVirtual
-        ? "virtual"
-        : {
-            city,
-            country,
+  const payload = dropEmptyKeys({
+    title,
+    description:
+      description && description.length > 0 ? description : undefined,
+    format,
+    spoken_language: spokenLanguage,
+    url,
+    code_of_conduct: coc && coc.length > 0 ? coc : undefined,
+    date: {
+      start: fullStartTime,
+      end: fullEndTime,
+    },
+    moderators: mods.filter((mod) => mod.name.length > 0 || mod.url.length > 0),
+    sponsors: sponsors.filter(
+      (sponsor) => sponsor.name.length > 0 || sponsor.url.length > 0
+    ),
+    location: isVirtual
+      ? "virtual"
+      : {
+          city,
+          country,
+          coordinates: {
             latitude,
             longitude,
           },
-    },
-    null,
-    2
-  );
+        },
+  });
+  const isValid = validateEvent(payload);
+
+  const jsonPayload = JSON.stringify(payload, null, 2);
 
   return (
-    <div className="container">
+    <div className="container bg-light p-md-5 drop-shadow-small">
       <h2>Basic information</h2>
       <div class="form-row">
         <div class="form-group col-12 col-md-6">
@@ -295,6 +228,102 @@ const Wizard = () => {
             </a>
           </small>
         </div>
+      </div>
+      <h2>Moderators</h2>
+      <div class="form-row form-group">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>
+                Website <small>(optional)</small>
+              </th>
+              <th>&nbsp;</th>
+            </tr>
+          </thead>
+          <tbody>
+            {mods.map((mod, i) => (
+              <tr key={i}>
+                <td>
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    value={mod.name}
+                    class="form-control form-control-sm"
+                    onChange={(e) => updateMod(i, { name: e.target.value })}
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    placeholder="e.g. GitHub/Twitter Profile"
+                    value={mod.url}
+                    class="form-control form-control-sm"
+                    onChange={(e) => updateMod(i, { url: e.target.value })}
+                  />
+                </td>
+                <td>
+                  <button
+                    aria-description="Remove moderator"
+                    alt="Remove moderator"
+                    onClick={(e) => deleteMod(i)}
+                    class="btn btn-sm btn-danger"
+                  >
+                    <i class="fas fa-trash" />
+                  </button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <h2>Sponsors</h2>
+      <div class="form-row form-group">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>
+                Website <small>(optional)</small>
+              </th>
+              <th>&nbsp;</th>
+            </tr>
+          </thead>
+          <tbody>
+            {sponsors.map((sponsor, i) => (
+              <tr key={i}>
+                <td>
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    value={sponsor.name}
+                    class="form-control form-control-sm"
+                    onChange={(e) => updateSponsor(i, { name: e.target.value })}
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    placeholder="Website/Social Media"
+                    value={sponsor.url}
+                    class="form-control form-control-sm"
+                    onChange={(e) => updateSponsor(i, { url: e.target.value })}
+                  />
+                </td>
+                <td>
+                  <button
+                    aria-description="Remove sponsor"
+                    alt="Remove sponsor"
+                    onClick={(e) => deleteMod(i)}
+                    class="btn btn-sm btn-danger"
+                  >
+                    <i class="fas fa-trash" />
+                  </button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
       <h2>Scheduling</h2>
       <div class="form-row form-group">
@@ -415,7 +444,31 @@ const Wizard = () => {
       )}
       <h3>Your Registration Payload</h3>
       <PayloadPresentation payload={jsonPayload} />
-      <CopyToClipboardButton text={jsonPayload} />
+      <div class="form-row">
+        <CopyToClipboardButton text={jsonPayload} />
+        &nbsp;
+        {isValid ? (
+          <button class="btn btn-success">Valid</button>
+        ) : (
+          <button
+            role="button"
+            aria-expanded="false"
+            aria-controls="errorCollapse"
+            data-toggle="collapse"
+            data-target="#errorCollapse"
+            class="btn btn-danger"
+          >
+            {validateEvent.errors.length} Problem(s)
+          </button>
+        )}
+      </div>
+      <div class="collapse my-2" id="errorCollapse">
+        {!isValid && (
+          <pre class="p-2 border border-danger rounded">
+            {JSON.stringify(validateEvent.errors, null, 2)}
+          </pre>
+        )}
+      </div>
     </div>
   );
 };

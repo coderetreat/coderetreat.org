@@ -159,7 +159,7 @@ Another tradition is to check-in with other events, although this requires a goo
 
 <ul class="list-unstyled mx-3">
 <li><input type="checkbox" class="mr-1"> Create event page (ti.to, meetup, eventbrite, etc.)</li>
-<li><input type="checkbox" class="mr-1"> List event on coderetreat.org (see <a href="{% link facilitators/register.md %}">Register</a>)</li>
+<li><input type="checkbox" class="mr-1"> List event on coderetreat.org (see <a href="{% link facilitators/register.html %}">Register</a>)</li>
 <li><input type="checkbox" class="mr-1"> Invite local communities</li>
 </ul>
 

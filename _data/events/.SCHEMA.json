@@ -42,6 +42,7 @@
           },
           "url": {
             "description": "Moderator's url: Twitter profile, GitHub profile, website, ...",
+            "format": "uri",
             "type": "string"
           }
         },
@@ -83,6 +84,7 @@
           },
           "url": {
             "description": "Sponsor's url: Twitter profile, GitHub profile, website, ...",
+            "format": "uri",
             "type": "string"
           }
         },
