@@ -1,5 +1,6 @@
 import "regenerator-runtime/runtime";
 import { render, Fragment, h } from "preact";
+import classNames from "classnames";
 import { useState, useEffect, useCallback, useRef } from "preact/hooks";
 import { AsyncTypeahead, Typeahead } from "react-bootstrap-typeahead";
 import "react-bootstrap-typeahead/css/Typeahead.css";
@@ -18,6 +19,62 @@ const useInputValue = (initial) => {
 const useCheckbox = (initial) => {
   const [value, setValue] = useState(initial);
   return [value, useCallback((event) => setValue(event.target.checked))];
+};
+
+const selectNode = (e) => {
+  const node = e.target;
+
+  if (document.body.createTextRange) {
+    const range = document.body.createTextRange();
+    range.moveToElementText(node);
+    range.select();
+  } else if (window.getSelection) {
+    const selection = window.getSelection();
+    const range = document.createRange();
+    range.selectNodeContents(node);
+    selection.removeAllRanges();
+    selection.addRange(range);
+  }
+};
+
+const PayloadPresentation = ({ payload }) => {
+  const [enableSelection, setEnableSelection] = useState(true);
+
+  useEffect(() => {
+    setEnableSelection(true);
+  }, [payload]);
+
+  const onClick = useCallback((e) => {
+    if (enableSelection) {
+      selectNode(e);
+      setEnableSelection(false);
+    }
+  });
+
+  return (
+    <pre class="bg-dark text-light p-2" onClick={onClick}>
+      {payload}
+    </pre>
+  );
+};
+
+const CopyToClipboardButton = ({ text }) => {
+  const [copied, setCopied] = useState(false);
+
+  useEffect(() => {
+    setCopied(false);
+  }, [text]);
+
+  const copyJsonToClipboard = async () => {
+    await navigator.clipboard.writeText(text);
+    setCopied(true);
+  };
+
+  return (
+    <button class="btn btn-primary" onClick={copyJsonToClipboard}>
+      {copied ? "Copied to clipboard!" : "Copy to clipboard"}
+    </button>
+  );
 };
 
 const findCities = async (searchTerm) => {
@@ -65,7 +122,6 @@ const tryParseDateTime = (time, timezone) => {
       null,
     ];
   } catch (e) {
-    console.log(e);
     return ["", e];
   }
 };
@@ -107,6 +163,31 @@ const Wizard = () => {
   const onBlur = useCallback((e) => {
     if (e.target.value != city) setCity(e.target.value);
   });
+
+  const jsonPayload = JSON.stringify(
+    {
+      title,
+      description,
+      format,
+      spokenLanguage,
+      url,
+      code_of_conduct: coc,
+      date: {
+        start: fullStartTime,
+        end: fullEndTime,
+      },
+      location: isVirtual
+        ? "virtual"
+        : {
+            city,
+            country,
+            latitude,
+            longitude,
+          },
+    },
+    null,
+    2
+  );
 
   return (
     <div className="container">
@@ -170,10 +251,6 @@ const Wizard = () => {
             <option value="classic">Classic (Pair Programming)</option>
             <option value="ensemble">Ensemble (Mob/Team Programming)</option>
           </select>
-          <small id="formatHelp" class="form-text text-muted">
-            If you plan on running the event as an ensemble, please pick that as
-            the format.
-          </small>
         </div>
       </div>
       <h2>Links</h2>
@@ -233,23 +310,33 @@ const Wizard = () => {
           <label for="inputStartTime">Start</label>
           <input
             type="datetime-local"
-            class="form-control"
+            class={classNames("form-control", {
+              "is-invalid": !!fullStartTimeError,
+            })}
             id="inputStartTime"
             placeholder="2020-11-06T06:00"
             value={startTime}
-            onChange={setStartTime}
+            onBlur={setStartTime}
           />
+          <div class="invalid-feedback">
+            {fullStartTimeError && fullStartTimeError.message}
+          </div>
         </div>
         <div class="col-md-4">
           <label for="inputEndTime">End</label>
           <input
             type="datetime-local"
-            class="form-control"
+            class={classNames("form-control", {
+              "is-invalid": !!fullEndTimeError,
+            })}
             id="inputEndTime"
             placeholder="2020-11-06T06:00"
             value={endTime}
-            onChange={setEndTime}
+            onBlur={setEndTime}
           />
+          <div class="invalid-feedback">
+            {fullEndTimeError && fullEndTimeError.message}
+          </div>
         </div>
         <small id="cocHelp" class="col-12 form-text text-muted">
           Please make sure to double-check the times you plan to start your
@@ -327,32 +414,8 @@ const Wizard = () => {
         </Fragment>
       )}
       <h3>Your Registration Payload</h3>
-      <pre class="bg-dark text-light p-2">
-        {JSON.stringify(
-          {
-            title,
-            description,
-            format,
-            spokenLanguage,
-            url,
-            code_of_conduct: coc,
-            date: {
-              start: fullStartTime,
-              end: fullEndTime,
-            },
-            location: isVirtual
-              ? "virtual"
-              : {
-                  city,
-                  country,
-                  latitude,
-                  longitude,
-                },
-          },
-          null,
-          2
-        )}
-      </pre>
+      <PayloadPresentation payload={jsonPayload} />
+      <CopyToClipboardButton text={jsonPayload} />
     </div>
   );
 };
