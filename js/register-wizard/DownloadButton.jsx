@@ -14,7 +14,7 @@ export const DownloadButton = ({ text, filename }) => {
   }
 
   return (
-    <button class="btn btn-primary" onClick={download}>
+    <button class="btn btn-primary my-1" onClick={download}>
       Download JSON
     </button>
   );

@@ -139,7 +139,7 @@ const Wizard = () => {
   const payloadAsFormattedString = JSON.stringify(payload, null, 2);
 
   return (
-    <div className="container bg-light p-md-5 drop-shadow-small">
+    <div className="container bg-light p-md-4 px-2 py-3 drop-shadow-small">
       <h2>Basic information</h2>
       <div class="form-row">
         <div class="form-group col-12 col-md-6">
@@ -464,7 +464,7 @@ const Wizard = () => {
         <span class="text-success">(Suggested filename)</span>
       </pre>
       <PayloadPresentation payload={payloadAsFormattedString} />
-      <div class="form-row">
+      <div class="form-group">
         <DownloadButton
           text={payloadAsFormattedString}
           filename={suggestedFilename}
@@ -473,7 +473,7 @@ const Wizard = () => {
         <CopyToClipboardButton text={payloadAsFormattedString} />
         &nbsp;
         {isValid ? (
-          <button class="btn btn-success">Valid</button>
+          <button class="my-1 btn btn-success">Valid</button>
         ) : (
           <button
             role="button"
@@ -481,7 +481,7 @@ const Wizard = () => {
             aria-controls="errorCollapse"
             data-toggle="collapse"
             data-target="#errorCollapse"
-            class="btn btn-danger"
+            class="my-1 btn btn-danger"
           >
             {validateEvent.errors.length} Problem(s)
           </button>
