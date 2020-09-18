@@ -1,15 +1,12 @@
 {
-  "location": {
-    "city": "Osnabrueck",
-    "coordinates": {
-      "latitude": 52.2730543,
-      "longitude": 8.0481713
-    },
-    "country": "Germany"
-  },
+  "title": "LMIS | Global Day of Coderetreat",
+  "description": "#GDCR goes Next Normal. We developers have known for a long time that virtual work is efficient and possible anywhere. However, as easy as programming at home may be - a personal exchange enables greater learning effects in many ways. And that is exactly what #GDCR is all about. We are therefore very pleased to host this year's Global Day of Code Retreat at our headquarter in Osnabrück, Germany. True to the buzzword “The Next Normal”, our LMIS team has found its way back to everyday life – naturally also taking account into all the safety measures that we strictly adhere to at the #GDCR. We look forward to mastering various workshops, exciting programming tasks and other challenges together. The #CDGR is aimed at experienced and inexperienced software developers and students with the following goals: to experience modern software development, to deepen and question known techniques and exchange ideas with other developers.",
+  "format": "classic",
+  "spoken_language": "English, German",
+  "url": "https://gdcr2020.eventbrite.de",
   "date": {
-    "start": "2020-11-06T09:00:00.000+02:00",
-    "end": "2020-11-06T18:00:00.000+02:00"
+    "start": "2020-11-06T09:00:00+01:00",
+    "end": "2020-11-06T18:00:00+01:00"
   },
   "moderators": [
     {
@@ -20,13 +17,15 @@
   "sponsors": [
     {
       "name": "LMIS AG",
-      "url": "https://lmis.de"
+      "url": "https://LMIS.de"
     }
   ],
-  "title": "GDCR2020 in Osnabrueck",
-  "url": "http://www.coderetreat.org/",
-  "spoken_language": "German, English",
-  "format": "classic",
-  "description": "#GDCR goes Next Normal. We developers have known for a long time that virtual work is efficient and possible anywhere. However, as easy as programming at home may be - a personal exchange enables greater learning effects in many ways. And that is exactly what #GDCR is all about. We are therefore very pleased to host this year's Global Day of Code Retreat at our headquarter in Osnabrück, Germany. True to the buzzword “The Next Normal”, our LMIS team has found its way back to everyday life – naturally also taking account into all the safety measures that we strictly adhere to at the #GDCR. We look forward to mastering various workshops, exciting programming tasks and other challenges together. The #CDGR is aimed at experienced and inexperienced software developers and students with the following goals: to experience modern software development, to deepen and question known techniques and exchange ideas with other developers."
-
+  "location": {
+    "city": "Osnabrück",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 52.27889,
+      "longitude": 8.04306
+    }
+  }
 }
