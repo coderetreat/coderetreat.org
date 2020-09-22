@@ -73,8 +73,8 @@ export default ({ event, usersTimezone }) => (
         </li>
       </ul>
       <div class="card-body">
-        <a href={event.url} class="card-link">
-          {event.url}
+        <a href={event.url} class="card-link btn btn-secondary">
+          Sign-Up <i class="fas fa-external-link-alt"></i>
         </a>
       </div>
     </div>
