@@ -24,8 +24,9 @@ const Events = () => {
   useEffect(() => {
     const Run = async () => {
       const result = await fetch("/events/events.json");
-      const allEvents = Object.values(await result.json())
-        .map((event) => ({
+      const allEvents = Object.entries(await result.json())
+        .map(([id, event]) => ({
+          id,
           ...event,
           date: {
             start: ZonedDateTime.parse(event.date.start),

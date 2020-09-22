@@ -1,6 +1,6 @@
 import { render, h } from "preact";
 import * as jsJoda from "@js-joda/core";
-import {convert} from "@js-joda/core";
+import { convert } from "@js-joda/core";
 const { ZoneId } = jsJoda;
 
 export default ({ event, usersTimezone }) => (
@@ -8,20 +8,24 @@ export default ({ event, usersTimezone }) => (
     <div class="card m-3" style={{ width: "18rem", whiteSpace: "normal" }}>
       <div class="card-body">
         <h5 class="card-title">{event.title}</h5>
-        <p class="card-text">{event.description}</p>
+        <p class="card-text">
+          <div class="read-more">
+            <p class="collapse" id={`collapse-event-${event.id}`}>{event.description}</p>
+            <a class="collapsed" data-toggle="collapse" href={`#collapse-event-${event.id}`} aria-expanded="false" aria-controls={`collapse-event-${event.id}`}></a>
+          </div>
+        </p>
       </div>
       <ul class="list-group list-group-flush">
         <li class="list-group-item">
-          {convert(event.date.start)
-            .toDate()
-            .toUTCString()}{" "}
-          -<br/>
-          {convert(event.date.end)
-            .toDate()
-            .toUTCString()}
+          {convert(event.date.start).toDate().toUTCString()} -<br />
+          {convert(event.date.end).toDate().toUTCString()}
         </li>
-        <li class="list-group-item"><b>Event format:</b> {event.format}</li>
-        <li class="list-group-item"><b>Spoken language:</b> {event.spoken_language}</li>
+        <li class="list-group-item">
+          <b>Event format:</b> {event.format}
+        </li>
+        <li class="list-group-item">
+          <b>Spoken language:</b> {event.spoken_language}
+        </li>
       </ul>
       <div class="card-body">
         <a href={event.url} class="card-link">
