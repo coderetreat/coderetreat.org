@@ -1,4 +1,4 @@
-import { render, h } from "preact";
+import { Fragment, render, h } from "preact";
 import * as jsJoda from "@js-joda/core";
 import { convert } from "@js-joda/core";
 import classNames from "classnames";
@@ -14,6 +14,40 @@ const Format = ({ format }) => (
   >
     {format}
   </span>
+);
+
+const Moderators = ({ moderators }) => (
+  <Fragment>
+    {moderators.map((moderator, i) => (
+      <Fragment>
+        {moderator.url ? (
+          <a key={i} href={moderator.url}>
+            {moderator.name}
+          </a>
+        ) : (
+          <span key={i}>{moderator.name}</span>
+        )}
+        {moderators.length > 1 && i < moderators.length - 1 && <span>, </span>}
+      </Fragment>
+    ))}
+  </Fragment>
+);
+
+const Sponsors = ({ sponsors }) => (
+  <Fragment>
+    {sponsors.map((sponsor, i) => (
+      <Fragment>
+        {sponsor.url ? (
+          <a key={i} href={sponsor.url}>
+            {sponsor.name}
+          </a>
+        ) : (
+          <span key={i}>{sponsor.name}</span>
+        )}
+        {sponsors.length > 1 && i < sponsors.length - 1 && <span>, </span>}
+      </Fragment>
+    ))}
+  </Fragment>
 );
 
 export default ({ event, usersTimezone }) => (
@@ -55,11 +89,12 @@ export default ({ event, usersTimezone }) => (
           {convert(event.date.start).toDate().toUTCString()} -<br />
           {convert(event.date.end).toDate().toUTCString()}
         </li>
-        <li class="list-group-item">
-          <b>Event format:</b> <Format format={event.format} />
+        <li class="list-group-item py-1">
+          <b>Event format: </b>
+          <Format format={event.format} />
         </li>
-        <li class="list-group-item">
-          <b>Code of Conduct:</b>{" "}
+        <li class="list-group-item py-1">
+          <b>Code of Conduct: </b>
           {event.code_of_conduct ? (
             <a href={event.code_of_conduct}>
               external link <i class="fas fa-external-link-alt"></i>
@@ -68,9 +103,22 @@ export default ({ event, usersTimezone }) => (
             "not specified"
           )}
         </li>
-        <li class="list-group-item">
-          <b>Spoken language:</b> {event.spoken_language}
+        <li class="list-group-item py-1">
+          <b>Spoken language: </b>
+          {event.spoken_language}
         </li>
+        {event.moderators && event.moderators.length > 0 && (
+          <li class="list-group-item py-1">
+            <b>Moderators: </b>
+            <Moderators moderators={event.moderators} />
+          </li>
+        )}
+        {event.sponsors && event.sponsors.length > 0 && (
+          <li class="list-group-item py-1">
+            <b>Sponsors: </b>
+            <Sponsors sponsors={event.sponsors} />
+          </li>
+        )}
       </ul>
       <div class="card-body">
         <a href={event.url} class="card-link btn btn-secondary">
