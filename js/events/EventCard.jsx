@@ -59,6 +59,16 @@ export default ({ event, usersTimezone }) => (
           <b>Event format:</b> <Format format={event.format} />
         </li>
         <li class="list-group-item">
+          <b>Code of Conduct:</b>{" "}
+          {event.code_of_conduct ? (
+            <a href={event.code_of_conduct}>
+              external link <i class="fas fa-external-link-alt"></i>
+            </a>
+          ) : (
+            "not specified"
+          )}
+        </li>
+        <li class="list-group-item">
           <b>Spoken language:</b> {event.spoken_language}
         </li>
       </ul>
