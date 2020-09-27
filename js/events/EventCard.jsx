@@ -1,8 +1,8 @@
 import { Fragment, render, h } from "preact";
-import * as jsJoda from "@js-joda/core";
-import { convert } from "@js-joda/core";
 import classNames from "classnames";
-const { ZoneId } = jsJoda;
+import * as jsjoda from "@js-joda/core";
+const { ZoneId, ZonedDateTime } = jsjoda;
+const DATE_FORMAT = jsjoda.DateTimeFormatter.ofPattern("HH:mm (yyyy-MM-dd)");
 
 const Format = ({ format }) => (
   <span
@@ -86,8 +86,13 @@ export default ({ event, usersTimezone }) => (
       </div>
       <ul class="list-group list-group-flush">
         <li class="list-group-item">
-          {convert(event.date.start).toDate().toUTCString()} -<br />
-          {convert(event.date.end).toDate().toUTCString()}
+          <b>Start: </b>{event.date.start
+            .withZoneSameInstant(usersTimezone)
+            .format(DATE_FORMAT)}<br/>
+            <b>End: </b>
+          {event.date.end
+            .withZoneSameInstant(usersTimezone)
+            .format(DATE_FORMAT)}
         </li>
         <li class="list-group-item py-1">
           <b>Event format: </b>

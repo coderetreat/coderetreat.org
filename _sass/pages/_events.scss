@@ -1,0 +1,21 @@
+#events {
+  @include media-breakpoint-up("md") {
+    .day-of-event-container {
+      display: block;
+      position: relative;
+      padding-left: 5em;
+
+      > h2 {
+        position: absolute;
+        top: 340px;
+        width: 260px;
+        text-align: right;
+        font-size: 4em;
+        text-transform: uppercase;
+        left: 0;
+        transform-origin: 0 0;
+        transform: rotate(270deg);
+      }
+    }
+  }
+}

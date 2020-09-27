@@ -5,6 +5,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
     "@js-joda/core": "^3.2.0",
+    "@js-joda/locale_en": "^3.1.1",
     "@js-joda/timezone": "^2.3.0",
     "abab": "^2.0.5",
     "ajv": "^6.12.5",
