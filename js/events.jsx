@@ -67,14 +67,18 @@ const Events = () => {
           </h1>
           <p class="lead">
             All times shown are in the timezone for{" "}
-            <select style={{maxWidth: "95%"}}
-              value={timeZone}
-              onChange={(e) => setTimeZone(e.target.value)}
-            >
-              {ZoneId.getAvailableZoneIds().map((zone) => (
-                <option value={zone}>{zone}</option>
-              ))}
-            </select>
+            <div class="form-inline d-inline">
+              <select
+                class="form-control"
+                style={{ maxWidth: "95%" }}
+                value={timeZone}
+                onChange={(e) => setTimeZone(e.target.value)}
+              >
+                {ZoneId.getAvailableZoneIds().sort().map((zone) => (
+                  <option value={zone}>{zone}</option>
+                ))}
+              </select>
+            </div>
           </p>
           {Object.keys(eventsByLocalDay).map((startTime) => (
             <div class="day-of-event-container">
