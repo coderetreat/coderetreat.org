@@ -3,6 +3,7 @@ import "@js-joda/timezone";
 import { h, Fragment, render } from "preact";
 import { useEffect, useMemo, useState } from "preact/hooks";
 import "regenerator-runtime/runtime";
+import { Typeahead } from "react-bootstrap-typeahead";
 import EventCard from "./events/EventCard";
 const { ZonedDateTime, ZoneId, ChronoUnit, ChronoField, convert } = jsjoda;
 
@@ -68,16 +69,12 @@ const Events = () => {
           <p class="lead">
             All times shown are in the timezone for{" "}
             <div class="form-inline d-inline">
-              <select
-                class="form-control"
-                style={{ maxWidth: "95%" }}
-                value={timeZone}
-                onChange={(e) => setTimeZone(e.target.value)}
-              >
-                {ZoneId.getAvailableZoneIds().sort().map((zone) => (
-                  <option value={zone}>{zone}</option>
-                ))}
-              </select>
+              <Typeahead
+                defaultInputValue={timeZone}
+                style={{ maxWidth: "95%", display: "inline-block" }}
+                onChange={(values) => setTimeZone(values[0])}
+                options={jsjoda.ZoneId.getAvailableZoneIds()}
+              />
             </div>
           </p>
           {Object.keys(eventsByLocalDay).map((startTime) => (
