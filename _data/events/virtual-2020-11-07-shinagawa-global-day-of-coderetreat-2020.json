@@ -1,0 +1,30 @@
+{
+  "title": "SHINAGAWA Global Day of Coderetreat 2020",
+  "format": "ensemble",
+  "spoken_language": "Japanese",
+  "url": "https://connpass.com/event/191190/",
+  "date": {
+    "start": "2020-11-07T09:00:00+09:00",
+    "end": "2020-11-07T17:30:00+09:00"
+  },
+  "moderators": [
+    {
+      "name": "Tommy",
+      "url": "https://twitter.com/tommy1969"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Scrum Fest Osaka",
+      "url": "https://www.scrumosaka.org/"
+    },
+    {
+      "name": "Degino Inc.",
+      "url": "https://www.degino.com/"
+    },
+    {
+      "name": "品川アジャイル"
+    }
+  ],
+  "location": "virtual"
+}
