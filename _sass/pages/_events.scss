@@ -16,6 +16,38 @@
         transform-origin: 0 0;
         transform: rotate(270deg);
       }
+
+      .scroll-container {
+        overflow-x: auto;
+        white-space: nowrap;
+        position: relative;
+      }
+      .scroll-outer {
+        position: relative;
+        .scroll-hint {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          width: 40px;
+          z-index: 1000;
+        }
+        .scroll-hint-left {
+          background: radial-gradient(
+            ellipse at 0%,
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0) 75%,
+          );
+          left: 0;
+        }
+        .scroll-hint-right {
+          background: radial-gradient(
+            ellipse at 100%,
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0) 75%,
+          );
+          right: 0;
+        }
+      }
     }
   }
 }

@@ -1,10 +1,11 @@
 import * as jsjoda from "@js-joda/core";
 import "@js-joda/timezone";
 import { h, Fragment, render } from "preact";
-import { useEffect, useMemo, useState } from "preact/hooks";
+import { useEffect, useMemo, useState, useRef } from "preact/hooks";
 import "regenerator-runtime/runtime";
 import { Typeahead } from "react-bootstrap-typeahead";
 import EventCard from "./events/EventCard";
+import classNames from "classnames";
 const { ZonedDateTime, ZoneId, ChronoUnit, ChronoField, convert } = jsjoda;
 
 const DAY_OF_EVENT_NEEDS_TO_CHANGE = "2019-11-16";
@@ -17,6 +18,66 @@ const DAYS_OF_WEEK = {
   4: "Friday",
   5: "Saturday",
   6: "Sunday",
+};
+
+const useScrollSpy = (onScrollChange) => {
+  const container = useRef();
+
+  useEffect(() => {
+    container.current.addEventListener("scroll", () =>
+      onScrollChange(container.current)
+    );
+    window.addEventListener("resize", () => onScrollChange(container.current));
+    onScrollChange(container.current);
+  }, [container]);
+
+  return container;
+};
+
+const DayOfEventContainer = ({ events, startTime, timeZoneId }) => {
+  const [shouldShowScrollHintLeft, setShouldShowScrollHintLeft] = useState(
+    false
+  );
+  const [shouldShowScrollHintRight, setShouldShowScrollHintRight] = useState(
+    false
+  );
+
+  const ref = useScrollSpy((elem) => {
+    const hasScrollBar = elem.scrollWidth !== elem.clientWidth;
+    const isAllLeft = elem.scrollLeft === 0;
+    const isAllRight = elem.scrollLeft + elem.clientWidth == elem.scrollWidth;
+
+    if (!hasScrollBar) {
+      setShouldShowScrollHintLeft(false);
+      setShouldShowScrollHintRight(false);
+    } else {
+      setShouldShowScrollHintLeft(!isAllLeft);
+      setShouldShowScrollHintRight(!isAllRight);
+    }
+  });
+
+  return (
+    <div class="day-of-event-container">
+      <h2 class="day-of-event">
+        {DAYS_OF_WEEK[ZonedDateTime.parse(startTime).dayOfWeek().ordinal()]}
+      </h2>
+      <div class="scroll-outer">
+        {shouldShowScrollHintLeft && (
+          <div class="scroll-hint scroll-hint-left"></div>
+        )}
+        <div class={classNames("mb-5", "scroll-container")} ref={ref}>
+          <div class="mr-5">
+            {events.map((e) => (
+              <EventCard usersTimezone={timeZoneId} event={e} />
+            ))}
+          </div>
+        </div>
+        {shouldShowScrollHintRight && (
+          <div class="scroll-hint scroll-hint-right"></div>
+        )}
+      </div>
+    </div>
+  );
 };
 
 const Events = () => {
@@ -78,26 +139,11 @@ const Events = () => {
             </div>
           </p>
           {Object.keys(eventsByLocalDay).map((startTime) => (
-            <div class="day-of-event-container">
-              <h2 class="day-of-event">
-                {console.log(ZonedDateTime.parse(startTime).dayOfWeek())}
-                {
-                  DAYS_OF_WEEK[
-                    ZonedDateTime.parse(startTime).dayOfWeek().ordinal()
-                  ]
-                }
-              </h2>
-              <div
-                style={{ overflowX: "auto", whiteSpace: "nowrap" }}
-                class="mb-5"
-              >
-                <div class="mr-5">
-                  {eventsByLocalDay[startTime].map((e) => (
-                    <EventCard usersTimezone={timeZoneId} event={e} />
-                  ))}
-                </div>
-              </div>
-            </div>
+            <DayOfEventContainer
+              timeZoneId={timeZoneId}
+              events={eventsByLocalDay[startTime]}
+              startTime={startTime}
+            />
           ))}
         </div>
       </div>
