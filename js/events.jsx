@@ -258,7 +258,7 @@ const Events = () => {
   return (
     <Fragment>
       <div class="bg-light text-dark py-5">
-        <div class="container-fluid px-5">
+        <div class="container-fluid p-3 pl-md-5 pr-md-0">
           <h1>
             <b>Timeline for #GDCR2020</b>
           </h1>
@@ -276,7 +276,7 @@ const Events = () => {
               />
             </div>
           </p>
-          <div class="my-5 d-md-block d-none">
+          <div class="my-5 pr-5 d-md-block d-none">
             <Timeline
               events={Object.values(eventsByLocalDay).flat()}
               timeZone={timeZone}
