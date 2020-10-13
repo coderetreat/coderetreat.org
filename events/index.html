@@ -1,73 +1,28 @@
 ---
-layout: default
-title: Global Day of Coderetreat Events
-description: List of events around the world!
+layout: base
+title: Global Day Of Coderetreat
+audience: participants
+description: |
+    Global Day Of Coderetreat is a community event happening on November 6 - November 7 2020.
+    Join this year and practice your skills, embrace new paradigms and get to meet new people
+    from all over the world!
 ---
 
-<div id="map">
-    <div id="popup"></div>
+<div class="container my-5">
+    <div>
+        <p class="lead">Global Day Of Coderetreat is a community event happening on <strong>November 6 - November 7
+                2020</strong>. Join this year and practice your skills, embrace new paradigms and get to meet new people
+            from all over the world!</p>
+        <p>With COVID-19 having a severe impact on the availability of on-site events, we're embracing the virtual
+            events we had in the past more than ever. We encourage you to stay safe. If an on-site event
+            isn't for you, we hope you'll find a remote event that matches your timezone.</p>
+        <p>If you're considering organizing your own event, we're here to support you on the journey of
+                organizing your first coderetreat. Head over to the <a
+                        href="{% link facilitators/index.html %}">Facilitators Section</a> for Training events, checklists,
+                facilitation videos and more!</p>
+        
+    </div>
 </div>
-
-<a href="/register-event/"><i class="fa fa-info-circle"></i> Register your event</a>
-<h2>GDCR events in 2019</h2>
-
-{% assign events_with_location = site.data.events_gdcr2019 | where_exp: 'event', 'event.location != "virtual"'  %}
-{% assign virtual_events = site.data.events_gdcr2019 | where_exp: 'event', 'event.location == "virtual"'  %}
-{% assign countries = events_with_location | map: 'location' | map: 'country' | uniq | sort %}
-
-<form class="pure-form">
-    <fieldset>
-        <select id="gdcrCountry" style="font-family: sans-serif;">
-            <option selected disabled>Select your country...</option>
-            <option value="none">Show All</option>
-            <option disabled>-------------</option>
-            <option value="virtual">Virtual Events</option>
-            {% for country in countries %}
-            <option>{{ country }}</option>
-            {% endfor %}
-        </select>
-    </fieldset>
-</form>
-<table class="events-by-country">
-    <tbody>
-    {% for event in virtual_events %}
-    <tr data-country="virtual">
-        <td>Virtual</td>
-        {% include event-table-row.html event=event %}
-    </tr>
-    {% endfor %}
-    {% assign events = events_with_location | where_exp: 'name', '1' | sort: 'location.city' | sort: 'location.country' %}
-    {% for event in events %}
-    <tr data-country="{{event.location.country}}">
-        <td>{{ event.location.city }}, {{ event.location.country }}</td>
-        {% include event-table-row.html event=event %}
-    </tr>
-    {% endfor %}
-    </tbody>
-</table>
-
-<p class="last-section">
-  <a href="{% link register-event.md %}">Register your event</a>
-</p>
-
-<script>
-    $(function () {
-        $.get('/events/gdcr2019.json', function (eventsJson) {
-            var gdcrEvents = mapEventsDataToMapFormat(eventsJson);
-            addEventsToMap(gdcrEvents);
-        });
-
-        $('#gdcrCountry').on('change', function (e) {
-            var filter = e.target.value;
-            var rows = $('tbody tr');
-            var isDisabled = filter === 'none';
-
-            for (var i = 0; i < rows.length; i++) {
-                row = rows[i];
-                ctry = row.getAttribute("data-country");
-                row.classList.toggle('hidden', !(isDisabled || ctry === filter))
-            }
-            ;
-        });
-    });
-</script>
+<div id="events">
+</div>
+<script type="application/javascript" src="{{ "/js/bundled/events.js" | relative_url }}"></script>

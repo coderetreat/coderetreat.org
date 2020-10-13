@@ -1,0 +1,24 @@
+- title: Coderetreat — or why you should go and do it!
+  url: https://medium.com/helloheart-rnd/coderetreat-or-why-you-should-go-and-do-it-a9fb6371f643
+  language: English
+  teaser: "The team at HelloHeart gathered for their company retreat and wanted to do an exciting workshop. They decided to hold a private coderereat and had our very Corey Haines join them. Find out how they made this happen and how it went in this blogpost by Michal Gutman."
+  author:
+    name: Michal Gutman
+    link: https://twitter.com/michal_gutman
+  year: 2019
+- title: Coderetreat - dlaczego warto tam być
+  url: https://adamski.pro/tdd/2019/11/19/coderetreat.html
+  language: Polish
+  teaser: "This year marked the third time Krystian joined a Global Day Of Coderetreat event. Read on to find out why coderetreats don't loose their magic even after the third time!"
+  author:
+    name: Krystian Adamski
+    link: https://www.linkedin.com/in/krystian-adamski-b1333b46
+  year: 2019
+- title: Test Driven Development at a Code Retreat
+  url: http://datascentable.org/2019/06/10/code-retreat.html
+  language: English
+  teaser: "Anelda joined a Coderetreat event in Cape Town this year and they were so kind to write up what their expectations were, how they prepared for the event and how it turned out at the end (spoiler: sounds like they enjoyed their time!)"
+  author:
+    name: Anelda van der Walt
+    link: https://www.linkedin.com/in/aneldavanderwalt/
+  year: 2019
