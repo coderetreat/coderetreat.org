@@ -6,6 +6,7 @@ import "regenerator-runtime/runtime";
 import { Typeahead } from "react-bootstrap-typeahead";
 import EventCard from "./events/EventCard";
 import classNames from "classnames";
+import "react-bootstrap-typeahead/css/Typeahead.css";
 const { ZonedDateTime, ZoneId, ChronoUnit, ChronoField, convert } = jsjoda;
 
 const DAY_OF_EVENT_NEEDS_TO_CHANGE = "2019-11-16";
@@ -80,6 +81,140 @@ const DayOfEventContainer = ({ events, startTime, timeZoneId }) => {
   );
 };
 
+const Timeline = ({ events, timeZone }) => {
+  if (!events.length) return <svg></svg>;
+
+  const max = events.reduce(
+    (max, { date: { start, end } }) =>
+      end.isAfter(max) ? end : start.isAfter(max) ? start : max,
+    jsjoda.ZonedDateTime.of8(2000, 1, 1, 1, 1, 1, 1, ZoneId.of("UTC"))
+  );
+
+  const min = events.reduce(
+    (min, { date: { start, end } }) =>
+      start.isBefore(min) ? start : end.isBefore(min) ? end : min,
+    jsjoda.ZonedDateTime.of8(2030, 1, 1, 1, 1, 1, 1, ZoneId.of("UTC"))
+  );
+
+  const from = jsjoda.ZonedDateTime.of8(
+    2020,
+    11,
+    6,
+    0,
+    0,
+    0,
+    0,
+    ZoneId.of("UTC+12")
+  ).withZoneSameInstant(ZoneId.of(timeZone));
+  const to = jsjoda.ZonedDateTime.of8(
+    2020,
+    11,
+    8,
+    0,
+    0,
+    0,
+    0,
+    ZoneId.of("UTC-12")
+  ).withZoneSameInstant(ZoneId.of(timeZone));
+
+  const duration = jsjoda.Duration.between(from, to).toHours();
+
+  const rects = [];
+  const dayLabels = [];
+  const hourLabels = [];
+
+  let hourStart = from;
+  let maxCount = 0;
+
+  let day = hourStart.dayOfWeek();
+  for (let i = 0; i < duration; i++) {
+    if (day != hourStart.dayOfWeek().ordinal()) {
+      day = hourStart.dayOfWeek().ordinal();
+      dayLabels.push({ i, day });
+    }
+    hourLabels.push({
+      i,
+      text: hourStart.format(jsjoda.DateTimeFormatter.ofPattern("HH:mm")),
+    });
+
+    const hourEnd = hourStart.plusHours(1);
+
+    const eventsInThisHour = events.filter(
+      ({ date: { start, end } }) =>
+        start.isBefore(hourEnd) && end.isAfter(hourStart)
+    );
+
+    maxCount = Math.max(maxCount, eventsInThisHour.length);
+
+    rects.push({ start: hourStart, count: eventsInThisHour.length });
+    hourStart = hourStart.plusHours(1);
+  }
+
+  const GAP_SIZE = 5;
+  return (
+    <svg
+      width="100%"
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+      viewBox={`-10 -30 ${duration * (10 + GAP_SIZE)} 70`}
+      preserveAspectRatio="xMinYMin"
+    >
+      <g>
+        {dayLabels.map(({ i, day }) => (
+          <Fragment>
+            <line
+              x1={i * 10 + (i - 1) * GAP_SIZE - GAP_SIZE / 2}
+              x2={i * 10 + (i - 1) * GAP_SIZE - GAP_SIZE / 2}
+              stroke="grey"
+              strokeDasharray="2"
+              y1="-15"
+              y2="60"
+            />
+            <text
+              transform={`translate(${
+                i * 10 + (i - 1) * GAP_SIZE
+              }, -2) rotate(0) `}
+              style={{
+                fontSize: "1em",
+                fontWeight: "lighter",
+                textTransform: "uppercase",
+              }}
+            >
+              {DAYS_OF_WEEK[day]}
+            </text>
+          </Fragment>
+        ))}
+        {hourLabels.map(({ i, text }) => (
+          <text
+            transform={`translate(${
+              i * 10 + (i - 1) * GAP_SIZE + 3
+            }, 20) rotate(90) `}
+            textAnchor="start"
+            style={{ fontSize: "0.5em" }}
+          >
+            {text}
+          </text>
+        ))}
+        {rects.map(({ count }, i) => (
+          <rect
+            height="10"
+            data-count={count}
+            width="10"
+            style={{
+              outline: "1px solid rgba(27,31,35,.04)",
+              outlineOffset: "-1px",
+              fill: "#74BCCD",
+              shapeRendering: "geometricPrecision",
+              "fill-opacity": `${count / maxCount}`,
+            }}
+            transform={`translate(${i * 10 + (i - 1) * GAP_SIZE}, 5)`}
+          />
+        ))}
+      </g>
+    </svg>
+  );
+};
+
 const Events = () => {
   const [timeZone, setTimeZone] = useState(ZoneId.systemDefault().id());
   const [events, setEvents] = useState([]);
@@ -123,7 +258,7 @@ const Events = () => {
   return (
     <Fragment>
       <div class="bg-light text-dark py-5">
-        <div class="container">
+        <div class="container-fluid px-5">
           <h1>
             <b>Timeline for #GDCR2020</b>
           </h1>
@@ -133,11 +268,20 @@ const Events = () => {
               <Typeahead
                 defaultInputValue={timeZone}
                 style={{ maxWidth: "95%", display: "inline-block" }}
-                onChange={(values) => setTimeZone(values[0])}
+                onChange={(values) => {
+                  if (!values.length) return;
+                  setTimeZone(values[0]);
+                }}
                 options={jsjoda.ZoneId.getAvailableZoneIds()}
               />
             </div>
           </p>
+          <div class="my-5 d-md-block d-none">
+            <Timeline
+              events={Object.values(eventsByLocalDay).flat()}
+              timeZone={timeZone}
+            />
+          </div>
           {Object.keys(eventsByLocalDay).map((startTime) => (
             <DayOfEventContainer
               timeZoneId={timeZoneId}
