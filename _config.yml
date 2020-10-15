@@ -79,6 +79,7 @@ exclude:
   - node_modules/
   - js/
   - test/
+  - scripts/
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
