@@ -1,0 +1,21 @@
+{
+  "title": "Global Day of CodeRetreat 2020 - Manila",
+  "format": "ensemble",
+  "spoken_language": "English and Filipino",
+  "url": "https://meetup.softwarecrafters.ph",
+  "date": {
+    "start": "2020-11-07T09:00:00+08:00",
+    "end": "2020-11-07T12:30:00+08:00"
+  },
+  "moderators": [
+    {
+      "name": "Jonn Louie Lim",
+      "url": "https://github.com/Nojj02"
+    },
+    {
+      "name": "Ealden Escañan",
+      "url": "https://github.com/ealden"
+    }
+  ],
+  "location": "virtual"
+}
