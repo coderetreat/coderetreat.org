@@ -1,0 +1,27 @@
+{
+  "title": "Calgary GDCR",
+  "format": "ensemble",
+  "spoken_language": "English",
+  "url": "https://www.meetup.com/Calgary-Software-Crafters/events/274069438/",
+  "date": {
+    "start": "2020-11-07T09:00:00-07:00",
+    "end": "2020-11-07T16:00:00-07:00"
+  },
+  "moderators": [
+    {
+      "name": "Jacqueline",
+      "url": "https://github.com/jmasonlee"
+    },
+    {
+      "name": "Tony Vo",
+      "url": "https://twitter.com/ttrungvo"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "FB2U",
+      "url": "https://www.facebook.com/futurebelongtoyou"
+    }
+  ],
+  "location": "virtual"
+}
