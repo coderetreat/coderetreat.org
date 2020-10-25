@@ -35,7 +35,7 @@ const useScrollSpy = (onScrollChange) => {
   return container;
 };
 
-const DayOfEventContainer = ({ events, startTime, timeZoneId }) => {
+const ScrollContainer = ({ children }) => {
   const [shouldShowScrollHintLeft, setShouldShowScrollHintLeft] = useState(
     false
   );
@@ -58,25 +58,33 @@ const DayOfEventContainer = ({ events, startTime, timeZoneId }) => {
   });
 
   return (
+    <div class="scroll-outer">
+      {shouldShowScrollHintLeft && (
+        <div class="scroll-hint scroll-hint-left"></div>
+      )}
+      <div class="scroll-container" ref={ref}>
+        {children}
+      </div>
+      {shouldShowScrollHintRight && (
+        <div class="scroll-hint scroll-hint-right"></div>
+      )}
+    </div>
+  );
+};
+
+const DayOfEventContainer = ({ events, startTime, timeZoneId }) => {
+  return (
     <div class="day-of-event-container">
       <h2 class="day-of-event">
         {DAYS_OF_WEEK[ZonedDateTime.parse(startTime).dayOfWeek().ordinal()]}
       </h2>
-      <div class="scroll-outer">
-        {shouldShowScrollHintLeft && (
-          <div class="scroll-hint scroll-hint-left"></div>
-        )}
-        <div class={classNames("mb-5", "scroll-container")} ref={ref}>
-          <div class="mr-5">
-            {events.map((e) => (
-              <EventCard usersTimezone={timeZoneId} event={e} />
-            ))}
-          </div>
+      <ScrollContainer>
+        <div class="mb-5 mr-5">
+          {events.map((e) => (
+            <EventCard usersTimezone={timeZoneId} event={e} />
+          ))}
         </div>
-        {shouldShowScrollHintRight && (
-          <div class="scroll-hint scroll-hint-right"></div>
-        )}
-      </div>
+      </ScrollContainer>
     </div>
   );
 };
