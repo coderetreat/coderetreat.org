@@ -52,7 +52,7 @@ const Sponsors = ({ sponsors }) => (
 
 export default ({ event, usersTimezone }) => (
   <div style={{ display: "inline-block" }}>
-    <div class="card m-3 event-card" style={{ width: "20rem", whiteSpace: "normal" }}>
+    <div class="card m-md-3 my-3 event-card" style={{ width: "20rem", whiteSpace: "normal" }}>
       <div
         class={classNames([
           "py-1",

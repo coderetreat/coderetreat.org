@@ -72,19 +72,39 @@ const ScrollContainer = ({ children }) => {
   );
 };
 
+const TIME_FORMAT = jsjoda.DateTimeFormatter.ofPattern("HH:mm");
 const DayOfEventContainer = ({ events, startTime, timeZoneId }) => {
+  const eventsByStartDay = {};
+  for (let event of events) {
+    const startTime = event.date.start
+      .withZoneSameInstant(timeZoneId)
+      .format(TIME_FORMAT);
+    eventsByStartDay[startTime] = [
+      ...(eventsByStartDay[startTime] || []),
+      event,
+    ];
+  }
+
   return (
     <div class="day-of-event-container">
       <h2 class="day-of-event">
         {DAYS_OF_WEEK[ZonedDateTime.parse(startTime).dayOfWeek().ordinal()]}
       </h2>
-      <ScrollContainer>
-        <div class="mb-5 mr-5">
-          {events.map((e) => (
-            <EventCard usersTimezone={timeZoneId} event={e} />
-          ))}
-        </div>
-      </ScrollContainer>
+      {Object.keys(eventsByStartDay)
+        .sort()
+        .map((time) => (
+          <Fragment>
+            <h3 class="ml-md-3">Starting at {time}</h3>
+
+            <ScrollContainer>
+              <div class="mb-5 mr-md-5">
+                {eventsByStartDay[time].map((e) => (
+                  <EventCard usersTimezone={timeZoneId} event={e} />
+                ))}
+              </div>
+            </ScrollContainer>
+          </Fragment>
+        ))}
     </div>
   );
 };
@@ -290,12 +310,15 @@ const Events = () => {
               timeZone={timeZone}
             />
           </div>
-          {Object.keys(eventsByLocalDay).map((startTime) => (
-            <DayOfEventContainer
-              timeZoneId={timeZoneId}
-              events={eventsByLocalDay[startTime]}
-              startTime={startTime}
-            />
+          {Object.keys(eventsByLocalDay).map((startTime, i) => (
+            <Fragment>
+              <DayOfEventContainer
+                timeZoneId={timeZoneId}
+                events={eventsByLocalDay[startTime]}
+                startTime={startTime}
+              />
+              <hr class="px-5 mr-5"/>
+            </Fragment>
           ))}
         </div>
       </div>
