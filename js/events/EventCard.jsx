@@ -10,9 +10,9 @@ const Format = ({ format }) => (
       textDecorationLine: "underline",
       textDecorationStyle: "dashed",
     }}
-    title={format === "classic" ? "Pair-Programming" : "Mob"}
+    title={format === "classic" ? "Two people work on the same codebase" : "The whole group works on the same codebase"}
   >
-    {format}
+    {format === "classic" ? "Pair-Programming" : "Ensemble"}
   </span>
 );
 
