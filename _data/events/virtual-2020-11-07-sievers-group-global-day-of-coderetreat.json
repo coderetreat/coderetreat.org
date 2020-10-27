@@ -1,0 +1,24 @@
+{
+  "title": "SIEVERS GROUP Global Day of Coderetreat",
+  "description": "Global Day of Coderetreat hosted by Sievers Group, Osnabrueck, Germany.",
+  "format": "classic",
+  "spoken_language": "German",
+  "url": "https://www.sievers-group.com/veranstaltung/global-day-coderetreat-2020",
+  "date": {
+    "start": "2020-11-07T09:00:00+01:00",
+    "end": "2020-11-07T16:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Mathias Menninghaus",
+      "url": "https://twitter.com/mmenningwork"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "SIEVERS-GROUP",
+      "url": "https://www.sievers-group.com"
+    }
+  ],
+  "location": "virtual"
+}

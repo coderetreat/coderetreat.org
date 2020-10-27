@@ -1,3 +1,0 @@
-# Redirect everything to HTTPS
-http://coderetreat.org/* 		https://www.coderetreat.org/:splat 301!
-http://www.coderetreat.org/* 	https://www.coderetreat.org/:splat 301!

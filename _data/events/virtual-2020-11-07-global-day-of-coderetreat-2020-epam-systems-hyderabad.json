@@ -1,0 +1,34 @@
+{
+  "title": "Global Day of Coderetreat 2020 @ EPAM Systems Hyderabad",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://community-z.com/events/global-day-of-coderetreat-2020-epam-systems-hyderabad",
+  "date": {
+    "start": "2020-11-07T09:30:00+05:30",
+    "end": "2020-11-07T17:30:00+05:30"
+  },
+  "moderators": [
+    {
+      "name": "Satyendra Kandregula",
+      "url": "https://www.linkedin.com/in/satyendrakumark/"
+    },
+    {
+      "name": "Bharath Kandukuri",
+      "url": "https://www.linkedin.com/in/bharath-raj-kandukuri-ab642147/"
+    },
+    {
+      "name": "Murali Rudraraju"
+    },
+    {
+      "name": "Sandeep Joshi",
+      "url": "https://www.linkedin.com/in/sandeepjoshi1000/"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "EPAM Systems",
+      "url": "https://www.epam.com/"
+    }
+  ],
+  "location": "virtual"
+}

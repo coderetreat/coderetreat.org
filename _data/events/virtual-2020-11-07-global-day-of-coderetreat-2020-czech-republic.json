@@ -1,0 +1,27 @@
+{
+  "title": "Global Day of Coderetreat 2020 - Czech Republic",
+  "description": "Global Day of Coderetreat - pandemic edition. This year we would definitely learn something new - how to collaborate online better!",
+  "format": "classic",
+  "spoken_language": "Czech",
+  "url": "https://www.meetup.com/CodeRetreat-CZ/events/273897052/",
+  "code_of_conduct": "https://communitycodeofconduct.com/",
+  "date": {
+    "start": "2020-11-07T09:00:00+01:00",
+    "end": "2020-11-07T16:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Tomas Latal",
+      "url": "https://twitter.com/@tomaslatal"
+    },
+    {
+      "name": "Jaroslav Holan",
+      "url": "https://twitter.com/@jaroslavholan"
+    },
+    {
+      "name": "Jakub Koci",
+      "url": "https://twitter.com/@jakubkoci"
+    }
+  ],
+  "location": "virtual"
+}

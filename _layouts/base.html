@@ -1,0 +1,50 @@
+{%- assign stylesheet = page.audience -%}
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- seo -%}
+  <link rel="stylesheet" href="{{ "/css/theme_" | append: stylesheet | append: ".min.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/js/bundled/default.css" | relative_url }}">
+  {% for extraStyle in page.extraStyles %}
+  <link rel="stylesheet" href="{{ extraStyle }}">
+  {% endfor %}
+  {%- feed_meta -%}
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">  
+</head>
+
+<body>
+
+  <main class="page-content" aria-label="Content">
+    {% include navbar.html %}
+    <script async type="application/javascript" src="{{ "/js/bundled/default.js" | relative_url }}"></script>
+    {{ content }}
+    {% include disqus_comments.html %}
+  </main>
+
+  <footer class="footer bg-dark text-light mt-5 pt-3 pb-5">
+    <div class="container">
+      <div class="row">
+      <div class="col-lg-3">
+        <ul class="list-unstyled">
+          <li><a class="text-light" href="https://twitter.com/coderetreat"><i class="fab fa-twitter mr-1"></i>Follow us on Twitter</a></li>
+          <li><a class="text-light" href="https://github.com/coderetreat"><i class="fab fa-github mr-1"></i>Contribute on GitHub</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 offset-lg-6">
+        <p>The Coderetreat Contributors 2020</p>
+      </div>
+    </div>
+    </div>
+  </footer>
+    
+
+</body>
+
+</html>
