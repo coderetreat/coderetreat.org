@@ -1,0 +1,34 @@
+{
+  "title": "Global day of Coderetreat 2020 @ EqualExperts, Pune - Remote",
+  "description": "Welcomes you all from anywhere for remote #GDCR.",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://www.meetup.com/expert-talks-pune/events/274204883/",
+  "date": {
+    "start": "2020-11-07T10:00:00+05:30",
+    "end": "2020-11-07T15:00:00+05:30"
+  },
+  "moderators": [
+    {
+      "name": "Sagar Mate",
+      "url": "https://github.com/SagarPi"
+    },
+    {
+      "name": "Imran Sayyed",
+      "url": "https://github.com/monkeyd23"
+    },
+    {
+      "name": "Tanay Prabhudesai",
+      "url": "https://github.com/tanayseven"
+    },
+    {
+      "name": "Mohan Lovewanshi",
+      "url": "https://github.com/mohanlovewanshi"
+    },
+    {
+      "name": "Rajesh Pitty",
+      "url": "https://github.com/rajeshpg"
+    }
+  ],
+  "location": "virtual"
+}
