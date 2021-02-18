@@ -7,6 +7,7 @@ import { Typeahead } from "react-bootstrap-typeahead";
 import EventCard from "./events/EventCard";
 import classNames from "classnames";
 import "react-bootstrap-typeahead/css/Typeahead.css";
+import fetchEventsInChronologicalOrder from "./events/fetchEventsInChronologicalOrder";
 const { ZonedDateTime, ZoneId, ChronoUnit, ChronoField, convert } = jsjoda;
 
 const DAY_OF_EVENT_NEEDS_TO_CHANGE = "2019-11-16";
@@ -249,17 +250,7 @@ const Events = () => {
 
   useEffect(() => {
     const Run = async () => {
-      const result = await fetch("/events/events.json");
-      const allEvents = Object.entries(await result.json())
-        .map(([id, event]) => ({
-          id,
-          ...event,
-          date: {
-            start: ZonedDateTime.parse(event.date.start),
-            end: ZonedDateTime.parse(event.date.end),
-          },
-        }))
-        .sort((a, b) => a.date.start.compareTo(b.date.start));
+      const allEvents = await fetchEventsInChronologicalOrder();
 
       setEvents(allEvents);
     };
@@ -317,7 +308,7 @@ const Events = () => {
                 events={eventsByLocalDay[startTime]}
                 startTime={startTime}
               />
-              <hr class="px-5 mr-5"/>
+              <hr class="px-5 mr-5" />
             </Fragment>
           ))}
         </div>
