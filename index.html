@@ -55,7 +55,7 @@ audience: participants
   </div>
 </div>
 
-<div class="py-md-5 pt-3 pb-5">
+<div class="pt-md-5 py-3 d-none d-md-block">
   <div class="container">
     <p class="lead">
       Coderetreats are free day-long, intensive practice events, focusing on the fundamentals of software development
@@ -69,8 +69,10 @@ audience: participants
   </div>
 </div>
 
+<div class="container py-3" id="upcoming-events">
+</div>
 
-<div class="container">
+<div class="container pt-3">
   <div class="card-deck">
     <div class="card">
       <img src="{% link /assets/home-gdcr.jpg %}" class="card-img-top card-img-tinted"
@@ -167,3 +169,4 @@ audience: participants
   </div>
 </div>
 <script async type="application/javascript" src="{{ "/js/bundled/gameOfLifeJumbotron.js" | relative_url }}"></script>
+<script async type="application/javascript" src="{{ "/js/bundled/upcoming-events.js" | relative_url }}"></script>
