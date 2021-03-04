@@ -18,7 +18,7 @@ const UpcomingEvents = ({}) => {
     };
 
     run();
-  });
+  }, []);
 
   if (upcomingEvents.length === 0) {
     return (
