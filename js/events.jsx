@@ -88,14 +88,11 @@ const DayOfEventContainer = ({ events, startTime, timeZoneId }) => {
 
   return (
     <div class="day-of-event-container">
-      <h2 class="day-of-event">
-        {DAYS_OF_WEEK[ZonedDateTime.parse(startTime).dayOfWeek().ordinal()]}
-      </h2>
       {Object.keys(eventsByStartDay)
         .sort()
         .map((time) => (
           <Fragment>
-            <h3 class="ml-md-3">Starting at {time}</h3>
+            <h3 class="ml-0">Starting at {time}</h3>
 
             <ScrollContainer>
               <div class="mb-5 mr-md-5">
@@ -267,7 +264,7 @@ const Events = () => {
       <div class="bg-light text-dark py-5">
         <div class="container-fluid p-3 pl-md-5 pr-md-0">
           <h1>
-            <b>Timeline for #GDCR2020</b>
+            <b>📅 Upcoming Coderetreat events</b>
           </h1>
           <p class="lead">
             All times shown are in the timezone for{" "}
@@ -283,12 +280,7 @@ const Events = () => {
               />
             </div>
           </p>
-          <div class="my-5 pr-5 d-md-block d-none">
-            <Timeline
-              events={Object.values(eventsByLocalDay).flat()}
-              timeZone={timeZone}
-            />
-          </div>
+
           {Object.keys(eventsByLocalDay).map((startTime, i) => (
             <Fragment>
               <DayOfEventContainer
