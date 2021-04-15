@@ -3,12 +3,11 @@ import "@js-joda/timezone";
 import { h, Fragment, render } from "preact";
 import { useEffect, useMemo, useState, useRef } from "preact/hooks";
 import "regenerator-runtime/runtime";
-import { Typeahead } from "react-bootstrap-typeahead";
-import EventCard from "./events/EventCard";
-import classNames from "classnames";
+import {Typeahead} from "react-bootstrap-typeahead";
 import "react-bootstrap-typeahead/css/Typeahead.css";
 import fetchEventsInChronologicalOrder from "./events/fetchEventsInChronologicalOrder";
 import displayEventAsTableRow from "./events/displayEventAsTableRow";
+
 const { ZonedDateTime, ZoneId, ChronoUnit, ChronoField } = jsjoda;
 
 const DAY_OF_EVENT_NEEDS_TO_CHANGE = "2019-11-16";
@@ -21,57 +20,6 @@ const DAYS_OF_WEEK = {
   4: "Friday",
   5: "Saturday",
   6: "Sunday",
-};
-
-const useScrollSpy = (onScrollChange) => {
-  const container = useRef();
-
-  useEffect(() => {
-    container.current.addEventListener("scroll", () =>
-      onScrollChange(container.current)
-    );
-    window.addEventListener("resize", () => onScrollChange(container.current));
-    onScrollChange(container.current);
-  }, [container]);
-
-  return container;
-};
-
-const ScrollContainer = ({ children }) => {
-  const [shouldShowScrollHintLeft, setShouldShowScrollHintLeft] = useState(
-    false
-  );
-  const [shouldShowScrollHintRight, setShouldShowScrollHintRight] = useState(
-    false
-  );
-
-  const ref = useScrollSpy((elem) => {
-    const hasScrollBar = elem.scrollWidth !== elem.clientWidth;
-    const isAllLeft = elem.scrollLeft === 0;
-    const isAllRight = elem.scrollLeft + elem.clientWidth == elem.scrollWidth;
-
-    if (!hasScrollBar) {
-      setShouldShowScrollHintLeft(false);
-      setShouldShowScrollHintRight(false);
-    } else {
-      setShouldShowScrollHintLeft(!isAllLeft);
-      setShouldShowScrollHintRight(!isAllRight);
-    }
-  });
-
-  return (
-    <div class="scroll-outer">
-      {shouldShowScrollHintLeft && (
-        <div class="scroll-hint scroll-hint-left"></div>
-      )}
-      <div class="scroll-container" ref={ref}>
-        {children}
-      </div>
-      {shouldShowScrollHintRight && (
-        <div class="scroll-hint scroll-hint-right"></div>
-      )}
-    </div>
-  );
 };
 
 const DATE_FORMAT = jsjoda.DateTimeFormatter.ofPattern("u-M-F");
