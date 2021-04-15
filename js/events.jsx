@@ -3,10 +3,9 @@ import "@js-joda/timezone";
 import { h, Fragment, render } from "preact";
 import { useEffect, useMemo, useState, useRef } from "preact/hooks";
 import "regenerator-runtime/runtime";
-import {Typeahead} from "react-bootstrap-typeahead";
-import "react-bootstrap-typeahead/css/Typeahead.css";
 import fetchEventsInChronologicalOrder from "./events/fetchEventsInChronologicalOrder";
 import displayEventAsTableRow from "./events/displayEventAsTableRow";
+import interactiveTimeZoneSelector from "./events/interactiveTimeZoneSelector";
 
 const { ZonedDateTime, ZoneId, ChronoUnit, ChronoField } = jsjoda;
 
@@ -99,17 +98,7 @@ const Events = () => {
           </h1>
           <p class="lead">
             All times shown are in the timezone for{" "}
-            <div class="form-inline d-inline">
-              <Typeahead
-                defaultInputValue={timeZone}
-                style={{ maxWidth: "95%", display: "inline-block" }}
-                onChange={(values) => {
-                  if (!values.length) return;
-                  setTimeZone(values[0]);
-                }}
-                options={jsjoda.ZoneId.getAvailableZoneIds()}
-              />
-            </div>
+            {interactiveTimeZoneSelector(timeZone, setTimeZone)}
           </p>
 
           {Object.keys(eventsByLocalDay).map((startTime, i) => (
@@ -119,7 +108,7 @@ const Events = () => {
                 events={eventsByLocalDay[startTime]}
                 startTime={startTime}
               />
-              <hr class="px-5 mr-5" />
+              <hr class="px-5 mr-5"/>
             </Fragment>
           ))}
         </div>
