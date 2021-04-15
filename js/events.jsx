@@ -86,6 +86,11 @@ const DayOfEventContainer = ({ events, startTime, timeZoneId }) => {
     ];
   }
 
+  const dateTimeFormatter = new Intl.DateTimeFormat("default", {
+    dateStyle: "short",
+    timeStyle: "short",
+  });
+
   return (
     <div class="day-of-event-container">
       {Object.keys(eventsByStartDay)
@@ -93,14 +98,27 @@ const DayOfEventContainer = ({ events, startTime, timeZoneId }) => {
         .map((date) => (
           <Fragment>
             <h3 class="ml-0">Starting on {date}</h3>
-
-            <ScrollContainer>
+            <table className="table">
+              <tbody>
               <div class="mb-5 mr-md-5">
-                {eventsByStartDay[date].map((e) => (
-                  <EventCard usersTimezone={timeZoneId} event={e} />
+                {eventsByStartDay[date].map((event) => (
+                  <tr key={event.id}>
+                    <th>
+                      {dateTimeFormatter.format(convert(event.date.start).toDate())}
+                    </th>
+                    <td>
+                      <a href={event.url}>{event.title}</a>
+                    </td>
+                    <td>
+                      {event.location === "virtual"
+                        ? "Virtual"
+                        : `${event.location.city}, ${event.location.country}`}
+                    </td>
+                  </tr>
                 ))}
               </div>
-            </ScrollContainer>
+              </tbody>
+            </table>
           </Fragment>
         ))}
     </div>
