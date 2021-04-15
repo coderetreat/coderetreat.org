@@ -52,7 +52,7 @@ const UpcomingEvents = ({}) => {
                 <a href={event.url}>{event.title}</a>
               </td>
               <td>
-                {event.location == "virtual"
+                {event.location === "virtual"
                   ? "Virtual"
                   : `${event.location.city}, ${event.location.country}`}
               </td>
