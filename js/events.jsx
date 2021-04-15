@@ -113,18 +113,6 @@ const DayOfEventContainer = ({ events, startTime, timeZoneId }) => {
 const Timeline = ({ events, timeZone }) => {
   if (!events.length) return <svg></svg>;
 
-  const max = events.reduce(
-    (max, { date: { start, end } }) =>
-      end.isAfter(max) ? end : start.isAfter(max) ? start : max,
-    jsjoda.ZonedDateTime.of8(2000, 1, 1, 1, 1, 1, 1, ZoneId.of("UTC"))
-  );
-
-  const min = events.reduce(
-    (min, { date: { start, end } }) =>
-      start.isBefore(min) ? start : end.isBefore(min) ? end : min,
-    jsjoda.ZonedDateTime.of8(2030, 1, 1, 1, 1, 1, 1, ZoneId.of("UTC"))
-  );
-
   const from = jsjoda.ZonedDateTime.of8(
     2020,
     11,
