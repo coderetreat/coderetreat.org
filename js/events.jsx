@@ -76,13 +76,13 @@ const ScrollContainer = ({ children }) => {
 
 const DATE_FORMAT = jsjoda.DateTimeFormatter.ofPattern("u-M-F");
 const DayOfEventContainer = ({ events, startTime, timeZoneId }) => {
-  const eventsByStartDay = {};
+  const eventsByStartDate = {};
   for (let event of events) {
     const startDate = event.date.start
       .withZoneSameInstant(timeZoneId)
       .format(DATE_FORMAT);
-    eventsByStartDay[startDate] = [
-      ...(eventsByStartDay[startDate] || []),
+    eventsByStartDate[startDate] = [
+      ...(eventsByStartDate[startDate] || []),
       event,
     ];
   }
@@ -94,7 +94,7 @@ const DayOfEventContainer = ({ events, startTime, timeZoneId }) => {
 
   return (
     <div class="day-of-event-container">
-      {Object.keys(eventsByStartDay)
+      {Object.keys(eventsByStartDate)
         .sort()
         .map((date) => (
           <Fragment>
@@ -102,7 +102,7 @@ const DayOfEventContainer = ({ events, startTime, timeZoneId }) => {
             <table className="table">
               <tbody>
               <div class="mb-5 mr-md-5">
-                {eventsByStartDay[date].map((event) => displayEventAsTableRow(event)) }
+                {eventsByStartDate[date].map((event) => displayEventAsTableRow(event)) }
               </div>
               </tbody>
             </table>
