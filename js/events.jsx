@@ -8,7 +8,8 @@ import EventCard from "./events/EventCard";
 import classNames from "classnames";
 import "react-bootstrap-typeahead/css/Typeahead.css";
 import fetchEventsInChronologicalOrder from "./events/fetchEventsInChronologicalOrder";
-const { ZonedDateTime, ZoneId, ChronoUnit, ChronoField, convert } = jsjoda;
+import displayEventAsTableRow from "./events/displayEventAsTableRow";
+const { ZonedDateTime, ZoneId, ChronoUnit, ChronoField } = jsjoda;
 
 const DAY_OF_EVENT_NEEDS_TO_CHANGE = "2019-11-16";
 
@@ -101,21 +102,7 @@ const DayOfEventContainer = ({ events, startTime, timeZoneId }) => {
             <table className="table">
               <tbody>
               <div class="mb-5 mr-md-5">
-                {eventsByStartDay[date].map((event) => (
-                  <tr key={event.id}>
-                    <th>
-                      {dateTimeFormatter.format(convert(event.date.start).toDate())}
-                    </th>
-                    <td>
-                      <a href={event.url}>{event.title}</a>
-                    </td>
-                    <td>
-                      {event.location === "virtual"
-                        ? "Virtual"
-                        : `${event.location.city}, ${event.location.country}`}
-                    </td>
-                  </tr>
-                ))}
+                {eventsByStartDay[date].map((event) => displayEventAsTableRow(event)) }
               </div>
               </tbody>
             </table>
