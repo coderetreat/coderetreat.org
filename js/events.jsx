@@ -7,19 +7,7 @@ import fetchEventsInChronologicalOrder from "./events/fetchEventsInChronological
 import displayEventAsTableRow from "./events/displayEventAsTableRow";
 import interactiveTimeZoneSelector from "./events/interactiveTimeZoneSelector";
 
-const { ZonedDateTime, ZoneId, ChronoUnit, ChronoField } = jsjoda;
-
-const DAY_OF_EVENT_NEEDS_TO_CHANGE = "2019-11-16";
-
-const DAYS_OF_WEEK = {
-  0: "Monday",
-  1: "Tuesday",
-  2: "Wednesday",
-  3: "Thursday",
-  4: "Friday",
-  5: "Saturday",
-  6: "Sunday",
-};
+const { ZoneId, ChronoUnit } = jsjoda;
 
 const DATE_FORMAT = jsjoda.DateTimeFormatter.ofPattern("u-M-F");
 const DayOfEventContainer = ({ events, startTime, timeZoneId }) => {
@@ -33,11 +21,6 @@ const DayOfEventContainer = ({ events, startTime, timeZoneId }) => {
       event,
     ];
   }
-
-  const dateTimeFormatter = new Intl.DateTimeFormat("default", {
-    dateStyle: "short",
-    timeStyle: "short",
-  });
 
   return (
     <div class="day-of-event-container">
