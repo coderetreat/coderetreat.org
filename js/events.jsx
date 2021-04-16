@@ -10,7 +10,7 @@ import interactiveTimeZoneSelector from "./events/interactiveTimeZoneSelector";
 const { ZoneId, ChronoUnit } = jsjoda;
 
 const DATE_FORMAT = jsjoda.DateTimeFormatter.ofPattern("u-M-F");
-const DayOfEventContainer = ({ events, startTime, timeZoneId }) => {
+const DayOfEventContainer = (events, timeZoneId) => {
   const eventsByStartDate = {};
   for (let event of events) {
     const startDate = event.date.start
@@ -85,14 +85,8 @@ const Events = () => {
             All times shown are in the timezone for{" "}
             {interactiveTimeZoneSelector(timeZone, setTimeZone)}
           </p>
-
           {Object.keys(eventsByLocalDay).map((startTime, i) => (
-              <DayOfEventContainer
-                timeZoneId={timeZoneId}
-                events={eventsByLocalDay[startTime]}
-                startTime={startTime}
-              />
-          ))}
+              DayOfEventContainer(eventsByLocalDay[startTime], timeZoneId)))}
           <hr class="px-5 mr-5"/>
         </div>
       </div>
