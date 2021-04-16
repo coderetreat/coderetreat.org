@@ -7,7 +7,7 @@ import fetchEventsInChronologicalOrder from "./events/fetchEventsInChronological
 import displayEventAsTableRow from "./events/displayEventAsTableRow";
 import interactiveTimeZoneSelector from "./events/interactiveTimeZoneSelector";
 
-const { ZoneId, ChronoUnit } = jsjoda;
+const { ZoneId, ZonedDateTime, ChronoUnit } = jsjoda;
 
 const DATE_FORMAT = jsjoda.DateTimeFormatter.ofPattern("u-M-F");
 const DayOfEventContainer = (events, timeZoneId) => {
@@ -52,7 +52,7 @@ const Events = () => {
     const Run = async () => {
       const allEvents = await fetchEventsInChronologicalOrder();
 
-      setEvents(allEvents);
+      setEvents(allEvents.filter((event) => event.date.end.isAfter(ZonedDateTime.now())));
     };
     Run();
   }, []);
