@@ -4,11 +4,12 @@ import fetchEventsInChronologicalOrder from "./events/fetchEventsInChronological
 import displayEventAsTableRow from "./events/displayEventAsTableRow";
 import * as jsjoda from "@js-joda/core";
 import "@js-joda/timezone";
-const { ZonedDateTime } = jsjoda;
+const { ZoneId, ZonedDateTime } = jsjoda;
 import "regenerator-runtime/runtime";
 
 const UpcomingEvents = ({}) => {
   const [upcomingEvents, setUpcomingEvents] = useState([]);
+  const [timeZone, setTimeZone] = useState(ZoneId.systemDefault().id());
 
   useEffect(() => {
     const run = async () => {
@@ -41,7 +42,7 @@ const UpcomingEvents = ({}) => {
       </p>
       <table className="table">
         <tbody>
-          {upcomingEvents.slice(0, 5).map((event) => displayEventAsTableRow(event))}
+          {upcomingEvents.slice(0, 5).map((event) => displayEventAsTableRow(event,ZoneId.of(timeZone)))}
         </tbody>
       </table>
     </div>

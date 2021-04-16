@@ -4,16 +4,13 @@ import "@js-joda/timezone";
 
 const { convert } = jsjoda;
 
-export default function displayEventAsTableRow(event) {
+export default function displayEventAsTableRow(event, timeZone) {
 
-  const dateTimeFormatter = new Intl.DateTimeFormat("default", {
-    dateStyle: "short",
-    timeStyle: "short",
-  });
+  const DATE_FORMAT = jsjoda.DateTimeFormatter.ofPattern("u-M-F, hh:mm");
 
   return <tr key={event.id}>
     <th>
-      {dateTimeFormatter.format(convert(event.date.start).toDate())}
+      {event.date.start.withZoneSameInstant(timeZone).format(DATE_FORMAT)}
     </th>
     <td>
       <a href={event.url}>{event.title}</a>

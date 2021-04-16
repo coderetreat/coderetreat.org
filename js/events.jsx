@@ -33,7 +33,7 @@ const DayOfEventContainer = (events, timeZoneId) => {
               <table className="table">
                 <tbody>
                 <div class="mb-5 mr-md-5">
-                  {eventsByStartDate[date].map((event) => displayEventAsTableRow(event)) }
+                  {eventsByStartDate[date].map((event) => displayEventAsTableRow(event, timeZoneId)) }
                 </div>
                 </tbody>
               </table>
