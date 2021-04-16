@@ -75,7 +75,6 @@ const Events = () => {
   const timeZoneId = useMemo(() => ZoneId.of(timeZone), [timeZone]);
 
   return (
-    <Fragment>
       <div class="bg-light text-dark py-5">
         <div class="container-fluid p-3 pl-md-5 pr-md-0">
           <h1>
@@ -90,7 +89,6 @@ const Events = () => {
           <hr class="px-5 mr-5"/>
         </div>
       </div>
-    </Fragment>
   );
 };
 
