@@ -23,22 +23,24 @@ const DayOfEventContainer = ({ events, startTime, timeZoneId }) => {
   }
 
   return (
-    <div class="day-of-event-container">
-      {Object.keys(eventsByStartDate)
-        .sort()
-        .map((date) => (
-          <Fragment>
-            <h3 class="ml-0">Starting on {date}</h3>
-            <table className="table">
-              <tbody>
-              <div class="mb-5 mr-md-5">
-                {eventsByStartDate[date].map((event) => displayEventAsTableRow(event)) }
-              </div>
-              </tbody>
-            </table>
-          </Fragment>
-        ))}
-    </div>
+    <Fragment>
+      <div class="day-of-event-container">
+        {Object.keys(eventsByStartDate)
+          .sort()
+          .map((date) => (
+            <Fragment>
+              <h3 class="ml-0">Starting on {date}</h3>
+              <table className="table">
+                <tbody>
+                <div class="mb-5 mr-md-5">
+                  {eventsByStartDate[date].map((event) => displayEventAsTableRow(event)) }
+                </div>
+                </tbody>
+              </table>
+            </Fragment>
+          ))}
+      </div>
+    </Fragment>
   );
 };
 
@@ -85,15 +87,13 @@ const Events = () => {
           </p>
 
           {Object.keys(eventsByLocalDay).map((startTime, i) => (
-            <Fragment>
               <DayOfEventContainer
                 timeZoneId={timeZoneId}
                 events={eventsByLocalDay[startTime]}
                 startTime={startTime}
               />
-              <hr class="px-5 mr-5"/>
-            </Fragment>
           ))}
+          <hr class="px-5 mr-5"/>
         </div>
       </div>
     </Fragment>
