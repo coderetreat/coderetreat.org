@@ -1,7 +1,6 @@
 import * as jsjoda from "@js-joda/core";
-import "@js-joda/timezone";
 import { h, Fragment, render } from "preact";
-import { useEffect, useMemo, useState, useRef } from "preact/hooks";
+import { useEffect, useMemo, useState } from "preact/hooks";
 import "regenerator-runtime/runtime";
 import fetchEventsInChronologicalOrder from "./events/fetchEventsInChronologicalOrder";
 import displayEventAsTableRow from "./events/displayEventAsTableRow";
@@ -42,7 +41,6 @@ const Events = () => {
     };
     Run();
   }, []);
-
 
   const eventsByLocalDay = useMemo(
     () =>
