@@ -1,16 +1,11 @@
 import { render, h } from "preact";
-import * as jsjoda from "@js-joda/core";
-import "@js-joda/timezone";
-
-const { convert } = jsjoda;
+import { LocalizedDateTime }  from "./LocalizedDateTime";
 
 export default function displayEventAsTableRow(event, timeZone) {
 
-  const DATE_FORMAT = jsjoda.DateTimeFormatter.ofPattern("u-M-d, HH:mm");
-
   return <tr key={event.id}>
     <th>
-      {event.date.start.withZoneSameInstant(timeZone).format(DATE_FORMAT)}
+      <LocalizedDateTime date={event.date.start} timeZone={timeZone} />
     </th>
     <td>
       <a href={event.url}>{event.title}</a>

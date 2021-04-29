@@ -6,16 +6,17 @@ import "regenerator-runtime/runtime";
 import fetchEventsInChronologicalOrder from "./events/fetchEventsInChronologicalOrder";
 import displayEventAsTableRow from "./events/displayEventAsTableRow";
 import interactiveTimeZoneSelector from "./events/interactiveTimeZoneSelector";
+import { LocalizedDate } from "./events/LocalizedDateTime";
 
 const { ZoneId, ZonedDateTime, ChronoUnit } = jsjoda;
 
-const DATE_FORMAT = jsjoda.DateTimeFormatter.ofPattern("u-M-d");
+const SORT_PATTERN = jsjoda.DateTimeFormatter.ofPattern("u-M-d");
 const DayOfEventContainer = (events, timeZoneId) => {
   const eventsByStartDate = {};
   for (let event of events) {
     const startDate = event.date.start
       .withZoneSameInstant(timeZoneId)
-      .format(DATE_FORMAT);
+      .format(SORT_PATTERN);
     eventsByStartDate[startDate] = [
       ...(eventsByStartDate[startDate] || []),
       event,
@@ -29,7 +30,9 @@ const DayOfEventContainer = (events, timeZoneId) => {
           .sort()
           .map((date) => (
             <Fragment>
-              <h3 class="ml-0">Starting on {date}</h3>
+              <h3 class="ml-0">
+                <LocalizedDate date={eventsByStartDate[date][0].date.start} timeZone={timeZoneId} />
+              </h3>
               <table className="table">
                 <tbody>
                 <div class="mb-5 mr-md-5">
