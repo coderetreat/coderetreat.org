@@ -9,7 +9,7 @@ import interactiveTimeZoneSelector from "./events/interactiveTimeZoneSelector";
 
 const { ZoneId, ZonedDateTime, ChronoUnit } = jsjoda;
 
-const DATE_FORMAT = jsjoda.DateTimeFormatter.ofPattern("u-M-F");
+const DATE_FORMAT = jsjoda.DateTimeFormatter.ofPattern("u-M-d");
 const DayOfEventContainer = (events, timeZoneId) => {
   const eventsByStartDate = {};
   for (let event of events) {
