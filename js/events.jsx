@@ -9,25 +9,6 @@ import { LocalizedDate } from "./events/LocalizedDateTime";
 
 const { ZoneId, ZonedDateTime, ChronoUnit } = jsjoda;
 
-const DayOfEventContainer = (events, timeZoneId) => {
-  return (
-    <Fragment>
-      <div class="day-of-event-container">
-        <h3 class="ml-0">
-          <LocalizedDate date={events[0].date.start} timeZone={timeZoneId} />
-        </h3>
-        <table className="table">
-          <tbody>
-          <div class="mb-5 mr-md-5">
-            {events.map((event) => displayEventAsTableRow(event, timeZoneId)) }
-          </div>
-          </tbody>
-        </table>
-      </div>
-    </Fragment>
-  );
-};
-
 const Events = () => {
   const [timeZone, setTimeZone] = useState(ZoneId.systemDefault().id());
   const timeZoneId = useMemo(() => ZoneId.of(timeZone), [timeZone]);
@@ -72,6 +53,25 @@ const Events = () => {
           <hr class="px-5 mr-5"/>
         </div>
       </div>
+  );
+};
+
+const DayOfEventContainer = (events, timeZoneId) => {
+  return (
+    <Fragment>
+      <div class="day-of-event-container">
+        <h3 class="ml-0">
+          <LocalizedDate date={events[0].date.start} timeZone={timeZoneId} />
+        </h3>
+        <table className="table">
+          <tbody>
+          <div class="mb-5 mr-md-5">
+            {events.map((event) => displayEventAsTableRow(event, timeZoneId)) }
+          </div>
+          </tbody>
+        </table>
+      </div>
+    </Fragment>
   );
 };
 
