@@ -49,6 +49,7 @@ const DayOfEventContainer = (events, timeZoneId) => {
 
 const Events = () => {
   const [timeZone, setTimeZone] = useState(ZoneId.systemDefault().id());
+  const timeZoneId = useMemo(() => ZoneId.of(timeZone), [timeZone]);
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
@@ -59,6 +60,7 @@ const Events = () => {
     };
     Run();
   }, []);
+
 
   const eventsByLocalDay = useMemo(
     () =>
@@ -74,8 +76,6 @@ const Events = () => {
       }, {}),
     [events, timeZone]
   );
-
-  const timeZoneId = useMemo(() => ZoneId.of(timeZone), [timeZone]);
 
   return (
       <div class="bg-light text-dark py-5">
