@@ -10,38 +10,20 @@ import { LocalizedDate } from "./events/LocalizedDateTime";
 
 const { ZoneId, ZonedDateTime, ChronoUnit } = jsjoda;
 
-const SORT_PATTERN = jsjoda.DateTimeFormatter.ofPattern("u-M-d");
 const DayOfEventContainer = (events, timeZoneId) => {
-  const eventsByStartDate = {};
-  for (let event of events) {
-    const startDate = event.date.start
-      .withZoneSameInstant(timeZoneId)
-      .format(SORT_PATTERN);
-    eventsByStartDate[startDate] = [
-      ...(eventsByStartDate[startDate] || []),
-      event,
-    ];
-  }
-
   return (
     <Fragment>
       <div class="day-of-event-container">
-        {Object.keys(eventsByStartDate)
-          .sort()
-          .map((date) => (
-            <Fragment>
-              <h3 class="ml-0">
-                <LocalizedDate date={eventsByStartDate[date][0].date.start} timeZone={timeZoneId} />
-              </h3>
-              <table className="table">
-                <tbody>
-                <div class="mb-5 mr-md-5">
-                  {eventsByStartDate[date].map((event) => displayEventAsTableRow(event, timeZoneId)) }
-                </div>
-                </tbody>
-              </table>
-            </Fragment>
-          ))}
+        <h3 class="ml-0">
+          <LocalizedDate date={events[0].date.start} timeZone={timeZoneId} />
+        </h3>
+        <table className="table">
+          <tbody>
+          <div class="mb-5 mr-md-5">
+            {events.map((event) => displayEventAsTableRow(event, timeZoneId)) }
+          </div>
+          </tbody>
+        </table>
       </div>
     </Fragment>
   );
