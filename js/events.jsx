@@ -63,13 +63,13 @@ const Events = () => {
   const eventsByLocalDay = useMemo(
     () =>
       events.reduce((grouped, event) => {
-        const startTime = event.date.start
+        const startDate = event.date.start
           .withZoneSameInstant(ZoneId.of(timeZone))
           .truncatedTo(ChronoUnit.DAYS)
           .toString();
         return {
           ...grouped,
-          [startTime]: [...(grouped[startTime] || []), event],
+          [startDate]: [...(grouped[startDate] || []), event],
         };
       }, {}),
     [events, timeZone]
@@ -87,8 +87,8 @@ const Events = () => {
             All times shown are in the timezone for{" "}
             {interactiveTimeZoneSelector(timeZone, setTimeZone)}
           </p>
-          {Object.keys(eventsByLocalDay).map((startTime, i) => (
-              DayOfEventContainer(eventsByLocalDay[startTime], timeZoneId)))}
+          {Object.keys(eventsByLocalDay).map((startDate, i) => (
+              DayOfEventContainer(eventsByLocalDay[startDate], timeZoneId)))}
           <hr class="px-5 mr-5"/>
         </div>
       </div>
