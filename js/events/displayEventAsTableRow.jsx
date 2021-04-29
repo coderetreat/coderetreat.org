@@ -6,7 +6,7 @@ const { convert } = jsjoda;
 
 export default function displayEventAsTableRow(event, timeZone) {
 
-  const DATE_FORMAT = jsjoda.DateTimeFormatter.ofPattern("u-M-F, hh:mm");
+  const DATE_FORMAT = jsjoda.DateTimeFormatter.ofPattern("u-M-F, HH:mm");
 
   return <tr key={event.id}>
     <th>
