@@ -1,5 +1,5 @@
 import * as jsjoda from "@js-joda/core";
-import { h, Fragment, render } from "preact";
+import { h, render } from "preact";
 import { useEffect, useMemo, useState } from "preact/hooks";
 import "regenerator-runtime/runtime";
 import fetchEventsInChronologicalOrder from "./events/fetchEventsInChronologicalOrder";
@@ -17,7 +17,6 @@ const Events = () => {
   useEffect(() => {
     const Run = async () => {
       const allEvents = await fetchEventsInChronologicalOrder();
-
       setEvents(allEvents.filter((event) => event.date.end.isAfter(ZonedDateTime.now())));
     };
     Run();
@@ -58,20 +57,18 @@ const Events = () => {
 
 const DayOfEventContainer = (events, timeZoneId) => {
   return (
-    <Fragment>
-      <div class="day-of-event-container">
-        <h3 class="ml-0">
-          <LocalizedDate date={events[0].date.start} timeZone={timeZoneId} />
-        </h3>
-        <table className="table">
-          <tbody>
-          <div class="mb-5 mr-md-5">
-            {events.map((event) => displayEventAsTableRow(event, timeZoneId)) }
-          </div>
-          </tbody>
-        </table>
-      </div>
-    </Fragment>
+    <div class="day-of-event-container">
+      <h3 class="ml-0">
+        <LocalizedDate date={events[0].date.start} timeZone={timeZoneId} />
+      </h3>
+      <table className="table">
+        <tbody>
+        <div class="mb-5 mr-md-5">
+          {events.map((event) => displayEventAsTableRow(event, timeZoneId)) }
+        </div>
+        </tbody>
+      </table>
+    </div>
   );
 };
 
