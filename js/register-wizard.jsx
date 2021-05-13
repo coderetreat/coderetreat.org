@@ -17,6 +17,7 @@ import {
 import { PayloadPresentation } from "./register-wizard/PayloadPresentation";
 import { DownloadButton } from "./register-wizard/DownloadButton";
 import validateEvent from "./register-wizard/validateEvent";
+import siteConfig from "../_config.yml";
 
 const tryParseDateTime = (time, timezone) => {
   if (timezone === "" || time === "") return ["", null];
@@ -65,8 +66,8 @@ const Wizard = () => {
   const [spokenLanguage, setSpokenLanguage] = useInputValue("");
   const [format, setFormat] = useInputValue("classic");
   const [coc, setCoc] = useInputValue("");
-  const [startTime, setStartTime] = useInputValue("2021-11-12T09:00");
-  const [endTime, setEndTime] = useInputValue("2021-11-12T16:00");
+  const [startTime, setStartTime] = useInputValue(`${siteConfig.globalday.start}T09:00`);
+  const [endTime, setEndTime] = useInputValue(`${siteConfig.globalday.start}T16:00`);
 
   const [isVirtual, setIsVirtual] = useCheckbox(false);
   const [city, setCity] = useState("");
@@ -359,7 +360,7 @@ const Wizard = () => {
               "is-invalid": !!fullStartTimeError,
             })}
             id="inputStartTime"
-            placeholder="2021-11-12T09:00"
+            placeholder={ `${siteConfig.globalday.start}T09:00` }
             value={startTime}
             onBlur={setStartTime}
           />
@@ -375,7 +376,7 @@ const Wizard = () => {
               "is-invalid": !!fullEndTimeError,
             })}
             id="inputEndTime"
-            placeholder="2021-11-12T16:00"
+            placeholder={ `${siteConfig.globalday.start}T16:00` }
             value={endTime}
             onBlur={setEndTime}
           />
