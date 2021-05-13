@@ -80,7 +80,7 @@ audience: participants
       <div class="card-body">
         <h5 class="card-title">Global Day of Coderetreat</h5>
         <p class="card-text">
-          Join thousands of developers on Nov 12th-Nov 13th in the largest free
+          Join thousands of developers on {{ site.globalday.start | date:"%b %d" }}-{{ site.globalday.end | date:"%b %d, %Y" }} in the largest free
           community workshop worldwide.
         </p>
         <a href="{% link events/index.html %}" class="btn btn-primary">Find an event in your area</a>
