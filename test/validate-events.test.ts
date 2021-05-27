@@ -1,7 +1,9 @@
+import Ajv from "ajv";
+import addFormats from "ajv-formats";
+import { readFileSync } from "fs";
 import { sync as glob } from "glob";
-import { resolve, basename, dirname } from "path";
-import { readFileSync, readdirSync, statSync, Dirent } from "fs";
-import * as Ajv from "ajv";
+import { basename, dirname } from "path";
+
 
 describe("Events", () => {
   test("jest doesn't complain if there's no test defined here yet", () => {});
@@ -9,6 +11,7 @@ describe("Events", () => {
     describe("Events in " + basename(dirname(schemaFile)), () => {
       const events = glob(dirname(schemaFile) + "/*.json");
       const ajv = new Ajv();
+      addFormats(ajv);
       const validate = ajv.compile(
         JSON.parse(readFileSync(schemaFile).toString())
       );
