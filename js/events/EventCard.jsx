@@ -1,6 +1,6 @@
 import { Fragment, render, h } from "preact";
 import classNames from "classnames";
-import { LocalizedDateTime }  from "./LocalizedDateTime";
+import { LocalizedDate, LocalizedDateTime } from "./LocalizedDateTime";
 
 const Format = ({ format }) => (
   <span
@@ -8,7 +8,11 @@ const Format = ({ format }) => (
       textDecorationLine: "underline",
       textDecorationStyle: "dashed",
     }}
-    title={format === "classic" ? "Two people work on the same codebase" : "The whole group works on the same codebase"}
+    title={
+      format === "classic"
+        ? "Two people work on the same codebase"
+        : "The whole group works on the same codebase"
+    }
   >
     {format === "classic" ? "Pair-Programming" : "Ensemble"}
   </span>
@@ -50,7 +54,10 @@ const Sponsors = ({ sponsors }) => (
 
 export default ({ event, usersTimezone }) => (
   <div style={{ display: "inline-block" }}>
-    <div class="card m-md-3 my-3 event-card" style={{ width: "20rem", whiteSpace: "normal" }}>
+    <div
+      class="card m-md-3 my-3 event-card"
+      style={{ width: "20rem", whiteSpace: "normal" }}
+    >
       <div
         class={classNames([
           "py-1",
@@ -66,26 +73,19 @@ export default ({ event, usersTimezone }) => (
           : event.location.city + ", " + event.location.country}
       </div>
       <div class="card-body">
+        <h5 class="card-title">
+          <LocalizedDate date={event.date.start} timeZone={usersTimezone} />
+        </h5>
         <h5 class="card-title">{event.title}</h5>
-        <p class="card-text">
-          <div class="read-more">
-            <p class="collapse" id={`collapse-event-${event.id}`}>
-              {event.description}
-            </p>
-            <a
-              class="collapsed"
-              data-toggle="collapse"
-              href={`#collapse-event-${event.id}`}
-              aria-expanded="false"
-              aria-controls={`collapse-event-${event.id}`}
-            ></a>
-          </div>
-        </p>
+        <p class="card-text">{event.description}</p>
       </div>
       <ul class="list-group list-group-flush">
         <li class="list-group-item">
-          <b>Start: </b><LocalizedDateTime date={event.date.start} timeZone={usersTimezone} /><br/>
-            <b>End: </b><LocalizedDateTime date={event.date.end} timeZone={usersTimezone} />
+          <b>Start: </b>
+          <LocalizedDateTime date={event.date.start} timeZone={usersTimezone} />
+          <br />
+          <b>End: </b>
+          <LocalizedDateTime date={event.date.end} timeZone={usersTimezone} />
         </li>
         <li class="list-group-item py-1">
           <b>Event format: </b>

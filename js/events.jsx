@@ -6,6 +6,7 @@ import fetchEventsInChronologicalOrder from "./events/fetchEventsInChronological
 import displayEventAsTableRow from "./events/displayEventAsTableRow";
 import interactiveTimeZoneSelector from "./events/interactiveTimeZoneSelector";
 import { LocalizedDate } from "./events/LocalizedDateTime";
+import EventCard from "./events/EventCard";
 
 const { ZoneId, ZonedDateTime, ChronoUnit } = jsjoda;
 
@@ -17,59 +18,31 @@ const Events = () => {
   useEffect(() => {
     const Run = async () => {
       const allEvents = await fetchEventsInChronologicalOrder();
-      setEvents(allEvents.filter((event) => event.date.end.isAfter(ZonedDateTime.now())));
+      setEvents(
+        allEvents.filter((event) => event.date.end.isAfter(ZonedDateTime.now()))
+      );
     };
     Run();
   }, []);
 
-  const eventsByLocalDay = useMemo(
-    () =>
-      events.reduce((grouped, event) => {
-        const startDate = event.date.start
-          .withZoneSameInstant(ZoneId.of(timeZone))
-          .truncatedTo(ChronoUnit.DAYS)
-          .toString();
-        return {
-          ...grouped,
-          [startDate]: [...(grouped[startDate] || []), event],
-        };
-      }, {}),
-    [events, timeZone]
-  );
-
   return (
-      <div class="bg-light text-dark py-5">
-        <div class="container-fluid p-3 pl-md-5 pr-md-0">
-          <h1>
-            <b>📅 Upcoming Coderetreat events</b>
-          </h1>
-          <p class="lead">
-            All times shown are in the timezone for{" "}
-            {interactiveTimeZoneSelector(timeZone, setTimeZone)}
-          </p>
-          {Object.keys(eventsByLocalDay).map((startDate, i) => (
-              DayOfEventContainer(eventsByLocalDay[startDate], timeZoneId)))}
-          <hr class="px-5 mr-5"/>
-        </div>
-      </div>
-  );
-};
-
-const DayOfEventContainer = (events, timeZoneId) => {
-  return (
-    <div class="day-of-event-container">
-      <h3 class="ml-0">
-        <LocalizedDate date={events[0].date.start} timeZone={timeZoneId} />
-      </h3>
-      <table className="table">
-        <tbody>
-        <div class="mb-5 mr-md-5">
-          {events.map((event) => displayEventAsTableRow(event, timeZoneId)) }
-        </div>
-        </tbody>
-      </table>
+    <div class="container">
+      <h1 class="display-1 my-5">Next Events</h1>
+      <p class="lead">
+        Coderetreats happen all over the world and throughout the whole year!
+        Find an event and join your first coderetreat!
+      </p>
+      <p>
+        All times shown are in the timezone for{" "}
+        {interactiveTimeZoneSelector(timeZone, setTimeZone)}
+      </p>
+      {events.map((event) => (
+        <EventCard event={event} usersTimezone={timeZoneId} />
+      ))}
+      <hr class="px-5 mr-5" />
     </div>
   );
 };
+
 
 render(<Events />, document.querySelector("#events"));
