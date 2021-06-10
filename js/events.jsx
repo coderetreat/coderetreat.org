@@ -26,23 +26,28 @@ const Events = () => {
   }, []);
 
   return (
-    <div class="container">
-      <h1 class="display-1 my-5">Next Events</h1>
-      <p class="lead">
-        Coderetreats happen all over the world and throughout the whole year!
-        Find an event and join your first coderetreat!
-      </p>
-      <p>
-        All times shown are in the timezone for{" "}
-        {interactiveTimeZoneSelector(timeZone, setTimeZone)}
-      </p>
-      {events.map((event) => (
-        <EventCard event={event} usersTimezone={timeZoneId} />
-      ))}
-      <hr class="px-5 mr-5" />
+    <div>
+      <div class="container">
+        <h1 class="display-1 my-5">Next Events</h1>
+        <p class="lead">
+          Coderetreats happen all over the world and throughout the whole year!
+          Find an event and join your first coderetreat!
+        </p>
+        <p>
+          All times shown are in the timezone for{" "}
+          {interactiveTimeZoneSelector(timeZone, setTimeZone)}
+        </p>
+        <div style={{minHeight: "max(60vh, 500px)"}}>
+        {events.map((event) => (
+          <EventCard event={event} usersTimezone={timeZoneId} />
+        ))}
+        </div>
+        <p>
+          <button class="btn btn-primary">Show 5 events on other dates</button>
+        </p>
+      </div>
     </div>
   );
 };
-
 
 render(<Events />, document.querySelector("#events"));
