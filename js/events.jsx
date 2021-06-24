@@ -42,9 +42,6 @@ const Events = () => {
           <EventCard event={event} usersTimezone={timeZoneId} />
         ))}
         </div>
-        <p>
-          <button class="btn btn-primary">Show 5 events on other dates</button>
-        </p>
       </div>
     </div>
   );
