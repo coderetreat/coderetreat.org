@@ -1,5 +1,5 @@
 import * as jsjoda from "@js-joda/core";
-import { h, render } from "preact";
+import { h, render, Fragment } from "preact";
 import { useEffect, useMemo, useState } from "preact/hooks";
 import "regenerator-runtime/runtime";
 import fetchEventsInChronologicalOrder from "./events/fetchEventsInChronologicalOrder";
@@ -14,6 +14,7 @@ const { ZoneId, ZonedDateTime, LocalDate, ChronoUnit } = jsjoda;
 const DATETIME_FORMAT = jsjoda.DateTimeFormatter.ofPattern("u-M-d, HH:mm");
 const earliestGDCRStart = LocalDate.parse(jekyllConfig.globalday.start).atStartOfDayWithZone(ZoneId.of("UTC+12"));
 const latestGDCREnd = LocalDate.parse(jekyllConfig.globalday.end).atStartOfDayWithZone(ZoneId.of("UTC-12")).plusDays(1);
+const isCurrentDateAfterGDCR = ZonedDateTime.now().isAfter(latestGDCREnd);
 
 const Events = () => {
   const [timeZone, setTimeZone] = useState(ZoneId.systemDefault().id());
@@ -47,6 +48,14 @@ const Events = () => {
           All times shown are in the timezone for{" "}
           {interactiveTimeZoneSelector(timeZone, setTimeZone)}
         </p>
+        {isCurrentDateAfterGDCR?<Fragment>
+          <h3>Upcoming Events</h3>
+          <div className="container-fluid p-1">
+            {eventsAfterGDCR.map((event) => (
+              <EventCard event={event} usersTimezone={timeZoneId}/>
+            ))}
+          </div>
+        </Fragment>:<Fragment>
         <hr/>
         <h3>Events before Global Day of Coderetreat</h3>
         <div class="container-fluid p-1">
@@ -68,6 +77,7 @@ const Events = () => {
           <EventCard event={event} usersTimezone={timeZoneId} />
         ))}
         </div>
+        </Fragment>}
       </div>
     </div>
   );
