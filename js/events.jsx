@@ -37,7 +37,7 @@ const Events = () => {
           All times shown are in the timezone for{" "}
           {interactiveTimeZoneSelector(timeZone, setTimeZone)}
         </p>
-        <div style={{minHeight: "max(60vh, 500px)"}}>
+        <div class="container-fluid p-1" style={{minHeight: "max(60vh, 500px)"}}>
         {events.map((event) => (
           <EventCard event={event} usersTimezone={timeZoneId} />
         ))}

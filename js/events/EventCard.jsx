@@ -64,14 +64,10 @@ export default ({ event, usersTimezone }) => {
   const [isCollapsed, setCollapsed] = useState(true);
 
   return (
-    <div
-      style={{
-        display: "inline-block",
-      }}
-    >
+    <div className="d-inline-block col-12 col-lg-4 col-md-6 p-0 p-lg-2 p-md-1" >
       <div
-        class="card m-md-3 my-3 event-card"
-        style={{ width: "20rem", minHeight: "10em", whiteSpace: "normal" }}
+        class="card my-3 event-card"
+        style={{ minHeight: "1em", whiteSpace: "normal" }}
         onClick={(e) => setCollapsed(!isCollapsed)}
       >
         <div
