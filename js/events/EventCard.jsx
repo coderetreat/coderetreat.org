@@ -84,7 +84,7 @@ export default ({ event, usersTimezone }) => {
           style={{display: "flex", cursor: "pointer", justifyContent: "space-between"}}
         >
           <div>
-            <LocalizedDate date={event.date.start} timeZone={usersTimezone} />
+            <LocalizedDateTime date={event.date.start} timeZone={usersTimezone} />
           </div>
           <div>
             {event.location === "virtual"
