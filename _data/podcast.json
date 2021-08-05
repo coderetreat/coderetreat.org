@@ -19,7 +19,7 @@
         },
         "channel": {
             "lastBuildDate": {
-                "_text": "Tue, 08 Jun 2021 21:16:30 +0000"
+                "_text": "Mon, 26 Jul 2021 21:07:47 +0000"
             },
             "category": [
                 {
@@ -59,19 +59,22 @@
                     "_text": "learnings"
                 },
                 {
+                    "_text": "retrospective"
+                },
+                {
                     "_text": "assignment"
                 },
                 {
                     "_text": "ensemble-programming"
                 },
                 {
+                    "_text": "introduction"
+                },
+                {
                     "_text": "mob-programming"
                 },
                 {
                     "_text": "registration"
-                },
-                {
-                    "_text": "retrospective"
                 },
                 {
                     "_text": "video"
@@ -132,7 +135,7 @@
                 "_text": "code-cop.org"
             },
             "openSearch:totalResults": {
-                "_text": "32"
+                "_text": "34"
             },
             "openSearch:startIndex": {
                 "_text": "1"
@@ -252,6 +255,198 @@
                 "_text": "no"
             },
             "item": [
+                {
+                    "guid": {
+                        "_attributes": {
+                            "isPermaLink": "false"
+                        },
+                        "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-9214378898034053053"
+                    },
+                    "pubDate": {
+                        "_text": "Wed, 07 Jul 2021 13:18:00 +0000"
+                    },
+                    "category": [
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "facilitation"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "overview"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "pair-programming"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "participants"
+                        }
+                    ],
+                    "title": {
+                        "_text": "32: First time facilitation and helping participants"
+                    },
+                    "description": {
+                        "_text": "In this episode I will answer five quick questions: <ul><li>What kind of people will be at the Coderetreat?</li><li>How to prepare for first time facilitation?</li><li>How much should we help people during the session?</li><li>How to deal with a pair of juniors who do not get anywhere?</li><li>What's more important, participants changing partners or freedom?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/32---First-time-facilitation-and-helping-participants.mp3\">MP3 (9 minutes - 14 Mb)</a> or subscribe to the <a href=\"https://www.code-cop.org/podcast/rss_feed.php\">Feed</a>.</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small> "
+                    },
+                    "link": {
+                        "_text": "https://coderetreat-facilitation.code-cop.org/2021/07/first-time-facilitation-and-helping.html"
+                    },
+                    "author": {
+                        "_text": "Peter Kofler"
+                    },
+                    "thr:total": {
+                        "_text": "0"
+                    },
+                    "enclosure": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/32---First-time-facilitation-and-helping-participants.mp3",
+                            "length": "14433837",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "media:content": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/32---First-time-facilitation-and-helping-participants.mp3",
+                            "length": "14433837",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "itunes:title": {
+                        "_text": "First time facilitation and helping participants"
+                    },
+                    "itunes:season": {
+                        "_text": "1"
+                    },
+                    "itunes:episode": {
+                        "_text": "32"
+                    },
+                    "itunes:subtitle": {
+                        "_text": "In this episode I will answer five quick questions: What kind of people will be at the Coderetreat? How to prepare for first time facilitation? How much should we help people during the session? How to deal with a pair of juniors who do not get ..."
+                    },
+                    "itunes:summary": {
+                        "_text": "In this episode I will answer five quick questions: \n* What kind of people will be at the Coderetreat? \n* How to prepare for first time facilitation? \n* How much should we help people during the session? \n* How to deal with a pair of juniors who do not get anywhere? \n* What's more important, participants changing partners or freedom? \n\nDownload the MP3 (9 minutes - 14 Mb) or subscribe to the Feed. \n(Music from Synth Loop 1 by allpurposedw and Gong 001 by tec_studio.)"
+                    },
+                    "itunes:author": {
+                        "_text": "Peter Kofler"
+                    },
+                    "itunes:duration": {
+                        "_text": "00:09:00"
+                    },
+                    "itunes:keywords": {
+                        "_text": "facilitation, overview, pair-programming, participants"
+                    },
+                    "itunes:episodeType": {
+                        "_text": "full"
+                    },
+                    "itunes:explicit": {
+                        "_text": "no"
+                    }
+                },
+                {
+                    "guid": {
+                        "_attributes": {
+                            "isPermaLink": "false"
+                        },
+                        "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-3172734987108379894"
+                    },
+                    "pubDate": {
+                        "_text": "Fri, 18 Jun 2021 07:49:00 +0000"
+                    },
+                    "category": [
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "facilitation"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "guest"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "introduction"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "retrospective"
+                        }
+                    ],
+                    "title": {
+                        "_text": "31: Helping attendees into the day and then winding down and reflect"
+                    },
+                    "description": {
+                        "_text": "In this episode I am discussing with <a href=\"https://www.linkedin.com/in/am-cornelis/\">Amélie Cornélis</a> about: <ul><li>How to help attendees get into the day - at the beginning of the event?</li><li>How to help attendees wind down and reflect?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/31---Helping-attendees-into-the-day-and-then-winding-down-and-reflect.mp3\">MP3 (9 minutes - 7 Mb)</a> or subscribe to the <a href=\"https://www.code-cop.org/podcast/rss_feed.php\">Feed</a>.</p><p>Amélie, thank you for the discussion. You can chat with Amélie at <a href=\"https://twitter.com/AmelieCornelis\">@AmelieCornelis</a>.</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                    },
+                    "link": {
+                        "_text": "https://coderetreat-facilitation.code-cop.org/2021/06/helping-attendees-into-day-and-then.html"
+                    },
+                    "author": {
+                        "_text": "Peter Kofler"
+                    },
+                    "thr:total": {
+                        "_text": "0"
+                    },
+                    "enclosure": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/31---Helping-attendees-into-the-day-and-then-winding-down-and-reflect.mp3",
+                            "length": "7166679",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "media:content": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/31---Helping-attendees-into-the-day-and-then-winding-down-and-reflect.mp3",
+                            "length": "7166679",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "itunes:title": {
+                        "_text": "Helping attendees into the day and then winding down and reflect"
+                    },
+                    "itunes:season": {
+                        "_text": "1"
+                    },
+                    "itunes:episode": {
+                        "_text": "31"
+                    },
+                    "itunes:subtitle": {
+                        "_text": "In this episode I am discussing with Amélie Cornélis about: How to help attendees get into the day - at the beginning of the event? How to help attendees wind down and reflect?"
+                    },
+                    "itunes:summary": {
+                        "_text": "In this episode I am discussing with Amélie Cornélis about: \n* How to help attendees get into the day - at the beginning of the event? \n* How to help attendees wind down and reflect? \n\nDownload the MP3 (9 minutes - 7 Mb) or subscribe to the Feed. \n\nAmélie, thank you for the discussion. You can chat with Amélie at @AmelieCornelis. \n(Music from Synth Loop 1 by allpurposedw and Gong 001 by tec_studio.)"
+                    },
+                    "itunes:author": {
+                        "_text": "Peter Kofler"
+                    },
+                    "itunes:duration": {
+                        "_text": "00:09:00"
+                    },
+                    "itunes:keywords": {
+                        "_text": "facilitation, guest, introduction, retrospective"
+                    },
+                    "itunes:episodeType": {
+                        "_text": "full"
+                    },
+                    "itunes:explicit": {
+                        "_text": "no"
+                    }
+                },
                 {
                     "guid": {
                         "_attributes": {
@@ -1520,6 +1715,12 @@
                             "_attributes": {
                                 "domain": "http://www.blogger.com/atom/ns#"
                             },
+                            "_text": "introduction"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
                             "_text": "overview"
                         },
                         {
@@ -1580,7 +1781,7 @@
                         "_text": "00:10:00"
                     },
                     "itunes:keywords": {
-                        "_text": "coding, facilitation, Game of Life, guest, overview, video"
+                        "_text": "coding, facilitation, Game of Life, guest, introduction, overview, video"
                     },
                     "itunes:episodeType": {
                         "_text": "full"
@@ -1802,6 +2003,12 @@
                             "_attributes": {
                                 "domain": "http://www.blogger.com/atom/ns#"
                             },
+                            "_text": "introduction"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
                             "_text": "pair-programming"
                         },
                         {
@@ -1862,7 +2069,7 @@
                         "_text": "00:08:00"
                     },
                     "itunes:keywords": {
-                        "_text": "facilitation, hosting, pair-programming, top3"
+                        "_text": "facilitation, hosting, introduction, pair-programming, top3"
                     },
                     "itunes:episodeType": {
                         "_text": "full"
@@ -2439,204 +2646,6 @@
                     },
                     "itunes:keywords": {
                         "_text": "assignment, constraints, guest"
-                    },
-                    "itunes:episodeType": {
-                        "_text": "full"
-                    },
-                    "itunes:explicit": {
-                        "_text": "no"
-                    }
-                },
-                {
-                    "guid": {
-                        "_attributes": {
-                            "isPermaLink": "false"
-                        },
-                        "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-5839554246386478285"
-                    },
-                    "pubDate": {
-                        "_text": "Sun, 16 Feb 2020 16:11:00 +0000"
-                    },
-                    "category": [
-                        {
-                            "_attributes": {
-                                "domain": "http://www.blogger.com/atom/ns#"
-                            },
-                            "_text": "facilitation"
-                        },
-                        {
-                            "_attributes": {
-                                "domain": "http://www.blogger.com/atom/ns#"
-                            },
-                            "_text": "Game of Life"
-                        },
-                        {
-                            "_attributes": {
-                                "domain": "http://www.blogger.com/atom/ns#"
-                            },
-                            "_text": "overview"
-                        },
-                        {
-                            "_attributes": {
-                                "domain": "http://www.blogger.com/atom/ns#"
-                            },
-                            "_text": "pair-facilitation"
-                        },
-                        {
-                            "_attributes": {
-                                "domain": "http://www.blogger.com/atom/ns#"
-                            },
-                            "_text": "pair-programming"
-                        }
-                    ],
-                    "title": {
-                        "_text": "08: Why pair program, finish the Game of Life and how many facilitators do we need"
-                    },
-                    "description": {
-                        "_text": "In this episode: <ul><li>Why do we pair program the whole Coderetreat?</li><li>Is it possible to finish the Game of Life assignment in a single session?</li><li>How many facilitators do we need and when do we need more than one?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/08---Why-pair-program,-finish-the-Game-of-Life-and-how-many-facilitators-do-we-need.mp3\">MP3 (8 minutes - 12 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
-                    },
-                    "link": {
-                        "_text": "https://coderetreat-facilitation.code-cop.org/2020/02/why-pair-program-finish-game-of-life.html"
-                    },
-                    "author": {
-                        "_text": "Peter Kofler"
-                    },
-                    "thr:total": {
-                        "_text": "0"
-                    },
-                    "enclosure": {
-                        "_attributes": {
-                            "url": "https://www.code-cop.org/podcast/08---Why-pair-program,-finish-the-Game-of-Life-and-how-many-facilitators-do-we-need.mp3",
-                            "length": "12615477",
-                            "type": "audio/mpeg"
-                        }
-                    },
-                    "media:content": {
-                        "_attributes": {
-                            "url": "https://www.code-cop.org/podcast/08---Why-pair-program,-finish-the-Game-of-Life-and-how-many-facilitators-do-we-need.mp3",
-                            "length": "12615477",
-                            "type": "audio/mpeg"
-                        }
-                    },
-                    "itunes:title": {
-                        "_text": "Why pair program, finish the Game of Life and how many facilitators do we need"
-                    },
-                    "itunes:season": {
-                        "_text": "1"
-                    },
-                    "itunes:episode": {
-                        "_text": "08"
-                    },
-                    "itunes:subtitle": {
-                        "_text": "In this episode: Why do we pair program the whole Coderetreat? Is it possible to finish the Game of Life assignment in a single session? How many facilitators do we need and when do we need more than one?"
-                    },
-                    "itunes:summary": {
-                        "_text": "In this episode: \n* Why do we pair program the whole Coderetreat? \n* Is it possible to finish the Game of Life assignment in a single session? \n* How many facilitators do we need and when do we need more than one? \n\nDownload the MP3 (8 minutes - 12 Mb) or subscribe to the Feed. \n(Music from Synth Loop 1 by allpurposedw and Gong 001 by tec_studio.)"
-                    },
-                    "itunes:author": {
-                        "_text": "Peter Kofler"
-                    },
-                    "itunes:duration": {
-                        "_text": "00:08:00"
-                    },
-                    "itunes:keywords": {
-                        "_text": "facilitation, Game of Life, overview, pair-facilitation, pair-programming"
-                    },
-                    "itunes:episodeType": {
-                        "_text": "full"
-                    },
-                    "itunes:explicit": {
-                        "_text": "no"
-                    }
-                },
-                {
-                    "guid": {
-                        "_attributes": {
-                            "isPermaLink": "false"
-                        },
-                        "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-9151114534139066088"
-                    },
-                    "pubDate": {
-                        "_text": "Mon, 03 Feb 2020 07:10:00 +0000"
-                    },
-                    "category": [
-                        {
-                            "_attributes": {
-                                "domain": "http://www.blogger.com/atom/ns#"
-                            },
-                            "_text": "coding"
-                        },
-                        {
-                            "_attributes": {
-                                "domain": "http://www.blogger.com/atom/ns#"
-                            },
-                            "_text": "overview"
-                        },
-                        {
-                            "_attributes": {
-                                "domain": "http://www.blogger.com/atom/ns#"
-                            },
-                            "_text": "pair-programming"
-                        },
-                        {
-                            "_attributes": {
-                                "domain": "http://www.blogger.com/atom/ns#"
-                            },
-                            "_text": "questions"
-                        }
-                    ],
-                    "title": {
-                        "_text": "07: Deleting the code, questions that people ask and single participant staying alone"
-                    },
-                    "description": {
-                        "_text": "In this episode I answer these questions: <ul><li>Why do we delete the code after each session?</li><li>How many questions do people ask?</li><li>What about a single participant staying alone?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/07---Deleting-the-code,-questions-that-people-ask-and-single-participant-staying-alone.mp3\">MP3 (9 minutes - 14 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
-                    },
-                    "link": {
-                        "_text": "https://coderetreat-facilitation.code-cop.org/2020/02/deleting-code-questions-that-people-ask.html"
-                    },
-                    "author": {
-                        "_text": "Peter Kofler"
-                    },
-                    "thr:total": {
-                        "_text": "0"
-                    },
-                    "enclosure": {
-                        "_attributes": {
-                            "url": "https://www.code-cop.org/podcast/07---Deleting-the-code,-questions-that-people-ask-and-single-participant-staying-alone.mp3",
-                            "length": "14474327",
-                            "type": "audio/mpeg"
-                        }
-                    },
-                    "media:content": {
-                        "_attributes": {
-                            "url": "https://www.code-cop.org/podcast/07---Deleting-the-code,-questions-that-people-ask-and-single-participant-staying-alone.mp3",
-                            "length": "14474327",
-                            "type": "audio/mpeg"
-                        }
-                    },
-                    "itunes:title": {
-                        "_text": "Deleting the code, questions that people ask and single participant staying alone"
-                    },
-                    "itunes:season": {
-                        "_text": "1"
-                    },
-                    "itunes:episode": {
-                        "_text": "07"
-                    },
-                    "itunes:subtitle": {
-                        "_text": "In this episode I answer these questions: Why do we delete the code after each session? How many questions do people ask? What about a single participant staying alone?"
-                    },
-                    "itunes:summary": {
-                        "_text": "In this episode I answer these questions: \n* Why do we delete the code after each session? \n* How many questions do people ask? \n* What about a single participant staying alone? \n\nDownload the MP3 (9 minutes - 14 Mb) or subscribe to the Feed. \n(Music from Synth Loop 1 by allpurposedw and Gong 001 by tec_studio.)"
-                    },
-                    "itunes:author": {
-                        "_text": "Peter Kofler"
-                    },
-                    "itunes:duration": {
-                        "_text": "00:09:00"
-                    },
-                    "itunes:keywords": {
-                        "_text": "coding, overview, pair-programming, questions"
                     },
                     "itunes:episodeType": {
                         "_text": "full"
