@@ -21,9 +21,8 @@
       "type": "string"
     },
     "format": {
-      "description": "Whether your event will specifically use pair-programming or ensemble/mob-programming. Optional",
-      "type": "string",
-      "enum": ["classic", "ensemble"]
+      "description": "Whether your event will specifically use pair-programming or ensemble/mob-programming. Optional, can be any string",
+      "type": "string"
     },
     "code_of_conduct": {
       "description": "A link to your code of conduct (if your CoC is on your sign up page, just repeat that URL here",

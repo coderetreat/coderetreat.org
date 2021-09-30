@@ -3,21 +3,34 @@ import { useState } from "preact/hooks";
 import classNames from "classnames";
 import { LocalizedDate, LocalizedDateTime } from "./LocalizedDateTime";
 
-const Format = ({ format }) => (
-  <span
-    style={{
-      textDecorationLine: "underline",
-      textDecorationStyle: "dashed",
-    }}
-    title={
-      format === "classic"
-        ? "Two people work on the same codebase"
-        : "The whole group works on the same codebase"
-    }
-  >
-    {format === "classic" ? "Pair-Programming" : "Ensemble"}
-  </span>
-);
+const Format = ({ format }) => {
+  let title = "";
+  let description = "";
+  switch (format) {
+    case "classic":
+      title = "Pair-Programming";
+      description = "Two people work on the same codebase together";
+      break;
+    case "ensemble":
+      title = "Ensemble";
+      description = "The whole group works on the same codebase";
+      break;
+    default:
+      title = format;
+      description = format;
+  }
+  return (
+    <span
+      style={{
+        textDecorationLine: "underline",
+        textDecorationStyle: "dashed",
+      }}
+      title={description}
+    >
+      {title}
+    </span>
+  );
+};
 
 const Moderators = ({ moderators }) => (
   <Fragment>
@@ -64,7 +77,7 @@ export default ({ event, usersTimezone }) => {
   const [isCollapsed, setCollapsed] = useState(true);
 
   return (
-    <div className="d-inline-block col-12 col-lg-4 col-md-6 p-0 p-lg-2 p-md-1" >
+    <div className="d-inline-block col-12 col-lg-4 col-md-6 p-0 p-lg-2 p-md-1">
       <div
         class="card my-3 event-card"
         style={{ minHeight: "1em", whiteSpace: "normal" }}
@@ -81,16 +94,27 @@ export default ({ event, usersTimezone }) => {
               ? "bg-virtual-event"
               : "bg-onsite-event",
           ])}
-          style={{display: "flex", cursor: "pointer", justifyContent: "space-between"}}
+          style={{
+            display: "flex",
+            cursor: "pointer",
+            justifyContent: "space-between",
+          }}
         >
           <div>
-            <LocalizedDateTime date={event.date.start} timeZone={usersTimezone} />
+            <LocalizedDateTime
+              date={event.date.start}
+              timeZone={usersTimezone}
+            />
           </div>
           <div>
             {event.location === "virtual"
               ? "VIRTUAL"
               : event.location.city + ", " + event.location.country}{" "}
-              {isCollapsed ? <i class="fas fa-caret-down"></i> : <i class="fas fa-caret-up"></i>}
+            {isCollapsed ? (
+              <i class="fas fa-caret-down"></i>
+            ) : (
+              <i class="fas fa-caret-up"></i>
+            )}
           </div>
         </div>
         <div class="card-body m-0">
