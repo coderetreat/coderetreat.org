@@ -34,12 +34,14 @@ const Events = () => {
         event.date.end.isAfter(ZonedDateTime.now())
       );
       const eventsBeforeGDCR = upcomingEvents.filter((event) =>
-        event.date.start.isBefore(earliestGDCRStart)
+        event.date.end.isBefore(earliestGDCRStart)
       );
       const eventsDuringGDCR = upcomingEvents.filter(
         (event) =>
-          event.date.start.isAfter(earliestGDCRStart) &&
-          event.date.start.isBefore(latestGDCREnd)
+          (event.date.end.isEqual(earliestGDCRStart) ||
+            event.date.end.isAfter(earliestGDCRStart)) &&
+          (event.date.start.isEqual(latestGDCREnd) ||
+            event.date.start.isBefore(latestGDCREnd))
       );
       const eventsAfterGDCR = upcomingEvents.filter((event) =>
         event.date.start.isAfter(latestGDCREnd)
