@@ -19,7 +19,7 @@
         },
         "channel": {
             "lastBuildDate": {
-                "_text": "Mon, 26 Jul 2021 21:07:47 +0000"
+                "_text": "Wed, 29 Sep 2021 20:27:27 +0000"
             },
             "category": [
                 {
@@ -44,10 +44,16 @@
                     "_text": "Game of Life"
                 },
                 {
+                    "_text": "learnings"
+                },
+                {
                     "_text": "pair-facilitation"
                 },
                 {
                     "_text": "top3"
+                },
+                {
+                    "_text": "assignment"
                 },
                 {
                     "_text": "coding"
@@ -56,13 +62,10 @@
                     "_text": "hosting"
                 },
                 {
-                    "_text": "learnings"
-                },
-                {
                     "_text": "retrospective"
                 },
                 {
-                    "_text": "assignment"
+                    "_text": "advanced"
                 },
                 {
                     "_text": "ensemble-programming"
@@ -81,9 +84,6 @@
                 },
                 {
                     "_text": "MobRetreat"
-                },
-                {
-                    "_text": "advanced"
                 },
                 {
                     "_text": "coding-setup"
@@ -135,7 +135,7 @@
                 "_text": "code-cop.org"
             },
             "openSearch:totalResults": {
-                "_text": "34"
+                "_text": "36"
             },
             "openSearch:startIndex": {
                 "_text": "1"
@@ -255,6 +255,186 @@
                 "_text": "no"
             },
             "item": [
+                {
+                    "guid": {
+                        "_attributes": {
+                            "isPermaLink": "false"
+                        },
+                        "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-1234965526837426029"
+                    },
+                    "pubDate": {
+                        "_text": "Wed, 29 Sep 2021 12:30:00 +0000"
+                    },
+                    "category": [
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "assignment"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "facilitation"
+                        }
+                    ],
+                    "title": {
+                        "_text": "34: Skills needed for facilitation and alternatives to Game of Life"
+                    },
+                    "description": {
+                        "_text": "In this episode: <ul><li>Which skills does a facilitator need?</li><li>Alternative code katas to the Game of Life?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/34---Skills-needed-for-facilitation-and-alternatives-to-Game-of-Life.mp3\">MP3 (9 minutes - 13 Mb)</a> or subscribe to the <a href=\"https://www.code-cop.org/podcast/rss_feed.php\">Feed</a>.</p>Mentioned in this episode: <ul><li><a href=\"http://www.uxebu.com/index.html%3Fp=4153.html\">JS CodeRetreat: facilitator's skills</a></li><li><a href=\"https://kata-log.rocks/mars-rover-kata\">Mars Rover Kata</a></li><li><a href=\"https://github.com/emilybache/Theater-Kata\">Kata Theater</a></li></ul><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                    },
+                    "link": {
+                        "_text": "https://coderetreat-facilitation.code-cop.org/2021/09/skills-needed-for-facilitation-and.html"
+                    },
+                    "author": {
+                        "_text": "Peter Kofler"
+                    },
+                    "thr:total": {
+                        "_text": "0"
+                    },
+                    "enclosure": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/34---Skills-needed-for-facilitation-and-alternatives-to-Game-of-Life.mp3",
+                            "length": "13599558",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "media:content": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/34---Skills-needed-for-facilitation-and-alternatives-to-Game-of-Life.mp3",
+                            "length": "13599558",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "itunes:title": {
+                        "_text": "Skills needed for facilitation and alternatives to Game of Life"
+                    },
+                    "itunes:season": {
+                        "_text": "1"
+                    },
+                    "itunes:episode": {
+                        "_text": "34"
+                    },
+                    "itunes:subtitle": {
+                        "_text": "In this episode: Which skills does a facilitator need? Alternative code katas to the Game of Life?"
+                    },
+                    "itunes:summary": {
+                        "_text": "In this episode: \n* Which skills does a facilitator need? \n* Alternative code katas to the Game of Life? \n\nDownload the MP3 (9 minutes - 13 Mb) or subscribe to the Feed. \nMentioned in this episode: \n* JS CodeRetreat: facilitator's skills \n* Mars Rover Kata \n* Kata Theater \n(Music from Synth Loop 1 by allpurposedw and Gong 001 by tec_studio.)"
+                    },
+                    "itunes:author": {
+                        "_text": "Peter Kofler"
+                    },
+                    "itunes:duration": {
+                        "_text": "00:09:00"
+                    },
+                    "itunes:keywords": {
+                        "_text": "assignment, facilitation"
+                    },
+                    "itunes:episodeType": {
+                        "_text": "full"
+                    },
+                    "itunes:explicit": {
+                        "_text": "no"
+                    }
+                },
+                {
+                    "guid": {
+                        "_attributes": {
+                            "isPermaLink": "false"
+                        },
+                        "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-2242493219556113671"
+                    },
+                    "pubDate": {
+                        "_text": "Fri, 20 Aug 2021 13:33:00 +0000"
+                    },
+                    "category": [
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "advanced"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "facilitation"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "guest"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "learnings"
+                        }
+                    ],
+                    "title": {
+                        "_text": "33:  How to help others and mixing in Open Space"
+                    },
+                    "description": {
+                        "_text": "This is the second part of my chat with <a href=\"https://www.linkedin.com/in/am-cornelis/\">Amélie Cornélis</a> about: <ul><li>As an attendee, how can I help others and myself to learn?</li><li>How about combining Coderetreat with the Open Space format?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/33---How-to-help-others-and-mixing-in-Open-Space.mp3\">MP3 (10 minutes - 8 Mb)</a> or subscribe to the <a href=\"https://www.code-cop.org/podcast/rss_feed.php\">Feed</a>.</p><p>Amélie, thank you for another discussion. You can reach Amélie at her Twitter <a href=\"https://twitter.com/AmelieCornelis\">@AmelieCornelis</a>.</p>Mentioned in this episode: <ul><li><a href=\"https://martinfowler.com/bliki/OpenSpace.html\">Open Space</a></li></ul><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                    },
+                    "link": {
+                        "_text": "https://coderetreat-facilitation.code-cop.org/2021/08/how-to-help-others-and-mixing-in-open.html"
+                    },
+                    "author": {
+                        "_text": "Peter Kofler"
+                    },
+                    "thr:total": {
+                        "_text": "0"
+                    },
+                    "enclosure": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/33---How-to-help-others-and-mixing-in-Open-Space.mp3",
+                            "length": "8378418",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "media:content": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/33---How-to-help-others-and-mixing-in-Open-Space.mp3",
+                            "length": "8378418",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "itunes:title": {
+                        "_text": " How to help others and mixing in Open Space"
+                    },
+                    "itunes:season": {
+                        "_text": "1"
+                    },
+                    "itunes:episode": {
+                        "_text": "33"
+                    },
+                    "itunes:subtitle": {
+                        "_text": "This is the second part of my chat with Amélie Cornélis about: As an attendee, how can I help others and myself to learn? How about combining Coderetreat with the Open Space format?"
+                    },
+                    "itunes:summary": {
+                        "_text": "This is the second part of my chat with Amélie Cornélis about: \n* As an attendee, how can I help others and myself to learn? \n* How about combining Coderetreat with the Open Space format? \n\nDownload the MP3 (10 minutes - 8 Mb) or subscribe to the Feed. \n\nAmélie, thank you for another discussion. You can reach Amélie at her Twitter @AmelieCornelis. \nMentioned in this episode: \n* Open Space \n(Music from Synth Loop 1 by allpurposedw and Gong 001 by tec_studio.)"
+                    },
+                    "itunes:author": {
+                        "_text": "Peter Kofler"
+                    },
+                    "itunes:duration": {
+                        "_text": "00:10:00"
+                    },
+                    "itunes:keywords": {
+                        "_text": "advanced, facilitation, guest, learnings"
+                    },
+                    "itunes:episodeType": {
+                        "_text": "full"
+                    },
+                    "itunes:explicit": {
+                        "_text": "no"
+                    }
+                },
                 {
                     "guid": {
                         "_attributes": {
@@ -2460,192 +2640,6 @@
                     },
                     "itunes:keywords": {
                         "_text": "constraints, facilitation, hosting, overview, remote"
-                    },
-                    "itunes:episodeType": {
-                        "_text": "full"
-                    },
-                    "itunes:explicit": {
-                        "_text": "no"
-                    }
-                },
-                {
-                    "guid": {
-                        "_attributes": {
-                            "isPermaLink": "false"
-                        },
-                        "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-1365751981227488973"
-                    },
-                    "pubDate": {
-                        "_text": "Tue, 31 Mar 2020 21:28:00 +0000"
-                    },
-                    "category": [
-                        {
-                            "_attributes": {
-                                "domain": "http://www.blogger.com/atom/ns#"
-                            },
-                            "_text": "facilitation"
-                        },
-                        {
-                            "_attributes": {
-                                "domain": "http://www.blogger.com/atom/ns#"
-                            },
-                            "_text": "Game of Life"
-                        },
-                        {
-                            "_attributes": {
-                                "domain": "http://www.blogger.com/atom/ns#"
-                            },
-                            "_text": "overview"
-                        },
-                        {
-                            "_attributes": {
-                                "domain": "http://www.blogger.com/atom/ns#"
-                            },
-                            "_text": "top3"
-                        }
-                    ],
-                    "title": {
-                        "_text": "10: Coding Dojo Mindset and Game of Life is mandatory"
-                    },
-                    "description": {
-                        "_text": "In this episode I am answering <ul><li>What is the Coding Dojo Mindset? (What is the core mindset of a Coderetreat?)</li><li>Is Game of Life mandatory?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/10---Coding-Dojo-Mindset-and-Game-of-Life-is-mandatory.mp3\">MP3 (8 minutes - 12 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p>Mentioned in this episode: <ul><li><a href=\"https://alexbolboaca.ro/coderetreat/the-coderetreat-problem-is-not-the-problem\">Alex Bolboaca: The Coderetreat Problem Is Not The Problem</a></li></ul><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
-                    },
-                    "link": {
-                        "_text": "https://coderetreat-facilitation.code-cop.org/2020/03/coding-dojo-mindset-and-game-of-life-is.html"
-                    },
-                    "author": {
-                        "_text": "Peter Kofler"
-                    },
-                    "thr:total": {
-                        "_text": "0"
-                    },
-                    "enclosure": {
-                        "_attributes": {
-                            "url": "https://www.code-cop.org/podcast/10---Coding-Dojo-Mindset-and-Game-of-Life-is-mandatory.mp3",
-                            "length": "12767815",
-                            "type": "audio/mpeg"
-                        }
-                    },
-                    "media:content": {
-                        "_attributes": {
-                            "url": "https://www.code-cop.org/podcast/10---Coding-Dojo-Mindset-and-Game-of-Life-is-mandatory.mp3",
-                            "length": "12767815",
-                            "type": "audio/mpeg"
-                        }
-                    },
-                    "itunes:title": {
-                        "_text": "Coding Dojo Mindset and Game of Life is mandatory"
-                    },
-                    "itunes:season": {
-                        "_text": "1"
-                    },
-                    "itunes:episode": {
-                        "_text": "10"
-                    },
-                    "itunes:subtitle": {
-                        "_text": "In this episode I am answering What is the Coding Dojo Mindset? (What is the core mindset of a Coderetreat?) Is Game of Life mandatory?"
-                    },
-                    "itunes:summary": {
-                        "_text": "In this episode I am answering \n* What is the Coding Dojo Mindset? (What is the core mindset of a Coderetreat?) \n* Is Game of Life mandatory? \n\nDownload the MP3 (8 minutes - 12 Mb) or subscribe to the Feed. \nMentioned in this episode: \n* Alex Bolboaca: The Coderetreat Problem Is Not The Problem \n(Music from Synth Loop 1 by allpurposedw and Gong 001 by tec_studio.)"
-                    },
-                    "itunes:author": {
-                        "_text": "Peter Kofler"
-                    },
-                    "itunes:duration": {
-                        "_text": "00:08:00"
-                    },
-                    "itunes:keywords": {
-                        "_text": "facilitation, Game of Life, overview, top3"
-                    },
-                    "itunes:episodeType": {
-                        "_text": "full"
-                    },
-                    "itunes:explicit": {
-                        "_text": "no"
-                    }
-                },
-                {
-                    "guid": {
-                        "_attributes": {
-                            "isPermaLink": "false"
-                        },
-                        "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-2635335793854750304"
-                    },
-                    "pubDate": {
-                        "_text": "Sun, 15 Mar 2020 22:49:00 +0000"
-                    },
-                    "category": [
-                        {
-                            "_attributes": {
-                                "domain": "http://www.blogger.com/atom/ns#"
-                            },
-                            "_text": "assignment"
-                        },
-                        {
-                            "_attributes": {
-                                "domain": "http://www.blogger.com/atom/ns#"
-                            },
-                            "_text": "constraints"
-                        },
-                        {
-                            "_attributes": {
-                                "domain": "http://www.blogger.com/atom/ns#"
-                            },
-                            "_text": "guest"
-                        }
-                    ],
-                    "title": {
-                        "_text": "09: Constraint for first session and alternative exercises for Game of Life"
-                    },
-                    "description": {
-                        "_text": "In this (longer) episode I asked <a href=\"https://www.sandra-parsick.de/\">Sandra Parsick</a> about <ul><li>the best constraint for the first session and</li><li>alternative exercises for Game of Life.</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/09---Constraint-for-first-session-and-alternative-exercises-for-Game-of-Life.mp3\">MP3 (12 minutes - 9 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p><p>Thank you Sandra.</p>Mentioned in this episode: <ul><li><a href=\"https://alexbolboaca.ro/coderetreat/the-coderetreat-problem-is-not-the-problem\">The Coderetreat Problem Is Not The Problem</a></li><li><a href=\"https://kata-log.rocks/mars-rover-kata\">Mars Rover kata</a></li><li><a href=\"https://en.wikipedia.org/wiki/Snake_(video_game)\">Snake/Nibbles/Tron</a></li></ul><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
-                    },
-                    "link": {
-                        "_text": "https://coderetreat-facilitation.code-cop.org/2020/03/constraint-for-first-session-and.html"
-                    },
-                    "author": {
-                        "_text": "Peter Kofler"
-                    },
-                    "thr:total": {
-                        "_text": "0"
-                    },
-                    "enclosure": {
-                        "_attributes": {
-                            "url": "https://www.code-cop.org/podcast/09---Constraint-for-first-session-and-alternative-exercises-for-Game-of-Life.mp3",
-                            "length": "9233695",
-                            "type": "audio/mpeg"
-                        }
-                    },
-                    "media:content": {
-                        "_attributes": {
-                            "url": "https://www.code-cop.org/podcast/09---Constraint-for-first-session-and-alternative-exercises-for-Game-of-Life.mp3",
-                            "length": "9233695",
-                            "type": "audio/mpeg"
-                        }
-                    },
-                    "itunes:title": {
-                        "_text": "Constraint for first session and alternative exercises for Game of Life"
-                    },
-                    "itunes:season": {
-                        "_text": "1"
-                    },
-                    "itunes:episode": {
-                        "_text": "09"
-                    },
-                    "itunes:subtitle": {
-                        "_text": "In this (longer) episode I asked Sandra Parsick about the best constraint for the first session and alternative exercises for Game of Life."
-                    },
-                    "itunes:summary": {
-                        "_text": "In this (longer) episode I asked Sandra Parsick about \n* the best constraint for the first session and \n* alternative exercises for Game of Life. \n\nDownload the MP3 (12 minutes - 9 Mb) or subscribe to the Feed. \n\nThank you Sandra. \nMentioned in this episode: \n* The Coderetreat Problem Is Not The Problem \n* Mars Rover kata \n* Snake/Nibbles/Tron \n(Music from Synth Loop 1 by allpurposedw and Gong 001 by tec_studio.)"
-                    },
-                    "itunes:author": {
-                        "_text": "Peter Kofler"
-                    },
-                    "itunes:duration": {
-                        "_text": "00:12:00"
-                    },
-                    "itunes:keywords": {
-                        "_text": "assignment, constraints, guest"
                     },
                     "itunes:episodeType": {
                         "_text": "full"
