@@ -1,0 +1,33 @@
+{
+  "title": "Global Day Coderetreat 2021, Codurance Spain",
+  "description": "Coderetreat has an established, time-tested format that is optimised for focused practice. We will be working on implementing Conway's Game Of Life in 45-minute sessions. In each one, you'll pair program in whichever language you like, using whichever technologies you and your pair prefer.  The day will start at 8:30am and finish by 16:30 pm. Lunch will be provided on the day. It's an early start, so sleep well the night before to help get those brain juices flowing.  Remember to bring your laptop and be ready to have fun! :)",
+  "format": "classic",
+  "spoken_language": "Spanish, English",
+  "url": "https://www.eventbrite.co.uk/e/global-day-coderetreat-2021-tickets-175540685917",
+  "date": {
+    "start": "2021-11-13T08:30:00+01:00",
+    "end": "2021-11-13T16:30:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Javier Chacana"
+    },
+    {
+      "name": "Kristian Muñoz"
+    },
+    {
+      "name": "Fran Ávila"
+    },
+    {
+      "name": "José R. Huerta"
+    }
+  ],
+  "location": {
+    "city": "Barcelona",
+    "country": "Spain",
+    "coordinates": {
+      "latitude": 41.3825,
+      "longitude": 2.17694
+    }
+  }
+}
