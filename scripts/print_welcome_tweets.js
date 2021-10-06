@@ -44,10 +44,10 @@ glob(__dirname + "/../_data/**/.SCHEMA.json")
       const event = JSON.parse(readFileSync(eventFile).toString());
 
       const date = ZonedDateTime.parse(event.date.start);
-
-      const tweet = `🌐 Welcome '${event.title}${toWelcomeTweetModerators(
+      if(date.isBefore(ZonedDateTime.now())) continue;
+      const tweet = `🌐 Welcome ${event.title}${toWelcomeTweetModerators(
         event.moderators
-      )} on ${dateFormat.format(date)} to #gdcr2020! ${event.url}`;
+      )} on ${dateFormat.format(date)} to #gdcr21! ${event.url}`;
       console.log(tweet);
     }
     console.log("");
