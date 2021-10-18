@@ -1,0 +1,40 @@
+{
+  "title": "GDCR Vienna 2021",
+  "description": "A regular, on site Coderetreat to celebrate Global Day 2021",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://www.eventbrite.at/e/global-day-of-coderetreat-vienna-2021-tickets-189806314797",
+  "code_of_conduct": "https://makers.tech/code-of-conduct/",
+  "date": {
+    "start": "2021-11-13T08:30:00+01:00",
+    "end": "2021-11-13T17:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Claus Aichinger",
+      "url": "https://github.com/caichinger"
+    },
+    {
+      "name": "Peter Kofler",
+      "url": "https://twitter.com/codecopkofler"
+    },
+    {
+      "name": "Rea",
+      "url": "https://github.com/ReaSu"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Nagarro GmbH",
+      "url": "https://www.nagarro.com"
+    }
+  ],
+  "location": {
+    "city": "Vienna",
+    "country": "Austria",
+    "coordinates": {
+      "latitude": 48.20833,
+      "longitude": 16.37306
+    }
+  }
+}
