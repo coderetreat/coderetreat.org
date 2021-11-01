@@ -6,8 +6,9 @@ import fetchEventsInChronologicalOrder from "./events/fetchEventsInChronological
 import InteractiveTimeZoneSelector from "./events/interactiveTimeZoneSelector";
 import EventCard from "./events/EventCard";
 import jekyllConfig from "../_config.yml";
+import { LocalizedDate } from "./events/LocalizedDateTime";
 
-const { ZoneId, ZonedDateTime, LocalDate } = jsjoda;
+const { ZoneId, ZonedDateTime, LocalDate, LocalTime } = jsjoda;
 
 const earliestGDCRStart = LocalDate.parse(
   jekyllConfig.globalday.start
@@ -117,7 +118,7 @@ const Events = () => {
 
 const EventTypeSelection = ({ eventTypeFilter, setEventTypeFilter }) => {
   return (
-    <div class="form-inline d-inline px-2">
+    <div class="form-inline d-inline-block d-lg-inline px-md-2 mt-2 mt-lg-0">
       <div
         className="btn-group btn-group-toggle align-bottom"
         data-toggle="buttons"
@@ -162,12 +163,105 @@ const EventList = ({ events, title, timeZoneId }) =>
     <Fragment>
       <hr />
       <h3>{title}</h3>
-      <div class="container-fluid p-1">
+      <GroupedEvents events={events} timeZoneId={timeZoneId} />
+    </Fragment>
+  );
+
+const GroupedEvents = ({ events, timeZoneId }) => {
+  if (events.length < 6) {
+    return (
+      <Fragment>
         {events.map((event) => (
           <EventCard event={event} usersTimezone={timeZoneId} />
         ))}
-      </div>
+      </Fragment>
+    );
+  }
+
+  const groupedByDay = useMemo(
+    () =>
+      events.reduce((byDay, event) => {
+        const dateKey = LocalizedDate({
+          date: event.date.start,
+          timeZone: timeZoneId,
+        });
+        return {
+          ...byDay,
+          [dateKey]: [...(byDay[dateKey] || []), event],
+        };
+      }, {}),
+    [events, timeZoneId]
+  );
+
+  return Object.keys(groupedByDay)
+    .sort()
+    .map((dateKey) => (
+      <Fragment>
+        <span class="text-muted font-weight-bold">{dateKey}</span>
+        <div className="container-fluid px-0">
+          <div>
+            {groupedByDay[dateKey].length > 3 ? (
+              <GroupedIntraDayEvents
+                events={groupedByDay[dateKey]}
+                timeZoneId={timeZoneId}
+              />
+            ) : (
+              <Fragment>
+                {groupedByDay[dateKey].map((event) => (
+                  <EventCard event={event} usersTimezone={timeZoneId} />
+                ))}
+              </Fragment>
+            )}
+          </div>
+        </div>
+      </Fragment>
+    ));
+};
+
+const GroupedIntraDayEvents = ({ events, timeZoneId }) => {
+  const timeSlices = [
+    ["Night (00:00 - 08:00)", LocalTime.of(8, 0, 0, 0)],
+    ["Morning (08:00 - 12:00)", LocalTime.of(12, 0, 0, 0)],
+    ["Afternoon (12:00 - 20:00)", LocalTime.of(20, 0, 0, 0)],
+    ["Night (20:00 - 24:00)", LocalTime.MAX],
+  ];
+
+  const grouped = useMemo(() => {
+    const result = timeSlices.map(() => []);
+    outer: for (let event of events) {
+      for (let sliceIdx in timeSlices) {
+        const slice = timeSlices[sliceIdx];
+        if (
+          event.date.start
+            .withZoneSameInstant(timeZoneId)
+            .toLocalTime()
+            .isBefore(slice[1])
+        ) {
+          result[sliceIdx].push(event);
+          continue outer;
+        }
+      }
+      result[timeSlices.length - 1].push(event);
+    }
+    return result;
+  }, [events, timeZoneId]);
+
+  return (
+    <Fragment>
+      {timeSlices.map((slice, i) =>
+        grouped[i].length === 0 ? (
+          ""
+        ) : (
+          <div className="container-fluid px-0 mb-2">
+            <p className="px-1 my-0 text-muted font-weight-bold">{slice[0]}</p>
+            {grouped[i].map((event) => (
+              <EventCard event={event} usersTimezone={timeZoneId} />
+            ))}
+          </div>
+        )
+      )}
     </Fragment>
   );
+};
 
 render(<Events />, document.querySelector("#events"));
