@@ -3,11 +3,12 @@ import { h, render, Fragment } from "preact";
 import { useEffect, useMemo, useState } from "preact/hooks";
 import "regenerator-runtime/runtime";
 import fetchEventsInChronologicalOrder from "./events/fetchEventsInChronologicalOrder";
-import interactiveTimeZoneSelector from "./events/interactiveTimeZoneSelector";
+import InteractiveTimeZoneSelector from "./events/interactiveTimeZoneSelector";
 import EventCard from "./events/EventCard";
 import jekyllConfig from "../_config.yml";
+import { LocalizedDate } from "./events/LocalizedDateTime";
 
-const { ZoneId, ZonedDateTime, LocalDate } = jsjoda;
+const { ZoneId, ZonedDateTime, LocalDate, LocalTime } = jsjoda;
 
 const earliestGDCRStart = LocalDate.parse(
   jekyllConfig.globalday.start
@@ -20,6 +21,8 @@ const isCurrentDateAfterGDCR = ZonedDateTime.now().isAfter(latestGDCREnd);
 const Events = () => {
   const [timeZone, setTimeZone] = useState(ZoneId.systemDefault().id());
   const timeZoneId = useMemo(() => ZoneId.of(timeZone), [timeZone]);
+  const [eventTypeFilter, setEventTypeFilter] = useState("all");
+  const [allEvents, setAllEvents] = useState([]);
   const [{ eventsBeforeGDCR, eventsDuringGDCR, eventsAfterGDCR }, setEvents] =
     useState({
       eventsBeforeGDCR: [],
@@ -29,27 +32,42 @@ const Events = () => {
 
   useEffect(() => {
     const Run = async () => {
-      const allEvents = await fetchEventsInChronologicalOrder();
-      const upcomingEvents = allEvents.filter((event) =>
-        event.date.end.isAfter(ZonedDateTime.now())
-      );
-      const eventsBeforeGDCR = upcomingEvents.filter((event) =>
-        event.date.end.isBefore(earliestGDCRStart)
-      );
-      const eventsDuringGDCR = upcomingEvents.filter(
-        (event) =>
-          (event.date.end.isEqual(earliestGDCRStart) ||
-            event.date.end.isAfter(earliestGDCRStart)) &&
-          (event.date.start.isEqual(latestGDCREnd) ||
-            event.date.start.isBefore(latestGDCREnd))
-      );
-      const eventsAfterGDCR = upcomingEvents.filter((event) =>
-        event.date.start.isAfter(latestGDCREnd)
-      );
-      setEvents({ eventsBeforeGDCR, eventsDuringGDCR, eventsAfterGDCR });
+      const allFetchedEvents = await fetchEventsInChronologicalOrder();
+      setAllEvents(allFetchedEvents);
     };
     Run();
   }, []);
+
+  useEffect(() => {
+    let eventsFilteredByType = allEvents;
+    if (eventTypeFilter === "virtual") {
+      eventsFilteredByType = eventsFilteredByType.filter(
+        (event) => event.location === "virtual"
+      );
+    } else if (eventTypeFilter === "onsite") {
+      eventsFilteredByType = eventsFilteredByType.filter(
+        (event) => event.location !== "virtual"
+      );
+    }
+
+    const upcomingEvents = eventsFilteredByType.filter((event) =>
+      event.date.end.isAfter(ZonedDateTime.now())
+    );
+    const eventsBeforeGDCR = upcomingEvents.filter((event) =>
+      event.date.end.isBefore(earliestGDCRStart)
+    );
+    const eventsDuringGDCR = upcomingEvents.filter(
+      (event) =>
+        (event.date.end.isEqual(earliestGDCRStart) ||
+          event.date.end.isAfter(earliestGDCRStart)) &&
+        (event.date.start.isEqual(latestGDCREnd) ||
+          event.date.start.isBefore(latestGDCREnd))
+    );
+    const eventsAfterGDCR = upcomingEvents.filter((event) =>
+      event.date.start.isAfter(latestGDCREnd)
+    );
+    setEvents({ eventsBeforeGDCR, eventsDuringGDCR, eventsAfterGDCR });
+  }, [allEvents, eventTypeFilter]);
 
   return (
     <div>
@@ -61,7 +79,14 @@ const Events = () => {
         </p>
         <p>
           All times shown are in the timezone for{" "}
-          {interactiveTimeZoneSelector(timeZone, setTimeZone)}
+          <InteractiveTimeZoneSelector
+            timeZone={timeZone}
+            setTimeZone={setTimeZone}
+          />
+          <EventTypeSelection
+            eventTypeFilter={eventTypeFilter}
+            setEventTypeFilter={setEventTypeFilter}
+          />
         </p>
         <EventList
           title="Events before Global Day of Coderetreat"
@@ -91,17 +116,152 @@ const Events = () => {
   );
 };
 
+const EventTypeSelection = ({ eventTypeFilter, setEventTypeFilter }) => {
+  return (
+    <div class="form-inline d-inline-block d-lg-inline px-md-2 mt-2 mt-lg-0">
+      <div
+        className="btn-group btn-group-toggle align-bottom"
+        data-toggle="buttons"
+      >
+        <label className="btn btn-secondary active">
+          <input
+            type="radio"
+            onChange={() => setEventTypeFilter("all")}
+            name="eventType"
+            id="eventType-all"
+            checked={eventTypeFilter === "all"}
+          />{" "}
+          All events
+        </label>
+        <label className="btn btn-secondary">
+          <input
+            type="radio"
+            onChange={() => setEventTypeFilter("virtual")}
+            name="eventType"
+            id="eventType-virtual"
+            checked={eventTypeFilter === "virtual"}
+          />{" "}
+          Virtual Only
+        </label>
+        <label className="btn btn-secondary">
+          <input
+            type="radio"
+            onChange={() => setEventTypeFilter("onsite")}
+            name="eventType"
+            id="eventType-onsite"
+            checked={eventTypeFilter === "onsite"}
+          />{" "}
+          On-Site Only
+        </label>
+      </div>
+    </div>
+  );
+};
+
 const EventList = ({ events, title, timeZoneId }) =>
   events.length > 0 && (
     <Fragment>
       <hr />
       <h3>{title}</h3>
-      <div class="container-fluid p-1">
+      <GroupedEvents events={events} timeZoneId={timeZoneId} />
+    </Fragment>
+  );
+
+const GroupedEvents = ({ events, timeZoneId }) => {
+  if (events.length < 6) {
+    return (
+      <Fragment>
         {events.map((event) => (
           <EventCard event={event} usersTimezone={timeZoneId} />
         ))}
-      </div>
+      </Fragment>
+    );
+  }
+
+  const groupedByDay = useMemo(
+    () =>
+      events.reduce((byDay, event) => {
+        const dateKey = LocalizedDate({
+          date: event.date.start,
+          timeZone: timeZoneId,
+        });
+        return {
+          ...byDay,
+          [dateKey]: [...(byDay[dateKey] || []), event],
+        };
+      }, {}),
+    [events, timeZoneId]
+  );
+
+  return Object.keys(groupedByDay)
+    .sort()
+    .map((dateKey) => (
+      <Fragment>
+        <span class="text-muted font-weight-bold">{dateKey}</span>
+        <div className="container-fluid px-0">
+          <div>
+            {groupedByDay[dateKey].length > 3 ? (
+              <GroupedIntraDayEvents
+                events={groupedByDay[dateKey]}
+                timeZoneId={timeZoneId}
+              />
+            ) : (
+              <Fragment>
+                {groupedByDay[dateKey].map((event) => (
+                  <EventCard event={event} usersTimezone={timeZoneId} />
+                ))}
+              </Fragment>
+            )}
+          </div>
+        </div>
+      </Fragment>
+    ));
+};
+
+const GroupedIntraDayEvents = ({ events, timeZoneId }) => {
+  const timeSlices = [
+    ["Night (00:00 - 08:00)", LocalTime.of(8, 0, 0, 0)],
+    ["Morning (08:00 - 12:00)", LocalTime.of(12, 0, 0, 0)],
+    ["Afternoon (12:00 - 20:00)", LocalTime.of(20, 0, 0, 0)],
+    ["Night (20:00 - 24:00)", LocalTime.MAX],
+  ];
+
+  const grouped = useMemo(() => {
+    const result = timeSlices.map(() => []);
+    outer: for (let event of events) {
+      for (let sliceIdx in timeSlices) {
+        const slice = timeSlices[sliceIdx];
+        if (
+          event.date.start
+            .withZoneSameInstant(timeZoneId)
+            .toLocalTime()
+            .isBefore(slice[1])
+        ) {
+          result[sliceIdx].push(event);
+          continue outer;
+        }
+      }
+      result[timeSlices.length - 1].push(event);
+    }
+    return result;
+  }, [events, timeZoneId]);
+
+  return (
+    <Fragment>
+      {timeSlices.map((slice, i) =>
+        grouped[i].length === 0 ? (
+          ""
+        ) : (
+          <div className="container-fluid px-0 mb-2">
+            <p className="px-1 my-0 text-muted font-weight-bold">{slice[0]}</p>
+            {grouped[i].map((event) => (
+              <EventCard event={event} usersTimezone={timeZoneId} />
+            ))}
+          </div>
+        )
+      )}
     </Fragment>
   );
+};
 
 render(<Events />, document.querySelector("#events"));
