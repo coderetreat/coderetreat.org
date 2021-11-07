@@ -6,6 +6,5 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 window.$ = jquery;
 
 $(function () {
-    console.log("INIT");
   $('[data-toggle="tooltip"]').tooltip();
 });

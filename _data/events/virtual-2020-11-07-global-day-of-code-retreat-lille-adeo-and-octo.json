@@ -1,0 +1,27 @@
+{
+  "title": "Global Day of Code Retreat Lille - ADEO & OCTO",
+  "format": "classic",
+  "spoken_language": "French",
+  "url": "https://www.meetup.com/fr-FR/Software-Craftsmanship-Lille/events/273974451/",
+  "date": {
+    "start": "2020-11-07T14:00:00+01:00",
+    "end": "2020-11-07T18:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Julien Jakubowski",
+      "url": "https://twitter.com/jak78"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "ADEO",
+      "url": "https://adeo.com"
+    },
+    {
+      "name": "OCTO Nord",
+      "url": "https://chti.octo.com"
+    }
+  ],
+  "location": "virtual"
+}

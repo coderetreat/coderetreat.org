@@ -1,0 +1,27 @@
+{
+  "title": "Global Code Retreat with Remote Hack",
+  "description": "We're a distributed & friendly hack space vaguely centered on UK time",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://remotehack.space/code-retreat",
+  "code_of_conduct": "https://remotehack.space/code-of-conduct",
+  "date": {
+    "start": "2020-11-07T09:30:00Z",
+    "end": "2020-11-07T16:00:00Z"
+  },
+  "moderators": [
+    {
+      "name": "Ryan Brooks",
+      "url": "https://github.com/spikeheap"
+    },
+    {
+      "name": "Mike Smith",
+      "url": "https://github.com/mikerhyssmith"
+    },
+    {
+      "name": "Ben Foxall",
+      "url": "https://github.com/benfoxall"
+    }
+  ],
+  "location": "virtual"
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Half day Coderetreat by Ladies of Code London",
+  "description": "Join Ladies of Code London, on Zoom, for your favourite coding practice event, designed to bring you the joy of Coderetreat without the Zoom fatigue!",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://www.eventbrite.co.uk/e/global-half-day-of-code-retreat-tickets-193420956287",
+  "code_of_conduct": "https://docs.google.com/document/d/1p0LrWHH0csTTvNh-gU7tyWWJIKJ95VIzybvN_LP8sTA/edit?usp=sharing",
+  "date": {
+    "start": "2021-11-13T09:50:00Z",
+    "end": "2021-11-12T13:30:00Z"
+  },
+  "moderators": [
+    {
+      "name": "Sarah Usher",
+      "url": "https://twitter.com/SarahNUsher"
+    },
+    {
+      "name": "Anna Del Prete",
+      "url": "https://twitter.com/Shilaghae"
+    }
+  ],
+  "location": "virtual"
+}

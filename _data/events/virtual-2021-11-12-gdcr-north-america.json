@@ -1,0 +1,26 @@
+{
+    "title": "Virtual GDCR North America",
+    "description": "The Atlanta Software Crafters meetup and the Utah Software Craftsmanship group are teaming up to provide a virtual day of Coderetreat. Join us for a day of practice in the art of software development.",
+    "format": "classic",
+    "spoken_language": "English",
+    "url": "https://www.eventbrite.com/e/global-day-of-coderetreat-north-america-tickets-196603425137",
+    "date": {
+      "start": "2021-11-13T08:00:00-07:00",
+      "end": "2021-11-13T16:00:00-07:00"
+    },
+    "moderators": [
+      {
+        "name": "Jon Turner",
+        "url": "https://mythicant.com/"
+      },
+      {
+        "name": "Mike Clement",
+        "url": "https://blog.softwareontheside.com/"
+      },
+      {
+        "name": "Neil Sorensen",
+        "url": "https://github.com/NeilSorensen"
+      }
+    ],
+    "location": "virtual"
+  }

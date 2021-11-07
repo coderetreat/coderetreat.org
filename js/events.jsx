@@ -1,296 +1,265 @@
 import * as jsjoda from "@js-joda/core";
-import "@js-joda/timezone";
-import { h, Fragment, render } from "preact";
-import { useEffect, useMemo, useState, useRef } from "preact/hooks";
+import { h, render, Fragment } from "preact";
+import { useEffect, useMemo, useState } from "preact/hooks";
 import "regenerator-runtime/runtime";
-import { Typeahead } from "react-bootstrap-typeahead";
+import fetchEventsInChronologicalOrder from "./events/fetchEventsInChronologicalOrder";
+import InteractiveTimeZoneSelector from "./events/interactiveTimeZoneSelector";
 import EventCard from "./events/EventCard";
-import classNames from "classnames";
-import "react-bootstrap-typeahead/css/Typeahead.css";
-const { ZonedDateTime, ZoneId, ChronoUnit, ChronoField, convert } = jsjoda;
+import jekyllConfig from "../_config.yml";
+import { LocalizedDate } from "./events/LocalizedDateTime";
 
-const DAY_OF_EVENT_NEEDS_TO_CHANGE = "2019-11-16";
+const { ZoneId, ZonedDateTime, LocalDate, LocalTime } = jsjoda;
 
-const DAYS_OF_WEEK = {
-  0: "Monday",
-  1: "Tuesday",
-  2: "Wednesday",
-  3: "Thursday",
-  4: "Friday",
-  5: "Saturday",
-  6: "Sunday",
-};
+const earliestGDCRStart = LocalDate.parse(
+  jekyllConfig.globalday.start
+).atStartOfDayWithZone(ZoneId.of("UTC+12"));
+const latestGDCREnd = LocalDate.parse(jekyllConfig.globalday.end)
+  .atStartOfDayWithZone(ZoneId.of("UTC-12"))
+  .plusDays(1);
+const isCurrentDateAfterGDCR = ZonedDateTime.now().isAfter(latestGDCREnd);
 
-const useScrollSpy = (onScrollChange) => {
-  const container = useRef();
+const Events = () => {
+  const [timeZone, setTimeZone] = useState(ZoneId.systemDefault().id());
+  const timeZoneId = useMemo(() => ZoneId.of(timeZone), [timeZone]);
+  const [eventTypeFilter, setEventTypeFilter] = useState("all");
+  const [allEvents, setAllEvents] = useState([]);
+  const [{ eventsBeforeGDCR, eventsDuringGDCR, eventsAfterGDCR }, setEvents] =
+    useState({
+      eventsBeforeGDCR: [],
+      eventsDuringGDCR: [],
+      eventsAfterGDCR: [],
+    });
 
   useEffect(() => {
-    container.current.addEventListener("scroll", () =>
-      onScrollChange(container.current)
-    );
-    window.addEventListener("resize", () => onScrollChange(container.current));
-    onScrollChange(container.current);
-  }, [container]);
+    const Run = async () => {
+      const allFetchedEvents = await fetchEventsInChronologicalOrder();
+      setAllEvents(allFetchedEvents);
+    };
+    Run();
+  }, []);
 
-  return container;
-};
-
-const DayOfEventContainer = ({ events, startTime, timeZoneId }) => {
-  const [shouldShowScrollHintLeft, setShouldShowScrollHintLeft] = useState(
-    false
-  );
-  const [shouldShowScrollHintRight, setShouldShowScrollHintRight] = useState(
-    false
-  );
-
-  const ref = useScrollSpy((elem) => {
-    const hasScrollBar = elem.scrollWidth !== elem.clientWidth;
-    const isAllLeft = elem.scrollLeft === 0;
-    const isAllRight = elem.scrollLeft + elem.clientWidth == elem.scrollWidth;
-
-    if (!hasScrollBar) {
-      setShouldShowScrollHintLeft(false);
-      setShouldShowScrollHintRight(false);
-    } else {
-      setShouldShowScrollHintLeft(!isAllLeft);
-      setShouldShowScrollHintRight(!isAllRight);
+  useEffect(() => {
+    let eventsFilteredByType = allEvents;
+    if (eventTypeFilter === "virtual") {
+      eventsFilteredByType = eventsFilteredByType.filter(
+        (event) => event.location === "virtual"
+      );
+    } else if (eventTypeFilter === "onsite") {
+      eventsFilteredByType = eventsFilteredByType.filter(
+        (event) => event.location !== "virtual"
+      );
     }
-  });
+
+    const upcomingEvents = eventsFilteredByType.filter((event) =>
+      event.date.end.isAfter(ZonedDateTime.now())
+    );
+    const eventsBeforeGDCR = upcomingEvents.filter((event) =>
+      event.date.end.isBefore(earliestGDCRStart)
+    );
+    const eventsDuringGDCR = upcomingEvents.filter(
+      (event) =>
+        (event.date.end.isEqual(earliestGDCRStart) ||
+          event.date.end.isAfter(earliestGDCRStart)) &&
+        (event.date.start.isEqual(latestGDCREnd) ||
+          event.date.start.isBefore(latestGDCREnd))
+    );
+    const eventsAfterGDCR = upcomingEvents.filter((event) =>
+      event.date.start.isAfter(latestGDCREnd)
+    );
+    setEvents({ eventsBeforeGDCR, eventsDuringGDCR, eventsAfterGDCR });
+  }, [allEvents, eventTypeFilter]);
 
   return (
-    <div class="day-of-event-container">
-      <h2 class="day-of-event">
-        {DAYS_OF_WEEK[ZonedDateTime.parse(startTime).dayOfWeek().ordinal()]}
-      </h2>
-      <div class="scroll-outer">
-        {shouldShowScrollHintLeft && (
-          <div class="scroll-hint scroll-hint-left"></div>
-        )}
-        <div class={classNames("mb-5", "scroll-container")} ref={ref}>
-          <div class="mr-5">
-            {events.map((e) => (
-              <EventCard usersTimezone={timeZoneId} event={e} />
-            ))}
-          </div>
-        </div>
-        {shouldShowScrollHintRight && (
-          <div class="scroll-hint scroll-hint-right"></div>
-        )}
+    <div>
+      <div class="container" style={{ minHeight: "max(60vh, 500px)" }}>
+        <h1 class="display-1 my-5 ">Next Events</h1>
+        <p class="lead">
+          Coderetreats happen all over the world and throughout the whole year!
+          Find an event and join your first coderetreat!
+        </p>
+        <p>
+          All times shown are in the timezone for{" "}
+          <InteractiveTimeZoneSelector
+            timeZone={timeZone}
+            setTimeZone={setTimeZone}
+          />
+          <EventTypeSelection
+            eventTypeFilter={eventTypeFilter}
+            setEventTypeFilter={setEventTypeFilter}
+          />
+        </p>
+        <EventList
+          title="Events before Global Day of Coderetreat"
+          events={eventsBeforeGDCR}
+          timeZoneId={timeZoneId}
+        />
+        <EventList
+          title={`Global Day of Coderetreat events (${new Date(
+            jekyllConfig.globalday.start
+          ).toLocaleDateString()} - ${new Date(
+            jekyllConfig.globalday.end
+          ).toLocaleDateString()})`}
+          events={eventsDuringGDCR}
+          timeZoneId={timeZoneId}
+        />
+        <EventList
+          title={
+            isCurrentDateAfterGDCR
+              ? "Upcoming events"
+              : "Events after Global Day of Coderetreat"
+          }
+          events={eventsAfterGDCR}
+          timeZoneId={timeZoneId}
+        />
       </div>
     </div>
   );
 };
 
-const Timeline = ({ events, timeZone }) => {
-  if (!events.length) return <svg></svg>;
-
-  const max = events.reduce(
-    (max, { date: { start, end } }) =>
-      end.isAfter(max) ? end : start.isAfter(max) ? start : max,
-    jsjoda.ZonedDateTime.of8(2000, 1, 1, 1, 1, 1, 1, ZoneId.of("UTC"))
-  );
-
-  const min = events.reduce(
-    (min, { date: { start, end } }) =>
-      start.isBefore(min) ? start : end.isBefore(min) ? end : min,
-    jsjoda.ZonedDateTime.of8(2030, 1, 1, 1, 1, 1, 1, ZoneId.of("UTC"))
-  );
-
-  const from = jsjoda.ZonedDateTime.of8(
-    2020,
-    11,
-    6,
-    0,
-    0,
-    0,
-    0,
-    ZoneId.of("UTC+12")
-  ).withZoneSameInstant(ZoneId.of(timeZone));
-  const to = jsjoda.ZonedDateTime.of8(
-    2020,
-    11,
-    8,
-    0,
-    0,
-    0,
-    0,
-    ZoneId.of("UTC-12")
-  ).withZoneSameInstant(ZoneId.of(timeZone));
-
-  const duration = jsjoda.Duration.between(from, to).toHours();
-
-  const rects = [];
-  const dayLabels = [];
-  const hourLabels = [];
-
-  let hourStart = from;
-  let maxCount = 0;
-
-  let day = hourStart.dayOfWeek();
-  for (let i = 0; i < duration; i++) {
-    if (day != hourStart.dayOfWeek().ordinal()) {
-      day = hourStart.dayOfWeek().ordinal();
-      dayLabels.push({ i, day });
-    }
-    hourLabels.push({
-      i,
-      text: hourStart.format(jsjoda.DateTimeFormatter.ofPattern("HH:mm")),
-    });
-
-    const hourEnd = hourStart.plusHours(1);
-
-    const eventsInThisHour = events.filter(
-      ({ date: { start, end } }) =>
-        start.isBefore(hourEnd) && end.isAfter(hourStart)
-    );
-
-    maxCount = Math.max(maxCount, eventsInThisHour.length);
-
-    rects.push({ start: hourStart, count: eventsInThisHour.length });
-    hourStart = hourStart.plusHours(1);
-  }
-
-  const GAP_SIZE = 5;
+const EventTypeSelection = ({ eventTypeFilter, setEventTypeFilter }) => {
   return (
-    <svg
-      width="100%"
-      xmlns="http://www.w3.org/2000/svg"
-      version="1.1"
-      viewBox={`-10 -30 ${duration * (10 + GAP_SIZE)} 70`}
-      preserveAspectRatio="xMinYMin"
-    >
-      <g>
-        {dayLabels.map(({ i, day }) => (
-          <Fragment>
-            <line
-              x1={i * 10 + (i - 1) * GAP_SIZE - GAP_SIZE / 2}
-              x2={i * 10 + (i - 1) * GAP_SIZE - GAP_SIZE / 2}
-              stroke="grey"
-              strokeDasharray="2"
-              y1="-15"
-              y2="60"
-            />
-            <text
-              transform={`translate(${
-                i * 10 + (i - 1) * GAP_SIZE
-              }, -2) rotate(0) `}
-              style={{
-                fontSize: "1em",
-                fontWeight: "lighter",
-                textTransform: "uppercase",
-              }}
-            >
-              {DAYS_OF_WEEK[day]}
-            </text>
-          </Fragment>
-        ))}
-        {hourLabels.map(({ i, text }) => (
-          <text
-            transform={`translate(${
-              i * 10 + (i - 1) * GAP_SIZE + 3
-            }, 20) rotate(90) `}
-            textAnchor="start"
-            style={{ fontSize: "0.5em" }}
-          >
-            {text}
-          </text>
-        ))}
-        {rects.map(({ count }, i) => (
-          <rect
-            height="10"
-            data-count={count}
-            width="10"
-            style={{
-              outline: "1px solid rgba(27,31,35,.04)",
-              outlineOffset: "-1px",
-              fill: "#74BCCD",
-              shapeRendering: "geometricPrecision",
-              "fill-opacity": `${count / maxCount}`,
-            }}
-            transform={`translate(${i * 10 + (i - 1) * GAP_SIZE}, 5)`}
-          />
-        ))}
-      </g>
-    </svg>
+    <div class="form-inline d-inline-block d-lg-inline px-md-2 mt-2 mt-lg-0">
+      <div
+        className="btn-group btn-group-toggle align-bottom"
+        data-toggle="buttons"
+      >
+        <label className="btn btn-secondary active">
+          <input
+            type="radio"
+            onChange={() => setEventTypeFilter("all")}
+            name="eventType"
+            id="eventType-all"
+            checked={eventTypeFilter === "all"}
+          />{" "}
+          All events
+        </label>
+        <label className="btn btn-secondary">
+          <input
+            type="radio"
+            onChange={() => setEventTypeFilter("virtual")}
+            name="eventType"
+            id="eventType-virtual"
+            checked={eventTypeFilter === "virtual"}
+          />{" "}
+          Virtual Only
+        </label>
+        <label className="btn btn-secondary">
+          <input
+            type="radio"
+            onChange={() => setEventTypeFilter("onsite")}
+            name="eventType"
+            id="eventType-onsite"
+            checked={eventTypeFilter === "onsite"}
+          />{" "}
+          On-Site Only
+        </label>
+      </div>
+    </div>
   );
 };
 
-const Events = () => {
-  const [timeZone, setTimeZone] = useState(ZoneId.systemDefault().id());
-  const [events, setEvents] = useState([]);
-
-  useEffect(() => {
-    const Run = async () => {
-      const result = await fetch("/events/events.json");
-      const allEvents = Object.entries(await result.json())
-        .map(([id, event]) => ({
-          id,
-          ...event,
-          date: {
-            start: ZonedDateTime.parse(event.date.start),
-            end: ZonedDateTime.parse(event.date.end),
-          },
-        }))
-        .sort((a, b) => a.date.start.compareTo(b.date.start));
-
-      setEvents(allEvents);
-    };
-    Run();
-  }, []);
-
-  const eventsByLocalDay = useMemo(
-    () =>
-      events.reduce((grouped, event) => {
-        const startTime = event.date.start
-          .withZoneSameInstant(ZoneId.of(timeZone))
-          .truncatedTo(ChronoUnit.DAYS)
-          .toString();
-        return {
-          ...grouped,
-          [startTime]: [...(grouped[startTime] || []), event],
-        };
-      }, {}),
-    [events, timeZone]
+const EventList = ({ events, title, timeZoneId }) =>
+  events.length > 0 && (
+    <Fragment>
+      <hr />
+      <h3>{title}</h3>
+      <GroupedEvents events={events} timeZoneId={timeZoneId} />
+    </Fragment>
   );
 
-  const timeZoneId = useMemo(() => ZoneId.of(timeZone), [timeZone]);
+const GroupedEvents = ({ events, timeZoneId }) => {
+  if (events.length < 6) {
+    return (
+      <Fragment>
+        {events.map((event) => (
+          <EventCard event={event} usersTimezone={timeZoneId} />
+        ))}
+      </Fragment>
+    );
+  }
+
+  const groupedByDay = useMemo(
+    () =>
+      events.reduce((byDay, event) => {
+        const dateKey = LocalizedDate({
+          date: event.date.start,
+          timeZone: timeZoneId,
+        });
+        return {
+          ...byDay,
+          [dateKey]: [...(byDay[dateKey] || []), event],
+        };
+      }, {}),
+    [events, timeZoneId]
+  );
+
+  return Object.keys(groupedByDay)
+    .sort()
+    .map((dateKey) => (
+      <Fragment>
+        <span class="text-muted font-weight-bold">{dateKey}</span>
+        <div className="container-fluid px-0">
+          <div>
+            {groupedByDay[dateKey].length > 3 ? (
+              <GroupedIntraDayEvents
+                events={groupedByDay[dateKey]}
+                timeZoneId={timeZoneId}
+              />
+            ) : (
+              <Fragment>
+                {groupedByDay[dateKey].map((event) => (
+                  <EventCard event={event} usersTimezone={timeZoneId} />
+                ))}
+              </Fragment>
+            )}
+          </div>
+        </div>
+      </Fragment>
+    ));
+};
+
+const GroupedIntraDayEvents = ({ events, timeZoneId }) => {
+  const timeSlices = [
+    ["Night (00:00 - 08:00)", LocalTime.of(8, 0, 0, 0)],
+    ["Morning (08:00 - 12:00)", LocalTime.of(12, 0, 0, 0)],
+    ["Afternoon (12:00 - 20:00)", LocalTime.of(20, 0, 0, 0)],
+    ["Night (20:00 - 24:00)", LocalTime.MAX],
+  ];
+
+  const grouped = useMemo(() => {
+    const result = timeSlices.map(() => []);
+    outer: for (let event of events) {
+      for (let sliceIdx in timeSlices) {
+        const slice = timeSlices[sliceIdx];
+        if (
+          event.date.start
+            .withZoneSameInstant(timeZoneId)
+            .toLocalTime()
+            .isBefore(slice[1])
+        ) {
+          result[sliceIdx].push(event);
+          continue outer;
+        }
+      }
+      result[timeSlices.length - 1].push(event);
+    }
+    return result;
+  }, [events, timeZoneId]);
 
   return (
     <Fragment>
-      <div class="bg-light text-dark py-5">
-        <div class="container-fluid p-3 pl-md-5 pr-md-0">
-          <h1>
-            <b>Timeline for #GDCR2020</b>
-          </h1>
-          <p class="lead">
-            All times shown are in the timezone for{" "}
-            <div class="form-inline d-inline">
-              <Typeahead
-                defaultInputValue={timeZone}
-                style={{ maxWidth: "95%", display: "inline-block" }}
-                onChange={(values) => {
-                  if (!values.length) return;
-                  setTimeZone(values[0]);
-                }}
-                options={jsjoda.ZoneId.getAvailableZoneIds()}
-              />
-            </div>
-          </p>
-          <div class="my-5 pr-5 d-md-block d-none">
-            <Timeline
-              events={Object.values(eventsByLocalDay).flat()}
-              timeZone={timeZone}
-            />
+      {timeSlices.map((slice, i) =>
+        grouped[i].length === 0 ? (
+          ""
+        ) : (
+          <div className="container-fluid px-0 mb-2">
+            <p className="px-1 my-0 text-muted font-weight-bold">{slice[0]}</p>
+            {grouped[i].map((event) => (
+              <EventCard event={event} usersTimezone={timeZoneId} />
+            ))}
           </div>
-          {Object.keys(eventsByLocalDay).map((startTime) => (
-            <DayOfEventContainer
-              timeZoneId={timeZoneId}
-              events={eventsByLocalDay[startTime]}
-              startTime={startTime}
-            />
-          ))}
-        </div>
-      </div>
+        )
+      )}
     </Fragment>
   );
 };
