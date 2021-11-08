@@ -1,5 +1,5 @@
 {
-  "title": "GDCR SWK Köln",
+  "title": "GDCR SWK KÃ¶ln",
   "description": "Back again in presence @ lise GmbH",
   "format": "classic",
   "spoken_language": "German",
@@ -25,7 +25,7 @@
     }
   ],
   "location": {
-    "city": "Köln",
+    "city": "KÃ¶ln",
     "country": "Germany",
     "coordinates": {
       "latitude": 50.94222,
@@ -33,3 +33,4 @@
     }
   }
 }
+
