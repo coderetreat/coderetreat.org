@@ -1,0 +1,22 @@
+{
+  "title": "Global Day of Coderetreat @ Epam Systems Bangalore",
+  "description": "Coderetreat is a day-long, intensive practice event, focusing on the fundamentals of software development and design. By providing developers the opportunity to take part in focused practice, away from the pressures of 'getting things done', the coderetreat format has proven itself to be a highly effective means of skill improvement. Practicing the basic principles of modular and object-oriented design, developers can improve their ability to write code that minimizes the cost of change over time.",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://community-z.com/events/global-day-of-coderetreat-2021-epam-systems-bangalore",
+  "date": {
+    "start": "2021-11-13T10:00:00+05:30",
+    "end": "2021-11-13T16:00:00+05:30"
+  },
+  "moderators": [
+    {
+      "name": "Vipul gupta"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Sandeep joshi"
+    }
+  ],
+  "location": "virtual"
+}

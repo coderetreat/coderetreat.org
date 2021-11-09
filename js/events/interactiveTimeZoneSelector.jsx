@@ -4,7 +4,7 @@ import { h, Fragment, render } from "preact";
 import {Typeahead} from "react-bootstrap-typeahead";
 
 
-export default function interactiveTimeZoneSelector(timeZone, setTimeZone) {
+export default function interactiveTimeZoneSelector({timeZone, setTimeZone}) {
   return <div class="form-inline d-inline">
     <Typeahead
       defaultInputValue={timeZone}

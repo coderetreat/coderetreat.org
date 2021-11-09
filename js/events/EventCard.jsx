@@ -119,15 +119,18 @@ export default ({ event, usersTimezone }) => {
         </div>
         <div class="card-body m-0">
           <h5 class="card-title m-0">{event.title}</h5>
+          <span class="d-block text-muted pt-1">
+            {event.spoken_language}, <Format format={event.format} />, with <Moderators moderators={event.moderators} />
+          </span>
         </div>
         <div style={isCollapsed ? collapsedStyle : expandedStyle}>
           <ul class="list-group list-group-flush">
             {event.description && (
-              <li class="list-group-item">
+              <li class="list-group-item bg-transparent">
                 <p class="card-text">{event.description}</p>
               </li>
             )}
-            <li class="list-group-item">
+            <li class="list-group-item bg-transparent">
               <b>Start: </b>
               <LocalizedDateTime
                 date={event.date.start}
@@ -140,11 +143,11 @@ export default ({ event, usersTimezone }) => {
                 timeZone={usersTimezone}
               />
             </li>
-            <li class="list-group-item py-1">
+            <li class="list-group-item bg-transparent py-1">
               <b>Event format: </b>
               <Format format={event.format} />
             </li>
-            <li class="list-group-item py-1">
+            <li class="list-group-item bg-transparent py-1">
               <b>Code of Conduct: </b>
               {event.code_of_conduct ? (
                 <a href={event.code_of_conduct}>
@@ -154,18 +157,18 @@ export default ({ event, usersTimezone }) => {
                 "not specified"
               )}
             </li>
-            <li class="list-group-item py-1">
+            <li class="list-group-item bg-transparent py-1">
               <b>Spoken language: </b>
               {event.spoken_language}
             </li>
             {event.moderators && event.moderators.length > 0 && (
-              <li class="list-group-item py-1">
+              <li class="list-group-item bg-transparent py-1">
                 <b>Moderators: </b>
                 <Moderators moderators={event.moderators} />
               </li>
             )}
             {event.sponsors && event.sponsors.length > 0 && (
-              <li class="list-group-item py-1">
+              <li class="list-group-item bg-transparent py-1">
                 <b>Sponsors: </b>
                 <Sponsors sponsors={event.sponsors} />
               </li>

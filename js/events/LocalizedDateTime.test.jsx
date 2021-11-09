@@ -19,7 +19,7 @@ describe("Date Time Helper", () => {
     render(
       <LocalizedDateTime date={date} timeZone={timeZone} />
     )
-    expect(document.body).toHaveTextContent("2016-3-18, 11:38")
+    expect(document.body).toHaveTextContent("2016-03-18, 11:38")
   })
 
   it("displays date in it's own timezone", () => {
@@ -28,7 +28,7 @@ describe("Date Time Helper", () => {
     render(
       <LocalizedDate date={date} timeZone={timeZone} />
     )
-    expect(document.body).toHaveTextContent("2016-3-18")
+    expect(document.body).toHaveTextContent("2016-03-18")
     expect(document.body).not.toHaveTextContent("11:38")
   })
 })
