@@ -1,0 +1,18 @@
+{
+  "title": "Small coderetreat",
+  "description": "Zero Overhead Coderetreat | Bring Your Own Topic",
+  "format": "classic",
+  "spoken_language": "English, German",
+  "url": "https://www.softwerkskammer.org/activities/Coderetreat20220121",
+  "code_of_conduct": "https://makers.tech/code-of-conduct/",
+  "date": {
+    "start": "2022-01-21T09:00:00+01:00",
+    "end": "2022-01-21T15:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "You ;)"
+    }
+  ],
+  "location": "virtual"
+}
