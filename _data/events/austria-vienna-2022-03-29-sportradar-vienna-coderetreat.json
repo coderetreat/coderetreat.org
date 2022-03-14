@@ -1,0 +1,35 @@
+{
+  "title": "Sportradar Vienna Coderetreat",
+  "description": "A regular, on site Coderetreat on a Tudesday (not on weekend). Feel free to join.",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://www.softwerkskammer.org/activities/Coderetreat20220329",
+  "code_of_conduct": "https://makers.tech/code-of-conduct/",
+  "date": {
+    "start": "2022-03-29T08:45:00+02:00",
+    "end": "2022-03-29T16:30:00+02:00"
+  },
+  "moderators": [
+    {
+      "name": "Dagmar Labes"
+    },
+    {
+      "name": "Peter Kofler",
+      "url": "https://twitter.com/codecopkofler"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Sportradar Media Services",
+      "url": "https://www.sportradar.com/"
+    }
+  ],
+  "location": {
+    "city": "Vienna",
+    "country": "Austria",
+    "coordinates": {
+      "latitude": 48.20833,
+      "longitude": 16.37306
+    }
+  }
+}
