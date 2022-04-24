@@ -1,0 +1,19 @@
+{
+  "title": "Small Coderetreat",
+  "description": "Zero Overhead Coderetreat | Bring Your Own Topic",
+  "format": "classic",
+  "spoken_language": "German, English",
+  "url": "https://www.softwerkskammer.org/activities/Coderetreat20220520",
+  "code_of_conduct": "https://makers.tech/code-of-conduct/",
+  "date": {
+    "start": "2022-05-20T09:00:00+02:00",
+    "end": "2022-05-20T15:00:00+02:00"
+  },
+  "moderators": [
+    {
+      "name": "swkWien/remote",
+      "url": "https://twitter.com/swkwien"
+    }
+  ],
+  "location": "virtual"
+}
