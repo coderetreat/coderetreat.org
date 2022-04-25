@@ -146,7 +146,7 @@ Explain to teams that the afternoon is about going past any self-imposed limits.
 
 ## The Closing Circle
 
-It is important to get together at the end of the day and reflect. The standard way if to have a closing circle where everyone answers 3 questions. 
+It is important to get together at the end of the day and reflect. The standard way is to have a closing circle where everyone answers 3 questions. 
 
 Depending on the size of the group, you'll want to emphasize brevity. With 20-30 people, it can potentially take a while.
 
@@ -208,12 +208,12 @@ Because there is always something new to learn, be it from your pairing partner,
 
 ### What do I do if I don't know the answer to a question?
 
-As a facilitator, your role is to promote discussion, and you're not expected have all the answers.  Let the group explore the topic: "That's a great question. What do you think?"
+As a facilitator, your role is to promote discussion, and you're not expected to have all the answers. Let the group explore the topic: "That's a great question. What do you think?"
 
 ### What do I do if we have an odd number of people?
 
-You can allow three people to program together rather than two. Having a trio works fine.  Everyone should be working with someone else, to get feedback and cross-learning from their peers.
+You can allow three people to program together rather than two. Having a trio works fine. Everyone should be working with someone else, to get feedback and cross-learning from their peers.
 
 # Further Reading
 
-- Alex Bolboaca has been organizing and facilitating an ongoing series of coderetreats in Romania. He wrote a great post on [organizing coderetreats](http://www.alexbolboaca.ro/wordpress/articles/how-to-organize-a-code-retreat).
+- Alex Bolboaca has been organizing and facilitating an ongoing series of coderetreats in Romania. He wrote a great post on [organizing coderetreats](https://alexbolboaca.ro/coderetreat/how-to-organize-a-code-retreat).
