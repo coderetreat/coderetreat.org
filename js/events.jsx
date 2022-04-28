@@ -12,9 +12,9 @@ const { ZoneId, ZonedDateTime, LocalDate, LocalTime } = jsjoda;
 
 const earliestGDCRStart = LocalDate.parse(
   jekyllConfig.globalday.start
-).atStartOfDayWithZone(ZoneId.of("UTC+12"));
+).atStartOfDay(ZoneId.of("UTC+12"));
 const latestGDCREnd = LocalDate.parse(jekyllConfig.globalday.end)
-  .atStartOfDayWithZone(ZoneId.of("UTC-12"))
+  .atStartOfDay(ZoneId.of("UTC-12"))
   .plusDays(1);
 const isCurrentDateAfterGDCR = ZonedDateTime.now().isAfter(latestGDCREnd);
 
