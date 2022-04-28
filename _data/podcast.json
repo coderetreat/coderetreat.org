@@ -19,7 +19,7 @@
         },
         "channel": {
             "lastBuildDate": {
-                "_text": "Wed, 29 Sep 2021 20:27:27 +0000"
+                "_text": "Sun, 17 Apr 2022 21:51:40 +0000"
             },
             "category": [
                 {
@@ -53,6 +53,9 @@
                     "_text": "top3"
                 },
                 {
+                    "_text": "advanced"
+                },
+                {
                     "_text": "assignment"
                 },
                 {
@@ -63,9 +66,6 @@
                 },
                 {
                     "_text": "retrospective"
-                },
-                {
-                    "_text": "advanced"
                 },
                 {
                     "_text": "ensemble-programming"
@@ -135,7 +135,7 @@
                 "_text": "code-cop.org"
             },
             "openSearch:totalResults": {
-                "_text": "36"
+                "_text": "37"
             },
             "openSearch:startIndex": {
                 "_text": "1"
@@ -260,6 +260,96 @@
                         "_attributes": {
                             "isPermaLink": "false"
                         },
+                        "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-7547188833310529861"
+                    },
+                    "pubDate": {
+                        "_text": "Tue, 30 Nov 2021 09:22:00 +0000"
+                    },
+                    "category": [
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "advanced"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "facilitation"
+                        },
+                        {
+                            "_attributes": {
+                                "domain": "http://www.blogger.com/atom/ns#"
+                            },
+                            "_text": "guest"
+                        }
+                    ],
+                    "title": {
+                        "_text": "35: Four sessions instead of six and making the event more fun"
+                    },
+                    "description": {
+                        "_text": "In this episode <a href=\"https://www.xing.com/profile/Dagmar_Labes2\">Dagmar Labes</a> is sharing some of her facilitation secrets: <ul><li>When to reduce to four sessions instead of standard six?</li><li>How to make the event more motivating and more fun for participants?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/35---Four-sessions-instead-of-six-and-making-the-event-more-fun.mp3\">MP3 (11 minutes - 8 Mb)</a> or subscribe to the <a href=\"https://www.code-cop.org/podcast/rss_feed.php\">Feed</a>.</p><p>Thank you Dagmar.</p><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
+                    },
+                    "link": {
+                        "_text": "https://coderetreat-facilitation.code-cop.org/2021/11/four-sessions-instead-of-six-and-making.html"
+                    },
+                    "author": {
+                        "_text": "Peter Kofler"
+                    },
+                    "thr:total": {
+                        "_text": "0"
+                    },
+                    "enclosure": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/35---Four-sessions-instead-of-six-and-making-the-event-more-fun.mp3",
+                            "length": "8383614",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "media:content": {
+                        "_attributes": {
+                            "url": "https://www.code-cop.org/podcast/35---Four-sessions-instead-of-six-and-making-the-event-more-fun.mp3",
+                            "length": "8383614",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "itunes:title": {
+                        "_text": "Four sessions instead of six and making the event more fun"
+                    },
+                    "itunes:season": {
+                        "_text": "1"
+                    },
+                    "itunes:episode": {
+                        "_text": "35"
+                    },
+                    "itunes:subtitle": {
+                        "_text": "In this episode Dagmar Labes is sharing some of her facilitation secrets: When to reduce to four sessions instead of standard six? How to make the event more motivating and more fun for participants?"
+                    },
+                    "itunes:summary": {
+                        "_text": "In this episode Dagmar Labes is sharing some of her facilitation secrets: \n* When to reduce to four sessions instead of standard six? \n* How to make the event more motivating and more fun for participants? \n\nDownload the MP3 (11 minutes - 8 Mb) or subscribe to the Feed. \n\nThank you Dagmar. \n(Music from Synth Loop 1 by allpurposedw and Gong 001 by tec_studio.)"
+                    },
+                    "itunes:author": {
+                        "_text": "Peter Kofler"
+                    },
+                    "itunes:duration": {
+                        "_text": "00:11:00"
+                    },
+                    "itunes:keywords": {
+                        "_text": "advanced, facilitation, guest"
+                    },
+                    "itunes:episodeType": {
+                        "_text": "full"
+                    },
+                    "itunes:explicit": {
+                        "_text": "no"
+                    }
+                },
+                {
+                    "guid": {
+                        "_attributes": {
+                            "isPermaLink": "false"
+                        },
                         "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-1234965526837426029"
                     },
                     "pubDate": {
@@ -292,7 +382,7 @@
                         "_text": "Peter Kofler"
                     },
                     "thr:total": {
-                        "_text": "0"
+                        "_text": "3"
                     },
                     "enclosure": {
                         "_attributes": {
@@ -2538,108 +2628,6 @@
                     },
                     "itunes:keywords": {
                         "_text": "facilitation, guest, retrospective"
-                    },
-                    "itunes:episodeType": {
-                        "_text": "full"
-                    },
-                    "itunes:explicit": {
-                        "_text": "no"
-                    }
-                },
-                {
-                    "guid": {
-                        "_attributes": {
-                            "isPermaLink": "false"
-                        },
-                        "_text": "tag:blogger.com,1999:blog-7232365251100855767.post-6857565190470580608"
-                    },
-                    "pubDate": {
-                        "_text": "Sat, 18 Apr 2020 18:19:00 +0000"
-                    },
-                    "category": [
-                        {
-                            "_attributes": {
-                                "domain": "http://www.blogger.com/atom/ns#"
-                            },
-                            "_text": "constraints"
-                        },
-                        {
-                            "_attributes": {
-                                "domain": "http://www.blogger.com/atom/ns#"
-                            },
-                            "_text": "facilitation"
-                        },
-                        {
-                            "_attributes": {
-                                "domain": "http://www.blogger.com/atom/ns#"
-                            },
-                            "_text": "hosting"
-                        },
-                        {
-                            "_attributes": {
-                                "domain": "http://www.blogger.com/atom/ns#"
-                            },
-                            "_text": "overview"
-                        },
-                        {
-                            "_attributes": {
-                                "domain": "http://www.blogger.com/atom/ns#"
-                            },
-                            "_text": "remote"
-                        }
-                    ],
-                    "title": {
-                        "_text": "11: A remote Coderetreat and overview of constraints"
-                    },
-                    "description": {
-                        "_text": "In this episode: <ul><li>How to run a remote Coderetreat?</li><li>What are constraints?</li></ul><p>Download the <a href=\"https://www.code-cop.org/podcast/11---A-remote-Coderetreat-and-overview-of-constraints.mp3\">MP3 (8 minutes - 12 Mb)</a> or subscribe to the <a href=\"https://feeds.feedburner.com/coderetreat-facilitation\">Feed</a>.</p>Material used for this episode: <ul><li><a href=\"https://medium.com/@philborlin/retrospective-on-a-remote-global-day-of-coderetreat-ace1baf20bae\">Retrospective on a Remote Global Day of Coderetreat</a></li><li><a href=\"https://manynames.sevensuns.at/technojoy/2014/12/2080-a-coding-dojo-constraint-just-for-fun.html\">20/80 - A coding dojo constraint just for fun</a></li></ul><small>(Music from <a href=\"https://freesound.org/people/allpurposedw/sounds/413409/\">Synth Loop 1 by allpurposedw</a> and <a href=\"https://freesound.org/people/tec_studio/sounds/361495/\">Gong 001 by tec_studio</a>.)</small>"
-                    },
-                    "link": {
-                        "_text": "https://coderetreat-facilitation.code-cop.org/2020/04/11-remote-coderetreat-and-overview-of.html"
-                    },
-                    "author": {
-                        "_text": "Peter Kofler"
-                    },
-                    "thr:total": {
-                        "_text": "0"
-                    },
-                    "enclosure": {
-                        "_attributes": {
-                            "url": "https://www.code-cop.org/podcast/11---A-remote-Coderetreat-and-overview-of-constraints.mp3",
-                            "length": "13128466",
-                            "type": "audio/mpeg"
-                        }
-                    },
-                    "media:content": {
-                        "_attributes": {
-                            "url": "https://www.code-cop.org/podcast/11---A-remote-Coderetreat-and-overview-of-constraints.mp3",
-                            "length": "13128466",
-                            "type": "audio/mpeg"
-                        }
-                    },
-                    "itunes:title": {
-                        "_text": "A remote Coderetreat and overview of constraints"
-                    },
-                    "itunes:season": {
-                        "_text": "1"
-                    },
-                    "itunes:episode": {
-                        "_text": "11"
-                    },
-                    "itunes:subtitle": {
-                        "_text": "In this episode: How to run a remote Coderetreat? What are constraints?"
-                    },
-                    "itunes:summary": {
-                        "_text": "In this episode: \n* How to run a remote Coderetreat? \n* What are constraints? \n\nDownload the MP3 (8 minutes - 12 Mb) or subscribe to the Feed. \nMaterial used for this episode: \n* Retrospective on a Remote Global Day of Coderetreat \n* 20/80 - A coding dojo constraint just for fun \n(Music from Synth Loop 1 by allpurposedw and Gong 001 by tec_studio.)"
-                    },
-                    "itunes:author": {
-                        "_text": "Peter Kofler"
-                    },
-                    "itunes:duration": {
-                        "_text": "00:08:00"
-                    },
-                    "itunes:keywords": {
-                        "_text": "constraints, facilitation, hosting, overview, remote"
                     },
                     "itunes:episodeType": {
                         "_text": "full"
