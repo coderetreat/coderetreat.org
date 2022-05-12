@@ -53,7 +53,7 @@
     "build": "npm run fetch:podcast && parcel build js/*.js js/*.jsx js/*.ts js/*.tsx --log-level 4 --public-url /js/bundled --out-dir _site/js/bundled/",
     "watch": "npm run fetch:podcast && parcel watch js/*.js js/*.jsx js/*.ts js/*.tsx --no-source-maps --log-level 4 --public-url /js/bundled --out-dir _site/js/bundled/",
     "watch:jekyll": "bundle exec jekyll serve --livereload -V -H 0.0.0.0",
-    "fetch:podcast": "wget -O _data/podcast.xml https://www.code-cop.org/podcast/rss_feed.php && xml-js _data/podcast.xml --out _data/podcast.json --compact --spaces 4",
+    "fetch:podcast": "true || wget -O _data/podcast.xml https://www.code-cop.org/podcast/rss_feed.php && xml-js _data/podcast.xml --out _data/podcast.json --compact --spaces 4",
     "test": "jest"
   },
   "repository": {
