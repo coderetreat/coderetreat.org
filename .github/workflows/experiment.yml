@@ -2,6 +2,7 @@ name: Experiment
 
 on: 
   check_suite:
+  check_run:
 
 jobs:
   debug:
