@@ -1,31 +1,11 @@
 name: Experiment
 
 on: 
-  pull_request:
-    types:
-      - assigned
-      - unassigned
-      - labeled
-      - unlabeled
-      - opened
-      - edited
-      - closed
-      - reopened
-      - synchronize
-      - converted_to_draft
-      - ready_for_review
-      - locked
-      - unlocked
-      - review_requested
-      - review_request_removed
-      - auto_merge_enabled
-      - auto_merge_disabled
-  status:
+  check_suite:
 
 jobs:
   debug:
     runs-on: ubuntu-latest
     steps:
       - run: env
-      - run: echo '${{ github.event.state }}'
       - run: echo '${{ toJSON(github.event) }}'
