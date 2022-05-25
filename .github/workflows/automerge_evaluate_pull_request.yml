@@ -1,13 +1,6 @@
-name: Experiment
+name: Check if Automerge is possible
 
-on: 
-  check_suite:
-  check_run:
-  workflow_run:
-    workflows: [Test]
-    types:
-      - completed
-
+on: workflow_dispatch
   
 jobs:
   debug:
