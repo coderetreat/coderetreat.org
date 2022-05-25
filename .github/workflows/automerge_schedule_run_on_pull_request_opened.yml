@@ -1,22 +1,27 @@
 name: Schedule Automerge Run
 
-on: 
-  pull_request:
+on:
+  pull_request_target:
     types: [opened]
-  
+  workflow_dispatch:
+    inputs:
+      pull_request:
+        required: true
+        type: string
+
 jobs:
   debug:
     runs-on: ubuntu-latest
     steps:
+      - run: env
+      - run: echo '${{ toJSON(github.event) }}'
       - run: sleep 10s
-      - uses: actions/github-script@v6
+      - uses: actions/checkout@v2
+      - name: Hello world action step
+        uses: ./.github/actions/automerger # Uses an action in the root directory
+        id: hello
         with:
-          script: |
-            github.rest.actions.createWorkflowDispatch({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                workflow_id: "automerge_evaluate_pull_request.yml",
-                ref: context.ref,
-            });
-
-
+          who-to-greet: "Mona the Octocat"
+      # Use the output from the `hello` step
+      - name: Get the output time
+        run: echo "The time was ${{ steps.hello.outputs.time }}"
