@@ -4006,7 +4006,7 @@ function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'defau
 var endpoint = __nccwpck_require__(4544);
 var universalUserAgent = __nccwpck_require__(4204);
 var isPlainObject = __nccwpck_require__(3111);
-var nodeFetch = _interopDefault(__nccwpck_require__(9162));
+var nodeFetch = _interopDefault(__nccwpck_require__(9624));
 var requestError = __nccwpck_require__(9938);
 
 const VERSION = "5.6.3";
@@ -4178,258 +4178,7 @@ exports.request = request;
 
 /***/ }),
 
-/***/ 3652:
-/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
-
-var register = __nccwpck_require__(5941)
-var addHook = __nccwpck_require__(4062)
-var removeHook = __nccwpck_require__(9890)
-
-// bind with array of arguments: https://stackoverflow.com/a/21792913
-var bind = Function.bind
-var bindable = bind.bind(bind)
-
-function bindApi (hook, state, name) {
-  var removeHookRef = bindable(removeHook, null).apply(null, name ? [state, name] : [state])
-  hook.api = { remove: removeHookRef }
-  hook.remove = removeHookRef
-
-  ;['before', 'error', 'after', 'wrap'].forEach(function (kind) {
-    var args = name ? [state, kind, name] : [state, kind]
-    hook[kind] = hook.api[kind] = bindable(addHook, null).apply(null, args)
-  })
-}
-
-function HookSingular () {
-  var singularHookName = 'h'
-  var singularHookState = {
-    registry: {}
-  }
-  var singularHook = register.bind(null, singularHookState, singularHookName)
-  bindApi(singularHook, singularHookState, singularHookName)
-  return singularHook
-}
-
-function HookCollection () {
-  var state = {
-    registry: {}
-  }
-
-  var hook = register.bind(null, state)
-  bindApi(hook, state)
-
-  return hook
-}
-
-var collectionHookDeprecationMessageDisplayed = false
-function Hook () {
-  if (!collectionHookDeprecationMessageDisplayed) {
-    console.warn('[before-after-hook]: "Hook()" repurposing warning, use "Hook.Collection()". Read more: https://git.io/upgrade-before-after-hook-to-1.4')
-    collectionHookDeprecationMessageDisplayed = true
-  }
-  return HookCollection()
-}
-
-Hook.Singular = HookSingular.bind()
-Hook.Collection = HookCollection.bind()
-
-module.exports = Hook
-// expose constructors as a named property for TypeScript
-module.exports.Hook = Hook
-module.exports.Singular = Hook.Singular
-module.exports.Collection = Hook.Collection
-
-
-/***/ }),
-
-/***/ 4062:
-/***/ ((module) => {
-
-module.exports = addHook;
-
-function addHook(state, kind, name, hook) {
-  var orig = hook;
-  if (!state.registry[name]) {
-    state.registry[name] = [];
-  }
-
-  if (kind === "before") {
-    hook = function (method, options) {
-      return Promise.resolve()
-        .then(orig.bind(null, options))
-        .then(method.bind(null, options));
-    };
-  }
-
-  if (kind === "after") {
-    hook = function (method, options) {
-      var result;
-      return Promise.resolve()
-        .then(method.bind(null, options))
-        .then(function (result_) {
-          result = result_;
-          return orig(result, options);
-        })
-        .then(function () {
-          return result;
-        });
-    };
-  }
-
-  if (kind === "error") {
-    hook = function (method, options) {
-      return Promise.resolve()
-        .then(method.bind(null, options))
-        .catch(function (error) {
-          return orig(error, options);
-        });
-    };
-  }
-
-  state.registry[name].push({
-    hook: hook,
-    orig: orig,
-  });
-}
-
-
-/***/ }),
-
-/***/ 5941:
-/***/ ((module) => {
-
-module.exports = register;
-
-function register(state, name, method, options) {
-  if (typeof method !== "function") {
-    throw new Error("method for before hook must be a function");
-  }
-
-  if (!options) {
-    options = {};
-  }
-
-  if (Array.isArray(name)) {
-    return name.reverse().reduce(function (callback, name) {
-      return register.bind(null, state, name, callback, options);
-    }, method)();
-  }
-
-  return Promise.resolve().then(function () {
-    if (!state.registry[name]) {
-      return method(options);
-    }
-
-    return state.registry[name].reduce(function (method, registered) {
-      return registered.hook.bind(null, method, options);
-    }, method)();
-  });
-}
-
-
-/***/ }),
-
-/***/ 9890:
-/***/ ((module) => {
-
-module.exports = removeHook;
-
-function removeHook(state, name, method) {
-  if (!state.registry[name]) {
-    return;
-  }
-
-  var index = state.registry[name]
-    .map(function (registered) {
-      return registered.orig;
-    })
-    .indexOf(method);
-
-  if (index === -1) {
-    return;
-  }
-
-  state.registry[name].splice(index, 1);
-}
-
-
-/***/ }),
-
-/***/ 7313:
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-
-class Deprecation extends Error {
-  constructor(message) {
-    super(message); // Maintains proper stack trace (only available on V8)
-
-    /* istanbul ignore next */
-
-    if (Error.captureStackTrace) {
-      Error.captureStackTrace(this, this.constructor);
-    }
-
-    this.name = 'Deprecation';
-  }
-
-}
-
-exports.Deprecation = Deprecation;
-
-
-/***/ }),
-
-/***/ 3111:
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-
-/*!
- * is-plain-object <https://github.com/jonschlinkert/is-plain-object>
- *
- * Copyright (c) 2014-2017, Jon Schlinkert.
- * Released under the MIT License.
- */
-
-function isObject(o) {
-  return Object.prototype.toString.call(o) === '[object Object]';
-}
-
-function isPlainObject(o) {
-  var ctor,prot;
-
-  if (isObject(o) === false) return false;
-
-  // If has modified constructor
-  ctor = o.constructor;
-  if (ctor === undefined) return true;
-
-  // If has modified prototype
-  prot = ctor.prototype;
-  if (isObject(prot) === false) return false;
-
-  // If constructor does not have an Object-specific method
-  if (prot.hasOwnProperty('isPrototypeOf') === false) {
-    return false;
-  }
-
-  // Most likely a plain Object
-  return true;
-}
-
-exports.isPlainObject = isPlainObject;
-
-
-/***/ }),
-
-/***/ 9162:
+/***/ 9624:
 /***/ ((module, exports, __nccwpck_require__) => {
 
 "use strict";
@@ -6130,6 +5879,257 @@ exports.Headers = Headers;
 exports.Request = Request;
 exports.Response = Response;
 exports.FetchError = FetchError;
+
+
+/***/ }),
+
+/***/ 3652:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+var register = __nccwpck_require__(5941)
+var addHook = __nccwpck_require__(4062)
+var removeHook = __nccwpck_require__(9890)
+
+// bind with array of arguments: https://stackoverflow.com/a/21792913
+var bind = Function.bind
+var bindable = bind.bind(bind)
+
+function bindApi (hook, state, name) {
+  var removeHookRef = bindable(removeHook, null).apply(null, name ? [state, name] : [state])
+  hook.api = { remove: removeHookRef }
+  hook.remove = removeHookRef
+
+  ;['before', 'error', 'after', 'wrap'].forEach(function (kind) {
+    var args = name ? [state, kind, name] : [state, kind]
+    hook[kind] = hook.api[kind] = bindable(addHook, null).apply(null, args)
+  })
+}
+
+function HookSingular () {
+  var singularHookName = 'h'
+  var singularHookState = {
+    registry: {}
+  }
+  var singularHook = register.bind(null, singularHookState, singularHookName)
+  bindApi(singularHook, singularHookState, singularHookName)
+  return singularHook
+}
+
+function HookCollection () {
+  var state = {
+    registry: {}
+  }
+
+  var hook = register.bind(null, state)
+  bindApi(hook, state)
+
+  return hook
+}
+
+var collectionHookDeprecationMessageDisplayed = false
+function Hook () {
+  if (!collectionHookDeprecationMessageDisplayed) {
+    console.warn('[before-after-hook]: "Hook()" repurposing warning, use "Hook.Collection()". Read more: https://git.io/upgrade-before-after-hook-to-1.4')
+    collectionHookDeprecationMessageDisplayed = true
+  }
+  return HookCollection()
+}
+
+Hook.Singular = HookSingular.bind()
+Hook.Collection = HookCollection.bind()
+
+module.exports = Hook
+// expose constructors as a named property for TypeScript
+module.exports.Hook = Hook
+module.exports.Singular = Hook.Singular
+module.exports.Collection = Hook.Collection
+
+
+/***/ }),
+
+/***/ 4062:
+/***/ ((module) => {
+
+module.exports = addHook;
+
+function addHook(state, kind, name, hook) {
+  var orig = hook;
+  if (!state.registry[name]) {
+    state.registry[name] = [];
+  }
+
+  if (kind === "before") {
+    hook = function (method, options) {
+      return Promise.resolve()
+        .then(orig.bind(null, options))
+        .then(method.bind(null, options));
+    };
+  }
+
+  if (kind === "after") {
+    hook = function (method, options) {
+      var result;
+      return Promise.resolve()
+        .then(method.bind(null, options))
+        .then(function (result_) {
+          result = result_;
+          return orig(result, options);
+        })
+        .then(function () {
+          return result;
+        });
+    };
+  }
+
+  if (kind === "error") {
+    hook = function (method, options) {
+      return Promise.resolve()
+        .then(method.bind(null, options))
+        .catch(function (error) {
+          return orig(error, options);
+        });
+    };
+  }
+
+  state.registry[name].push({
+    hook: hook,
+    orig: orig,
+  });
+}
+
+
+/***/ }),
+
+/***/ 5941:
+/***/ ((module) => {
+
+module.exports = register;
+
+function register(state, name, method, options) {
+  if (typeof method !== "function") {
+    throw new Error("method for before hook must be a function");
+  }
+
+  if (!options) {
+    options = {};
+  }
+
+  if (Array.isArray(name)) {
+    return name.reverse().reduce(function (callback, name) {
+      return register.bind(null, state, name, callback, options);
+    }, method)();
+  }
+
+  return Promise.resolve().then(function () {
+    if (!state.registry[name]) {
+      return method(options);
+    }
+
+    return state.registry[name].reduce(function (method, registered) {
+      return registered.hook.bind(null, method, options);
+    }, method)();
+  });
+}
+
+
+/***/ }),
+
+/***/ 9890:
+/***/ ((module) => {
+
+module.exports = removeHook;
+
+function removeHook(state, name, method) {
+  if (!state.registry[name]) {
+    return;
+  }
+
+  var index = state.registry[name]
+    .map(function (registered) {
+      return registered.orig;
+    })
+    .indexOf(method);
+
+  if (index === -1) {
+    return;
+  }
+
+  state.registry[name].splice(index, 1);
+}
+
+
+/***/ }),
+
+/***/ 7313:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+class Deprecation extends Error {
+  constructor(message) {
+    super(message); // Maintains proper stack trace (only available on V8)
+
+    /* istanbul ignore next */
+
+    if (Error.captureStackTrace) {
+      Error.captureStackTrace(this, this.constructor);
+    }
+
+    this.name = 'Deprecation';
+  }
+
+}
+
+exports.Deprecation = Deprecation;
+
+
+/***/ }),
+
+/***/ 3111:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+/*!
+ * is-plain-object <https://github.com/jonschlinkert/is-plain-object>
+ *
+ * Copyright (c) 2014-2017, Jon Schlinkert.
+ * Released under the MIT License.
+ */
+
+function isObject(o) {
+  return Object.prototype.toString.call(o) === '[object Object]';
+}
+
+function isPlainObject(o) {
+  var ctor,prot;
+
+  if (isObject(o) === false) return false;
+
+  // If has modified constructor
+  ctor = o.constructor;
+  if (ctor === undefined) return true;
+
+  // If has modified prototype
+  prot = ctor.prototype;
+  if (isObject(prot) === false) return false;
+
+  // If constructor does not have an Object-specific method
+  if (prot.hasOwnProperty('isPrototypeOf') === false) {
+    return false;
+  }
+
+  // Most likely a plain Object
+  return true;
+}
+
+exports.isPlainObject = isPlainObject;
 
 
 /***/ }),
@@ -8863,21 +8863,109 @@ var __webpack_exports__ = {};
 const core = __nccwpck_require__(8967);
 const github = __nccwpck_require__(2347);
 
-const GITHUB_TOKEN = core.getInput("GITHUB_TOKEN");
+const GITHUB_TOKEN = core.getInput("GITHUB_TOKEN") || process.env.GITHUB_TOKEN;
 const octokit = github.getOctokit(GITHUB_TOKEN);
+
+const assertTrue = (cond, message) => {
+  if (!cond) throw new Error(message);
+};
 
 (async () => {
   try {
-    const params = {
+    const baseParams = {
       owner: "coderetreat",
       repo: "coderetreat.org",
       pull_number:
         github.context.payload.number ||
-        github.context.payload.inputs?.pull_request,
+        github.context.payload.inputs?.pull_request ||
+        process.env.GITHUB_PR_NUMBER,
     };
-    console.log({ params });
+    const pullRequest = await octokit.rest.pulls.get(baseParams);
+    const files = await octokit.rest.pulls.listFiles(baseParams);
+    const statusChecks = await octokit.rest.checks.listForRef({
+      ...baseParams,
+      ref: pullRequest.data.head.sha,
+    });
+    console.log(statusChecks.data.check_runs);
 
-    console.log(await octokit.rest.pulls.get(params));
+    const onlyOneFileHasBeenChanged = ({ files }) =>
+      assertTrue(
+        files.data.length == 1,
+        "Only one file should be changed at once"
+      );
+
+    const noDeletionsTakePlace = ({ files }) =>
+      assertTrue(
+        files.data.every((file) => file.deletions === 0),
+        "No deletions"
+      );
+
+    const theFileIsInDataEvents = ({ files }) =>
+      assertTrue(
+        files.data.every((file) => file.filename.startsWith("_data/events/")),
+        "The file must be in _data/events/"
+      );
+
+    const theFileEndsInJson = ({ files }) =>
+      assertTrue(
+        files.data.every((file) => file.filename.endsWith(".json")),
+        "The file must end with .json"
+      );
+
+    const theFileMatchesSomeRegexThatsProbablyWrong = ({ files }) =>
+      assertTrue(
+        files.data.every((file) =>
+          /^_data\/events\/[^\/]+\.json$/.test(file.filename)
+        ),
+        "The file must match our regex"
+      );
+
+    const theFileNeedsToBeValidJson = async ({ files }) => {
+      for (let file of files.data) {
+        const contentRequest = await octokit.rest.repos.getContent({
+          ...baseParams,
+          path: file.filename,
+          ref: pullRequest.data.head.sha,
+        });
+        const content = Buffer.from(
+          contentRequest.data.content,
+          "base64"
+        ).toString();
+        JSON.parse(content);
+      }
+    };
+
+    const allStatusChecksAreSuccessful = ({ statusChecks }) =>
+      assertTrue(
+        statusChecks.data.check_runs.every(
+          (run) => run.status === "completed" && run.conclusion === "success"
+        ),
+        "All status checks need to have passed"
+      );
+
+    const ourTestStatusCheckHasRunToo = ({ statusChecks }) =>
+      assertTrue(
+        statusChecks.data.check_runs.some((run) => run.name === "test")
+      );
+
+    const allAssertions = [
+      onlyOneFileHasBeenChanged,
+      noDeletionsTakePlace,
+      theFileIsInDataEvents,
+      theFileEndsInJson,
+      theFileMatchesSomeRegexThatsProbablyWrong,
+      theFileNeedsToBeValidJson,
+      allStatusChecksAreSuccessful,
+      ourTestStatusCheckHasRunToo,
+    ];
+
+    for (let assertion of allAssertions) {
+      await assertion({
+        pullRequest,
+        files,
+        statusChecks,
+      });
+    }
   } catch (error) {
     core.setFailed(error.message);
   }
