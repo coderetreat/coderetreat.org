@@ -3,7 +3,9 @@ name: Experiment
 on: 
   check_suite:
   check_run:
+  workflow_run:
 
+  
 jobs:
   debug:
     runs-on: ubuntu-latest
