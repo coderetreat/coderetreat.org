@@ -73,12 +73,12 @@ const assertTrue = (cond, message) => {
       }
     };
 
-    const allStatusChecksAreSuccessful = ({ statusChecks }) =>
+    const allStatusChecksAreSuccessfulOrNeutral = ({ statusChecks }) =>
       assertTrue(
         statusChecks.data.check_runs.every(
-          (run) => run.status === "completed" && run.conclusion === "success"
+          (run) => run.status === "completed" && (run.conclusion === "success" || run.conclusion === "neutral")
         ),
-        "All status checks need to have passed"
+        "All status checks need to have been completed and be either success or neutral"
       );
 
     const ourTestStatusCheckHasRunToo = ({ statusChecks }) =>
@@ -93,7 +93,7 @@ const assertTrue = (cond, message) => {
       theFileEndsInJson,
       theFileMatchesSomeRegexThatsProbablyWrong,
       theFileNeedsToBeValidJson,
-      allStatusChecksAreSuccessful,
+      allStatusChecksAreSuccessfulOrNeutral,
       ourTestStatusCheckHasRunToo,
     ];
 
