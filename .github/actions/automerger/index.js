@@ -1,5 +1,5 @@
 const verifier = require("./verifier");
 
-(async () => {
-  await verifier();
-})();
+// (async () => {
+//   await verifier();
+// })();

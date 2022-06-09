@@ -133,6 +133,10 @@ module.exports = async () => {
         statusChecks,
       });
     }
+    await octokit.rest.pulls.merge({
+      ...baseParams,
+      pull_number: pullRequest.data.number,
+    });
   } catch (error) {
     console.error(error);
     core.setFailed(error.message);

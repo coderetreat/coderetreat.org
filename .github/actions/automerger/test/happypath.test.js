@@ -23,6 +23,7 @@ test("Happy Path", async () => {
         listFiles: jest
           .fn()
           .mockResolvedValue(require("./fake_pull_request_files.json")),
+        merge: jest.fn().mockResolvedValue(),
       },
       checks: {
         listForRef: jest
@@ -42,4 +43,9 @@ test("Happy Path", async () => {
 
   await verifier();
   expect(core.setFailed).not.toHaveBeenCalled();
+  expect(octokitMock.rest.pulls.merge).toHaveBeenCalledWith({
+    owner: "coderetreat",
+    repo: "coderetreat.org",
+    pull_number: 795,
+  });
 });
