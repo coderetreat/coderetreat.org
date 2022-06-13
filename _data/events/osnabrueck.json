@@ -1,0 +1,24 @@
+{
+  "title": "#GDCR goes remote",
+  "description": "As developers we have long known that working remotely is efficient and can be done anywhere. Of course, getting to know each other personally is nice, but the health of everyone is our priority. Thus, this year’s event will take place at home - learning effects included. Isn't this precisely what the #GDCR is all about? Therefore, we are happy to accommodate the Global Day of Align code retreat as a \"digital host\". There are exciting workshops, programming tasks and challenges waiting to get solved cooperatively. The #GDCR is aimed at experienced and inexperienced software developers, as well at students with the goals: to experience modern software development, to deepen and question known techniques   and to exchange ideas with other developers.",
+  "format": "classic",
+  "spoken_language": "English, German",
+  "url": "https://gdcr2020.eventbrite.de",
+  "date": {
+    "start": "2020-11-07T09:00:00+01:00",
+    "end": "2020-11-07T16:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Sascha Doemer",
+      "url": "https://twitter.com/saschadoemer"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "LMIS AG",
+      "url": "https://lmis.de"
+    }
+  ],
+  "location": "virtual"
+}

@@ -1,5 +1,10 @@
-.idea
-.sass-cache
 _site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
 node_modules
-*.iml
+.cache
+js/bundled/
+.idea
+_data/podcast.*

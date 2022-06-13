@@ -1,0 +1,140 @@
+@import "fonts/orbitron";
+@import "fonts/lato";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+@each $name, $color in $participants {
+  $theme-colors: map-merge(
+    $theme-colors,
+    (
+      "participants-#{$name}": $color,
+    )
+  );
+}
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "participants-bg-light": theme-color-level("participants-primary", -11),
+  )
+);
+
+@each $name, $color in $facilitators {
+  $theme-colors: map-merge(
+    $theme-colors,
+    (
+      "facilitators-#{$name}": $color,
+    )
+  );
+}
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "facilitators-bg-light": theme-color-level("facilitators-primary", -11),
+  )
+);
+$font-family-sans-serif: "Lato", "Open Sans", "Roboto", "Helvetica Neue", Arial,
+  "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+  "Liberation Mono", "Courier New", monospace;
+$font-family-base: $font-family-sans-serif;
+$font-size-base: 0.9rem;
+
+$h1-font-size: $font-size-base * 2;
+$h2-font-size: $font-size-base * 1.75;
+$h3-font-size: $font-size-base * 1.5;
+$h4-font-size: $font-size-base * 1.25;
+$h5-font-size: $font-size-base * 1.2;
+$h6-font-size: $font-size-base;
+
+$code-background-color: $gray-900;
+$link-color: darken(theme-color("primary"), 30%);
+$link-hover-color: darken($link-color, 15%);
+$link-decoration: none;
+$link-hover-decoration: underline;
+
+$enable-shadows: true;
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "navbar";
+@import "display-responsive";
+
+.btn-facilitators {
+  @include button-variant(
+    map-get($facilitators, "primary"),
+    map-get($facilitators, "primary")
+  );
+}
+
+.btn-participants {
+  @include button-variant(
+    map-get($participants, "primary"),
+    map-get($participants, "primary")
+  );
+}
+
+.drop-shadow {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 2px;
+}
+
+.drop-shadow-small {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
+  border-radius: 2px;
+}
+
+.setup-guide > div:nth-child(2n) {
+  background: $gray-100;
+}
+
+main blockquote:not(.blockquote) {
+  background: theme-color("light");
+  &:before {
+    content: "“";
+    font-size: 5rem;
+    line-height: 1;
+    font-family: "Times New Roman", Times, Georgia, Cambria, serif;
+    font-weight: bold;
+    float: left;
+    padding-right: $spacer;
+  }
+  > p {
+    margin: 0;
+  }
+  font-size: 1.25rem;
+  border-left: 3px solid theme-color("primary");
+  padding: $spacer/2;
+  margin: $spacer * 2 $spacer;
+}
+
+main div.guide {
+  font-size: 1.2em;
+
+  section.content {
+    h1,
+    h2,
+    h3,
+    h4 {
+      margin-top: $spacer * 4;
+      font-weight: bold;
+    }
+  }
+
+  h1:not(:first-child):not(.display-1) {
+    margin-top: $spacer * 4;
+  }
+}
+
+button.btn-disabled-grayscale[disabled] {
+  filter: grayscale(100%);
+}
+
+@import "toc";
+@import "syntax_highlighting";
+@import "helpful-boxes";
+@import "readmore";
+@import "pages/home";
+@import "pages/setup-guides";
+@import "pages/training-sessions";
+@import "pages/events";

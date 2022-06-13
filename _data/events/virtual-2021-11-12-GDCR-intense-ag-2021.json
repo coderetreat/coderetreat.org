@@ -1,0 +1,23 @@
+{
+    "title": "Global Day Of Code Retreat @ Intense AG",
+    "format": "classic",
+    "spoken_language": "Deutsch",
+    "url": "https://www.eventbrite.de/e/global-day-of-code-retreat-2021-intense-ag-tickets-166476958063",
+    "date": {
+      "start": "2021-11-12T09:00:00+01:00",
+      "end": "2021-11-12T15:00:00+01:00"
+    },
+    "moderators": [
+      {
+        "name": "Dominik Panzer",
+        "url": "https://twitter.com/panzerdominik"
+      }
+    ],
+    "sponsors": [
+      {
+        "name": "Intense AG",
+        "url": "https://www.intense.de"
+      }
+    ],
+    "location": "virtual"
+  }

@@ -1,0 +1,28 @@
+{
+  "title": "Nelkinda Global Day of Coderetreat",
+  "description": "Global Day of Coderetreat by Nelkinda Software Craft for India, Nepal, Sri Lanka, Bangladesh, Pakistan, and whoever feels this timezone is convenient for them",
+  "format": "ensemble",
+  "spoken_language": "English",
+  "url": "https://nelkinda.com/events/2020/11/07/Global-Dey-of-Coderetreat/",
+  "date": {
+    "start": "2020-11-07T10:00:00+05:30",
+    "end": "2020-11-07T17:00:00+05:30"
+  },
+  "moderators": [
+    {
+      "name": "Christian Hujer",
+      "url": "https://nelkinda.com/about/christian.hujer/"
+    },
+    {
+      "name": "Siddhesh Nikude",
+      "url": "https://nelkinda.com/about/siddhesh.nikude/"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Nelkinda Software Craft",
+      "url": "https://nelkinda.com/"
+    }
+  ],
+  "location": "virtual"
+}

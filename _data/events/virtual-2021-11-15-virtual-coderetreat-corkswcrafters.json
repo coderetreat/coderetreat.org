@@ -1,0 +1,28 @@
+{
+  "title": "Cork Software Crafters Code Retreat Day 2021",
+  "description": "Global Day of Code Retreat organized by the Cork Software Crafters community",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://www.meetup.com/Cork-Software-Craftsmanship-Meetup/events/281815385/",
+  "code_of_conduct": "https://www.coderetreat.org/resources/code-of-conduct/",
+  "date": {
+    "start": "2021-11-15T09:00:00Z",
+    "end": "2021-11-15T16:00:00Z"
+  },
+  "moderators": [
+    {
+      "name": "Paulo Clavijo",
+      "url": "https://twitter.com/pclavijo"
+    },
+    {
+      "name": "Thomas Bouttaz"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Dell Technologies Ireland",
+      "url": "https://twitter.com/DellTechIreland"
+    }
+  ],
+  "location": "virtual"
+}

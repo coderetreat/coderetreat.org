@@ -1,0 +1,32 @@
+{
+  "title": "Global Day of Coderetreat",
+  "format": "classic",
+  "spoken_language": "French",
+  "url": "https://www.meetup.com/fr-FR/Software-Craftsmanship-Lyon/events/281690527/",
+  "date": {
+    "start": "2021-11-13T09:00:00+01:00",
+    "end": "2021-11-13T17:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Florent",
+      "url": "https://twitter.com/florentpellet"
+    },
+    {
+      "name": "Anthony",
+      "url": "https://twitter.com/arey_gnuk"
+    },
+    {
+      "name": "Arthur",
+      "url": "https://github.com/arthur-noseda"
+    }
+  ],
+  "location": {
+    "city": "Lyon",
+    "country": "France",
+    "coordinates": {
+      "latitude": 45.75889,
+      "longitude": 4.84139
+    }
+  }
+}

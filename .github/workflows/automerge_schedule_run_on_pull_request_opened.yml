@@ -1,0 +1,28 @@
+name: Schedule Automerge Run
+
+on:
+  pull_request_target:
+    types: [opened]
+  workflow_dispatch:
+    inputs:
+      pull_request:
+        required: true
+        type: string
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - run: env
+      - run: echo '${{ toJSON(github.event) }}'
+      - run: sleep 10s
+      - uses: actions/checkout@v2
+      - name: Hello world action step
+        uses: ./.github/actions/automerger # Uses an action in the root directory
+        id: hello
+        with:
+          who-to-greet: "Mona the Octocat"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # Use the output from the `hello` step
+      - name: Get the output time
+        run: echo "The time was ${{ steps.hello.outputs.time }}"

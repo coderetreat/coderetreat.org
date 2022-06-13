@@ -1,24 +1,69 @@
 {
-  "name": "coderetreat.github.io",
+  "name": "coderetreat.org",
   "version": "1.0.0",
-  "description": "Verification for data/_events/ files",
-  "scripts": {
-    "test": "mocha test/*.test.js"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "ajv": "^6.10.0",
-    "expect": "^1.20.2",
-    "glob": "^7.1.4",
-    "jsonschema": "^1.2.4",
-    "mocha": "^6.1.4",
-    "moment-timezone": "^0.5.25",
-    "yamljs": "^0.3.0"
-  },
+  "description": "The coderetreat.org website - assets and js",
   "dependencies": {
-    "@material/button": "^1.0.1",
-    "@material/card": "^1.0.1",
-    "@material/icon-button": "^1.0.1",
-    "moment": "^2.24.0"
-  }
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "@js-joda/core": "^5.2.0",
+    "@js-joda/locale_en": "^4.7.0",
+    "@js-joda/timezone": "^2.12.0",
+    "abab": "^2.0.6",
+    "ajv": "^8.11.0",
+    "bootstrap": "^4.6.1",
+    "classnames": "^2.3.1",
+    "glob": "^8.0.1",
+    "jquery": "^3.6.0",
+    "parcel-bundler": "^1.12.5",
+    "pixi-viewport": "^4.34.4",
+    "pixi.js": "^5.3.9",
+    "pixi.js-legacy": "^5.3.9",
+    "popper.js": "^1.16.1",
+    "preact": "^10.7.1",
+    "qs": "^6.10.3",
+    "react-bootstrap-typeahead": "^5.2.0",
+    "seedrandom": "^3.0.5",
+    "slug": "^5.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/preact": "^2.0.1",
+    "@types/jest": "^27.4.1",
+    "@types/qs": "^6.9.7",
+    "ajv-formats": "^2.1.1",
+    "babel-jest": "^28.0.2",
+    "babel-preset-preact": "^2.0.0",
+    "benchmark": "^2.1.4",
+    "canvas": "^2.9.1",
+    "jest": "^27.2.4",
+    "microtime": "^3.0.0",
+    "npm-run-all": "^4.1.5",
+    "ts-jest": "^27.1.4",
+    "typescript": "^4.6.3",
+    "xml-js": "^1.6.11"
+  },
+  "alias": {
+    "react": "preact/compat",
+    "react-dom": "preact/compat"
+  },
+  "scripts": {
+    "start": "run-p -ln watch:jekyll watch",
+    "build:netlify": "npm run fetch:podcast && parcel build js/*.js js/*.jsx js/*.ts js/*.tsx --log-level 4 --public-url /js/bundled --out-dir _site/js/bundled/ --cache-dir $NETLIFY_BUILD_BASE/cache/parcel",
+    "build": "npm run fetch:podcast && parcel build js/*.js js/*.jsx js/*.ts js/*.tsx --log-level 4 --public-url /js/bundled --out-dir _site/js/bundled/",
+    "watch": "npm run fetch:podcast && parcel watch js/*.js js/*.jsx js/*.ts js/*.tsx --no-source-maps --log-level 4 --public-url /js/bundled --out-dir _site/js/bundled/",
+    "watch:jekyll": "bundle exec jekyll serve --livereload -V -H 0.0.0.0",
+    "fetch:podcast": "true || wget -O _data/podcast.xml https://www.code-cop.org/podcast/rss_feed.php && xml-js _data/podcast.xml --out _data/podcast.json --compact --spaces 4",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderetreat/coderetreat.org.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coderetreat/coderetreat.org/issues"
+  },
+  "homepage": "https://github.com/coderetreat/coderetreat.org#readme"
 }

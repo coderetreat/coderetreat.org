@@ -1,0 +1,28 @@
+{
+  "title": "2021-04-10: 24 Hour Global Day - Coderetreat - India Region",
+  "description": "A single giant event that starts at New Zealand and then handed over across the world to end on the US West Coast",
+  "format": "ensemble",
+  "spoken_language": "English",
+  "url": "https://www.eventbrite.com/e/24-hour-global-day-coderetreat-and-a-bit-more-april-10-tickets-146499880085",
+  "date": {
+    "start": "2021-04-10T10:00:00+05:30",
+    "end": "2021-04-10T16:30:00+05:30"
+  },
+  "moderators": [
+    {
+      "name": "Christian Hujer",
+      "url": "https://twitter.com/christianhujer"
+    },
+    {
+      "name": "Siddhesh Nikude",
+      "url": "https://twitter.com/siddheshnikude"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Nelkinda Software Craft Pvt Ltd",
+      "url": "https://nelkinda.com/"
+    }
+  ],
+  "location": "virtual"
+}

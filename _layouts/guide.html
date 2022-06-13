@@ -1,0 +1,18 @@
+---
+layout: base
+toc: true
+---
+
+<div class="container guide">
+  <h1 class="display-1 my-5">{{ page.title }}</h1>
+  <p class="lead">{{ page.intro }}</p>
+  {% if page.toc %}
+  <div class="toc d-inline-block p-md-3 my-3">
+    <h1 class="h4">Table of Contents</h1>
+    {{ content | toc_only }}
+  </div>
+  {% endif %}
+  <section class="content">
+    {{ content | inject_anchors }}
+  </section>
+</div>
