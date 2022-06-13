@@ -15,7 +15,7 @@ jobs:
     steps:
       - run: env
       - run: echo '${{ toJSON(github.event) }}'
-      - run: sleep 10s
+      - run: sleep 10m
       - uses: actions/checkout@v2
       - name: Hello world action step
         uses: ./.github/actions/automerger # Uses an action in the root directory
