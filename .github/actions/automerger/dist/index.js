@@ -8834,7 +8834,7 @@ module.exports = async () => {
     await octokit.graphql(`
       mutation DoTheAutomaticMerge($mergeParams: MergePullRequestInput!) {
         mergePullRequest(input: $mergeParams) { clientMutationId }
-      }`, { foo: {"pullRequestId" : pullRequest.data.node_id } }
+      }`, { mergeParams: {"pullRequestId" : pullRequest.data.node_id } }
     );
 
   } catch (error) {

@@ -1,17 +1,15 @@
 const core = require("@actions/core");
 const github = require("@actions/github");
 const verifier = require("../verifier");
+const pull_request_json = require("./fake_pull_request.json");
 
 jest.mock("@actions/core");
 jest.mock("@actions/github");
 
 test("Happy Path", async () => {
-  github.context = {
-    payload: {
-      number: 795,
-    },
-  };
+  const pull_request_json = require("./fake_pull_request.json");
   const octokitMock = {
+    graphql: jest.fn(),
     rest: {
       repos: {
         getContent: jest
@@ -19,7 +17,7 @@ test("Happy Path", async () => {
           .mockResolvedValue(require("./fake_repos_getcontent.json")),
       },
       pulls: {
-        get: jest.fn().mockResolvedValue(require("./fake_pull_request.json")),
+        get: jest.fn().mockResolvedValue(pull_request_json),
         listFiles: jest
           .fn()
           .mockResolvedValue(require("./fake_pull_request_files.json")),
@@ -41,11 +39,16 @@ test("Happy Path", async () => {
   };
   github.getOctokit.mockReturnValue(octokitMock);
 
+  github.context = {
+    payload: {
+      number: pull_request_json.data.number,
+    },
+  };
+
   await verifier();
   expect(core.setFailed).not.toHaveBeenCalled();
-  expect(octokitMock.rest.pulls.merge).toHaveBeenCalledWith({
-    owner: "coderetreat",
-    repo: "coderetreat.org",
-    pull_number: 795,
-  });
+  expect(octokitMock.graphql).toHaveBeenCalledWith(
+    expect.stringContaining('mergePullRequest'),
+    expect.objectContaining({ mergeParams: {"pullRequestId" : pull_request_json.data.node_id } })
+  );
 });
