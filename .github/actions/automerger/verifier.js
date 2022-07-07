@@ -133,11 +133,14 @@ module.exports = async () => {
         statusChecks,
       });
     }
-    console.log("Successfully passed automerge action tests. Pull request could be merged")
-    // await octokit.rest.pulls.merge({
-    //   ...baseParams,
-    //   pull_number: pullRequest.data.number,
-    // });
+
+    // Why GraphQL?  Octokit.rest call does not appear to work correctly!
+    await octokit.graphql(`
+      mutation DoTheAutomaticMerge($mergeParams: MergePullRequestInput!) {
+        mergePullRequest(input: $mergeParams) { clientMutationId }
+      }`, { foo: {"pullRequestId" : pullRequest.data.node_id } }
+    );
+
   } catch (error) {
     console.error(error);
     core.setFailed(error.message);
