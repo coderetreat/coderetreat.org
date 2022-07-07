@@ -1,5 +1,5 @@
 name: 'Automerger for Data-only pull requests'
-description: 'Auto merges a PR if it only contains new events'
+description: 'Automatically merges a PR if it only contains new events'
 inputs:
   GITHUB_TOKEN:
     description: 'GitHub token'
