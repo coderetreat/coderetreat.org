@@ -15,14 +15,10 @@ jobs:
     steps:
       - run: env
       - run: echo '${{ toJSON(github.event) }}'
-      - run: sleep 10s
+      - name: Wait for Netlify test completion
+        run: sleep 10m
       - uses: actions/checkout@v2
-      - name: Hello world action step
-        uses: ./.github/actions/automerger # Uses an action in the root directory
-        id: hello
+      - name: Auto-merge new events with known submitters
+        uses: ./.github/actions/automerger
         with:
-          who-to-greet: "Mona the Octocat"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"

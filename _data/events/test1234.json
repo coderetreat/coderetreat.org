@@ -1,0 +1,25 @@
+{
+    "title": "Global Day of Coderetreat 2020 - Wuerzburg",
+    "description": "Global Day of Coderetreat 2020",
+    "format": "classic",
+    "spoken_language": "German",
+    "url": "https://www.eventbrite.com/e/global-day-of-coderetreat-2020-wurzburg-tickets-127454615185",
+    "date": {
+      "start": "2020-11-06T09:00:00+01:00",
+      "end": "2020-11-06T17:00:00+01:00"
+    },
+    "moderators": [
+      {
+        "name": "Dominik Panzer"
+      },
+      {
+        "name": "Robert Bonacker"
+      }
+    ],
+    "sponsors": [
+      {
+        "name": "Intense AG"
+      }
+    ],
+    "location": "virtual"
+  }
