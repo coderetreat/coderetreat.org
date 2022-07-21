@@ -42,8 +42,7 @@ describe("GitHub action automerger", () => {
         ]}
     });
     await whenPullRequestActionTriggered();
-    expect(core.setFailed).toHaveBeenNthCalledWith(1,"Only one file should be changed at once");
-    expect(octokitMock.graphql).not.toHaveBeenCalled();
+    expectActionFailedDidNotMergeWithMessage("Only one file should be changed at once", octokitMock);
   })
 
   test("NOPE: noDeletionsTakePlace", async () => {
@@ -56,8 +55,7 @@ describe("GitHub action automerger", () => {
       ]}
     });
     await whenPullRequestActionTriggered();
-    expect(core.setFailed).toHaveBeenNthCalledWith(1,"No deletions");
-    expect(octokitMock.graphql).not.toHaveBeenCalled();
+    expectActionFailedDidNotMergeWithMessage("No deletions", octokitMock);
   })
 
   // This suppresses the error message to console.
@@ -126,4 +124,10 @@ describe("GitHub action automerger", () => {
 
     await verifier();
   }
+
+  function expectActionFailedDidNotMergeWithMessage(errorMessage, octokitMock) {
+    expect(octokitMock.graphql).not.toHaveBeenCalled();
+    expect(core.setFailed).toHaveBeenNthCalledWith(1, errorMessage);
+  }
+
 });
