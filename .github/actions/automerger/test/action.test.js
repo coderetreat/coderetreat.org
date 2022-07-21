@@ -46,6 +46,12 @@ describe("GitHub action automerger", () => {
     expect(octokitMock.graphql).not.toHaveBeenCalled();
   })
 
+  // This suppresses the error message to console.
+  // Disable this code if necessary for debugging.
+  beforeEach(() => {
+    jest.spyOn(console, 'error').mockImplementation(() => {});
+  });
+
   const default_rest_pulls_get = require("./fake_pull_request.json");
   const default_rest_search_issuesAndPullRequests = require("./fake_list_pull_requests_by_author.json");
   const default_rest_checks_listForRef = require("./fake_commit_check_runs.json");
