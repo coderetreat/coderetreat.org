@@ -14,13 +14,8 @@ describe("GitHub action automerger", () => {
   test("Happy Path", async () => {
     const octokitMock = setupOctokitMock();
 
-    github.context = {
-      payload: {
-        number: default_rest_pulls_get.data.number,
-      },
-    };
+    await whenPullRequestActionTriggered();
 
-    await verifier();
     expect(core.setFailed).not.toHaveBeenCalled();
     expect(octokitMock.graphql).toHaveBeenCalledWith(
       expect.stringContaining('mergePullRequest'),
@@ -39,21 +34,14 @@ describe("GitHub action automerger", () => {
     thePullRequestAuthorHasPreviouslyMergedPullRequests,
 */
 
-    test("NOPE: onlyOneFileHasBeenChanged", async () => {
+  test("NOPE: onlyOneFileHasBeenChanged", async () => {
     const octokitMock = setupOctokitMock({
       rest_pulls_listFiles: {...default_rest_pulls_listFiles, data: [
           ...default_rest_pulls_listFiles.data,
           ...default_rest_pulls_listFiles.data
         ]}
     });
-
-    github.context = {
-      payload: {
-        number: default_rest_pulls_get.data.number,
-      },
-    };
-
-    await verifier();
+    await whenPullRequestActionTriggered();
     expect(core.setFailed).toHaveBeenCalledWith("Only one file should be changed at once");
     expect(octokitMock.graphql).not.toHaveBeenCalled();
   })
@@ -103,4 +91,13 @@ describe("GitHub action automerger", () => {
     return octokitMock;
   }
 
+  async function whenPullRequestActionTriggered() {
+    github.context = {
+      payload: {
+        number: default_rest_pulls_get.data.number,
+      },
+    };
+
+    await verifier();
+  }
 });
