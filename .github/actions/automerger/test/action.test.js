@@ -27,9 +27,25 @@ describe("GitHub action automerger", () => {
       expect.objectContaining({ mergeParams: {"pullRequestId" : default_rest_pulls_get.data.node_id } })
     );
   })
+/*
+  onlyOneFileHasBeenChanged,
+    noDeletionsTakePlace,
+    theFileIsInDataEvents,
+    theFileEndsInJson,
+    theFileMatchesSomeRegexThatsProbablyWrong,
+    theFileNeedsToBeValidJson,
+    allNetlifyStatusChecksAreSuccessfulOrNeutral,
+    ourTestStatusCheckWasSuccessful,
+    thePullRequestAuthorHasPreviouslyMergedPullRequests,
+*/
 
-  test("not so Happy Path", async () => {
-    const octokitMock = setupOctokitMock();
+    test("NOPE: onlyOneFileHasBeenChanged", async () => {
+    const octokitMock = setupOctokitMock({
+      rest_pulls_listFiles: {...default_rest_pulls_listFiles, data: [
+          ...default_rest_pulls_listFiles.data,
+          ...default_rest_pulls_listFiles.data
+        ]}
+    });
 
     github.context = {
       payload: {
@@ -38,11 +54,8 @@ describe("GitHub action automerger", () => {
     };
 
     await verifier();
-    expect(core.setFailed).not.toHaveBeenCalled();
-    expect(octokitMock.graphql).toHaveBeenCalledWith(
-      expect.stringContaining('mergePullRequest'),
-      expect.objectContaining({ mergeParams: {"pullRequestId" : default_rest_pulls_get.data.node_id } })
-    );
+    expect(core.setFailed).toHaveBeenCalledWith("Only one file should be changed at once");
+    expect(octokitMock.graphql).not.toHaveBeenCalled();
   })
 
   const default_rest_pulls_get = require("./fake_pull_request.json");
