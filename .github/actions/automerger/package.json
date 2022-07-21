@@ -4,7 +4,8 @@
   "description": "A github action that automatically merges a Pull Request if...",
   "main": "index.js",
   "scripts": {
-    "build": "npx @vercel/ncc build index.js"
+    "build": "npx @vercel/ncc build index.js",
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
