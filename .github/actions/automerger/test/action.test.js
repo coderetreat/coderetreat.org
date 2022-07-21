@@ -42,7 +42,21 @@ describe("GitHub action automerger", () => {
         ]}
     });
     await whenPullRequestActionTriggered();
-    expect(core.setFailed).toHaveBeenCalledWith("Only one file should be changed at once");
+    expect(core.setFailed).toHaveBeenNthCalledWith(1,"Only one file should be changed at once");
+    expect(octokitMock.graphql).not.toHaveBeenCalled();
+  })
+
+  test("NOPE: noDeletionsTakePlace", async () => {
+    const octokitMock = setupOctokitMock({
+      rest_pulls_listFiles: {
+        ...default_rest_pulls_listFiles, data: [{
+          ...default_rest_pulls_listFiles.data[0],
+          deletions: 1
+        }
+      ]}
+    });
+    await whenPullRequestActionTriggered();
+    expect(core.setFailed).toHaveBeenNthCalledWith(1,"No deletions");
     expect(octokitMock.graphql).not.toHaveBeenCalled();
   })
 
@@ -50,6 +64,12 @@ describe("GitHub action automerger", () => {
   // Disable this code if necessary for debugging.
   beforeEach(() => {
     jest.spyOn(console, 'error').mockImplementation(() => {});
+  });
+
+  // Make test calls independent:
+  // Otherwise, error calls accumulate, preventing correct matching of error message
+  beforeEach(() => {
+    jest.resetAllMocks();
   });
 
   const default_rest_pulls_get = require("./fake_pull_request.json");
