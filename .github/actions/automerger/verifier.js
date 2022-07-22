@@ -134,12 +134,13 @@ module.exports = async () => {
       });
     }
 
+    // DISABLED UNTIL WE FIXED expectedHeadRefOid and correctly identifying broken test runs
     // Why GraphQL?  Octokit.rest call does not appear to work correctly!
-    await octokit.graphql(`
-      mutation DoTheAutomaticMerge($mergeParams: MergePullRequestInput!) {
-        mergePullRequest(input: $mergeParams) { clientMutationId }
-      }`, { mergeParams: {"pullRequestId" : pullRequest.data.node_id } }
-    );
+    // await octokit.graphql(`
+    //   mutation DoTheAutomaticMerge($mergeParams: MergePullRequestInput!) {
+    //     mergePullRequest(input: $mergeParams) { clientMutationId }
+    //   }`, { mergeParams: {"pullRequestId" : pullRequest.data.node_id } }
+    // );
 
   } catch (error) {
     console.error(error);
