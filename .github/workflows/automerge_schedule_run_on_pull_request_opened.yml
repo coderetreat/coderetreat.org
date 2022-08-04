@@ -10,7 +10,7 @@ on:
         type: string
 
 jobs:
-  debug:
+  automerge_schedule_run_on_pull_request:
     runs-on: ubuntu-latest
     steps:
       - run: env

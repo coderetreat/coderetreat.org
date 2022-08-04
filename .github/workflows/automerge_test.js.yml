@@ -6,7 +6,7 @@ name: Automerge Test
 on: [push, pull_request]
 
 jobs:
-  test:
+  automerge_run_tests:
     runs-on: ubuntu-latest
 
     steps:

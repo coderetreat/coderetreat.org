@@ -6,7 +6,7 @@ name: "Print Welcome Tweets"
 on: [push, pull_request]
 
 jobs:
-  test:
+  print_welcome_tweets:
     runs-on: ubuntu-latest
 
     steps:
