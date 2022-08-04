@@ -4,7 +4,7 @@
     "check_runs": [
       {
         "id": 6599591111,
-        "name": "test",
+        "name": "run_unit_and_data_validation_tests",
         "node_id": "CR_kwDOBDwmZc8AAAABiV3Exw",
         "head_sha": "8fd427aaebe6c14006a5ff50b2423982d0b29e6c",
         "external_id": "5264e576-3c6f-51f6-f055-fab409685f20",
@@ -111,7 +111,7 @@
       },
       {
         "id": 6599591110,
-        "name": "test",
+        "name": "run_unit_and_data_validation_tests",
         "node_id": "CR_kwDOBDwmZc8AAAABiV3Exg",
         "head_sha": "8fd427aaebe6c14006a5ff50b2423982d0b29e6c",
         "external_id": "5264e576-3c6f-51f6-f055-fab409685f20",
