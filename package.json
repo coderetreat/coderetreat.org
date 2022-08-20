@@ -15,6 +15,7 @@
     "classnames": "2.3.2",
     "glob": "10.3.5",
     "jquery": "3.7.1",
+    "mapbox-gl": "^2.9.2",
     "pixi-viewport": "5.0.2",
     "pixi.js": "^7.2.4",
     "popper.js": "1.16.1",
