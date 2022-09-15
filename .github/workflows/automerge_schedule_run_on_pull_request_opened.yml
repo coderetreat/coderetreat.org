@@ -12,6 +12,7 @@ on:
 jobs:
   automerge_schedule_run_on_pull_request:
     runs-on: ubuntu-latest
+    continue-on-error: true
     steps:
       - run: env
       - run: echo '${{ toJSON(github.event) }}'
