@@ -8,6 +8,25 @@
 
 }
 
+#event-log {
+    position: absolute;
+    top: 5%;
+    bottom: 15%;
+    
+    right: 2%;
+    width: 24%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    overflow-y: scroll;
+    font-size: 0.7em;
+    padding: 4px;
+    p {
+        padding: 0;
+        margin: 5px 0;
+    }
+    
+}
+
 #console {
     position: absolute;
     bottom: 50px;

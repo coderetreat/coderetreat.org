@@ -20,6 +20,8 @@ const run = async () => {
     zoom: 1,
   });
 
+  const log = document.querySelector("#event-log");
+
   const eventsWithLocation = pastEvents
     .filter((event) => !!event.location?.coordinates)
     .map((event) => ({
@@ -45,8 +47,10 @@ const run = async () => {
           ],
         },
         properties: {
+          title: event.title,
+          start: event.date.start.toString(),
           timeStart: event.date.start.toEpochSecond(),
-          num: (i+1),
+          num: i + 1,
           opacity: 1,
         },
       })),
@@ -91,7 +95,7 @@ const run = async () => {
         ...feature,
         properties: {
           ...feature.properties,
-          opacity: Math.max(0.2, feature.properties.num / (slider.value+1)),
+          opacity: Math.max(0.2, feature.properties.num / (slider.value + 1)),
         },
       })
     );
@@ -102,6 +106,16 @@ const run = async () => {
       ["number", ["get", "timeStart"]],
       event.date.start.toEpochSecond(),
     ]);
+
+    log.innerHTML = eventDataSource.data.features
+      .filter(
+        (ref) => ref.properties.timeStart <= event.date.start.toEpochSecond()
+      )
+      .map((event) => `<p>${event.properties.title}</p>`)
+      .join("");
+    window.setTimeout(() => {
+      log.scrollTo({top: log.scrollHeight, behavior: "smooth"})
+    })
   };
 
   slider.addEventListener("input", updateCurrentDate);
