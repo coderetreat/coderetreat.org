@@ -73,13 +73,27 @@ const baseStyle = {
 const collapsedStyle = { ...baseStyle, overflow: "hidden", maxHeight: 0 };
 const expandedStyle = { ...baseStyle, maxHeight: "1000px" };
 
-export default ({ event, usersTimezone }) => {
+export default ({ event, usersTimezone, isPromotedMultidayEvent }) => {
   const [isCollapsed, setCollapsed] = useState(true);
 
+  const widthClasses = isPromotedMultidayEvent
+    ? ["col-lg-12", "col-md-12"]
+    : ["col-lg-4", "col-md-6"];
+
   return (
-    <div className="d-inline-block col-12 col-lg-4 col-md-6 p-0 p-lg-2 p-md-1">
+    <div
+      className={classNames([
+        "d-inline-block",
+
+        "col-12",
+        "p-0",
+        "p-lg-2",
+        "p-md-1",
+        ...widthClasses,
+      ])}
+    >
       <div
-        class="card my-3 event-card"
+        class="card my-3 event-card shadow"
         style={{ minHeight: "1em", whiteSpace: "normal" }}
         onClick={(e) => setCollapsed(!isCollapsed)}
       >
@@ -94,33 +108,43 @@ export default ({ event, usersTimezone }) => {
               ? "bg-virtual-event"
               : "bg-onsite-event",
           ])}
-          style={{
-            display: "flex",
-            cursor: "pointer",
-            justifyContent: "space-between",
-          }}
         >
-          <div>
-            <LocalizedDateTime
-              date={event.date.start}
-              timeZone={usersTimezone}
-            />
-          </div>
-          <div>
-            {event.location === "virtual"
-              ? "VIRTUAL"
-              : event.location.city + ", " + event.location.country}{" "}
-            {isCollapsed ? (
-              <i class="fas fa-caret-down"></i>
-            ) : (
-              <i class="fas fa-caret-up"></i>
+          <div
+            style={{
+              display: "flex",
+              cursor: "pointer",
+              justifyContent: "space-between",
+            }}
+          >
+            <div>
+              <LocalizedDateTime
+                date={event.date.start}
+                timeZone={usersTimezone}
+              />
+            </div>
+            {!isPromotedMultidayEvent ? null : (
+              <div class="d-none d-md-block">MULTI DAY EVENT</div>
             )}
+            <div>
+              {event.location === "virtual"
+                ? "VIRTUAL"
+                : event.location.city + ", " + event.location.country}{" "}
+              {isCollapsed ? (
+                <i class="fas fa-caret-down"></i>
+              ) : (
+                <i class="fas fa-caret-up"></i>
+              )}
+            </div>
           </div>
+          {!isPromotedMultidayEvent ? null : (
+            <div className="col-12 d-md-none text-center">MULTI DAY EVENT</div>
+          )}
         </div>
         <div class="card-body m-0">
           <h5 class="card-title m-0">{event.title}</h5>
           <span class="d-block text-muted pt-1">
-            {event.spoken_language}, <Format format={event.format} />, with <Moderators moderators={event.moderators} />
+            {event.spoken_language}, <Format format={event.format} />, with{" "}
+            <Moderators moderators={event.moderators} />
           </span>
         </div>
         <div style={isCollapsed ? collapsedStyle : expandedStyle}>

@@ -8,7 +8,7 @@ import EventCard from "./events/EventCard";
 import jekyllConfig from "../_config.yml";
 import { LocalizedDate } from "./events/LocalizedDateTime";
 
-const { ZoneId, ZonedDateTime, LocalDate, LocalTime } = jsjoda;
+const { ZoneId, Duration, ZonedDateTime, LocalDate, LocalTime } = jsjoda;
 
 const earliestGDCRStart = LocalDate.parse(
   jekyllConfig.globalday.start
@@ -101,6 +101,7 @@ const Events = () => {
           ).toLocaleDateString()})`}
           events={eventsDuringGDCR}
           timeZoneId={timeZoneId}
+          promoteMultidayEventsOnTop={true}
         />
         <EventList
           title={
@@ -158,16 +159,26 @@ const EventTypeSelection = ({ eventTypeFilter, setEventTypeFilter }) => {
   );
 };
 
-const EventList = ({ events, title, timeZoneId }) =>
+const EventList = ({ events, title, timeZoneId, promoteMultidayEventsOnTop }) =>
   events.length > 0 && (
     <Fragment>
       <hr />
       <h3>{title}</h3>
-      <GroupedEvents events={events} timeZoneId={timeZoneId} />
+      <GroupedEvents
+        events={events}
+        timeZoneId={timeZoneId}
+        promoteMultidayEventsOnTop={promoteMultidayEventsOnTop}
+      />
     </Fragment>
   );
 
-const GroupedEvents = ({ events, timeZoneId }) => {
+const doesEventSpanMultipleDays = (event) => {
+  const duration = Duration.between(event.date.start, event.date.end);
+  console.log(duration.toHours(), "WOOP", event.title);
+  return duration.toHours() >= 24;
+};
+
+const GroupedEvents = ({ events, timeZoneId, promoteMultidayEventsOnTop }) => {
   if (events.length < 6) {
     return (
       <Fragment>
@@ -180,20 +191,25 @@ const GroupedEvents = ({ events, timeZoneId }) => {
 
   const groupedByDay = useMemo(
     () =>
-      events.reduce((byDay, event) => {
-        const dateKey = LocalizedDate({
-          date: event.date.start,
-          timeZone: timeZoneId,
-        });
-        return {
-          ...byDay,
-          [dateKey]: [...(byDay[dateKey] || []), event],
-        };
-      }, {}),
+      events
+        .filter(
+          (event) =>
+            !(promoteMultidayEventsOnTop && doesEventSpanMultipleDays(event))
+        )
+        .reduce((byDay, event) => {
+          const dateKey = LocalizedDate({
+            date: event.date.start,
+            timeZone: timeZoneId,
+          });
+          return {
+            ...byDay,
+            [dateKey]: [...(byDay[dateKey] || []), event],
+          };
+        }, {}),
     [events, timeZoneId]
   );
 
-  return Object.keys(groupedByDay)
+  const eventsByDay = Object.keys(groupedByDay)
     .sort()
     .map((dateKey) => (
       <Fragment>
@@ -216,6 +232,18 @@ const GroupedEvents = ({ events, timeZoneId }) => {
         </div>
       </Fragment>
     ));
+
+  if (promoteMultidayEventsOnTop) {
+    const multiDayEvents = events
+      .filter(doesEventSpanMultipleDays)
+      .map((event) => (
+        <EventCard event={event} usersTimezone={timeZoneId} isPromotedMultidayEvent={true} />
+      ));
+
+    return [...multiDayEvents, ...eventsByDay];
+  }
+
+  return eventsByDay;
 };
 
 const GroupedIntraDayEvents = ({ events, timeZoneId }) => {
