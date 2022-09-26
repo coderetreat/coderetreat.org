@@ -1,0 +1,36 @@
+{
+  "title": "Global Day of Code Retreat 2022 - Bethesda",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://www.eventbrite.com/e/global-day-of-code-retreat-2022-bethesda-tickets-427580764577?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=escb",
+  "date": {
+    "start": "2022-11-05T09:00:00-04:00",
+    "end": "2022-11-05T17:00:00-04:00"
+  },
+  "moderators": [
+    {
+      "name": "Leah Belin"
+    },
+    {
+      "name": "Josh Widzer"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Homesnap ",
+      "url": "https://www.homesnap.com"
+    },
+    {
+      "name": "Costar",
+      "url": "https://www.costar.com"
+    }
+  ],
+  "location": {
+    "city": "Bethesda",
+    "country": "United States",
+    "coordinates": {
+      "latitude": 38.984827,
+      "longitude": -77.094646
+    }
+  }
+}
