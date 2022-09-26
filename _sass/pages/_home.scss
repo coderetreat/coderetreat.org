@@ -1,0 +1,233 @@
+body.fullscreen {
+  animation: jumbotron-hide-scrollbar 1s forwards;
+}
+
+@keyframes jumbotron-hide-scrollbar {
+  0% {
+    overflow: auto;
+  }
+  100% {
+    overflow: hidden;
+  }
+}
+
+.jumbotron-gol {
+  overflow: hidden;
+  position: relative;
+
+  #gameContainer {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    overflow: hidden;
+  }
+
+  #gameOverflowContainer {
+    background: #eee;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+  }
+
+  .jumbotron-gol-what-is-this {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+
+  .jumbotron-gol-content {
+    z-index: 0;
+    transition: opacity 1s ease-in-out 0s;
+    position: relative;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: #333 3px 3px 3px;
+
+    .jumbotron-gol-content-wrapper {
+      font-size: 1.5em;
+    }
+    h1 {
+      font-family: Orbitron, sans-serif;
+      font-weight: lighter;
+    }
+  }
+
+  .jumbotron-gol-controls {
+    white-space: nowrap;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 1);
+    position: absolute;
+    z-index: 0;
+    right: -5px;
+    max-width: 100px;
+    top: -5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    border-radius: 3px;
+    .controls {
+      *,
+      *:active,
+      *:hover,
+      *:focus {
+        outline: none;
+        box-shadow: none !important;
+      }
+      float: right;
+    }
+  }
+
+  &.fullscreen {
+    .jumbotron-gol-content {
+      animation: jumbotron-hide-content 1s both;
+    }
+    #gameContainer {
+      cursor: grab;
+      &:active {
+        cursor: grabbing;
+      }
+      position: fixed;
+      z-index: 1000;
+      top: var(--gol-top);
+      left: var(--gol-left);
+      height: var(--gol-height);
+      animation: jumbotron-fullscreen-game 1s both;
+    }
+    .jumbotron-gol-controls {
+      animation: jumbotron-show-all-controls 1s both;
+    }
+  }
+  &.fullscreen-reverse {
+    .jumbotron-gol-content {
+      animation: jumbotron-show-content 1s both;
+    }
+    #gameContainer {
+      z-index: initial;
+      animation: jumbotron-undo-fullscreen-game 1s both;
+    }
+    .jumbotron-gol-controls {
+      animation: jumbotron-hide-controls 1s both;
+    }
+  }
+}
+
+@keyframes jumbotron-show-all-controls {
+  from {
+    max-width: 100px;
+  }
+  to {
+    max-width: 100%;
+  }
+}
+
+@keyframes jumbotron-hide-controls {
+  from {
+    max-width: 100%;
+  }
+  to {
+    max-width: 100px;
+  }
+}
+
+@keyframes jumbotron-fullscreen-game {
+  from {
+    z-index: 1000;
+    position: fixed;
+    top: var(--gol-top);
+    left: var(--gol-left);
+    height: var(--gol-height);
+    width: var(--gol-width);
+  }
+  to {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    width: 100vw;
+    height: 100%;
+    height: 100vh;
+    z-index: 1000;
+  }
+}
+
+@keyframes jumbotron-undo-fullscreen-game {
+  from {
+    top: 0px;
+    position: fixed;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+  }
+  99% { z-index: 1000; }
+  to {
+    z-index: 1000;
+    position: fixed;
+    top: var(--gol-top);
+    left: var(--gol-left);
+    height: var(--gol-height);
+    width: var(--gol-width);
+    z-index: inherit;
+  }
+}
+
+@keyframes jumbotron-hide-content {
+  from {
+    opacity: 1;
+    z-index: 1000;
+  }
+  1% {
+    opacity: 1;
+    z-index: 1000;
+  }
+  99% {
+    z-index: 1000;
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+    z-index: -100;
+  }
+}
+
+@keyframes jumbotron-show-content {
+  from {
+    opacity: 0;
+    z-index: -100;
+  }
+  1% {
+    z-index: 1000;
+    opacity: 0;
+  }
+  99% {
+    opacity: 1;
+    z-index: 1000;
+  }
+  to {
+    opacity: 1;
+    z-index: 1000;
+  }
+}
+
+
+#carousel-quotes {
+  height: calc(1.5em * 4);
+
+  @include media-breakpoint-down("xs") {
+    height: calc(2em * 8);
+  }
+
+  @include media-breakpoint-down("md") {
+    height: calc(2em * 6);
+  }
+}
+
+.card-img-tinted {
+  filter: sepia(100%) hue-rotate(160deg);
+  &:hover {
+    transition: filter 200ms ease-in-out;
+    filter: none;
+  }
+}

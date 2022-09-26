@@ -1,0 +1,37 @@
+{
+  "title": "JUG Istanbul: Global Day of Coderetreat 2021",
+  "description": "JUG Istanbul: Global Day of Coderetreat 2021",
+  "format": "classic",
+  "spoken_language": "Turkish",
+  "url": "https://www.meetup.com/Istanbul-Java-User-Group/events/279103739/",
+  "code_of_conduct": "https://www.jugistanbul.org/privacy-policy",
+  "date": {
+    "start": "2021-11-13T13:00:00+03:00",
+    "end": "2021-11-13T18:00:00+03:00"
+  },
+  "moderators": [
+    {
+      "name": "Bahadir Tasdemir",
+      "url": "https://github.com/tasdemirbahadir"
+    },
+    {
+      "name": "Altug Bilgin Altintas",
+      "url": "https://github.com/altuga"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Hazelcast",
+      "url": "https://hazelcast.com/"
+    },
+    {
+      "name": "JFrog",
+      "url": "https://jfrog.com/"
+    },
+    {
+      "name": "Definex",
+      "url": "https://teamdefinex.com/"
+    }
+  ],
+  "location": "virtual"
+}

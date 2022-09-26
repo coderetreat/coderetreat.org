@@ -1,0 +1,33 @@
+{
+  "location": {
+    "city": "Berlin",
+    "coordinates": {
+      "latitude": 52.5193449,
+      "longitude": 13.4003222
+    },
+    "country": "Germany"
+  },
+  "date": {
+    "start": "2020-11-06T09:00:00.000+02:00",
+    "end": "2020-11-06T18:00:00.000+02:00"
+  },
+  "moderators": [
+    {
+      "name": "John Doe",
+      "url": "https://twitter.com/johndoe"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "A Sponsor",
+      "url": "https://twitter.com/asponsor"
+    }
+  ],
+  "title": "GDCR2020 Example Event",
+  "url": "http://www.coderetreat.org/",
+  "spoken_language": "English",
+  "format": "classic",
+  "description": "This Coderetreat will be a JavaScript only coderetreat",
+  "code_of_conduct": "https://www.google.de"
+
+}

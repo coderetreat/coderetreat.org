@@ -1,0 +1,27 @@
+{
+  "title": "Global Day of Coderetreat 2020 @ EPAM Systems Bangalore",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://community-z.com/events/global-day-of-coderetreat-2020-epam-systems-bangalore",
+  "date": {
+    "start": "2020-11-07T09:30:00+05:30",
+    "end": "2020-11-07T17:30:00+05:30"
+  },
+  "moderators": [
+    {
+      "name": "Kranti Asiwal",
+      "url": "https://www.linkedin.com/in/kranti-asiwal-1111b4b8/"
+    },
+    {
+      "name": "Venkataramana Moncompu",
+      "url": "https://www.linkedin.com/in/venkatms/"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Epam Systems",
+      "url": "https://www.epam.com/"
+    }
+  ],
+  "location": "virtual"
+}

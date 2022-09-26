@@ -1,0 +1,9 @@
+name: 'Automerger for Data-only pull requests'
+description: 'Automatically merges a PR if it only contains new events'
+inputs:
+  GITHUB_TOKEN:
+    description: 'GitHub token'
+    required: true
+runs:
+  using: 'node16'
+  main: 'dist/index.js'

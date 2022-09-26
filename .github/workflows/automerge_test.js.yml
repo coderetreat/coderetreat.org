@@ -1,0 +1,21 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Automerge Test
+
+on: [push, pull_request]
+
+jobs:
+  automerge_run_tests:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 16.x
+    - run: npm ci
+      working-directory: .github/actions/automerger
+    - run: npm test
+      working-directory: .github/actions/automerger

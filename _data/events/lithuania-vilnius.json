@@ -1,0 +1,31 @@
+{
+  "title": "Global Day of Coderetreat 2021 - Vilnius",
+  "description": "Annual worldwide workshop for software developers who are passionate about their craft.",
+  "format": "classic",
+  "spoken_language": "Lithuanian",
+  "url": "https://coderetreat-vilnius-2021.eventbrite.com/",
+  "date": {
+    "start": "2021-11-13T08:45:00+02:00",
+    "end": "2021-11-13T14:30:00+02:00"
+  },
+  "moderators": [
+    {
+      "name": "Osvaldas Grigas",
+      "url": "https://twitter.com/ogrigas"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Inventi",
+      "url": "https://inventi.io"
+    }
+  ],
+  "location": {
+    "city": "Vilnius",
+    "country": "Lithuania",
+    "coordinates": {
+      "latitude": 54.701790882967735,
+      "longitude": 25.265069794356133
+    }
+  }
+}

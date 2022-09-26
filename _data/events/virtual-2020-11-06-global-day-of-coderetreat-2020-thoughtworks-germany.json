@@ -1,0 +1,28 @@
+{
+  "title": "Global Day of Coderetreat 2020 @ ThoughtWorks Germany ",
+  "description": "As this is truly a remote event we welcome you to join wherever you are from 🙂 ",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://www.meetup.com/ThoughtWorks-Muenchen/events/274125442/",
+  "date": {
+    "start": "2020-11-07T09:00:00+01:00",
+    "end": "2020-11-07T16:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Andrei Bechet",
+      "url": "https://twitter.com/goosebumps4"
+    },
+    {
+      "name": "Lina Garcia",
+      "url": "https://github.com/linusjig"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "ThoughtWorks DE",
+      "url": "https://www.thoughtworks.com/de/"
+    }
+  ],
+  "location": "virtual"
+}

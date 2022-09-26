@@ -1,0 +1,27 @@
+{
+  "title": "Global (half) Day of Code Retreat with Ladies of Code London",
+  "description": "A half day version, with shorter sessions, designed with remote working in mind. Our community content is geared towards non-binary and women folk but everyone is welcome at our events.",
+  "format": "classic",
+  "spoken_language": "English.",
+  "url": "https://www.meetup.com/Ladies-of-Code-UK/events/273819600/",
+  "code_of_conduct": "https://docs.google.com/document/d/1p0LrWHH0csTTvNh-gU7tyWWJIKJ95VIzybvN_LP8sTA/edit?usp=sharing",
+  "date": {
+    "start": "2020-11-07T09:45:00Z",
+    "end": "2020-11-07T13:30:00Z"
+  },
+  "moderators": [
+    {
+      "name": "Sarah Usher",
+      "url": "https://github.com/SarahU"
+    },
+    {
+      "name": "Suze Shardlow",
+      "url": "https://github.com/SuzeShardlow"
+    },
+    {
+      "name": "Anna Del Prete",
+      "url": "https://github.com/Shilaghae"
+    }
+  ],
+  "location": "virtual"
+}
