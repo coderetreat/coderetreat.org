@@ -1,0 +1,31 @@
+{
+  "title": "Global Day of Coderetreat Pittsburgh",
+  "description": "Coderetreats are intensive practice events, focusing on the fundamentals of software development and design. By providing developers the opportunity to take part in focused practice, away from the pressures of \"getting things done\", the coderetreat format has proven itself to be a highly effective means of learning and nurturing software development skills.  We ask you have the follow up set up before the event: 1. Join #coderetreat on C&S Slack (https://codeandsupply.co/chat)  2. Have coding environment setup, be able to run hello world + test",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://www.meetup.com/pittsburgh-code-supply/events/288251562/",
+  "code_of_conduct": "https://codeandsupply.co/policies/conduct",
+  "date": {
+    "start": "2022-11-05T09:30:00-04:00",
+    "end": "2022-11-05T15:30:00-04:00"
+  },
+  "moderators": [
+    {
+      "name": "Colin Dean"
+    },
+    {
+      "name": "Greg Hopkins"
+    },
+    {
+      "name": "Jenny Manning"
+    }
+  ],
+  "location": {
+    "city": "Pittsburgh",
+    "country": "United States",
+    "coordinates": {
+      "latitude": 40.459984,
+      "longitude": -79.930786
+    }
+  }
+}
