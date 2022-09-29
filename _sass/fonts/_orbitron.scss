@@ -1,0 +1,26 @@
+/* orbitron-regular - latin */
+@font-face {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-display: block;
+  font-weight: 400;
+  src: url("/assets/fonts/orbitron-v15-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("/assets/fonts/orbitron-v15-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("/assets/fonts/orbitron-v15-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("/assets/fonts/orbitron-v15-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("/assets/fonts/orbitron-v15-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("/assets/fonts/orbitron-v15-latin-regular.svg#Orbitron") format("svg"); /* Legacy iOS */
+}
+
+/* latin */
+@font-face {
+  font-family: "Orbitron";
+  font-display: swap;
+  src: url(/assets/Orbitron-VariableFont_wght.ttf) format("ttf");
+}

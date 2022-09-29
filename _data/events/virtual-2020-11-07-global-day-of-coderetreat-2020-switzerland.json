@@ -1,0 +1,35 @@
+{
+  "title": "Global Day of Coderetreat 2020 - Switzerland",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://codersonly.org/events/code-retreat/",
+  "date": {
+    "start": "2020-11-07T09:00:00+01:00",
+    "end": "2020-11-07T17:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Pablo Vergés",
+      "url": "https://twitter.com/escodebar1"
+    },
+    {
+      "name": "Géza Mihala",
+      "url": "https://twitter.com/infinitary"
+    },
+    {
+      "name": "Oliver Nautsch",
+      "url": "https://twitter.com/ollispieps"
+    }
+  ],
+  "sponsors": [
+    {
+      "url": "https://www.ergon.ch/de",
+      "name": "Ergon Informatik AG"
+    },
+    {
+      "name": "Nautsch GmbH",
+      "url": "https://www.nautsch.com/"
+    }
+  ],
+  "location": "virtual"
+}

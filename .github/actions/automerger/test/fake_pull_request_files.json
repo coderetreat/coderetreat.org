@@ -1,0 +1,16 @@
+{
+  "data": [
+    {
+      "sha": "727704f177340381317d4c37c50565e05e51b223",
+      "filename": "_data/events/test123.json",
+      "status": "added",
+      "additions": 25,
+      "deletions": 0,
+      "changes": 25,
+      "blob_url": "https://github.com/coderetreat/coderetreat.org/blob/8fd427aaebe6c14006a5ff50b2423982d0b29e6c/_data%2Fevents%2Ftest123.json",
+      "raw_url": "https://github.com/coderetreat/coderetreat.org/raw/8fd427aaebe6c14006a5ff50b2423982d0b29e6c/_data%2Fevents%2Ftest123.json",
+      "contents_url": "https://api.github.com/repos/coderetreat/coderetreat.org/contents/_data%2Fevents%2Ftest123.json?ref=8fd427aaebe6c14006a5ff50b2423982d0b29e6c",
+      "patch": "@@ -0,0 +1,25 @@\n+{\n+    \"title\": \"Global Day of Coderetreat 2020 - Wuerzburg\",\n+    \"description\": \"Global Day of Coderetreat 2020\",\n+    \"format\": \"classic\",\n+    \"spoken_language\": \"German\",\n+    \"url\": \"https://www.eventbrite.com/e/global-day-of-coderetreat-2020-wurzburg-tickets-127454615185\",\n+    \"date\": {\n+      \"start\": \"2020-11-06T09:00:00+01:00\",\n+      \"end\": \"2020-11-06T17:00:00+01:00\"\n+    },\n+    \"moderators\": [\n+      {\n+        \"name\": \"Dominik Panzer\"\n+      },\n+      {\n+        \"name\": \"Robert Bonacker\"\n+      }\n+    ],\n+    \"sponsors\": [\n+      {\n+        \"name\": \"Intense AG\"\n+      }\n+    ],\n+    \"location\": \"virtual\"\n+  }\n\\ No newline at end of file"
+    }
+  ]
+}

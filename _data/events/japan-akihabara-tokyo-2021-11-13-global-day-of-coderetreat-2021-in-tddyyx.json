@@ -1,0 +1,51 @@
+{
+    "title": "Global Day of Coderetreat 2021 in #tddyyχ",
+    "description": "Global Day of Coderetreat 2021 hosted by tddyyχ , Akihabara, Tokyo.",
+    "format": "classic",
+    "spoken_language": "Japanese",
+    "url": "https://tddyyx.connpass.com/event/228782/",
+    "date": {
+        "start": "2021-11-13T09:00:00+09:00",
+        "end": "2021-11-13T18:00:00+09:00"
+    },
+    "moderators": [
+        {
+        "name": "yota",
+        "url": "https://twitter.com/y0t4"
+        },
+        {
+        "name": "miholovesq",
+        "url": "https://twitter.com/miholovesq"
+        },
+        {
+        "name": "ug23",
+        "url": "https://twitter.com/ug23_"
+        },
+        {
+        "name": "shuyuhey",
+        "url": "https://twitter.com/shuyuhey"
+        },
+        {
+        "name": "yudmo",
+        "url": "https://twitter.com/yudmo_"
+        }
+    ],
+    "sponsors": [
+        {
+        "name": "Attractor Inc.",
+        "url": "https://www.attractor.co.jp/"
+        },
+        {
+          "name": "てやまぐ",
+          "url": "https://www.linkedin.com/in/teyamagu/"
+        }
+    ],
+    "location": {
+        "city": "Akihabara, Tokyo",
+        "country": "Japan",
+        "coordinates": {
+        "latitude": 35.6992563,
+        "longitude": 139.769964
+        }
+    }
+}

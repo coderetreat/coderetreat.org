@@ -1,0 +1,43 @@
+{
+  "title": "Global Day of Coderetreat 2021 - Milan",
+  "description": "XPug Milano ha il piacere di invitarvi al Global Day of Coderetreat 2021 che si terrà sabato 13 Novembre",
+  "format": "classic",
+  "spoken_language": "Italian",
+  "url": "https://www.eventbrite.it/e/biglietti-global-day-of-coderetreat-2021-milan-201956937637",
+  "date": {
+    "start": "2021-11-13T09:00:00+01:00",
+    "end": "2021-11-13T17:30:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Daniele Megna",
+      "url": "https://github.com/danielemegna/"
+    },
+    {
+      "name": "Gabriele Lana",
+      "url": "https://github.com/gabrielelana"
+    },
+    {
+      "name": "Nicola Moretto",
+      "url": "https://twitter.com/MorettoNicola"
+    },
+    {
+      "name": "Gianluca Randazzo",
+      "url": "https://twitter.com/fusillicode"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Casavo",
+      "url": "https://casavo.com"
+    }
+  ],
+  "location": {
+    "city": "Milano",
+    "country": "Italy",
+    "coordinates": {
+      "latitude": 45.46416,
+      "longitude": 9.19034
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "title": "Global Day of Code Retreat London @ London Software Craftsmanship Community",
+  "description": "The LSCC is taking part in Coderetreat - the largest free community workshop worldwide. Join us to explore new techniques and write better code using TDD, pairing and other software technical practices. And most importantly... have fun!",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://www.meetup.com/london-software-craftsmanship/events/288175575/",
+  "code_of_conduct": "https://www.meetup.com/london-software-craftsmanship/pages/14935142/Code_of_Conduct/",
+  "date": {
+    "start": "2022-11-05T08:30:00Z",
+    "end": "2022-11-05T17:00:00Z"
+  },
+  "moderators": [
+    {
+      "name": "Mattsi Jansky",
+      "url": "https://twitter.com/mattsijansky"
+    },
+    {
+      "name": "Jocelyn Facchini",
+      "url": "https://www.linkedin.com/in/jocelyn-facchini-5b547585/"
+    },
+    {
+      "name": "Fabio D'Amico",
+      "url": "https://www.linkedin.com/in/fabiodamicodev"
+    },
+    {
+      "name": "George Harris",
+      "url": "https://www.linkedin.com/in/george-harris-31927169/"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Codurance",
+      "url": "https://www.codurance.com/"
+    },
+    {
+      "name": "Jetbrains",
+      "url": "https://www.jetbrains.com/"
+    }
+  ],
+  "location": {
+    "city": "London",
+    "country": "United Kingdom",
+    "coordinates": {
+      "latitude": 51.507322,
+      "longitude": -0.127647
+    }
+  }
+}

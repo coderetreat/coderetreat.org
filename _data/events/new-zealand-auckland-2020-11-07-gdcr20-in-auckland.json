@@ -1,0 +1,31 @@
+{
+  "title": "GDCR20 in Auckland",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://www.meetup.com/kiwi-code-retreat/events/274151013",
+  "code_of_conduct": "https://communitycodeofconduct.com",
+  "date": {
+    "start": "2020-11-07T08:30:00+13:00",
+    "end": "2020-11-07T17:00:00+13:00"
+  },
+  "moderators": [
+    {
+      "name": "Marcus Bristol",
+      "url": "https://twitter.com/mightymuke"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Pushpay",
+      "url": "https://pushpay.com"
+    }
+  ],
+  "location": {
+    "city": "Auckland",
+    "country": "New Zealand",
+    "coordinates": {
+      "latitude": -36.8475001,
+      "longitude": 174.7576072
+    }
+  }
+}

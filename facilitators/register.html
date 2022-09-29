@@ -1,0 +1,27 @@
+---
+layout: post
+audience: facilitators
+extraStyles: ["/js/bundled/register-wizard.css"]
+---
+<h1 class="display-1">Event Registration</h1>
+<p class="lead">As every year, you can list your event on <em>coderetreat.org</em> to make it easy for someone to find
+    and attend. Fill out this form and send us a Pull Request <a
+        href="https://github.com/coderetreat/coderetreat.org/pulls">to our repo</a>.</p>
+
+
+<p>To get your event listed on coderetreat.org, you need to fork our repository at <a
+        href="https://github.com/coderetreat/coderetreat.org">github.com/coderetreat/coderetreat</a></p>
+<ol>
+    <li>Create a new file in <code>_data/events/</code> such as <code>berlin-swkberlin.json</code>.</li>
+    <li>Complete this form and download or paste the resulting JSON into the file</li>
+    <li>Optionally: Validate the JSON locally by running <code>npm test</code></li> (see <a
+        href="https://github.com/coderetreat/coderetreat.org#install">our README</a> on how to set up the repository)
+    <li>Commit your event and send us a <a href="https://github.com/coderetreat/coderetreat.org">Pull Request</a></li>
+    <li>We will validate your event and publish it on our <a href="{% link events/index.html %}">Events Page</a></li>
+</ol>
+
+<div id="wizard"></div>
+
+
+
+<script type="application/javascript" src="{{ "/js/bundled/register-wizard.js" | relative_url }}"></script>

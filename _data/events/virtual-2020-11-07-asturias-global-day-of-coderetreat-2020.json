@@ -1,0 +1,41 @@
+{
+  "title": "Asturias Global Day Of Coderetreat 2020",
+  "description": "Al igual que en años anteriores, Asturias se une al Global Day of Coderetreat (https://www.coderetreat.org/) para disfrutar de una mañana dedicada a mejorar nuestras habilidades de diseño de software a través de una serie de actividades cuyo objetivo es, más allá de tecnicismos, ofrecer la oportunidad de pasar unas cuantas horas programando por pura diversión en compañía de otras personas con perfiles y experiencias diferentes.",
+  "format": "classic",
+  "spoken_language": "Spanish",
+  "url": "https://www.eventbrite.es/e/entradas-asturias-global-day-of-coderetreat-2020-123380461281",
+  "code_of_conduct": "https://github.com/asturiashacking/core/blob/master/coc/CODE_OF_CONDUCT.md",
+  "date": {
+    "start": "2020-11-07T09:30:00+01:00",
+    "end": "2020-11-07T14:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Santiago Martin",
+      "url": "https://twitter.com/SantiMA10"
+    },
+    {
+      "name": "Iñaki Quesada",
+      "url": "https://twitter.com/piedresybarro"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "AsturPHP",
+      "url": "https://www.meetup.com/asturPHP/"
+    },
+    {
+      "name": "Asturias Hacking",
+      "url": "https://www.meetup.com/AsturiasHacking/"
+    },
+    {
+      "name": "asturias.js",
+      "url": "https://www.meetup.com/asturias-javascript/"
+    },
+    {
+      "name": "Agile Asturias",
+      "url": "https://www.meetup.com/Agile-Asturias/"
+    }
+  ],
+  "location": "virtual"
+}

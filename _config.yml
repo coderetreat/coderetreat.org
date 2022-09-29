@@ -1,25 +1,95 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
 title: Coderetreat
-url: https://www.coderetreat.org
-repository: coderetreat/coderetreat.org
-permalink: /blog/:year/:month/:day/:title/
+tagline: A free community event to practice professional software development 
+email: info@coderetreat.org
+description: >- # this means to ignore newlines until "baseurl:"
+  A free community event to practice professional software development 
+globalday:
+  start: "2022-11-04"
+  end: "2022-11-05"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.coderetreat.org" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: coderetreat
+
+# SEO Tags
+twitter:
+  username: coderetreat
+  card: summary
+logo: /assets/logo-300x.png
+author:
+  twitter: coderetreat
+social:
+  name: Coderetreat
+  links:
+    - https://twitter.com/coderetreat
+    - https://github.com/coderetreat
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/logo-300x.png
+
+# Build settings
 plugins:
   - jekyll-feed
+  - jekyll-toc
+
+permalink: pretty
+
+collections:
+  - setup_steps
+
+disqus:
+  shortname: coderetreat
+
+toc:
+  min_level: 1
+  max_level: 2
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
 exclude:
-  - package.json
-  - package-lock.json
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
   - Gemfile
   - Gemfile.lock
-  - LICENSE
-  - CONTRIBUTING.md
-  - scripts
-  - test
-  - yarn.lock
-  - node_modules
-  - README.md
-include:
-  - _redirects
-sass:
-    load_paths:
-        - _sass
-        - node_modules
+  - node_modules/
+  - js/
+  - test/
+  - scripts/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .cache/
 
+keep_files:
+  - js/
+  - js/bundled/
+  - js/bundled/*
