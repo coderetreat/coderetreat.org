@@ -1,0 +1,46 @@
+{
+  "title": "48 Hour GLOBAL Day of CodeRetreat - EVERYWHERE",
+  "description": "A \"48 Hour\" CodeRetreat that barely fits in November 5th.",
+  "format": "ensemble",
+  "spoken_language": "English",
+  "url": "https://www.eventbrite.com/e/48-hour-global-day-of-coderetreat-everywhere-tickets-408367276517",
+  "date": {
+    "start": "2022-11-04T12:00:00Z",
+    "end": "2022-11-06T12:00:00Z"
+  },
+  "moderators": [
+    {
+      "name": "Bob Allen",
+      "url": "https://twitter.com/CuriousAgilist"
+    },
+    {
+      "name": "Christian Hujer",
+      "url": "https://twitter.com/christianhujer"
+    },
+    {
+      "name": "David Campey",
+      "url": "https://twitter.com/davidcampey"
+    },
+    {
+      "name": "Gregor Riegler",
+      "url": "https://twitter.com/gregor_riegler"
+    },
+    {
+      "name": "Siddesh Nikude",
+      "url": "https://twitter.com/siddheshnikude"
+    },
+    {
+      "name": "Ted M. Young",
+      "url": "https://twitter.com/jitterted"
+    },
+    {
+      "name": "Alex Bunardzic",
+      "url": "https://twitter.com/alexbunardzic"
+    },
+    {
+      "name": "Nitsan Avni",
+      "url": "https://twitter.com/NitsanAvni"
+    }
+  ],
+  "location": "virtual"
+}
