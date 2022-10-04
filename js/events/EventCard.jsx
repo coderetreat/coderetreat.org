@@ -143,8 +143,12 @@ export default ({ event, usersTimezone, isPromotedMultidayEvent }) => {
         <div class="card-body m-0">
           <h5 class="card-title m-0">{event.title}</h5>
           <span class="d-block text-muted pt-1">
-            {event.spoken_language}, <Format format={event.format} />, with{" "}
-            <Moderators moderators={event.moderators} />
+            {event.spoken_language}, <Format format={event.format} />
+            {event.moderators && event.moderators.length > 1 ? (
+              <Fragment>
+                , with <Moderators moderators={event.moderators} />
+              </Fragment>
+            ) : null}
           </span>
         </div>
         <div style={isCollapsed ? collapsedStyle : expandedStyle}>

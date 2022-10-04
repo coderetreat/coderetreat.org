@@ -174,7 +174,6 @@ const EventList = ({ events, title, timeZoneId, promoteMultidayEventsOnTop }) =>
 
 const doesEventSpanMultipleDays = (event) => {
   const duration = Duration.between(event.date.start, event.date.end);
-  console.log(duration.toHours(), "WOOP", event.title);
   return duration.toHours() >= 24;
 };
 
@@ -237,7 +236,11 @@ const GroupedEvents = ({ events, timeZoneId, promoteMultidayEventsOnTop }) => {
     const multiDayEvents = events
       .filter(doesEventSpanMultipleDays)
       .map((event) => (
-        <EventCard event={event} usersTimezone={timeZoneId} isPromotedMultidayEvent={true} />
+        <EventCard
+          event={event}
+          usersTimezone={timeZoneId}
+          isPromotedMultidayEvent={true}
+        />
       ));
 
     return [...multiDayEvents, ...eventsByDay];
