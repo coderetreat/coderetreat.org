@@ -1,0 +1,36 @@
+{
+  "title": "Code Retreat (DevDay)",
+  "description": "Coderetreats are free day-long, intensive practice events, focusing on the fundamentals of software development and design. By providing developers the opportunity to take part in focused practice, away from the pressures of \"getting things done\", the coderetreat format has proven itself to be a highly effective means of learning and nurturing software development skills.   https://www.coderetreat.org/",
+  "format": "classic",
+  "spoken_language": "English,Hindi,Marathi",
+  "url": "https://www.meetup.com/devday_pune/events/289043025/",
+  "date": {
+    "start": "2022-11-05T09:30:00+05:30",
+    "end": "2022-11-05T16:00:00+05:30"
+  },
+  "moderators": [
+    {
+      "name": "Prashant Kalkar"
+    },
+    {
+      "name": "Amit Sadafule"
+    },
+    {
+      "name": "Vinayak Kadam"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Sahaj",
+      "url": "https://sahaj.ai/"
+    }
+  ],
+  "location": {
+    "city": "Pune",
+    "country": "India",
+    "coordinates": {
+      "latitude": 18.543804864734902,
+      "longitude": 73.9139955767211
+    }
+  }
+}
