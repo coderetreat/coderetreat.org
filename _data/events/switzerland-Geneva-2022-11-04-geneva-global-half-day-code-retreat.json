@@ -1,0 +1,34 @@
+{
+  "title": "Geneva Global Half-Day Code Retreat",
+  "description": "Rejoignez-nous pour découvrir, apprendre et progresser tous ensemble ! À l’occasion du Global Day of code Retreat, nous vous proposons une première édition de Code Retreat à Genève. Cet évènement aura lieu en présentiel, dans les locaux de Techfirm. SVP: Les places sont limitées, aussi soyez sûr de pouvoir venir si vous vous inscrivez. Le quotidien ne nous permet pas toujours d’expérimenter de nouvelles façons de faire. Cet évènement sera l’occasion de pratiquer, sans se presser : un exercice de code sera proposé, et 3 sessions en binôme auront lieu pour le parcourir de manières différentes.",
+  "format": "classic",
+  "spoken_language": "French",
+  "url": "https://www.meetup.com/romandie-software-craftsmanship/events/289144600/",
+  "date": {
+    "start": "2022-11-04T14:00:00+01:00",
+    "end": "2022-11-04T18:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Khaled Souf",
+      "url": "https://twitter.com/khaledsouf"
+    },
+    {
+      "name": "Alvaro Costa"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Techfirm SA",
+      "url": "https://www.techfirm.ch/"
+    }
+  ],
+  "location": {
+    "city": "Confignon",
+    "country": "Switzerland",
+    "coordinates": {
+      "latitude": 46.18003349874334,
+      "longitude": 6.092903015808808
+    }
+  }
+}
