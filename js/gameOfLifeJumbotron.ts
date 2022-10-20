@@ -1,5 +1,5 @@
 import { GameController } from "./gameOfLifeJumbotron/GameController";
-import { StandardRules, GameOfLife } from "./gameOfLifeJumbotron/GameOfLife";
+import { GameOfLife, StandardRules } from "./gameOfLifeJumbotron/GameOfLife";
 import * as GameOfLifeUrlBinding from "./gameOfLifeJumbotron/GameOfLifeUrlBinding";
 
 let game = GameOfLifeUrlBinding.tryInitializeFromHistory();

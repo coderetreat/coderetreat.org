@@ -1,5 +1,4 @@
-import { h } from "preact";
-import { useState, useEffect } from "preact/hooks";
+import { h,useState, useEffect } from "react";
 import { btoa } from "abab";
 
 export const DownloadButton = ({ text, filename }) => {
@@ -14,7 +13,7 @@ export const DownloadButton = ({ text, filename }) => {
   }
 
   return (
-    <button class="btn btn-primary my-1" onClick={download}>
+    <button className="btn btn-primary my-1" onClick={download}>
       Download JSON
     </button>
   );

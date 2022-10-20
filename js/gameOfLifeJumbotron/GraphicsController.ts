@@ -1,4 +1,4 @@
-import * as PIXI from "pixi.js-legacy";
+import * as PIXI from "pixi.js";
 import { Array2d } from "./Array2d";
 import { GameOfLife } from "./GameOfLife";
 import { Viewport } from "pixi-viewport";
