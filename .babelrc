@@ -1,0 +1,10 @@
+{
+    "env": {
+        "test": {
+            "presets": [
+                "@parcel/babel-preset-env",
+                "@babel/preset-react"
+            ]
+        }
+    }
+}

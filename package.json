@@ -28,9 +28,12 @@
   "devDependencies": {
     "@babel/core": "^7.19.6",
     "@babel/preset-env": "^7.19.4",
+    "@babel/preset-react": "^7.18.6",
+    "@parcel/babel-preset-env": "^2.7.0",
     "@parcel/config-default": "^2.7.0",
     "@parcel/transformer-yaml": "^2.7.0",
     "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
     "@types/jest": "^29.2.0",
     "@types/qs": "^6.9.7",
     "ajv-formats": "^2.1.1",
