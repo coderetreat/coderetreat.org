@@ -73,9 +73,8 @@ GEM
       ffi (~> 1.9)
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
-    thread_safe (0.3.6)
-    tzinfo (1.2.9)
-      thread_safe (~> 0.1)
+    tzinfo (2.0.5)
+      concurrent-ruby (~> 1.0)
     tzinfo-data (1.2022.1)
       tzinfo (>= 1.0.0)
     unicode-display_width (1.8.0)
@@ -86,11 +85,11 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  jekyll (~> 4.2.2)
+  jekyll (= 4.2.2)
   jekyll-feed (~> 0.12)
   jekyll-seo-tag (~> 2.6)
   jekyll-toc
-  tzinfo (~> 1.2)
+  tzinfo (~> 2.0)
   tzinfo-data
   wdm (~> 0.1.1)
 
