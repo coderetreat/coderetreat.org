@@ -21,7 +21,12 @@ const configureTileViewDefault = (api) => {
   });
 };
 
-const Videobooth = ({ roomName, userName, onRoomEmpty }) => {
+const Videobooth = ({
+  roomName,
+  userName,
+  onRoomEmpty,
+  onIframeInitialized,
+}) => {
   const apiRef = useRef<JitsiApi | null>(null);
   useEffect(() => {
     apiRef.current?.executeCommand("displayName", userName);
@@ -38,7 +43,7 @@ const Videobooth = ({ roomName, userName, onRoomEmpty }) => {
   );
 
   return (
-    <>
+    <div style={{ height: "90vh", width: "100vw", backgroundColor: "#474747" }}>
       <JitsiMeeting
         key={roomName}
         roomName={roomName}
@@ -46,7 +51,11 @@ const Videobooth = ({ roomName, userName, onRoomEmpty }) => {
           startWithAudioMuted: true,
           prejoinPageEnabled: false,
         }}
-        getIFrameRef={(iframe) => (iframe.style.height = "80vh")}
+        getIFrameRef={(iframe) => {
+          iframe.style.height = "100%";
+          iframe.style.width = "100%";
+          onIframeInitialized && onIframeInitialized();
+        }}
         onApiReady={(_api: IJitsiMeetExternalApi) => {
           const api = _api as JitsiApi;
           apiRef.current = api;
@@ -86,7 +95,7 @@ const Videobooth = ({ roomName, userName, onRoomEmpty }) => {
           ],
         }}
       />
-    </>
+    </div>
   );
 };
 
@@ -99,6 +108,7 @@ const App = () => {
   const [username, setUsername] = useState("");
   const [room, setRoom] = useState(0);
   const [autoSwitch, setAutoSwitch] = useState(false);
+  const containerRef = useRef<HTMLDivElement | null>(null);
 
   const maybeAutoswitch = useMemo(
     () => () => {
@@ -111,96 +121,102 @@ const App = () => {
     [autoSwitch, room]
   );
 
+  const scrollToContainer = useMemo(
+    () => () => {
+      containerRef.current?.scrollIntoView({ behavior: "smooth" });
+    },
+    [containerRef]
+  );
+
   return (
     <>
-      <div className="alert alert-danger">
-        <b>Ask your participants for consent!</b> Not everyone consents to their
-        picture being broadcasted to the world. We recommend you let people{" "}
-        <b>opt-in</b> to being on camera by pointing the camera at only a
-        portion of the room.
-      </div>
-      <form
-        className="form-inline mb-2"
-        onSubmit={(e) => {
-          e.preventDefault();
-          if (!isRunning) setRunning(true);
-          return false;
-        }}
-      >
-        <label className="sr-only" htmlFor="userName">
-          Your Location/Username
-        </label>
-        <input
-          type="text"
-          className="form-control"
-          id="userName"
-          placeholder="Location/Username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
-        <div className="input-group ml-sm-2">
-          <div className="input-group-prepend">
-            <button
-              className="btn btn-secondary"
-              type="button"
-              onClick={() => setRoom((room + 10 - 1) % ROOMS.length)}
-            >
-              Previous
-            </button>
-          </div>
-          <select
-            className="form-control"
-            value={room}
-            onChange={(e) => setRoom(Number(e.target.value))}
-          >
-            {ROOMS.map((room, i) => (
-              <option key={room} value={i}>
-                #{room}
-              </option>
-            ))}
-          </select>
-          <div className="input-group-append">
-            <button
-              className="btn btn-secondary"
-              type="button"
-              onClick={() => setRoom((room + 1) % ROOMS.length)}
-            >
-              Next
-            </button>
-          </div>
-        </div>
-        <div className="form-check ml-sm-2">
-          <input
-            className="form-check-input"
-            type="checkbox"
-            checked={autoSwitch}
-            onChange={(e) => setAutoSwitch(!autoSwitch)}
-            id="autoSwitchRoom"
-          />
-          <label className="form-check-label" htmlFor="autoSwitchRoom">
-            Auto-Switch room when empty
-          </label>
-        </div>
-        <button
-          type="button"
-          className="ml-sm-2 btn btn-primary"
-          onClick={() => setRunning(!isRunning)}
+      <div className="container py-2" ref={containerRef}>
+        <form
+          className="form-inline mb-2"
+          onSubmit={(e) => {
+            e.preventDefault();
+            if (!isRunning) setRunning(true);
+            return false;
+          }}
         >
-          {!isRunning ? "Start" : "Stop"}
-        </button>
-      </form>
+          <label className="sr-only" htmlFor="userName">
+            Your Location/Username
+          </label>
+          <input
+            type="text"
+            className="form-control"
+            id="userName"
+            placeholder="Location/Username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+          <div className="input-group ml-sm-2">
+            <div className="input-group-prepend">
+              <button
+                className="btn btn-secondary"
+                type="button"
+                onClick={() => setRoom((room + 10 - 1) % ROOMS.length)}
+              >
+                Previous
+              </button>
+            </div>
+            <select
+              className="form-control"
+              value={room}
+              onChange={(e) => setRoom(Number(e.target.value))}
+            >
+              {ROOMS.map((room, i) => (
+                <option key={room} value={i}>
+                  #{room}
+                </option>
+              ))}
+            </select>
+            <div className="input-group-append">
+              <button
+                className="btn btn-secondary"
+                type="button"
+                onClick={() => setRoom((room + 1) % ROOMS.length)}
+              >
+                Next
+              </button>
+            </div>
+          </div>
+          <div className="form-check ml-sm-2">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              checked={autoSwitch}
+              onChange={(e) => setAutoSwitch(!autoSwitch)}
+              id="autoSwitchRoom"
+            />
+            <label className="form-check-label" htmlFor="autoSwitchRoom">
+              Auto-Switch room when empty
+            </label>
+          </div>
+          <button
+            type="button"
+            className="ml-sm-2 btn btn-primary"
+            onClick={() => setRunning(!isRunning)}
+          >
+            {!isRunning ? "Start" : "Stop"}
+          </button>
+        </form>
+      </div>
 
       {isRunning && (
         <Videobooth
           roomName={ROOMS[room]}
           userName={username}
+          onIframeInitialized={scrollToContainer}
           onRoomEmpty={maybeAutoswitch}
         />
       )}
-      <div className="alert alert-warning mt-2">
-        The rooms have been protected with the password{" "}
-        <code>{SECRET_PASSWORD}</code> in order to avoid Zoom bombing. Please do
-        not share the meeting and this password, but this page instead.
+      <div className="container">
+        <div className="small">
+          The rooms have been protected with the password{" "}
+          <code>{SECRET_PASSWORD}</code> in order to avoid Zoom bombing. Please
+          do not share the meeting and this password, but this page instead.
+        </div>
       </div>
     </>
   );
