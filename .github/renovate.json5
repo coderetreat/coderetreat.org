@@ -3,5 +3,6 @@
   "extends": ["config:base"],
   "dependencyDashboard": true,
   "automerge": true,
-  "automergeType": "branch"
+  "automergeType": "branch",
+  "ignoreDeps": ["pixi.js", "jekyll", "react-bootstrap-typeahead", "bootstrap"]
 }
