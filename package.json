@@ -11,7 +11,7 @@
     "@parcel/resolver-glob": "2.7.0",
     "abab": "2.0.6",
     "ajv": "8.11.0",
-    "bootstrap": "4.6.2",
+    "bootstrap": "5.2.2",
     "classnames": "2.3.2",
     "glob": "8.0.3",
     "jquery": "3.6.1",
