@@ -88,6 +88,8 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - .cache/
+  - cypress/
+  - .parcel-cache/
 
 keep_files:
   - js/

@@ -41,6 +41,7 @@
     "benchmark": "2.1.4",
     "buffer": "6.0.3",
     "canvas": "2.10.1",
+    "cypress": "^10.10.0",
     "jest": "29.2.1",
     "jest-environment-jsdom": "29.2.1",
     "jest-environment-node": "29.2.1",
@@ -51,6 +52,7 @@
     "querystring-es3": "0.2.1",
     "ts-jest": "29.0.3",
     "typescript": "4.8.4",
+    "wait-on": "^6.0.1",
     "xml-js": "1.6.11"
   },
   "scripts": {
@@ -60,7 +62,12 @@
     "watch": "npm run fetch:podcast && parcel watch js/*.js js/*.jsx js/*.ts js/*.tsx",
     "watch:jekyll": "bundle exec jekyll serve --livereload -V -H 0.0.0.0",
     "fetch:podcast": "wget -O _data/podcast.xml https://www.code-cop.org/podcast/rss_feed.php && xml-js _data/podcast.xml --out _data/podcast.json --compact --spaces 4 || true",
-    "test": "jest"
+    "test": "jest",
+    "serve": "bundle exec jekyll serve --no-watch",
+    "cypress": "run-s cypress:prepare cypress:test",
+    "cypress:prepare": "run-s cypress:seed build",
+    "cypress:seed": "node scripts/create_upcoming_event_for_testing.js",
+    "cypress:test": "cypress run"
   },
   "jest": {
     "testPathIgnorePatterns": [
