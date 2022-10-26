@@ -1,0 +1,37 @@
+{
+  "title": "Global Day of Code Retreat 2022 @ Openbravo",
+  "format": "classic",
+  "spoken_language": "Spanish",
+  "url": "https://www.meetup.com/Pamplona-Software-Crafters/events/289175491/",
+  "date": {
+    "start": "2022-11-04T09:00:00+01:00",
+    "end": "2022-11-04T16:30:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Augusto Mauch",
+      "url": "https://twitter.com/AugustoMauch"
+    },
+    {
+      "name": "Javier Armendáriz",
+      "url": "https://twitter.com/katanagari7c1"
+    },
+    {
+      "name": "Cristian Berner"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Openbravo",
+      "url": "https://www.openbravo.com/"
+    }
+  ],
+  "location": {
+    "city": "Mutilva",
+    "country": "Spain",
+    "coordinates": {
+      "latitude": 42.79737879526548,
+      "longitude": -1.613227338636869
+    }
+  }
+}
