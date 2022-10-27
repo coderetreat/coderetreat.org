@@ -15,7 +15,7 @@ const earliestGDCRStart = LocalDate.parse(
 ).atStartOfDay(ZoneId.of("UTC+12"));
 const latestGDCREnd = LocalDate.parse(jekyllConfig.globalday.end)
   .atStartOfDay(ZoneId.of("UTC-12"))
-  .plusDays(1);
+  .plusDays(1).minusSeconds(1);
 const isCurrentDateAfterGDCR = ZonedDateTime.now().isAfter(latestGDCREnd);
 
 const Events = () => {
@@ -94,11 +94,13 @@ const Events = () => {
           timeZoneId={timeZoneId}
         />
         <EventList
-          title={`Global Day of Coderetreat events (${new Date(
-            jekyllConfig.globalday.start
-          ).toLocaleDateString()} - ${new Date(
-            jekyllConfig.globalday.end
-          ).toLocaleDateString()})`}
+          title={
+            <>
+              Global Day of Coderetreat events (
+              <LocalizedDate date={earliestGDCRStart} timeZone={timeZoneId} /> -{" "}
+              <LocalizedDate date={latestGDCREnd} timeZone={timeZoneId} />)
+            </>
+          }
           events={eventsDuringGDCR}
           timeZoneId={timeZoneId}
           promoteMultidayEventsOnTop={true}
@@ -223,7 +225,11 @@ const GroupedEvents = ({ events, timeZoneId, promoteMultidayEventsOnTop }) => {
             ) : (
               <>
                 {groupedByDay[dateKey].map((event) => (
-                  <EventCard key={event.id} event={event} usersTimezone={timeZoneId} />
+                  <EventCard
+                    key={event.id}
+                    event={event}
+                    usersTimezone={timeZoneId}
+                  />
                 ))}
               </>
             )}
@@ -237,7 +243,7 @@ const GroupedEvents = ({ events, timeZoneId, promoteMultidayEventsOnTop }) => {
       .filter(doesEventSpanMultipleDays)
       .map((event) => (
         <EventCard
-          key={event.id} 
+          key={event.id}
           event={event}
           usersTimezone={timeZoneId}
           isPromotedMultidayEvent={true}
@@ -287,7 +293,11 @@ const GroupedIntraDayEvents = ({ events, timeZoneId }) => {
           <div key={slice[0]} className="container-fluid px-0 mb-2">
             <p className="px-1 my-0 text-muted font-weight-bold">{slice[0]}</p>
             {grouped[i].map((event) => (
-              <EventCard key={event.id} event={event} usersTimezone={timeZoneId} />
+              <EventCard
+                key={event.id}
+                event={event}
+                usersTimezone={timeZoneId}
+              />
             ))}
           </div>
         )
