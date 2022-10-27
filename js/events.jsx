@@ -12,7 +12,7 @@ const { ZoneId, Duration, ZonedDateTime, LocalDate, LocalTime } = jsjoda;
 
 const earliestGDCRStart = LocalDate.parse(
   jekyllConfig.globalday.start
-).atStartOfDay(ZoneId.of("UTC+12"));
+).atStartOfDay(ZoneId.of("UTC+14"));
 const latestGDCREnd = LocalDate.parse(jekyllConfig.globalday.end)
   .atStartOfDay(ZoneId.of("UTC-12"))
   .plusDays(1).minusSeconds(1);
