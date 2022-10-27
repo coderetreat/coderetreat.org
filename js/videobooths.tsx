@@ -32,14 +32,41 @@ const Videobooth = ({
     apiRef.current?.executeCommand("displayName", userName);
   }, [userName]);
 
+  const roomStillFullTimeout = useRef<number | null>(null);
+  const numberOfParticipants = useRef<number>(0);
+
   const assertRoomStillFull = useMemo(
     () => () => {
-      if (!apiRef.current) return;
-      if (apiRef.current.getNumberOfParticipants() < 2) {
-        onRoomEmpty();
+      console.log("AutoSwitch", "AssertRoomStillFull");
+      if (roomStillFullTimeout.current) {
+        console.log("AutoSwitch", "Clearing Timeout");
+        window.clearTimeout(roomStillFullTimeout.current);
+        roomStillFullTimeout.current = null;
       }
+      roomStillFullTimeout.current = window.setTimeout(() => {
+        roomStillFullTimeout.current = null;
+
+        if (!apiRef.current) return;
+        console.log(
+          "AutoSwitch",
+          "Number of Participants",
+          apiRef.current.getNumberOfParticipants(),
+          "Actual",
+          numberOfParticipants.current
+        );
+        if (numberOfParticipants.current < 2) {
+          console.log(
+            "AutoSwitch",
+            "Calling onRoomEpty",
+            apiRef.current.getNumberOfParticipants(),
+            "Actual",
+            numberOfParticipants.current
+          );
+          onRoomEmpty();
+        }
+      }, 5000);
     },
-    [onRoomEmpty, apiRef]
+    [onRoomEmpty, apiRef, roomStillFullTimeout]
   );
 
   return (
@@ -57,6 +84,7 @@ const Videobooth = ({
           onIframeInitialized && onIframeInitialized();
         }}
         onApiReady={(_api: IJitsiMeetExternalApi) => {
+          numberOfParticipants.current = 0;
           const api = _api as JitsiApi;
           apiRef.current = api;
           configureTileViewDefault(api);
@@ -66,10 +94,20 @@ const Videobooth = ({
           });
           api.on("videoConferenceJoined", (e) => {
             api.executeCommand("password", SECRET_PASSWORD);
+            numberOfParticipants.current += 1;
+            assertRoomStillFull();
+            console.log("AutoSwitch", "videoConferenceJoined", e);
+          });
+          api.on("participantJoined", (e) => {
+            numberOfParticipants.current += 1;
+            console.log("AutoSwitch", "participantJoined", e);
             assertRoomStillFull();
           });
-          api.on("participantJoined", assertRoomStillFull);
-          api.on("participantLeft", assertRoomStillFull);
+          api.on("participantLeft", (e) => {
+            numberOfParticipants.current -= 1;
+            console.log("AutoSwitch", "participantLeft", e);
+            assertRoomStillFull();
+          });
         }}
         interfaceConfigOverwrite={{
           SHOW_JITSI_WATERMARK: false,
@@ -109,17 +147,21 @@ const App = () => {
   const [room, setRoom] = useState(0);
   const [autoSwitch, setAutoSwitch] = useState(false);
   const containerRef = useRef<HTMLDivElement | null>(null);
+  const autoSwitchRef = useRef<boolean>(false);
 
   const maybeAutoswitch = useMemo(
     () => () => {
-      if (autoSwitch) {
-        window.setTimeout(() => {
-          setRoom((room + 1) % ROOMS.length);
-        }, 1000);
+      if (autoSwitchRef.current) {
+        setRoom((room + 1) % ROOMS.length);
       }
     },
-    [autoSwitch, room]
+    [room]
   );
+
+  useEffect(() => {
+    console.log("AutoSwitch", autoSwitch);
+    autoSwitchRef.current = autoSwitch;
+  }, [autoSwitch]);
 
   const scrollToContainer = useMemo(
     () => () => {
