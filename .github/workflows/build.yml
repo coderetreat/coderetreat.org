@@ -5,32 +5,29 @@ on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
+      # Setup
       - uses: actions/checkout@v3
+      
       - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+      
       - uses: actions/setup-node@v3
         with:
           node-version-file: ".nvmrc"
+          cache: 'npm'
       - run: npm ci
-      - run: npm run build
-      - run: bundle install
-      - run: JEKYLL_ENV=production bundle exec jekyll build --verbose
+          
+      
+      - name: Prepare Test Data to be included in build
+        run: npm run cypress:seed
+      
+      - name: Build JavaScript
+        run: npm run build
 
-  cypress:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: ruby/setup-ruby@v1
-      - uses: actions/setup-node@v3
+      - uses: cypress-io/github-action@v4.2.0 # use the explicit version number
         with:
-          node-version-file: ".nvmrc"
-      - run: npm ci
-      - run: bundle install
-      - name: Cypress run
-        uses: cypress-io/github-action@v4.2.0 # use the explicit version number
-        with:
-          build: npm run cypress:prepare
           start: npm run serve
           wait-on: "http://localhost:4000"
           install: false
