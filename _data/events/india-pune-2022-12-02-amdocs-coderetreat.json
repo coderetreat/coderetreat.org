@@ -1,0 +1,34 @@
+{
+  "title": "Amdocs Coderetreat",
+  "format": "ensemble",
+  "spoken_language": "English",
+  "url": "https://www.townscript.com/e/amdocs-coderetreat-444413",
+  "date": {
+    "start": "2022-12-02T09:30:00+05:30",
+    "end": "2022-12-02T16:30:00+05:30"
+  },
+  "moderators": [
+    {
+      "name": "Christian Hujer",
+      "url": "https://twitter.com/christianhujer"
+    },
+    {
+      "name": "Siddhesh Nikude",
+      "url": "https://twitter.com/SiddheshNikude"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Amdocs",
+      "url": "https://www.amdocs.com/"
+    }
+  ],
+  "location": {
+    "city": "Pune",
+    "country": "India",
+    "coordinates": {
+      "latitude": 18.513997566164214,
+      "longitude": 73.92791428465834
+    }
+  }
+}
