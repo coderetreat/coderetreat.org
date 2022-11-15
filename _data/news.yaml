@@ -1,3 +1,10 @@
+- title: Global Day of Code Retreat 2022
+  url: https://blog.michalp.net/posts/scala/gdcr-2022/
+  language: English
+  teaser: "Michał co-hosted a Coderetreat event with Ocado Technology and Klose Brothers in Wrocław. Read on to find out how they did mob programming of Conway's Game of Life solution in Functional Programming & Scala!"
+  author:
+    name: Michal Pawlik
+    link: https://www.linkedin.com/in/michał-pawlik
 - title: Coderetreat — or why you should go and do it!
   url: https://medium.com/helloheart-rnd/coderetreat-or-why-you-should-go-and-do-it-a9fb6371f643
   language: English
