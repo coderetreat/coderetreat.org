@@ -15,7 +15,7 @@
     "classnames": "2.3.2",
     "glob": "10.0.0",
     "jquery": "3.6.4",
-    "pixi-viewport": "4.36.0",
+    "pixi-viewport": "5.0.1",
     "pixi.js": "=6.5.6",
     "popper.js": "1.16.1",
     "qs": "6.11.1",
