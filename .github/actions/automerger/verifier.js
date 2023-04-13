@@ -140,21 +140,21 @@ module.exports = async () => {
       repo: baseParams.repo,
       ref: pullRequest.data.head.sha,
     });
-    console.log(JSON.stringify(commit));
-    // DISABLED UNTIL WE FIXED expectedHeadRefOid and correctly identifying broken test runs
+    console.log(JSON.stringify(commit, undefined, 2));
+
     // Why GraphQL?  Octokit.rest call does not appear to work correctly!
-    // await octokit.graphql(
-    //   `
-    //   mutation DoTheAutomaticMerge($mergeParams: MergePullRequestInput!) {
-    //     mergePullRequest(input: $mergeParams) { clientMutationId }
-    //   }`,
-    //   {
-    //     mergeParams: {
-    //       pullRequestId: pullRequest.data.node_id,
-    //       commitHeadOid: commit.data.node_id,
-    //     },
-    //   }
-    // );
+    await octokit.graphql(
+      `
+      mutation DoTheAutomaticMerge($mergeParams: MergePullRequestInput!) {
+        mergePullRequest(input: $mergeParams) { clientMutationId }
+      }`,
+      {
+        mergeParams: {
+          pullRequestId: pullRequest.data.node_id,
+          expectedHeadOid: pullRequest.data.head.sha,
+        },
+      }
+    );
   } catch (error) {
     console.error(error);
     core.setFailed(error.message);
