@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.22.1",
-    "@babel/preset-env": "7.22.2",
+    "@babel/preset-env": "7.22.4",
     "@babel/preset-react": "7.22.3",
     "@parcel/babel-preset-env": "2.9.1",
     "@parcel/config-default": "2.9.1",
