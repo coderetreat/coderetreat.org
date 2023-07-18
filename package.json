@@ -23,7 +23,7 @@
     "react-bootstrap-typeahead": "=5.2.2",
     "react-dom": "18.2.0",
     "seedrandom": "3.0.5",
-    "slug": "8.2.2"
+    "slug": "8.2.3"
   },
   "devDependencies": {
     "@babel/core": "7.22.9",
