@@ -37,7 +37,7 @@
     "@types/jest": "29.5.3",
     "@types/qs": "6.9.7",
     "ajv-formats": "2.1.1",
-    "babel-jest": "29.6.2",
+    "babel-jest": "29.6.3",
     "benchmark": "2.1.4",
     "buffer": "6.0.3",
     "canvas": "2.11.2",
