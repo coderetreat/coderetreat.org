@@ -34,7 +34,7 @@
     "@parcel/transformer-yaml": "2.9.3",
     "@testing-library/jest-dom": "6.0.1",
     "@testing-library/react": "14.0.0",
-    "@types/jest": "29.5.3",
+    "@types/jest": "29.5.4",
     "@types/qs": "6.9.7",
     "ajv-formats": "2.1.1",
     "babel-jest": "29.6.3",
