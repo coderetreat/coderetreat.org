@@ -32,7 +32,7 @@
     "@parcel/babel-preset-env": "2.9.3",
     "@parcel/config-default": "2.9.3",
     "@parcel/transformer-yaml": "2.9.3",
-    "@testing-library/jest-dom": "6.1.0",
+    "@testing-library/jest-dom": "6.1.1",
     "@testing-library/react": "14.0.0",
     "@types/jest": "29.5.4",
     "@types/qs": "6.9.7",
