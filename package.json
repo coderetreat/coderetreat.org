@@ -26,9 +26,9 @@
     "slug": "8.2.3"
   },
   "devDependencies": {
-    "@babel/core": "7.22.11",
-    "@babel/preset-env": "7.22.14",
-    "@babel/preset-react": "7.22.5",
+    "@babel/core": "7.22.15",
+    "@babel/preset-env": "7.22.15",
+    "@babel/preset-react": "7.22.15",
     "@parcel/babel-preset-env": "2.9.3",
     "@parcel/config-default": "2.9.3",
     "@parcel/transformer-yaml": "2.9.3",
