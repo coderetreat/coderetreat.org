@@ -1,4 +1,4 @@
-import * as PIXI from "pixi.js-legacy";
+import * as PIXI from "pixi.js";
 import { Array2d } from "./Array2d";
 import { GameOfLife } from "./GameOfLife";
 import { Viewport } from "pixi-viewport";
@@ -28,8 +28,8 @@ export class GraphicsController {
   }: GraphicsControllerOpts) {
     this.pixiApp = new PIXI.Application({
       view: element,
-      resizeTo: element.parentElement,
-      transparent: true,
+      resizeTo: element.parentElement!,
+      backgroundAlpha: 0.0,
       antialias: true,
       autoDensity: true,
       resolution: 2,
@@ -38,7 +38,7 @@ export class GraphicsController {
     this.viewport = new Viewport({
       screenWidth: element.width,
       screenHeight: element.height,
-      interaction: this.pixiApp.renderer.plugins.interaction,
+      events: this.pixiApp.renderer.events
     });
     this.pixiApp.stage.addChild(this.viewport);
     this.viewport.pause = true;
@@ -67,7 +67,7 @@ export class GraphicsController {
     this.visibleDots = this.visibleDots.resize(
       0,
       0,
-      () => null,
+      () => { throw "Shouldn't be called" },
       (dot) => this.pixiApp.stage.removeChild(dot)
     );
     this._handlePossibleResize(game);
@@ -89,11 +89,11 @@ export class GraphicsController {
 
     let gridX = Math.ceil(
       (this.viewport.worldScreenWidth + this.viewport.left) /
-        (this.radius * 2 + this.gap)
+      (this.radius * 2 + this.gap)
     );
     let gridY = Math.ceil(
       (this.viewport.worldScreenHeight + this.viewport.top) /
-        (this.radius * 2 + this.gap)
+      (this.radius * 2 + this.gap)
     );
 
     let gridWidth = Math.min(game.grid.width, gridX);

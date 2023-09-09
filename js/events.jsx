@@ -1,21 +1,21 @@
 import * as jsjoda from "@js-joda/core";
-import { h, render, Fragment } from "preact";
-import { useEffect, useMemo, useState } from "preact/hooks";
+import { useEffect, useMemo, useState, Fragment } from "react";
+import ReactDOM from "react-dom/client";
 import "regenerator-runtime/runtime";
+import jekyllConfig from "../_config.yml";
+import EventCard from "./events/EventCard";
 import fetchEventsInChronologicalOrder from "./events/fetchEventsInChronologicalOrder";
 import InteractiveTimeZoneSelector from "./events/interactiveTimeZoneSelector";
-import EventCard from "./events/EventCard";
-import jekyllConfig from "../_config.yml";
 import { LocalizedDate } from "./events/LocalizedDateTime";
 
-const { ZoneId, ZonedDateTime, LocalDate, LocalTime } = jsjoda;
+const { ZoneId, Duration, ZonedDateTime, LocalDate, LocalTime } = jsjoda;
 
 const earliestGDCRStart = LocalDate.parse(
   jekyllConfig.globalday.start
-).atStartOfDay(ZoneId.of("UTC+12"));
+).atStartOfDay(ZoneId.of("UTC+14"));
 const latestGDCREnd = LocalDate.parse(jekyllConfig.globalday.end)
   .atStartOfDay(ZoneId.of("UTC-12"))
-  .plusDays(1);
+  .plusDays(1).minusSeconds(1);
 const isCurrentDateAfterGDCR = ZonedDateTime.now().isAfter(latestGDCREnd);
 
 const Events = () => {
@@ -71,13 +71,13 @@ const Events = () => {
 
   return (
     <div>
-      <div class="container" style={{ minHeight: "max(60vh, 500px)" }}>
-        <h1 class="display-1 my-5 ">Next Events</h1>
-        <p class="lead">
+      <div className="container" style={{ minHeight: "max(60vh, 500px)" }}>
+        <h1 className="display-1 my-5 ">Next Events</h1>
+        <p className="lead">
           Coderetreats happen all over the world and throughout the whole year!
           Find an event and join your first coderetreat!
         </p>
-        <p>
+        <div>
           All times shown are in the timezone for{" "}
           <InteractiveTimeZoneSelector
             timeZone={timeZone}
@@ -87,20 +87,23 @@ const Events = () => {
             eventTypeFilter={eventTypeFilter}
             setEventTypeFilter={setEventTypeFilter}
           />
-        </p>
+        </div>
         <EventList
           title="Events before Global Day of Coderetreat"
           events={eventsBeforeGDCR}
           timeZoneId={timeZoneId}
         />
         <EventList
-          title={`Global Day of Coderetreat events (${new Date(
-            jekyllConfig.globalday.start
-          ).toLocaleDateString()} - ${new Date(
-            jekyllConfig.globalday.end
-          ).toLocaleDateString()})`}
+          title={
+            <>
+              Global Day of Coderetreat events (
+              <LocalizedDate date={earliestGDCRStart} timeZone={timeZoneId} /> -{" "}
+              <LocalizedDate date={latestGDCREnd} timeZone={timeZoneId} />)
+            </>
+          }
           events={eventsDuringGDCR}
           timeZoneId={timeZoneId}
+          promoteMultidayEventsOnTop={true}
         />
         <EventList
           title={
@@ -118,7 +121,7 @@ const Events = () => {
 
 const EventTypeSelection = ({ eventTypeFilter, setEventTypeFilter }) => {
   return (
-    <div class="form-inline d-inline-block d-lg-inline px-md-2 mt-2 mt-lg-0">
+    <div className="form-inline d-inline-block d-lg-inline px-md-2 mt-2 mt-lg-0">
       <div
         className="btn-group btn-group-toggle align-bottom"
         data-toggle="buttons"
@@ -158,46 +161,60 @@ const EventTypeSelection = ({ eventTypeFilter, setEventTypeFilter }) => {
   );
 };
 
-const EventList = ({ events, title, timeZoneId }) =>
+const EventList = ({ events, title, timeZoneId, promoteMultidayEventsOnTop }) =>
   events.length > 0 && (
-    <Fragment>
+    <>
       <hr />
       <h3>{title}</h3>
-      <GroupedEvents events={events} timeZoneId={timeZoneId} />
-    </Fragment>
+      <GroupedEvents
+        events={events}
+        timeZoneId={timeZoneId}
+        promoteMultidayEventsOnTop={promoteMultidayEventsOnTop}
+      />
+    </>
   );
 
-const GroupedEvents = ({ events, timeZoneId }) => {
+const doesEventSpanMultipleDays = (event) => {
+  const duration = Duration.between(event.date.start, event.date.end);
+  return duration.toHours() >= 24;
+};
+
+const GroupedEvents = ({ events, timeZoneId, promoteMultidayEventsOnTop }) => {
   if (events.length < 6) {
     return (
-      <Fragment>
+      <>
         {events.map((event) => (
-          <EventCard event={event} usersTimezone={timeZoneId} />
+          <EventCard key={event.id} event={event} usersTimezone={timeZoneId} />
         ))}
-      </Fragment>
+      </>
     );
   }
 
   const groupedByDay = useMemo(
     () =>
-      events.reduce((byDay, event) => {
-        const dateKey = LocalizedDate({
-          date: event.date.start,
-          timeZone: timeZoneId,
-        });
-        return {
-          ...byDay,
-          [dateKey]: [...(byDay[dateKey] || []), event],
-        };
-      }, {}),
+      events
+        .filter(
+          (event) =>
+            !(promoteMultidayEventsOnTop && doesEventSpanMultipleDays(event))
+        )
+        .reduce((byDay, event) => {
+          const dateKey = LocalizedDate({
+            date: event.date.start,
+            timeZone: timeZoneId,
+          });
+          return {
+            ...byDay,
+            [dateKey]: [...(byDay[dateKey] || []), event],
+          };
+        }, {}),
     [events, timeZoneId]
   );
 
-  return Object.keys(groupedByDay)
+  const eventsByDay = Object.keys(groupedByDay)
     .sort()
     .map((dateKey) => (
-      <Fragment>
-        <span class="text-muted font-weight-bold">{dateKey}</span>
+      <Fragment key={dateKey}>
+        <span className="text-muted font-weight-bold">{dateKey}</span>
         <div className="container-fluid px-0">
           <div>
             {groupedByDay[dateKey].length > 3 ? (
@@ -206,16 +223,37 @@ const GroupedEvents = ({ events, timeZoneId }) => {
                 timeZoneId={timeZoneId}
               />
             ) : (
-              <Fragment>
+              <>
                 {groupedByDay[dateKey].map((event) => (
-                  <EventCard event={event} usersTimezone={timeZoneId} />
+                  <EventCard
+                    key={event.id}
+                    event={event}
+                    usersTimezone={timeZoneId}
+                  />
                 ))}
-              </Fragment>
+              </>
             )}
           </div>
         </div>
       </Fragment>
     ));
+
+  if (promoteMultidayEventsOnTop) {
+    const multiDayEvents = events
+      .filter(doesEventSpanMultipleDays)
+      .map((event) => (
+        <EventCard
+          key={event.id}
+          event={event}
+          usersTimezone={timeZoneId}
+          isPromotedMultidayEvent={true}
+        />
+      ));
+
+    return [...multiDayEvents, ...eventsByDay];
+  }
+
+  return eventsByDay;
 };
 
 const GroupedIntraDayEvents = ({ events, timeZoneId }) => {
@@ -247,21 +285,25 @@ const GroupedIntraDayEvents = ({ events, timeZoneId }) => {
   }, [events, timeZoneId]);
 
   return (
-    <Fragment>
+    <>
       {timeSlices.map((slice, i) =>
         grouped[i].length === 0 ? (
           ""
         ) : (
-          <div className="container-fluid px-0 mb-2">
+          <div key={slice[0]} className="container-fluid px-0 mb-2">
             <p className="px-1 my-0 text-muted font-weight-bold">{slice[0]}</p>
             {grouped[i].map((event) => (
-              <EventCard event={event} usersTimezone={timeZoneId} />
+              <EventCard
+                key={event.id}
+                event={event}
+                usersTimezone={timeZoneId}
+              />
             ))}
           </div>
         )
       )}
-    </Fragment>
+    </>
   );
 };
 
-render(<Events />, document.querySelector("#events"));
+ReactDOM.createRoot(document.getElementById("events")).render(<Events />);

@@ -1,0 +1,34 @@
+{
+  "title": "Lausanne Global Half-Day Code Retreat",
+  "description": "Rejoignez-nous pour découvrir, apprendre et progresser tous ensemble ! À l’occasion du Global Day of code Retreat, nous vous proposons une seconde édition de Code Retreat à Lausanne. Cet évènement aura lieu en présentiel, dans les locaux de socraft. SVP: Les places sont limitées, aussi soyez sûr de pouvoir venir si vous vous inscrivez. Le quotidien ne nous permet pas toujours d’expérimenter de nouvelles façons de faire. Cet évènement sera l’occasion de pratiquer, sans se presser : un exercice de code sera proposé, et 3 sessions en binôme auront lieu pour le parcourir de manières différentes.",
+  "format": "classic",
+  "spoken_language": "French",
+  "url": "https://www.meetup.com/romandie-software-craftsmanship/events/289144544/",
+  "date": {
+    "start": "2022-11-04T14:00:00+01:00",
+    "end": "2022-11-04T18:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Alexandre Cuva",
+      "url": "https://twitter.com/Cuvaalex"
+    },
+    {
+      "name": "Romain Felden"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "socraft",
+      "url": "https://www.socraft.ch"
+    }
+  ],
+  "location": {
+    "city": "Lausanne",
+    "country": "Switzerland",
+    "coordinates": {
+      "latitude": 46.51791181280222,
+      "longitude": 6.643194255737578
+    }
+  }
+}

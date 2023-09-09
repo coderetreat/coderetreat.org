@@ -47,7 +47,7 @@ describe("GraphicsController", () => {
       resizeTo: element.parentElement,
       antialias: true,
       autoDensity: true,
-      transparent: true,
+      backgroundAlpha: 0.0,
       resolution: 2,
       autoStart: false,
     });

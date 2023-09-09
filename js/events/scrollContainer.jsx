@@ -1,4 +1,3 @@
-
 const useScrollSpy = (onScrollChange) => {
   const container = useRef();
 
@@ -13,13 +12,11 @@ const useScrollSpy = (onScrollChange) => {
   return container;
 };
 
-const ScrollContainer = ({children}) => {
-  const [shouldShowScrollHintLeft, setShouldShowScrollHintLeft] = useState(
-    false
-  );
-  const [shouldShowScrollHintRight, setShouldShowScrollHintRight] = useState(
-    false
-  );
+const ScrollContainer = ({ children }) => {
+  const [shouldShowScrollHintLeft, setShouldShowScrollHintLeft] =
+    useState(false);
+  const [shouldShowScrollHintRight, setShouldShowScrollHintRight] =
+    useState(false);
 
   const ref = useScrollSpy((elem) => {
     const hasScrollBar = elem.scrollWidth !== elem.clientWidth;
@@ -36,15 +33,15 @@ const ScrollContainer = ({children}) => {
   });
 
   return (
-    <div class="scroll-outer">
+    <div className="scroll-outer">
       {shouldShowScrollHintLeft && (
-        <div class="scroll-hint scroll-hint-left"></div>
+        <div className="scroll-hint scroll-hint-left"></div>
       )}
-      <div class="scroll-container" ref={ref}>
+      <div className="scroll-container" ref={ref}>
         {children}
       </div>
       {shouldShowScrollHintRight && (
-        <div class="scroll-hint scroll-hint-right"></div>
+        <div className="scroll-hint scroll-hint-right"></div>
       )}
     </div>
   );

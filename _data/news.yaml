@@ -1,3 +1,19 @@
+- title: "Global Day of Coderetreat Toronto 2022: How we scaled coderetreat to 40+ participants"
+  url: https://spikes.sobes.co/p/scaling-global-day-of-coderetreat-toronto
+  language: English
+  teaser: "'But will it scale?' Who hasn't been asked that before! At least with coderetreat, we found that it scales quite well. Learn how we planned just enough to scale Toronto's Global Day of Coderetreat in 2022 to over 40 participants."
+  author:
+    name: Paul Sobocinski
+    link: https://spikes.sobes.co/p/scaling-global-day-of-coderetreat-toronto
+  year: 2022
+- title: Global Day of Code Retreat 2022 in Wrocław
+  url: https://blog.michalp.net/posts/scala/gdcr-2022/
+  language: English
+  teaser: "Michał co-hosted a Coderetreat event with Ocado Technology and Klose Brothers in Wrocław. Read on to find out how they did mob programming of Conway's Game of Life solution in Functional Programming & Scala!"
+  author:
+    name: Michal Pawlik
+    link: https://www.linkedin.com/in/michał-pawlik
+  year: 2022
 - title: Coderetreat — or why you should go and do it!
   url: https://medium.com/helloheart-rnd/coderetreat-or-why-you-should-go-and-do-it-a9fb6371f643
   language: English

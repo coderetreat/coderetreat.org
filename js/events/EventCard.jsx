@@ -1,7 +1,6 @@
-import { Fragment, render, h } from "preact";
-import { useState } from "preact/hooks";
 import classNames from "classnames";
-import { LocalizedDate, LocalizedDateTime } from "./LocalizedDateTime";
+import { useState, Fragment } from "react";
+import { LocalizedDateTime } from "./LocalizedDateTime";
 
 const Format = ({ format }) => {
   let title = "";
@@ -33,9 +32,9 @@ const Format = ({ format }) => {
 };
 
 const Moderators = ({ moderators }) => (
-  <Fragment>
+  <>
     {moderators.map((moderator, i) => (
-      <Fragment>
+      <Fragment key={moderator.name}>
         {moderator.url ? (
           <a key={i} href={moderator.url}>
             {moderator.name}
@@ -46,13 +45,13 @@ const Moderators = ({ moderators }) => (
         {moderators.length > 1 && i < moderators.length - 1 && <span>, </span>}
       </Fragment>
     ))}
-  </Fragment>
+  </>
 );
 
 const Sponsors = ({ sponsors }) => (
-  <Fragment>
+  <>
     {sponsors.map((sponsor, i) => (
-      <Fragment>
+      <Fragment key={sponsor.name}>
         {sponsor.url ? (
           <a key={i} href={sponsor.url}>
             {sponsor.name}
@@ -63,7 +62,7 @@ const Sponsors = ({ sponsors }) => (
         {sponsors.length > 1 && i < sponsors.length - 1 && <span>, </span>}
       </Fragment>
     ))}
-  </Fragment>
+  </>
 );
 
 const baseStyle = {
@@ -73,18 +72,32 @@ const baseStyle = {
 const collapsedStyle = { ...baseStyle, overflow: "hidden", maxHeight: 0 };
 const expandedStyle = { ...baseStyle, maxHeight: "1000px" };
 
-export default ({ event, usersTimezone }) => {
+export default ({ event, usersTimezone, isPromotedMultidayEvent }) => {
   const [isCollapsed, setCollapsed] = useState(true);
 
+  const widthClasses = isPromotedMultidayEvent
+    ? ["col-lg-12", "col-md-12"]
+    : ["col-lg-4", "col-md-6"];
+
   return (
-    <div className="d-inline-block col-12 col-lg-4 col-md-6 p-0 p-lg-2 p-md-1">
+    <div
+      className={classNames([
+        "d-inline-block",
+
+        "col-12",
+        "p-0",
+        "p-lg-2",
+        "p-md-1",
+        ...widthClasses,
+      ])}
+    >
       <div
-        class="card my-3 event-card"
+        className="card my-3 event-card shadow"
         style={{ minHeight: "1em", whiteSpace: "normal" }}
         onClick={(e) => setCollapsed(!isCollapsed)}
       >
         <div
-          class={classNames([
+          className={classNames([
             "py-1",
             "small",
             "text-light",
@@ -94,43 +107,57 @@ export default ({ event, usersTimezone }) => {
               ? "bg-virtual-event"
               : "bg-onsite-event",
           ])}
-          style={{
-            display: "flex",
-            cursor: "pointer",
-            justifyContent: "space-between",
-          }}
         >
-          <div>
-            <LocalizedDateTime
-              date={event.date.start}
-              timeZone={usersTimezone}
-            />
-          </div>
-          <div>
-            {event.location === "virtual"
-              ? "VIRTUAL"
-              : event.location.city + ", " + event.location.country}{" "}
-            {isCollapsed ? (
-              <i class="fas fa-caret-down"></i>
-            ) : (
-              <i class="fas fa-caret-up"></i>
+          <div
+            style={{
+              display: "flex",
+              cursor: "pointer",
+              justifyContent: "space-between",
+            }}
+          >
+            <div>
+              <LocalizedDateTime
+                date={event.date.start}
+                timeZone={usersTimezone}
+              />
+            </div>
+            {!isPromotedMultidayEvent ? null : (
+              <div className="d-none d-md-block">MULTI DAY EVENT</div>
             )}
+            <div>
+              {event.location === "virtual"
+                ? "VIRTUAL"
+                : event.location.city + ", " + event.location.country}{" "}
+              {isCollapsed ? (
+                <i className="fas fa-caret-down"></i>
+              ) : (
+                <i className="fas fa-caret-up"></i>
+              )}
+            </div>
           </div>
+          {!isPromotedMultidayEvent ? null : (
+            <div className="col-12 d-md-none text-center">MULTI DAY EVENT</div>
+          )}
         </div>
-        <div class="card-body m-0">
-          <h5 class="card-title m-0">{event.title}</h5>
-          <span class="d-block text-muted pt-1">
-            {event.spoken_language}, <Format format={event.format} />, with <Moderators moderators={event.moderators} />
+        <div className="card-body m-0">
+          <h5 className="card-title m-0">{event.title}</h5>
+          <span className="d-block text-muted pt-1">
+            {event.spoken_language}, <Format format={event.format} />
+            {event.moderators && event.moderators.length > 1 ? (
+              <>
+                , with <Moderators moderators={event.moderators} />
+              </>
+            ) : null}
           </span>
         </div>
         <div style={isCollapsed ? collapsedStyle : expandedStyle}>
-          <ul class="list-group list-group-flush">
+          <ul className="list-group list-group-flush">
             {event.description && (
-              <li class="list-group-item bg-transparent">
-                <p class="card-text">{event.description}</p>
+              <li className="list-group-item bg-transparent">
+                <p className="card-text">{event.description}</p>
               </li>
             )}
-            <li class="list-group-item bg-transparent">
+            <li className="list-group-item bg-transparent">
               <b>Start: </b>
               <LocalizedDateTime
                 date={event.date.start}
@@ -143,40 +170,40 @@ export default ({ event, usersTimezone }) => {
                 timeZone={usersTimezone}
               />
             </li>
-            <li class="list-group-item bg-transparent py-1">
+            <li className="list-group-item bg-transparent py-1">
               <b>Event format: </b>
               <Format format={event.format} />
             </li>
-            <li class="list-group-item bg-transparent py-1">
+            <li className="list-group-item bg-transparent py-1">
               <b>Code of Conduct: </b>
               {event.code_of_conduct ? (
                 <a href={event.code_of_conduct}>
-                  external link <i class="fas fa-external-link-alt"></i>
+                  external link <i className="fas fa-external-link-alt"></i>
                 </a>
               ) : (
                 "not specified"
               )}
             </li>
-            <li class="list-group-item bg-transparent py-1">
+            <li className="list-group-item bg-transparent py-1">
               <b>Spoken language: </b>
               {event.spoken_language}
             </li>
             {event.moderators && event.moderators.length > 0 && (
-              <li class="list-group-item bg-transparent py-1">
+              <li className="list-group-item bg-transparent py-1">
                 <b>Moderators: </b>
                 <Moderators moderators={event.moderators} />
               </li>
             )}
             {event.sponsors && event.sponsors.length > 0 && (
-              <li class="list-group-item bg-transparent py-1">
+              <li className="list-group-item bg-transparent py-1">
                 <b>Sponsors: </b>
                 <Sponsors sponsors={event.sponsors} />
               </li>
             )}
           </ul>
-          <div class="card-body">
-            <a href={event.url} class="card-link btn btn-secondary">
-              Sign-Up <i class="fas fa-external-link-alt"></i>
+          <div className="card-body">
+            <a href={event.url} className="card-link btn btn-secondary">
+              Sign-Up <i className="fas fa-external-link-alt"></i>
             </a>
           </div>
         </div>

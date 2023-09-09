@@ -1,0 +1,43 @@
+{
+  "title": "CodeRetreat 2022 Milano",
+  "description": "A day-long event to practice and improve the fundamentals of software development, to share our way to develop software and to improve together",
+  "format": "classic",
+  "spoken_language": "Italian",
+  "url": "https://www.eventbrite.it/e/biglietti-global-day-of-coderetreat-2022-milan-444228919657",
+  "date": {
+    "start": "2022-11-05T09:00:00+01:00",
+    "end": "2022-11-05T17:30:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Gabriele Lana",
+      "url": "https://github.com/gabrielelana"
+    },
+    {
+      "name": "Gianluca Randazzo",
+      "url": "https://github.com/fusillicode"
+    },
+    {
+      "name": "Daniele Megna",
+      "url": "https://github.com/danielemegna"
+    },
+    {
+      "name": "Nicola Moretto",
+      "url": "https://twitter.com/MorettoNicola"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Casavo",
+      "url": "https://casavo.com/"
+    }
+  ],
+  "location": {
+    "city": "Milano",
+    "country": "Italy",
+    "coordinates": {
+      "latitude": 45.4639447,
+      "longitude": 9.1885578
+    }
+  }
+}

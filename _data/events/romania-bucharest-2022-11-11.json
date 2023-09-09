@@ -1,0 +1,31 @@
+{
+  "title": "Coderetreat - Bucharest, Romania @ Codiax 2022",
+  "description": "Coderetreat is a full-day event, intensive practice, focusing on software development. Away from the pressure of getting things done, the workshop held by Alin Pandichi, Team Lead at ING Hubs Romania, will focus on developing specific aspects for building code and exploring good software development techniques. This session will introduce Conway's Game of Life, a software problem complex enough to create rich learnings without overburdening the participants. It is a zero-player cellular automation game which can be implemented in about an hour. By repeatedly building an implementation, adding new challenges, and changing work-partners frequently, Coderetreat is a framework for developers' continuous learning about better building software.",
+  "format": "classic",
+  "spoken_language": "English, Romanian",
+  "url": "https://codiax.co/bucharest-edition/",
+  "date": {
+    "start": "2022-11-11T09:30:00+02:00",
+    "end": "2022-11-11T16:00:00+02:00"
+  },
+  "moderators": [
+    {
+      "name": "Alin Pandichi",
+      "url": "https://www.linkedin.com/in/alin-pandichi/"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "ING Hubs Romania",
+      "url": "https://ing.ro/ithub"
+    }
+  ],
+  "location": {
+    "city": "Bucharest",
+    "country": "Romania",
+    "coordinates": {
+      "latitude": 44.4458999,
+      "longitude": 26.0896234
+    }
+  }
+}

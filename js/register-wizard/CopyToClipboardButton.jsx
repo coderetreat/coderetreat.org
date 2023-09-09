@@ -1,5 +1,4 @@
-import { h } from "preact";
-import { useState, useEffect } from "preact/hooks";
+import { h, useState, useEffect } from "react";
 
 export const CopyToClipboardButton = ({ text }) => {
   const [copied, setCopied] = useState(false);
@@ -14,7 +13,7 @@ export const CopyToClipboardButton = ({ text }) => {
   };
 
   return (
-    <button class="btn btn-secondary my-1" onClick={copyJsonToClipboard}>
+    <button className="btn btn-secondary my-1" onClick={copyJsonToClipboard}>
       {copied ? "Copied to clipboard!" : "Copy to clipboard"}
     </button>
   );
