@@ -1,0 +1,46 @@
+{
+  "title": "GDCR23 Krakow",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://ti.to/software-crafters-krakow-events/global-day-of-coderetreat-2023",
+  "date": {
+    "start": "2023-11-04T08:30:00+01:00",
+    "end": "2023-11-04T17:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Alexander Sumiński (they/them)",
+      "url": "https://www.linkedin.com/in/ale-sum/"
+    },
+    {
+      "name": "Joanna Wójtowicz (she/her)",
+      "url": "https://www.linkedin.com/in/jo-wojtowicz/"
+    },
+    {
+      "name": "Małgorzata Nowak (she/her)",
+      "url": "https://www.linkedin.com/in/designaur/"
+    },
+    {
+      "name": "Ika Graboń (they/them)",
+      "url": "https://www.linkedin.com/in/ikagrabon/"
+    },
+    {
+      "name": "Riccardo Odone (he/him)",
+      "url": "https://www.linkedin.com/in/riccardoodone/"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Ocado Technology",
+      "url": "https://careers.ocadogroup.com/locations/europe/development-centre-poland"
+    }
+  ],
+  "location": {
+    "city": "Kraków",
+    "country": "Poland",
+    "coordinates": {
+      "latitude": 50.0717411,
+      "longitude": 19.9427109
+    }
+  }
+}
