@@ -1,0 +1,31 @@
+{
+  "title": "Global Day of Coderetreat Chicago",
+  "description": "Join us for a day of TDD and pairing, hosted by Thoughtworks Chicago!",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://www.meetup.com/thoughtworks-tech-talks-chicago/events/295870882/",
+  "date": {
+    "start": "2023-11-04T09:00:00-05:00",
+    "end": "2023-11-04T17:00:00-05:00"
+  },
+  "moderators": [
+    {
+      "name": "Kieran Murphy",
+      "url": "https://www.thoughtworks.com/"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/"
+    }
+  ],
+  "location": {
+    "city": "Chicago",
+    "country": "United States",
+    "coordinates": {
+      "latitude": 41.885254,
+      "longitude": -87.621492
+    }
+  }
+}
