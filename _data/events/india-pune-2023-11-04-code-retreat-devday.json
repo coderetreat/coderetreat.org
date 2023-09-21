@@ -1,0 +1,32 @@
+{
+  "title": "Code Retreat - DevDay",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://www.meetup.com/devday_pune/events/296249067",
+  "date": {
+    "start": "2023-11-04T09:30:00+05:30",
+    "end": "2023-11-04T18:00:00+05:30"
+  },
+  "moderators": [
+    {
+      "name": "Sanket Pathak",
+      "url": "https://github.com/sanketp2"
+    },
+    {
+      "name": "Amit Khirdekar",
+      "url": "https://github.com/amitkhirdekarsahaj"
+    },
+    {
+      "name": "Amit Sadafule",
+      "url": "https://github.com/amitsadafule"
+    }
+  ],
+  "location": {
+    "city": "Pune",
+    "country": "India",
+    "coordinates": {
+      "latitude": 18.521428,
+      "longitude": 73.854454
+    }
+  }
+}
