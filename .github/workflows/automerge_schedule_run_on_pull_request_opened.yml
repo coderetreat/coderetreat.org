@@ -16,7 +16,9 @@ jobs:
     continue-on-error: true
     steps:
       - run: env
-      - run: echo '${{ toJSON(github.event) }}'
+      - run: echo $EVENT
+        env:
+          EVENT: ${{ toJSON(github.event) }}
       - name: Wait for Netlify test completion
         run: sleep 10m
       - uses: actions/checkout@v4
