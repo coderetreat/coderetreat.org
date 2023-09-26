@@ -1,12 +1,12 @@
 {
   "title": "Global Day of Coderetreat 2023 | Stuttgart",
-  "description": "Welcome to the Global Day of Coderetreat event hosted by Breuninger in the beautiful city of Stuttgart! Join us for a day of intensive coding, learning, and collaboration with fellow programmers and software enthusiasts from all over the world. This event is part of the global Coderetreat movement, which encourages software developers to hone their skills through focused practice and teamwork.",
+  "description": "Join us for a day of coding excellence in Stuttgart as we celebrate the Global Day of Coderetreat! Dive into collaborative coding challenges, enhance your skills, and network with fellow developers at this exciting event.",
   "format": "classic",
-  "spoken_language": "German, Englisch",
+  "spoken_language": "German, English",
   "url": "https://www.meetup.com/de-DE/devops-stuttgart/events/296249013/",
   "date": {
-    "start": "2023-11-03T09:00:00+02:00",
-    "end": "2023-11-03T17:00:00+02:00"
+    "start": "2023-11-03T09:00:00+01:00",
+    "end": "2023-11-03T17:00:00+01:00"
   },
   "moderators": [
     {
@@ -20,6 +20,10 @@
     {
       "name": "Mara Sharma",
       "url": "https://www.linkedin.com/in/marasharma"
+    }, 
+    {
+      "name": "Matthias Seifert",
+      "url": "https://www.linkedin.com/in/seifertmatthias/"
     }
   ],
   "sponsors": [
