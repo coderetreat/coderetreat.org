@@ -4,6 +4,7 @@ import { GraphicsController } from "./GraphicsController";
 
 export class GameController {
   canvas: HTMLCanvasElement;
+  // @ts-ignore - initialized in initializeGraphics()
   graphicsController: GraphicsController;
   game: GameOfLife;
   reducedMotion: Boolean;
@@ -20,7 +21,7 @@ export class GameController {
   }
 
   initializeGraphics() {
-    const { width, height } = this.canvas.parentElement.getBoundingClientRect();
+    const { width, height } = this.canvas.parentElement!.getBoundingClientRect();
     const radius = Math.max(10, Math.min((width / 100) | 0, (height / 100) | 0));
     const gap = Math.max(2, (0.4 * radius) | 0);
     this.graphicsController = new GraphicsController({

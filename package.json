@@ -35,6 +35,7 @@
     "@types/jest": "29.5.5",
     "@types/mapbox-gl": "^2.7.15",
     "@types/qs": "6.9.8",
+    "@types/seedrandom": "^3.0.6",
     "@vitejs/plugin-react": "^4.1.0",
     "ajv-formats": "2.1.1",
     "babel-jest": "29.7.0",

@@ -1,6 +1,7 @@
 import { Array2d } from "./Array2d";
 import * as ABAB from "abab";
-import seedrandom from "seedrandom";
+import * as seedrandom from "seedrandom";
+const sr: seedrandom = (<any>seedrandom).default || seedrandom;
 
 export const X = true;
 export const O = false;
@@ -80,15 +81,15 @@ export class GameOfLife {
   }
 
   static fromSeed(
-    seed: String,
+    seed: string,
     probability: number,
     width: number,
     height: number,
     rules: Rules
   ) {
-    const random = seedrandom(seed);
+    const random = sr(seed);
     return new GameOfLife(
-      new Array2d(width, height, (x, y) => random() > probability),
+      new Array2d(width, height, (_x, _y) => random() > probability),
       rules
     );
   }
@@ -99,10 +100,11 @@ export class GameOfLife {
       .map((s) => s.substr(1));
 
     const grid = ABAB.atob(gridStr);
+    if (!grid) throw "Invalid grid";
     const width = Number(widthStr);
     const height = Number(heightStr);
 
-    const cells = [];
+    const cells: boolean[] = [];
     for (let char of grid) {
       let data = char.charCodeAt(0);
       for (let i = 0; i < 8; i++) {
