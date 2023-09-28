@@ -1,0 +1,16 @@
+{
+  "title": "Global Day of Coderetreat 2015 - Istanbul, Turkey - istanbul jug",
+  "description": "Also Istanbul JUG will host Global Day of Coderetreat at Istanbul, Turkey.  \nAll the details will be announced soon at http://istanbul-jug.org/",
+  "url": "https://web.archive.org/http://coderetreat.org/events/global-day-of-coderetreat-2015-istanbul-turkey-1",
+  "spoken_language": "",
+  "moderators": [{ "name": "Altuğ B. Altıntaş" }],
+  "location": {
+    "country": "Turkey",
+    "city": "Istanbul",
+    "coordinates": { "latitude": 41.0082376, "longitude": 28.9783589 }
+  },
+  "date": {
+    "start": "2015-11-14T15:00:00+03:00",
+    "end": "2015-11-14T19:00:00+03:00"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Global Day of Coderetreat 2016 - Budapest, Hungary epam",
+  "description": "We are gladly inviting you to join the Global Day of Code Retreat in the Budapest office of EPAM. \nRegistration and technical setup starts at 9 AM, and we are ending the day around 5 PM. \nWe provide some snacks in the breaks and you are invited for lunch.\n \n We are counting on you, so please let us know if you wish to come (also, if you change your ind or cannot make it. Thank you)",
+  "url": "https://web.archive.org/http://coderetreat.org/events/epam-budapest-gdcr",
+  "spoken_language": "",
+  "moderators": [{ "name": "Eszter Reimann" }],
+  "location": {
+    "country": "Hungary",
+    "city": "Budapest",
+    "coordinates": { "latitude": 47.497912, "longitude": 19.040235 }
+  },
+  "date": {
+    "start": "2016-10-22T09:00:00+02:00",
+    "end": "2016-10-22T17:00:00+02:00"
+  }
+}

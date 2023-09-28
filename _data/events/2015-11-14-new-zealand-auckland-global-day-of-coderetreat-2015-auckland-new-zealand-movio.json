@@ -1,0 +1,16 @@
+{
+  "title": "Global Day of Coderetreat 2015 - Auckland, New Zealand - Movio",
+  "description": "Emphasis on FP, Pair programming, TDD, refactoring \nHosted by Movio (http://www.movio.co/)",
+  "url": "https://web.archive.org/http://coderetreat.org/events/kiwi-code-retreat-functional-style",
+  "spoken_language": "",
+  "moderators": [{ "name": "Randall Britten" }],
+  "location": {
+    "country": "New Zealand",
+    "city": "Auckland",
+    "coordinates": { "latitude": -36.8484597, "longitude": 174.7633315 }
+  },
+  "date": {
+    "start": "2015-11-14T09:00:00+13:00",
+    "end": "2015-11-14T16:00:00+13:00"
+  }
+}

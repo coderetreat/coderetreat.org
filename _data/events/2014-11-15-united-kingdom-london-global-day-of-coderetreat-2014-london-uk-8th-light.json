@@ -1,0 +1,16 @@
+{
+  "title": "Global Day of Coderetreat 2014 - London, UK - 8th light",
+  "description": "Global Day of Coderetreat event. \nHosted by Makers Academy and facilitated by 8th Light in London UK.\n (http://globalday.coderetreat.org/) \nPlease use the Eventbrite link to sign up if interested.",
+  "url": "https://web.archive.org/http://coderetreat.org/events/global-day-of-coderetreat-2014-london-uk-1",
+  "spoken_language": "",
+  "moderators": [{ "name": "Makis" }],
+  "location": {
+    "country": "United Kingdom",
+    "city": "London",
+    "coordinates": { "latitude": 51.5073509, "longitude": -0.1277583 }
+  },
+  "date": {
+    "start": "2014-11-15T10:00:00+01:00",
+    "end": "2014-11-15T16:00:00+01:00"
+  }
+}

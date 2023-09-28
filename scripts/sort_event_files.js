@@ -4,7 +4,7 @@ const util = require("util");
 const glob = require("glob").sync;
 const slug = require("slug");
 const { resolve, basename, dirname } = require("path");
-const { readFileSync, statSync, renameSync } = require("fs");
+const { readFileSync, statSync, renameSync, existsSync } = require("fs");
 const { ZonedDateTime, DateTimeFormatter } = require("@js-joda/core");
 const { Locale } = require("@js-joda/locale_en");
 const { event } = require("jquery");
@@ -16,14 +16,25 @@ const run = async () => {
 
   for (let eventFile of eventFiles) {
     const event = JSON.parse(readFileSync(eventFile).toString());
-    const newFilename = filenameForEvent(event);
+    let newFilename;
+    try {
+      newFilename = filenameForEvent(event);
+    } catch (e) {
+      console.error(eventFile, event, e);
+      throw e;
+    }
     const oldFilename = path.basename(eventFile);
     if (oldFilename == newFilename) {
       console.log(oldFilename, "skipping");
       continue;
     }
+    const newFilePath = path.join(baseDir, newFilename);
+    if (existsSync(newFilePath)) {
+      console.log(newFilePath, "exists, skipping");
+      throw oldFilename;
+    }
     console.log(oldFilename, "renaming to", newFilename);
-    renameSync(eventFile, path.join(baseDir, newFilename));
+    renameSync(eventFile, newFilePath);
   }
 };
 
