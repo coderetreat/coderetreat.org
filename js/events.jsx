@@ -105,7 +105,9 @@ const Events = () => {
         <h1 className="display-1 my-5 ">Next Events</h1>
         <p className="lead">
           Coderetreats happen all over the world and throughout the whole year!
-          Find an event and join your first coderetreat!
+          Find an event and join your first coderetreat, or browse our{" "}
+          <a href="/events/all">list of past coderetreats</a> to find
+          facilitators for your own event.
         </p>
         <div>
           All times shown are in the timezone for{" "}
