@@ -1,12 +1,16 @@
 import * as jsjoda from "@js-joda/core";
-import { useEffect, useMemo, useState, Fragment } from "react";
+import { useEffect, useMemo, useState, Fragment, useRef } from "react";
 import ReactDOM from "react-dom/client";
 import "regenerator-runtime/runtime";
-import jekyllConfig from "../_config.yml";
+import jekyllConfigRaw from "../_config.yml?raw";
+import { parse } from "yaml";
 import EventCard from "./events/EventCard";
 import fetchEventsInChronologicalOrder from "./events/fetchEventsInChronologicalOrder";
 import InteractiveTimeZoneSelector from "./events/interactiveTimeZoneSelector";
 import { LocalizedDate } from "./events/LocalizedDateTime";
+import { Map } from "./map/Map";
+
+const jekyllConfig = parse(jekyllConfigRaw);
 
 const { ZoneId, Duration, ZonedDateTime, LocalDate, LocalTime } = jsjoda;
 
@@ -15,7 +19,8 @@ const earliestGDCRStart = LocalDate.parse(
 ).atStartOfDay(ZoneId.of("UTC+14"));
 const latestGDCREnd = LocalDate.parse(jekyllConfig.globalday.end)
   .atStartOfDay(ZoneId.of("UTC-12"))
-  .plusDays(1).minusSeconds(1);
+  .plusDays(1)
+  .minusSeconds(1);
 const isCurrentDateAfterGDCR = ZonedDateTime.now().isAfter(latestGDCREnd);
 
 const Events = () => {
@@ -23,12 +28,15 @@ const Events = () => {
   const timeZoneId = useMemo(() => ZoneId.of(timeZone), [timeZone]);
   const [eventTypeFilter, setEventTypeFilter] = useState("all");
   const [allEvents, setAllEvents] = useState([]);
-  const [{ eventsBeforeGDCR, eventsDuringGDCR, eventsAfterGDCR }, setEvents] =
-    useState({
-      eventsBeforeGDCR: [],
-      eventsDuringGDCR: [],
-      eventsAfterGDCR: [],
-    });
+  const [
+    { allUpcomingEvents, eventsBeforeGDCR, eventsDuringGDCR, eventsAfterGDCR },
+    setEvents,
+  ] = useState({
+    allUpcomingEvents: [],
+    eventsBeforeGDCR: [],
+    eventsDuringGDCR: [],
+    eventsAfterGDCR: [],
+  });
 
   useEffect(() => {
     const Run = async () => {
@@ -38,8 +46,14 @@ const Events = () => {
     Run();
   }, []);
 
+  const eventRefs = useRef({});
+
   useEffect(() => {
-    let eventsFilteredByType = allEvents;
+    const upcomingEvents = allEvents
+      .filter((event) => event.date.end.isAfter(ZonedDateTime.now()))
+      .map((e, i) => ({ ...e, id: i }));
+
+    let eventsFilteredByType = upcomingEvents;
     if (eventTypeFilter === "virtual") {
       eventsFilteredByType = eventsFilteredByType.filter(
         (event) => event.location === "virtual"
@@ -50,27 +64,43 @@ const Events = () => {
       );
     }
 
-    const upcomingEvents = eventsFilteredByType.filter((event) =>
-      event.date.end.isAfter(ZonedDateTime.now())
-    );
-    const eventsBeforeGDCR = upcomingEvents.filter((event) =>
+    const eventsBeforeGDCR = eventsFilteredByType.filter((event) =>
       event.date.end.isBefore(earliestGDCRStart)
     );
-    const eventsDuringGDCR = upcomingEvents.filter(
+    const eventsDuringGDCR = eventsFilteredByType.filter(
       (event) =>
         (event.date.end.isEqual(earliestGDCRStart) ||
           event.date.end.isAfter(earliestGDCRStart)) &&
         (event.date.start.isEqual(latestGDCREnd) ||
           event.date.start.isBefore(latestGDCREnd))
     );
-    const eventsAfterGDCR = upcomingEvents.filter((event) =>
+    const eventsAfterGDCR = eventsFilteredByType.filter((event) =>
       event.date.start.isAfter(latestGDCREnd)
     );
-    setEvents({ eventsBeforeGDCR, eventsDuringGDCR, eventsAfterGDCR });
+    setEvents({
+      allUpcomingEvents: upcomingEvents,
+      eventsBeforeGDCR,
+      eventsDuringGDCR,
+      eventsAfterGDCR,
+    });
   }, [allEvents, eventTypeFilter]);
+
+  const scrollEventIntoView = (eventId) => {
+    if (eventRefs.current[eventId]) {
+      eventRefs.current[eventId].querySelector(".card").click();
+      window.setTimeout(() => {
+        eventRefs.current[eventId].scrollIntoView({
+          behavior: "smooth",
+          block: "end",
+          inline: "nearest",
+        });
+      }, 250);
+    }
+  };
 
   return (
     <div>
+      <Map events={allUpcomingEvents} onClickOnEvent={scrollEventIntoView} />
       <div className="container" style={{ minHeight: "max(60vh, 500px)" }}>
         <h1 className="display-1 my-5 ">Next Events</h1>
         <p className="lead">
@@ -92,18 +122,22 @@ const Events = () => {
           title="Events before Global Day of Coderetreat"
           events={eventsBeforeGDCR}
           timeZoneId={timeZoneId}
+          eventRefs={eventRefs}
         />
         <EventList
           title={
             <>
               Global Day of Coderetreat events (
-              <LocalizedDate date={earliestGDCRStart} timeZone={timeZoneId} /> -{" "}
-              <LocalizedDate date={latestGDCREnd} timeZone={timeZoneId} />)
+              <LocalizedDate
+                date={earliestGDCRStart}
+                timeZone={timeZoneId}
+              /> - <LocalizedDate date={latestGDCREnd} timeZone={timeZoneId} />)
             </>
           }
           events={eventsDuringGDCR}
           timeZoneId={timeZoneId}
           promoteMultidayEventsOnTop={true}
+          eventRefs={eventRefs}
         />
         <EventList
           title={
@@ -113,6 +147,7 @@ const Events = () => {
           }
           events={eventsAfterGDCR}
           timeZoneId={timeZoneId}
+          eventRefs={eventRefs}
         />
       </div>
     </div>
@@ -161,7 +196,13 @@ const EventTypeSelection = ({ eventTypeFilter, setEventTypeFilter }) => {
   );
 };
 
-const EventList = ({ events, title, timeZoneId, promoteMultidayEventsOnTop }) =>
+const EventList = ({
+  events,
+  title,
+  timeZoneId,
+  promoteMultidayEventsOnTop,
+  eventRefs,
+}) =>
   events.length > 0 && (
     <>
       <hr />
@@ -170,6 +211,7 @@ const EventList = ({ events, title, timeZoneId, promoteMultidayEventsOnTop }) =>
         events={events}
         timeZoneId={timeZoneId}
         promoteMultidayEventsOnTop={promoteMultidayEventsOnTop}
+        eventRefs={eventRefs}
       />
     </>
   );
@@ -179,12 +221,22 @@ const doesEventSpanMultipleDays = (event) => {
   return duration.toHours() >= 24;
 };
 
-const GroupedEvents = ({ events, timeZoneId, promoteMultidayEventsOnTop }) => {
+const GroupedEvents = ({
+  events,
+  timeZoneId,
+  promoteMultidayEventsOnTop,
+  eventRefs,
+}) => {
   if (events.length < 6) {
     return (
       <>
         {events.map((event) => (
-          <EventCard key={event.id} event={event} usersTimezone={timeZoneId} />
+          <EventCard
+            key={event.id}
+            event={event}
+            usersTimezone={timeZoneId}
+            eventRefs={eventRefs}
+          />
         ))}
       </>
     );
@@ -221,6 +273,7 @@ const GroupedEvents = ({ events, timeZoneId, promoteMultidayEventsOnTop }) => {
               <GroupedIntraDayEvents
                 events={groupedByDay[dateKey]}
                 timeZoneId={timeZoneId}
+                eventRefs={eventRefs}
               />
             ) : (
               <>
@@ -229,6 +282,7 @@ const GroupedEvents = ({ events, timeZoneId, promoteMultidayEventsOnTop }) => {
                     key={event.id}
                     event={event}
                     usersTimezone={timeZoneId}
+                    eventRefs={eventRefs}
                   />
                 ))}
               </>
@@ -247,6 +301,7 @@ const GroupedEvents = ({ events, timeZoneId, promoteMultidayEventsOnTop }) => {
           event={event}
           usersTimezone={timeZoneId}
           isPromotedMultidayEvent={true}
+          eventRefs={eventRefs}
         />
       ));
 
@@ -256,7 +311,7 @@ const GroupedEvents = ({ events, timeZoneId, promoteMultidayEventsOnTop }) => {
   return eventsByDay;
 };
 
-const GroupedIntraDayEvents = ({ events, timeZoneId }) => {
+const GroupedIntraDayEvents = ({ events, timeZoneId, eventRefs }) => {
   const timeSlices = [
     ["Night (00:00 - 08:00)", LocalTime.of(8, 0, 0, 0)],
     ["Morning (08:00 - 12:00)", LocalTime.of(12, 0, 0, 0)],
@@ -297,6 +352,7 @@ const GroupedIntraDayEvents = ({ events, timeZoneId }) => {
                 key={event.id}
                 event={event}
                 usersTimezone={timeZoneId}
+                eventRefs={eventRefs}
               />
             ))}
           </div>

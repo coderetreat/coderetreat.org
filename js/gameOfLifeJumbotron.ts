@@ -41,8 +41,7 @@ playPause.addEventListener("click", () => {
 });
 
 const updateSpeedFactor = () =>
-  (document.querySelector("#jumbotron-gol-control-speed-factor").innerHTML = `${
-    ((controller.ups * 100) | 0) / 100
+(document.querySelector("#jumbotron-gol-control-speed-factor").innerHTML = `${((controller.ups * 100) | 0) / 100
   }x`);
 
 document

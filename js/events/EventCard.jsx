@@ -67,12 +67,17 @@ const Sponsors = ({ sponsors }) => (
 
 const baseStyle = {
   overflow: "hidden",
-  transition: "max-height 1s",
+  transition: "max-height 500ms",
 };
 const collapsedStyle = { ...baseStyle, overflow: "hidden", maxHeight: 0 };
 const expandedStyle = { ...baseStyle, maxHeight: "1000px" };
 
-export default ({ event, usersTimezone, isPromotedMultidayEvent }) => {
+export default ({
+  event,
+  usersTimezone,
+  isPromotedMultidayEvent,
+  eventRefs,
+}) => {
   const [isCollapsed, setCollapsed] = useState(true);
 
   const widthClasses = isPromotedMultidayEvent
@@ -81,6 +86,10 @@ export default ({ event, usersTimezone, isPromotedMultidayEvent }) => {
 
   return (
     <div
+      ref={(el) => {
+        if(!eventRefs || !eventRefs.current) return;
+        eventRefs.current[event.id] = el;
+      }}
       className={classNames([
         "d-inline-block",
 

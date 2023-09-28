@@ -293,7 +293,7 @@ const Guides = ({ setupSteps, availableGuides }) => {
   );
 };
 
-(window || global).initializeGuide = ({ setupSteps, availableGuides }) => {
+const initializeGuide = ({ setupSteps, availableGuides }) => {
   ReactDOM.createRoot(document.getElementById("guides")).render(
     <Guides setupSteps={setupSteps} availableGuides={availableGuides} />
   );
@@ -309,3 +309,6 @@ const Guides = ({ setupSteps, availableGuides }) => {
     }, 100);
   });
 };
+(window || global).initializeGuide = initializeGuide;
+
+export { initializeGuide };
