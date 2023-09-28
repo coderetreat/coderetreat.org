@@ -62,7 +62,7 @@
     "build:js": "vite build",
     "build:netlify": "npm run build",
     "build": "run-s fetch:podcast build:js",
-    "watch": "npm run fetch:podcast && parcel watch js/*.js js/*.jsx js/*.ts js/*.tsx",
+    "watch": "npm run fetch:podcast && vite build --watch",
     "watch:jekyll": "bundle exec jekyll serve --livereload -V -H 0.0.0.0",
     "fetch:podcast": "wget -O _data/podcast.xml https://www.code-cop.org/podcast/rss_feed.php && xml-js _data/podcast.xml --tries 1 --timeout 5 --out _data/podcast.json --compact --spaces 4 || true",
     "test": "jest",

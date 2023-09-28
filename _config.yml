@@ -75,6 +75,13 @@ toc:
 #
 exclude:
   - .sass-cache/
+  - .babelrc
+  - vite.config.ts
+  - tsconfig.json
+  - tsconfig.node.json
+  - cypress.config.js
+  - netlify.toml
+  - .nvmrc
   - .jekyll-cache/
   - gemfiles/
   - Gemfile
@@ -89,7 +96,6 @@ exclude:
   - vendor/ruby/
   - .cache/
   - cypress/
-  - .parcel-cache/
 
 keep_files:
   - js/
