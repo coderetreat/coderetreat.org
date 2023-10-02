@@ -1,0 +1,32 @@
+{
+  "title": "Paris Global Day Of Code Retreat",
+  "description": "Learn while having fun with us",
+  "format": "classic",
+  "spoken_language": "French",
+  "url": "https://www.meetup.com/fr-FR/jams-de-code/events/295239634",
+  "code_of_conduct": "https://www.coderetreat.org/facilitators/hosting/#code-of-conduct",
+  "date": {
+    "start": "2023-11-04T09:30:00+01:00",
+    "end": "2023-11-04T17:30:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Arolla",
+      "url": "https://www.arolla.fr"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Arolla",
+      "url": "https://www.arolla.fr"
+    }
+  ],
+  "location": {
+    "city": "Paris",
+    "country": "France",
+    "coordinates": {
+      "latitude": 48.8534951,
+      "longitude": 2.3483915
+    }
+  }
+}

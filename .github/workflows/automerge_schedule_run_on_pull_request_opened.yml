@@ -6,23 +6,26 @@ on:
   workflow_dispatch:
     inputs:
       pull_request:
+        description: "The Pull Request to check"
         required: true
         type: string
 
 jobs:
-  debug:
+  automerge_schedule_run_on_pull_request:
     runs-on: ubuntu-latest
+    continue-on-error: true
     steps:
       - run: env
-      - run: echo '${{ toJSON(github.event) }}'
-      - run: sleep 10s
-      - uses: actions/checkout@v2
-      - name: Hello world action step
-        uses: ./.github/actions/automerger # Uses an action in the root directory
-        id: hello
+      - run: echo $EVENT
+        env:
+          EVENT: ${{ toJSON(github.event) }}
+      - name: Wait for Netlify test completion
+        run: sleep 10m
+      - uses: actions/checkout@v4
+      - name: Auto-merge new events with known submitters
+        uses: ./.github/actions/automerger
+        continue-on-error: true
         with:
-          who-to-greet: "Mona the Octocat"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+      - name: NoOp so the run is green
+        run: echo Noop

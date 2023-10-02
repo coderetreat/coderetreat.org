@@ -1,0 +1,16 @@
+{
+  "title": "Global Day of Coderetreat 2016 - Paris, France - Ladies of Code",
+  "description": "Venez découvrir le Jeu de la Vie (https://fr.wikipedia.org/wiki/Jeu_de_la_vie) lors du Global Day of Coderetreat (http://globalday.coderetreat.org/), un évènement mondial organisé par des communautés locales pour célébrer la passion du code ! \nAu cours de cet atelier d'une journée, vous pourrez vous frotter à un problème de programmation simple mais fascinant avec d'autres Ladies of Code; des mentors seront disponibles pour vous guider et vous conseiller.  \nApportez votre ordinateur ! L'atelier est faisable avec le language de programmation de votre choix, et en binôme. C'est idéal pour découvrir de nouveaux langages et se confronter aux façons de réfléchir des autres participants. \nCe meetup est sponsorisé par Arolla (http://www.arolla.fr/), qui nous héberge à cette occasion et nous offre le déjeuner. \nLe nombre de places est limité à cause de la taille de la salle, donc si vous avez un empêchement n'oubliez pas de vous désinscrire pour laisser la place à une autre.",
+  "url": "https://web.archive.org/http://coderetreat.org/events/global-day-of-coderetreat-2016-paris-france-by-ladies-of-code",
+  "spoken_language": "",
+  "moderators": [{ "name": "Arolla" }],
+  "location": {
+    "country": "France",
+    "city": "Paris",
+    "coordinates": { "latitude": 48.856614, "longitude": 2.3522219 }
+  },
+  "date": {
+    "start": "2016-10-22T09:00:00+02:00",
+    "end": "2016-10-22T16:00:00+02:00"
+  }
+}

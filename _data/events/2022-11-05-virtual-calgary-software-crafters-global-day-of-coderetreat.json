@@ -1,0 +1,44 @@
+{
+  "title": "Calgary Software Crafters Global Day of Coderetreat",
+  "description": "The Calgary Software Crafters are going to continue their tradition of offering a weeklong Coderetreat event where you only need to come for 90 minutes each day.",
+  "format": "ensemble",
+  "spoken_language": "English",
+  "url": "https://www.meetup.com/calgary-software-crafters/events/289055571/",
+  "code_of_conduct": "https://communitycodeofconduct.com/",
+  "date": {
+    "start": "2022-11-05T11:45:00-06:00",
+    "end": "2022-11-09T13:45:00-07:00"
+  },
+  "moderators": [
+    {
+      "name": "Susan Fung",
+      "url": "https://github.com/susanfung"
+    },
+    {
+      "name": "Jacqueline Bilston",
+      "url": "https://twitter.com/jmasonlee"
+    },
+    {
+      "name": "Tony Vo",
+      "url": "https://twitter.com/ttrungvo"
+    },
+    {
+      "name": "Rocky Rhodes",
+      "url": "https://twitter.com/RockyRhodes3"
+    },
+    {
+      "name": "Hansel Qiu"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Radicle",
+      "url": "https://radiclebalance.com"
+    },
+    {
+      "name": "InceptionU",
+      "url": "https://www.inceptionu.com"
+    }
+  ],
+  "location": "virtual"
+}

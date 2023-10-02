@@ -1,0 +1,52 @@
+{
+    "title": "Global Day of Code Retreat 2022 - Software Crafters, Barcelona, Spain",
+    "description": "¿Quieres practicar en buena compañía y aprender testing, TDD, pair-programming y conceptos de diseño de software? Trae ganas de aprender, tu ordenador,  boli y papel,  y practica a través de ejercicios en un entorno seguro y lejos de la presión de tener que hacer las cosas con prisas",
+    "format": "classic",
+    "spoken_language": "Spanish, English",
+    "url": "https://www.meetup.com/software-crafters-barcelona/events/289400649/",
+    "code_of_conduct": "https://softwarecrafters.barcelona/coc.html",
+    "date": {
+      "start": "2022-11-05T09:00:00+01:00",
+      "end": "2022-11-05T17:00:00+01:00"
+    },
+    "moderators": [
+      {
+        "name": "Ana Carmona",
+        "url": "https://twitter.com/nhan_bcn"
+      },
+      {
+        "name": "Cristina Verdi",
+        "url": "https://twitter.com/cristina_verdi"
+      },
+      {
+        "name": "Fernando Aparicio",
+        "url": "https://twitter.com/alchemist_devel"
+      },
+      {
+        "name": "David Gracia",
+        "url": "https://twitter.com/dgraciac"
+      },
+      {
+        "name": "Imma Valls",
+        "url": "https://twitter.com/eyeveebee"
+      }
+    ],
+    "sponsors": [
+      {
+        "name": "Trainline",
+        "url": "https://www.thetrainline.com/"
+      },
+      {
+        "name": "Code Sherpas",
+        "url": "https://bit.ly/3znyxQw"
+      }
+    ],
+    "location": {
+      "city": "Barcelona",
+      "country": "Spain",
+      "coordinates": {
+        "latitude": 41.382894,
+        "longitude": 2.177432
+      }
+    }
+  }

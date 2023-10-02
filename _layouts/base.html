@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- seo -%}
   <link rel="stylesheet" href="{{ "/css/theme_" | append: stylesheet | append: ".min.css" | relative_url }}">
-  <link rel="stylesheet" href="{{ "/js/bundled/default.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/js/default.css" | relative_url }}">
   {% for extraStyle in page.extraStyles %}
   <link rel="stylesheet" href="{{ extraStyle }}">
   {% endfor %}
@@ -23,7 +23,7 @@
 
   <main class="page-content" aria-label="Content">
     {% include navbar.html %}
-    <script async type="application/javascript" src="{{ "/js/bundled/default.js" | relative_url }}"></script>
+    <script type="module" src="{{ "/js/default.js" | relative_url }}"></script>
     {{ content }}
     {% include disqus_comments.html %}
   </main>

@@ -1,0 +1,16 @@
+{
+  "title": "Global Day of Coderetreat 2014 - Auckland, New Zealand - EllerslieDNUG",
+  "description": "Global Day of Coderetreat (http://globalday.coderetreat.org/) is a world-wide event celebrating passion and software craftsmanship. Last year, over 5000 passionate software developers in 170 cities around the world registered to spend the day practicing the craft of software development using the coderetreat format.  \n   What is a coderetreat? \n   Coderetreat is a day­long, intensive practice event focusing on the fundamentals of software development and design. The coderetreat format has proven itself to be a highly effective means of skill improvement by providing developers the opportunity to take part in focused practice away from the pressures of 'getting things done.'  \n   What can you learn? \n   • Pair programming with strangers \n   • Experiment with new programming languages \n   • Write code as you wish without usual real-world constraints... \n   • ... and then write code with some very unusual constraints  \n   • Practice 4 rules of simple design  \n   • Meet other passionate programmers that you can learn from \n    What do you need? \n   A laptop with the programming environment of your choice (IDE, unit test library, etc.) \n   How can you help? \n   Agenda: \n   8:30 - 9:00 Welcome coffee \n   10:00-10:30 Introduction \n   10:30-11:15 Session #1 \n   11:15-11:30 Retrospective  \n   11:30-12:15 Session #2  \n   12:15-12:30 Retrospective  \n   12:30-13:15 Session #3  \n   13:15-13:30 Retrospective \n   13:30-14:30 Lunch break \n   14:30-15:15 Session #4  \n   15:15-15:30 Retrospective \n   15:30-16:15 Session #5  \n   16:15-16:30 Retrospective \n   16:30-17:15 Session #6  \n   17:15-17:45 Retrospective of the whole day \n   \n \n   17:45 - ??? Other sessions and discussions over a beer :) \n    \n \nMore info and registration: \nhttp://www.meetup.com/EllerslieDNUG/events/207317712/",
+  "url": "https://web.archive.org/http://coderetreat.org/events/global-day-of-code-retreat-2014-auckland-nz",
+  "spoken_language": "",
+  "moderators": [{ "name": "Weronika Labaj" }],
+  "location": {
+    "country": "New Zealand",
+    "city": "Auckland",
+    "coordinates": { "latitude": -36.8484597, "longitude": 174.7633315 }
+  },
+  "date": {
+    "start": "2014-11-15T08:30:00+13:00",
+    "end": "2014-11-15T17:30:00+13:00"
+  }
+}

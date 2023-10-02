@@ -7,4 +7,8 @@ node_modules
 .cache
 js/bundled/
 .idea
-_data/podcast.*
+_data/podcast.*.parcel-cache
+.parcel-cache
+_data/events/TEST_EVENT.json
+cypress/videos/
+cypress/screenshots/

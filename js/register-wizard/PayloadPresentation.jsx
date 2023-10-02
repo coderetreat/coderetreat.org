@@ -1,5 +1,4 @@
-import { h } from "preact";
-import { useState, useEffect, useCallback } from "preact/hooks";
+import { h,useState, useEffect, useCallback } from "react";
 
 const selectNode = (e) => {
   const node = e.target;
@@ -35,7 +34,7 @@ export const PayloadPresentation = ({ payload }) => {
   );
 
   return (
-    <pre class="bg-dark text-light p-2" onClick={onClick}>
+    <pre className="bg-dark text-light p-2" onClick={onClick}>
       {payload}
     </pre>
   );

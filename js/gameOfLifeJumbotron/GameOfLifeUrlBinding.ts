@@ -38,5 +38,5 @@ type GameOfLifeUrlParameters = {
 };
 
 export const setUrlParameters = (params: GameOfLifeUrlParameters) => {
-  window.history.pushState({}, null, "?" + qs.stringify(params));
+  window.history.pushState({}, "", "?" + qs.stringify(params));
 };

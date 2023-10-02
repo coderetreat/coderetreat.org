@@ -1,0 +1,40 @@
+{
+  "title": "Global Day of Code Retreat @ Nagarro Colombo 2022",
+  "description": "The event is to evelopers to improve development practices which is helpfull to advance their caree",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://forms.office.com/Pages/ResponsePage.aspx?id=GudfpID0Qk6tXq_zMWWqNdduGYcPEMFPvRjwkcMNnrNUQ1BQVVcwVUJJUVo1MFNPNEQ4UVFIQ0xSSC4u",
+  "code_of_conduct": "https://www.coderetreat.org/facilitators/hosting/#code-of-conduct",
+  "date": {
+    "start": "2022-11-05T09:00:00+05:30",
+    "end": "2022-11-05T16:00:00+05:30"
+  },
+  "moderators": [
+    {
+      "name": "Lahiru Wijesekara",
+      "url": "https://github.com/lahiruwijesekara"
+    },
+    {
+      "name": "Lakith Dharmarathna"
+    },
+    {
+      "name": "Ahmed Ifhaam"
+    },
+    {
+      "name": "Thilina Jayawardana"
+    },
+    {
+      "name": "Muhammad Harsard"
+    },
+    {
+      "name": "Methusha Thuraisingam"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Nagarro",
+      "url": "https://www.nagarro.com/en/careers/sri-lanka"
+    }
+  ],
+  "location": "virtual"
+}

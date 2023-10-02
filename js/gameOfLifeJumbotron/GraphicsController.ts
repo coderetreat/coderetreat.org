@@ -1,4 +1,4 @@
-import * as PIXI from "pixi.js-legacy";
+import * as PIXI from "pixi.js";
 import { Array2d } from "./Array2d";
 import { GameOfLife } from "./GameOfLife";
 import { Viewport } from "pixi-viewport";
@@ -28,8 +28,8 @@ export class GraphicsController {
   }: GraphicsControllerOpts) {
     this.pixiApp = new PIXI.Application({
       view: element,
-      resizeTo: element.parentElement,
-      transparent: true,
+      resizeTo: element.parentElement!,
+      backgroundAlpha: 0.0,
       antialias: true,
       autoDensity: true,
       resolution: 2,
@@ -38,7 +38,7 @@ export class GraphicsController {
     this.viewport = new Viewport({
       screenWidth: element.width,
       screenHeight: element.height,
-      interaction: this.pixiApp.renderer.plugins.interaction,
+      events: this.pixiApp.renderer.events
     });
     this.pixiApp.stage.addChild(this.viewport);
     this.viewport.pause = true;
@@ -47,7 +47,7 @@ export class GraphicsController {
     this.gap = gap;
     this.fadeFactor = fadeFactor;
     this.pixiApp.ticker.maxFPS = fps;
-    element.style["touch-action"] = "auto";
+    element.style["touchAction"] = "auto";
     this.visibleDots = new Array2d<PIXI.Graphics>([]);
   }
 
@@ -67,13 +67,13 @@ export class GraphicsController {
     this.visibleDots = this.visibleDots.resize(
       0,
       0,
-      () => null,
+      () => { throw "Shouldn't be called" },
       (dot) => this.pixiApp.stage.removeChild(dot)
     );
     this._handlePossibleResize(game);
   }
 
-  _createNewDot(x, y, cellAlive) {
+  _createNewDot(x: number, y: number, cellAlive: Boolean) {
     const newDot: any = new PIXI.Graphics();
     newDot.x = this.gap + this.radius + x * (this.radius * 2 + this.gap);
     newDot.y = this.gap + this.radius + y * (this.radius * 2 + this.gap);
@@ -89,11 +89,11 @@ export class GraphicsController {
 
     let gridX = Math.ceil(
       (this.viewport.worldScreenWidth + this.viewport.left) /
-        (this.radius * 2 + this.gap)
+      (this.radius * 2 + this.gap)
     );
     let gridY = Math.ceil(
       (this.viewport.worldScreenHeight + this.viewport.top) /
-        (this.radius * 2 + this.gap)
+      (this.radius * 2 + this.gap)
     );
 
     let gridWidth = Math.min(game.grid.width, gridX);
@@ -122,7 +122,7 @@ export class GraphicsController {
       if (resetAlpha) {
         graphics.alpha = this.shouldFade ? 0 : cellAlive ? 1 : 0;
       }
-      graphics.alphaDelta =
+      (graphics as any).alphaDelta =
         this.shouldFade && cellAlive ? this.fadeStep : -this.fadeStep;
     });
   }
@@ -131,7 +131,7 @@ export class GraphicsController {
     this.visibleDots.forEach((graphics) => {
       graphics.alpha = Math.max(
         0,
-        Math.min(1, graphics.alpha + graphics.alphaDelta * delta)
+        Math.min(1, graphics.alpha + (graphics as any).alphaDelta * delta)
       );
     });
   }

@@ -1,0 +1,35 @@
+{
+  "title": "Global Day of Coderetreat 2023 - Wroclaw, Poland",
+  "description": "A Coderetreat is a full day hands-on coding workshop focused on the fundamentals of software development, design and communication. During the day you get multiple chances to try something completely different. You have the opportunity to learn new ways of testing, paradigms, architecture styles, libraries, approaches, languages or IDEs.",
+  "format": "classic",
+  "spoken_language": "English, Polish",
+  "url": "https://www.meetup.com/software-crafters-wroclaw/events/296076568/",
+  "date": {
+    "start": "2023-11-04T09:15:00+01:00",
+    "end": "2023-11-04T17:30:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Martin Klose",
+      "url": "https://www.linkedin.com/in/martinklose"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Ocado Technology",
+      "url": "https://www.ocadogroup.com/about-us/ocado-technology"
+    },
+    {
+      "name": "klosebrothers",
+      "url": "https://www.klosebrothers.de"
+    }
+  ],
+  "location": {
+    "city": "Wroclaw",
+    "country": "Poland",
+    "coordinates": {
+      "latitude": 51.1078852,
+      "longitude": 17.0385376
+    }
+  }
+}

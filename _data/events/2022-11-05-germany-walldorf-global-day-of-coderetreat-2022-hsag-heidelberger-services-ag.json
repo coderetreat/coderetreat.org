@@ -1,0 +1,33 @@
+{
+  "title": "Global Day of Coderetreat 2022 @ hsag Heidelberger Services AG",
+  "description": "Alle Softwareentwickler/-innen aber auch Tech-Studenten/innen sind herzlich zum gemeinsam Coden, neue Skills Entwickeln und Spaßhaben eingeladen!",
+  "format": "classic",
+  "spoken_language": "German, English",
+  "url": "https://www.eventbrite.com/e/global-day-of-coderetreat-2022-hsag-heidelberger-services-ag-tickets-367446431167",
+  "date": {
+    "start": "2022-11-05T09:00:00+01:00",
+    "end": "2022-11-05T16:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Valeriya Bechberger"
+    },
+    {
+      "name": "Carl Heckmann"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "hsag Heidelberger Services AG",
+      "url": "https://hsag.info/"
+    }
+  ],
+  "location": {
+    "city": "Walldorf",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 49.29166,
+      "longitude": 8.64915
+    }
+  }
+}

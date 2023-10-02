@@ -1,0 +1,55 @@
+---
+layout: base
+audience: facilitators
+extraStyles: ["/js/videobooths.css"]
+---
+
+<div class="container my-5">
+  <div>
+    <h1 class="display-1">Video Booths</h1>
+    <p class="lead">
+      Join other events all over the world on Global Day of Coderetreat to make it a
+      truly special event!</p>
+
+    <div class="container-fluid mb-5 m-0 p-0">
+      <div class="row">
+        <div class="col-12 col-lg-9">
+          <p>On Global Day of Coderetreat, hundreds – if not thousands! - of developers will participate in the same
+            workshop all over the world. With our videobooths, you can connect with all the other events in a way that
+            makes
+            the event feel truly global!</p>
+          <p>
+            As a facilitator, all you need is a webcam and a projector that can point into the room throughout the
+            sessions.
+            Our videobooths will automatically select a room with other events, so you can keep it running without
+            intervention throughout the sessions.
+          </p>
+          <p>If you'd like to take it a step further and say "hi" to other events, we suggest you join the
+            <code>#coderetreat</code> or <code>#gdcr</code> channel on the <a
+              href="https://slack.softwarecrafters.org">Software Crafters Slack</a></code> and reach out, as an actual
+            call
+            usually needs more preparations and scheduling.
+          </p>
+          <div class="alert alert-danger">
+            <b>Ask your participants for consent!</b>
+            Not everyone consents to their
+            picture being broadcasted to the world. We recommend you let people <b>opt-in</b>
+            to being on camera by pointing the camera at only a portion of
+            the room.
+          </div>
+
+        </div>
+        <div class="order-first order-lg-last col-12 col-lg-3 p-3">
+          <img width="100%" src="{% link /facilitators/assets/videobooths.jpg %}"
+            alt="A photo of the videobooths at a coderetreat showing lots of other events participating at the same time" />
+          <small>A truly global coderetreat with <a
+              href="https://twitter.com/racingDeveloper/status/665529557961830400">@racingDeveloper</a></small>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div id="videobooths"></div>
+
+<script type="module" src="{{ "/js/videobooths.js" | relative_url }}"></script>

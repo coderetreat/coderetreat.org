@@ -1,0 +1,16 @@
+{
+  "title": "Global Day of Coderetreat 2016 - Budapest, Hungary",
+  "description": "You can register at: http://www.meetup.com/Coderetreat-Budapest/events/234691286/",
+  "url": "https://web.archive.org/http://coderetreat.org/events/global-day-of-coderetreat-2016-budapest-hungary",
+  "spoken_language": "",
+  "moderators": [{ "name": "Rafael Devill" }],
+  "location": {
+    "country": "Hungary",
+    "city": "Budapest",
+    "coordinates": { "latitude": 47.497912, "longitude": 19.040235 }
+  },
+  "date": {
+    "start": "2016-10-22T09:00:00+02:00",
+    "end": "2016-10-22T18:00:00+02:00"
+  }
+}

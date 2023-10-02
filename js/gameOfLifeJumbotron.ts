@@ -1,5 +1,5 @@
 import { GameController } from "./gameOfLifeJumbotron/GameController";
-import { StandardRules, GameOfLife } from "./gameOfLifeJumbotron/GameOfLife";
+import { GameOfLife, StandardRules } from "./gameOfLifeJumbotron/GameOfLife";
 import * as GameOfLifeUrlBinding from "./gameOfLifeJumbotron/GameOfLifeUrlBinding";
 
 let game = GameOfLifeUrlBinding.tryInitializeFromHistory();
@@ -41,8 +41,7 @@ playPause.addEventListener("click", () => {
 });
 
 const updateSpeedFactor = () =>
-  (document.querySelector("#jumbotron-gol-control-speed-factor").innerHTML = `${
-    ((controller.ups * 100) | 0) / 100
+(document.querySelector("#jumbotron-gol-control-speed-factor").innerHTML = `${((controller.ups * 100) | 0) / 100
   }x`);
 
 document

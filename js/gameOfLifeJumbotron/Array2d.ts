@@ -16,12 +16,12 @@ class Array2d<T> {
     } else {
       const width = <number>widthOrBacking;
       this.width = width;
-      this.height = height;
+      this.height = height as number;
       this.backing = new Array(height);
-      for (let y = 0; y < height; y++) {
+      for (let y = 0; y < this.height; y++) {
         this.backing[y] = new Array(width);
         for (let x = 0; x < width; x++) {
-          this.backing[y][x] = initFn(x, y);
+          this.backing[y][x] = initFn!(x, y);
         }
       }
     }
@@ -43,7 +43,7 @@ class Array2d<T> {
     return new Array2d<U>(newBacking);
   }
 
-  forEach(fn) {
+  forEach(fn: (elem: T, x: number, y: number) => any) {
     for (let y = 0; y < this.height; y++) {
       for (let x = 0; x < this.width; x++) {
         fn(this.backing[y][x], x, y);
@@ -58,8 +58,8 @@ class Array2d<T> {
     let max_y = Math.min(this.height, other.height);
     let max_x = Math.min(this.width, other.width);
 
-    for(let y = 0; y < max_y; y++) {
-      for(let x = 0; x < max_x; x++) {
+    for (let y = 0; y < max_y; y++) {
+      for (let x = 0; x < max_x; x++) {
         fn([this.get(x, y), other.get(x, y)], x, y);
       }
     }
@@ -71,7 +71,7 @@ class Array2d<T> {
     inserter: (x: number, y: number) => T,
     remover: (value: T, x: number, y: number) => any
   ) {
-    if(newWidth === this.width && newHeight === this.height) return this;
+    if (newWidth === this.width && newHeight === this.height) return this;
     this.forEach((value, x, y) => {
       if (x >= newWidth || y >= newHeight) {
         remover(value, x, y);
@@ -87,8 +87,8 @@ class Array2d<T> {
   toString() {
     return `[
   [${this.backing
-    .map((row) => row.map((column) => JSON.stringify(column)).join(", "))
-    .join("],\n  [")}]
+        .map((row) => row.map((column) => JSON.stringify(column)).join(", "))
+        .join("],\n  [")}]
 ]`;
   }
 }

@@ -28,7 +28,7 @@ describe("GameController", () => {
     const controller = new GameController(element);
 
     expect(GraphicsController).toHaveBeenCalledTimes(1);
-    expect(GraphicsController.mock.calls[0][0]).toMatchObject({ element });
+    expect(GraphicsController.mock.calls[0][0].element).toBe(element);
   });
 
   describe("reduced-motion", () => {

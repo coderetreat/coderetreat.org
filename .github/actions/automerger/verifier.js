@@ -87,15 +87,16 @@ module.exports = async () => {
       );
     };
 
-    const ourTestStatusCheckWasSuccessful = ({ statusChecks }) =>
+    const ourTestStatusCheckWasSuccessful = ({ statusChecks }) => {
       assertTrue(
         statusChecks.data.check_runs.some(
           (run) =>
-            run.name === "test" &&
+            run.name === "run_unit_and_data_validation_tests" &&
             run.status === "completed" &&
             run.conclusion === "success"
         )
       );
+    };
 
     const thePullRequestAuthorHasPreviouslyMergedPullRequests = async ({
       pullRequest,
@@ -133,10 +134,27 @@ module.exports = async () => {
         statusChecks,
       });
     }
-    await octokit.rest.pulls.merge({
-      ...baseParams,
-      pull_number: pullRequest.data.number,
+
+    const commit = await octokit.rest.repos.getCommit({
+      owner: baseParams.owner,
+      repo: baseParams.repo,
+      ref: pullRequest.data.head.sha,
     });
+    console.log(JSON.stringify(commit, undefined, 2));
+
+    // Why GraphQL?  Octokit.rest call does not appear to work correctly!
+    await octokit.graphql(
+      `
+      mutation DoTheAutomaticMerge($mergeParams: MergePullRequestInput!) {
+        mergePullRequest(input: $mergeParams) { clientMutationId }
+      }`,
+      {
+        mergeParams: {
+          pullRequestId: pullRequest.data.node_id,
+          expectedHeadOid: pullRequest.data.head.sha,
+        },
+      }
+    );
   } catch (error) {
     console.error(error);
     core.setFailed(error.message);

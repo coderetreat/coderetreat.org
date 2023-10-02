@@ -6,13 +6,14 @@ name: "Print Welcome Tweets"
 on: [push, pull_request]
 
 jobs:
-  test:
+  print_welcome_tweets:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v1
-      with:
-        node-version: 12.x
-    - run: npm ci
-    - run: node scripts/print_welcome_tweets.js
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: ".nvmrc"
+          cache: 'npm'
+      - run: npm ci
+      - run: node scripts/print_welcome_tweets.js

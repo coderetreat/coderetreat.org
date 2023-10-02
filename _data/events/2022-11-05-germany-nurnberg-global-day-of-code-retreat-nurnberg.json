@@ -1,0 +1,48 @@
+{
+  "title": "Global Day of Code Retreat Nürnberg",
+  "description": "Global Day of Coderetreat hosted by Paessler AG and Interface AG in Nürnberg, Germany",
+  "format": "classic",
+  "spoken_language": "German, English",
+  "url": "https://ti.to/gdcr-nbg/2022",
+  "code_of_conduct": "https://communitycodeofconduct.com/",
+  "date": {
+    "start": "2022-11-05T09:00:00+01:00",
+    "end": "2022-11-05T18:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Igor Gutmann",
+      "url": "https://www.linkedin.com/in/igor-gutmann-b74924170/"
+    },
+    {
+      "name": "Tanja Gallmann",
+      "url": "https://www.linkedin.com/in/tanja-g-92851a253/"
+    },
+    {
+      "name": "Kerstin Gronauer",
+      "url": "https://www.xing.com/profile/Kerstin_Gronauer/"
+    },
+    {
+      "name": "Frank Prechtel",
+      "url": "https://www.linkedin.com/in/frankprechtel/"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Interface AG",
+      "url": "https://www.interface-ag.com"
+    },
+    {
+      "name": "Paessler AG",
+      "url": "https://www.paessler.com"
+    }
+  ],
+  "location": {
+    "city": "Nürnberg",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 49.453872,
+      "longitude": 11.077298
+    }
+  }
+}

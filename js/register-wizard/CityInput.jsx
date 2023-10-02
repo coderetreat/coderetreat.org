@@ -1,5 +1,4 @@
-import { h } from "preact";
-import { useState } from "preact/hooks";
+import { h, useState } from "react";
 import { AsyncTypeahead } from "react-bootstrap-typeahead";
 
 const findCities = async (searchTerm) => {

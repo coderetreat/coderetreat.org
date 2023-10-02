@@ -1,0 +1,16 @@
+{
+  "title": "Global Day of Coderetreat 2015 - Beijing, China",
+  "description": "This is the fifth year in a row, Beijing is participating in the Global Day of Coderetreat 2015! \nJoin us, and have fun with it!",
+  "url": "https://web.archive.org/http://coderetreat.org/events/global-day-of-coderetreat-2015-beijing-china-1",
+  "spoken_language": "",
+  "moderators": [{ "name": "Zilong Chen" }],
+  "location": {
+    "country": "China",
+    "city": "Beijing",
+    "coordinates": { "latitude": 39.90419989999999, "longitude": 116.4073963 }
+  },
+  "date": {
+    "start": "2015-11-14T09:00:00+08:00",
+    "end": "2015-11-14T16:00:00+08:00"
+  }
+}

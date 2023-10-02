@@ -1,0 +1,16 @@
+{
+  "title": "Global Day of Coderetreat 2015 - London, UK -  DHI - 8th Light",
+  "description": "This event is going to be hosted and facilitated by DHI Group and 8th Light. \n \n Make sure to RSVP with Eventbrite.\n https://www.eventbrite.co.uk/e/global-day-of-coderetreat-hosted-by-dhi-group-and-8th-light-tickets-19059104294",
+  "url": "https://web.archive.org/http://coderetreat.org/events/global-day-of-coderetreat-2015-london-uk",
+  "spoken_language": "",
+  "moderators": [{ "name": "Jnardiello" }],
+  "location": {
+    "country": "United Kingdom",
+    "city": "London",
+    "coordinates": { "latitude": 51.5073509, "longitude": -0.1277583 }
+  },
+  "date": {
+    "start": "2015-11-14T09:00:00+01:00",
+    "end": "2015-11-14T18:00:00+01:00"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Global Day of Coderetreat 2014 - Bucharest, Romania - bucharest agile meetup",
+  "description": "As we did last year, we’ll join programmers from all over the world. We’ll meet, code and have fun for sure during the day! \nThe event will be organized by AgileWorks community. If you want to join us, please register on the event meetup page: http://www.meetup.com/The-Bucharest-Agile-Software-Meetup-Group/events/208052582/.",
+  "url": "https://web.archive.org/http://coderetreat.org/events/global-day-of-coderetreat-2014-bucharest-romania-1",
+  "spoken_language": "",
+  "moderators": [{ "name": "Claudia Rosu" }],
+  "location": {
+    "country": "Romania",
+    "city": "Bucharest",
+    "coordinates": { "latitude": 44.4267674, "longitude": 26.1025384 }
+  },
+  "date": {
+    "start": "2014-11-15T09:00:00+03:00",
+    "end": "2014-11-15T16:00:00+03:00"
+  }
+}

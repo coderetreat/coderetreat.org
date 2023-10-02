@@ -1,0 +1,16 @@
+{
+  "title": "GDCR 2015 - Auckland, New Zealand",
+  "description": "Time: November 14, 2015 (http://archive.coderetreat.org/events/event/listByDate?date=2015-11-14) from 8:30am to 5pm\n Event Type: coderetreat (http://archive.coderetreat.org/events/event/listByType?type=coderetreat), gdcr (http://archive.coderetreat.org/events/event/listByType?type=gdcr), gdcr15 (http://archive.coderetreat.org/events/event/listByType?type=gdcr15)\n Organized By: Walter Rumsby (/profile/WalterRumsby)\n Latest Activity: Oct 28, 2015",
+  "url": "https://web.archive.org/http://coderetreat.org/events/global-day-of-coderetreat-auckland-new-zealand",
+  "spoken_language": "",
+  "moderators": [{ "name": "Walter Rumsby" }],
+  "location": {
+    "country": "New Zealand",
+    "city": "Auckland",
+    "coordinates": { "latitude": -36.8484597, "longitude": 174.7633315 }
+  },
+  "date": {
+    "start": "2015-11-14T08:30:00+13:00",
+    "end": "2015-11-14T17:00:00+13:00"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "title": "Global Day of Code Retreat @ Nagarro Austria 2022",
+  "description": "Global Day of Coderetreat bei Nagarro in Vienna",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://www.eventbrite.at/e/global-day-of-coderetreat-vienna-2022-tickets-433464663477",
+  "code_of_conduct": "https://makers.tech/code-of-conduct/",
+  "date": {
+    "start": "2022-11-05T08:15:00+01:00",
+    "end": "2022-11-05T17:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Softwerkskammer Wien",
+      "url": "https://swkwien.github.io/gdcr22/#/global-day-of-coderetreat"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Nagarro",
+      "url": "https://www.nagarro.com"
+    }
+  ],
+  "location": {
+    "city": "Vienna",
+    "country": "Austria",
+    "coordinates": {
+      "latitude": 48.20833,
+      "longitude": 16.37306
+    }
+  }
+}
