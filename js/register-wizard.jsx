@@ -52,10 +52,10 @@ const dropEmptyKeys = (obj) =>
 
 const slugifyEvent = (payload) => {
   const segments = [
+    payload.date.start.slice(0, 10),
     ...(payload.location === "virtual"
       ? ["virtual"]
       : [payload.location.country, payload.location.city]),
-    payload.date.start.slice(0, 10),
     payload.title,
   ].filter((a) => !!a);
 
