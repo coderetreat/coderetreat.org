@@ -1,0 +1,47 @@
+{
+  "title": "Global Day of Coderetreat 2023 in #tddyyχ",
+  "description": "Global Day of Coderetreat 2021 hosted by tddyyχ, Akasaka, Tokyo.",
+  "format": "classic",
+  "spoken_language": "Japanese",
+  "url": "https://tddyyx.connpass.com/event/298660/",
+  "date": {
+    "start": "2023-11-04T09:00:00+09:00",
+    "end": "2023-11-04T18:00:00+09:00"
+  },
+  "moderators": [
+    {
+      "name": "yota",
+      "url": "https://twitter.com/y0t4"
+    },
+    {
+      "name": "miholovesq",
+      "url": "https://twitter.com/miholovesq"
+    },
+    {
+      "name": "ug23",
+      "url": "https://twitter.com/ug23_"
+    },
+    {
+      "name": "shuyuhey",
+      "url": "https://twitter.com/shuyuhey"
+    },
+    {
+      "name": "yudmo",
+      "url": "https://twitter.com/yudmo_"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Attractor Inc.",
+      "url": "https://www.attractor.co.jp/"
+    }
+  ],
+  "location": {
+    "city": "Akasaka",
+    "country": "Japan",
+    "coordinates": {
+      "latitude": 35.679686512918835,
+      "longitude": 139.7369566278997
+    }
+  }
+}
