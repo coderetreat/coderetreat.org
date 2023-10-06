@@ -1,77 +1,9 @@
-CODERETREAT
-TRAINING SESSIONS
-ABOUT GAME OF LIFE
-FACILITATION
-HOSTING
-REMOTE (COVID-19)
-RESOURCES
-Event Registration
-As every year, you can list your event on coderetreat.org to make it easy for someone to find and attend. Fill out this form and send us a Pull Request to our repo.
-
-To get your event listed on coderetreat.org, you need to fork our repository at github.com/coderetreat/coderetreat
-
-Create a new file in _data/events/ such as berlin-swkberlin.json.
-Complete this form and download or paste the resulting JSON into the file
-Optionally: Validate the JSON locally by running npm test
-(see our README on how to set up the repository)
-Commit your event and send us a Pull Request
-We will validate your event and publish it on our Events Page
-Basic information
-Title
-Global Day of Coderetreat 2023 | Istanbul (Turkiye)
-Description (optional)
-Local event in the context of the Global Day of Coderetreat organized by Java User Group (JUG) Istanbul and hosted by ING Teknoloji.
-Spoken language
-Turkish
-Please decide ahead which one is going to be the primary language of your event. This will make it easier for people to find a (virtual) event that they can participate in.
-Format
-Classic (Pair Programming)
-Links
-Event Link
-https://www.eventbrite.com/e/731859008997?aff=oddtdtcreator
-In order for your event to be listed on coderetreat.org, it must have a public sign-up page. You are free to limit attendance to e.g. people of underrepresented minorities in tech, but we don't list e.g. employee-only events.
-Code of Conduct Link (optional)
-link to your Code of Conduct
-A Code of Conduct lines out the rules of your event. We highly recommend you adopt one and make sure that your attendees are aware of it. For more information, read here: Hosting Guide#Code-of-Conduct
-Moderators
-Name	Website (optional)	 
-Altuğ Bilgin Altıntaş
-https://github.com/altuga
-Name
-e.g. GitHub/Twitter Profile
-Sponsors
-Name	Website (optional)	 
-ING technology
-https://www.ing.com.tr/
-Name
-Website/Social Media
-Scheduling
-Timezone
-Europe/Istanbul
-Start
-04.11.2023 09:30
-End
-04.11.2023 17:30
-Please make sure to double-check the times you plan to start your event, as it plays an essential role in how an attendee might pick an event.
-Location
-We're hosting a Virtual Event.
-City
-Istanbul
-Country
-Türkiye
-Latitude
-41.0091982
-Longitude
-28.9662187
-If you want your event to show up on our map, please fill in the Lat/Long values in EPSG:3857.
-Your Registration Payload
-./data/_events/2023-11-04-turkiye-istanbul-global-day-of-coderetreat-2023-istanbul-turkiye.json (Suggested filename)
 {
   "title": "Global Day of Coderetreat 2023 | Istanbul (Turkiye)",
   "description": "Local event in the context of the Global Day of Coderetreat organized by Java User Group (JUG) Istanbul and hosted by ING Teknoloji.",
   "format": "classic",
   "spoken_language": "Turkish",
-  "url": "https://www.eventbrite.com/e/731859008997?aff=oddtdtcreator",
+  "url": "https://www.eventbrite.com/e/global-day-of-coderetreat-2023-istanbul-turkiye-tickets-733327310727?aff=oddtdtcreator",
   "date": {
     "start": "2023-11-04T09:30:00+03:00",
     "end": "2023-11-04T17:30:00+03:00"
@@ -97,7 +29,3 @@ Your Registration Payload
     }
   }
 }
-  
-Follow us on Twitter
-Contribute on GitHub
-The Coderetreat Contributors 2020
