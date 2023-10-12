@@ -26,6 +26,8 @@ export const Map = ({
       zoom: 0,
     });
 
+    map.current.addControl(new mapboxgl.GeolocateControl());
+
     map.current.on("load", ({ target }) => {
       const eventDataSource: mapboxgl.GeoJSONSourceRaw = {
         type: "geojson",
