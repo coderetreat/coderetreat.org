@@ -20,13 +20,25 @@ export const Map = ({
 
   useEffect(() => {
     map.current = new mapboxgl.Map({
+      dragRotate: false,
       container: mapRef.current!, // container element id
       style: "mapbox://styles/mapbox/light-v10",
       center: [Math.random() * 360 - 180, 40.7128], // initial map center in [lon, lat]
       zoom: 0,
     });
 
-    map.current.addControl(new mapboxgl.GeolocateControl());
+    map.current.addControl(
+      new mapboxgl.GeolocateControl({
+        positionOptions: {
+          enableHighAccuracy: true,
+        },
+        showAccuracyCircle: false,
+        trackUserLocation: false,
+        fitBoundsOptions: {
+          maxZoom: 7,
+        },
+      })
+    );
 
     map.current.on("load", ({ target }) => {
       const eventDataSource: mapboxgl.GeoJSONSourceRaw = {
