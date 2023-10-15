@@ -1,0 +1,16 @@
+{
+  "title": "Global Day of Coderetreat 2016 - Hamburg, Germany - Freiheit",
+  "description": "We from freiheit.com (http://freiheit.com/) invite everyone to celebrate the Global Day of Coderetreat 2016 with us in our beautiful office in the heart of St. Pauli. \nIf you're interested in test-driven development, pair programming  and learning together with others who share your passion for programming, you shouldn't miss this event! \nFree soft drinks, coffee, snacks, and pizza are waiting for you :-) \nPlease register via https://goo.gl/forms/LPiVA2VRTugjsK5t2 \nWe will start at 10am. \nThe address is:\n Budapester Str. 45\n 20359 Hamburg \nGoogle Maps link (https://www.google.de/maps/place/freiheit.com+technologies+gmbh/@53.5553332,9.9619213,17z/data=!3m1!4b1!4m5!3m4!1s0x47b18f4b31e24b69:0x2c027a0fc8d95306!8m2!3d53.55533!4d9.96411) \nPlease bring your laptop with prepared development environments for the languages you're comfortable with.",
+  "url": "https://web.archive.org/http://coderetreat.org/events/global-day-of-coderetreat-2016-hamburg-germany-1",
+  "spoken_language": "",
+  "moderators": [{ "name": "Olaf Gunkel" }],
+  "location": {
+    "country": "Germany",
+    "city": "Hamburg",
+    "coordinates": { "latitude": 53.5510846, "longitude": 9.9936818 }
+  },
+  "date": {
+    "start": "2016-10-22T10:00:00+02:00",
+    "end": "2016-10-22T18:00:00+02:00"
+  }
+}

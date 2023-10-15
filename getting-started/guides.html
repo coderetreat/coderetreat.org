@@ -7,8 +7,8 @@ description: Setting up a modern development environment is difficult. Check out
 
 <div id="guides"></div>
 
-<script type="application/javascript" src="{{ "/js/bundled/guides.js" | relative_url }}"></script>
-<script type="text/javascript">
+<script type="module">
+  import { initializeGuide } from "{{ "/js/guides.js" | relative_url }}";
   const setupSteps = {{ site.setup_steps | jsonify }};
 
   const availableGuides = [

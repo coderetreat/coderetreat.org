@@ -1,0 +1,31 @@
+{
+  "title": "Code Retreat - DevDay Hyderabad",
+  "description": "Code retreats are free day-long, intensive practice events, focusing on the fundamentals of software development and design. By providing developers the opportunity to take part in focused practice, away from the pressures of \"getting things done\", the code retreat format has proven itself to be a highly effective means of learning and nurturing software development skills.",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://www.meetup.com/devday_hyderabad/events/295697583/",
+  "date": {
+    "start": "2023-09-23T09:30:00+05:30",
+    "end": "2023-09-23T18:00:00+05:30"
+  },
+  "moderators": [
+    {
+      "name": "Priyadarshan Patil",
+      "url": "https://github.com/priyadarshan24"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Sahaj AI ",
+      "url": "https://sahaj.ai/"
+    }
+  ],
+  "location": {
+    "city": "Hyderabad",
+    "country": "India",
+    "coordinates": {
+      "latitude": 17.360589,
+      "longitude": 78.474061
+    }
+  }
+}

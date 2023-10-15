@@ -1,11 +1,11 @@
-import { render, h } from "preact";
-import { useState, useEffect } from "preact/hooks";
-import fetchEventsInChronologicalOrder from "./events/fetchEventsInChronologicalOrder";
-import displayEventAsTableRow from "./events/displayEventAsTableRow";
 import * as jsjoda from "@js-joda/core";
 import "@js-joda/timezone";
-const { ZoneId, ZonedDateTime } = jsjoda;
+import { useEffect, useState } from "react";
+import ReactDOM from "react-dom/client";
 import "regenerator-runtime/runtime";
+import displayEventAsTableRow from "./events/displayEventAsTableRow";
+import fetchEventsInChronologicalOrder from "./events/fetchEventsInChronologicalOrder";
+const { ZoneId, ZonedDateTime } = jsjoda;
 
 const UpcomingEvents = ({}) => {
   const [upcomingEvents, setUpcomingEvents] = useState([]);
@@ -31,7 +31,6 @@ const UpcomingEvents = ({}) => {
     );
   }
 
-
   return (
     <div>
       <p className="lead">
@@ -42,11 +41,15 @@ const UpcomingEvents = ({}) => {
       </p>
       <table className="table">
         <tbody>
-          {upcomingEvents.slice(0, 5).map((event) => displayEventAsTableRow(event,ZoneId.of(timeZone)))}
+          {upcomingEvents
+            .slice(0, 5)
+            .map((event) => displayEventAsTableRow(event, ZoneId.of(timeZone)))}
         </tbody>
       </table>
     </div>
   );
 };
 
-render(<UpcomingEvents />, document.querySelector("#upcoming-events"));
+ReactDOM.createRoot(document.getElementById("upcoming-events")).render(
+  <UpcomingEvents />
+);

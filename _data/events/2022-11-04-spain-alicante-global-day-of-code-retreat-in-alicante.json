@@ -1,0 +1,39 @@
+{
+  "title": "Global Day of Code Retreat in Alicante",
+  "description": "Practice your programming skills and share your knowledge with other software artisans. ",
+  "format": "classic",
+  "spoken_language": "Spanish and English",
+  "url": "https://www.meetup.com/es-ES/agilealicante/events/289087517/",
+  "date": {
+    "start": "2022-11-04T09:00:00+01:00",
+    "end": "2022-11-04T17:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Ruben Anton",
+      "url": "https://twitter.com/rubocoptero"
+    },
+    {
+      "name": "Jorge Muria",
+      "url": "https://twitter.com/jmuria"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Linxview",
+      "url": "https://lynxview.es/"
+    },
+    {
+      "name": "Parque Científico de Alicante",
+      "url": "https://pca.ua.es/"
+    }
+  ],
+  "location": {
+    "city": "Alicante",
+    "country": "Spain",
+    "coordinates": {
+      "latitude": 38.343637,
+      "longitude": -0.488171
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Global Day of Coderetreat 2014 - Quito, Ecuador - ThoughtWorks",
+  "description": "Este año el Día Mundial para el Retiro de Programación estará nuevamente en la oficina deThoughtWorks (http://www.thoughtworks.com/) y contará con la colaboración del Buen Trip Hub (http://buentriphub.com/). \nAquí una reseña del retiro del año pasado http://www.thoughtworks.com/es/insights/blog/gdcr13-retrospectives \nRegístrate aquí http://info.thoughtworks.com/GDCR.html",
+  "url": "https://web.archive.org/http://coderetreat.org/events/global-day-of-coderetreat-2014-6",
+  "spoken_language": "",
+  "moderators": [{ "name": "Ivan Pazmino" }],
+  "location": {
+    "country": "Ecuador",
+    "city": "Quito",
+    "coordinates": { "latitude": -0.1806532, "longitude": -78.4678382 }
+  },
+  "date": {
+    "start": "2014-11-15T09:00:00-05:00",
+    "end": "2014-11-15T17:00:00-05:00"
+  }
+}

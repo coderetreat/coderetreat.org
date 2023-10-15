@@ -1,0 +1,30 @@
+{
+  "title": "Global day of code retreat on Webbeds office at Palma (Mallorca, Spain)",
+  "format": "classic",
+  "spoken_language": "Spanish or English",
+  "url": "https://www.meetup.com/es-ES/mallorca-software-crafters/events/289169779/",
+  "date": {
+    "start": "2022-11-05T09:00:00+01:00",
+    "end": "2022-11-05T18:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Adrià Freixas",
+      "url": "https://github.com/ambsenyestudi"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Webbeds",
+      "url": "https://www.webbeds.com/"
+    }
+  ],
+  "location": {
+    "city": "Palma",
+    "country": "Spain",
+    "coordinates": {
+      "latitude": 39.569582,
+      "longitude": 2.650074
+    }
+  }
+}

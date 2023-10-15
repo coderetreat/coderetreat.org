@@ -1,0 +1,58 @@
+{
+  "title": "GDCR22 Krakow",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://ti.to/software-crafters-krakow-events/global-day-of-coderetreat-2022",
+  "date": {
+    "start": "2022-11-05T08:30:00+01:00",
+    "end": "2022-11-05T17:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Alexander Sumiński (they/them)",
+      "url": "https://www.linkedin.com/in/ale-sum/"
+    },
+    {
+      "name": "Joanna Wójtowicz (she/her)",
+      "url": "https://www.linkedin.com/in/jo-wojtowicz/"
+    },
+    {
+      "name": "Małgorzata Nowak (she/her)",
+      "url": "https://www.linkedin.com/in/designaur/"
+    },
+    {
+      "name": "Ika Graboń (they/them)",
+      "url": "https://www.linkedin.com/in/ikagrabon/"
+    },
+    {
+      "name": "Riccardo Odone (he/him)",
+      "url": "https://www.linkedin.com/in/riccardoodone/"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Zendesk",
+      "url": "https://www.zendesk.com/"
+    },
+    {
+      "name": "Yolk Workspace",
+      "url": "https://yolkfolk.pl"
+    },
+    {
+      "name": "Sticker Mule",
+      "url": "https://mule.to/p3ee"
+    },
+    {
+      "name": "Kraków Enthusiasts – Expats community",
+      "url": "https://www.facebook.com/profile.php?id=100077124002924"
+    }
+  ],
+  "location": {
+    "city": "Kraków",
+    "country": "Poland",
+    "coordinates": {
+      "latitude": 50.061947,
+      "longitude": 19.936856
+    }
+  }
+}

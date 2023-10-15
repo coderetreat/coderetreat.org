@@ -1,0 +1,44 @@
+name: Build
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Setup
+      - uses: actions/checkout@v4
+      
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+      
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: ".nvmrc"
+          cache: 'npm'
+      - run: npm ci
+          
+      
+      - name: Prepare Test Data to be included in build
+        run: npm run cypress:seed
+      
+      - name: Build JavaScript
+        run: npm run build
+
+      - uses: cypress-io/github-action@v6.5.0 # use the explicit version number
+        with:
+          start: npm run serve
+          wait-on: "http://localhost:4000"
+          install: false
+      - uses: actions/upload-artifact@v3
+        if: failure()
+        with:
+          name: cypress-screenshots
+          path: cypress/screenshots
+
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: cypress-videos
+          path: cypress/videos

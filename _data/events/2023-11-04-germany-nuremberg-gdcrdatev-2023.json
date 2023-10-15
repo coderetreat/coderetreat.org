@@ -1,0 +1,36 @@
+{
+  "title": "GDCR@DATEV 2023",
+  "description": "Local event at the DATEV headquarters in Nuremberg/Germany",
+  "format": "classic",
+  "spoken_language": "Deutsch / English",
+  "url": "https://ti.to/gdcr-nuernberg/2023",
+  "code_of_conduct": "https://www.coderetreat.org/facilitators/hosting/#code-of-conduct",
+  "date": {
+    "start": "2023-11-04T08:30:00+01:00",
+    "end": "2023-11-04T17:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Andy Fischer",
+      "url": "https://www.linkedin.com/in/andreas-fischer-a44165100/"
+    },
+    {
+      "name": "Alexandre Soler Sanandres",
+      "url": "https://www.linkedin.com/in/soler-sanandres/"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "DATEV eG",
+      "url": "https://www.datev.de/"
+    }
+  ],
+  "location": {
+    "city": "Nuremberg",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 49.4534258324706,
+      "longitude": 11.04639483688939
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Global Day of Coderetreat Pittsburgh",
+  "description": "C&S will host GDCR for the tenth time, and it's been around for ten years! Enjoy a day of learning with our experienced facilitators.",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://www.meetup.com/pittsburgh-code-supply/events/296046384/",
+  "code_of_conduct": "https://codeandsupply.co/policies/conduct",
+  "date": {
+    "start": "2023-11-04T09:30:00-04:00",
+    "end": "2023-11-04T15:30:00-04:00"
+  },
+  "moderators": [
+    {
+      "name": "Colin Dean"
+    }
+  ],
+  "location": {
+    "city": "Pittsburgh",
+    "country": "United States",
+    "coordinates": {
+      "latitude": 40.459972,
+      "longitude": -79.930778
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "title": "Global Day Of Code Retreat - Max DS Edition",
+  "format": "classic",
+  "spoken_language": "French",
+  "url": "https://www.meetup.com/maxsessions/events/295775033/",
+  "date": {
+    "start": "2023-11-03T09:00:00+01:00",
+    "end": "2023-11-03T17:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Grégory Girondel",
+      "url": "https://twitter.com/greggirondel"
+    },
+    {
+      "name": "Gaël Salaün",
+      "url": "https://twitter.com/gsalaun1"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Max Digital Services",
+      "url": "https://maxds.fr/"
+    }
+  ],
+  "location": {
+    "city": "Rennes",
+    "country": "France",
+    "coordinates": {
+      "latitude": 48.1330869,
+      "longitude": -1.6860397
+    }
+  }
+}

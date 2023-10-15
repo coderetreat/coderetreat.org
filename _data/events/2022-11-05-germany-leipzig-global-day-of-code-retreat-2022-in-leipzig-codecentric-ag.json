@@ -1,0 +1,39 @@
+{
+  "title": "Global Day of Code Retreat 2022 in Leipzig @ codecentric AG",
+  "description": "In November we will join the worldwide Software Crafting community for the Global Day of Coderetreat.",
+  "format": "classic",
+  "spoken_language": "English, German",
+  "url": "https://www.meetup.com/de-DE/le-software-craft-community/events/289213002/",
+  "date": {
+    "start": "2022-11-05T09:00:00+01:00",
+    "end": "2022-11-05T17:30:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Andreas Gebhardt",
+      "url": "https://twitter.com/agebhar1"
+    },
+    {
+      "name": "Ferdiand Ade",
+      "url": "https://twitter.com/145ferdi"
+    },
+    {
+      "name": "Maik Toepfer",
+      "url": "https://twitter.com/maik_toepfer"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "codcentric AG",
+      "url": "https://www.codecentric.de/"
+    }
+  ],
+  "location": {
+    "city": "Leipzig",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 51.340632,
+      "longitude": 12.374733
+    }
+  }
+}

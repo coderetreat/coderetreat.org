@@ -1,8 +1,8 @@
-import { Fragment, render, h } from "preact";
-import { useState, useEffect, useLayoutEffect, useRef } from "preact/hooks";
-import * as qs from "qs";
 import classNames from "classnames";
-import { OPERATING_SYSTEMS, LANGUAGES } from "./guides/metadata";
+import * as qs from "qs";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import ReactDOM from "react-dom/client";
+import { LANGUAGES, OPERATING_SYSTEMS } from "./guides/metadata";
 
 const SelectionButton = ({ image, text, className, ...buttonProps }) => (
   <button
@@ -12,7 +12,7 @@ const SelectionButton = ({ image, text, className, ...buttonProps }) => (
     )}
     {...buttonProps}
   >
-    <img class="m-2" src={image} style={{ height: 52, width: 52 }} />
+    <img className="m-2" src={image} style={{ height: 52, width: 52 }} />
     <span className="d-block text-center">{text}</span>
   </button>
 );
@@ -65,7 +65,7 @@ const GuideSelector = ({
 
   return (
     <div className="">
-      <div class="d-block">
+      <div className="d-block">
         <h4>Operating System</h4>
         {Object.entries(OPERATING_SYSTEMS).map(([key, os]) => (
           <SelectionButton
@@ -81,7 +81,7 @@ const GuideSelector = ({
           />
         ))}
       </div>
-      <div class="mt-3">
+      <div className="mt-3">
         <h4>Programming Language</h4>
         {Object.entries(LANGUAGES).map(([key, language]) => (
           <SelectionButton
@@ -154,17 +154,17 @@ const Resources = ({ resources }) => (
 );
 
 const Video = ({ video }) => (
-  <Fragment>
+  <>
     <video
       style={{ width: "100%" }}
       controls
-      class="mb-2 drop-shadow-small"
+      className="mb-2 drop-shadow-small"
       preload="none"
       poster={video.poster}
       src={video.src}
     ></video>
-    <span class="text-center d-block small">{video.description}</span>
-  </Fragment>
+    <span className="text-center d-block small">{video.description}</span>
+  </>
 );
 
 const Guide = ({ guide, steps, containerRef }) => {
@@ -173,7 +173,7 @@ const Guide = ({ guide, steps, containerRef }) => {
       <div className="px-3 px-lg-5 py-5">
         <h1 className="display-4">{guide.name}</h1>
         <div className="toc d-inline-block p-md-3 my-3">
-          <h4 class="h4">Table of Contents</h4>
+          <h4 className="h4">Table of Contents</h4>
           <ol className="section-nav">
             {steps.map((s) => (
               <li key={s.slug}>
@@ -183,7 +183,7 @@ const Guide = ({ guide, steps, containerRef }) => {
           </ol>
         </div>
       </div>
-      <section class="content setup-guide">
+      <section className="content setup-guide">
         {steps.map((s) => (
           <div className="px-3 px-lg-5 py-5">
             <h2 className="h1 mt-0 mb-5">
@@ -240,12 +240,11 @@ const Guides = ({ setupSteps, availableGuides }) => {
     updateUrlFromOperatingSystemAndLanguage(selectedGuideId);
   }, [selectedGuideId]);
 
+  const guideRef = useRef(null);
   useLayoutEffect(() => {
     if (guideRef.current === null) return;
     guideRef.current.scrollIntoView({ behavior: "smooth" });
   }, [guideRef, selectedGuideId]);
-
-  const guideRef = useRef(null);
 
   const selectGuideAndScrollIntoView = (guideId) => {
     setIsManualSelection(true);
@@ -253,10 +252,10 @@ const Guides = ({ setupSteps, availableGuides }) => {
   };
 
   return (
-    <div class="px-0 my-5 guide">
-      <div class="px-3 px-lg-5">
-        <h1 class="display-1 display-4-md">Setup Guides</h1>
-        <p class="lead">
+    <div className="px-0 my-5 guide">
+      <div className="px-3 px-lg-5">
+        <h1 className="display-1 display-4-md">Setup Guides</h1>
+        <p className="lead">
           Setting up a modern development environment is difficult. Check out
           our guides on how to get your device ready for a coderetreat!
         </p>
@@ -294,10 +293,9 @@ const Guides = ({ setupSteps, availableGuides }) => {
   );
 };
 
-(window || global).initializeGuide = ({ setupSteps, availableGuides }) => {
-  render(
-    <Guides setupSteps={setupSteps} availableGuides={availableGuides} />,
-    document.querySelector("#guides")
+const initializeGuide = ({ setupSteps, availableGuides }) => {
+  ReactDOM.createRoot(document.getElementById("guides")).render(
+    <Guides setupSteps={setupSteps} availableGuides={availableGuides} />
   );
 
   window.addEventListener("DOMContentLoaded", () => {
@@ -311,3 +309,6 @@ const Guides = ({ setupSteps, availableGuides }) => {
     }, 100);
   });
 };
+(window || global).initializeGuide = initializeGuide;
+
+export { initializeGuide };

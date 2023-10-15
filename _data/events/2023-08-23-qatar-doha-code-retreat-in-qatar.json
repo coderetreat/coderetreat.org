@@ -1,0 +1,29 @@
+{
+  "title": "Code Retreat in Qatar",
+  "description": "Code Retreat in Qatar ",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://www.meetup.com/qatar-software-design-meetup-group/events/294497146/",
+  "date": {
+    "start": "2023-08-23T09:00:00+03:00",
+    "end": "2023-08-23T17:00:00+03:00"
+  },
+  "moderators": [
+    {
+      "name": "Houssem Gasmi"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Houssem Gasmi"
+    }
+  ],
+  "location": {
+    "city": "Doha",
+    "country": "Qatar",
+    "coordinates": {
+      "latitude": 25.2856329,
+      "longitude": 51.5264162
+    }
+  }
+}
