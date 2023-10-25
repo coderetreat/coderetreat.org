@@ -1,0 +1,32 @@
+{
+  "title": "EPAM GDCR - 2023 (Online)",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://wearecommunity.io/events/BLOwVDf5dZ",
+  "date": {
+    "start": "2023-11-03T10:00:00+05:30",
+    "end": "2023-11-03T16:00:00+05:30"
+  },
+  "moderators": [
+    {
+      "name": "Phani Vupala"
+    },
+    {
+      "name": "Raghavendra Chapa"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "EPAM Systems India",
+      "url": "https://www.epam.com/"
+    }
+  ],
+  "location": {
+    "city": "Pune",
+    "country": "India",
+    "coordinates": {
+      "latitude": 18.521428,
+      "longitude": 73.854454
+    }
+  }
+}
