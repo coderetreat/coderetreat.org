@@ -1,0 +1,19 @@
+{
+  "title":"Global Day Coderetreat 2023 - Codurance, Santander Digital Services and Santander Corporate & Investment Banking, Málaga, Spain",
+  "description":"Coderetreat has an established, time-tested format that is optimised for focused practice. We will be working on implementing Conway's Game Of Life in 45-minute sessions. In each one, you'll pair program in whichever language you like, using whichever technologies you and your pair prefer. The day will start at 9:00am and finish by 17:00 pm. Lunch will be provided on the day. It's an early start, so sleep well the night before to help get those brain juices flowing. Remember to bring your laptop and be ready to have fun! :)",
+  "format":"classic",
+  "spoken_language":"Spanish, English",
+  "url":"https://www.eventbrite.co.uk/e/global-day-of-coderetreat-malaga-tickets-717926315937?aff=oddtdtcreator",
+  "date":{
+    "start":"2023-11-04T09:00:00+01:00",
+    "end":"2023-11-04T17:00:00+01:00"
+  },
+  "location": {
+    "city": "Málaga",
+    "country": "Spain",
+    "coordinates": {
+      "latitude": 36.720476,
+      "longitude": -4.412525
+    }
+  }
+}
