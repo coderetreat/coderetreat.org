@@ -1,0 +1,30 @@
+{
+  "title": "Coderetreat Bucharest 2023",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://www.meetup.com/softwarecrafters/events/296988871/",
+  "date": {
+    "start": "2023-11-15T18:00:00+02:00",
+    "end": "2023-11-15T21:00:00+02:00"
+  },
+  "moderators": [
+    {
+      "name": "Adelina Stanciu",
+      "url": "https://github.com/adelinast"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Finastra",
+      "url": "https://www.finastra.com/"
+    }
+  ],
+  "location": {
+    "city": "Bucharest",
+    "country": "Romania",
+    "coordinates": {
+      "latitude": 44.4361414,
+      "longitude": 26.1027202
+    }
+  }
+}
