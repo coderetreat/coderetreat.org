@@ -1,6 +1,6 @@
 {
-  "title": "Global Day of Code Retreat 2023 - Software Crafters, Barcelona, Spain",
-  "description": "¿Quieres practicar en buena compañía y aprender testing, TDD, pair-programming y conceptos de diseño de software? Trae ganas de aprender, tu ordenador,  boli y papel,  y practica a través de ejercicios en un entorno seguro y lejos de la presión de tener que hacer las cosas con prisas",
+  "title": "Global Day of Code Retreat 2023 @Adobe Commerce - Software Crafters, Barcelona, Spain",
+  "description": "¿Quieres practicar en buena compañía y aprender testing, TDD, pair-programming y conceptos de diseño de software? Trae ganas de aprender, tu ordenador, boli y papel, y practica a través de ejercicios en un entorno seguro y lejos de la presión de tener que hacer las cosas con prisas",
   "format": "classic",
   "spoken_language": "Spanish, English",
   "url": "https://www.meetup.com/software-crafters-barcelona/events/296831867/",
@@ -17,6 +17,10 @@
     {
       "name": "Ángel Rojo",
       "url": "https://twitter.com/rojo_angel"
+    },
+    {
+      "name": "Darío Scattolini",
+      "url": "https://www.linkedin.com/in/dario-scattolini/"
     },
     {
       "name": "Mónica Verdi",
