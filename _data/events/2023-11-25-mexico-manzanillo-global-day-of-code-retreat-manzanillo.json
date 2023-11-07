@@ -1,0 +1,43 @@
+{
+  "title": "Code Retreat Playas On Tech Community",
+  "description": "We are a technology community that has been organizing monthly events since 2019. Our gatherings focus on innovative, software-related topics and involve local professionals, students, and enthusiasts.",
+  "format": "classic",
+  "spoken_language": "Spanish",
+  "url": "https://www.eventbrite.com.mx/e/coderetreat-2023-by-playasontech-tickets-750865798817?fbclid=IwAR2WJWP3MP7XgTGvLPWqdDkCy7BZ51GCItVBgocz3x_EyDSZPBq-1GhUuSw",
+  "date": {
+    "start": "2023-11-25T16:00:00+01:00",
+    "end": "2023-11-25T21:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Kevin Perez",
+      "url": "https://github.com/kevinnio"
+    },
+    {
+      "name": "Juan Aguilar",
+      "url": "https://github.com/juanequex"
+    },
+    {
+      "name":"Frank Zenteno",
+      "url":"https://www.facebook.com/sinahi.zenteno"
+    }
+  ],
+  "sponsors": [
+    {
+      "name":"MagmaLabs",
+      "url":"https://www.magmalabs.io"
+    },
+    {
+      "name":"Encora",
+      "url":"https://www.encora.com/es/"
+    }
+  ],
+  "location": {
+    "city": "Manzanillo",
+    "country": "Mexico",
+    "coordinates":{
+      "latitude": 19.103670078555748,
+      "longitude": -104.33194129036006
+    }
+  }
+}
