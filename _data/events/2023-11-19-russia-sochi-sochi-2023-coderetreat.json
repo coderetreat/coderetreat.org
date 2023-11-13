@@ -1,0 +1,24 @@
+{
+  "title": "Sochi 2023 Coderetreat",
+  "format": "classic",
+  "spoken_language": "Russian",
+  "url": "https://t.me/it_sochi",
+  "date": {
+    "start": "2023-11-19T13:00:00+03:00",
+    "end": "2023-11-19T18:00:00+03:00"
+  },
+  "moderators": [
+    {
+      "name": "Artur Yaskevich",
+      "url": "https://github.com/ajdevy"
+    }
+  ],
+  "location": {
+    "city": "Sochi",
+    "country": "Russia",
+    "coordinates": {
+      "latitude": 43.5806758,
+      "longitude": 39.7208807
+    }
+  }
+}
