@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "The coderetreat.org website - assets and js",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "6.5.0",
+    "@fortawesome/fontawesome-free": "6.5.1",
     "@jitsi/react-sdk": "1.4.0",
     "@js-joda/core": "5.6.1",
     "@js-joda/locale_en": "4.8.11",
