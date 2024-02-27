@@ -34,7 +34,7 @@
     "@testing-library/react": "14.2.1",
     "@types/jest": "29.5.12",
     "@types/mapbox-gl": "^3.0.0",
-    "@types/qs": "6.9.11",
+    "@types/qs": "6.9.12",
     "@types/seedrandom": "^3.0.6",
     "@vitejs/plugin-react": "^4.1.0",
     "ajv-formats": "2.1.1",
