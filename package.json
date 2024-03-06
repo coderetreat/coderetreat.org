@@ -52,7 +52,7 @@
     "punycode": "^2.0.0",
     "querystring-es3": "0.2.1",
     "ts-jest": "29.1.2",
-    "typescript": "5.3.3",
+    "typescript": "5.4.2",
     "vite": "^5.0.0",
     "wait-on": "7.2.0",
     "xml-js": "1.6.11"
