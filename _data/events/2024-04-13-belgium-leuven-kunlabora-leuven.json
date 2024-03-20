@@ -1,0 +1,35 @@
+{
+  "title": "CodeRetreat Kunlabora Leuven",
+  "description": "Improve your coding skills through deliberate practice with peers",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://www.meetup.com/socratesbe/events/299357015/",
+  "date": {
+    "start": "2024-04-13T08:30:00+01:00",
+    "end": "2024-04-13T17:30:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Vincent Verhoeven",
+      "url": "https://twitter.com/verhoevenv"
+    },
+    {
+      "name": "Tim Schraepen",
+      "url": "https://twitter.com/timschraepen"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Kunlabora",
+      "url": "https://kunlabora.be"
+    }
+  ],
+  "location": {
+    "city": "Leuven",
+    "country": "Belgium",
+    "coordinates": {
+      "latitude": 50.88338494327546,
+      "longitude": 4.7131726984869085
+    }
+  }
+}
