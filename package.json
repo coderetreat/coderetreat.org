@@ -37,7 +37,7 @@
     "@types/qs": "6.9.14",
     "@types/seedrandom": "^3.0.6",
     "@vitejs/plugin-react": "^4.1.0",
-    "ajv-formats": "2.1.1",
+    "ajv-formats": "3.0.1",
     "babel-jest": "29.7.0",
     "benchmark": "2.1.4",
     "buffer": "6.0.3",
