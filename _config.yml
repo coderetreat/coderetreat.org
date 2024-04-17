@@ -58,9 +58,6 @@ permalink: pretty
 collections:
   - setup_steps
 
-disqus:
-  shortname: coderetreat
-
 toc:
   min_level: 1
   max_level: 2
