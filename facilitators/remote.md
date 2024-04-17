@@ -18,7 +18,6 @@ First and foremost, you might find that the prospect of sitting in front of your
 <div class="advice" markdown="1">
 Not everything about a coderetreat needs to happen synchronously! You can help people settling in and getting to know each other by inviting them to the chat channel (e.g. Discord/Slack) for the event a few days before the event.
 
-This is also an excellent occasion to start sharing the [Setup Guides]({% link getting-started/guides.html %}) and to prompt them with a warm-up question!
 </div>
 
 ## Cater to the attention span

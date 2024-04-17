@@ -55,9 +55,6 @@ plugins:
 
 permalink: pretty
 
-collections:
-  - setup_steps
-
 toc:
   min_level: 1
   max_level: 2
