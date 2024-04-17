@@ -1,19 +1,19 @@
 ---
 layout: guide
-title: The Workshop
+title: About Coderetreat
 audience: participants
 toc: true
 description: |
   Coderetreat is a pattern for deliberate practice of software development. We create a safe-to-fail environment free from the pressures of software delivery. Participants learn through working with each other, developing their habits for Test-Driven Development, XP practices, new languages, communication skills, and mentoring.
 ---
 
-## Why hold a Coderetreat?
-Software developers employ a broad ranges of skills to build products. Many of these techniques require rigorous practice in order to achieve proficiency.  Unfortunately, building products does not provide sufficient learning experience by itself, due to the incentives and risks implicit in the constraints of business.  Developers need dedicated practice opportunities to acquire and new skills and hone their habits. 
-
 ## What is a Coderetreat?
 Coderetreat is a full-day event for practicing software development.  Away from the pressures of 'getting things done', developers focus on and develop specific aspects of **_how_** they build code to explore good software development techniques.  Developers work _together_ to build code and share their experiences.  Coderetreat uses a software [problem](#what-is-game-of-life) with just enough complexity to create rich learning without overburdening the developers. By repeatedly building an implementation, adding additional challenges, and changing work partners frequently, Coderetreat is a framework for continuous learning how to build software **better**. 
 
 The pattern has been adopted worldwide, such that anyone joining a Coderetreat can have expectations about how the day will progress.
+
+## Why attend a Coderetreat?
+Software developers employ a broad ranges of skills to build products. Many of these techniques require rigorous practice in order to achieve proficiency.  Unfortunately, building products does not provide sufficient learning experience by itself, due to the incentives and risks implicit in the constraints of business.  Developers need dedicated practice opportunities to acquire and new skills and hone their habits. 
 
 ## Learning Goals
 * Have fun!

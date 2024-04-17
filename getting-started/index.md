@@ -23,7 +23,7 @@ A coderetreat is a workshop in Extreme Programming practices. We focus on *Pair 
 
 The workshop is usually given as a full-day event and is generally free to attend, with lunch and snacks covered through sponsorships (this might vary between local events!).
 
-Check out [our workshop guide]({% link the-workshop/index.md %}) to find out everything about the format!
+Check out [our workshop guide]({% link about/index.md %}) to find out everything about the format!
 
 
 ## What to prepare
