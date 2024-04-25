@@ -1,0 +1,12 @@
+{
+  "name": "Thoughtworks Köln",
+  "location": {
+    "city": "Cologne",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 50.9480726,
+      "longitude": 6.9066162
+    }
+  },
+  "url": "https://meetup.com/thoughtworks_koeln"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "The Bucharest Agile Software Meetup Group",
+  "location": {
+    "country": "Romania",
+    "city": "București",
+    "coordinates": {
+      "latitude": 44.4545737,
+      "longitude": 26.0815525
+    }
+  },
+  "url": "https://meetup.com/the-bucharest-agile-software-meetup-group"
+}

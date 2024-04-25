@@ -1,0 +1,12 @@
+{
+  "name": "Software Crafters",
+  "location": {
+    "city": "Bucharest",
+    "country": "Romania",
+    "coordinates": {
+      "latitude": 44.4361414,
+      "longitude": 26.1027202
+    }
+  },
+  "url": "https://meetup.com/softwarecrafters"
+}

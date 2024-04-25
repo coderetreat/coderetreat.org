@@ -1,0 +1,12 @@
+{
+  "name": "Gran Canaria Developers Community",
+  "location": {
+    "city": "Las Palmas de Gran Canaria",
+    "country": "Spain",
+    "coordinates": {
+      "latitude": 28.110869,
+      "longitude": -15.417581
+    }
+  },
+  "url": "https://meetup.com/es/gran-canaria-developer-community"
+}

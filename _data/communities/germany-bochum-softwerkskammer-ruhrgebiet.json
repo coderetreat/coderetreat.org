@@ -1,0 +1,12 @@
+{
+  "name": "Softwerkskammer Ruhrgebiet",
+  "location": {
+    "country": "Germany",
+    "city": "Bochum",
+    "coordinates": {
+      "latitude": 51.4451438,
+      "longitude": 7.2565569
+    }
+  },
+  "url": "https://meetup.com/softwerkskammer-ruhrgebiet"
+}

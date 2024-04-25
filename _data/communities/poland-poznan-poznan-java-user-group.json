@@ -1,0 +1,12 @@
+{
+  "name": "Poznań Java User Group",
+  "location": {
+    "country": "Poland",
+    "city": "Poznań",
+    "coordinates": {
+      "latitude": 52.403597,
+      "longitude": 16.9136073
+    }
+  },
+  "url": "https://meetup.com/poznan-java-user-group"
+}

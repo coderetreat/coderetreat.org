@@ -1,0 +1,12 @@
+{
+  "name": "Wallapop Engineering",
+  "location": {
+    "country": "Spain",
+    "city": "Barceloona",
+    "coordinates": {
+      "latitude": 41.405919,
+      "longitude": 2.186489
+    }
+  },
+  "url": "https://meetup.com/wallapop-engineering"
+}

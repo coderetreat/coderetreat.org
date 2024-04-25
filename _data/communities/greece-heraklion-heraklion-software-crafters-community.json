@@ -1,0 +1,12 @@
+{
+  "name": "Heraklion Software Crafters Community",
+  "location": {
+    "city": "Heraklion",
+    "country": "Greece",
+    "coordinates": {
+      "latitude": 35.3220114,
+      "longitude": 25.1000512
+    }
+  },
+  "url": "https://meetup.com/heraklion-software-crafters"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Softwerkskammer Düsseldorf",
+  "location": {
+    "country": "Germany",
+    "city": "Düsseldorf",
+    "coordinates": {
+      "latitude": 51.27593,
+      "longitude": 6.770758
+    }
+  },
+  "url": "https://meetup.com/softwerkskammer-dusseldorf"
+}
