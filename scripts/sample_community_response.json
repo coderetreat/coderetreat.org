@@ -1,0 +1,75 @@
+{
+  "category": {
+    "id": 34,
+    "name": "Tech",
+    "shortname": "tech",
+    "sort_name": "Tech"
+  },
+  "city": "Johannesburg",
+  "country": "ZA",
+  "created": 1349429800000,
+  "description": "<p>Coderetreat is a day-long, intensive practice event, focusing on the fundamentals of software development and design.</p> \n<p>By providing developers the opportunity to take part in focused practice, away from the pressures of 'getting things done', the coderetreat format has proven itself to be a highly effective means of skill improvement.</p> \n<p>Practicing the basic principles of modular and object-oriented design, developers can improve their ability to write code that minimizes the cost of change over time.</p>",
+  "group_photo": {
+    "base_url": "https://secure.meetupstatic.com",
+    "highres_link": "https://secure.meetupstatic.com/photos/event/2/7/d/a/highres_183310202.jpeg",
+    "id": 183310202,
+    "photo_link": "https://secure.meetupstatic.com/photos/event/2/7/d/a/600_183310202.jpeg",
+    "thumb_link": "https://secure.meetupstatic.com/photos/event/2/7/d/a/thumb_183310202.jpeg",
+    "type": "event"
+  },
+  "id": 5251172,
+  "join_mode": "open",
+  "key_photo": {
+    "base_url": "https://secure.meetupstatic.com",
+    "highres_link": "https://secure.meetupstatic.com/photos/event/5/f/0/c/highres_444144332.jpeg",
+    "id": 444144332,
+    "photo_link": "https://secure.meetupstatic.com/photos/event/5/f/0/c/600_444144332.jpeg",
+    "thumb_link": "https://secure.meetupstatic.com/photos/event/5/f/0/c/thumb_444144332.jpeg",
+    "type": "event"
+  },
+  "lang": "en_US",
+  "lat": -26.19,
+  "link": "https://www.meetup.com/coderetreat/",
+  "localized_country_name": "South Africa",
+  "localized_location": "Johannesburg, South Africa",
+  "lon": 28.04,
+  "member_pay_fee": false,
+  "members": 702,
+  "meta_category": {
+    "category_ids": [34],
+    "id": 292,
+    "name": "Tech",
+    "photo": {
+      "base_url": "https://secure.meetupstatic.com",
+      "highres_link": "https://secure.meetupstatic.com/photos/event/2/e/a/d/highres_450131949.jpeg",
+      "id": 450131949,
+      "photo_link": "https://secure.meetupstatic.com/photos/event/2/e/a/d/600_450131949.jpeg",
+      "thumb_link": "https://secure.meetupstatic.com/photos/event/2/e/a/d/thumb_450131949.jpeg",
+      "type": "event"
+    },
+    "shortname": "tech",
+    "sort_name": "Tech"
+  },
+  "name": "Coderetreat",
+  "organizer": {
+    "bio": "",
+    "id": 13538549,
+    "name": "David C.",
+    "photo": {
+      "base_url": "https://secure.meetupstatic.com",
+      "id": 11456116,
+      "photo_link": "https://secure.meetupstatic.com/photos/member/d/b/3/4/member_11456116.jpeg",
+      "thumb_link": "https://secure.meetupstatic.com/photos/member/d/b/3/4/thumb_11456116.jpeg",
+      "type": "member"
+    }
+  },
+  "region2": "",
+  "state": "",
+  "status": "active",
+  "timezone": "Africa/Johannesburg",
+  "untranslated_city": "Johannesburg",
+  "urlname": "coderetreat",
+  "visibility": "public",
+  "wepay_fee_deprecated": true,
+  "who": "Members"
+}
