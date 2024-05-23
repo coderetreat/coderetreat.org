@@ -2,16 +2,20 @@ import React, { useEffect, useRef, useState } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import "./Map.scss";
-import { Event, EventWithId, RealLocation } from "../events/EventType";
+import { EventWithId, eventHasPhysicalLocation, eventToGeoJSONFeature} from "../events/EventType";
+import { CommunityWithId, communityHasPhysicalLocation, communityToGeoJSONFeature } from "../events/CommunityType";
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoicnJhZGN6ZXdza2kiLCJhIjoiY2o3OWg4ZHV0MDFrdjM3b2FvcXFqdmtidiJ9.oULZ0ljtFZqMHFDbyvkwVQ";
 
+
 export const Map = ({
   events,
+  communities,
   onClickOnEvent,
 }: {
   events: EventWithId[];
+  communities: CommunityWithId[];
   onClickOnEvent?: (String) => void;
 }) => {
   const mapRef = useRef(null);
@@ -41,6 +45,33 @@ export const Map = ({
     );
 
     map.current.on("load", ({ target }) => {
+      const communityDataSource: mapboxgl.GeoJSONSourceRaw = {
+        type: "geojson",
+        data: {
+          type: "FeatureCollection",
+          features: [],
+        },
+      };
+      target.addSource("communities", communityDataSource);
+      target.addLayer({
+        id: "communities",
+        type: "circle",
+        source: "communities",
+        paint: {
+          "circle-color": "#EEA62B",
+          "circle-radius": 5,
+        },
+      });
+      target.addLayer({
+        id: "communities-name",
+        type: "symbol",
+        source: "communities",
+        layout: {
+          "text-field": ["get", "name"],
+          "text-size": 12,
+        },
+      });
+
       const eventDataSource: mapboxgl.GeoJSONSourceRaw = {
         type: "geojson",
         data: {
@@ -116,39 +147,29 @@ export const Map = ({
   console.log(events);
   useEffect(() => {
     if (!map.current || !mapLoaded) return;
-    const newData: mapboxgl.GeoJSONSourceRaw["data"] = {
+    const eventData: mapboxgl.GeoJSONSourceRaw["data"] = {
       type: "FeatureCollection",
       features: events
-        .filter(
-          (
-            event
-          ): event is EventWithId & {
-            location: Required<RealLocation>;
-          } =>
-            event.location !== "virtual" &&
-            typeof event.location?.coordinates === "object"
-        )
-        .map((event) => ({
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [
-              event.location.coordinates.longitude,
-              event.location.coordinates.latitude,
-            ],
-          },
-          properties: {
-            title: event.title,
-            id: event.id,
-            city: event.location.city,
-            country: event.location.country,
-          },
-        })),
+        .filter(eventHasPhysicalLocation)
+        .map(eventToGeoJSONFeature),
     };
     (map.current.getSource("events") as mapboxgl.GeoJSONSource).setData(
-      newData
+      eventData
     );
   }, [events, map, mapLoaded]);
+
+  useEffect(() => {
+    if (!map.current || !mapLoaded) return;
+    const communityData: mapboxgl.GeoJSONSourceRaw["data"] = {
+      type: "FeatureCollection",
+      features: communities
+        .filter(communityHasPhysicalLocation)
+        .map(communityToGeoJSONFeature),
+    };
+    (map.current.getSource("communities") as mapboxgl.GeoJSONSource).setData(
+      communityData
+    );
+  }, [communities, map, mapLoaded]);
 
   return (
     <div className="map-container border">

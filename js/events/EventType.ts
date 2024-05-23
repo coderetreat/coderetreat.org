@@ -96,3 +96,27 @@ export type Sponsor = {
 }
 
 export type EventWithId = Event & { id: string };
+
+export const eventHasPhysicalLocation = (
+    event: EventWithId
+  ): event is EventWithId & {
+    location: Required<RealLocation>;
+  } => event.location !== "virtual" &&
+    typeof event.location?.coordinates === "object";
+  
+export const eventToGeoJSONFeature = (event: Event & { id: string; } & { location: Required<RealLocation>; }): GeoJSON.Feature => ({
+    type: "Feature",
+    geometry: {
+      type: "Point",
+      coordinates: [
+        event.location.coordinates.longitude,
+        event.location.coordinates.latitude,
+      ],
+    },
+    properties: {
+      title: event.title,
+      id: event.id,
+      city: event.location.city,
+      country: event.location.country,
+    },
+  });
