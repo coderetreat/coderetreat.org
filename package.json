@@ -9,7 +9,7 @@
     "@js-joda/locale_en": "4.11.0",
     "@js-joda/timezone": "2.21.0",
     "abab": "2.0.6",
-    "ajv": "8.14.0",
+    "ajv": "8.15.0",
     "bootstrap": "4.6.2",
     "classnames": "2.5.1",
     "glob": "10.4.1",
