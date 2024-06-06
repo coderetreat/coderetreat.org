@@ -4,10 +4,10 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import "./Map.scss";
 import { EventWithId, eventHasPhysicalLocation, eventToGeoJSONFeature} from "../events/EventType";
 import { CommunityWithId, communityHasPhysicalLocation, communityToGeoJSONFeature } from "../events/CommunityType";
+import { Community } from "./Icons";
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoicnJhZGN6ZXdza2kiLCJhIjoiY2o3OWg4ZHV0MDFrdjM3b2FvcXFqdmtidiJ9.oULZ0ljtFZqMHFDbyvkwVQ";
-
 
 export const Map = ({
   events,
