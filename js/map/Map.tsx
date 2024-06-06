@@ -102,6 +102,33 @@ export const Map = ({
         },
       });
 
+      target.on("click", ["communities", "communities-title"], (e) => {
+        // Copy coordinates array.
+        const feature = e.features?.[0];
+        if (!feature) return;
+
+        const div = document.createElement("div");
+        div.innerHTML = `
+        <h4>${feature.properties!.name}</h4>`;
+
+        const link = document.createElement("a");
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          onClickOnEvent?.(feature.properties!.id);
+          popup?.remove();
+        });
+        link.innerText = "View Community";
+        link.href = feature.properties!.url;
+        div.appendChild(link);
+
+        const popup = new mapboxgl.Popup()
+          .setLngLat(
+            (feature.geometry as GeoJSON.Point).coordinates as [number, number]
+          )
+          .setDOMContent(div)
+          .addTo(target);
+      });
+
       target.on("click", ["events", "events-title"], (e) => {
         // Copy coordinates array.
         const feature = e.features?.[0];
@@ -130,11 +157,11 @@ export const Map = ({
           .addTo(target);
       });
 
-      target.on("mouseenter", "events", () => {
+      target.on("mouseenter", ["events", "communities"], () => {
         target.getCanvas().style.cursor = "pointer";
       });
 
-      target.on("mouseleave", "events", () => {
+      target.on("mouseleave", ["events", "communities"], () => {
         target.getCanvas().style.cursor = "";
       });
 

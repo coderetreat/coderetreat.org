@@ -55,7 +55,6 @@ export const communityToGeoJSONFeature = (community: Community & { id: string; }
     properties: {
       name: community.name,
       id: community.id,
-      city: community.location.city,
-      country: community.location.country,
+      url: community.url
     },
   });
