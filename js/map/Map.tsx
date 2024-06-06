@@ -27,8 +27,8 @@ export const Map = ({
       dragRotate: false,
       container: mapRef.current!, // container element id
       style: "mapbox://styles/mapbox/light-v10",
-      center: [Math.random() * 360 - 180, 40.7128], // initial map center in [lon, lat]
-      zoom: 0,
+      center: [Math.random() * 360 - 180, 30], // initial map center in [lon, lat]
+      zoom: 1.15,
     });
 
     map.current.addControl(
