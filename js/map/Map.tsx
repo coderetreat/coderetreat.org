@@ -9,6 +9,7 @@ import { Community } from "./Icons";
 mapboxgl.accessToken =
   "pk.eyJ1IjoicnJhZGN6ZXdza2kiLCJhIjoiY2o3OWg4ZHV0MDFrdjM3b2FvcXFqdmtidiJ9.oULZ0ljtFZqMHFDbyvkwVQ";
 
+
 export const Map = ({
   events,
   communities,
@@ -44,7 +45,8 @@ export const Map = ({
       })
     );
 
-    map.current.on("load", ({ target }) => {
+    map.current.on("load", async ({ target }) => {
+      target.addImage("community-icon", await Community)
       const communityDataSource: mapboxgl.GeoJSONSourceRaw = {
         type: "geojson",
         data: {
@@ -55,12 +57,13 @@ export const Map = ({
       target.addSource("communities", communityDataSource);
       target.addLayer({
         id: "communities",
-        type: "circle",
+        type: "symbol",
         source: "communities",
-        paint: {
-          "circle-color": "#EEA62B",
-          "circle-radius": 5,
-        },
+        layout: {
+          "icon-image": "community-icon",
+          "icon-size": ['interpolate', ['linear'], ['zoom'], 0, 0.05, 5, 0.5],     
+          "icon-allow-overlap" : true
+        }
       });
       target.addLayer({
         id: "communities-name",
