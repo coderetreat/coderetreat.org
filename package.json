@@ -7,7 +7,7 @@
     "@jitsi/react-sdk": "1.4.0",
     "@js-joda/core": "5.6.3",
     "@js-joda/locale_en": "4.14.0",
-    "@js-joda/timezone": "2.21.0",
+    "@js-joda/timezone": "2.21.1",
     "abab": "2.0.6",
     "ajv": "8.16.0",
     "bootstrap": "4.6.2",
