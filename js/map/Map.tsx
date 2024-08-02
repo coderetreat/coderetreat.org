@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import "./Map.scss";
-import { EventWithId, eventHasPhysicalLocation, eventToGeoJSONFeature} from "../events/EventType";
+import { EventWithId, eventHasPhysicalLocation, eventToGeoJSONFeature } from "../events/EventType";
 import { CommunityWithId, communityHasPhysicalLocation, communityToGeoJSONFeature } from "../events/CommunityType";
 import { Community } from "./Icons";
 
@@ -61,8 +61,8 @@ export const Map = ({
         source: "communities",
         layout: {
           "icon-image": "community-icon",
-          "icon-size": ['interpolate', ['linear'], ['zoom'], 0, 0.05, 5, 0.5],     
-          "icon-allow-overlap" : true
+          "icon-size": ['interpolate', ['linear'], ['zoom'], 0, 0.05, 5, 0.5],
+          "icon-allow-overlap": true
         }
       });
       target.addLayer({
@@ -112,11 +112,6 @@ export const Map = ({
         <h4>${feature.properties!.name}</h4>`;
 
         const link = document.createElement("a");
-        link.addEventListener("click", (e) => {
-          e.preventDefault();
-          onClickOnEvent?.(feature.properties!.id);
-          popup?.remove();
-        });
         link.innerText = "View Community";
         link.href = feature.properties!.url;
         div.appendChild(link);
