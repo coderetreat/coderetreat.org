@@ -12,3 +12,4 @@ _data/podcast.*.parcel-cache
 _data/events/TEST_EVENT.json
 cypress/videos/
 cypress/screenshots/
+.DS_Store
