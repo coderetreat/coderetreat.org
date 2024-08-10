@@ -1,0 +1,30 @@
+{
+  "title": "Global Day of Code Retreat - Charlotte",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://www.eventbookings.com/b/event/global-day-of-code-retreat-charlotte",
+  "date": {
+    "start": "2024-11-09T08:30:00-05:00",
+    "end": "2024-11-09T17:00:00-05:00"
+  },
+  "moderators": [
+    {
+      "name": "Cameron Presley",
+      "url": "https://blog.thesoftwarementor.com"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Lean TECHniques",
+      "url": "https://leantechniques.com"
+    }
+  ],
+  "location": {
+    "city": "Cornelius",
+    "country": "United States",
+    "coordinates": {
+      "latitude": 35.44868266791054,
+      "longitude": -80.89079829283487
+    }
+  }
+}
