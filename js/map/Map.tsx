@@ -142,7 +142,7 @@ export const Map = ({
           popup?.remove();
         });
         link.innerText = "View Event";
-        link.href = "";
+        link.href = feature.properties?.url ?? "";
         div.appendChild(link);
 
         const popup = new mapboxgl.Popup()
@@ -170,7 +170,6 @@ export const Map = ({
     };
   }, [mapRef]);
 
-  console.log(events);
   useEffect(() => {
     if (!map.current || !mapLoaded) return;
     const eventData: mapboxgl.GeoJSONSourceRaw["data"] = {
