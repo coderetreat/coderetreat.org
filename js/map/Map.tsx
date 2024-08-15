@@ -114,6 +114,7 @@ export const Map = ({
         const link = document.createElement("a");
         link.innerText = "View Community";
         link.href = feature.properties!.url;
+        link.target = "_blank";
         div.appendChild(link);
 
         const popup = new mapboxgl.Popup()
