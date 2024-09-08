@@ -59,6 +59,9 @@ toc:
   min_level: 1
   max_level: 2
 
+
+include:
+  - _redirects
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
