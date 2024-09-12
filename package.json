@@ -32,7 +32,7 @@
     "@babel/preset-react": "7.24.7",
     "@testing-library/jest-dom": "6.5.0",
     "@testing-library/react": "16.0.1",
-    "@types/jest": "29.5.12",
+    "@types/jest": "29.5.13",
     "@types/mapbox-gl": "^3.0.0",
     "@types/qs": "6.9.15",
     "@types/seedrandom": "^3.0.6",
