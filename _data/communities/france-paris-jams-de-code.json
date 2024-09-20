@@ -1,0 +1,12 @@
+{
+  "name": "Jams de code",
+  "location": {
+    "city": "Paris",
+    "country": "France",
+    "coordinates": {
+      "latitude": 48.8534951,
+      "longitude": 2.3483915
+    }
+  },
+  "url": "https://meetup.com/jams-de-code"
+}

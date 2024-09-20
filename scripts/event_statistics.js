@@ -7,7 +7,7 @@ const { ZonedDateTime, Duration } = require("@js-joda/core");
 const { Locale } = require("@js-joda/locale_en");
 
 
-glob(__dirname + "/../_data/**/.SCHEMA.json")
+glob(__dirname + "/../_data/events/.SCHEMA.json")
   .sort()
   .forEach((schemaFile) => {
     console.log(

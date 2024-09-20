@@ -1,0 +1,12 @@
+{
+  "name": "AgileAlicante",
+  "location": {
+    "city": "Alicante",
+    "country": "Spain",
+    "coordinates": {
+      "latitude": 38.343637,
+      "longitude": -0.488171
+    }
+  },
+  "url": "https://meetup.com/agilealicante"
+}

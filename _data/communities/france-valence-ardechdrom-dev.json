@@ -1,0 +1,12 @@
+{
+  "name": "Ardèch’Drôm Dev",
+  "location": {
+    "city": "Valence",
+    "country": "France",
+    "coordinates": {
+      "latitude": 44.9328158,
+      "longitude": 4.8887694
+    }
+  },
+  "url": "https://meetup.com/ardech-drom-dev"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Utrecht Java User Group",
+  "location": {
+    "country": "Netherlands",
+    "city": "Utrecht",
+    "coordinates": {
+      "latitude": 52.0907,
+      "longitude": 5.1214
+    }
+  },
+  "url": "https://meetup.com/utrecht-java-user-group"
+}

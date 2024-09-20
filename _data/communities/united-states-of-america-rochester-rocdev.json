@@ -1,0 +1,12 @@
+{
+  "name": "RocDev",
+  "location": {
+    "country": "United States of America",
+    "city": "Rochester",
+    "coordinates": {
+      "latitude": 43.2258726,
+      "longitude": -77.3911697
+    }
+  },
+  "url": "https://meetup.com/rocdev"
+}

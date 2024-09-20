@@ -1,0 +1,12 @@
+{
+  "name": "Qatar Software Design Group",
+  "location": {
+    "city": "Doha",
+    "country": "Qatar",
+    "coordinates": {
+      "latitude": 25.2856329,
+      "longitude": 51.5264162
+    }
+  },
+  "url": "https://meetup.com/qatar-software-design-meetup-group"
+}

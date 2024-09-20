@@ -1,0 +1,12 @@
+{
+  "name": "Barcelona JUG",
+  "location": {
+    "country": "Spain",
+    "city": "Barcelona",
+    "coordinates": {
+      "latitude": 41.3948976,
+      "longitude": 2.0787279
+    }
+  },
+  "url": "https://meetup.com/barcelonajug"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Softwerkskammer Hamburg",
+  "location": {
+    "country": "Germany",
+    "city": "Hamburg",
+    "coordinates": {
+      "latitude": 53.5567,
+      "longitude": 9.9085
+    }
+  },
+  "url": "https://meetup.com/sokahh"
+}

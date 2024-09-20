@@ -1,0 +1,43 @@
+{
+  "title": "GDCR  2023 Softwerkskammer Köln  @ lise GmbH",
+  "format": "classic",
+  "spoken_language": "English, Deutsch",
+  "url": "https://www.meetup.com/softwerkskammer-koln/events/296717451/",
+  "code_of_conduct": "https://communitycodeofconduct.com/",
+  "date": {
+    "start": "2023-11-04T09:00:00+01:00",
+    "end": "2023-11-04T17:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Maximilian Buttlies"
+    },
+    {
+      "name": "Matthias Schneider"
+    },
+    {
+      "name": "Andrej Dyck"
+    },
+    {
+      "name": "Steve Korzinetzki"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "lise GmbH",
+      "url": "https://www.linkedin.com/company/lise-gmbh/"
+    },
+    {
+      "name": "Softwerkskammer Köln",
+      "url": "https://www.meetup.com/softwerkskammer-koln"
+    }
+  ],
+  "location": {
+    "city": "Köln",
+    "country": "Deutschland",
+    "coordinates": {
+      "latitude": 50.9827083,
+      "longitude": 6.8948579
+    }
+  }
+}

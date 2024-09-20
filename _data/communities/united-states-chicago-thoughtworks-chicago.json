@@ -1,0 +1,12 @@
+{
+  "name": "Thoughtworks Chicago",
+  "location": {
+    "city": "Chicago",
+    "country": "United States",
+    "coordinates": {
+      "latitude": 41.885254,
+      "longitude": -87.621492
+    }
+  },
+  "url": "https://meetup.com/thoughtworks-tech-talks-chicago"
+}

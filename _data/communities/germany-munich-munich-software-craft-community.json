@@ -1,0 +1,12 @@
+{
+  "name": "Munich Software Craft Community",
+  "location": {
+    "country": "Germany",
+    "city": "Munich",
+    "coordinates": {
+      "latitude": 48.097024,
+      "longitude": 11.543011
+    }
+  },
+  "url": "https://meetup.com/software-craftsmanship-meetup-softwerkskammer-munchen"
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Sportradar Coderetreat",
+  "description": "A remote Coderetreat on a Thursday (not on weekend).",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://www.softwerkskammer.org/activities/Coderetreat20231214",
+  "code_of_conduct": "https://makers.tech/code-of-conduct/",
+  "date": {
+    "start": "2023-12-14T08:45:00+02:00",
+    "end": "2023-12-14T17:00:00+02:00"
+  },
+  "moderators": [
+    {
+      "name": "Dagmar Labes"
+    },
+    {
+      "name": "Peter Kofler",
+      "url": "https://bsky.app/profile/codecopkofler.bsky.social"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Sportradar Media Services",
+      "url": "https://www.sportradar.com/"
+    }
+  ],
+  "location": "virtual"
+}

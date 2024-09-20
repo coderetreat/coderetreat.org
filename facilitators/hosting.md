@@ -19,7 +19,7 @@ Facilitation is everything from explaining the format, responding to questions a
 
 Hosting means making sure that everyone has the resources they need to get through the day. From power plugs to the right lunch order, a host makes sure that the facilitator can focus on their moderation and the attendees can focus on their learning.
 
-We're focussing on hosting duties in this guide. Head over to the [facilitation guide]({% link facilitators/facilitation.md %}) for more information on the role of the facilitator.
+We're focussing on hosting duties in this guide. Head over to the [facilitation guide]({% link facilitators/facilitating.md %}) for more information on the role of the facilitator.
 
 <div class="advice" markdown="1">
 If you can't find a second person to co-organize, it is highly adviced to keep the number of attendees low, less than 10. Make sure to not exhaust yourself, but rather focus on the necessities required to make the day work. You can appeal to your attendees to help you make the event worthwhile and sustainable.

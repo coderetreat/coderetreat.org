@@ -9,6 +9,7 @@ import fetchEventsInChronologicalOrder from "./events/fetchEventsInChronological
 import InteractiveTimeZoneSelector from "./events/interactiveTimeZoneSelector";
 import { LocalizedDate } from "./events/LocalizedDateTime";
 import { Map } from "./map/Map";
+import fetchCommunities from "./events/fetchCommunities";
 
 const jekyllConfig = parse(jekyllConfigRaw);
 
@@ -38,10 +39,20 @@ const Events = () => {
     eventsAfterGDCR: [],
   });
 
+  const [allCommunities, setAllCommunties] = useState([]);
+  
   useEffect(() => {
     const Run = async () => {
       const allFetchedEvents = await fetchEventsInChronologicalOrder();
       setAllEvents(allFetchedEvents);
+    };
+    Run();
+  }, []);
+
+  useEffect(() => {
+    const Run = async () => {
+      const allFetchedCommunities = await fetchCommunities();
+      setAllCommunties(allFetchedCommunities);
     };
     Run();
   }, []);
@@ -100,7 +111,7 @@ const Events = () => {
 
   return (
     <div>
-      <Map events={allUpcomingEvents} onClickOnEvent={scrollEventIntoView} />
+      <Map events={allUpcomingEvents} communities={allCommunities} onClickOnEvent={scrollEventIntoView} />
       <div className="container" style={{ minHeight: "max(60vh, 500px)" }}>
         <h1 className="display-1 my-5 ">Next Events</h1>
         <p className="lead">

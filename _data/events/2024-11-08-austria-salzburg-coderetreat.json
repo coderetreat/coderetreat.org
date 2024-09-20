@@ -1,0 +1,37 @@
+{
+  "title": "Coderetreat Salzburg - Salzburg Software Craftsmanship",
+  "description": "We host the GDCR together with the FH-Salzburg - join Students and experienced Developers",
+  "format": "classic",
+  "spoken_language": "German, English",
+  "url": "https://www.meetup.com/de-DE/salzburg-software-craftsmanship/events/303239765/",
+  "date": {
+    "start": "2024-11-08T09:00:00+01:00",
+    "end": "2024-11-08T15:30:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Christian Folie",
+      "url": "https://www.linkedin.com/in/christian-folie-b57639252/"
+    },
+    {
+      "name": "Klaus Bayrhammer",
+      "url": "https://www.linkedin.com/in/klaus-bayrhammer-807953173/"
+    },
+    {
+      "name": "Andreas Bilke",
+      "url": "https://www.linkedin.com/in/andreas-bilke-a76741171/"
+    },
+    {
+      "name": "Georg Schild",
+      "url": "https://www.linkedin.com/in/schildgeorg/"
+    }
+  ],
+  "location": {
+    "city": "Salzburg",
+    "country": "Austria",
+    "coordinates": {
+      "latitude": 47.798135,
+      "longitude": 13.046481
+    }
+  }
+}

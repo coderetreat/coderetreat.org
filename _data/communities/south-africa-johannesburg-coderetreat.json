@@ -1,0 +1,12 @@
+{
+  "name": "Coderetreat",
+  "location": {
+    "country": "South Africa",
+    "city": "Johannesburg",
+    "coordinates": {
+      "latitude": -26.1855441,
+      "longitude": 28.0169193
+    }
+  },
+  "url": "https://meetup.com/coderetreat"
+}

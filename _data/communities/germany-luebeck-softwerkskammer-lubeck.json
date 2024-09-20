@@ -1,0 +1,12 @@
+{
+  "name": "Softwerkskammer Lübeck",
+  "location": {
+    "city": "Luebeck",
+    "coordinates": {
+      "latitude": 53.855961,
+      "longitude": 10.6711248
+    },
+    "country": "Germany"
+  },
+  "url": "https://meetup.com/softwerkskammer-luebeck"
+}

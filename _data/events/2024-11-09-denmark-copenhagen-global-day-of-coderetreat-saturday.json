@@ -1,0 +1,35 @@
+{
+  "title": "Global Day of Coderetreat Saturday",
+  "format": "classic",
+  "spoken_language": "English/Danish/Swedish",
+  "url": "https://ti.to/coderetreat-copenhagen/gdcr-2024-saturday",
+  "code_of_conduct": "https://berlincodeofconduct.org",
+  "date": {
+    "start": "2024-11-09T08:30:00+01:00",
+    "end": "2024-11-09T17:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Tomas Malmsten",
+      "url": "https://tomasmalmsten.com/"
+    },
+    {
+      "name": "Henrik Lauritzen Sønder",
+      "url": "https://www.linkedin.com/in/henrik-lauritzen-sonder/"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Novo Nordisk A/S",
+      "url": "https://techlife.novonordisk.com/"
+    }
+  ],
+  "location": {
+    "city": "Copenhagen",
+    "country": "Denmark",
+    "coordinates": {
+      "latitude": 55.629803,
+      "longitude": 12.580564
+    }
+  }
+}

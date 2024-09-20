@@ -1,0 +1,12 @@
+{
+  "name": "Stockholm Software Craftsmanship",
+  "location": {
+    "country": "Sweden",
+    "city": "Stockholm",
+    "coordinates": {
+      "latitude": 59.3359476,
+      "longitude": 18.0533043
+    }
+  },
+  "url": "https://meetup.com/stockholm-software-craftsmanship"
+}

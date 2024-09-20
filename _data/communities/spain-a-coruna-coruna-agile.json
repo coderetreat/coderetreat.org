@@ -1,0 +1,12 @@
+{
+  "name": "Coruña Agile",
+  "location": {
+    "country": "Spain",
+    "city": "A Coruña",
+    "coordinates": {
+      "latitude": 43.3618728,
+      "longitude": -8.4301933
+    }
+  },
+  "url": "https://meetup.com/coruna-agile"
+}

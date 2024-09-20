@@ -1,0 +1,30 @@
+{
+  "title": "Global Day of Code Retreat",
+  "format": "classic",
+  "spoken_language": "Deutsch, English",
+  "url": "https://www.meetup.com/softwerkskammer-luebeck/events/296716499/",
+  "date": {
+    "start": "2023-11-25T08:30:00+01:00",
+    "end": "2023-11-25T17:30:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Eike Koltermann-Wilke",
+      "url": "https://twitter.com/hansedev"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Dräger",
+      "url": "https://www.draeger.com/de_de/Home"
+    }
+  ],
+  "location": {
+    "city": "Lübeck",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 53.866444,
+      "longitude": 10.684738
+    }
+  }
+}

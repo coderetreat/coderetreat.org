@@ -72,11 +72,15 @@ const Videobooth = ({
   return (
     <div style={{ height: "90vh", width: "100vw", backgroundColor: "#474747" }}>
       <JitsiMeeting
+        domain="jitsi.riot.im"
         key={roomName}
         roomName={roomName}
         configOverwrite={{
           startWithAudioMuted: true,
           prejoinPageEnabled: false,
+          prejoinConfig: {
+            enabled: false
+          }
         }}
         getIFrameRef={(iframe) => {
           iframe.style.height = "100%";
@@ -137,7 +141,7 @@ const Videobooth = ({
   );
 };
 
-const ROOMS = new Array(10)
+const ROOMS = new Array(5)
   .fill(undefined)
   .map((_, i) => `gdcr_videobooth_${i + 1}`);
 

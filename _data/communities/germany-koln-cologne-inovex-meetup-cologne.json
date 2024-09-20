@@ -1,0 +1,12 @@
+{
+  "name": "inovex Meetup Cologne",
+  "location": {
+    "city": "Köln (Cologne)",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 50.9659673,
+      "longitude": 7.0152538
+    }
+  },
+  "url": "https://meetup.com/inovex-cologne"
+}
