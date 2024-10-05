@@ -1,0 +1,39 @@
+{
+  "title": "Calgary Software Crafters Global day of Coderetreat 2024",
+  "format": "ensemble",
+  "spoken_language": "English",
+  "url": "https://www.meetup.com/calgary-software-crafters/events/303770752/?eventOrigin=group_upcoming_events",
+  "code_of_conduct": "https://github.com/calgarysoftwarecrafters/Code-of-conduct",
+  "date": {
+    "start": "2024-11-09T09:30:00-07:00",
+    "end": "2024-11-09T16:15:00-07:00"
+  },
+  "moderators": [
+    {
+      "name": "Rocky Rhodes"
+    },
+    {
+      "name": "Susan Fung"
+    },
+    {
+      "name": "Tony Vo"
+    },
+    {
+      "name": "Rini Joy"
+    },
+    {
+      "name": "Matt Hughes"
+    },
+    {
+      "name": "Julie Gunawan"
+    }
+  ],
+  "location": {
+    "city": "Calgary",
+    "country": "Canada",
+    "coordinates": {
+      "latitude": 51.04533,
+      "longitude": -114.054918
+    }
+  }
+}
