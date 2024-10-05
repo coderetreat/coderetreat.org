@@ -1,0 +1,12 @@
+{
+  "name": "Software Crafters Rennes",
+  "location": {
+    "country": "France",
+    "city": "Rennes",
+    "coordinates": {
+      "latitude": 48.1120266,
+      "longitude": -1.6884867
+    }
+  },
+  "url": "https://meetup.com/software-craftsmanship-rennes"
+}

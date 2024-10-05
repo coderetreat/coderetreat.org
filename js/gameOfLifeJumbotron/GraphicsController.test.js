@@ -52,7 +52,7 @@ describe("GraphicsController", () => {
       autoStart: false,
     });
     expect(controller.pixiApp.ticker.maxFPS).toEqual(30);
-    expect(element.style).toMatchObject({ "touch-action": "auto" });
+    expect(element.style).toMatchObject({ "touchAction": "auto" });
   });
 
   it("creates as many dots as it can fit on the screen", () => {

@@ -1,0 +1,16 @@
+{
+  "title": "Global Day of Coderetreat 2015 - Auckland, New Zealand - Orion Health",
+  "description": "We're very happy to invite everyone interested in improving their software craftsmanship skills to Auckland edition of Global Code Retreat 2015.\n\nYou can register here: https://www.eventbrite.com/e/globalday-coderetreat-auckland-2015-tickets-18464494801",
+  "url": "https://web.archive.org/http://coderetreat.org/events/global-day-of-coderetreat-2015-auckland-new-zealand",
+  "spoken_language": "",
+  "moderators": [{ "name": "Jakub Jurkiewicz" }],
+  "location": {
+    "country": "New Zealand",
+    "city": "Auckland",
+    "coordinates": { "latitude": -36.8484597, "longitude": 174.7633315 }
+  },
+  "date": {
+    "start": "2015-11-14T09:00:00+13:00",
+    "end": "2015-11-14T17:00:00+13:00"
+  }
+}

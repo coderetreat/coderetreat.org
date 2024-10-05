@@ -24,8 +24,8 @@ email: info@coderetreat.org
 description: >- # this means to ignore newlines until "baseurl:"
   A free community event to practice professional software development 
 globalday:
-  start: "2023-11-03"
-  end: "2023-11-04"
+  start: "2024-11-08"
+  end: "2024-11-09"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.coderetreat.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: coderetreat
@@ -55,16 +55,13 @@ plugins:
 
 permalink: pretty
 
-collections:
-  - setup_steps
-
-disqus:
-  shortname: coderetreat
-
 toc:
   min_level: 1
   max_level: 2
 
+
+include:
+  - _redirects
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -75,6 +72,13 @@ toc:
 #
 exclude:
   - .sass-cache/
+  - .babelrc
+  - vite.config.ts
+  - tsconfig.json
+  - tsconfig.node.json
+  - cypress.config.js
+  - netlify.toml
+  - .nvmrc
   - .jekyll-cache/
   - gemfiles/
   - Gemfile
@@ -89,7 +93,6 @@ exclude:
   - vendor/ruby/
   - .cache/
   - cypress/
-  - .parcel-cache/
 
 keep_files:
   - js/

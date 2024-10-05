@@ -1,0 +1,12 @@
+{
+  "name": "Kalispell Software Crafters",
+  "location": {
+    "country": "United States of America",
+    "city": "Kalispell, MT",
+    "coordinates": {
+      "latitude": 48.1963841,
+      "longitude": -114.3130121
+    }
+  },
+  "url": "https://meetup.com/kalispell-software-crafters"
+}

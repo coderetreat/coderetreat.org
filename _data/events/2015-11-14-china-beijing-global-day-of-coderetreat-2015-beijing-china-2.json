@@ -1,0 +1,16 @@
+{
+  "title": "Global Day of Coderetreat 2015 - Beijing, China - 2",
+  "description": "Practice your coding skills deliberately!",
+  "url": "https://web.archive.org/http://coderetreat.org/events/global-day-of-coderetreat-2015-beijing-china",
+  "spoken_language": "",
+  "moderators": [{ "name": "Ben Wu" }],
+  "location": {
+    "country": "China",
+    "city": "Beijing",
+    "coordinates": { "latitude": 39.90419989999999, "longitude": 116.4073963 }
+  },
+  "date": {
+    "start": "2015-11-14T10:00:00+08:00",
+    "end": "2015-11-14T18:00:00+08:00"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Global Day of Coderetreat 2015 - Istanbul, Turkey - agile turkey",
+  "description": "As in the previous years, Agile Turkey will host Global Day of Coderetreat at Istanbul, Turkey.  \nAll the details will be announced soon at agileturkey.org (http://www.agileturkey.org/).",
+  "url": "https://web.archive.org/http://coderetreat.org/events/global-day-of-coderetreat-2015-istanbul-turkey",
+  "spoken_language": "",
+  "moderators": [{ "name": "Lemi Orhan Ergin" }],
+  "location": {
+    "country": "Turkey",
+    "city": "Istanbul",
+    "coordinates": { "latitude": 41.0082376, "longitude": 28.9783589 }
+  },
+  "date": {
+    "start": "2015-11-14T09:00:00+03:00",
+    "end": "2015-11-14T16:00:00+03:00"
+  }
+}

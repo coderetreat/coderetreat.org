@@ -1,0 +1,12 @@
+{
+  "name": "Aprende a programar en Valencia",
+  "location": {
+    "country": "Spain",
+    "city": "Valencia",
+    "coordinates": {
+      "latitude": 39.4699,
+      "longitude": 0.3763
+    }
+  },
+  "url": "https://meetup.com/aprende-a-programar-en-valencia"
+}

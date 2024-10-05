@@ -1,0 +1,12 @@
+{
+  "name": "Agile Oxford",
+  "location": {
+    "city": "Oxford",
+    "country": "United Kingdom",
+    "coordinates": {
+      "latitude": 51.75222,
+      "longitude": -1.25596
+    }
+  },
+  "url": "https://meetup.com/oxagile"
+}

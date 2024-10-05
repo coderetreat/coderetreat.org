@@ -1,0 +1,16 @@
+{
+  "title": "Global Day of Coderetreat 2014 - London, UK - sky",
+  "description": "Sky is hosting a Global Day of Code Retreat at their East London offices on Braham Street. \nWe invite all keen Software Engineers to join us to practice our craft, learn from each other and have a fun day! \nBreakfast and Lunch will be provided, bring your own equipment (laptop, etc). \nWe'll be limited to 20 people. Go to EventBrite page of the event (http://www.eventbrite.com/e/skys-global-day-of-code-retreat-london-tickets-13959738955) to confirm your attendance.",
+  "url": "https://web.archive.org/http://coderetreat.org/events/global-day-of-coderetreat-2014-london-uk-2",
+  "spoken_language": "",
+  "moderators": [{ "name": "Joffrey Tourret" }],
+  "location": {
+    "country": "United Kingdom",
+    "city": "London",
+    "coordinates": { "latitude": 51.5073509, "longitude": -0.1277583 }
+  },
+  "date": {
+    "start": "2014-11-15T09:00:00+01:00",
+    "end": "2014-11-15T16:00:00+01:00"
+  }
+}

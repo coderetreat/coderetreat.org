@@ -1,0 +1,7 @@
+{
+  "name": "coderetreat.org Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/ruby:3.3",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {}
+  }
+}

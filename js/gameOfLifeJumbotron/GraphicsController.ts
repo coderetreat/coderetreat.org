@@ -47,7 +47,7 @@ export class GraphicsController {
     this.gap = gap;
     this.fadeFactor = fadeFactor;
     this.pixiApp.ticker.maxFPS = fps;
-    element.style["touch-action"] = "auto";
+    element.style["touchAction"] = "auto";
     this.visibleDots = new Array2d<PIXI.Graphics>([]);
   }
 
@@ -73,7 +73,7 @@ export class GraphicsController {
     this._handlePossibleResize(game);
   }
 
-  _createNewDot(x, y, cellAlive) {
+  _createNewDot(x: number, y: number, cellAlive: Boolean) {
     const newDot: any = new PIXI.Graphics();
     newDot.x = this.gap + this.radius + x * (this.radius * 2 + this.gap);
     newDot.y = this.gap + this.radius + y * (this.radius * 2 + this.gap);
@@ -122,7 +122,7 @@ export class GraphicsController {
       if (resetAlpha) {
         graphics.alpha = this.shouldFade ? 0 : cellAlive ? 1 : 0;
       }
-      graphics.alphaDelta =
+      (graphics as any).alphaDelta =
         this.shouldFade && cellAlive ? this.fadeStep : -this.fadeStep;
     });
   }
@@ -131,7 +131,7 @@ export class GraphicsController {
     this.visibleDots.forEach((graphics) => {
       graphics.alpha = Math.max(
         0,
-        Math.min(1, graphics.alpha + graphics.alphaDelta * delta)
+        Math.min(1, graphics.alpha + (graphics as any).alphaDelta * delta)
       );
     });
   }

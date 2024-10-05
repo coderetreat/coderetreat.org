@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- seo -%}
   <link rel="stylesheet" href="{{ "/css/theme_" | append: stylesheet | append: ".min.css" | relative_url }}">
-  <link rel="stylesheet" href="{{ "/js/bundled/default.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/js/default.css" | relative_url }}">
   {% for extraStyle in page.extraStyles %}
   <link rel="stylesheet" href="{{ extraStyle }}">
   {% endfor %}
@@ -23,9 +23,8 @@
 
   <main class="page-content" aria-label="Content">
     {% include navbar.html %}
-    <script async type="application/javascript" src="{{ "/js/bundled/default.js" | relative_url }}"></script>
+    <script type="module" src="{{ "/js/default.js" | relative_url }}"></script>
     {{ content }}
-    {% include disqus_comments.html %}
   </main>
 
   <footer class="footer bg-dark text-light mt-5 pt-3 pb-5">
@@ -38,7 +37,10 @@
         </ul>
       </div>
       <div class="col-lg-3 offset-lg-6">
-        <p>The Coderetreat Contributors 2020</p>
+        <ul class="list-unstyled">
+          <li>The Coderetreat Contributors {{ 'now' | date: '%Y' }}</li>
+          <li><a href="{% link resources/code-of-conduct.md %}">Code of Conduct</a></li>
+        </ul>
       </div>
     </div>
     </div>

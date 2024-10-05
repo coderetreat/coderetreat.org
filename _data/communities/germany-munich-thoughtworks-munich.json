@@ -1,0 +1,12 @@
+{
+  "name": "Thoughtworks Munich",
+  "location": {
+    "city": "Munich",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 48.1354303,
+      "longitude": 11.6136201
+    }
+  },
+  "url": "https://meetup.com/thoughtworks-muenchen"
+}

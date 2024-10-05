@@ -1,0 +1,12 @@
+{
+  "name": "Haarlem Software Development Meetup",
+  "location": {
+    "country": "Netherlands",
+    "city": "Haarlem",
+    "coordinates": {
+      "latitude": 52.3815753,
+      "longitude": 4.6405239
+    }
+  },
+  "url": "https://meetup.com/haarlem-software-development-meetup"
+}

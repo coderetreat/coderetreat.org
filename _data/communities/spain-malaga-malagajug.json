@@ -1,0 +1,12 @@
+{
+  "name": "MálagaJUG",
+  "location": {
+    "country": "Spain",
+    "city": "Málaga",
+    "coordinates": {
+      "latitude": 36.718339,
+      "longitude": -4.5194787
+    }
+  },
+  "url": "https://meetup.com/malagajug"
+}

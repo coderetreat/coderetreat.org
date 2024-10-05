@@ -1,0 +1,12 @@
+{
+  "name": "Albuquerque Software Social Club",
+  "location": {
+    "city": "Albuquerque",
+    "country": "United States",
+    "coordinates": {
+      "latitude": 35.0881915,
+      "longitude": -106.6509448
+    }
+  },
+  "url": "https://meetup.com/albuquerque-software-social-club"
+}

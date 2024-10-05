@@ -1,0 +1,31 @@
+{
+    "title": "Global Day Of Coderetreat Franken",
+    "description": "Willkommen ist jede:r, der/die Lust auf einen offenen Austausch hat, ganz gleich wie erfahren du bist, welche Technologien du präferierst oder was dein Spezialgebiet ist. Wir alle haben eines gemeinsam und das ist das Interesse an spannenden technologischen Herausforderungen und dem lockeren Austausch mit Gleichgesinnten.",
+    "format": "classic",
+    "spoken_language": "German",
+    "url": "https://www.meetup.com/de-DE/inovex-meetup-erlangen/events/294718126/",
+    "date": {
+      "start": "2023-11-04T09:30:00+01:00",
+      "end": "2023-11-04T18:00:00+01:00"
+    },
+    "moderators": [
+      {
+        "name": "Collin Rogowski",
+        "url": "https://www.linkedin.com/in/collinrogowski/"
+      }
+    ],
+    "sponsors": [
+      {
+        "name": "inovex",
+        "url": "https://www.inovex.de/"
+      }
+    ],
+    "location": {
+      "city": "Erlangen",
+      "country": "Germany",
+      "coordinates": {
+        "latitude": 49.597816,
+        "longitude": 11.003806
+      }
+    }
+  }

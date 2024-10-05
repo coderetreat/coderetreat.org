@@ -1,0 +1,20 @@
+{
+  "title": "GDCR23 Warm-up Coderetreat",
+  "description": "A remote warm-up Coderetreat in two parts",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://www.softwerkskammer.org/activities/Coderetreat20231103",
+  "code_of_conduct": "https://makers.tech/code-of-conduct/",
+  "date": {
+    "start": "2023-11-03T08:45:00+01:00",
+    "end": "2023-11-03T16:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Peter Kofler",
+      "url": "https://twitter.com/codecopkofler"
+    }
+  ],
+  "sponsors": [ ],
+  "location": "virtual"
+}

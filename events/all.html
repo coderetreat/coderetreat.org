@@ -1,0 +1,57 @@
+---
+layout: guide
+title: All Coderetreat Events
+audience: participants
+---
+
+{% assign events = site.data.events | kv_entries | sort: "v.date.start" |
+reverse %}
+<p class="lead">
+  Since 2013, we've counted <b>{{ events | size }}</b> coderetreats all over the
+  world.
+</p>
+<p>
+  <small
+    >If you don't want to have your name appear in this list, please create an
+    Issue or a Pull Request on
+    <a href="https://github.com/coderetreat/coderetreat.org">GitHub</a>.</small
+  >
+</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Country</th>
+      <th>City</th>
+      <th>Title</th>
+      <th>Moderators</th>
+      <th>&nbsp;</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for eventO in events %} {% assign event = eventO.v %}
+    <tr>
+      <td>{{ event.date.start | date: "%Y-%m-%d"}}</td>
+      {% if event.location != "virtual" %}
+      <td>{{ event.location.country }}</td>
+      <td>{{ event.location.city }}</td>
+      {% else %}
+      <td colspan="2">Virtual</td>
+      {% endif %}
+      <td><a href="{{ event.url }}">{{ event.title }}</a></td>
+      <td>
+        {% for mod in event.moderators %} {% if mod.url %}
+        <a href="{{ mod.url }}">{{ mod.name }}</a>
+        {% else %} {{ mod.name }} {% endif %} {% unless forloop.last %}<br />{%
+        endunless -%} {% endfor %}
+      </td>
+      <td>
+        <a
+          href="https://github.com/coderetreat/coderetreat.org/tree/main/_data/events/{{ eventO.k }}.json"
+          ><i class="fa-brands fa-github" aria-label="Edit on Github"></i
+        ></a>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

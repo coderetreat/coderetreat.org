@@ -1,0 +1,39 @@
+{
+    "title": "Media.net GDCR - 2023 (Offline)",
+    "description": "Global Day of Coderetreat is a day to celebrate passion and software crafting. It's held every year around November on the same date all over the world & this year again we are hosting one in Mumbai, graciously sponsored and hosted by Media.net.",
+    "format": "classic",
+    "spoken_language": "English",
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLSeyElU6AH6MEG7pk3YTQzvzTqghfZuxTI3TLz4Lceby9CK3PA/viewform",
+    "date": {
+      "start": "2023-11-03T09:00:00+05:30",
+      "end": "2023-11-03T16:00:00+05:30"
+    },
+    "moderators": [
+      {
+        "name": "Vedant Seta",
+        "url": "https://www.linkedin.com/in/vedant-seta-b1721891"
+      },
+      {
+        "name": "Monis Qadri",
+        "url": "https://www.linkedin.com/in/monisqadri"
+      },
+      {
+        "name": "Abhishek Surve",
+        "url": "https://www.linkedin.com/in/abhishekpsurve"
+      }
+    ],
+    "sponsors": [
+      {
+        "name": "Media.net",
+        "url": "https://www.media.net"
+      }
+    ],
+    "location": {
+      "city": "Mumbai",
+      "country": "India",
+      "coordinates": {
+        "latitude": 19.124811,
+        "longitude": 72.848488
+      }
+    }
+  }

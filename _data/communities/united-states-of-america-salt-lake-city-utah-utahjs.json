@@ -1,0 +1,12 @@
+{
+  "name": "UtahJS",
+  "location": {
+    "country": "United States of America",
+    "city": "Salt Lake City, Utah",
+    "coordinates": {
+      "latitude": 40.765887,
+      "longitude": -111.8909577
+    }
+  },
+  "url": "https://meetup.com/utahjs"
+}

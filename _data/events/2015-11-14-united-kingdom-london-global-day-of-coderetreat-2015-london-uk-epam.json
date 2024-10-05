@@ -1,0 +1,16 @@
+{
+  "title": "Global Day of Coderetreat 2015 - London, UK - EPAM",
+  "description": "Global Day of Code Retreat 2015 London for Epamers and anyone who'd like to join us! \nPlease sign up here \nhttps://events.epam.com/events/coderetreat-london",
+  "url": "https://web.archive.org/http://coderetreat.org/events/global-day-of-coderetreat-2015-london-uk-1",
+  "spoken_language": "",
+  "moderators": [{ "name": "Dennis Alexander" }],
+  "location": {
+    "country": "United Kingdom",
+    "city": "London",
+    "coordinates": { "latitude": 51.5073509, "longitude": -0.1277583 }
+  },
+  "date": {
+    "start": "2015-11-14T09:00:00+01:00",
+    "end": "2015-11-14T16:00:00+01:00"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "CodeRetreat CZ",
+  "location": {
+    "country": "Czech Republic",
+    "city": "Prague",
+    "coordinates": {
+      "latitude": 50.0595854,
+      "longitude": 14.3255418
+    }
+  },
+  "url": "https://meetup.com/coderetreat-cz"
+}

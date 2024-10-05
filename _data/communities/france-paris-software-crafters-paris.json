@@ -1,0 +1,12 @@
+{
+  "name": "Software Crafters Paris",
+  "location": {
+    "country": "France",
+    "city": "Paris",
+    "coordinates": {
+      "latitude": 48.8639164,
+      "longitude": 2.3390189
+    }
+  },
+  "url": "https://meetup.com/paris-software-craftsmanship"
+}

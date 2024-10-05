@@ -1,0 +1,12 @@
+{
+  "name": "Software Crafters Romandie (Geneva, Lausanne and Sion)",
+  "location": {
+    "city": "Lausanne",
+    "country": "Switzerland",
+    "coordinates": {
+      "latitude": 46.517796,
+      "longitude": 6.643173
+    }
+  },
+  "url": "https://meetup.com/lausanne-software-craftsmanship-meetup-group"
+}

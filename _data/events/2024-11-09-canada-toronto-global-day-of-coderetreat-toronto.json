@@ -1,0 +1,35 @@
+{
+  "title": "Global Day of Coderetreat Toronto",
+  "description": "Join us for a day of deliberate practice in pair programming and Test Driven Development at Thoughtworks Canada's head office in downtown Toronto!",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://na.thoughtworks.com/global-day-of-coderetreat-to-2024/",
+  "date": {
+    "start": "2024-11-09T09:00:00-05:00",
+    "end": "2024-11-09T17:00:00-05:00"
+  },
+  "moderators": [
+    {
+      "name": "Vivian So",
+      "url": "https://github.com/msvivianso"
+    },
+    {
+      "name": "Paul Sobocinski",
+      "url": "https://spikes.sobes.co/"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Thoughtworks",
+      "url": "https://www.thoughtworks.com/"
+    }
+  ],
+  "location": {
+    "city": "Toronto",
+    "country": "Canada",
+    "coordinates": {
+      "latitude": 43.647938,
+      "longitude": -79.38355
+    }
+  }
+}

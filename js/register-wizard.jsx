@@ -7,7 +7,8 @@ import "react-bootstrap-typeahead/css/Typeahead.css";
 import ReactDOM from "react-dom/client";
 import "regenerator-runtime/runtime";
 import slug from "slug";
-import siteConfig from "../_config.yml";
+import jekyllConfigRaw from "../_config.yml?raw";
+import { parse } from "yaml";
 import { CityInput } from "./register-wizard/CityInput";
 import { CopyToClipboardButton } from "./register-wizard/CopyToClipboardButton";
 import { DownloadButton } from "./register-wizard/DownloadButton";
@@ -18,6 +19,8 @@ import {
 } from "./register-wizard/hooks";
 import { PayloadPresentation } from "./register-wizard/PayloadPresentation";
 import validateEvent from "./register-wizard/validateEvent";
+
+const siteConfig = parse(jekyllConfigRaw);
 
 const tryParseDateTime = (time, timezone) => {
   if (timezone === "" || time === "") return ["", null];
@@ -49,10 +52,10 @@ const dropEmptyKeys = (obj) =>
 
 const slugifyEvent = (payload) => {
   const segments = [
+    payload.date.start.slice(0, 10),
     ...(payload.location === "virtual"
       ? ["virtual"]
       : [payload.location.country, payload.location.city]),
-    payload.date.start.slice(0, 10),
     payload.title,
   ].filter((a) => !!a);
 

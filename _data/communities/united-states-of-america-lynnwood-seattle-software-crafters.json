@@ -1,0 +1,12 @@
+{
+  "name": "Seattle Software Crafters",
+  "location": {
+    "country": "United States of America",
+    "city": "Lynnwood",
+    "coordinates": {
+      "latitude": 47.845791,
+      "longitude": -122.293084
+    }
+  },
+  "url": "https://meetup.com/seattle-software-craftsmanship"
+}

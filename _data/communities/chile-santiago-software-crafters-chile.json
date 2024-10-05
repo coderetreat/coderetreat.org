@@ -1,0 +1,12 @@
+{
+  "name": "Software Crafters Chile",
+  "location": {
+    "country": "Chile",
+    "city": "Santiago",
+    "coordinates": {
+      "latitude": -33.4724727,
+      "longitude": -70.9100286
+    }
+  },
+  "url": "https://meetup.com/software-crafters-chile"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Expert Talks Pune",
+  "location": {
+    "country": "India",
+    "city": "Pune",
+    "coordinates": {
+      "latitude": 18.544905,
+      "longitude": 73.909751
+    }
+  },
+  "url": "https://meetup.com/expert-talks-pune"
+}

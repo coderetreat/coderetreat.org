@@ -1,0 +1,47 @@
+{
+  "title": "Global Day of Coderetreat 2024 - Zürich, Switzerland",
+  "description": "Coderetreat is a day-long, intensive practice event, focusing on the fundamentals of software development and design. By providing developers the opportunity to take part in focused practice away from the pressures of ‘getting things done’, the Coderetreat format has proven itself to be a highly effective means of skill improvement.  The Coderetreat day consists of 5-6 sessions, each session’s learnings building upon previous sessions. The morning focuses on becoming comfortable with the problem domain, breaking old habits and beginning focused self-discovery. The afternoon pushes the envelope by challenging pairs to stretch their skills and understanding of abstractions, modular design and test-driven development.",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://codersonly.org/events/code-retreat/",
+  "date": {
+    "start": "2024-11-09T09:00:00+01:00",
+    "end": "2024-11-09T17:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Andrew Magerman",
+      "url": "https://twitter.com/andrewmagerman"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Ergon Informatik AG",
+      "url": "https://www.ergon.ch/de"
+    },
+    {
+      "name": "bbv Software Services AG",
+      "url": "https://bbv.ch/"
+    },
+    {
+      "name": "finnova AG Bankware",
+      "url": "https://www.finnova.com/"
+    },
+    {
+      "name": "House of Test",
+      "url": "https://www.houseoftest.ch/"
+    },
+    {
+      "name": "megazord .studio",
+      "url": "https://megazord.studio/"
+    }
+  ],
+  "location": {
+    "city": "Zürich",
+    "country": "Switzerland",
+    "coordinates": {
+      "latitude": 47.3678002,
+      "longitude": 8.5379787
+    }
+  }
+}

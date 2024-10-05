@@ -1,0 +1,12 @@
+{
+  "name": "Python Glasgow",
+  "location": {
+    "city": "Glasgow",
+    "country": "United Kingdom",
+    "coordinates": {
+      "latitude": 55.860983,
+      "longitude": -4.248879
+    }
+  },
+  "url": "https://meetup.com/python-glasgow"
+}

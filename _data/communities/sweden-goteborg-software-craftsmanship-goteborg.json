@@ -1,0 +1,12 @@
+{
+  "name": "Software Craftsmanship Göteborg",
+  "location": {
+    "city": "Göteborg",
+    "country": "Sweden",
+    "coordinates": {
+      "latitude": 57.6892,
+      "longitude": 11.99539
+    }
+  },
+  "url": "https://meetup.com/software-craftsmanship-goteborg"
+}

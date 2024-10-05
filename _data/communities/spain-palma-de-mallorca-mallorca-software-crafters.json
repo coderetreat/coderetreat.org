@@ -1,0 +1,12 @@
+{
+  "name": "Mallorca Software Crafters",
+  "location": {
+    "country": "Spain",
+    "city": "Palma de Mallorca",
+    "coordinates": {
+      "latitude": 39.6366589,
+      "longitude": 2.6285283
+    }
+  },
+  "url": "https://meetup.com/mallorca-software-craftsmanship"
+}

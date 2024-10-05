@@ -1,0 +1,12 @@
+{
+  "name": "Zühlke Hannover",
+  "location": {
+    "country": "Germany",
+    "city": "Hannover",
+    "coordinates": {
+      "latitude": 52.40769446411487,
+      "longitude": 9.802991151809692
+    }
+  },
+  "url": "https://meetup.com/zuehlke-hannover"
+}
