@@ -1,18 +1,18 @@
 {
-  "title": "Global Day of Code Retreat - San Antonio",
+  "title": "Global Day of Code Retreat - Des Moines",
   "format": "classic",
   "spoken_language": "English",
-  "url": "https://leantechniques-3787519.hs-sites.com/coderetreat-san-antonio-2024",
+  "url": "https://leantechniques-3787519.hs-sites.com/coderetreat-dsm-2024",
   "date": {
     "start": "2024-11-09T09:00:00-06:00",
     "end": "2024-11-09T16:00:00-06:00"
   },
   "moderators": [
     {
-      "name": "Patrick Robinson"
+      "name": "Paul Kang"
     },
     {
-      "name": "Daniel Ward"
+      "name": "Zack Parks"
     }
   ],
   "sponsors": [
@@ -22,11 +22,11 @@
     }
   ],
   "location": {
-    "city": "San Antonio",
+    "city": "Des Moines",
     "country": "United States",
     "coordinates": {
-      "latitude": 29.424534,
-      "longitude": -98.491486
+      "latitude": 41.584995,
+      "longitude": -93.624275
     }
   }
 }
