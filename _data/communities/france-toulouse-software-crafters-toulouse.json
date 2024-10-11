@@ -1,0 +1,12 @@
+{
+  "name": "Software Crafters Toulouse",
+  "location": {
+    "country": "France",
+    "city": "Toulouse",
+    "coordinates": {
+      "latitude": 43.605988,
+      "longitude": 1.452122
+    }
+  },
+  "url": "https://meetup.com/software-craftsmanship-toulouse"
+}

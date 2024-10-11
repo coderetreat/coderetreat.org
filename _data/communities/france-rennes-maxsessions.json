@@ -1,0 +1,12 @@
+{
+  "name": "MaxSessions",
+  "location": {
+    "city": "Rennes",
+    "country": "France",
+    "coordinates": {
+      "latitude": 48.133083,
+      "longitude": -1.683465
+    }
+  },
+  "url": "https://meetup.com/maxsessions"
+}

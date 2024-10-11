@@ -1,0 +1,36 @@
+{
+  "title": "Moscow Code Retreat",
+  "description": "The classic weekend retreat dedicated to pair programming and test-driven development.",
+  "format": "classic",
+  "spoken_language": "Russian",
+  "url": "https://live.wecloud.events/t1-coderetreat/",
+  "code_of_conduct": "https://prog.msk.ru/coc/",
+  "date": {
+    "start": "2023-11-11T10:00:00+03:00",
+    "end": "2023-11-11T17:00:00+03:00"
+  },
+  "moderators": [
+    {
+      "name": "Svetlana Krivenko",
+      "url": "https://github.com/skrivenko"
+    },
+    {
+      "name": "Mark Shevchenko",
+      "url": "https://github.com/markshevchenko"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Roman Agrenin",
+      "url": "https://www.t1-consulting.ru/"
+    }
+  ],
+  "location": {
+    "city": "Moscow",
+    "country": "Russia",
+    "coordinates": {
+      "latitude": 55.789947,
+      "longitude": 37.570051
+    }
+  }
+}

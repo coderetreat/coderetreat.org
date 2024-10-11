@@ -37,7 +37,7 @@ const gitCreationDate = async (file) => {
 };
 
 const run = async () => {
-  const schemas = glob(__dirname + "/../_data/**/.SCHEMA.json");
+  const schemas = glob(__dirname + "/../_data/events/.SCHEMA.json");
   for (let schemaFile of schemas) {
     console.log(
       "EVENTS FOR",

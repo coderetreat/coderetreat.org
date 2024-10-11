@@ -1,0 +1,33 @@
+{
+  "title": "Global Day of Coderetreat 2024 | Istanbul (Türkiye)",
+  "description": "Local event in the context of the Global Day of Coderetreat organized by Java User Group (JUG) Istanbul and hosted by ING Teknoloji.",
+  "format": "classic",
+  "spoken_language": "Turkish",
+  "url": "https://www.jugistanbul.org/event-details/global-day-of-coderetreat-2024",
+  "date": {
+    "start": "2024-11-09T10:00:00+03:00",
+    "end": "2024-11-09T17:00:00+03:00"
+  },
+  "moderators": [
+    {
+      "name": "Merve Gündoğmuş",
+      "url": "https://github.com/mervegundogmus"
+    },
+    {
+      "name": "Erkan Tekel",
+      "url": "https://github.com/erkantekel"
+    },
+    {
+      "name": "Mert Kızıloğlu",
+      "url": "https://github.com/mertkiziloglu"
+    }
+  ],
+  "location": {
+    "city": "Istanbul",
+    "country": "Türkiye",
+    "coordinates": {
+      "latitude": 41.0091982,
+      "longitude": 28.9662187
+    }
+  }
+}

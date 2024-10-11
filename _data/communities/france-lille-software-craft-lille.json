@@ -1,0 +1,12 @@
+{
+  "name": "Software Craft Lille",
+  "location": {
+    "country": "France",
+    "city": "Lille",
+    "coordinates": {
+      "latitude": 50.6333,
+      "longitude": 3.0667
+    }
+  },
+  "url": "https://meetup.com/software-craftsmanship-lille"
+}

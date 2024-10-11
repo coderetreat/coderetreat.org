@@ -1,0 +1,12 @@
+{
+  "name": "Software Crafters Barcelona",
+  "location": {
+    "country": "Spain",
+    "city": "Barcelona",
+    "coordinates": {
+      "latitude": 41.3948976,
+      "longitude": 2.0787274
+    }
+  },
+  "url": "https://meetup.com/barcelona-software-craftsmanship"
+}

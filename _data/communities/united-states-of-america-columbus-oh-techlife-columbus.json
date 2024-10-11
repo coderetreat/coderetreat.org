@@ -1,0 +1,12 @@
+{
+  "name": "TechLife Columbus",
+  "location": {
+    "country": "United States of America",
+    "city": "Columbus, OH",
+    "coordinates": {
+      "latitude": 39.9748172,
+      "longitude": -82.99992
+    }
+  },
+  "url": "https://meetup.com/techlifecolumbus"
+}

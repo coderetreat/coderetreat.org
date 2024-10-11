@@ -1,0 +1,23 @@
+{
+  "title": "Coderetreat Albuquerque",
+  "format": "ensemble",
+  "spoken_language": "English",
+  "url": "https://www.meetup.com/albuquerque-software-social-club/events/296900214/",
+  "date": {
+    "start": "2023-11-03T09:30:00-06:00",
+    "end": "2023-11-03T16:30:00-06:00"
+  },
+  "moderators": [
+    {
+      "name": "Llewellyn Falco"
+    }
+  ],
+  "location": {
+    "city": "Albuquerque",
+    "country": "United States",
+    "coordinates": {
+      "latitude": 35.0881915,
+      "longitude": -106.6509448
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "JUG Vadodara",
+  "location": {
+    "country": "India",
+    "city": "Vadodara",
+    "coordinates": {
+      "latitude": 22.32,
+      "longitude": 73.03
+    }
+  },
+  "url": "https://meetup.com/jug-vadodara"
+}

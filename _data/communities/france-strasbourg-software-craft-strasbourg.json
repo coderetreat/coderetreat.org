@@ -1,0 +1,12 @@
+{
+  "name": "Software Craft Strasbourg",
+  "location": {
+    "city": "Strasbourg",
+    "country": "France",
+    "coordinates": {
+      "latitude": 48.5767012,
+      "longitude": 7.755099
+    }
+  },
+  "url": "https://meetup.com/software-crafters-strasbourg"
+}

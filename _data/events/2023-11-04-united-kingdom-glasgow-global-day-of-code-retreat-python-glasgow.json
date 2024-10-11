@@ -1,0 +1,23 @@
+{
+  "title": "Global Day of Code Retreat @ Python Glasgow",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://www.meetup.com/python-glasgow/events/296833131/",
+  "date": {
+    "start": "2023-11-04T09:00:00Z",
+    "end": "2023-11-04T16:00:00Z"
+  },
+  "moderators": [
+    {
+      "name": "Krzysztof Malinowski"
+    }
+  ],
+  "location": {
+    "city": "Glasgow",
+    "country": "United Kingdom",
+    "coordinates": {
+      "latitude": 55.860983,
+      "longitude": -4.248879
+    }
+  }
+}

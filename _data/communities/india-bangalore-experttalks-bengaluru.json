@@ -1,0 +1,12 @@
+{
+  "name": "ExpertTalks Bengaluru",
+  "location": {
+    "country": "India",
+    "city": "Bangalore",
+    "coordinates": {
+      "latitude": 12.9564548,
+      "longitude": 77.6394432
+    }
+  },
+  "url": "https://meetup.com/experttalks-bengaluru"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "8th Light University",
+  "location": {
+    "country": "United States of America",
+    "city": "Chicago",
+    "coordinates": {
+      "latitude": 41.8830478,
+      "longitude": -87.6290087
+    }
+  },
+  "url": "https://meetup.com/8th-light-university"
+}

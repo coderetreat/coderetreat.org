@@ -1,0 +1,32 @@
+{
+  "title": "Global Day of Coderetreat 2023 - Auckland, NZ",
+  "description": "Global Day of Coderetreat in Auckland, NZ! We're looking forward to another exciting day of practising the craft of coding, in the Pushpay office in the CBD.",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://www.meetup.com/kiwi-coderetreat/events/296831266/",
+  "code_of_conduct": "https://communitycodeofconduct.com/",
+  "date": {
+    "start": "2023-11-04T09:00:00+13:00",
+    "end": "2023-11-04T16:00:00+13:00"
+  },
+  "moderators": [
+    {
+      "name": "Marcus Bristol",
+      "url": "https://twitter.com/mightymuke"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Pushpay",
+      "url": "https://pushpay.com/"
+    }
+  ],
+  "location": {
+    "city": "Auckland",
+    "country": "New Zealand",
+    "coordinates": {
+      "latitude": -36.8474869,
+      "longitude": 174.7568543
+    }
+  }
+}

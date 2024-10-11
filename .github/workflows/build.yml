@@ -13,7 +13,7 @@ jobs:
         with:
           bundler-cache: true
       
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version-file: ".nvmrc"
           cache: 'npm'
@@ -26,18 +26,18 @@ jobs:
       - name: Build JavaScript
         run: npm run build
 
-      - uses: cypress-io/github-action@v6.5.0 # use the explicit version number
+      - uses: cypress-io/github-action@v6.7.6 # use the explicit version number
         with:
           start: npm run serve
           wait-on: "http://localhost:4000"
           install: false
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         if: failure()
         with:
           name: cypress-screenshots
           path: cypress/screenshots
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: cypress-videos

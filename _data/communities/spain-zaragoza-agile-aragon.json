@@ -1,0 +1,12 @@
+{
+  "name": "Agile Aragón",
+  "location": {
+    "country": "Spain",
+    "city": "Zaragoza",
+    "coordinates": {
+      "latitude": 41.670584,
+      "longitude": -0.901738
+    }
+  },
+  "url": "https://meetup.com/agilearagon"
+}

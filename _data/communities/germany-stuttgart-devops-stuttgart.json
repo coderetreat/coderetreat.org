@@ -1,0 +1,12 @@
+{
+  "name": "DevOps Stuttgart",
+  "location": {
+    "city": "Stuttgart",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 48.77499339622734,
+      "longitude": 9.179302117276652
+    }
+  },
+  "url": "https://meetup.com/devops-stuttgart"
+}

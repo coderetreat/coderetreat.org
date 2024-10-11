@@ -1,0 +1,12 @@
+{
+  "name": "Pittsburgh Code & Supply",
+  "location": {
+    "country": "United States of America",
+    "city": "Pittsburgh",
+    "coordinates": {
+      "latitude": 40.4598516,
+      "longitude": -79.9306494
+    }
+  },
+  "url": "https://meetup.com/pittsburgh-code-supply"
+}

@@ -1,0 +1,34 @@
+{
+  "title": "Global Day of Coderetreat Karlsruhe @Atruvia",
+  "format": "classic",
+  "spoken_language": "German",
+  "url": "https://www.softwerkskammer.org/activities/ka-gdcr-24",
+  "date": {
+    "start": "2024-11-09T09:00:00+01:00",
+    "end": "2024-11-09T18:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Peter Fichtner",
+      "url": "https://github.com/pfichtner"
+    },
+    {
+      "name": "Urs Metz",
+      "url": "https://github.com/UrsMetz"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Atruvia",
+      "url": "https://atruvia.de/"
+    }
+  ],
+  "location": {
+    "city": "Karlsruhe",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 48.994271012209566,
+      "longitude": 8.447133028109393
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "TechnoWise",
+  "location": {
+    "country": "India",
+    "city": "Pune",
+    "coordinates": {
+      "latitude": 18.568405,
+      "longitude": 73.909133
+    }
+  },
+  "url": "https://meetup.com/technowise"
+}

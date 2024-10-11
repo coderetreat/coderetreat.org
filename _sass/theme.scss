@@ -84,10 +84,6 @@ $enable-shadows: true;
   border-radius: 2px;
 }
 
-.setup-guide > div:nth-child(2n) {
-  background: $gray-100;
-}
-
 main blockquote:not(.blockquote) {
   background: theme-color("light");
   &:before {
@@ -135,6 +131,5 @@ button.btn-disabled-grayscale[disabled] {
 @import "helpful-boxes";
 @import "readmore";
 @import "pages/home";
-@import "pages/setup-guides";
 @import "pages/training-sessions";
 @import "pages/events";

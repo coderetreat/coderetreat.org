@@ -1,1 +1,16 @@
-{"title":"Global Day of Coderetreat 2013 - Lübeck, Germany","description":"We will celebreate the global day of code retreat at cloudsters (http://luebeck.cloudsters.net/) in Lübeck (http://goo.gl/maps/x3nHF), a nice location to get fresh ideas. This will be a classic code retreat with 45min sessions, game of life and other funny exercises. \nCome and join us! Please register here (https://coderetreat-hl.eventbrite.com/). Registration starts at 2013/11/04. The event is supported by Draeger (http://www.draeger.com/sites/de_de/Pages/Krankenhaus/Welcome.aspx). \nAgenda: \n8:00 : Arrival and Breakfast\n 8:30 : Introduction\n 9:00 : Session #1\n 9:45 : Retro/Break\n 10:00 : Session #2\n 10:45 : Retro/Break\n 11:00 : Session #3\n 11:45 : Retro/Break\n 12:00 : Lunch\n 13:30 : Session #4\n 14:15 : Retro/Break\n 14:30 : Session #5\n 15:15 : Retro/Break\n 15:30 : Session #6\n 16:15 : Retro/Break\n 16:30 : Complete Retro for the day\n 17:00 : End","url":"https://web.archive.org/http://coderetreat.org/events/global-day-of-coderetreat-2013-l-beck-germany","spoken_language":"","moderators":[{"name":"Thilko Richter"}],"location":{"country":"Germany","city":"Lübeck","coordinates":{"latitude":53.8654673,"longitude":10.6865593}},"date":{"start":"2013-12-14T08:00:00+02:00","end":"2013-12-14T17:00:00+02:00"}}
+{
+  "title": "Global Day of Coderetreat 2013 - Lübeck, Germany",
+  "description": "We will celebreate the global day of code retreat at cloudsters (http://luebeck.cloudsters.net/) in Lübeck (http://goo.gl/maps/x3nHF), a nice location to get fresh ideas. This will be a classic code retreat with 45min sessions, game of life and other funny exercises. \nCome and join us! Please register here (https://coderetreat-hl.eventbrite.com/). Registration starts at 2013/11/04. The event is supported by Draeger (http://www.draeger.com/sites/de_de/Pages/Krankenhaus/Welcome.aspx). \nAgenda: \n8:00 : Arrival and Breakfast\n 8:30 : Introduction\n 9:00 : Session #1\n 9:45 : Retro/Break\n 10:00 : Session #2\n 10:45 : Retro/Break\n 11:00 : Session #3\n 11:45 : Retro/Break\n 12:00 : Lunch\n 13:30 : Session #4\n 14:15 : Retro/Break\n 14:30 : Session #5\n 15:15 : Retro/Break\n 15:30 : Session #6\n 16:15 : Retro/Break\n 16:30 : Complete Retro for the day\n 17:00 : End",
+  "url": "https://web.archive.org/http://coderetreat.org/events/global-day-of-coderetreat-2013-l-beck-germany",
+  "spoken_language": "",
+  "moderators": [{ "name": "Thilko Richter" }],
+  "location": {
+    "country": "Germany",
+    "city": "Lübeck",
+    "coordinates": { "latitude": 53.8654673, "longitude": 10.6865593 }
+  },
+  "date": {
+    "start": "2013-12-14T08:00:00+02:00",
+    "end": "2013-12-14T17:00:00+02:00"
+  }
+}
