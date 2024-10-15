@@ -1,0 +1,39 @@
+{
+  "title": "Global Day of Coderetreat Vienna 2024",
+  "description": "A Coderetreat is all about crafting software. Join our community event to practice professional software development, spend a day on deliberate learning and practice, and have fun. This year our topic is Incremental Development using TDD. We invite everyone interested in software development, whether beginners or seasoned professionals, to participate in this year's Global Day of Coderetreat. Arrival begins at 08:15. Join us for a complimentary breakfast—we offer a selection of beverages and delicious snacks. The sessions will kick off at 09:00. It's time to write some code together!",
+  "format": "Ensemble and Pair-Programming",
+  "spoken_language": "Englisch, German",
+  "url": "https://www.eventbrite.at/e/global-day-of-coderetreat-vienna-2024-tickets-1047932723987",
+  "date": {
+    "start": "2024-11-09T09:00:00+01:00",
+    "end": "2024-11-09T17:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Peter Kofler",
+      "url": "https://github.com/codecop"
+    },
+    {
+      "name": "Gregor Riegler",
+      "url": "https://github.com/gregorriegler"
+    },
+    {
+      "name": "Roland Germ",
+      "url": "https://github.com/rolger"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Nagarro",
+      "url": "https://www.nagarro.com/"
+    }
+  ],
+  "location": {
+    "city": "Vienna",
+    "country": "Austria",
+    "coordinates": {
+      "latitude": 48.171033, 
+      "longitude": 16.332907
+    }
+  }
+}
