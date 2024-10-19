@@ -1,0 +1,40 @@
+{
+  "title": "Global Day of Coderetreat with JUG Poznań and Allegro Tech",
+  "format": "classic",
+  "spoken_language": "Polish",
+  "url": "https://www.meetup.com/Poznan-Java-User-Group/events/304074751/",
+  "date": {
+    "start": "2024-11-16T09:00:00+01:00",
+    "end": "2024-11-16T16:30:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Wojtek Zieliński"
+    },
+    {
+      "name": "Tomasz Grabarczyk"
+    },
+    {
+      "name": "Krystian Adamski",
+      "url": "https://adamski.pro"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "JUG Poznań",
+      "url": "https://www.meetup.com/pl-PL/poznan-java-user-group/"
+    },
+    {
+      "name": "Allegro Tech",
+      "url": "https://blog.allegro.tech/"
+    }
+  ],
+  "location": {
+    "city": "Poznań",
+    "country": "Poland",
+    "coordinates": {
+      "latitude": 52.408266,
+      "longitude": 16.93352
+    }
+  }
+}
