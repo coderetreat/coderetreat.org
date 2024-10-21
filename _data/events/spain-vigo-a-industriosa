@@ -1,0 +1,43 @@
+{
+  "title": "Día Mundial do Code Retreat",
+  "description": "Un día para innovar, colaborar e perfeccionar a nosa arte no código.",
+  "format": "classic",
+  "spoken_language": "Spanish, Galician",
+  "url": "https://www.meetup.com/aindustriosa/events/304115173",
+  "date": {
+    "start": "2024-11-09T10:00:00+01:00",
+    "end": "2024-11-09T17:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Fran Iglesias",
+      "url": "https://github.com/franiglesias"
+    },
+    {
+      "name": "Rolando Caldas",
+      "url": "https://github.com/rolandocaldas"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "A Industriosa",
+      "url": "https://aindustriosa.org/"
+    },
+    {
+      "name": "Qualifyze",
+      "url": "https://www.qualifyze.com/"
+    },
+    {
+      "name": "Boardfy",
+      "url": "https://www.boardfy.com/es/"
+    }
+  ],
+  "location": {
+    "city": "Vigo",
+    "country": "Spain",
+    "coordinates": {
+      "latitude": 42.237534,
+      "longitude": -8.723104
+    }
+  }
+}
