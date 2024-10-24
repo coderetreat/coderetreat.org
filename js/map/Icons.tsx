@@ -8,5 +8,5 @@ const loadAsImageData = async (url: string): Promise<HTMLImageElement> => {
     });
 }
 
-
+export { CommunityIcon }
 export const Community = loadAsImageData(CommunityIcon);

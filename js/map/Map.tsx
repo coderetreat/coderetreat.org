@@ -4,7 +4,7 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import "./Map.scss";
 import { EventWithId, eventHasPhysicalLocation, eventToGeoJSONFeature } from "../events/EventType";
 import { CommunityWithId, communityHasPhysicalLocation, communityToGeoJSONFeature } from "../events/CommunityType";
-import { Community } from "./Icons";
+import { Community, CommunityIcon } from "./Icons";
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoicnJhZGN6ZXdza2kiLCJhIjoiY2o3OWg4ZHV0MDFrdjM3b2FvcXFqdmtidiJ9.oULZ0ljtFZqMHFDbyvkwVQ";
@@ -44,6 +44,9 @@ export const Map = ({
         },
       })
     );
+    map.current.on("zoom", ({ target }) => {
+      console.log(target.getZoom());
+    })
 
     map.current.on("load", async ({ target }) => {
       target.addImage("community-icon", await Community)
@@ -61,7 +64,7 @@ export const Map = ({
         source: "communities",
         layout: {
           "icon-image": "community-icon",
-          "icon-size": ['interpolate', ['linear'], ['zoom'], 0, 0.05, 5, 0.5],
+          "icon-size": ['interpolate', ['linear'], ['zoom'], 0, 0.05, 5, 0.1, 9, 0.5],
           "icon-allow-overlap": true
         }
       });
@@ -69,6 +72,7 @@ export const Map = ({
         id: "communities-name",
         type: "symbol",
         source: "communities",
+        minzoom: 9,
         layout: {
           "text-field": ["get", "name"],
           "text-size": 12,
@@ -199,6 +203,16 @@ export const Map = ({
   return (
     <div className="map-container border">
       <div ref={mapRef} className="map"></div>
+      <div className="legend">
+        <ul>
+          <li><img height="16px" src={CommunityIcon} /><span> Community</span></li>
+          <li>
+            <svg viewBox="0 0 10 10" height="16px">
+              <g><circle r="5" cx="5" cy="5" fill="#00FFFF" /></g>
+            </svg><span> Event</span>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
