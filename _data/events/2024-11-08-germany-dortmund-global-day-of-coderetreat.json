@@ -1,0 +1,36 @@
+{
+  "title": "Global Day of Coderetreat Dortmund",
+  "description": "⚓ Ahoy, ihr Landratten! Macht euch bereit für einen Coderetreat der besonderen Art – am Global Day of Coderetreat!  🌴 Arrr! Monkey Island wartet! Auf der berüchtigten Insel werden wir in Teams Rätsel lösen, Schätze entdecken und gegen furchterregende Affen, Piraten und tückische Anforderungen kämpfen. Ihr schärft eure Fähigkeiten in Test-Driven Development (TDD), Agile Development, Code-Design und Kommunikation. Wie in der Realität werden die Product Owner die Anforderungen genau kennen – und es kann jeder mitmachen, egal ob Entwickler, Tester, Scrum Master oder Product Owner. Vorkenntnisse? Braucht ihr nicht!",
+  "format": "classic",
+  "spoken_language": "German, English",
+  "url": "https://www.meetup.com/de-DE/softwerkskammer-ruhrgebiet/events/304181390",
+  "date": {
+    "start": "2024-11-08T08:30:00+01:00",
+    "end": "2024-11-08T17:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Markus Lüger"
+    },
+    {
+      "name": "Christopher Flocke"
+    },
+    {
+      "name": "Thomas Buß"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "codecentric AG",
+      "url": "https://www.codecentric.de/"
+    }
+  ],
+  "location": {
+    "city": "Dortmund",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 51.513924,
+      "longitude": 7.465331
+    }
+  }
+}
