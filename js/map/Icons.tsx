@@ -1,4 +1,4 @@
-import CommunityIcon from "../../assets/noun-community-39138.svg";
+import CommunityIcon from "../../assets/community-icon.svg";
 
 const loadAsImageData = async (url: string): Promise<HTMLImageElement> => {
     const img = new Image();
@@ -7,6 +7,7 @@ const loadAsImageData = async (url: string): Promise<HTMLImageElement> => {
         img.onload = () => resolve(img);
     });
 }
+
 
 export { CommunityIcon }
 export const Community = loadAsImageData(CommunityIcon);
