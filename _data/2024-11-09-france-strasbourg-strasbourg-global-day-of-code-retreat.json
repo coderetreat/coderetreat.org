@@ -1,0 +1,35 @@
+{
+  "title": "Strasbourg - Global Day of Code Retreat",
+  "description": "Samedi 9 novembre de 9h à 18h La Global day of Code Retreat aura lieu à Strasbourg à La Plage Digitale!   Cet événement international d'une journée permet de pratiquer le développement logiciel. ",
+  "format": "classic",
+  "spoken_language": "Français",
+  "url": "https://www.meetup.com/fr-FR/software-crafters-strasbourg/events/304179139",
+  "date": {
+    "start": "2024-11-09T09:00:00+01:00",
+    "end": "2024-11-08T18:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Marc Bouvier",
+      "url": "https://baldir.fr"
+    },
+    {
+      "name": "Olivier Albiez",
+      "url": "https://xn--aza-dma.net/team/"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "La Plage Digitale",
+      "url": "https://www.laplagedigitale.fr/"
+    }
+  ],
+  "location": {
+    "city": "Strasbourg",
+    "country": "France",
+    "coordinates": {
+      "latitude": 48.57762,
+      "longitude": 7.754981
+    }
+  }
+}
