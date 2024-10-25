@@ -1,0 +1,27 @@
+{
+  "title": "Global Day of Coderetreat Berlin",
+  "description": "⚓ Ahoy, ihr Landratten! Macht euch bereit für einen Coderetreat der besonderen Art – am Global Day of Coderetreat!  🌴 Arrr! Monkey Island wartet! Auf der berüchtigten Insel werden wir in Teams Rätsel lösen, Schätze entdecken und gegen furchterregende Affen, Piraten und tückische Anforderungen kämpfen. Ihr schärft eure Fähigkeiten in Test-Driven Development (TDD), Agile Development, Code-Design und Kommunikation. Wie in der Realität werden die Product Owner die Anforderungen genau kennen – und es kann jeder mitmachen, egal ob Entwickler, Tester, Scrum Master oder Product Owner. Vorkenntnisse? Braucht ihr nicht!",
+  "format": "classic",
+  "spoken_language": "German",
+  "url": "https://www.meetup.com/de-DE/codecentric-berlin/events/304199566/?slug=codecentric-berlin&eventId=304199566",
+  "date": {
+    "start": "2024-11-08T08:30:00+01:00",
+    "end": "2024-11-08T17:30:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Kristian Bergmann"
+    },
+    {
+      "name": "David Gontrum"
+    }
+  ],
+  "location": {
+    "city": "Berlin",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 52.517037,
+      "longitude": 13.38886
+    }
+  }
+}
