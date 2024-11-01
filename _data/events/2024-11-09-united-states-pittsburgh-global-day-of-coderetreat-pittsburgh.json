@@ -18,9 +18,20 @@
       },
       {
         "name": "Libby Horacek"
+      }
+    ],
+    "sponsors": [
+      {
+        "name": "Pirate Maps",
+        "url": "https://pirate-maps.io"
       },
       {
-        "name": "Jean Lange"
+        "name": "Approachable Open Source",
+        "url": "https://approachableopensource.com/"
+      },
+      {
+        "name": "Sketch Development",
+        "url": "https://sketchdev.io/"
       }
     ],
     "location": {
