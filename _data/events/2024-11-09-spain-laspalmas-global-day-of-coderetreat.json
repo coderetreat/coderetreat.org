@@ -11,25 +11,25 @@
   "moderators": [
     {
       "name": "Miguel Ángel Pérez García",
-      "url": "https://www.linkedin.com/in/dev-miguelangel/"
+      "url": "https://www.linkedin.com/in/dev-miguelangel"
     },
     {
       "name": "Jonay Eliezer Godoy Reyes",
-      "url": "https://www.linkedin.com/in/jonay-eliezer-godoy-reyes/"
+      "url": "https://www.linkedin.com/in/jonay-eliezer-godoy-reyes"
     },
     {
       "name": "José Celano Martín",
-      "url": "https://www.linkedin.com/in/josecelano/"
+      "url": "https://www.linkedin.com/in/josecelano"
     }
   ],
   "sponsors": [
     {
     "name": "Lean Mind",
-    "url": "https://leanmind.es/"
+    "url": "https://leanmind.es"
     },
     {
       "name": "Secret Source",
-      "url": "https://www.secret-source.eu/"
+      "url": "https://www.secret-source.eu"
     },
     {
       "name": "Biting Bit",
@@ -41,7 +41,7 @@
     },
     {
       "name": "SPEGC",
-      "url": "https://www.spegc.org/"
+      "url": "https://www.spegc.org"
     }
 ],
   "location": {
