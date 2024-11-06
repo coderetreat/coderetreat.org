@@ -1,0 +1,40 @@
+{
+  "title": "Global Day of Code Retreat 2023 @Trainline - Barcelona JUG & Software Crafters, Barcelona, Spain",
+  "description": "¿Quieres practicar en buena compañía y aprender testing, TDD, pair-programming y conceptos de diseño de software? Trae ganas de aprender, tu ordenador, boli y papel, y practica a través de ejercicios en un entorno seguro y lejos de la presión de tener que hacer las cosas con prisas",
+  "format": "classic",
+  "spoken_language": "English, Spanish",
+  "url": "https://www.meetup.com/barcelonajug/events/296936963/",
+  "code_of_conduct": "https://softwarecrafters.barcelona/#coc",
+  "date": {
+    "start": "2023-11-04T09:00:00+01:00",
+    "end": "2023-11-04T17:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Nacho Cougil",
+      "url": "https://twitter.com/icougil"
+    },
+    {
+      "name": "Anyul Rivas",
+      "url": "https://twitter.com/anyulled"
+    },
+    {
+      "name": "Hussein M. Kasem",
+      "url": "https://twitter.com/helbaroudy"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Trainline",
+      "url": "https://www.thetrainline.com/"
+    }
+  ],
+  "location": {
+    "city": "Barcelona",
+    "country": "Spain",
+    "coordinates": {
+      "latitude": 41.382894,
+      "longitude": 2.177432
+    }
+  }
+}

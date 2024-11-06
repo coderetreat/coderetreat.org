@@ -1,0 +1,31 @@
+{
+  "title": "Global Day of Coderetreat Des Moines",
+  "description": "Enjoy a day of Learning, TDD, and pairing, at Lean Techniques in Des Moines!",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://leantechniques-3787519.hs-sites.com/coderetreat-des-moines-2023",
+  "date": {
+    "start": "2023-11-03T08:30:00-05:00",
+    "end": "2023-11-03T17:00:00-05:00"
+  },
+  "moderators": [
+    {
+      "name": "Joey Shipley",
+      "url": "https://leantechniques.com/"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Lean Techniques",
+      "url": "https://leantechniques.com/"
+    }
+  ],
+  "location": {
+    "city": "Des Moines",
+    "country": "United States",
+    "coordinates": {
+      "latitude": 41.591032,
+      "longitude": -93.604666
+    }
+  }
+}

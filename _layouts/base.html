@@ -25,7 +25,6 @@
     {% include navbar.html %}
     <script type="module" src="{{ "/js/default.js" | relative_url }}"></script>
     {{ content }}
-    {% include disqus_comments.html %}
   </main>
 
   <footer class="footer bg-dark text-light mt-5 pt-3 pb-5">
@@ -38,7 +37,10 @@
         </ul>
       </div>
       <div class="col-lg-3 offset-lg-6">
-        <p>The Coderetreat Contributors 2020</p>
+        <ul class="list-unstyled">
+          <li>The Coderetreat Contributors {{ 'now' | date: '%Y' }}</li>
+          <li><a href="{% link resources/code-of-conduct.md %}">Code of Conduct</a></li>
+        </ul>
       </div>
     </div>
     </div>

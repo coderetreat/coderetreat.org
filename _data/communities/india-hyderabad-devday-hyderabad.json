@@ -1,0 +1,12 @@
+{
+  "name": "DevDay Hyderabad",
+  "location": {
+    "city": "Hyderabad",
+    "country": "India",
+    "coordinates": {
+      "latitude": 17.360589,
+      "longitude": 78.474061
+    }
+  },
+  "url": "https://meetup.com/devday_hyderabad"
+}

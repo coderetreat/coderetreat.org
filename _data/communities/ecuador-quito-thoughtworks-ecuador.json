@@ -1,0 +1,12 @@
+{
+  "name": "Thoughtworks Ecuador",
+  "location": {
+    "country": "Ecuador",
+    "city": "Quito",
+    "coordinates": {
+      "latitude": -0.1858189,
+      "longitude": -78.4825211
+    }
+  },
+  "url": "https://meetup.com/thoughtworks-ecuador"
+}

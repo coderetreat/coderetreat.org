@@ -1,0 +1,34 @@
+{
+  "title": "Code Retreat Edinburgh (Saturday)",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://www.eventbrite.co.uk/e/coderetreat-edinburgh-saturday-tickets-967659855677",
+  "code_of_conduct": "https://berlincodeofconduct.org/",
+  "date": {
+    "start": "2024-11-09T08:45:00Z",
+    "end": "2024-11-09T17:00:00Z"
+  },
+  "moderators": [
+    {
+      "name": "Barney Dellar",
+      "url": "https://mastodon.scot/@BarneyDellar"
+    },
+    {
+      "name": "Jenn Archibald"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Canon Medical Research Europe",
+      "url": "https://research.eu.medical.canon/"
+    }
+  ],
+  "location": {
+    "city": "Edinburgh",
+    "country": "United Kingdom",
+    "coordinates": {
+      "latitude": 55.953345599999984,
+      "longitude": -3.1883749
+    }
+  }
+}

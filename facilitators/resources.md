@@ -24,7 +24,7 @@ They can use an online coding environment like [Cyber-Dojo](http://www.cyber-doj
 
 ## Booklet
 
-[Markus Decke](https://twitter.com/mrksdck) created [this very useful booklet](https://github.com/mrksdck/coderetreat-pocketmod). Thanks Markus!!
+[Markus Decke](https://chaos.social/@mrksdck) created [this very useful booklet](https://github.com/mrksdck/coderetreat-pocketmod). Thanks Markus!!
 
 ## Game of Life schemas
 

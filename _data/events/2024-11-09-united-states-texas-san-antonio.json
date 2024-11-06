@@ -1,0 +1,32 @@
+{
+  "title": "Global Day of Code Retreat - San Antonio",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://leantechniques-3787519.hs-sites.com/coderetreat-san-antonio-2024",
+  "date": {
+    "start": "2024-11-09T09:00:00-06:00",
+    "end": "2024-11-09T16:00:00-06:00"
+  },
+  "moderators": [
+    {
+      "name": "Patrick Robinson"
+    },
+    {
+      "name": "Daniel Ward"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Lean Techniques",
+      "url": "https://leantechniques.com/"
+    }
+  ],
+  "location": {
+    "city": "San Antonio",
+    "country": "United States",
+    "coordinates": {
+      "latitude": 29.424534,
+      "longitude": -98.491486
+    }
+  }
+}

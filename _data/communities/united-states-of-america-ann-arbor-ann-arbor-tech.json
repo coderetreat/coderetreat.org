@@ -1,0 +1,12 @@
+{
+  "name": "Ann Arbor Tech",
+  "location": {
+    "country": "United States of America",
+    "city": "Ann Arbor",
+    "coordinates": {
+      "latitude": 42.279835,
+      "longitude": -83.745728
+    }
+  },
+  "url": "https://meetup.com/techlife-ann-arbor"
+}

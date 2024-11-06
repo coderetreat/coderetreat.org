@@ -1,0 +1,42 @@
+{
+  "title": "Global Day of Coderetreat: Kraków 2024",
+  "format": "classic",
+  "spoken_language": "Polish",
+  "url": "https://www.meetup.com/sc-krk/events/304116703/?eventOrigin=group_upcoming_events",
+  "date": {
+    "start": "2024-11-16T09:00:00+01:00",
+    "end": "2024-11-16T17:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Grzegorz Bańczak",
+      "url": "https://www.linkedin.com/in/grzegorz-ba%C5%84czak-428595b3/"
+    },
+    {
+      "name": "Piotr Dudek",
+      "url": "https://piotrdudek.dev/"
+    },
+    {
+      "name": "Przemysław Plata",
+      "url": "https://github.com/Siitrev"
+    },
+    {
+      "name": "Dominik Wieczorek",
+      "url": "https://www.linkedin.com/in/dominik-wieczorek/"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Medius",
+      "url": "https://www.medius.com/"
+    }
+  ],
+  "location": {
+    "city": "Kraków",
+    "country": "Poland",
+    "coordinates": {
+      "latitude": 50.062325,
+      "longitude": 19.937975
+    }
+  }
+}

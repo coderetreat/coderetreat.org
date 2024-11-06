@@ -1,0 +1,12 @@
+{
+  "name": "Kiwi Coderetreat",
+  "location": {
+    "country": "New Zealand",
+    "city": "Auckland",
+    "coordinates": {
+      "latitude": -36.8629409,
+      "longitude": 174.7253883
+    }
+  },
+  "url": "https://meetup.com/kiwi-code-retreat"
+}

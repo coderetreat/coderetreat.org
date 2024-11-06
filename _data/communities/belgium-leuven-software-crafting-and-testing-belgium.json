@@ -1,0 +1,12 @@
+{
+  "name": "Software Crafting and Testing Belgium",
+  "location": {
+    "country": "Belgium",
+    "city": "Leuven",
+    "coordinates": {
+      "latitude": 50.8468,
+      "longitude": 4.7294
+    }
+  },
+  "url": "https://meetup.com/socratesbe"
+}

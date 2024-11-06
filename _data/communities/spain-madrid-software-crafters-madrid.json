@@ -1,0 +1,12 @@
+{
+  "name": "Software Crafters Madrid",
+  "location": {
+    "country": "Spain",
+    "city": "Madrid",
+    "coordinates": {
+      "latitude": 40.4160483,
+      "longitude": -3.6983344
+    }
+  },
+  "url": "https://meetup.com/madswcraft"
+}

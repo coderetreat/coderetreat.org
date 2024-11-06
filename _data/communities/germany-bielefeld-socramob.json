@@ -1,0 +1,12 @@
+{
+  "name": "SoCraMOB",
+  "location": {
+    "city": "Bielefeld",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 52.0298491,
+      "longitude": 8.5337646
+    }
+  },
+  "url": "https://meetup.com/socramob"
+}

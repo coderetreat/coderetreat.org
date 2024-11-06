@@ -1,0 +1,36 @@
+{
+  "title": "Global day of code retreat - Lyon 2024",
+  "format": "classic",
+  "spoken_language": "French",
+  "url": "https://www.meetup.com/fr-FR/software-craftsmanship-lyon/events/303123696",
+  "date": {
+    "start": "2024-11-09T09:00:00+01:00",
+    "end": "2024-11-09T17:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Software Crafters Lyon",
+      "url": "https://github.com/swcraftlyon"
+    },
+    {
+      "name": "Ando",
+      "url": "https://twitter.com/andonary"
+    },
+    {
+      "name": "Florent",
+      "url": "https://twitter.com/florentpellet"
+    },
+    {
+      "name": "Léo",
+      "url": "https://github.com/LeoMouyna"
+    }
+  ],
+  "location": {
+    "city": "Lyon",
+    "country": "France",
+    "coordinates": {
+      "latitude": 45.766106,
+      "longitude": 4.832619
+    }
+  }
+}

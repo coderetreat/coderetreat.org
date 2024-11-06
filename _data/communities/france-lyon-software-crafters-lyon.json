@@ -1,0 +1,12 @@
+{
+  "name": "Software Crafters Lyon",
+  "location": {
+    "country": "France",
+    "city": "Lyon",
+    "coordinates": {
+      "latitude": 45.7578,
+      "longitude": 4.8351
+    }
+  },
+  "url": "https://meetup.com/software-craftsmanship-lyon"
+}

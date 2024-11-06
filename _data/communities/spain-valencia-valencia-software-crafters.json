@@ -1,0 +1,12 @@
+{
+  "name": "Valencia Software Crafters",
+  "location": {
+    "city": "Valencia",
+    "country": "Spain",
+    "coordinates": {
+      "latitude": 39.4699075,
+      "longitude": -0.3762881
+    }
+  },
+  "url": "https://meetup.com/valencia-software-crafters"
+}

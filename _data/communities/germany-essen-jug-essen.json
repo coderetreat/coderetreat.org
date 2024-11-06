@@ -1,0 +1,12 @@
+{
+  "name": "JUG Essen",
+  "location": {
+    "country": "Germany",
+    "city": "Essen",
+    "coordinates": {
+      "latitude": 51.4556366,
+      "longitude": 6.9976476
+    }
+  },
+  "url": "https://meetup.com/jug-essen"
+}

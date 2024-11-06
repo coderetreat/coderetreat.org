@@ -1,0 +1,29 @@
+{
+  "title": "GDCR - SWK Cologne",
+  "format": "classic",
+  "spoken_language": "German, English",
+  "url": "https://www.meetup.com/softwerkskammer-koln/events/303712284/",
+  "date": {
+    "start": "2024-11-09T09:00:00+01:00",
+    "end": "2024-11-09T17:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Maximilian Buttlies"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "lise GmbH",
+      "url": "https://www.lise.de"
+    }
+  ],
+  "location": {
+    "city": "Köln",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 50.93804,
+      "longitude": 6.960162
+    }
+  }
+}

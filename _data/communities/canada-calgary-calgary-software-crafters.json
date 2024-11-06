@@ -1,0 +1,12 @@
+{
+  "name": "Calgary Software Crafters",
+  "location": {
+    "city": "Calgary",
+    "country": "Canada",
+    "coordinates": {
+      "latitude": 51.042866,
+      "longitude": -114.0914883
+    }
+  },
+  "url": "https://meetup.com/calgary-software-crafters"
+}

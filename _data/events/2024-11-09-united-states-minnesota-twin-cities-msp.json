@@ -1,0 +1,30 @@
+{
+  "title": "Global Day of Code Retreat - Twin Cities (MSP)",
+  "description": "Saint Paul Public Library - George Latimer Central Library - Bremer Room 1st Floor",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://leantechniques-3787519.hs-sites.com/coderetreat-msp-2024",
+  "date": {
+    "start": "2024-11-09T10:00:00-06:00",
+    "end": "2024-11-09T16:00:00-06:00"
+  },
+  "moderators": [
+    {
+      "name": "Joey Shipley"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Lean Techniques",
+      "url": "https://leantechniques.com/"
+    }
+  ],
+  "location": {
+    "city": "Saint Paul",
+    "country": "United States",
+    "coordinates": {
+      "latitude": 44.948227,
+      "longitude": -93.09164
+    }
+  }
+}

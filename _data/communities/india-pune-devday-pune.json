@@ -1,0 +1,12 @@
+{
+  "name": "DevDay Pune",
+  "location": {
+    "city": "Pune",
+    "country": "India",
+    "coordinates": {
+      "latitude": 18.54264574824203,
+      "longitude": 73.9136401390479
+    }
+  },
+  "url": "https://meetup.com/devday_pune"
+}

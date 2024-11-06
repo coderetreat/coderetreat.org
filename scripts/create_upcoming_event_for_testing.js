@@ -5,8 +5,8 @@ const Ajv = require("ajv");
 const addFormats = require("ajv-formats");
 
 const run = async () => {
-  const startsInOneHour = ZonedDateTime.now().plusHours(1);
-  const endsIn10Hours = startsInOneHour.plusHours(9);
+  const startedLongAgoSoItSitsOnTop = ZonedDateTime.now().minusDays(5);
+  const endsInTenMinutes = ZonedDateTime.now().plusMinutes(10);
 
   const ajv = new Ajv();
   addFormats(ajv);
@@ -24,8 +24,8 @@ const run = async () => {
     url: "https://www.meetup.com/some-link",
     code_of_conduct: "https://communitycodeofconduct.com/",
     date: {
-      start: DateTimeFormatter.ISO_DATE_TIME.format(startsInOneHour),
-      end: DateTimeFormatter.ISO_DATE_TIME.format(endsIn10Hours),
+      start: DateTimeFormatter.ISO_DATE_TIME.format(startedLongAgoSoItSitsOnTop),
+      end: DateTimeFormatter.ISO_DATE_TIME.format(endsInTenMinutes),
     },
     moderators: [
       {

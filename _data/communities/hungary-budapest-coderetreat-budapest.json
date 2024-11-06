@@ -1,0 +1,12 @@
+{
+  "name": "Coderetreat Budapest",
+  "location": {
+    "country": "Hungary",
+    "city": "Budapest",
+    "coordinates": {
+      "latitude": 47.485497,
+      "longitude": 19.074604
+    }
+  },
+  "url": "https://meetup.com/coderetreat-budapest"
+}
