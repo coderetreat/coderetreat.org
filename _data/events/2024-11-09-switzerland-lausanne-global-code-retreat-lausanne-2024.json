@@ -1,0 +1,43 @@
+{
+  "title": "Global Day Retreat",
+  "description": "Rejoignez-nous pour découvrir, apprendre et progresser tous ensemble ! A l’occasion du Global Day of Code Retreat, nous vous proposons une troisième édition de Code Retreat à Lausanne. Cet évènement aura lieu en présentiel, dans les locaux de socraft. SVP: Les places sont limitées, aussi soyez sûr de pouvoir venir si vous vous inscrivez. Le quotidien ne nous permet pas toujours d’expérimenter de nouvelles façons de faire. Cet évènement sera l’occasion de pratiquer, sans se presser : Un exercice de code sera proposé, et 3 sessions en binôme auront lieu pour le parcourir de manières différentes.",
+  "format": "classic",
+  "spoken_language": "French",
+  "url": "https://www.meetup.com/romandie-software-craftsmanship/events/301153241/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link",
+  "date": {
+    "start": "2024-11-09T09:30:00+01:00",
+    "end": "2024-11-09T16:30:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Alexandre Cuva",
+      "url": "https://www.linkedin.com/in/cuvaalex/"
+    },
+    {
+      "name": "Romain Felden",
+      "url": "https://www.linkedin.com/in/rfldn/"
+    },
+    {
+      "name": "Gwenol Grandperrin",
+      "url": "https://www.linkedin.com/in/gwenol-grandperrin/"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "SoCraft",
+      "url": "https://socraft.ch/"
+    },
+    {
+      "name": "SoCraAgile",
+      "url": "https://www.socraagile.ch/"
+    }
+  ],
+  "location": {
+    "city": "Lausanne",
+    "country": "Switzerland",
+    "coordinates": {
+      "latitude": 46.517796,
+      "longitude": 6.643173
+    }
+  }
+}
