@@ -1,0 +1,38 @@
+{
+  "title": "San Antonio Coderetreat 2024",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://leantechniques-3787519.hs-sites.com/coderetreat-san-antonio-2024",
+  "date": {
+    "start": "2024-11-08T09:00:00-06:00",
+    "end": "2024-11-08T16:00:00-06:00"
+  },
+  "moderators": [
+    {
+      "name": "Daniel Ward",
+      "url": "https://www.linkedin.com/in/daniel-ward-dev/"
+    },
+    {
+      "name": "Patrick Robinson",
+      "url": "https://www.linkedin.com/in/patrick-robinson-dev/"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Zelifcam",
+      "url": "https://zelifcam.net/"
+    },
+    {
+      "name": "Lean TECHniques",
+      "url": "https://leantechniques.com/"
+    }
+  ],
+  "location": {
+    "city": "San Antonio",
+    "country": "United States",
+    "coordinates": {
+      "latitude": 29.424534,
+      "longitude": -98.491486
+    }
+  }
+}
