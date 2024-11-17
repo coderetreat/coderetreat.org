@@ -51,6 +51,7 @@ const dropEmptyKeys = (obj) =>
       }, {});
 
 const slugifyEvent = (payload) => {
+  const year = payload.date.start.slice(0, 4);
   const segments = [
     payload.date.start.slice(0, 10),
     ...(payload.location === "virtual"
@@ -59,7 +60,7 @@ const slugifyEvent = (payload) => {
     payload.title,
   ].filter((a) => !!a);
 
-  return slug(segments.join("-"));
+  return [year, slug(segments.join("-"))].join("/");
 };
 
 const Wizard = () => {
