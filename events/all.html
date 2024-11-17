@@ -4,8 +4,7 @@ title: All Coderetreat Events
 audience: participants
 ---
 
-{% assign events = site.data.events | kv_entries | sort: "v.date.start" |
-reverse %}
+{% assign events = site.data.events | merge_hash_values | kv_entries | sort: "v.date.start" | reverse %}
 <p class="lead">
   Since 2013, we've counted <b>{{ events | size }}</b> coderetreats all over the
   world.

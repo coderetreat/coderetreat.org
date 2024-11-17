@@ -16,6 +16,15 @@ module Jekyll
             input
         end
       end
+
+      def merge_hash_values(input)
+        case
+        when input.instance_of?(Hash)
+          input.values.reduce(:merge)
+        else
+          input
+        end
+      end
         
     end
   end
