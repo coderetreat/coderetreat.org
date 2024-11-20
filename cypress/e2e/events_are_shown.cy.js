@@ -1,7 +1,7 @@
 describe("Events are shown on the front page", () => {
   let testEvent;
   before(() => {
-    cy.readFile("_data/events/TEST_EVENT.json").then((f) => (testEvent = f));
+    cy.readFile("_data/events/"+(new Date().getFullYear()+1)+"/TEST_EVENT.json").then((f) => (testEvent = f));
   });
 
   it("lists the test event", () => {

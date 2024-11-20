@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 const { ZonedDateTime, DateTimeFormatter } = require("@js-joda/core");
-const { writeFile, readFile } = require("fs/promises");
+const { writeFile, readFile, stat, mkdir } = require("fs/promises");
 const Ajv = require("ajv");
 const addFormats = require("ajv-formats");
 
@@ -24,7 +24,9 @@ const run = async () => {
     url: "https://www.meetup.com/some-link",
     code_of_conduct: "https://communitycodeofconduct.com/",
     date: {
-      start: DateTimeFormatter.ISO_DATE_TIME.format(startedLongAgoSoItSitsOnTop),
+      start: DateTimeFormatter.ISO_DATE_TIME.format(
+        startedLongAgoSoItSitsOnTop
+      ),
       end: DateTimeFormatter.ISO_DATE_TIME.format(endsInTenMinutes),
     },
     moderators: [
@@ -45,8 +47,14 @@ const run = async () => {
   const result = validate(event);
   if (!result) throw validate.errors;
 
+  const year = new Date().getFullYear() + 1;
+  const directoryForYear = `${__dirname}/../_data/events/${year}/`;
+  if (!(await stat(directoryForYear)).isDirectory()) {
+    await mkdir(directoryForYear);
+  }
+
   await writeFile(
-    __dirname + "/../_data/events/TEST_EVENT.json",
+    directoryForYear + "/TEST_EVENT.json",
     JSON.stringify(event, undefined, 2),
     { encoding: "utf-8" }
   );

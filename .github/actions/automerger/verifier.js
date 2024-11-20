@@ -53,7 +53,7 @@ module.exports = async () => {
     const theFileMatchesSomeRegexThatsProbablyWrong = ({ files }) =>
       assertTrue(
         files.data.every((file) =>
-          /^_data\/events\/[^\/]+\.json$/.test(file.filename)
+          /^_data\/events\/\d+\/[^\/]+\.json$/.test(file.filename)
         ),
         "The file must match our regex"
       );

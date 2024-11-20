@@ -1,6 +1,6 @@
 {
   "status": 200,
-  "url": "https://api.github.com/repos/coderetreat/coderetreat.org/contents/_data%2Fevents%2Ftest123.json?pull_number=795&ref=8fd427aaebe6c14006a5ff50b2423982d0b29e6c",
+  "url": "https://api.github.com/repos/coderetreat/coderetreat.org/contents/_data%2Fevents%2F2020%2Ftest123.json?pull_number=795&ref=8fd427aaebe6c14006a5ff50b2423982d0b29e6c",
   "headers": {
     "access-control-allow-origin": "*",
     "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset",
@@ -33,20 +33,20 @@
   },
   "data": {
     "name": "test123.json",
-    "path": "_data/events/test123.json",
+    "path": "_data/events/2020/test123.json",
     "sha": "727704f177340381317d4c37c50565e05e51b223",
     "size": 608,
-    "url": "https://api.github.com/repos/coderetreat/coderetreat.org/contents/_data/events/test123.json?ref=8fd427aaebe6c14006a5ff50b2423982d0b29e6c",
-    "html_url": "https://github.com/coderetreat/coderetreat.org/blob/8fd427aaebe6c14006a5ff50b2423982d0b29e6c/_data/events/test123.json",
+    "url": "https://api.github.com/repos/coderetreat/coderetreat.org/contents/_data/events/2020/test123.json?ref=8fd427aaebe6c14006a5ff50b2423982d0b29e6c",
+    "html_url": "https://github.com/coderetreat/coderetreat.org/blob/8fd427aaebe6c14006a5ff50b2423982d0b29e6c/_data/events/2020/test123.json",
     "git_url": "https://api.github.com/repos/coderetreat/coderetreat.org/git/blobs/727704f177340381317d4c37c50565e05e51b223",
-    "download_url": "https://raw.githubusercontent.com/coderetreat/coderetreat.org/8fd427aaebe6c14006a5ff50b2423982d0b29e6c/_data/events/test123.json",
+    "download_url": "https://raw.githubusercontent.com/coderetreat/coderetreat.org/8fd427aaebe6c14006a5ff50b2423982d0b29e6c/_data/events/2020/test123.json",
     "type": "file",
     "content": "ewogICAgInRpdGxlIjogIkdsb2JhbCBEYXkgb2YgQ29kZXJldHJlYXQgMjAy\nMCAtIFd1ZXJ6YnVyZyIsCiAgICAiZGVzY3JpcHRpb24iOiAiR2xvYmFsIERh\neSBvZiBDb2RlcmV0cmVhdCAyMDIwIiwKICAgICJmb3JtYXQiOiAiY2xhc3Np\nYyIsCiAgICAic3Bva2VuX2xhbmd1YWdlIjogIkdlcm1hbiIsCiAgICAidXJs\nIjogImh0dHBzOi8vd3d3LmV2ZW50YnJpdGUuY29tL2UvZ2xvYmFsLWRheS1v\nZi1jb2RlcmV0cmVhdC0yMDIwLXd1cnpidXJnLXRpY2tldHMtMTI3NDU0NjE1\nMTg1IiwKICAgICJkYXRlIjogewogICAgICAic3RhcnQiOiAiMjAyMC0xMS0w\nNlQwOTowMDowMCswMTowMCIsCiAgICAgICJlbmQiOiAiMjAyMC0xMS0wNlQx\nNzowMDowMCswMTowMCIKICAgIH0sCiAgICAibW9kZXJhdG9ycyI6IFsKICAg\nICAgewogICAgICAgICJuYW1lIjogIkRvbWluaWsgUGFuemVyIgogICAgICB9\nLAogICAgICB7CiAgICAgICAgIm5hbWUiOiAiUm9iZXJ0IEJvbmFja2VyIgog\nICAgICB9CiAgICBdLAogICAgInNwb25zb3JzIjogWwogICAgICB7CiAgICAg\nICAgIm5hbWUiOiAiSW50ZW5zZSBBRyIKICAgICAgfQogICAgXSwKICAgICJs\nb2NhdGlvbiI6ICJ2aXJ0dWFsIgogIH0=\n",
     "encoding": "base64",
     "_links": {
-      "self": "https://api.github.com/repos/coderetreat/coderetreat.org/contents/_data/events/test123.json?ref=8fd427aaebe6c14006a5ff50b2423982d0b29e6c",
+      "self": "https://api.github.com/repos/coderetreat/coderetreat.org/contents/_data/events/2020/test123.json?ref=8fd427aaebe6c14006a5ff50b2423982d0b29e6c",
       "git": "https://api.github.com/repos/coderetreat/coderetreat.org/git/blobs/727704f177340381317d4c37c50565e05e51b223",
-      "html": "https://github.com/coderetreat/coderetreat.org/blob/8fd427aaebe6c14006a5ff50b2423982d0b29e6c/_data/events/test123.json"
+      "html": "https://github.com/coderetreat/coderetreat.org/blob/8fd427aaebe6c14006a5ff50b2423982d0b29e6c/_data/events/2020/test123.json"
     }
   }
 }

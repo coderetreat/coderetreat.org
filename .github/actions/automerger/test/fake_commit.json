@@ -114,14 +114,14 @@
     "files": [
       {
         "sha": "f27ea2027da28c2bcc755278837b5e17221da143",
-        "filename": "_data/events/virtual-2022-11-05-codegym-gdcr.json",
+        "filename": "_data/events/2022/virtual-2022-11-05-codegym-gdcr.json",
         "status": "modified",
         "additions": 1,
         "deletions": 1,
         "changes": 2,
-        "blob_url": "https://github.com/coderetreat/coderetreat.org/blob/d66eae05ace1bcb9c94881b791022ec6f7e49c72/_data%2Fevents%2Fvirtual-2022-11-05-codegym-gdcr.json",
-        "raw_url": "https://github.com/coderetreat/coderetreat.org/raw/d66eae05ace1bcb9c94881b791022ec6f7e49c72/_data%2Fevents%2Fvirtual-2022-11-05-codegym-gdcr.json",
-        "contents_url": "https://api.github.com/repos/coderetreat/coderetreat.org/contents/_data%2Fevents%2Fvirtual-2022-11-05-codegym-gdcr.json?ref=d66eae05ace1bcb9c94881b791022ec6f7e49c72",
+        "blob_url": "https://github.com/coderetreat/coderetreat.org/blob/d66eae05ace1bcb9c94881b791022ec6f7e49c72/_data%2Fevents%2F2020%2Fvirtual-2022-11-05-codegym-gdcr.json",
+        "raw_url": "https://github.com/coderetreat/coderetreat.org/raw/d66eae05ace1bcb9c94881b791022ec6f7e49c72/_data%2Fevents%2F2020%2Fvirtual-2022-11-05-codegym-gdcr.json",
+        "contents_url": "https://api.github.com/repos/coderetreat/coderetreat.org/contents/_data%2Fevents%2F2020%2Fvirtual-2022-11-05-codegym-gdcr.json?ref=d66eae05ace1bcb9c94881b791022ec6f7e49c72",
         "patch": "@@ -13,4 +13,4 @@\n     }\n   ],\n   \"location\": \"virtual\"\n-}\n\\ No newline at end of file\n+}"
       }
     ]
