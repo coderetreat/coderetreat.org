@@ -9,12 +9,13 @@ describe("Events", () => {
   test("jest doesn't complain if there's no test defined here yet", () => {});
   glob(__dirname + "/../_data/events/.SCHEMA.json").forEach((schemaFile) =>
     describe("Events in " + basename(dirname(schemaFile)), () => {
-      const events = glob(dirname(schemaFile) + "/*.json");
+      const events = glob(dirname(schemaFile) + "/**/*.json");
       const ajv = new Ajv();
       addFormats(ajv);
       const validate = ajv.compile(
         JSON.parse(readFileSync(schemaFile).toString())
       );
+      expect(events).not.toHaveLength(0);
 
       events.forEach((eventFile) =>
         test(basename(eventFile), () => {
