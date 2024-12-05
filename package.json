@@ -31,7 +31,7 @@
     "@babel/preset-env": "7.26.0",
     "@babel/preset-react": "7.26.3",
     "@testing-library/jest-dom": "6.6.3",
-    "@testing-library/react": "16.0.1",
+    "@testing-library/react": "16.1.0",
     "@types/jest": "29.5.14",
     "@types/mapbox-gl": "^3.0.0",
     "@types/qs": "6.9.17",
