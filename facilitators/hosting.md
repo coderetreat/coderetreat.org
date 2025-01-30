@@ -143,7 +143,7 @@ The host is responsible for a number of activities on the Global Day of the Code
 
 * Coordinate video conferences with other locations
 * Take pictures of the event or record a short video (please ask for consent first!)
-* Post updates to Twitter using our hosting tool
+* Post updates to Social Media using our hosting tool
 
 This is really important: **_Participation in global events and activities is entirely optional_**. Keep it simple, and only do what you know you can do well. If you feel overwhelmed, then don’t feel like you need to do that extra thing someone suggested here.
 

@@ -15,7 +15,7 @@ You can reach us at [info@coderetreat.org](mailto:info@coderetreat.org) or [raim
 
 ## The Quick Version
 
-Our community is dedicated to providing a harassment-free experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of community members in any form. Sexual language and imagery is not appropriate for any community event, including talks, workshops, parties, Twitter and other online media. Participants violating these rules may be sanctioned or expelled from the event and any future events <em>without a refund</em> (if applicable), or from the community itself, at the discretion of the organisers.
+Our community is dedicated to providing a harassment-free experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of community members in any form. Sexual language and imagery is not appropriate for any community event, including talks, workshops, parties or online media. Participants violating these rules may be sanctioned or expelled from the event and any future events <em>without a refund</em> (if applicable), or from the community itself, at the discretion of the organisers.
 
 ## The Less Quick Version
 
