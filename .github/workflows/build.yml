@@ -26,7 +26,7 @@ jobs:
       - name: Build JavaScript
         run: npm run build
 
-      - uses: cypress-io/github-action@v6.7.11 # use the explicit version number
+      - uses: cypress-io/github-action@v6.7.12 # use the explicit version number
         with:
           start: npm run serve
           wait-on: "http://localhost:4000"
