@@ -24,8 +24,8 @@ email: info@coderetreat.org
 description: >- # this means to ignore newlines until "baseurl:"
   A free community event to practice professional software development
 globalday:
-  start: "2024-11-08"
-  end: "2024-11-09"
+  start: "2025-11-07"
+  end: "2025-11-08"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.coderetreat.org" # the base hostname & protocol for your site, e.g. http://example.com
 
