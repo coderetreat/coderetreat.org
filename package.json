@@ -15,7 +15,7 @@
     "glob": "11.0.1",
     "jquery": "3.7.1",
     "mapbox-gl": "^3.0.0",
-    "pixi-viewport": "5.0.3",
+    "pixi-viewport": "6.0.3",
     "pixi.js": "^7.2.4",
     "popper.js": "1.16.1",
     "qs": "6.14.0",
