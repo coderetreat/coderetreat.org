@@ -52,7 +52,7 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm run build
-      - run: JEKYLL_ENV=production jekyll build --verbose
+      - run: JEKYLL_ENV=production bundle exec jekyll build --verbose
       - uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}      
