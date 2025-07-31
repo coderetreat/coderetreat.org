@@ -54,7 +54,7 @@
     "querystring-es3": "0.2.1",
     "sass-embedded": "^1.86.3",
     "ts-jest": "29.4.0",
-    "typescript": "5.8.3",
+    "typescript": "5.9.2",
     "vite": "^7.0.0",
     "wait-on": "8.0.4",
     "xml-js": "1.6.11"
