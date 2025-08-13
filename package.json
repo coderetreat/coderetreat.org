@@ -30,7 +30,7 @@
     "@babel/core": "7.28.0",
     "@babel/preset-env": "7.28.0",
     "@babel/preset-react": "7.27.1",
-    "@testing-library/jest-dom": "6.6.4",
+    "@testing-library/jest-dom": "6.7.0",
     "@testing-library/react": "16.3.0",
     "@types/jest": "30.0.0",
     "@types/mapbox-gl": "^3.0.0",
