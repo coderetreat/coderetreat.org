@@ -7,11 +7,9 @@ audience: participants
 
 This Code of Conduct applies to all spaces around coderetreat.org. Local events are highly encouraged to adopt a Code of Conduct as well, but please note that this Code of Conduct does not apply to local events unless the local organizers explicitly say so.
 
-Our Code of Conduct is taken from [https://communitycodeofconduct.com/](https://communitycodeofconduct.com/).
-
 ## Need Help?
 
-You can reach us at [info@coderetreat.org](mailto:info@coderetreat.org) or [raimo@coderetreat.org](mailto:raimo@coderetreat.org).
+You can reach us at [info@coderetreat.org](mailto:info@coderetreat.org).
 
 ## The Quick Version
 
