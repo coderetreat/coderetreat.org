@@ -41,7 +41,7 @@
     "babel-jest": "30.0.5",
     "benchmark": "2.1.4",
     "buffer": "6.0.3",
-    "canvas": "3.1.2",
+    "canvas": "3.2.0",
     "cypress": "14.5.4",
     "jest": "30.0.5",
     "jest-environment-jsdom": "30.0.5",
