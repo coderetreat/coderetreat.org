@@ -42,7 +42,7 @@
     "benchmark": "2.1.4",
     "buffer": "6.0.3",
     "canvas": "3.2.0",
-    "cypress": "15.1.0",
+    "cypress": "15.2.0",
     "jest": "30.1.3",
     "jest-environment-jsdom": "30.1.2",
     "jest-environment-node": "30.1.2",
