@@ -1,0 +1,32 @@
+{
+  "title": "Global Day of code Retreat Paris",
+  "description": "Tous les ans il y la Global day of Code Retreat une Code Retreat qui a un format spécifique où l’on fait des pairs successifs sur le même kata en supprimant la codebase a chaque changement de pairs. Et cela avec des personnes au monde entier qui le font. L’idée c’est d’apprendre dans le faire ensemble.",
+  "format": "classic",
+  "spoken_language": "French",
+  "url": "https://www.meetup.com/fr-FR/coderetreat-france/events/303825193/?slug=coderetreat-france&isFirstPublish=true",
+  "date": {
+    "start": "2024-11-09T09:00:00+01:00",
+    "end": "2024-11-09T18:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Romeu MOURA"
+    },
+    {
+      "name": "Pauline Iogna"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Arolla"
+    }
+  ],
+  "location": {
+    "city": "Paris",
+    "country": "France",
+    "coordinates": {
+      "latitude": 48.853495,
+      "longitude": 2.348392
+    }
+  }
+}

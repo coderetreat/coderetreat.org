@@ -1,0 +1,32 @@
+{
+    "title": "Global Day of Code Retreat 2024 @ apetito AG",
+    "description": "Global Day of Code Retreat 2024 @ apetito AG in Rheine",
+    "format": "classic",
+    "spoken_language": "German",
+    "url": "https://www.eventbrite.de/e/global-day-of-code-retreat-2024-apetito-tickets-1041121210567",
+    "code_of_conduct": "https://www.apetito.de/beste-qualit%C3%A4t/vision-und-leitbild",
+    "date": {
+        "start": "2024-11-08T09:00:00+01:00",
+        "end": "2024-11-08T15:00:00+01:00"
+    },
+    "moderators": [
+        {
+            "name": "Tobias Richling",
+            "url": "https://twitter.com/trichling"
+        }
+    ],
+    "sponsors": [
+        {
+            "name": "apetito AG",
+            "url": "https://www.apetito.de"
+        }
+    ],
+    "location": {
+        "city": "Rheine",
+        "country": "Deutschland",
+        "coordinates": {
+            "latitude": 52.31027821183872,
+            "longitude": 7.4522433977666935
+        }
+    }
+}

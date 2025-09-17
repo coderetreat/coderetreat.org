@@ -1,0 +1,38 @@
+{
+  "title": "Global Day of Code Retreat Darmstadt 2024",
+  "description": "Entwickler:innen aller Programmiersprachen sind willkommen!",
+  "format": "classic",
+  "spoken_language": "Deutsch (German)",
+  "url": "https://www.jug-da.de/2024/11/global-day-of-code-retreat/",
+  "code_of_conduct": "https://andrena.github.io/gdcr2024-darmstadt/code-of-conduct.html",
+  "date": {
+    "start": "2024-11-09T09:00:00+01:00",
+    "end": "2024-11-08T15:30:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Rouven Röhrig",
+      "url": "https://www.linkedin.com/in/rouven-roehrig/"
+    },
+    {
+      "name": "Benedikt Reichert"
+    },
+    {
+      "name": "Sebastian Rose"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "andrena objects ag",
+      "url": "https://www.andrena.de"
+    }
+  ],
+  "location": {
+    "city": "Darmstadt",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 49.87211,
+      "longitude": 8.62731
+    }
+  }
+}

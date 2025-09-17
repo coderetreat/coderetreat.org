@@ -1,0 +1,55 @@
+{
+  "title": "Global Day of Coderetreat Gran Canaria",
+  "description": "Evento organizado por la comunidad de GofiGeeks en Gran Canaria, una comunidad de personas desarrolladoras que quieren mejorar sus habilidades en el desarrollo de software y organizan eventos mensuales dirigido por las personas de la comunidad",
+  "format": "classic",
+  "spoken_language": "Spanish, English",
+  "url": "https://www.meetup.com/gofigeeks/events/304286126",
+  "date": {
+    "start": "2024-11-09T09:00:00-01:00",
+    "end": "2024-11-09T17:00:00-01:00"
+  },
+  "moderators": [
+    {
+      "name": "Miguel Ángel Pérez García",
+      "url": "https://www.linkedin.com/in/dev-miguelangel"
+    },
+    {
+      "name": "Jonay Eliezer Godoy Reyes",
+      "url": "https://www.linkedin.com/in/jonay-eliezer-godoy-reyes"
+    },
+    {
+      "name": "José Celano Martín",
+      "url": "https://www.linkedin.com/in/josecelano"
+    }
+  ],
+  "sponsors": [
+    {
+    "name": "Lean Mind",
+    "url": "https://leanmind.es"
+    },
+    {
+      "name": "Secret Source",
+      "url": "https://www.secret-source.eu"
+    },
+    {
+      "name": "Biting Bit",
+      "url": "https://bitingbit.es"
+    },
+    {
+      "name": "Siteground",
+      "url": "https://www.siteground.es"
+    },
+    {
+      "name": "SPEGC",
+      "url": "https://www.spegc.org"
+    }
+],
+  "location": {
+    "city": "Las Palmas de Gran canaria",
+    "country": "Spain",
+    "coordinates": {
+      "latitude": 28.107866,
+      "longitude": -15.420758
+    }
+  }
+}

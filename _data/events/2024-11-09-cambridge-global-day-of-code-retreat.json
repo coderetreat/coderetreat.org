@@ -1,0 +1,36 @@
+{
+  "title": "Cambridge Day of Code Retreat 2024",
+  "description": "Join us on the 9th of November 2024 to practice your programming skills. All abilities welcome.",
+  "format": "classic",
+  "spoken_language": "Eglish",
+  "url": "https://www.meetup.com/cambridge-software-crafters/events/303964982/",
+  "code_of_conduct": "https://berlincodeofconduct.org/",
+  "date": {
+    "start": "2024-11-09T09:00:00Z",
+    "end": "2024-11-09T17:30:00Z"
+  },
+  "moderators": [
+    {
+      "name": "Brice Fernandes",
+      "url": "https://github.com/bricef"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Raspberry Pi Foundation",
+      "url": "https://www.raspberrypi.org/"
+    },
+    {
+      "name": "Codurance",
+      "url": "https://www.codurance.com/"
+    }
+  ],
+  "location": {
+    "city": "Cambridge",
+    "country": "United Kingdom",
+    "coordinates": {
+      "latitude": 52.203482,
+      "longitude": 0.123582
+    }
+  }
+}

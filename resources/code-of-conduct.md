@@ -7,15 +7,13 @@ audience: participants
 
 This Code of Conduct applies to all spaces around coderetreat.org. Local events are highly encouraged to adopt a Code of Conduct as well, but please note that this Code of Conduct does not apply to local events unless the local organizers explicitly say so.
 
-Our Code of Conduct is taken from [https://communitycodeofconduct.com/](https://communitycodeofconduct.com/).
-
 ## Need Help?
 
-You can reach us at [info@coderetreat.org](mailto:info@coderetreat.org) or [raimo@coderetreat.org](mailto:raimo@coderetreat.org).
+You can reach us at [info@coderetreat.org](mailto:info@coderetreat.org).
 
 ## The Quick Version
 
-Our community is dedicated to providing a harassment-free experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of community members in any form. Sexual language and imagery is not appropriate for any community event, including talks, workshops, parties, Twitter and other online media. Participants violating these rules may be sanctioned or expelled from the event and any future events <em>without a refund</em> (if applicable), or from the community itself, at the discretion of the organisers.
+Our community is dedicated to providing a harassment-free experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of community members in any form. Sexual language and imagery is not appropriate for any community event, including talks, workshops, parties or online media. Participants violating these rules may be sanctioned or expelled from the event and any future events <em>without a refund</em> (if applicable), or from the community itself, at the discretion of the organisers.
 
 ## The Less Quick Version
 

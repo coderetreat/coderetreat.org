@@ -1,0 +1,19 @@
+{
+  "title": "Tech Risers Women Online Half Day Coderetreat",
+  "description": "You're welcome to join our virtual half-day version of this annual event!",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://www.eventbrite.com/e/coderetreat-online-half-day-edition-tickets-1052738889357",
+  "code_of_conduct": "https://www.techriserswomen.com/code-of-conduct",
+  "date": {
+    "start": "2024-11-09T09:30:00Z",
+    "end": "2024-11-09T12:30:00Z"
+  },
+  "moderators": [
+    {
+      "name": "Sarah Usher",
+      "url": "https://www.sarahusher.dev"
+    }
+  ],
+  "location": "virtual"
+}

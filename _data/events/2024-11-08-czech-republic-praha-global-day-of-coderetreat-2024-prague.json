@@ -1,0 +1,34 @@
+{
+    "title": "Global Day of Coderetreat 2024 - Prague",
+    "format": "classic",
+    "spoken_language": "Czech, English",
+    "url": "https://www.meetup.com/coderetreat-cz/events/303388017/",
+    "date": {
+      "start": "2024-11-09T09:00:00+01:00",
+      "end": "2024-11-09T17:00:00+01:00"
+    },
+    "moderators": [
+      {
+        "name": "Jaroslav Holan",
+        "url": "https://mastodonczech.cz/@jaroslavholan"
+      },
+      {
+        "name": "Vit Mistina",
+        "url": "https://www.linkedin.com/in/mistina/"
+      }
+    ],
+    "sponsors": [
+      {
+        "name": "FTMO",
+        "url": "https://ftmo.com"
+      }
+    ],
+    "location": {
+      "city": "Praha",
+      "country": "Czech Republic",
+      "coordinates": {
+        "latitude": 50.08584,
+        "longitude": 14.422954
+      }
+    }
+  }
