@@ -1,0 +1,33 @@
+{
+  "title": "GDCR25 in Vienna, hosted by SQUER Solutions",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://insights.squer.io/gdcr-2025",
+  "date": {
+    "start": "2025-11-08T09:00:00+01:00",
+    "end": "2025-11-08T17:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "t.b.d."
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "SQUER Solutions",
+      "url": "https://squer.io/"
+    },
+    {
+      "name": "Tricentis",
+      "url": "https://www.tricentis.com/"
+    }
+  ],
+  "location": {
+    "city": "Vienna",
+    "country": "Austria",
+    "coordinates": {
+      "latitude": 48.22679246600884,
+      "longitude": 16.36055381496694
+    }
+  }
+}
