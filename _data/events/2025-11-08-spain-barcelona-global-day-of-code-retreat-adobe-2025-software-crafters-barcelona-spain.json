@@ -1,0 +1,52 @@
+{
+  "title": "Global Day of Code Retreat 2025 @Adobe Commerce | AI Edition - Software Crafters, Barcelona, Spain",
+  "description": "¿Quieres practicar en buena compañía y aprender testing, TDD, pair-programming y conceptos de diseño de software? Trae ganas de aprender, tu ordenador, boli y papel, y practica a través de ejercicios en un entorno seguro y lejos de la presión de tener que hacer las cosas con prisas",
+  "format": "classic",
+  "spoken_language": "Spanish",
+  "url": "https://www.meetup.com/software-crafters-barcelona/events/311443205",
+  "code_of_conduct": "https://softwarecrafters.barcelona/#coc",
+  "date": {
+    "start": "2025-11-08T09:00:00+01:00",
+    "end": "2025-11-08T17:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Ángel Rojo",
+      "url": "https://twitter.com/rojo_angel"
+    },
+    {
+      "name": "Cristina Verdi",
+      "url": "https://twitter.com/cristina_verdi"
+    },
+    {
+      "name": "David Gracia",
+      "url": "https://www.linkedin.com/in/david-gracia-celemendi/"
+    },
+    {
+      "name": "Darío Scattolini",
+      "url": "https://www.linkedin.com/in/dario-scattolini/"
+    },
+    {
+      "name": "Mónica Verdi",
+      "url": "https://twitter.com/Monica_Verdi"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Adobe Commerce",
+      "url": "https://www.linkedin.com/company/adobe-commerce/"
+    },
+    {
+      "name": "Code Sherpas",
+      "url": "https://www.code-sherpas.rocks/"
+    }
+  ],
+  "location": {
+    "city": "Barcelona",
+    "country": "Spain",
+    "coordinates": {
+      "latitude": 41.401257,
+      "longitude": 2.198911
+    }
+  }
+}
