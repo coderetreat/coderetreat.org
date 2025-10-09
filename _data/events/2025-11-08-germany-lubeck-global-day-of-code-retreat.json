@@ -1,30 +1,30 @@
 {
-  "title": "Global Day of Code Retreat",
+  "title": "Global Day of Code Retreat Lübeck Germany",
+  "description": "[from Novice to Expert] Join our annual code retreat in the \"Dräger Garage\" and experience a day full of insights with people who find development just as exciting as you do.",
   "format": "classic",
-  "spoken_language": "Deutsch, English",
+  "spoken_language": "German, English",
   "url": "https://www.meetup.com/softwerkskammer-luebeck/events/311208109/",
   "date": {
-    "start": "2023-11-08T08:30:00+01:00",
-    "end": "2023-11-08T17:30:00+01:00"
+    "start": "2025-11-08T08:30:00+01:00",
+    "end": "2025-11-08T17:30:00+01:00"
   },
   "moderators": [
     {
       "name": "Eike Koltermann-Wilke",
-      "url": "https://twitter.com/hansedev"
+      "url": "https://www.linkedin.com/in/eike-koltermann-wilke-b6b1561a2/"
     }
   ],
   "sponsors": [
     {
-      "name": "Dräger",
-      "url": "https://www.draeger.com/de_de/Home"
+      "name": "Drägerwerke"
     }
   ],
   "location": {
     "city": "Lübeck",
     "country": "Germany",
     "coordinates": {
-      "latitude": 53.866444,
-      "longitude": 10.684738
+      "latitude": 53.867283,
+      "longitude": 10.685891
     }
   }
 }
