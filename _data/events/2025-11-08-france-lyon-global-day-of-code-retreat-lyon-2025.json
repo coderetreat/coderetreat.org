@@ -1,0 +1,23 @@
+{
+  "title": "Global day of code retreat - Lyon 2025",
+  "format": "classic",
+  "spoken_language": "French",
+  "url": "https://www.meetup.com/fr-FR/software-craftsmanship-lyon/events/310809225/",
+  "date": {
+    "start": "2025-11-08T09:00:00+01:00",
+    "end": "2025-11-08T16:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Gautier DI FOLCO"
+    }
+  ],
+  "location": {
+    "city": "Lyon",
+    "country": "France",
+    "coordinates": {
+      "latitude": 45.766106,
+      "longitude": 4.832619
+    }
+  }
+}
