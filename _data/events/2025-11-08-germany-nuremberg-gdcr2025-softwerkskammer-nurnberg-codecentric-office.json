@@ -1,0 +1,35 @@
+{
+  "title": "GDCR2025 @ Softwerkskammer Nürnberg (codecentric Office)",
+  "description": "Thema 2025: Zeitreise durch die Programmierung Dieses Jahr nehmen wir euch mit auf eine Zeitreise durch verschiedene Epochen der Softwareentwicklung! Jede Session repräsentiert ein anderes Jahr/Jahrzehnt.",
+  "format": "classic",
+  "spoken_language": "German",
+  "url": "https://www.meetup.com/de-DE/softwerkskammer-nuernberg/events/311509554/?slug=softwerkskammer-nuernberg&eventId=311509554",
+  "date": {
+    "start": "2025-11-08T09:00:00+01:00",
+    "end": "2025-11-07T16:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Marco Emrich",
+      "url": "https://www.linkedin.com/in/marco-emrich/"
+    },
+    {
+      "name": "Thorsten Brunzendorf",
+      "url": "https://www.linkedin.com/in/thorsten-brunzendorf/"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "codecentric AG",
+      "url": "https://www.codecentric.de/"
+    }
+  ],
+  "location": {
+    "city": "Nuremberg",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 49.4431435,
+      "longitude": 11.0676894
+    }
+  }
+}
