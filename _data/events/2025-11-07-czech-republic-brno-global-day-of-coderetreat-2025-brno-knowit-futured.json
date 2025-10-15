@@ -1,0 +1,38 @@
+{
+  "title": "Global Day of Coderetreat 2025 - Brno, KnowIT & Futured",
+  "format": "classic",
+  "spoken_language": "Czech",
+  "url": "https://www.meetup.com/coderetreat-cz/events/311454469/?slug=coderetreat-cz&eventId=311454469",
+  "date": {
+    "start": "2025-11-07T09:00:00+01:00",
+    "end": "2025-11-07T16:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Jiří Weiser",
+      "url": "https://www.linkedin.com/in/ji%C5%99%C3%AD-weiser-539952112/"
+    },
+    {
+      "name": "Jiří Koudelka",
+      "url": "https://www.linkedin.com/in/jirikoudelka/"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Futured",
+      "url": "https://www.futured.app/en"
+    },
+    {
+      "name": "KnowIT CZ",
+      "url": "https://www.knowit.cz"
+    }
+  ],
+  "location": {
+    "city": "Brno",
+    "country": "Czech Republic",
+    "coordinates": {
+      "latitude": 49.1883211,
+      "longitude": 16.6171406
+    }
+  }
+}
