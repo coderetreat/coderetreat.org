@@ -1,0 +1,33 @@
+{
+  "title": "Global Day of Code Retreat Frankfurt 2025",
+  "description": "Entwickler:innen aller Programmiersprachen sind willkommen!",
+  "format": "classic",
+  "spoken_language": "German",
+  "url": "https://www.softwerkskammer.org/activities/coding-dojo-14-swk-rm",
+  "code_of_conduct": "https://andrena.github.io/gdcr2024-darmstadt/code-of-conduct.html",
+  "date": {
+    "start": "2025-11-08T09:00:00+01:00",
+    "end": "2025-11-08T17:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Torsten Wiederkehr"
+    },
+    {
+      "name": "Falk Sippach"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "ING Frankfurt"
+    }
+  ],
+  "location": {
+    "city": "Frankfurt am Main",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 50.110596,
+      "longitude": 8.683012
+    }
+  }
+}
