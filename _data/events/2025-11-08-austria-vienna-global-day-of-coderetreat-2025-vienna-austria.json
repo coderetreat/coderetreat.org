@@ -1,15 +1,17 @@
 {
-  "title": "GDCR25 in Vienna, hosted by SQUER Solutions",
+  "title": "Global Day of Code Retreat Vienna @SQUER Solutions",
   "format": "classic",
   "spoken_language": "English",
   "url": "https://insights.squer.io/gdcr-2025",
+  "code_of_conduct": "https://github.com/swkWien/gdcr2025/blob/main/CodeOfConduct.md",
   "date": {
     "start": "2025-11-08T09:00:00+01:00",
     "end": "2025-11-08T17:00:00+01:00"
   },
   "moderators": [
     {
-      "name": "t.b.d."
+      "name": "Ivett Ördög",
+      "url": "https://www.linkedin.com/in/ivett-%C3%B6rd%C3%B6g-03aa9035/"
     }
   ],
   "sponsors": [
