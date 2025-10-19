@@ -1,0 +1,20 @@
+{
+  "title": "Calgary Software Crafters GDCR 2025",
+  "format": "ensemble",
+  "spoken_language": "English",
+  "url": "https://www.meetup.com/calgary-software-crafters/events/311545271/",
+  "code_of_conduct": "https://github.com/calgarysoftwarecrafters/Code-of-conduct",
+  "date": {
+    "start": "2025-11-08T09:30:00-07:00",
+    "end": "2025-11-07T16:15:00-07:00"
+  },
+  "moderators": [
+    {
+      "name": "Tony Vo"
+    },
+    {
+      "name": "Felipe Barbosa"
+    }
+  ],
+  "location": "virtual"
+}
