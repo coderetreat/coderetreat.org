@@ -1,0 +1,38 @@
+{
+  "title": "Playas On Tech Global Day of Code Retreat",
+  "format": "classic",
+  "spoken_language": "Spanish",
+  "url": "https://www.eventbrite.com.mx/e/code-retreat-2025-playasontech-tickets-1830980194049?aff=oddtdtcreator",
+  "date": {
+    "start": "2025-11-08T11:00:00-06:00",
+    "end": "2025-11-07T18:00:00-06:00"
+  },
+  "moderators": [
+    {
+      "name": "Juan Ramon Guzman Aguilar",
+      "url": "https://github.com/juanequex"
+    },
+    {
+      "name": "Kevin Dylan Perez",
+      "url": "https://github.com/kevinnio"
+    },
+    {
+      "name": "Mauricio Perea Aguilar",
+      "url": "https://github.com/MauricioPereaA"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "rootDevLab",
+      "url": "https://www.instagram.com/rootdevlab.mx/"
+    }
+  ],
+  "location": {
+    "city": "Manzanillo",
+    "country": "Mexico",
+    "coordinates": {
+      "latitude": 19.05161,
+      "longitude": -104.31777
+    }
+  }
+}
