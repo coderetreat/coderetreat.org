@@ -1,0 +1,30 @@
+{
+  "title": "Global Day of Coderetreat SWK Cologne",
+  "description": "You can find all details about our Coderetreat event at Softwerkskammer Cologne in the link.",
+  "format": "classic",
+  "spoken_language": "German, English",
+  "url": "https://www.meetup.com/softwerkskammer-koln/events/311456436",
+  "date": {
+    "start": "2025-11-07T09:30:00+01:00",
+    "end": "2025-11-07T16:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Andre Schmitz"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "lise GmbH",
+      "url": "https://www.lise.de"
+    }
+  ],
+  "location": {
+    "city": "Köln",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 50.93804,
+      "longitude": 6.960162
+    }
+  }
+}
