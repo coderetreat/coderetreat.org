@@ -1,0 +1,46 @@
+{
+    "title": "Global Day of Coderetreat Pittsburgh",
+    "description": "C&S will host GDCR for the eleventh time, and it's been around for 11 years! Enjoy a day of learning with our experienced facilitators.",
+    "format": "classic",
+    "spoken_language": "English",
+    "url": "https://www.meetup.com/pittsburgh-code-supply/events/304068867/",
+    "code_of_conduct": "https://codeandsupply.co/policies/conduct",
+    "date": {
+      "start": "2024-11-09T09:30:00-04:00",
+      "end": "2024-11-09T15:30:00-04:00"
+    },
+    "moderators": [
+      {
+        "name": "Colin Dean"
+      },
+      {
+        "name": "Greg Hopkins"
+      },
+      {
+        "name": "Libby Horacek"
+      }
+    ],
+    "sponsors": [
+      {
+        "name": "Pirate Maps",
+        "url": "https://pirate-maps.io"
+      },
+      {
+        "name": "Approachable Open Source",
+        "url": "https://approachableopensource.com/"
+      },
+      {
+        "name": "Sketch Development",
+        "url": "https://sketchdev.io/"
+      }
+    ],
+    "location": {
+      "city": "Pittsburgh",
+      "country": "United States",
+      "coordinates": {
+        "latitude": 40.459972,
+        "longitude": -79.930778
+      }
+    }
+  }
+  

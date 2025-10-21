@@ -1,0 +1,35 @@
+{
+  "title": "Dijon - Global Day of Code Retreat",
+  "description": "« A day to celebrate passion and software crafting » Une journée pour pratiquer et se former.  Préparez-vous à apprendre plus de choses en une journée que ce que vous aurez appris tout au long de l'année. Cet évènement international, basé sur le format de la coderetreat (coderetreat.org), vous propose de pratiquer le développement autour d'un problème simple (Conway's game of life) en pair programming, par session d'une heure. Pour corser le tout, des contraintes sont ajoutées tout au long de la journée, afin d'obliger les participants à découvrir de nouvelles façons de résoudre le problème. Ainsi, chaque session vous permet de découvrir de nouvelles façons de faire, vous améliorer en code. Et pourquoi pas, l'occasion d'essayer un nouveau langage? Ça dure toute la journée, on commence le matin à 8h45, à midi on mange ensemble et le soir on prend un verre avec ceux qui le souhaitent. Pour avoir plus d'information sur le format, vous pouvez consulter la page dédiée sur le site : https://www.coderetreat.org/pages/about/.",
+  "format": "classic",
+  "spoken_language": "Français",
+  "url": "https://www.linkedin.com/events/globaldayofcoderetreat7379856933333184512/",
+  "date": {
+    "start": "2025-11-08T08:45:00+01:00",
+    "end": "2025-11-08T18:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Marc Bouvier",
+      "url": "https://baldir.fr"
+    },
+    {
+      "name": "Yoan Thirion",
+      "url": "https://www.yoan-thirion.com/"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Coda code school",
+      "url": "https://www.coda.school/campus/dijon"
+    }
+  ],
+  "location": {
+    "city": "Dijon",
+    "country": "France",
+    "coordinates": {
+      "latitude": 47.3546197460007,
+      "longitude": 5.047456626163399
+    }
+  }
+}

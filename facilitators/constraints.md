@@ -29,7 +29,7 @@ You should not feel that the list below are the only activities you can try at a
 
 ## Development Tool Constraints
 - **No Mouse**: Not allowed to touch the mouse (might need to use it at first to discover the right keystroke shortcuts)
-- **Text editor only**: Do not use an integrated environment, only a pain text editor and command-line compiler.  This helps expose how much a developer really knows about their language syntax, and can highlight how IDE features accelerate development (syntax highlighting, auto-completion, refactoring, etc)
+- **Text editor only**: Do not use an integrated environment, only a plain text editor and command-line compiler.  This helps expose how much a developer really knows about their language syntax, and can highlight how IDE features accelerate development (syntax highlighting, auto-completion, refactoring, etc)
 - **No computer**: Developers write and simulate all code without a computer.  Very useful for understanding the problem domain (Game of Life) and exploring design strategies or language fluency.  Other tools other than paper, such as physical counters or other items might help the group simulate their code.
 
 ## Programming Language Constraints

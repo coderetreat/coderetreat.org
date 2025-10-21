@@ -1,0 +1,12 @@
+{
+  "name": "Coda Dijon",
+  "location": {
+    "city": "Dijon",
+    "country": "France",
+    "coordinates": {
+      "latitude": 47.3546197460007,
+      "longitude": 5.047456626163399
+    }
+  },
+  "url": "https://www.coda.school/campus/dijon"
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Global Day of Coderetreat 2024 @ SIEVERS-GROUP",
+  "format": "classic",
+  "spoken_language": "German",
+  "url": "https://www.sievers-group.com/veranstaltung/global-day-coderetreat-2024",
+  "date": {
+    "start": "2024-11-09T09:00:00+01:00",
+    "end": "2024-11-09T15:30:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Dr. Mathias Menninghaus",
+      "url": "https://de.linkedin.com/in/mathias-menninghaus-297b9a1a2"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "SIEVERS GROUP",
+      "url": "https://www.sievers-group.com/"
+    }
+  ],
+  "location": {
+    "city": "Osnabrück",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 52.27196,
+      "longitude": 8.047635
+    }
+  }
+}

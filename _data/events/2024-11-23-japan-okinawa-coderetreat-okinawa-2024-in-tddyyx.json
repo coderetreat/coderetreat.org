@@ -1,0 +1,54 @@
+{
+  "title": "Coderetreat Okinawa 2024 in #tddyyχ",
+  "format": "classic",
+  "spoken_language": "Japanese",
+  "url": "https://tddyyx.connpass.com/event/331378/",
+  "date": {
+    "start": "2024-11-23T09:00:00+09:00",
+    "end": "2024-11-23T18:00:00+09:00"
+  },
+  "moderators": [
+    {
+      "name": "ug23",
+      "url": "https://x.com/ug23_"
+    },
+    {
+      "name": "maeken",
+      "url": "https://x.com/maeken2010"
+    },
+    {
+      "name": "yota",
+      "url": "https://twitter.com/y0t4"
+    },
+    {
+      "name": "yudmo",
+      "url": "https://twitter.com/yudmo_"
+    },
+    {
+      "name": "miholovesq",
+      "url": "https://twitter.com/miholovesq"
+    },
+    {
+      "name": "shuyuhey",
+      "url": "https://twitter.com/shuyuhey"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Attractor Inc.",
+      "url": "https://www.attractor.co.jp/"
+    },
+    {
+      "name": "Iwamu（Taku Iwamura）",
+      "url": "https://x.com/takusamar"
+    }
+  ],
+  "location": {
+    "city": "Okinawa",
+    "country": "Japan",
+    "coordinates": {
+      "latitude": 26.253145486504632,
+      "longitude": 127.76585947031077
+    }
+  }
+}
