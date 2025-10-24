@@ -1,0 +1,41 @@
+{
+    "title": "Global Day of Coderetreat Pittsburgh",
+    "description": "Coderetreats are intensive practice events, focusing on the fundamentals of software development and design. By providing developers the opportunity to participate in focused practice, away from the pressures of \"getting things done,\" the Coderetreat format has proven to be a highly effective means of learning and nurturing software development skills.\r\n\r\nHow does it work? We'll implement a relatively easy programming problem in pairs or trios but introduce constraints in each new 45-minute session. These constraints will teach us more about test-driven development, collaboration skills, designing for maintainable software, and working within the challenging limitations of a particular environment. Our seasoned facilitators have been conducting CR for more than a decade\u2014 C&S has hosted Global Day of Coderetreat in Pittsburgh for several years!\r\n\r\nWe ask you to have the following set up before the event:\r\n\r\n    Join #coderetreat on C&S Slack\r\n    Have a coding environment set for your favorite language and be able to run Hello World + tests\r\n    Optionally, bring a keyboard to save some time when working together\r\n\r\nThe event is open to programmers of all skill levels, but there is an expectation that participants are comfortable working in at least one common programming language.",
+    "format": "classic",
+    "spoken_language": "English",
+    "url": "https://www.meetup.com/pittsburgh-code-supply/events/311600200/",
+    "code_of_conduct": "https://codeandsupply.co/policies/conduct",
+    "date": {
+      "start": "2025-11-08T09:30:00-04:00",
+      "end": "2025-11-08T16:00:00-04:00"
+    },
+    "moderators": [
+      {
+        "name": "Colin Dean"
+      },
+      {
+        "name": "Greg Hopkins"
+      }
+    ],
+    "sponsors": [
+      {
+        "name": "Code & Supply",
+        "url": "https://codeandsupply.co/"
+      },
+      {
+        "name": "Dot Foundry",
+        "url": "https://dotfoundry.co/"
+      },
+      {
+        "name": "601 Local"
+      }
+    ],
+    "location": {
+      "city": "Pittsburgh",
+      "country": "United States",
+      "coordinates": {
+        "latitude": 40.4262162,
+        "longitude": -79.9395797
+      }
+    }
+  }
