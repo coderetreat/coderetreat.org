@@ -28,7 +28,11 @@
       },
       {
         "name": "601 Local"
-      }
+      },
+      {
+        "name": "Sketch Development",
+        "url": "https://sketchdev.io/"
+      },
     ],
     "location": {
       "city": "Pittsburgh",
