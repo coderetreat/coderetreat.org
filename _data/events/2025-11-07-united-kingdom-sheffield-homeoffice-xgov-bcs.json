@@ -1,0 +1,40 @@
+{
+  "title": "Global Day of Coderetreat @ UK Home Office Sheffield",
+  "description": "Organised by the UK Home Office with support from BCS South Yorkshire, GDS and the Cross Government Software Engineering Community",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://www.eventbrite.co.uk/e/cross-government-code-retreat-in-collaboration-with-bcs-south-yorkshire-tickets-1858686273679",
+  "code_of_conduct": "https://www.coderetreat.org/resources/code-of-conduct/",
+  "date": {
+    "start": "2025-11-07T10:00:00Z",
+    "end": "2025-11-07T16:30:00Z"
+  },
+  "moderators": [
+    {
+      "name": "Aysun Aliosman",
+      "url": "https://linkedin.com/in/london-ay"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "BCS South Yorkshire",
+      "url": "https://www.bcs.org/membership-and-registrations/member-communities/south-yorkshire-branch/"
+    },
+    {
+      "name": "Cross Government Software Engineering Community",
+      "url": "https://uk-x-gov-software-community.github.io/"
+    },
+    {
+      "name": "Home Office Digital",
+      "url": "https://hodigital.blog.gov.uk/"
+    }
+  ],
+  "location": {
+    "city": "Sheffield",
+    "country": "United Kingdom",
+    "coordinates": {
+      "latitude": 53.380663,
+      "longitude": -1.470228
+    }
+  }
+}
