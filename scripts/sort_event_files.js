@@ -2,7 +2,7 @@
 require("@js-joda/timezone");
 const util = require("util");
 const glob = require("glob").sync;
-const slug = require("slug");
+const slug = require("slug").default;
 const { resolve, basename, dirname } = require("path");
 const { readFileSync, statSync, renameSync, existsSync } = require("fs");
 const { ZonedDateTime, DateTimeFormatter } = require("@js-joda/core");
