@@ -6,7 +6,7 @@ const addFormats = require("ajv-formats");
 
 const run = async () => {
   const startedLongAgoSoItSitsOnTop = ZonedDateTime.now().minusDays(5);
-  const endsInTenMinutes = ZonedDateTime.now().plusMinutes(10);
+  const endsTomorrow = ZonedDateTime.now().plusDays(1);
 
   const ajv = new Ajv();
   addFormats(ajv);
@@ -25,7 +25,7 @@ const run = async () => {
     code_of_conduct: "https://communitycodeofconduct.com/",
     date: {
       start: DateTimeFormatter.ISO_DATE_TIME.format(startedLongAgoSoItSitsOnTop),
-      end: DateTimeFormatter.ISO_DATE_TIME.format(endsInTenMinutes),
+      end: DateTimeFormatter.ISO_DATE_TIME.format(endsTomorrow),
     },
     moderators: [
       {
