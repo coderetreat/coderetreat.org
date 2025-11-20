@@ -21,7 +21,7 @@ jobs:
           EVENT: ${{ toJSON(github.event) }}
       - name: Wait for Netlify test completion
         run: sleep 10m
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - name: Auto-merge new events with known submitters
         uses: ./.github/actions/automerger
         continue-on-error: true
