@@ -6,7 +6,7 @@
     "@fortawesome/fontawesome-free": "7.1.0",
     "@jitsi/react-sdk": "1.4.4",
     "@js-joda/core": "5.6.5",
-    "@js-joda/locale_en": "4.15.1",
+    "@js-joda/locale_en": "4.15.3",
     "@js-joda/timezone": "2.22.0",
     "abab": "2.0.6",
     "ajv": "8.17.1",
