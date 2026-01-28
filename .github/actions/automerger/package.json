@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@actions/core": "^2.0.0",
-    "@actions/github": "^8.0.0"
+    "@actions/github": "^9.0.0"
   },
   "devDependencies": {
     "jest": "30.2.0"
