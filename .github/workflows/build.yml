@@ -26,12 +26,12 @@ jobs:
           start: npm run serve
           wait-on: "http://localhost:4000"
           install: false
-      - uses: actions/upload-artifact@v6
+      - uses: actions/upload-artifact@v7
         if: failure()
         with:
           name: cypress-screenshots
           path: cypress/screenshots
-      - uses: actions/upload-artifact@v6
+      - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: cypress-videos
