@@ -19,9 +19,9 @@
     "pixi.js": "^7.2.4",
     "popper.js": "1.16.1",
     "qs": "6.15.1",
-    "react": "19.2.4",
+    "react": "19.2.5",
     "react-bootstrap-typeahead": "=5.2.2",
-    "react-dom": "19.2.4",
+    "react-dom": "19.2.5",
     "seedrandom": "3.0.5",
     "slug": "11.0.1",
     "yaml": "^2.3.2"
