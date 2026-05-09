@@ -43,7 +43,7 @@
     "buffer": "6.0.3",
     "canvas": "3.2.3",
     "cypress": "15.14.2",
-    "jest": "30.4.1",
+    "jest": "30.4.2",
     "jest-environment-jsdom": "30.4.1",
     "jest-environment-node": "30.4.1",
     "jsdom": "^29.0.0",
