@@ -48,14 +48,28 @@ audience: participants
         A community event to practice professional software development
       </h2>
       <p class="text-center pt-3">
-        <a class="btn my-2 d-block d-md-inline-block btn-primary text-uppercase font-weight-bold" href="{% link about/index.md %}">Learn
+        <a class="btn my-2 d-block d-md-inline-block btn-primary text-uppercase font-weight-bold"
+          href="{% link about/index.md %}">Learn
           more</a>
-        <a class="btn my-2 d-block d-md-inline-block btn-secondary text-uppercase font-weight-bold" href="{% link events/index.html %}">Find an event</a>
-        <a class="btn my-2 d-block d-md-inline-block btn-facilitators text-uppercase font-weight-bold" href="{% link facilitators/index.html %}">Host your own</a>
+        <a class="btn my-2 d-block d-md-inline-block btn-secondary text-uppercase font-weight-bold"
+          href="{% link events/index.html %}">Find an event</a>
+        <a class="btn my-2 d-block d-md-inline-block btn-facilitators text-uppercase font-weight-bold"
+          href="{% link facilitators/index.html %}">Host your own</a>
       </p>
     </div>
   </div>
 </div>
+
+<div class="pt-md-5 py-3">
+  <div class="container">
+    <p class="lead bg-warning p-4 shadow-sm rounded font-weight-bold">
+      The maintainers of Coderetreat.org are looking for like-minded individuals to carry the banner!
+      If you are interested in being a steward of the Global Day of Coderetreat coordination and website, please contact
+      us at <a href="mailto:info@coderetreat.org">info@coderetreat.org</a>
+    </p>
+  </div>
+</div>
+
 
 <div class="pt-md-5 py-3 d-none d-md-block">
   <div class="container">
@@ -67,7 +81,8 @@ audience: participants
       nurturing software development skills.</p>
     </p>
     <p class="lead">All over the world, people are coming together in small communities of practices to learn, explore
-      and grow. Join us on the <strong>Global Day of Coderetreat on {{ site.globalday.start | date:"%b %d, %Y" }} - {{ site.globalday.end | date:"%b %d, %Y" }}</strong> or discover local communities around you!</p>
+      and grow. Join us on the <strong>Global Day of Coderetreat on {{ site.globalday.start | date:"%b %d, %Y" }} - {{
+        site.globalday.end | date:"%b %d, %Y" }}</strong> or discover local communities around you!</p>
   </div>
 </div>
 
@@ -82,7 +97,8 @@ audience: participants
       <div class="card-body">
         <h5 class="card-title">Global Day of Coderetreat</h5>
         <p class="card-text">
-          Join thousands of developers on {{ site.globalday.start | date:"%b %d" }}-{{ site.globalday.end | date:"%b %d, %Y" }} in the largest free
+          Join thousands of developers on {{ site.globalday.start | date:"%b %d" }}-{{ site.globalday.end | date:"%b %d,
+          %Y" }} in the largest free
           community workshop worldwide.
         </p>
         <a href="{% link events/index.html %}" class="btn btn-primary">Find an event in your area</a>
@@ -153,8 +169,8 @@ audience: participants
       <div class="news-item card my-4">
         <div class="card-body">
           <h5 class="card-title"><a class="text-dark" href="{{ item.url }}">{{ item.title }}</a></h5>
-          <h6 class="card-subtitle text-muted">by {% if item.author.link %}<a
-              href="{{ item.author.link }}">{{ item.author.name }}</a>{% else %}{{ item.author.name }}{% endif %},
+          <h6 class="card-subtitle text-muted">by {% if item.author.link %}<a href="{{ item.author.link }}">{{
+              item.author.name }}</a>{% else %}{{ item.author.name }}{% endif %},
             {{ item.year }}, {{ item.language }}
           </h6>
           <p class="card-text mt-4">
