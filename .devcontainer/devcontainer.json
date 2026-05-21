@@ -1,0 +1,14 @@
+{
+  "name": "coderetreat.org Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/ruby:4.0@sha256:09bbaa947a7c6dea2503934f8698d02b09bc5090374e6f4eb9c68840a282cfe9",
+  "features": {
+    "ghcr.io/devcontainers/features/node:2": {
+      "version": "lts/krypton"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": []
+    }
+  }
+}
