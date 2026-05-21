@@ -1,8 +1,9 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base"],
+  "extends": ["config:best-practices"],
   "dependencyDashboard": true,
   "automerge": true,
   "automergeType": "branch",
+  "minimumReleaseAge": "14 days",
   "ignoreDeps": ["pixi.js", "pixi-viewport", "jekyll", "react-bootstrap-typeahead", "bootstrap"]
 }
