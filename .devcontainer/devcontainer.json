@@ -1,6 +1,6 @@
 {
   "name": "coderetreat.org Dev Container",
-  "image": "mcr.microsoft.com/devcontainers/ruby:4.0@sha256:09bbaa947a7c6dea2503934f8698d02b09bc5090374e6f4eb9c68840a282cfe9",
+  "image": "mcr.microsoft.com/devcontainers/ruby:4.0@sha256:84f80d679e21d0b684a73926c549d13a39743030387ec5dbb50e8db80a12fbdf",
   "features": {
     "ghcr.io/devcontainers/features/node:2": {
       "version": "lts/krypton"
