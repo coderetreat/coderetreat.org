@@ -1,0 +1,289 @@
+<h2 class="sr-only">A melancholic flat world map that fetches coderetreat events, drops virtual ones, tours them cluster by cluster, and pings each new event with a rising landmark tooltip and a soft bell tone while older event dots shrink and fade over time.</h2>
+
+<div id="root" style="position:relative; width:100%; border-radius:16px; overflow:hidden; background:#070812; border:0.5px solid var(--border);">
+
+  <div style="position:absolute; top:18px; left:22px; z-index:3; pointer-events:none;">
+    <div style="font-family:var(--font-mono); font-size:11px; letter-spacing:2px; color:#c9a15a; text-transform:uppercase; opacity:0.85;">Coderetreat, worldwide</div>
+    <div style="font-size:22px; font-weight:500; color:#e8e6ef; line-height:1.2; margin-top:3px; font-family:Georgia,serif;">A decade, remembered</div>
+  </div>
+
+  <div style="position:absolute; top:20px; right:22px; z-index:3; text-align:right; pointer-events:none;">
+    <div id="cnt" style="font-size:32px; font-weight:500; color:#e8e6ef; font-variant-numeric:tabular-nums; line-height:1; font-family:Georgia,serif;">0</div>
+    <div style="font-size:12px; color:#6b6f88; margin-top:3px;">events so far</div>
+    <div id="curdate" style="font-size:14px; color:#c9a15a; margin-top:8px; font-variant-numeric:tabular-nums;">—</div>
+  </div>
+
+  <canvas id="cmap" style="display:block; width:100%; height:auto; background:#0a0c1a;"></canvas>
+
+  <div id="tip" style="position:absolute; z-index:4; width:210px; margin-left:-105px; background:rgba(16,15,28,0.95); border:0.5px solid rgba(201,161,90,0.45); border-radius:10px; padding:10px 13px 11px; opacity:0; transform:translateY(10px) scale(0.96); transition:opacity .4s ease, transform .4s cubic-bezier(.2,.9,.3,1.3); pointer-events:none; text-align:center; box-shadow:0 8px 30px rgba(0,0,0,0.5);">
+    <div id="t-title" style="font-size:13px; color:#f0eef6; font-weight:500; line-height:1.3; font-family:Georgia,serif;"></div>
+    <div id="t-mods" style="font-size:11px; color:#a9adc8; margin-top:5px;"></div>
+    <div id="t-place" style="font-size:10px; color:#6b6f88; margin-top:5px; text-transform:uppercase; letter-spacing:0.5px;"></div>
+    <div style="position:absolute; left:50%; bottom:-5px; width:9px; height:9px; margin-left:-5px; background:rgba(16,15,28,0.95); border-right:0.5px solid rgba(201,161,90,0.45); border-bottom:0.5px solid rgba(201,161,90,0.45); transform:rotate(45deg);"></div>
+  </div>
+
+  <div style="position:relative; z-index:3; padding:14px 22px 18px; display:flex; align-items:center; gap:14px;">
+    <button id="pb" style="flex:none; width:34px; height:34px; border-radius:50%; background:#c9a15a; border:none; color:#1a1408; cursor:pointer; display:flex; align-items:center; justify-content:center;"><i class="ti ti-player-pause" aria-hidden="true"></i></button>
+    <button id="mute" title="sound" style="flex:none; width:34px; height:34px; border-radius:50%; background:rgba(201,161,90,0.14); border:0.5px solid rgba(201,161,90,0.4); color:#c9a15a; cursor:pointer; display:flex; align-items:center; justify-content:center;"><i class="ti ti-volume" aria-hidden="true"></i></button>
+    <div style="flex:1;">
+      <input id="slider" type="range" min="0" max="1000" value="0" step="1" style="width:100%; accent-color:#c9a15a;">
+      <div style="display:flex; justify-content:space-between; font-size:11px; color:#4d5170; margin-top:4px; font-variant-numeric:tabular-nums;">
+        <span id="lbl-start">—</span><span id="lbl-end">—</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script>
+(function(){
+  // ============================================================
+  // CONFIG
+  const EVENTS_URL = "/events/events.json";  // required — no inline sample
+
+  const CLUSTER = { WINDOW_MS: 96*3600*1000, RADIUS_KM: 1500 };
+
+  // one place to tune the per-event rhythm (ms)
+  const TIMING = {
+    PING_TO_POPUP: 260,   // ping fires, then tooltip rises after this
+    POPUP_HOLD:    1500,  // tooltip stays fully visible
+    POPUP_FADEOUT: 700,   // tooltip fade-out duration
+    STEP_GAP:      520,   // gap before the next event begins
+    FLY_MS:        1600,  // camera flight between clusters
+    POST_STOP:     700    // pause after last event before next cluster
+  };
+
+  // dot aging: how a placed dot shrinks + dims with age (in ms)
+  const AGE = { FRESH_MS: 2600, HALFLIFE_MS: 60000, MIN_SCALE: 0.28, MIN_ALPHA: 0.16 };
+  // ============================================================
+
+  const HUES=[6,28,50,140,175,200,265,320,45,95,230,300];
+
+  function gc(a,b){const R=6371,dLa=(b.lat-a.lat)*Math.PI/180,dLo=(b.lon-a.lon)*Math.PI/180,l1=a.lat*Math.PI/180,l2=b.lat*Math.PI/180;const h=Math.sin(dLa/2)**2+Math.cos(l1)*Math.cos(l2)*Math.sin(dLo/2)**2;return 2*R*Math.asin(Math.sqrt(h));}
+
+  function normalize(rawArr){
+    const out=[];
+    for(const ev of rawArr){
+      if(!ev||!ev.location) continue;
+      if(ev.location==="virtual") continue;
+      const loc=ev.location, c=loc.coordinates;
+      if(!c||typeof c.latitude!=="number"||typeof c.longitude!=="number") continue;
+      if(Math.abs(c.latitude)>90||Math.abs(c.longitude)>180) continue;
+      const start=ev.date&&ev.date.start?new Date(ev.date.start).getTime():NaN;
+      if(!isFinite(start)) continue;
+      out.push({t:ev.title||"Coderetreat", m:(ev.moderators||[]).map(x=>x&&x.name).filter(Boolean), city:loc.city||"", country:loc.country||"", lat:c.latitude, lon:c.longitude, time:start});
+    }
+    out.sort((a,b)=>a.time-b.time);
+    return out;
+  }
+
+  function buildStops(events){
+    const stops=[]; let i=0;
+    while(i<events.length){
+      const wStart=events[i].time; const bucket=[]; let j=i;
+      while(j<events.length && events[j].time-wStart<=CLUSTER.WINDOW_MS){bucket.push(events[j]);j++;}
+      const cls=[];
+      bucket.forEach(ev=>{
+        let best=null,bd=CLUSTER.RADIUS_KM;
+        for(const c of cls){const d=gc(c,ev);if(d<bd){bd=d;best=c;}}
+        if(best){best.events.push(ev);best.n++;best.slat+=ev.lat;best.slon+=ev.lon;best.lat=best.slat/best.n;best.lon=best.slon/best.n;}
+        else cls.push({lat:ev.lat,lon:ev.lon,slat:ev.lat,slon:ev.lon,n:1,events:[ev]});
+      });
+      cls.forEach(c=>{let span=0;c.events.forEach(a=>c.events.forEach(b=>{const d=gc(a,b);if(d>span)span=d;}));c.spanKm=span;stops.push(c);});
+      i=j;
+    }
+    return stops;
+  }
+
+  // ---- audio: soft synthesized bell ----
+  let actx=null, muted=false;
+  function bell(){
+    if(muted) return;
+    try{
+      if(!actx) actx=new (window.AudioContext||window.webkitAudioContext)();
+      if(actx.state==="suspended") actx.resume();
+      const t=actx.currentTime;
+      const freqs=[523.25, 784.0]; // C5 + G5, gentle fifth
+      freqs.forEach((f,i)=>{
+        const o=actx.createOscillator(), g=actx.createGain();
+        o.type="sine"; o.frequency.value=f;
+        const peak=i===0?0.12:0.06;
+        g.gain.setValueAtTime(0,t);
+        g.gain.linearRampToValueAtTime(peak, t+0.02);
+        g.gain.exponentialRampToValueAtTime(0.0008, t+1.4);
+        o.connect(g); g.connect(actx.destination);
+        o.start(t); o.stop(t+1.5);
+      });
+    }catch(e){}
+  }
+
+  // ---- render / tour ----
+  const root=document.getElementById('root'),canvas=document.getElementById('cmap'),ctx=canvas.getContext('2d');
+  let W=root.clientWidth,H=Math.round(W*0.52);
+  function sizeCanvas(){W=root.clientWidth;H=Math.round(W*0.52);const dpr=Math.min(window.devicePixelRatio,2);canvas.width=W*dpr;canvas.height=H*dpr;canvas.style.height=H+'px';ctx.setTransform(dpr,0,0,dpr,0,0);}
+  sizeCanvas();
+
+  const proj=d3.geoEquirectangular();
+  const baseScale=()=>{proj.scale(1).translate([0,0]);const b=d3.geoPath(proj).bounds({type:"Sphere"});return 0.95/Math.max((b[1][0]-b[0][0])/W,(b[1][1]-b[0][1])/H);};
+  let view={lon:10,lat:20,zoom:1},viewFrom=null,viewTo=null,flyT=0;
+  function applyView(v){const s=baseScale()*v.zoom;proj.scale(s).translate([W/2,H/2]).rotate([-v.lon,0,0]).center([0,v.lat]);}
+  applyView(view);
+  const path=d3.geoPath(proj,ctx);
+  function zoomForSpan(km){if(km<200)return 5.5;if(km<600)return 4.2;if(km<1200)return 3.2;return 2.6;}
+
+  let land=null,borders=null;
+  d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json").then(topo=>
+    import("https://cdn.jsdelivr.net/npm/topojson-client@3/+esm").then(tj=>{land=tj.feature(topo,topo.objects.countries);borders=tj.mesh(topo,topo.objects.countries,(a,b)=>a!==b);})
+  ).catch(()=>{});
+
+  const tip=document.getElementById('tip'),tTitle=document.getElementById('t-title'),tMods=document.getElementById('t-mods'),tPlace=document.getElementById('t-place');
+  const cntEl=document.getElementById('cnt'),dateEl=document.getElementById('curdate'),slider=document.getElementById('slider');
+  const fmt=new Intl.DateTimeFormat('en',{year:'numeric',month:'short',day:'numeric'});
+
+  let EVENTS=[],STOPS=[],T0=0,T1=1;
+  const shown=[]; let totalCount=0, stopIdx=-1, pingIdx=0, phase='idle', playing=true, ready=false;
+  let stepClock=0, popupState='none', popupClock=0, ripples=[];
+
+  function start(events){
+    EVENTS=events; STOPS=buildStops(events);
+    if(!EVENTS.length){dateEl.textContent="no plottable events";return;}
+    T0=EVENTS[0].time;T1=EVENTS[EVENTS.length-1].time;
+    document.getElementById('lbl-start').textContent=new Date(T0).getFullYear();
+    document.getElementById('lbl-end').textContent=new Date(T1).getFullYear();
+    ready=true;
+  }
+
+  (async()=>{
+    try{
+      const r=await fetch(EVENTS_URL);
+      const data=await r.json();
+      const arr=Array.isArray(data)?data:Object.values(data);
+      start(normalize(arr));
+    }catch(e){ dateEl.textContent="could not load events"; }
+  })();
+
+  function beginStop(idx){
+    const s=STOPS[idx];stopIdx=idx;pingIdx=0;stepClock=0;phase='flying';
+    dateEl.textContent=fmt.format(new Date(s.events[0].time));
+    viewFrom={...view};
+    viewTo={lon:s.lon,lat:Math.max(-58,Math.min(72,s.lat)),zoom:zoomForSpan(s.spanKm)};
+    flyT=0;
+  }
+
+  function firePing(){
+    const s=STOPS[stopIdx],ev=s.events[pingIdx];
+    ev._birth=performance.now(); shown.push(ev); totalCount++; cntEl.textContent=totalCount.toLocaleString();
+    const p=proj([ev.lon,ev.lat]);
+    if(p) ripples.push({x:p[0],y:p[1],lat:ev.lat,lon:ev.lon,t:performance.now()});
+    bell();
+    // schedule popup
+    popupState='pre'; popupClock=0; tip._ev=ev;
+    pingIdx++;
+  }
+
+  function showPopup(ev){
+    const p=proj([ev.lon,ev.lat]); if(!p) return;
+    tTitle.textContent=ev.t;
+    tMods.innerHTML = ev.m.length ? '<i class="ti ti-users" style="font-size:11px;margin-right:4px;vertical-align:0;"></i>'+ev.m.join(", ") : '';
+    tPlace.textContent=[ev.city,ev.country].filter(Boolean).join(" · ");
+    let tx=p[0], ty=p[1]-22+canvas.offsetTop;
+    tx=Math.max(110,Math.min(W-110,tx));
+    tip.style.left=tx+"px"; tip.style.top=(ty-tip.offsetHeight)+"px";
+    tip.style.opacity=1; tip.style.transform="translateY(0) scale(1)";
+  }
+  function hidePopup(){ tip.style.opacity=0; tip.style.transform="translateY(10px) scale(0.96)"; }
+
+  function dotAppearance(ev,now){
+    const age=now-(ev._birth||now);
+    const fresh=Math.max(0,1-age/AGE.FRESH_MS);          // pop-in burst
+    const decay=Math.pow(0.5, age/AGE.HALFLIFE_MS);       // long slow fade
+    const scale=AGE.MIN_SCALE+(1-AGE.MIN_SCALE)*decay + fresh*0.9;
+    const alpha=AGE.MIN_ALPHA+(1-AGE.MIN_ALPHA)*decay;
+    return {fresh,scale,alpha};
+  }
+
+  function draw(){
+    ctx.clearRect(0,0,W,H);ctx.fillStyle="#0a0c1a";ctx.fillRect(0,0,W,H);
+    if(land){ctx.beginPath();path(land);ctx.fillStyle="#161a33";ctx.fill();ctx.beginPath();path(borders);ctx.strokeStyle="#232847";ctx.lineWidth=0.5;ctx.stroke();}
+    const now=performance.now();
+
+    // aged dots — older shrink + dim so newest reads clearest
+    for(const ev of shown){
+      const p=proj([ev.lon,ev.lat]); if(!p||p[0]<-30||p[0]>W+30||p[1]<-30||p[1]>H+30) continue;
+      const a=dotAppearance(ev,now);
+      const r=(2.2+3.3*a.scale);
+      // cool halo for aged, warm core for fresh
+      ctx.beginPath();ctx.arc(p[0],p[1],r+3*a.fresh,0,7);
+      ctx.fillStyle=`rgba(120,140,200,${0.10*a.alpha+0.25*a.fresh})`;ctx.fill();
+      ctx.beginPath();ctx.arc(p[0],p[1],r,0,7);
+      // fresh = warm amber, aged = pale cold blue
+      const warm=a.fresh, rr=Math.round(201*warm+150*(1-warm)), gg=Math.round(161*warm+170*(1-warm)), bb=Math.round(90*warm+210*(1-warm));
+      ctx.fillStyle=`rgba(${rr},${gg},${bb},${0.35+0.6*a.alpha})`;ctx.fill();
+    }
+
+    // juicy ripple rings on new pings
+    ripples=ripples.filter(r=>now-r.t<1600);
+    for(const rp of ripples){
+      const p=proj([rp.lon,rp.lat]); if(!p) continue;
+      const k=(now-rp.t)/1600, e=1-Math.pow(1-k,3);
+      ctx.beginPath();ctx.arc(p[0],p[1],4+34*e,0,7);
+      ctx.strokeStyle=`rgba(201,161,90,${0.55*(1-k)})`;ctx.lineWidth=1.5*(1-k)+0.4;ctx.stroke();
+      if(k<0.5){ctx.beginPath();ctx.arc(p[0],p[1],4+20*e,0,7);ctx.strokeStyle=`rgba(240,220,180,${0.5*(1-k*2)})`;ctx.lineWidth=1;ctx.stroke();}
+    }
+  }
+
+  let last=performance.now();
+  function loop(now){
+    const dt=now-last;last=now;
+    if(ready&&playing){
+      if(phase==='idle'){beginStop(0);}
+      else if(phase==='flying'){
+        flyT+=dt/TIMING.FLY_MS;const k=Math.min(1,flyT);const e=k<.5?2*k*k:1-Math.pow(-2*k+2,2)/2;
+        view={lon:viewFrom.lon+(viewTo.lon-viewFrom.lon)*e,lat:viewFrom.lat+(viewTo.lat-viewFrom.lat)*e,zoom:viewFrom.zoom+(viewTo.zoom-viewFrom.zoom)*e};applyView(view);
+        if(k>=1){phase='stepping';stepClock=0;firePing();}
+      }
+      else if(phase==='stepping'){
+        stepClock+=dt;
+        const total=TIMING.PING_TO_POPUP+TIMING.POPUP_HOLD+TIMING.POPUP_FADEOUT+TIMING.STEP_GAP;
+        if(stepClock>=total){
+          if(pingIdx<STOPS[stopIdx].events.length){stepClock=0;firePing();}
+          else{phase='post';stepClock=0;}
+        }
+      }
+      else if(phase==='post'){
+        stepClock+=dt;
+        if(stepClock>=TIMING.POST_STOP){
+          if(stopIdx+1<STOPS.length){beginStop(stopIdx+1);}
+          else{playing=false;document.querySelector('#pb i').className='ti ti-player-play';}
+        }
+      }
+      // popup lifecycle driven by TIMING
+      if(popupState!=='none'){
+        popupClock+=dt;
+        if(popupState==='pre'&&popupClock>=TIMING.PING_TO_POPUP){popupState='show';popupClock=0;showPopup(tip._ev);}
+        else if(popupState==='show'&&popupClock>=TIMING.POPUP_HOLD){popupState='fade';popupClock=0;hidePopup();}
+        else if(popupState==='fade'&&popupClock>=TIMING.POPUP_FADEOUT){popupState='none';}
+        else if(popupState==='show'){showPopup(tip._ev);} // keep anchored during zoom drift
+      }
+      if(stopIdx>=0){const s=STOPS[stopIdx];slider.value=Math.round(((s.events[0].time-T0)/(T1-T0||1))*1000);}
+    }
+    draw();requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
+
+  document.getElementById('pb').onclick=function(){playing=!playing;document.querySelector('#pb i').className=playing?'ti ti-player-pause':'ti ti-player-play';if(actx&&actx.state==='suspended')actx.resume();};
+  document.getElementById('mute').onclick=function(){muted=!muted;this.querySelector('i').className=muted?'ti ti-volume-off':'ti ti-volume';this.style.color=muted?'#6b6f88':'#c9a15a';};
+  slider.addEventListener('input',()=>{
+    if(!ready)return;
+    const target=T0+(T1-T0)*(slider.value/1000);
+    let idx=0;for(let k=0;k<STOPS.length;k++){if(STOPS[k].events[0].time<=target)idx=k;}
+    shown.length=0;totalCount=0;ripples=[];
+    const base=performance.now();
+    for(let k=0;k<idx;k++){STOPS[k].events.forEach(ev=>{ev._birth=base-AGE.HALFLIFE_MS*2;shown.push(ev);totalCount++;});}
+    cntEl.textContent=totalCount.toLocaleString();
+    playing=false;document.querySelector('#pb i').className='ti ti-player-play';hidePopup();popupState='none';
+    stopIdx=idx;beginStop(idx);playing=false;dateEl.textContent=fmt.format(new Date(STOPS[idx].events[0].time));
+  });
+  new ResizeObserver(()=>{sizeCanvas();applyView(view);draw();}).observe(root);
+})();
+</script>
