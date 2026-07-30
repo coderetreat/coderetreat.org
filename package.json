@@ -46,7 +46,7 @@
     "jest": "30.4.2",
     "jest-environment-jsdom": "30.4.1",
     "jest-environment-node": "30.4.1",
-    "jsdom": "^29.0.0",
+    "jsdom": "^30.0.0",
     "microtime": "3.1.1",
     "npm-run-all2": "9.0.2",
     "process": "0.11.10",
