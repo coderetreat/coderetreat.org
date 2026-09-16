@@ -1,0 +1,43 @@
+{
+  "title": "Global Day of Coderetreat 2026 - Zürich, Switzerland",
+  "description": "Coderetreat is a day-long, intensive practice event, focusing on the fundamentals of software development and design. By providing developers the opportunity to take part in focused practice away from the pressures of ‘getting things done’, the Coderetreat format has proven itself to be a highly effective means of skill improvement.  The Coderetreat day consists of 5-6 sessions, each session’s learnings building upon previous sessions. The morning focuses on becoming comfortable with the problem domain, breaking old habits and beginning focused self-discovery. The afternoon pushes the envelope by challenging pairs to stretch their skills and understanding of abstractions, modular design and test-driven development.",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://infomaniak.events/en-ch/training-courses/global-day-of-coderetreat-zurich-2026/863d8dd3-c07a-42db-b0d0-a91aea8ddc1a/events/398544",
+  "date": {
+    "start": "2026-11-07T08:30:00+01:00",
+    "end": "2026-11-07T17:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Andrew Magerman",
+      "url": "https://twitter.com/andrewmagerman"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Ergon Informatik AG",
+      "url": "https://ergon.ch/"
+    },
+    {
+      "name": "finnova AG",
+      "url": "https://finnova.com/"
+    },
+    {
+      "name": "House of Test",
+      "url": "https://houseoftest.ch/"
+    },
+    {
+      "name": "megazord.studio",
+      "url": "https://megazord.studio/"
+    }
+  ],
+  "location": {
+    "city": "Zürich",
+    "country": "Switzerland",
+    "coordinates": {
+      "latitude": 47.3678002,
+      "longitude": 8.5379787
+    }
+  }
+}
