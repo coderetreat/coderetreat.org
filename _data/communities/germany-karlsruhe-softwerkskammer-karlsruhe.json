@@ -1,0 +1,12 @@
+{
+  "name": "Softwerkskammer Karlsruhe",
+  "location": {
+    "country": "Germany",
+    "city": "Karlsruhe",
+    "coordinates": {
+      "latitude": 49.014000,
+      "longitude": 8.404300
+    }
+  },
+  "url": "https://app.agorakit.org/groups/3374"
+}
