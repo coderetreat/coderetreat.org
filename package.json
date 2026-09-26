@@ -13,7 +13,7 @@
     "bootstrap": "4.6.2",
     "classnames": "2.5.1",
     "glob": "13.0.6",
-    "jquery": "3.7.1",
+    "jquery": "4.0.0",
     "mapbox-gl": "^3.0.0",
     "pixi-viewport": "5.0.3",
     "pixi.js": "^7.2.4",
