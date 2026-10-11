@@ -1,0 +1,28 @@
+{
+  "title": "Global Day of Coderetreat Karlsruhe @Atruvia",
+  "format": "classic",
+  "spoken_language": "German",
+  "url": "https://treff.tech/events/a2adca80-5896-4044-89f1-579d4e566dc9",
+  "date": {
+    "start": "2026-11-14T09:00:00+01:00",
+    "end": "2026-11-14T17:30:00+01:00"
+  },
+  "sponsors": [
+    {
+      "name": "Peter Fichtner",
+      "url": "https://github.com/pfichtner"
+    },
+    {
+      "name": "Urs Metz",
+      "url": "https://github.com/UrsMetz"
+    }
+  ],
+  "location": {
+    "city": "Karlsruhe",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 48.994271012209566,
+      "longitude": 8.447133028109393
+    }
+  }
+}
