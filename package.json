@@ -36,7 +36,7 @@
     "@types/mapbox-gl": "3.5.0",
     "@types/qs": "6.15.1",
     "@types/seedrandom": "3.0.8",
-    "@vitejs/plugin-react": "6.1.0",
+    "@vitejs/plugin-react": "6.1.2",
     "ajv-formats": "3.0.1",
     "babel-jest": "30.5.2",
     "benchmark": "2.1.4",
