@@ -1,0 +1,35 @@
+{
+  "title": "Global Day of Code Retreat 2026 @ AE",
+  "description": "SoCraTes hosted Code Retreat. From Student to Seniors, all welcome to join if available",
+  "format": "classic",
+  "spoken_language": "English, Dutch",
+  "url": "https://www.meetup.com/socratesbe/events/316900152",
+  "date": {
+    "start": "2026-11-14T08:30:00+01:00",
+    "end": "2026-11-14T17:30:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Tim Schraepen",
+      "url": "https://www.linkedin.com/in/timschraepen/"
+    },
+    {
+      "name": "Maarten Hanssen",
+      "url": "https://www.linkedin.com/in/maarten-hanssen/"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "AE",
+      "url": "https://www.ae.be/"
+    }
+  ],
+  "location": {
+    "city": "Leuven",
+    "country": "Belgium",
+    "coordinates": {
+      "latitude": 50.879202,
+      "longitude": 4.701168
+    }
+  }
+}
