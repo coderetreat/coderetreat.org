@@ -21,14 +21,22 @@ const toWelcomeTweetModerators = (moderators) => {
   return " with " + names.slice(0, -1).join(", ") + " & " + names.slice(-1)[0];
 };
 
-const toWelcomeTweet = (event) => {
-  const moderators = toWelcomeTweetModerators(event.moderators);
-  return `🌐 Welcome ${event.location.city}, ${event.location.country}${moderators} to the Global Day Of Coderetreat 2019! #gdcr19 #coderetreat ${event.url}`;
-};
+function ordinal(n) {
+  const s = ['th', 'st', 'nd', 'rd'];
+  const v = n % 100;
+  return (s[(v - 20) % 10] || s[v] || s[0]);
+}
+
 
 const dateFormat = DateTimeFormatter.ofPattern(
-  "eeee 'at' HH:mm ('UTC'x)"
+  "eeee, MMM d"
 ).withLocale(Locale.US);
+
+const timeFormat = DateTimeFormatter.ofPattern(
+  "HH:mm ('UTC'x)"
+).withLocale(Locale.US);
+
+const formatDate = date => `${dateFormat.format(date)}${ordinal(date.dayOfMonth())} at ${timeFormat.format(date)}`;
 
 const gitCreationDate = async (file) => {
   const output = await exec(`git log --format=%at "${file}" | tail -1`);
@@ -62,10 +70,10 @@ const run = async () => {
       if (date.isBefore(ZonedDateTime.now())) continue;
       const tweet = `🌐 Welcome ${event.title}${toWelcomeTweetModerators(
         event.moderators
-      )} on ${dateFormat.format(date)} to #gdcr21! ${event.url}`;
+      )} on ${formatDate(date)} to #gdcr2026 #coderetreat! ${event.url}`;
       console.log(tweet);
     }
-    console.log("");
+    console.log("");  
   }
 };
 
