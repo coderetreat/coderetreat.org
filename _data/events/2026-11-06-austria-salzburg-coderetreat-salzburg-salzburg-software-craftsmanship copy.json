@@ -1,0 +1,37 @@
+{
+  "title": "Coderetreat Salzburg - Salzburg Software Craft and Testing",
+  "description": "We host the GDCR together with the FH-Salzburg - join Students and experienced Developers",
+  "format": "classic",
+  "spoken_language": "German, English",
+  "url": "https://www.meetup.com/salzburg-software-craftsmanship/events/316783791",
+  "date": {
+    "start": "2026-11-06T08:30:00+01:00",
+    "end": "2026-11-06T15:30:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Christian Folie",
+      "url": "https://www.linkedin.com/in/christian-folie-b57639252/"
+    },
+    {
+      "name": "Vera Angerer",
+      "url": "https://www.linkedin.com/in/vera-angerer-460b72112/"
+    },
+    {
+      "name": "Klaus Bayrhammer",
+      "url": "https://www.linkedin.com/in/klaus-bayrhammer-807953173/"
+    },
+    {
+      "name": "Andreas Bilke",
+      "url": "https://www.linkedin.com/in/andreas-bilke-a76741171/"
+    }
+  ],
+  "location": {
+    "city": "Salzburg",
+    "country": "Austria",
+    "coordinates": {
+      "latitude": 47.7237536,
+      "longitude": 13.0835308
+    }
+  }
+}
