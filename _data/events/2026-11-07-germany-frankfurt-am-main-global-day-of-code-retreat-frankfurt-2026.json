@@ -1,0 +1,33 @@
+{
+  "title": "Global Day of Code Retreat Frankfurt mit der JUG DA",
+  "description": "Sei dabei beim Global Day of Code Retreat 2026 in Frankfurt und erlebe einen inspirierenden Tag voller Coding und Zusammenarbeit! Der Global Day of Code Retreat ist eine weltweite Veranstaltung für Entwickler:innen aller Erfahrungsstufen, die ihre Programmierfähigkeiten in einem intensiven und lehrreichen Umfeld verfeinern möchten.",
+  "format": "classic",
+  "spoken_language": "German",
+  "url": "https://www.jug-da.de/2026/11/global-day-of-code-retreat/",
+  "code_of_conduct": "https://andrena.github.io/gdcr2024-darmstadt/code-of-conduct.html",
+  "date": {
+    "start": "2026-11-07T09:00:00+01:00",
+    "end": "2026-11-07T17:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Torsten Wiederkehr"
+    },
+    {
+      "name": "Falk Sippach"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "ING Frankfurt"
+    }
+  ],
+  "location": {
+    "city": "Frankfurt am Main",
+    "country": "Germany",
+    "coordinates": {
+      "latitude": 50.110596,
+      "longitude": 8.683012
+    }
+  }
+}
