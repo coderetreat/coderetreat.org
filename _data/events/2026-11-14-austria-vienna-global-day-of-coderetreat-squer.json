@@ -1,0 +1,46 @@
+{
+  "title": "GDCR 2026 Vienna @SQUER",
+  "format": "classic",
+  "spoken_language": "English",
+  "url": "https://insights.squer.io/gdcr-2026",
+  "code_of_conduct": "https://code-crafts.com/code-of-conduct",
+  "date": {
+    "start": "2026-11-14T09:00:00+01:00",
+    "end": "2026-11-14T17:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Adam Zielinski",
+      "url": "https://www.linkedin.com/in/adam-zielinski-58878592/"
+    },
+    {
+      "name": "Claus Aichinger",
+      "url": "https://www.linkedin.com/in/claus-aichinger-data-scientist/"
+    },
+    {
+      "name": "Christoph Kober",
+      "url": "https://www.linkedin.com/in/christophkober/"
+    },
+    {
+      "name": "Gregor Riegler",
+      "url": "https://gregorriegler.com/"
+    },
+    {
+      "name": "t.b.d."
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "SQUER Solutions",
+      "url": "https://www.squer.io/"
+    }
+  ],
+  "location": {
+    "city": "Vienna",
+    "country": "Austria",
+    "coordinates": {
+      "latitude": 48.22681580695436,
+      "longitude": 16.360438289738404
+    }
+  }
+}
