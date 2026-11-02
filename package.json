@@ -27,7 +27,7 @@
     "yaml": "^2.3.2"
   },
   "devDependencies": {
-    "@babel/core": "8.0.7",
+    "@babel/core": "8.0.10",
     "@babel/preset-env": "8.0.7",
     "@babel/preset-react": "8.0.1",
     "@testing-library/jest-dom": "7.0.1",
