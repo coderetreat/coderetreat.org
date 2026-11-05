@@ -19,16 +19,11 @@ const toWelcomeTweetModerators = (moderators) => {
   return " with " + names.slice(0, -1).join(", ") + " & " + names.slice(-1)[0];
 };
 
-const toWelcomeTweet = (event) => {
-  const moderators = toWelcomeTweetModerators(event.moderators);
-  return `🌐 Welcome ${event.location.city}, ${event.location.country}${moderators} to the Global Day Of Coderetreat 2019! #gdcr19 #coderetreat ${event.url}`;
-};
-
 const dateFormat = DateTimeFormatter.ofPattern(
   "yyyy-MM-dd hh:mm a (HH:mm)"
 ).withLocale(Locale.US);
 
-glob(__dirname + "/../_data/**/.SCHEMA.json")
+glob(__dirname + "/../_data/events/.SCHEMA.json")
   .sort()
   .forEach((schemaFile) => {
     console.log(
@@ -48,7 +43,7 @@ glob(__dirname + "/../_data/**/.SCHEMA.json")
 
       const tweet = `${dateFormat.format(date)} 🌐 Welcome ${event.title.trim()}${toWelcomeTweetModerators(
         event.moderators
-      )} to #gdcr2020! Have fun and enjoy the day! #Coderetreat`;
+      )} to #gdcr${date.year()}! Have fun and enjoy the day! #Coderetreat`;
       console.log(tweet);
     }
     console.log("");
