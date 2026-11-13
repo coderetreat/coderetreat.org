@@ -1,0 +1,24 @@
+{
+  "title": "Global day of code retreat - Lyon 2026",
+  "format": "classic",
+  "spoken_language": "French",
+  "url": "https://guild.host/events/prsentiel-global-day-4h4pwh",
+  "date": {
+    "start": "2026-11-14T09:00:00+01:00",
+    "end": "2026-11-14T16:00:00+01:00"
+  },
+  "moderators": [
+    {
+      "name": "Florent Pellet",
+      "url": "https://bsky.app/profile/fpellet.bsky.social"
+    }
+  ],
+  "location": {
+    "city": "Lyon",
+    "country": "France",
+    "coordinates": {
+      "latitude": 45.766106,
+      "longitude": 4.832619
+    }
+  }
+}
