@@ -4,6 +4,9 @@
 - 2020: First Mob Retreat
 
 - List of all contributors over time as a big thank you page
+- ```
+jq -r '.moderators // [] | map(.name) | join("\n")' *.json | tr '[:upper:]' '[:lower:]' | sort | uniq 
+```
 
 - Why coderetreats where special
 - Software crisis, dotcom bubble, development being rushed, sustainable pace, the practices of XP getting lost
@@ -11,3 +14,4 @@
 - The communities they sparked
 - All volunteers
 - List of all blogposts we still have about it
+
